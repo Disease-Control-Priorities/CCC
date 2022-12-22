@@ -1,35 +1,35 @@
 "","Code","Intervention package","wb2021","Incremental cost (billions)","DALY.ave (millions)","benefit (billions)","BCR","Intervention"
-"1",5.1,"Tobacco tax","LIC",0.000127956557087716,0.108079997370501,0.0149336176296599,116.708498333717,"Tobacco tax"
+"1",5.1,"Tobacco tax","LIC",0.000127956557087716,0.108079997370501,0.00896017057779592,70.0250990002302,"Tobacco tax"
 "2",2.13,"Outpatient mental, neurological, and 
 substance use disorder package","LIC",0.0138395672548408,0.422033874221428,0.547894540177213,39.5889936504748,"Epilepsy acute and chronic treatment"
 "3",2.5,"Outpatient cardiometabolic and 
 respiratory disease package","LIC",0.000206309775353805,0.00397981376640976,0.00530211746954937,25.699787906107,"Aspirin for suspected ACS"
 "4",4.3,"Referral hospital NCDs package","LIC",0.00137283455092105,0.025841523497329,0.0347402484999877,25.3054881789506,"Treatment of early-stage breast cancer"
-"5",5.4,"Alcohol regulations","LIC",0.000143107852217435,0.0268564178760148,0.00359563328735531,25.125338907974,"Alcohol regulations"
-"6",5.2,"Alcohol tax","LIC",7.86926851619132e-05,0.00947289616364911,0.00126752891047658,16.1073282461844,"Alcohol tax"
-"7",2.7,"Outpatient cardiometabolic and 
+"5",5.4,"Alcohol regulations","LIC",0.000143107852217435,0.0268564178760148,0.00215737997241319,15.0752033447844,"Alcohol regulations"
+"6",2.7,"Outpatient cardiometabolic and 
 respiratory disease package","LIC",0.0985372159278711,0.760001708651812,1.01178451013641,10.2680444196539,"Heart failure chronic treatment"
-"8",1.2,"Outpatient cardiometabolic and 
+"7",1.2,"Outpatient cardiometabolic and 
 respiratory disease package","LIC",0.00267402096388017,0.0203124186366338,0.0270117842104721,10.101560374933,"Pulmonary rehabilitation"
-"9",5.3,"Tobacco regulations","LIC",0.00075885248643997,0.0387374887135401,0.00535685108746219,7.05914678173219,"Tobacco regulations"
+"8",5.2,"Alcohol tax","LIC",7.86926851619132e-05,0.00947289616364911,0.000760517346285949,9.66439694771064,"Alcohol tax"
+"9",5.3,"Tobacco regulations","LIC",0.00075885248643997,0.0387374887135401,0.00321411065247731,4.23548806903931,"Tobacco regulations"
 "10",2.4,"Outpatient cardiometabolic and 
 respiratory disease package","LIC",0.498867411254497,1.50777902193283,2.00533391550405,4.01977333107661,"CVD primary prevention"
-"11",5.6,"Trans fat regulations","LIC",0.00500255534909941,0.0280193889103689,0.0186589161385192,3.72987700013721,"Trans fat regulations"
-"12",3.2,"First-level hospital cardiometabolic 
+"11",3.2,"First-level hospital cardiometabolic 
 and respiratory disease package","LIC",0.637389737534232,1.56301312975319,2.080736431137,3.26446490837209,"Heart failure acute treatment"
-"13",2.1,"Outpatient mental, neurological, and 
+"12",2.1,"Outpatient mental, neurological, and 
 substance use disorder package","LIC",0.0375840673379043,0.0885031837588629,0.117330715159495,3.12182058702211,"Depression chronic treatment"
-"14",3.9,"First-level hospital surgical package","LIC",0.00231889261880071,0.00480231979915539,0.00636039642189865,2.74285940208311,"Repair of gastrointestinal perforations"
-"15",3.3,"First-level hospital surgical package","LIC",0.168222817943291,0.288876979434787,0.386754858638603,2.29906301277737,"Cervical cancer screening and treatment"
-"16",5.5,"Sodium regulations","LIC",0.00998325189220721,0.0341572719763373,0.0226896949281259,2.27277596249345,"Sodium regulations"
-"17",3.6,"First-level hospital surgical package","LIC",0.102278116807493,0.163248167573237,0.217645204387442,2.12797430360486,"Management of bowel obstruction"
-"18",3.1,"First-level hospital cardiometabolic 
+"13",3.9,"First-level hospital surgical package","LIC",0.00231889261880071,0.00480231979915539,0.00636039642189865,2.74285940208311,"Repair of gastrointestinal perforations"
+"14",3.3,"First-level hospital surgical package","LIC",0.168222817943291,0.288876979434787,0.386754858638603,2.29906301277737,"Cervical cancer screening and treatment"
+"15",5.6,"Trans fat regulations","LIC",0.00500255534909941,0.0280193889103689,0.0111953496831116,2.23792620008232,"Trans fat regulations"
+"16",3.6,"First-level hospital surgical package","LIC",0.102278116807493,0.163248167573237,0.217645204387442,2.12797430360486,"Management of bowel obstruction"
+"17",3.1,"First-level hospital cardiometabolic 
 and respiratory disease package","LIC",0.246617671916659,0.352364797537167,0.469441152938752,1.90351789995566,"Medical management of ACS"
-"19",1.1,"Outpatient mental, neurological, and 
+"18",1.1,"Outpatient mental, neurological, and 
 substance use disorder package","LIC",0.0106075639921901,0.01441205760931,0.0193999996887197,1.82888358750446,"IDU harm reduction measures"
-"20",3.7,"First-level hospital surgical package","LIC",0.0302606954015384,0.0386909444644152,0.0508817497414547,1.6814468096747,"Management of appendicitis"
-"21",2.6,"Outpatient cardiometabolic and 
+"19",3.7,"First-level hospital surgical package","LIC",0.0302606954015384,0.0386909444644152,0.0508817497414547,1.6814468096747,"Management of appendicitis"
+"20",2.6,"Outpatient cardiometabolic and 
 respiratory disease package","LIC",0.80281473589896,0.918905277395946,1.22370359203142,1.52426648056125,"CVD secondary prevention"
+"21",5.5,"Sodium regulations","LIC",0.00998325189220721,0.0341572719763373,0.0136138169568755,1.36366557749607,"Sodium regulations"
 "22",3.4,"First-level hospital cardiometabolic 
 and respiratory disease package","LIC",0.627803377484538,0.60252646914459,0.799119435626188,1.27288170832733,"Asthma/COPD acute treatment"
 "23",4.4,"Referral hospital NCDs package","LIC",0.0121515913889586,0.0112073301953726,0.015047724674156,1.23833366285085,"Treatment of early-stage colorectal cancer"
@@ -45,25 +45,25 @@ respiratory disease package","LIC",0.399251692117159,0.0890497190462953,0.117822
 "29",2.11,"Outpatient mental, neurological, and 
 substance use disorder package","LIC",0.268874858892651,0.0610851833017343,0.0781995305300767,0.290839875666092,"Bipolar disorder chronic treatment"
 "30",4.2,"Referral hospital NCDs package","LIC",0.0313646844384625,0.00537997056260135,0.00714205414073726,0.227710058896016,"Management of acute ventilatory failure"
-"31",5.1,"Tobacco tax","LIC+LMIC",0.00181257555895986,1.32337904822829,0.763071912322796,420.987642998277,"Tobacco tax"
+"31",5.1,"Tobacco tax","LIC+LMIC",0.00181257555895986,1.32337904822829,0.457843147393677,252.592585798966,"Tobacco tax"
 "32",2.13,"Outpatient mental, neurological, and 
 substance use disorder package","LIC+LMIC",0.158805966650653,2.34716797730577,11.6585508040785,73.4138083723601,"Epilepsy acute and chronic treatment"
 "33",2.5,"Outpatient cardiometabolic and 
 respiratory disease package","LIC+LMIC",0.00464127724906035,0.0438163986385873,0.241833083997152,52.1048562755247,"Aspirin for suspected ACS"
-"34",5.4,"Alcohol regulations","LIC+LMIC",0.00206747805268729,0.199701846405728,0.107236677053478,51.8683508703238,"Alcohol regulations"
-"35",5.2,"Alcohol tax","LIC+LMIC",0.00158903799039919,0.102220649632848,0.0568747562981544,35.7919424468049,"Alcohol tax"
-"36",2.7,"Outpatient cardiometabolic and 
+"34",2.7,"Outpatient cardiometabolic and 
 respiratory disease package","LIC+LMIC",0.898372632905598,5.7980513194301,30.9263668343683,34.4248763838047,"Heart failure chronic treatment"
-"37",5.3,"Tobacco regulations","LIC+LMIC",0.0110787114046356,0.547403654381732,0.318452447692016,28.7445386075105,"Tobacco regulations"
-"38",4.3,"Referral hospital NCDs package","LIC+LMIC",0.0261088203733284,0.14325026132304,0.734295053693635,28.1244055914436,"Treatment of early-stage breast cancer"
-"39",5.6,"Trans fat regulations","LIC+LMIC",0.0733585013396164,0.67982225888729,1.9527459861666,26.6192186386998,"Trans fat regulations"
-"40",1.2,"Outpatient cardiometabolic and 
+"35",5.4,"Alcohol regulations","LIC+LMIC",0.00206747805268729,0.199701846405728,0.0643420062320868,31.1210105221943,"Alcohol regulations"
+"36",4.3,"Referral hospital NCDs package","LIC+LMIC",0.0261088203733284,0.14325026132304,0.734295053693635,28.1244055914436,"Treatment of early-stage breast cancer"
+"37",5.2,"Alcohol tax","LIC+LMIC",0.00158903799039919,0.102220649632848,0.0341248537788926,21.4751654680829,"Alcohol tax"
+"38",1.2,"Outpatient cardiometabolic and 
 respiratory disease package","LIC+LMIC",0.0888734301821364,0.280324746156028,1.56939927125218,17.6588128536939,"Pulmonary rehabilitation"
-"41",5.5,"Sodium regulations","LIC+LMIC",0.0850860700348275,0.471463524552877,1.3193311399954,15.505841784153,"Sodium regulations"
-"42",2.4,"Outpatient cardiometabolic and 
+"39",5.3,"Tobacco regulations","LIC+LMIC",0.0110787114046356,0.547403654381732,0.191071468615209,17.2467231645063,"Tobacco regulations"
+"40",5.6,"Trans fat regulations","LIC+LMIC",0.0733585013396164,0.67982225888729,1.17164759169996,15.9715311832199,"Trans fat regulations"
+"41",2.4,"Outpatient cardiometabolic and 
 respiratory disease package","LIC+LMIC",5.9240583283776,14.1257870793651,76.8277842958834,12.9687758015246,"CVD primary prevention"
-"43",3.2,"First-level hospital cardiometabolic 
+"42",3.2,"First-level hospital cardiometabolic 
 and respiratory disease package","LIC+LMIC",7.00636880984004,12.767035565203,68.621481507113,9.79415776839184,"Heart failure acute treatment"
+"43",5.5,"Sodium regulations","LIC+LMIC",0.0850860700348275,0.471463524552877,0.79159868399724,9.30350507049182,"Sodium regulations"
 "44",2.1,"Outpatient mental, neurological, and 
 substance use disorder package","LIC+LMIC",0.24248949205593,0.408686926246412,2.00397475346043,8.26417151716502,"Depression chronic treatment"
 "45",3.1,"First-level hospital cardiometabolic 
@@ -92,25 +92,25 @@ respiratory disease package","LIC+LMIC",2.78540286708277,0.49088052542086,2.4908
 respiratory disease package","LIC+LMIC",34.9925786952893,2.78561255033393,14.952580198686,0.427307182156854,"Diabetes screening and treatment"
 "61",2.11,"Outpatient mental, neurological, and 
 substance use disorder package","LIC+LMIC",2.72065199403519,0.248089890948268,1.14224486450392,0.419842327136363,"Bipolar disorder chronic treatment"
-"62",5.1,"Tobacco tax","LMIC",0.00168461900187214,1.21529905085779,0.748138294693136,444.09940399682,"Tobacco tax"
+"62",5.1,"Tobacco tax","LMIC",0.00168461900187214,1.21529905085779,0.448882976815882,266.459642398092,"Tobacco tax"
 "63",2.13,"Outpatient mental, neurological, and 
 substance use disorder package","LMIC",0.144966399395812,1.92513410308434,11.1106562639013,76.6429759600017,"Epilepsy acute and chronic treatment"
-"64",5.4,"Alcohol regulations","LMIC",0.00192437020046985,0.172845428529713,0.103641043766123,53.8571236141662,"Alcohol regulations"
-"65",2.5,"Outpatient cardiometabolic and 
+"64",2.5,"Outpatient cardiometabolic and 
 respiratory disease package","LMIC",0.00443496747370654,0.0398365848721776,0.236530966527603,53.3331908136681,"Aspirin for suspected ACS"
-"66",2.7,"Outpatient cardiometabolic and 
+"65",2.7,"Outpatient cardiometabolic and 
 respiratory disease package","LMIC",0.799835416977727,5.03804961077828,29.9145823242319,37.4009223513354,"Heart failure chronic treatment"
-"67",5.2,"Alcohol tax","LMIC",0.00151034530523728,0.0927477534691984,0.0556072273876778,36.8175590011463,"Alcohol tax"
-"68",5.3,"Tobacco regulations","LMIC",0.0103198589181956,0.508666165668192,0.313095596604553,30.3391353589644,"Tobacco regulations"
-"69",5.6,"Trans fat regulations","LMIC",0.068355945990517,0.651802869976921,1.93408707002808,28.294350140314,"Trans fat regulations"
-"70",4.3,"Referral hospital NCDs package","LMIC",0.0247359858224074,0.117408737825711,0.699554805193648,28.2808540648478,"Treatment of early-stage breast cancer"
-"71",1.2,"Outpatient cardiometabolic and 
+"66",5.4,"Alcohol regulations","LMIC",0.00192437020046985,0.172845428529713,0.0621846262596736,32.3142741684997,"Alcohol regulations"
+"67",4.3,"Referral hospital NCDs package","LMIC",0.0247359858224074,0.117408737825711,0.699554805193648,28.2808540648478,"Treatment of early-stage breast cancer"
+"68",5.2,"Alcohol tax","LMIC",0.00151034530523728,0.0927477534691984,0.0333643364326067,22.0905354006878,"Alcohol tax"
+"69",5.3,"Tobacco regulations","LMIC",0.0103198589181956,0.508666165668192,0.187857357962732,18.2034812153786,"Tobacco regulations"
+"70",1.2,"Outpatient cardiometabolic and 
 respiratory disease package","LMIC",0.0861994092182563,0.260012327519395,1.54238748704171,17.8932489332542,"Pulmonary rehabilitation"
-"72",5.5,"Sodium regulations","LMIC",0.0751028181426203,0.43730625257654,1.29664144506727,17.264884023459,"Sodium regulations"
-"73",2.4,"Outpatient cardiometabolic and 
+"71",5.6,"Trans fat regulations","LMIC",0.068355945990517,0.651802869976921,1.16045224201685,16.9766100841884,"Trans fat regulations"
+"72",2.4,"Outpatient cardiometabolic and 
 respiratory disease package","LMIC",5.4251909171231,12.6180080574322,74.8224503803794,13.7916713943141,"CVD primary prevention"
-"74",3.2,"First-level hospital cardiometabolic 
+"73",3.2,"First-level hospital cardiometabolic 
 and respiratory disease package","LMIC",6.3689790723058,11.2040224354498,66.5407450759761,10.4476312954638,"Heart failure acute treatment"
+"74",5.5,"Sodium regulations","LMIC",0.0751028181426203,0.43730625257654,0.777984867040364,10.3589304140754,"Sodium regulations"
 "75",2.1,"Outpatient mental, neurological, and 
 substance use disorder package","LMIC",0.204905424718025,0.320183742487549,1.88664403830093,9.2073894134193,"Depression chronic treatment"
 "76",3.1,"First-level hospital cardiometabolic 
