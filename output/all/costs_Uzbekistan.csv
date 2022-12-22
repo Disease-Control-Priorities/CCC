@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"Uzbekistan",2020,11934.4525231411,11934.4525231411,0
+"IDU harm reduction measures",1.1,"Uzbekistan",2021,12057.4104534153,12057.4104534153,0
+"IDU harm reduction measures",1.1,"Uzbekistan",2022,12171.304627618,12171.304627618,0
+"IDU harm reduction measures",1.1,"Uzbekistan",2023,133544.714185408,12279.9737181985,121264.74046721
+"IDU harm reduction measures",1.1,"Uzbekistan",2024,257035.898538717,12386.5226462559,244649.375892461
+"IDU harm reduction measures",1.1,"Uzbekistan",2025,382736.009458035,12494.6356317602,370241.373826275
+"IDU harm reduction measures",1.1,"Uzbekistan",2026,511259.776811089,12616.7220609199,498643.054750169
+"IDU harm reduction measures",1.1,"Uzbekistan",2027,642200.734968936,12734.8584678274,629465.876501109
+"IDU harm reduction measures",1.1,"Uzbekistan",2028,775965.78064682,12856.1841796154,763109.596467205
+"IDU harm reduction measures",1.1,"Uzbekistan",2029,913314.001207413,12988.7801605414,900325.221046872
+"IDU harm reduction measures",1.1,"Uzbekistan",2030,1054918.0202783,13135.708937973,1041782.31134033
+"Pulmonary rehabilitation",1.2,"Uzbekistan",2020,223496.611827104,223496.611827104,0
+"Pulmonary rehabilitation",1.2,"Uzbekistan",2021,231237.135554345,231237.135554345,0
+"Pulmonary rehabilitation",1.2,"Uzbekistan",2022,239051.072378411,239051.072378411,0
+"Pulmonary rehabilitation",1.2,"Uzbekistan",2023,272771.937239003,246886.263193484,25885.6740455197
+"Pulmonary rehabilitation",1.2,"Uzbekistan",2024,308159.551319935,254619.633240218,53539.9180797166
+"Pulmonary rehabilitation",1.2,"Uzbekistan",2025,345320.938569227,262232.897985978,83088.0405832487
+"Pulmonary rehabilitation",1.2,"Uzbekistan",2026,386014.984180436,270817.823335362,115197.160845075
+"Pulmonary rehabilitation",1.2,"Uzbekistan",2027,428767.212208094,279051.233078789,149715.979129305
+"Pulmonary rehabilitation",1.2,"Uzbekistan",2028,473937.753293519,287073.36881384,186864.384479679
+"Pulmonary rehabilitation",1.2,"Uzbekistan",2029,521994.686366088,295069.984440699,226924.701925389
+"Pulmonary rehabilitation",1.2,"Uzbekistan",2030,573271.162772573,303146.716968328,270124.445804245
+"Depression chronic treatment",2.1,"Uzbekistan",2020,0,0,0
+"Depression chronic treatment",2.1,"Uzbekistan",2021,0,0,0
+"Depression chronic treatment",2.1,"Uzbekistan",2022,0,0,0
+"Depression chronic treatment",2.1,"Uzbekistan",2023,0,0,0
+"Depression chronic treatment",2.1,"Uzbekistan",2024,0,0,0
+"Depression chronic treatment",2.1,"Uzbekistan",2025,0,0,0
+"Depression chronic treatment",2.1,"Uzbekistan",2026,0,0,0
+"Depression chronic treatment",2.1,"Uzbekistan",2027,0,0,0
+"Depression chronic treatment",2.1,"Uzbekistan",2028,0,0,0
+"Depression chronic treatment",2.1,"Uzbekistan",2029,0,0,0
+"Depression chronic treatment",2.1,"Uzbekistan",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"Uzbekistan",2020,1350170.37747808,1350170.37747808,0
+"Bipolar disorder chronic treatment",2.11,"Uzbekistan",2021,1370034.56560312,1370034.56560312,0
+"Bipolar disorder chronic treatment",2.11,"Uzbekistan",2022,1390779.79624891,1390779.79624891,0
+"Bipolar disorder chronic treatment",2.11,"Uzbekistan",2023,5052826.90182803,1412310.44659216,3640516.45523587
+"Bipolar disorder chronic treatment",2.11,"Uzbekistan",2024,8828410.79689759,1434154.67275251,7394256.12414508
+"Bipolar disorder chronic treatment",2.11,"Uzbekistan",2025,12719686.9142941,1456110.39124786,11263576.5230463
+"Bipolar disorder chronic treatment",2.11,"Uzbekistan",2026,16739152.9689896,1478998.88599051,15260154.0829991
+"Bipolar disorder chronic treatment",2.11,"Uzbekistan",2027,20874447.3580808,1501198.41683078,19373248.94125
+"Bipolar disorder chronic treatment",2.11,"Uzbekistan",2028,25132462.4277157,1523246.69728281,23609215.7304328
+"Bipolar disorder chronic treatment",2.11,"Uzbekistan",2029,29527031.6068525,1545745.49243317,27981286.1144193
+"Bipolar disorder chronic treatment",2.11,"Uzbekistan",2030,34068202.7541153,1568839.02400873,32499363.7301066
+"Schizophrenia chronic treatment",2.12,"Uzbekistan",2020,7872187.13329186,7872187.13329186,0
+"Schizophrenia chronic treatment",2.12,"Uzbekistan",2021,8015721.95107745,8015721.95107745,0
+"Schizophrenia chronic treatment",2.12,"Uzbekistan",2022,8158052.18594909,8158052.18594909,0
+"Schizophrenia chronic treatment",2.12,"Uzbekistan",2023,9335955.09686329,8298626.75276737,1037328.34409592
+"Schizophrenia chronic treatment",2.12,"Uzbekistan",2024,10544569.8602702,8435108.63034126,2109461.22992894
+"Schizophrenia chronic treatment",2.12,"Uzbekistan",2025,11782151.2389141,8566733.24941768,3215417.98949646
+"Schizophrenia chronic treatment",2.12,"Uzbekistan",2026,13054053.730817,8697594.83374075,4356458.8970763
+"Schizophrenia chronic treatment",2.12,"Uzbekistan",2027,14347385.2289975,8819260.30253297,5528124.92646451
+"Schizophrenia chronic treatment",2.12,"Uzbekistan",2028,15667378.0870017,8936051.87738098,6731326.20962067
+"Schizophrenia chronic treatment",2.12,"Uzbekistan",2029,17023487.9497602,9053416.40522104,7970071.54453916
+"Schizophrenia chronic treatment",2.12,"Uzbekistan",2030,18421308.513942,9173568.9079087,9247739.60603334
+"Epilepsy acute and chronic treatment",2.13,"Uzbekistan",2020,1384781.94825296,1384781.94825296,0
+"Epilepsy acute and chronic treatment",2.13,"Uzbekistan",2021,1405153.25633311,1405153.25633311,0
+"Epilepsy acute and chronic treatment",2.13,"Uzbekistan",2022,1425492.02114895,1425492.02114895,0
+"Epilepsy acute and chronic treatment",2.13,"Uzbekistan",2023,1554084.42248153,1445659.9278898,108424.494591735
+"Epilepsy acute and chronic treatment",2.13,"Uzbekistan",2024,1685383.06825915,1465410.8622561,219972.20600305
+"Epilepsy acute and chronic treatment",2.13,"Uzbekistan",2025,1819310.99810367,1484617.52387302,334693.474230648
+"Epilepsy acute and chronic treatment",2.13,"Uzbekistan",2026,1956537.78031953,1503710.70626406,452827.074055471
+"Epilepsy acute and chronic treatment",2.13,"Uzbekistan",2027,2095901.38291992,1521701.44267187,574199.940248051
+"Epilepsy acute and chronic treatment",2.13,"Uzbekistan",2028,2237725.012941,1538828.64512063,698896.367820375
+"Epilepsy acute and chronic treatment",2.13,"Uzbekistan",2029,2382512.87250865,1555415.73846022,827097.134048427
+"Epilepsy acute and chronic treatment",2.13,"Uzbekistan",2030,2530772.06451965,1571753.58540733,959018.479112319
+"Asthma/COPD chronic treatment",2.14,"Uzbekistan",2020,13546655.4539163,13546655.4539163,0
+"Asthma/COPD chronic treatment",2.14,"Uzbekistan",2021,13845670.676336,13845670.676336,0
+"Asthma/COPD chronic treatment",2.14,"Uzbekistan",2022,14146763.3059757,14146763.3059757,0
+"Asthma/COPD chronic treatment",2.14,"Uzbekistan",2023,15961755.482947,14447007.2877768,1514748.19517017
+"Asthma/COPD chronic treatment",2.14,"Uzbekistan",2024,17836034.840552,14741600.7018792,3094434.13867279
+"Asthma/COPD chronic treatment",2.14,"Uzbekistan",2025,19768006.5057586,15027866.9917585,4740139.51400007
+"Asthma/COPD chronic treatment",2.14,"Uzbekistan",2026,21762142.8041535,15307152.2521703,6454990.5519832
+"Asthma/COPD chronic treatment",2.14,"Uzbekistan",2027,23804703.5873894,15568423.8489776,8236279.73841178
+"Asthma/COPD chronic treatment",2.14,"Uzbekistan",2028,25901408.4944456,15815304.4254039,10086104.0690418
+"Asthma/COPD chronic treatment",2.14,"Uzbekistan",2029,28062707.2451537,16053480.2965038,12009226.9486499
+"Asthma/COPD chronic treatment",2.14,"Uzbekistan",2030,30300373.8364154,16288579.8514072,14011793.9850082
+"Diabetes screening and treatment",2.3,"Uzbekistan",2020,164496067.193356,164496067.193356,0
+"Diabetes screening and treatment",2.3,"Uzbekistan",2021,169452756.437941,169452756.437941,0
+"Diabetes screening and treatment",2.3,"Uzbekistan",2022,174538239.697854,174538239.697854,0
+"Diabetes screening and treatment",2.3,"Uzbekistan",2023,198600940.400045,179753989.865596,18846950.5344487
+"Diabetes screening and treatment",2.3,"Uzbekistan",2024,223917573.344203,185052441.964889,38865131.379314
+"Diabetes screening and treatment",2.3,"Uzbekistan",2025,250570342.174577,190422317.922862,60148024.2517148
+"Diabetes screening and treatment",2.3,"Uzbekistan",2026,278577941.077244,195793893.177068,82784047.900176
+"Diabetes screening and treatment",2.3,"Uzbekistan",2027,307891335.270425,201070378.736723,106820956.533702
+"Diabetes screening and treatment",2.3,"Uzbekistan",2028,338748250.628074,206353561.355556,132394689.272518
+"Diabetes screening and treatment",2.3,"Uzbekistan",2029,371471494.676199,211772067.249698,159699427.426501
+"Diabetes screening and treatment",2.3,"Uzbekistan",2030,406298347.553994,217385774.60698,188912572.947014
+"CVD primary prevention",2.4,"Uzbekistan",2020,32280637.5035266,32280637.5035266,0
+"CVD primary prevention",2.4,"Uzbekistan",2021,33235026.193668,33235026.193668,0
+"CVD primary prevention",2.4,"Uzbekistan",2022,34205507.8982405,34205507.8982405,0
+"CVD primary prevention",2.4,"Uzbekistan",2023,38860798.8767632,35172963.5992252,3687835.27753805
+"CVD primary prevention",2.4,"Uzbekistan",2024,43679842.9182332,36102772.9825313,7577069.93570189
+"CVD primary prevention",2.4,"Uzbekistan",2025,48632525.0796696,36975344.2942987,11657180.7853709
+"CVD primary prevention",2.4,"Uzbekistan",2026,53736784.0410816,37808968.914817,15927815.1262647
+"CVD primary prevention",2.4,"Uzbekistan",2027,58927802.5122219,38562506.7790402,20365295.7331817
+"CVD primary prevention",2.4,"Uzbekistan",2028,64219950.5304165,39253836.2890365,24966114.2413801
+"CVD primary prevention",2.4,"Uzbekistan",2029,69647434.8626866,39908270.3384415,29739164.524245
+"CVD primary prevention",2.4,"Uzbekistan",2030,75231474.2936597,40539099.0777589,34692375.2159007
+"Aspirin for suspected ACS",2.5,"Uzbekistan",2020,21098.7150567327,21098.7150567327,0
+"Aspirin for suspected ACS",2.5,"Uzbekistan",2021,21741.5088307243,21741.5088307243,0
+"Aspirin for suspected ACS",2.5,"Uzbekistan",2022,22420.3527794262,22420.3527794262,0
+"Aspirin for suspected ACS",2.5,"Uzbekistan",2023,25564.3400673894,23138.3200710823,2426.01999630715
+"Aspirin for suspected ACS",2.5,"Uzbekistan",2024,28910.4378269535,23893.5299974084,5016.90782954504
+"Aspirin for suspected ACS",2.5,"Uzbekistan",2025,32477.2315913191,24685.4365256793,7791.79506563979
+"Aspirin for suspected ACS",2.5,"Uzbekistan",2026,36275.14589728,25506.0918143698,10769.0540829102
+"Aspirin for suspected ACS",2.5,"Uzbekistan",2027,40299.1362858247,26339.4613814861,13959.6749043386
+"Aspirin for suspected ACS",2.5,"Uzbekistan",2028,44570.5862857395,27189.6548631503,17380.9314225892
+"Aspirin for suspected ACS",2.5,"Uzbekistan",2029,49113.0534324957,28061.3500710511,21051.7033614445
+"Aspirin for suspected ACS",2.5,"Uzbekistan",2030,53936.9439525989,28951.824630069,24985.1193225299
+"CVD secondary prevention",2.6,"Uzbekistan",2020,77206444.8900901,77206444.8900901,0
+"CVD secondary prevention",2.6,"Uzbekistan",2021,80232996.8126404,80232996.8126404,0
+"CVD secondary prevention",2.6,"Uzbekistan",2022,83285980.3412487,83285980.3412487,0
+"CVD secondary prevention",2.6,"Uzbekistan",2023,95449850.433829,86391793.5785932,9058056.85523579
+"CVD secondary prevention",2.6,"Uzbekistan",2024,108419898.085635,89559191.3405814,18860706.7450539
+"CVD secondary prevention",2.6,"Uzbekistan",2025,122345012.340025,92817737.9728829,29527274.3671424
+"CVD secondary prevention",2.6,"Uzbekistan",2026,138084154.624771,96656798.4825135,41427356.1422578
+"CVD secondary prevention",2.6,"Uzbekistan",2027,154972029.646574,100433104.710179,54538924.9363957
+"CVD secondary prevention",2.6,"Uzbekistan",2028,173226303.187273,104207030.812106,69019272.3751665
+"CVD secondary prevention",2.6,"Uzbekistan",2029,193110362.048921,108055490.864566,85054871.1843551
+"CVD secondary prevention",2.6,"Uzbekistan",2030,214837220.34255,112023943.170444,102813277.172107
+"Heart failure chronic treatment",2.7,"Uzbekistan",2020,4575242.42869934,4575242.42869934,0
+"Heart failure chronic treatment",2.7,"Uzbekistan",2021,4763236.65820714,4763236.65820714,0
+"Heart failure chronic treatment",2.7,"Uzbekistan",2022,4953533.49168418,4953533.49168418,0
+"Heart failure chronic treatment",2.7,"Uzbekistan",2023,5686416.07447456,5146783.16912155,539632.90535301
+"Heart failure chronic treatment",2.7,"Uzbekistan",2024,6469381.65260336,5342852.07828685,1126529.57431651
+"Heart failure chronic treatment",2.7,"Uzbekistan",2025,7313034.08078459,5543941.47734316,1769092.60344144
+"Heart failure chronic treatment",2.7,"Uzbekistan",2026,8304758.04742972,5803068.69178604,2501689.35564368
+"Heart failure chronic treatment",2.7,"Uzbekistan",2027,9378039.32790116,6057985.16137474,3320054.16652642
+"Heart failure chronic treatment",2.7,"Uzbekistan",2028,10547025.4536724,6311737.39444227,4235288.05923013
+"Heart failure chronic treatment",2.7,"Uzbekistan",2029,11827416.4148167,6568110.10447277,5259306.31034394
+"Heart failure chronic treatment",2.7,"Uzbekistan",2030,13231639.7955794,6829584.54322259,6402055.25235683
+"Alcohol use screening/brief intervention",2.9,"Uzbekistan",2020,365795.566682499,365795.566682499,0
+"Alcohol use screening/brief intervention",2.9,"Uzbekistan",2021,370570.588064932,370570.588064932,0
+"Alcohol use screening/brief intervention",2.9,"Uzbekistan",2022,375217.510266389,375217.510266389,0
+"Alcohol use screening/brief intervention",2.9,"Uzbekistan",2023,4130102.35772351,379779.527146989,3750322.83057652
+"Alcohol use screening/brief intervention",2.9,"Uzbekistan",2024,7973535.29436021,384238.316234071,7589296.97812614
+"Alcohol use screening/brief intervention",2.9,"Uzbekistan",2025,11905064.0048533,388627.985259076,11516436.0195942
+"Alcohol use screening/brief intervention",2.9,"Uzbekistan",2026,15941585.3303693,393353.584863106,15548231.7455062
+"Alcohol use screening/brief intervention",2.9,"Uzbekistan",2027,20065679.7170716,397808.183540403,19667871.5335312
+"Alcohol use screening/brief intervention",2.9,"Uzbekistan",2028,24285579.9613612,402200.566557632,23883379.3948036
+"Alcohol use screening/brief intervention",2.9,"Uzbekistan",2029,28620717.34011,406778.554342001,28213938.785768
+"Alcohol use screening/brief intervention",2.9,"Uzbekistan",2030,33088119.4459229,411638.96274231,32676480.4831806
+"Medical management of ACS",3.1,"Uzbekistan",2020,29767230.6613602,29767230.6613602,0
+"Medical management of ACS",3.1,"Uzbekistan",2021,30823688.9769857,30823688.9769857,0
+"Medical management of ACS",3.1,"Uzbekistan",2022,31837115.8726011,31837115.8726011,0
+"Medical management of ACS",3.1,"Uzbekistan",2023,39305356.2888633,32820634.2075357,6484722.08132762
+"Medical management of ACS",3.1,"Uzbekistan",2024,47187658.0872667,33785867.7359324,13401790.3513343
+"Medical management of ACS",3.1,"Uzbekistan",2025,55580280.6949229,34759273.2210148,20821007.4739081
+"Medical management of ACS",3.1,"Uzbekistan",2026,65484594.1519482,36237547.0302669,29247047.1216813
+"Medical management of ACS",3.1,"Uzbekistan",2027,76223821.3496742,37675001.8070012,38548819.542673
+"Medical management of ACS",3.1,"Uzbekistan",2028,87967890.3761622,39107138.5001774,48860751.8759848
+"Medical management of ACS",3.1,"Uzbekistan",2029,100930689.484573,40579159.6032107,60351529.8813626
+"Medical management of ACS",3.1,"Uzbekistan",2030,115290466.054399,42118174.2264258,73172291.8279732
+"Heart failure acute treatment",3.2,"Uzbekistan",2020,20196892.6782475,20196892.6782475,0
+"Heart failure acute treatment",3.2,"Uzbekistan",2021,21022960.7977487,21022960.7977487,0
+"Heart failure acute treatment",3.2,"Uzbekistan",2022,21850908.4116487,21850908.4116487,0
+"Heart failure acute treatment",3.2,"Uzbekistan",2023,27163943.7845294,22682350.365533,4481593.41899643
+"Heart failure acute treatment",3.2,"Uzbekistan",2024,32841858.7880693,23516140.7174545,9325718.07061474
+"Heart failure acute treatment",3.2,"Uzbekistan",2025,38946653.7588801,24363260.8975041,14583392.861376
+"Heart failure acute treatment",3.2,"Uzbekistan",2026,46050659.4273726,25499696.9543948,20550962.4729778
+"Heart failure acute treatment",3.2,"Uzbekistan",2027,53777348.1493716,26613046.2376672,27164301.9117044
+"Heart failure acute treatment",3.2,"Uzbekistan",2028,62222971.3726683,27717585.1598587,34505386.2128096
+"Heart failure acute treatment",3.2,"Uzbekistan",2029,71498140.0079859,28830915.1939621,42667224.8140238
+"Heart failure acute treatment",3.2,"Uzbekistan",2030,81696101.5563896,29964922.9976307,51731178.5587589
+"Cervical cancer screening and treatment",3.3,"Uzbekistan",2020,3268927.75841171,3268927.75841171,0
+"Cervical cancer screening and treatment",3.3,"Uzbekistan",2021,3317957.37677894,3317957.37677894,0
+"Cervical cancer screening and treatment",3.3,"Uzbekistan",2022,3366295.80537355,3366295.80537355,0
+"Cervical cancer screening and treatment",3.3,"Uzbekistan",2023,5614819.51945486,3414860.99428834,2199958.52516653
+"Cervical cancer screening and treatment",3.3,"Uzbekistan",2024,7929260.52827119,3464646.57190805,4464613.95636314
+"Cervical cancer screening and treatment",3.3,"Uzbekistan",2025,10316027.3691268,3516645.78250276,6799381.58662405
+"Cervical cancer screening and treatment",3.3,"Uzbekistan",2026,12779716.8377076,3570471.59670718,9209245.24100047
+"Cervical cancer screening and treatment",3.3,"Uzbekistan",2027,15319831.9622876,3624635.77351863,11695196.188769
+"Cervical cancer screening and treatment",3.3,"Uzbekistan",2028,17945397.6949231,3680290.20590371,14265107.4890194
+"Cervical cancer screening and treatment",3.3,"Uzbekistan",2029,20665713.6840579,3738047.74772521,16927665.9363327
+"Cervical cancer screening and treatment",3.3,"Uzbekistan",2030,23485241.3551634,3797503.6232569,19687737.7319065
+"Asthma/COPD acute treatment",3.4,"Uzbekistan",2020,18913649.9291261,18913649.9291261,0
+"Asthma/COPD acute treatment",3.4,"Uzbekistan",2021,19362971.2320303,19362971.2320303,0
+"Asthma/COPD acute treatment",3.4,"Uzbekistan",2022,19815859.6037605,19815859.6037605,0
+"Asthma/COPD acute treatment",3.4,"Uzbekistan",2023,24272335.7987239,20267809.0171162,4004526.78160765
+"Asthma/COPD acute treatment",3.4,"Uzbekistan",2024,28901557.7266325,20711220.9554325,8190336.77120007
+"Asthma/COPD acute treatment",3.4,"Uzbekistan",2025,33700528.4257323,21142187.2933259,12558341.1324064
+"Asthma/COPD acute treatment",3.4,"Uzbekistan",2026,38692744.8341105,21570978.9892645,17121765.8448461
+"Asthma/COPD acute treatment",3.4,"Uzbekistan",2027,43841952.0386941,21973172.0129254,21868780.0257687
+"Asthma/COPD acute treatment",3.4,"Uzbekistan",2028,49159513.6491262,22354438.0495006,26805075.5996256
+"Asthma/COPD acute treatment",3.4,"Uzbekistan",2029,54668102.2588875,22723496.7485894,31944605.5102981
+"Asthma/COPD acute treatment",3.4,"Uzbekistan",2030,60393433.9103158,23088414.6312837,37305019.2790321
+"Management of bowel obstruction",3.6,"Uzbekistan",2020,424456.501652893,424456.501652893,0
+"Management of bowel obstruction",3.6,"Uzbekistan",2021,433977.987834491,433977.987834491,0
+"Management of bowel obstruction",3.6,"Uzbekistan",2022,443296.358125795,443296.358125795,0
+"Management of bowel obstruction",3.6,"Uzbekistan",2023,1904184.06652309,452479.382144101,1451704.68437899
+"Management of bowel obstruction",3.6,"Uzbekistan",2024,3424524.94019144,461630.619263942,2962894.3209275
+"Management of bowel obstruction",3.6,"Uzbekistan",2025,5006798.22175338,470832.93461783,4535965.28713555
+"Management of bowel obstruction",3.6,"Uzbekistan",2026,6651818.08542122,479877.950516345,6171940.13490487
+"Management of bowel obstruction",3.6,"Uzbekistan",2027,8366084.07020776,488998.456824662,7877085.6133831
+"Management of bowel obstruction",3.6,"Uzbekistan",2028,10157097.9862677,498295.279313782,9658802.70695393
+"Management of bowel obstruction",3.6,"Uzbekistan",2029,12034825.5681426,507903.730243927,11526921.8378987
+"Management of bowel obstruction",3.6,"Uzbekistan",2030,14008390.5531218,517865.196696999,13490525.3564248
+"Management of appendicitis",3.7,"Uzbekistan",2020,55782.5397622109,55782.5397622109,0
+"Management of appendicitis",3.7,"Uzbekistan",2021,56309.7443611416,56309.7443611416,0
+"Management of appendicitis",3.7,"Uzbekistan",2022,56898.3490149994,56898.3490149994,0
+"Management of appendicitis",3.7,"Uzbekistan",2023,242102.294197061,57529.2580270244,184573.036170037
+"Management of appendicitis",3.7,"Uzbekistan",2024,431409.810233963,58166.7744380827,373243.03579588
+"Management of appendicitis",3.7,"Uzbekistan",2025,624689.765435413,58791.1262115299,565898.639223883
+"Management of appendicitis",3.7,"Uzbekistan",2026,822626.097404779,59459.2576803628,763166.839724416
+"Management of appendicitis",3.7,"Uzbekistan",2027,1024033.03780754,60075.2316193028,963957.806188239
+"Management of appendicitis",3.7,"Uzbekistan",2028,1228537.08560936,60643.9015590403,1167893.18405032
+"Management of appendicitis",3.7,"Uzbekistan",2029,1435760.3075648,61167.2644988993,1374593.0430659
+"Management of appendicitis",3.7,"Uzbekistan",2030,1645362.55910936,61647.8549049902,1583714.70420437
+"Repair of hernias",3.8,"Uzbekistan",2020,2637942.28875988,2637942.28875988,0
+"Repair of hernias",3.8,"Uzbekistan",2021,2690348.30528628,2690348.30528628,0
+"Repair of hernias",3.8,"Uzbekistan",2022,2741852.37715664,2741852.37715664,0
+"Repair of hernias",3.8,"Uzbekistan",2023,11750982.3688816,2792312.64211049,8958669.72677114
+"Repair of hernias",3.8,"Uzbekistan",2024,21077488.5271961,2841635.69906585,18235852.8281302
+"Repair of hernias",3.8,"Uzbekistan",2025,30711232.3689191,2889416.3205075,27821816.0484115
+"Repair of hernias",3.8,"Uzbekistan",2026,40575411.7726149,2930603.50785006,37644808.2647649
+"Repair of hernias",3.8,"Uzbekistan",2027,50698069.0790645,2969982.65734755,47728086.4217169
+"Repair of hernias",3.8,"Uzbekistan",2028,61086865.7321849,3008234.18384214,58078631.5483427
+"Repair of hernias",3.8,"Uzbekistan",2029,71766533.6626213,3046369.51363905,68720164.1489823
+"Repair of hernias",3.8,"Uzbekistan",2030,82772939.4199285,3085340.9794022,79687598.4405263
+"Repair of gastrointestinal perforations",3.9,"Uzbekistan",2020,10024.305689436,10024.305689436,0
+"Repair of gastrointestinal perforations",3.9,"Uzbekistan",2021,10269.6042322011,10269.6042322011,0
+"Repair of gastrointestinal perforations",3.9,"Uzbekistan",2022,10522.7466036671,10522.7466036671,0
+"Repair of gastrointestinal perforations",3.9,"Uzbekistan",2023,45382.3626843365,10783.927766575,34598.4349177615
+"Repair of gastrointestinal perforations",3.9,"Uzbekistan",2024,81972.7125877658,11050.2979944698,70922.414593296
+"Repair of gastrointestinal perforations",3.9,"Uzbekistan",2025,120375.460713248,11320.9436885007,109054.517024747
+"Repair of gastrointestinal perforations",3.9,"Uzbekistan",2026,160651.274162878,11592.4009156165,149058.873247262
+"Repair of gastrointestinal perforations",3.9,"Uzbekistan",2027,202781.528602278,11858.057747907,190923.470854371
+"Repair of gastrointestinal perforations",3.9,"Uzbekistan",2028,246922.295080041,12123.3727488133,234798.922331228
+"Repair of gastrointestinal perforations",3.9,"Uzbekistan",2029,293337.26851318,12394.9813738023,280942.287139378
+"Repair of gastrointestinal perforations",3.9,"Uzbekistan",2030,342272.391599713,12675.5468000393,329596.844799674
+"PCI for ACS",4.1,"Uzbekistan",2020,19995472.462002,19995472.462002,0
+"PCI for ACS",4.1,"Uzbekistan",2021,20730344.8456324,20730344.8456324,0
+"PCI for ACS",4.1,"Uzbekistan",2022,21567576.0747642,21567576.0747642,0
+"PCI for ACS",4.1,"Uzbekistan",2023,26950528.1030331,22504144.6786269,4446383.42440613
+"PCI for ACS",4.1,"Uzbekistan",2024,32892223.5187299,23563986.9368143,9328236.58191557
+"PCI for ACS",4.1,"Uzbekistan",2025,39541002.9654504,24778100.570609,14762902.3948414
+"PCI for ACS",4.1,"Uzbekistan",2026,46830848.7484553,26037274.1628266,20793574.5856287
+"PCI for ACS",4.1,"Uzbekistan",2027,54884418.9246765,27364141.793625,27520277.1310515
+"PCI for ACS",4.1,"Uzbekistan",2028,63861618.9467504,28782478.4881805,35079140.4585699
+"PCI for ACS",4.1,"Uzbekistan",2029,73826574.5094766,30264155.4642695,43562419.0452071
+"PCI for ACS",4.1,"Uzbekistan",2030,84739314.5687904,31752468.1958457,52986846.3729447
+"Management of acute ventilatory failure",4.2,"Uzbekistan",2020,706754.425183528,706754.425183528,0
+"Management of acute ventilatory failure",4.2,"Uzbekistan",2021,724445.494356957,724445.494356957,0
+"Management of acute ventilatory failure",4.2,"Uzbekistan",2022,742272.842103802,742272.842103802,0
+"Management of acute ventilatory failure",4.2,"Uzbekistan",2023,910322.472892656,760134.590159524,150187.882733132
+"Management of acute ventilatory failure",4.2,"Uzbekistan",2024,1085466.02759684,777798.191373269,307667.836223569
+"Management of acute ventilatory failure",4.2,"Uzbekistan",2025,1267911.30790755,795205.261144879,472706.046762674
+"Management of acute ventilatory failure",4.2,"Uzbekistan",2026,1460664.097794,813757.862794954,646906.234999046
+"Management of acute ventilatory failure",4.2,"Uzbekistan",2027,1661150.52716942,831472.150096686,829678.37707273
+"Management of acute ventilatory failure",4.2,"Uzbekistan",2028,1870266.27924975,848644.689875478,1021621.58937427
+"Management of acute ventilatory failure",4.2,"Uzbekistan",2029,2089376.04507869,865686.063478931,1223689.98159976
+"Management of acute ventilatory failure",4.2,"Uzbekistan",2030,2319728.4278853,882888.906512636,1436839.52137267
+"Treatment of early-stage breast cancer",4.3,"Uzbekistan",2020,48980.3951631286,48980.3951631286,0
+"Treatment of early-stage breast cancer",4.3,"Uzbekistan",2021,50475.2098158595,50475.2098158595,0
+"Treatment of early-stage breast cancer",4.3,"Uzbekistan",2022,52048.7588083596,52048.7588083596,0
+"Treatment of early-stage breast cancer",4.3,"Uzbekistan",2023,88269.746964343,53684.5244695419,34585.222494801
+"Treatment of early-stage breast cancer",4.3,"Uzbekistan",2024,126697.082825968,55356.0699339857,71341.0128919824
+"Treatment of early-stage breast cancer",4.3,"Uzbekistan",2025,167400.430590043,57051.7156703904,110348.714919652
+"Treatment of early-stage breast cancer",4.3,"Uzbekistan",2026,210123.45686421,58672.223922694,151451.232941516
+"Treatment of early-stage breast cancer",4.3,"Uzbekistan",2027,255021.333306538,60272.4328007317,194748.900505806
+"Treatment of early-stage breast cancer",4.3,"Uzbekistan",2028,302266.546126251,61878.2735596179,240388.272566634
+"Treatment of early-stage breast cancer",4.3,"Uzbekistan",2029,352053.945200481,63505.7902989939,288548.154901487
+"Treatment of early-stage breast cancer",4.3,"Uzbekistan",2030,404455.06219161,65144.9895405706,339310.07265104
+"Treatment of early-stage colorectal cancer",4.4,"Uzbekistan",2020,293784.292715931,293784.292715931,0
+"Treatment of early-stage colorectal cancer",4.4,"Uzbekistan",2021,304510.972911444,304510.972911444,0
+"Treatment of early-stage colorectal cancer",4.4,"Uzbekistan",2022,316314.30433138,316314.30433138,0
+"Treatment of early-stage colorectal cancer",4.4,"Uzbekistan",2023,541071.988594401,329073.022303027,211998.966291373
+"Treatment of early-stage colorectal cancer",4.4,"Uzbekistan",2024,784850.094847916,342831.552855914,442018.541992002
+"Treatment of early-stage colorectal cancer",4.4,"Uzbekistan",2025,1050729.29701322,357771.566973163,692957.730040058
+"Treatment of early-stage colorectal cancer",4.4,"Uzbekistan",2026,1337429.66124731,372623.191157544,964806.470089764
+"Treatment of early-stage colorectal cancer",4.4,"Uzbekistan",2027,1647998.1863085,387826.196213081,1260171.99009542
+"Treatment of early-stage colorectal cancer",4.4,"Uzbekistan",2028,1986513.29704096,403705.921932741,1582807.37510822
+"Treatment of early-stage colorectal cancer",4.4,"Uzbekistan",2029,2355809.87864437,420154.798265262,1935655.08037911
+"Treatment of early-stage colorectal cancer",4.4,"Uzbekistan",2030,2756326.98265082,436735.392718027,2319591.5899328

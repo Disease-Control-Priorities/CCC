@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"El Salvador",2020,4160.21694292123,4160.21694292123,0
+"IDU harm reduction measures",1.1,"El Salvador",2021,4206.83564275421,4206.83564275421,0
+"IDU harm reduction measures",1.1,"El Salvador",2022,4248.4930859369,4248.4930859369,0
+"IDU harm reduction measures",1.1,"El Salvador",2023,46601.0240924069,4285.1516406811,42315.8724517258
+"IDU harm reduction measures",1.1,"El Salvador",2024,89584.7946496111,4317.08013870238,85267.7145109087
+"IDU harm reduction measures",1.1,"El Salvador",2025,133088.43133472,4344.90041983449,128743.530914885
+"IDU harm reduction measures",1.1,"El Salvador",2026,177227.198878523,4374.15970002444,172853.039178498
+"IDU harm reduction measures",1.1,"El Salvador",2027,221767.967228559,4399.11352385903,217368.8537047
+"IDU harm reduction measures",1.1,"El Salvador",2028,266641.154902927,4420.48726239561,262220.667640531
+"IDU harm reduction measures",1.1,"El Salvador",2029,311836.977500933,4439.45134183916,307397.526159094
+"IDU harm reduction measures",1.1,"El Salvador",2030,357363.306503967,4456.82620453448,352906.480299433
+"Pulmonary rehabilitation",1.2,"El Salvador",2020,182692.781512843,182692.781512843,0
+"Pulmonary rehabilitation",1.2,"El Salvador",2021,187513.218037825,187513.218037825,0
+"Pulmonary rehabilitation",1.2,"El Salvador",2022,192228.067696776,192228.067696776,0
+"Pulmonary rehabilitation",1.2,"El Salvador",2023,203632.876017421,196811.198966395,6821.67705102649
+"Pulmonary rehabilitation",1.2,"El Salvador",2024,215331.832091655,201241.173463575,14090.6586280802
+"Pulmonary rehabilitation",1.2,"El Salvador",2025,227376.505134599,205538.378269346,21838.1268652527
+"Pulmonary rehabilitation",1.2,"El Salvador",2026,241225.851522316,210937.91396462,30287.9375576958
+"Pulmonary rehabilitation",1.2,"El Salvador",2027,255430.198434103,216071.825523158,39358.372910945
+"Pulmonary rehabilitation",1.2,"El Salvador",2028,269985.843869491,220935.431512739,49050.4123567514
+"Pulmonary rehabilitation",1.2,"El Salvador",2029,284897.506168605,225544.642981084,59352.8631875205
+"Pulmonary rehabilitation",1.2,"El Salvador",2030,300214.222662163,229959.2605813,70254.9620808626
+"Depression chronic treatment",2.1,"El Salvador",2020,0,0,0
+"Depression chronic treatment",2.1,"El Salvador",2021,0,0,0
+"Depression chronic treatment",2.1,"El Salvador",2022,0,0,0
+"Depression chronic treatment",2.1,"El Salvador",2023,0,0,0
+"Depression chronic treatment",2.1,"El Salvador",2024,0,0,0
+"Depression chronic treatment",2.1,"El Salvador",2025,0,0,0
+"Depression chronic treatment",2.1,"El Salvador",2026,0,0,0
+"Depression chronic treatment",2.1,"El Salvador",2027,0,0,0
+"Depression chronic treatment",2.1,"El Salvador",2028,0,0,0
+"Depression chronic treatment",2.1,"El Salvador",2029,0,0,0
+"Depression chronic treatment",2.1,"El Salvador",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"El Salvador",2020,840289.572011312,840289.572011312,0
+"Bipolar disorder chronic treatment",2.11,"El Salvador",2021,846499.776548484,846499.776548484,0
+"Bipolar disorder chronic treatment",2.11,"El Salvador",2022,852505.934878244,852505.934878244,0
+"Bipolar disorder chronic treatment",2.11,"El Salvador",2023,3070625.9938275,858267.511022607,2212358.4828049
+"Bipolar disorder chronic treatment",2.11,"El Salvador",2024,5316741.33628192,863711.557419361,4453029.77886256
+"Bipolar disorder chronic treatment",2.11,"El Salvador",2025,7589038.05658008,868865.62326099,6720172.43331909
+"Bipolar disorder chronic treatment",2.11,"El Salvador",2026,9893564.69119419,874418.615809042,9019146.07538515
+"Bipolar disorder chronic treatment",2.11,"El Salvador",2027,12223869.0262784,879643.967419946,11344225.0588585
+"Bipolar disorder chronic treatment",2.11,"El Salvador",2028,14578947.6247486,884599.151995614,13694348.472753
+"Bipolar disorder chronic treatment",2.11,"El Salvador",2029,16958797.9354085,889362.77190599,16069435.1635025
+"Bipolar disorder chronic treatment",2.11,"El Salvador",2030,19363155.3065015,893964.479917707,18469190.8265838
+"Schizophrenia chronic treatment",2.12,"El Salvador",2020,2869752.95610224,2869752.95610224,0
+"Schizophrenia chronic treatment",2.12,"El Salvador",2021,2909148.54564213,2909148.54564213,0
+"Schizophrenia chronic treatment",2.12,"El Salvador",2022,2948398.04108957,2948398.04108957,0
+"Schizophrenia chronic treatment",2.12,"El Salvador",2023,3360244.35486806,2986883.87099384,373360.483874229
+"Schizophrenia chronic treatment",2.12,"El Salvador",2024,3779930.96157752,3023789.36720584,756141.594371672
+"Schizophrenia chronic treatment",2.12,"El Salvador",2025,4206439.6312898,3058720.76494055,1147718.86634925
+"Schizophrenia chronic treatment",2.12,"El Salvador",2026,4643862.96342152,3094813.71200903,1549049.25141249
+"Schizophrenia chronic treatment",2.12,"El Salvador",2027,5087675.89889335,3128935.49334248,1958740.40555088
+"Schizophrenia chronic treatment",2.12,"El Salvador",2028,5537155.19488657,3161021.79966082,2376133.39522576
+"Schizophrenia chronic treatment",2.12,"El Salvador",2029,5991828.18997281,3191161.60382003,2800666.58615278
+"Schizophrenia chronic treatment",2.12,"El Salvador",2030,6450979.54846595,3219304.3124492,3231675.23601675
+"Epilepsy acute and chronic treatment",2.13,"El Salvador",2020,520503.644137779,520503.644137779,0
+"Epilepsy acute and chronic treatment",2.13,"El Salvador",2021,522965.675486217,522965.675486217,0
+"Epilepsy acute and chronic treatment",2.13,"El Salvador",2022,525436.190800066,525436.190800066,0
+"Epilepsy acute and chronic treatment",2.13,"El Salvador",2023,567497.954809522,527905.074241415,39592.8805681062
+"Epilepsy acute and chronic treatment",2.13,"El Salvador",2024,609972.955053077,530357.501886462,79615.4531666151
+"Epilepsy acute and chronic treatment",2.13,"El Salvador",2025,652872.007252982,532783.023503288,120088.983749694
+"Epilepsy acute and chronic treatment",2.13,"El Salvador",2026,696286.175481762,535229.99937068,161056.176111081
+"Epilepsy acute and chronic treatment",2.13,"El Salvador",2027,740071.857094207,537569.779066056,202502.078028151
+"Epilepsy acute and chronic treatment",2.13,"El Salvador",2028,784222.980184359,539797.212413284,244425.767771075
+"Epilepsy acute and chronic treatment",2.13,"El Salvador",2029,828721.075941863,541903.288671584,286817.787270279
+"Epilepsy acute and chronic treatment",2.13,"El Salvador",2030,873555.921182682,543888.961657044,329666.959525638
+"Asthma/COPD chronic treatment",2.14,"El Salvador",2020,9817852.18255125,9817852.18255125,0
+"Asthma/COPD chronic treatment",2.14,"El Salvador",2021,9859413.3767095,9859413.3767095,0
+"Asthma/COPD chronic treatment",2.14,"El Salvador",2022,9904410.19492758,9904410.19492758,0
+"Asthma/COPD chronic treatment",2.14,"El Salvador",2023,10296446.5481963,9951516.81730679,344929.730889538
+"Asthma/COPD chronic treatment",2.14,"El Salvador",2024,10694570.3804652,9999973.89565426,694596.484810928
+"Asthma/COPD chronic treatment",2.14,"El Salvador",2025,11097642.1298674,10048209.7194937,1049432.41037372
+"Asthma/COPD chronic treatment",2.14,"El Salvador",2026,11504544.8061134,10094725.2649676,1409819.54114579
+"Asthma/COPD chronic treatment",2.14,"El Salvador",2027,11914645.963856,10138785.8363978,1775860.12745821
+"Asthma/COPD chronic treatment",2.14,"El Salvador",2028,12326810.6278685,10179403.2349111,2147407.39295742
+"Asthma/COPD chronic treatment",2.14,"El Salvador",2029,12739564.0143335,10215533.9475166,2524030.06681696
+"Asthma/COPD chronic treatment",2.14,"El Salvador",2030,13152471.7592779,10247152.6971868,2905319.06209104
+"Diabetes screening and treatment",2.3,"El Salvador",2020,136740979.464188,136740979.464188,0
+"Diabetes screening and treatment",2.3,"El Salvador",2021,139218456.56819,139218456.56819,0
+"Diabetes screening and treatment",2.3,"El Salvador",2022,141770269.623331,141770269.623331,0
+"Diabetes screening and treatment",2.3,"El Salvador",2023,149392944.729819,144388298.905529,5004645.82428959
+"Diabetes screening and treatment",2.3,"El Salvador",2024,157288268.674375,147053857.375793,10234411.2985819
+"Diabetes screening and treatment",2.3,"El Salvador",2025,165468804.595721,149761574.689964,15707229.905757
+"Diabetes screening and treatment",2.3,"El Salvador",2026,173934457.751626,152493610.932241,21440846.8193848
+"Diabetes screening and treatment",2.3,"El Salvador",2027,182686243.5989,155238553.870741,27447689.7281591
+"Diabetes screening and treatment",2.3,"El Salvador",2028,191745306.361208,158004714.796229,33740591.5649789
+"Diabetes screening and treatment",2.3,"El Salvador",2029,201136667.10394,160804817.698948,40331849.4049919
+"Diabetes screening and treatment",2.3,"El Salvador",2030,210875986.778019,163644859.030872,47231127.7471467
+"CVD primary prevention",2.4,"El Salvador",2020,14237197.5583829,14237197.5583829,0
+"CVD primary prevention",2.4,"El Salvador",2021,14503593.5627131,14503593.5627131,0
+"CVD primary prevention",2.4,"El Salvador",2022,14789110.3880021,14789110.3880021,0
+"CVD primary prevention",2.4,"El Salvador",2023,15611568.0642996,15088582.3967709,522985.66752875
+"CVD primary prevention",2.4,"El Salvador",2024,16463454.347053,15393973.8854854,1069480.46156757
+"CVD primary prevention",2.4,"El Salvador",2025,17339908.5720513,15699591.0091465,1640317.56290482
+"CVD primary prevention",2.4,"El Salvador",2026,18254732.9322061,16016704.393753,2238028.53845309
+"CVD primary prevention",2.4,"El Salvador",2027,19196286.0150972,16333763.3626375,2862522.65245968
+"CVD primary prevention",2.4,"El Salvador",2028,20156275.4403934,16643418.3756777,3512857.06471575
+"CVD primary prevention",2.4,"El Salvador",2029,21122455.3575622,16936088.577041,4186366.78052125
+"CVD primary prevention",2.4,"El Salvador",2030,22084917.5635217,17205180.0649623,4879737.4985594
+"Aspirin for suspected ACS",2.5,"El Salvador",2020,13865.105422024,13865.105422024,0
+"Aspirin for suspected ACS",2.5,"El Salvador",2021,14093.9895603042,14093.9895603042,0
+"Aspirin for suspected ACS",2.5,"El Salvador",2022,14324.9123131446,14324.9123131446,0
+"Aspirin for suspected ACS",2.5,"El Salvador",2023,15064.355412454,14559.7013034738,504.654108980183
+"Aspirin for suspected ACS",2.5,"El Salvador",2024,15829.9229246863,14800.7192087965,1029.20371588984
+"Aspirin for suspected ACS",2.5,"El Salvador",2025,16626.4613965871,15050.783566573,1575.67783001406
+"Aspirin for suspected ACS",2.5,"El Salvador",2026,17456.2040283765,15309.9091107377,2146.29491763879
+"Aspirin for suspected ACS",2.5,"El Salvador",2027,18318.1614200476,15575.633070185,2742.52834986253
+"Aspirin for suspected ACS",2.5,"El Salvador",2028,19220.101172443,15853.1637086024,3366.9374638406
+"Aspirin for suspected ACS",2.5,"El Salvador",2029,20173.386427296,16150.1943770217,4023.19205027425
+"Aspirin for suspected ACS",2.5,"El Salvador",2030,21185.5775961964,16470.7572665766,4714.82032961984
+"CVD secondary prevention",2.6,"El Salvador",2020,18534259.267856,18534259.267856,0
+"CVD secondary prevention",2.6,"El Salvador",2021,18956421.9843032,18956421.9843032,0
+"CVD secondary prevention",2.6,"El Salvador",2022,19381404.5571752,19381404.5571752,0
+"CVD secondary prevention",2.6,"El Salvador",2023,20497946.1407907,19811267.3906961,686678.750094585
+"CVD secondary prevention",2.6,"El Salvador",2024,21662970.9794771,20247158.1986644,1415812.78081268
+"CVD secondary prevention",2.6,"El Salvador",2025,22883714.8828285,20691468.8332016,2192246.04962685
+"CVD secondary prevention",2.6,"El Salvador",2026,24204000.1634876,21177368.7892179,3026631.37426971
+"CVD secondary prevention",2.6,"El Salvador",2027,25576943.2905394,21658200.7591745,3918742.53136486
+"CVD secondary prevention",2.6,"El Salvador",2028,27008807.4752017,22137275.3694128,4871532.10578886
+"CVD secondary prevention",2.6,"El Salvador",2029,28506126.3578845,22618609.8877277,5887516.4701568
+"CVD secondary prevention",2.6,"El Salvador",2030,30075475.7946665,23106549.615473,6968926.17919348
+"Heart failure chronic treatment",2.7,"El Salvador",2020,1379630.65748505,1379630.65748505,0
+"Heart failure chronic treatment",2.7,"El Salvador",2021,1416697.82149242,1416697.82149242,0
+"Heart failure chronic treatment",2.7,"El Salvador",2022,1452883.28875567,1452883.28875567,0
+"Heart failure chronic treatment",2.7,"El Salvador",2023,1539886.18143239,1488300.17807913,51586.0033532674
+"Heart failure chronic treatment",2.7,"El Salvador",2024,1630005.47494707,1523100.91362776,106904.561319305
+"Heart failure chronic treatment",2.7,"El Salvador",2025,1723998.8470583,1557648.00358292,166350.843475388
+"Heart failure chronic treatment",2.7,"El Salvador",2026,1831143.93970991,1599592.09861615,231551.841093755
+"Heart failure chronic treatment",2.7,"El Salvador",2027,1941926.01395009,1639845.60551274,302080.40843735
+"Heart failure chronic treatment",2.7,"El Salvador",2028,2056878.77284933,1678759.90962313,378118.863226197
+"Heart failure chronic treatment",2.7,"El Salvador",2029,2176670.49469048,1716866.52752254,459803.967167932
+"Heart failure chronic treatment",2.7,"El Salvador",2030,2302152.53192816,1754875.41525181,547277.116676348
+"Alcohol use screening/brief intervention",2.9,"El Salvador",2020,173307.042346954,173307.042346954,0
+"Alcohol use screening/brief intervention",2.9,"El Salvador",2021,175868.073803689,175868.073803689,0
+"Alcohol use screening/brief intervention",2.9,"El Salvador",2022,178383.35928523,178383.35928523,0
+"Alcohol use screening/brief intervention",2.9,"El Salvador",2023,1966108.98468235,180791.630775389,1785317.35390696
+"Alcohol use screening/brief intervention",2.9,"El Salvador",2024,3797826.43373919,183015.604554127,3614810.82918506
+"Alcohol use screening/brief intervention",2.9,"El Salvador",2025,5667395.19549142,185018.184952514,5482377.0105389
+"Alcohol use screening/brief intervention",2.9,"El Salvador",2026,7583323.61086068,187157.049220886,7396166.56163979
+"Alcohol use screening/brief intervention",2.9,"El Salvador",2027,9532273.8941046,189074.48854716,9343199.40555744
+"Alcohol use screening/brief intervention",2.9,"El Salvador",2028,11508367.1074325,190770.550825773,11317596.5566067
+"Alcohol use screening/brief intervention",2.9,"El Salvador",2029,13506936.0589603,192262.606635075,13314673.4523252
+"Alcohol use screening/brief intervention",2.9,"El Salvador",2030,15523485.0603525,193562.037799156,15329923.0225533
+"Medical management of ACS",3.1,"El Salvador",2020,2276971.53886223,2276971.53886223,0
+"Medical management of ACS",3.1,"El Salvador",2021,2333901.64165143,2333901.64165143,0
+"Medical management of ACS",3.1,"El Salvador",2022,2390070.38580097,2390070.38580097,0
+"Medical management of ACS",3.1,"El Salvador",2023,2928456.93552702,2445310.84178687,483146.093740149
+"Medical management of ACS",3.1,"El Salvador",2024,3489384.72322732,2499475.28322197,989909.440005344
+"Medical management of ACS",3.1,"El Salvador",2025,4074191.01297468,2552867.56463289,1521323.44834179
+"Medical management of ACS",3.1,"El Salvador",2026,4703979.98711519,2616390.13897723,2087589.84813796
+"Medical management of ACS",3.1,"El Salvador",2027,5361741.41285258,2677536.62810435,2684204.78474823
+"Medical management of ACS",3.1,"El Salvador",2028,6048356.76464053,2736562.82620583,3311793.9384347
+"Medical management of ACS",3.1,"El Salvador",2029,6765249.79189027,2793997.07855019,3971252.71334008
+"Medical management of ACS",3.1,"El Salvador",2030,7514716.42408279,2850681.44719997,4664034.97688282
+"Heart failure acute treatment",3.2,"El Salvador",2020,8080953.46213721,8080953.46213721,0
+"Heart failure acute treatment",3.2,"El Salvador",2021,8306133.57105682,8306133.57105682,0
+"Heart failure acute treatment",3.2,"El Salvador",2022,8523790.62315102,8523790.62315102,0
+"Heart failure acute treatment",3.2,"El Salvador",2023,10459845.6646815,8734147.22168688,1725698.44299459
+"Heart failure acute treatment",3.2,"El Salvador",2024,12480647.1297272,8937893.70776055,3542753.42196661
+"Heart failure acute treatment",3.2,"El Salvador",2025,14593247.6291864,9137373.60546468,5455874.02372172
+"Heart failure acute treatment",3.2,"El Salvador",2026,16908764.5548109,9390469.82354045,7518294.73127046
+"Heart failure acute treatment",3.2,"El Salvador",2027,19335578.8632217,9630596.26725047,9704982.5959712
+"Heart failure acute treatment",3.2,"El Salvador",2028,21878403.929602,9859600.26308824,12018803.6665137
+"Heart failure acute treatment",3.2,"El Salvador",2029,24544829.3726183,10080592.1400868,14464237.2325314
+"Heart failure acute treatment",3.2,"El Salvador",2030,27347066.3285284,10298228.8397964,17048837.4887321
+"Cervical cancer screening and treatment",3.3,"El Salvador",2020,1215207.97640795,1215207.97640795,0
+"Cervical cancer screening and treatment",3.3,"El Salvador",2021,1229950.46419772,1229950.46419772,0
+"Cervical cancer screening and treatment",3.3,"El Salvador",2022,1243759.58466023,1243759.58466023,0
+"Cervical cancer screening and treatment",3.3,"El Salvador",2023,2066304.99313287,1256700.11278257,809604.880350307
+"Cervical cancer screening and treatment",3.3,"El Salvador",2024,2904221.44775733,1269015.61774825,1635205.83000908
+"Cervical cancer screening and treatment",3.3,"El Salvador",2025,3757178.68721248,1280953.39842464,2476225.28878784
+"Cervical cancer screening and treatment",3.3,"El Salvador",2026,4625609.7464956,1292789.4620424,3332820.2844532
+"Cervical cancer screening and treatment",3.3,"El Salvador",2027,5508513.91685578,1304286.09012702,4204227.82672876
+"Cervical cancer screening and treatment",3.3,"El Salvador",2028,6405334.02244255,1315419.68112913,5089914.34131342
+"Cervical cancer screening and treatment",3.3,"El Salvador",2029,7314964.51967687,1326077.53060491,5988886.98907196
+"Cervical cancer screening and treatment",3.3,"El Salvador",2030,8235648.03583985,1336089.90593844,6899558.1299014
+"Asthma/COPD acute treatment",3.4,"El Salvador",2020,11284498.5833144,11284498.5833144,0
+"Asthma/COPD acute treatment",3.4,"El Salvador",2021,11351292.5247039,11351292.5247039,0
+"Asthma/COPD acute treatment",3.4,"El Salvador",2022,11421570.4391477,11421570.4391477,0
+"Asthma/COPD acute treatment",3.4,"El Salvador",2023,13764709.1422838,11493763.8629171,2270945.27936669
+"Asthma/COPD acute treatment",3.4,"El Salvador",2024,16140470.2799838,11566914.311272,4573555.96871178
+"Asthma/COPD acute treatment",3.4,"El Salvador",2025,18548670.2025053,11639373.2525216,6909296.94998368
+"Asthma/COPD acute treatment",3.4,"El Salvador",2026,20998377.6869856,11715012.91982,9283364.76716559
+"Asthma/COPD acute treatment",3.4,"El Salvador",2027,23480182.0551844,11786982.7716386,11693199.2835458
+"Asthma/COPD acute treatment",3.4,"El Salvador",2028,25991482.973501,11854086.9744969,14137395.9990041
+"Asthma/COPD acute treatment",3.4,"El Salvador",2029,28528341.3468306,11915117.3189789,16613224.0278517
+"Asthma/COPD acute treatment",3.4,"El Salvador",2030,31088920.3163115,11970213.04576,19118707.2705516
+"Management of bowel obstruction",3.6,"El Salvador",2020,292424.320795825,292424.320795825,0
+"Management of bowel obstruction",3.6,"El Salvador",2021,295563.891831491,295563.891831491,0
+"Management of bowel obstruction",3.6,"El Salvador",2022,298745.943113845,298745.943113845,0
+"Management of bowel obstruction",3.6,"El Salvador",2023,1270856.30610715,301985.656896749,968870.649210404
+"Management of bowel obstruction",3.6,"El Salvador",2024,2264875.89882199,305300.883646227,1959575.01517577
+"Management of bowel obstruction",3.6,"El Salvador",2025,3282411.80468897,308688.781243626,2973723.02344534
+"Management of bowel obstruction",3.6,"El Salvador",2026,4324039.30728757,312054.948347302,4011984.35894027
+"Management of bowel obstruction",3.6,"El Salvador",2027,5390868.25130341,315402.400227037,5075465.85107637
+"Management of bowel obstruction",3.6,"El Salvador",2028,6484092.13429047,318734.81035894,6165357.32393153
+"Management of bowel obstruction",3.6,"El Salvador",2029,7604954.25574438,322058.592948069,7282895.66279631
+"Management of bowel obstruction",3.6,"El Salvador",2030,8754931.87567216,325390.137728492,8429541.73794367
+"Management of appendicitis",3.7,"El Salvador",2020,25590.3127049402,25590.3127049402,0
+"Management of appendicitis",3.7,"El Salvador",2021,25527.0825828961,25527.0825828961,0
+"Management of appendicitis",3.7,"El Salvador",2022,25484.4052339426,25484.4052339426,0
+"Management of appendicitis",3.7,"El Salvador",2023,107141.914225995,25459.4647665731,81682.449459422
+"Management of appendicitis",3.7,"El Salvador",2024,188731.740769386,25446.5675905992,163285.173178787
+"Management of appendicitis",3.7,"El Salvador",2025,270325.709045369,25441.082975953,244884.626069416
+"Management of appendicitis",3.7,"El Salvador",2026,351859.247762731,25432.7234100636,326426.524352668
+"Management of appendicitis",3.7,"El Salvador",2027,433416.052402424,25427.6037875387,407988.448614886
+"Management of appendicitis",3.7,"El Salvador",2028,514986.110651348,25423.3131809268,489562.797470421
+"Management of appendicitis",3.7,"El Salvador",2029,596485.615884778,25415.603562804,571070.012321974
+"Management of appendicitis",3.7,"El Salvador",2030,677796.408231427,25400.9828587072,652395.42537272
+"Repair of hernias",3.8,"El Salvador",2020,1548592.73021052,1548592.73021052,0
+"Repair of hernias",3.8,"El Salvador",2021,1565172.76379382,1565172.76379382,0
+"Repair of hernias",3.8,"El Salvador",2022,1582476.67814521,1582476.67814521,0
+"Repair of hernias",3.8,"El Salvador",2023,6734869.52722624,1600365.03617257,5134504.49105367
+"Repair of hernias",3.8,"El Salvador",2024,12006766.2695814,1618688.79861656,10388077.4709648
+"Repair of hernias",3.8,"El Salvador",2025,17403115.32919,1637289.14328608,15765826.1859039
+"Repair of hernias",3.8,"El Salvador",2026,22915273.2521447,1655129.31663175,21260143.9355129
+"Repair of hernias",3.8,"El Salvador",2027,28554409.413793,1673098.4573069,26881310.9564861
+"Repair of hernias",3.8,"El Salvador",2028,34324307.7325952,1691149.70739375,32633158.0252014
+"Repair of hernias",3.8,"El Salvador",2029,40228532.8419613,1709253.16946481,38519279.6724965
+"Repair of hernias",3.8,"El Salvador",2030,46269963.1672428,1727373.19552823,44542589.9717146
+"Repair of gastrointestinal perforations",3.9,"El Salvador",2020,1816.60874661901,1816.60874661901,0
+"Repair of gastrointestinal perforations",3.9,"El Salvador",2021,1856.10783499915,1856.10783499915,0
+"Repair of gastrointestinal perforations",3.9,"El Salvador",2022,1895.4741470521,1895.4741470521,0
+"Repair of gastrointestinal perforations",3.9,"El Salvador",2023,8142.05024986084,1934.74461382832,6207.30563603252
+"Repair of gastrointestinal perforations",3.9,"El Salvador",2024,14646.8353184286,1973.88091143397,12672.9544069946
+"Repair of gastrointestinal perforations",3.9,"El Salvador",2025,21421.9816266441,2013.05084954971,19408.9307770944
+"Repair of gastrointestinal perforations",3.9,"El Salvador",2026,28551.9988063007,2057.22032165992,26494.7784846408
+"Repair of gastrointestinal perforations",3.9,"El Salvador",2027,35997.1678170353,2100.27154737308,33896.8962696622
+"Repair of gastrointestinal perforations",3.9,"El Salvador",2028,43770.0863199244,2142.53838520205,41627.5479347223
+"Repair of gastrointestinal perforations",3.9,"El Salvador",2029,51889.8596050492,2184.50279404244,49705.3568110068
+"Repair of gastrointestinal perforations",3.9,"El Salvador",2030,60379.8720013343,2226.65024848075,58153.2217528536
+"PCI for ACS",4.1,"El Salvador",2020,1378460.56293106,1378460.56293106,0
+"PCI for ACS",4.1,"El Salvador",2021,1402251.37685544,1402251.37685544,0
+"PCI for ACS",4.1,"El Salvador",2022,1428662.53767756,1428662.53767756,0
+"PCI for ACS",4.1,"El Salvador",2023,1745162.13942263,1457239.76625189,287922.373170737
+"PCI for ACS",4.1,"El Salvador",2024,2076168.78079797,1487776.47382039,588392.306977588
+"PCI for ACS",4.1,"El Salvador",2025,2423406.53245499,1520410.69365916,902995.838795831
+"PCI for ACS",4.1,"El Salvador",2026,2779303.69002475,1550014.59674961,1229289.09327515
+"PCI for ACS",4.1,"El Salvador",2027,3152930.40449541,1581846.60572324,1571083.79877217
+"PCI for ACS",4.1,"El Salvador",2028,3546013.80622124,1615891.07297858,1930122.73324266
+"PCI for ACS",4.1,"El Salvador",2029,3958800.54582659,1651518.42289905,2307282.12292753
+"PCI for ACS",4.1,"El Salvador",2030,4390235.12683467,1687803.36655589,2702431.76027878
+"Management of acute ventilatory failure",4.2,"El Salvador",2020,231608.458587411,231608.458587411,0
+"Management of acute ventilatory failure",4.2,"El Salvador",2021,234182.015099261,234182.015099261,0
+"Management of acute ventilatory failure",4.2,"El Salvador",2022,236739.360093249,236739.360093249,0
+"Management of acute ventilatory failure",4.2,"El Salvador",2023,286523.426475149,239251.884733458,47271.5417416913
+"Management of acute ventilatory failure",4.2,"El Salvador",2024,337316.625803184,241703.249241703,95613.3765614812
+"Management of acute ventilatory failure",4.2,"El Salvador",2025,389134.04019024,244082.623723208,145051.416467032
+"Management of acute ventilatory failure",4.2,"El Salvador",2026,442905.238615013,246879.915670273,196025.32294474
+"Management of acute ventilatory failure",4.2,"El Salvador",2027,497811.487919785,249515.684014242,248295.803905543
+"Management of acute ventilatory failure",4.2,"El Salvador",2028,553822.847859676,251983.561802464,301839.286057212
+"Management of acute ventilatory failure",4.2,"El Salvador",2029,610918.153323041,254289.256294895,356628.897028146
+"Management of acute ventilatory failure",4.2,"El Salvador",2030,669136.73010834,256466.759258161,412669.970850178
+"Treatment of early-stage breast cancer",4.3,"El Salvador",2020,15018.4001914397,15018.4001914397,0
+"Treatment of early-stage breast cancer",4.3,"El Salvador",2021,15295.5651034021,15295.5651034021,0
+"Treatment of early-stage breast cancer",4.3,"El Salvador",2022,15587.8635395008,15587.8635395008,0
+"Treatment of early-stage breast cancer",4.3,"El Salvador",2023,26131.1621047349,15892.6366017101,10238.5255030248
+"Treatment of early-stage breast cancer",4.3,"El Salvador",2024,37093.4878070074,16207.4500325651,20886.0377744423
+"Treatment of early-stage breast cancer",4.3,"El Salvador",2025,48496.489516952,16531.7135554357,31964.7759615164
+"Treatment of early-stage breast cancer",4.3,"El Salvador",2026,60281.5779304466,16842.6700093373,43438.9079211093
+"Treatment of early-stage breast cancer",4.3,"El Salvador",2027,72532.177750968,17164.9555631136,55367.2221878544
+"Treatment of early-stage breast cancer",4.3,"El Salvador",2028,85269.8201188516,17497.3635498953,67772.4565689563
+"Treatment of early-stage breast cancer",4.3,"El Salvador",2029,98499.4875302197,17836.2417938184,80663.2457364014
+"Treatment of early-stage breast cancer",4.3,"El Salvador",2030,112205.656819106,18176.195310861,94029.4615082454
+"Treatment of early-stage colorectal cancer",4.4,"El Salvador",2020,119405.554776747,119405.554776747,0
+"Treatment of early-stage colorectal cancer",4.4,"El Salvador",2021,121505.914583175,121505.914583175,0
+"Treatment of early-stage colorectal cancer",4.4,"El Salvador",2022,123827.50595937,123827.50595937,0
+"Treatment of early-stage colorectal cancer",4.4,"El Salvador",2023,207732.936380034,126340.499318851,81392.4370611831
+"Treatment of early-stage colorectal cancer",4.4,"El Salvador",2024,295352.003841345,129034.258748942,166317.745092403
+"Treatment of early-stage colorectal cancer",4.4,"El Salvador",2025,387138.654034889,131919.676954655,255218.977080234
+"Treatment of early-stage colorectal cancer",4.4,"El Salvador",2026,482048.707995666,134578.036981931,347470.671013735
+"Treatment of early-stage colorectal cancer",4.4,"El Salvador",2027,581551.184443842,137438.63961637,444112.544827472
+"Treatment of early-stage colorectal cancer",4.4,"El Salvador",2028,686061.317674253,140485.040065993,545576.27760826
+"Treatment of early-stage colorectal cancer",4.4,"El Salvador",2029,795654.026561208,143646.438447822,652007.588113386
+"Treatment of early-stage colorectal cancer",4.4,"El Salvador",2030,910115.450912549,146835.837957533,763279.612955016

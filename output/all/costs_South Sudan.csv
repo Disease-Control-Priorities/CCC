@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"South Sudan",2020,1498.08977837922,1498.08977837922,0
+"IDU harm reduction measures",1.1,"South Sudan",2021,1531.52663730316,1531.52663730316,0
+"IDU harm reduction measures",1.1,"South Sudan",2022,1572.17544954718,1572.17544954718,0
+"IDU harm reduction measures",1.1,"South Sudan",2023,17594.8889012993,1617.92081851028,15976.9680827891
+"IDU harm reduction measures",1.1,"South Sudan",2024,34569.501573942,1665.9571717221,32903.54440222
+"IDU harm reduction measures",1.1,"South Sudan",2025,52508.527830395,1714.40180962985,50794.1260207651
+"IDU harm reduction measures",1.1,"South Sudan",2026,71328.7929044433,1760.81329166795,69567.9796127754
+"IDU harm reduction measures",1.1,"South Sudan",2027,91131.2493074956,1808.30223038483,89322.9470771108
+"IDU harm reduction measures",1.1,"South Sudan",2028,111955.991830431,1856.92141501163,110099.07041542
+"IDU harm reduction measures",1.1,"South Sudan",2029,133854.140433556,1906.85008074212,131947.290352814
+"IDU harm reduction measures",1.1,"South Sudan",2030,156880.205766749,1958.22570588348,154921.980060866
+"Pulmonary rehabilitation",1.2,"South Sudan",2020,11704.3862245574,11704.3862245574,0
+"Pulmonary rehabilitation",1.2,"South Sudan",2021,11986.0279734043,11986.0279734043,0
+"Pulmonary rehabilitation",1.2,"South Sudan",2022,12322.1052670715,12322.1052670715,0
+"Pulmonary rehabilitation",1.2,"South Sudan",2023,16142.5460307653,12695.5319523093,3447.01407845596
+"Pulmonary rehabilitation",1.2,"South Sudan",2024,20193.737306226,13083.9982012893,7109.73910493665
+"Pulmonary rehabilitation",1.2,"South Sudan",2025,24468.455542617,13473.135547039,10995.3199955781
+"Pulmonary rehabilitation",1.2,"South Sudan",2026,29014.3655779958,13880.839892594,15133.5256854019
+"Pulmonary rehabilitation",1.2,"South Sudan",2027,33830.6453304075,14295.9793522997,19534.6659781078
+"Pulmonary rehabilitation",1.2,"South Sudan",2028,38937.2426670865,14719.9870126998,24217.2556543868
+"Pulmonary rehabilitation",1.2,"South Sudan",2029,44356.4149016119,15155.1760178315,29201.2388837804
+"Pulmonary rehabilitation",1.2,"South Sudan",2030,50108.408665622,15603.4822144352,34504.9264511868
+"Depression chronic treatment",2.1,"South Sudan",2020,0,0,0
+"Depression chronic treatment",2.1,"South Sudan",2021,0,0,0
+"Depression chronic treatment",2.1,"South Sudan",2022,0,0,0
+"Depression chronic treatment",2.1,"South Sudan",2023,0,0,0
+"Depression chronic treatment",2.1,"South Sudan",2024,0,0,0
+"Depression chronic treatment",2.1,"South Sudan",2025,0,0,0
+"Depression chronic treatment",2.1,"South Sudan",2026,0,0,0
+"Depression chronic treatment",2.1,"South Sudan",2027,0,0,0
+"Depression chronic treatment",2.1,"South Sudan",2028,0,0,0
+"Depression chronic treatment",2.1,"South Sudan",2029,0,0,0
+"Depression chronic treatment",2.1,"South Sudan",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"South Sudan",2020,225799.123163329,225799.123163329,0
+"Bipolar disorder chronic treatment",2.11,"South Sudan",2021,230551.148926424,230551.148926424,0
+"Bipolar disorder chronic treatment",2.11,"South Sudan",2022,236431.871650879,236431.871650879,0
+"Bipolar disorder chronic treatment",2.11,"South Sudan",2023,869757.244921812,243104.952310535,626652.292611277
+"Bipolar disorder chronic treatment",2.11,"South Sudan",2024,1539643.2639038,250119.493787203,1289523.7701166
+"Bipolar disorder chronic treatment",2.11,"South Sudan",2025,2246211.33910438,257171.806619579,1989039.5324848
+"Bipolar disorder chronic treatment",2.11,"South Sudan",2026,2985582.69434017,263875.361692263,2721707.33264791
+"Bipolar disorder chronic treatment",2.11,"South Sudan",2027,3762380.13579004,270739.353354489,3491640.78243555
+"Bipolar disorder chronic treatment",2.11,"South Sudan",2028,4578297.63957174,277774.568885617,4300523.07068612
+"Bipolar disorder chronic treatment",2.11,"South Sudan",2029,5435536.01556007,285012.152348944,5150523.86321113
+"Bipolar disorder chronic treatment",2.11,"South Sudan",2030,6336013.98507257,292455.765154209,6043558.21991836
+"Schizophrenia chronic treatment",2.12,"South Sudan",2020,524685.317484221,524685.317484221,0
+"Schizophrenia chronic treatment",2.12,"South Sudan",2021,536654.377557693,536654.377557693,0
+"Schizophrenia chronic treatment",2.12,"South Sudan",2022,551314.26318158,551314.26318158,0
+"Schizophrenia chronic treatment",2.12,"South Sudan",2023,724080.581006508,567906.33804432,156174.242962188
+"Schizophrenia chronic treatment",2.12,"South Sudan",2024,907430.885749106,585416.802444984,322014.083304122
+"Schizophrenia chronic treatment",2.12,"South Sudan",2025,1100935.48792397,603167.159070661,497768.328853311
+"Schizophrenia chronic treatment",2.12,"South Sudan",2026,1302802.12083347,620177.849646398,682624.271187071
+"Schizophrenia chronic treatment",2.12,"South Sudan",2027,1515429.4647174,637683.520483895,877745.9442335
+"Schizophrenia chronic treatment",2.12,"South Sudan",2028,1739413.31831222,655724.168205629,1083689.15010659
+"Schizophrenia chronic treatment",2.12,"South Sudan",2029,1975544.73068064,674391.374555608,1301153.35612503
+"Schizophrenia chronic treatment",2.12,"South Sudan",2030,2224622.65521593,693748.645517039,1530874.00969889
+"Epilepsy acute and chronic treatment",2.13,"South Sudan",2020,12831.3739758133,12831.3739758133,0
+"Epilepsy acute and chronic treatment",2.13,"South Sudan",2021,13049.7742939425,13049.7742939425,0
+"Epilepsy acute and chronic treatment",2.13,"South Sudan",2022,13318.6858657777,13318.6858657777,0
+"Epilepsy acute and chronic treatment",2.13,"South Sudan",2023,57320.4044887229,13620.6901755381,43699.7143131848
+"Epilepsy acute and chronic treatment",2.13,"South Sudan",2024,103331.638522336,13931.6032979072,89400.0352244292
+"Epilepsy acute and chronic treatment",2.13,"South Sudan",2025,151266.200684485,14234.0173044038,137032.183380082
+"Epilepsy acute and chronic treatment",2.13,"South Sudan",2026,201248.234646592,14541.2237323912,186707.010914201
+"Epilepsy acute and chronic treatment",2.13,"South Sudan",2027,253189.103350275,14843.7844062211,238345.318944054
+"Epilepsy acute and chronic treatment",2.13,"South Sudan",2028,307103.444741436,15143.2920738376,291960.152667599
+"Epilepsy acute and chronic treatment",2.13,"South Sudan",2029,363081.547528679,15443.8641838461,347637.683344833
+"Epilepsy acute and chronic treatment",2.13,"South Sudan",2030,421204.229459891,15747.6351385308,405456.59432136
+"Asthma/COPD chronic treatment",2.14,"South Sudan",2020,2738942.20735634,2738942.20735634,0
+"Asthma/COPD chronic treatment",2.14,"South Sudan",2021,2780665.71064662,2780665.71064662,0
+"Asthma/COPD chronic treatment",2.14,"South Sudan",2022,2833646.16895504,2833646.16895504,0
+"Asthma/COPD chronic treatment",2.14,"South Sudan",2023,3678655.38402185,2893130.17168271,785525.212339133
+"Asthma/COPD chronic treatment",2.14,"South Sudan",2024,4559050.9855564,2954469.29393124,1604581.69162516
+"Asthma/COPD chronic treatment",2.14,"South Sudan",2025,5470940.42108589,3014513.12819236,2456427.29289353
+"Asthma/COPD chronic treatment",2.14,"South Sudan",2026,6417847.21646429,3075241.16631162,3342606.05015266
+"Asthma/COPD chronic treatment",2.14,"South Sudan",2027,7397927.29963767,3135428.46018728,4262498.83945039
+"Asthma/COPD chronic treatment",2.14,"South Sudan",2028,8411847.15680697,3195308.10621688,5216539.0505901
+"Asthma/COPD chronic treatment",2.14,"South Sudan",2029,9462997.23090521,3255982.84898241,6207014.38192279
+"Asthma/COPD chronic treatment",2.14,"South Sudan",2030,10554892.8037699,3318250.62268381,7236642.18108606
+"Diabetes screening and treatment",2.3,"South Sudan",2020,6351027.85075397,6351027.85075397,0
+"Diabetes screening and treatment",2.3,"South Sudan",2021,6493647.30253994,6493647.30253994,0
+"Diabetes screening and treatment",2.3,"South Sudan",2022,6666749.38248862,6666749.38248862,0
+"Diabetes screening and treatment",2.3,"South Sudan",2023,8724321.53616551,6861365.15352149,1862956.38264402
+"Diabetes screening and treatment",2.3,"South Sudan",2024,10904595.1281436,7065582.64524685,3839012.48289675
+"Diabetes screening and treatment",2.3,"South Sudan",2025,13204788.0445447,7271868.952128,5932919.09241665
+"Diabetes screening and treatment",2.3,"South Sudan",2026,15627513.6922403,7478590.89321898,8148922.79902129
+"Diabetes screening and treatment",2.3,"South Sudan",2027,18188341.296238,7690235.95946318,10498105.3367749
+"Diabetes screening and treatment",2.3,"South Sudan",2028,20900060.1915279,7908375.90410851,12991684.2874194
+"Diabetes screening and treatment",2.3,"South Sudan",2029,23778036.8046544,8135074.12494046,15642962.679714
+"Diabetes screening and treatment",2.3,"South Sudan",2030,26837317.8624912,8371909.94910633,18465407.9133849
+"CVD primary prevention",2.4,"South Sudan",2020,2910082.44866612,2910082.44866612,0
+"CVD primary prevention",2.4,"South Sudan",2021,2980666.70194115,2980666.70194115,0
+"CVD primary prevention",2.4,"South Sudan",2022,3066419.24243905,3066419.24243905,0
+"CVD primary prevention",2.4,"South Sudan",2023,4022142.57127611,3163270.4923412,858872.078934907
+"CVD primary prevention",2.4,"South Sudan",2024,5039712.93572556,3265809.89504423,1773903.04068133
+"CVD primary prevention",2.4,"South Sudan",2025,6117835.43826399,3370396.49803227,2747438.94023172
+"CVD primary prevention",2.4,"South Sudan",2026,7251496.69480659,3473373.14417494,3778123.55063165
+"CVD primary prevention",2.4,"South Sudan",2027,8452506.13278175,3579866.63908383,4872639.49369792
+"CVD primary prevention",2.4,"South Sudan",2028,9724521.50463265,3689778.26291308,6034743.24171957
+"CVD primary prevention",2.4,"South Sudan",2029,11071035.2967646,3803022.25114968,7268013.04561493
+"CVD primary prevention",2.4,"South Sudan",2030,12495759.9707541,3919672.52359992,8576087.4471542
+"Aspirin for suspected ACS",2.5,"South Sudan",2020,1082.75633198236,1082.75633198236,0
+"Aspirin for suspected ACS",2.5,"South Sudan",2021,1106.19222429945,1106.19222429945,0
+"Aspirin for suspected ACS",2.5,"South Sudan",2022,1134.76666492402,1134.76666492402,0
+"Aspirin for suspected ACS",2.5,"South Sudan",2023,1484.19449777743,1167.26559949489,316.928898282542
+"Aspirin for suspected ACS",2.5,"South Sudan",2024,1855.28487241993,1202.18427738101,653.100595038918
+"Aspirin for suspected ACS",2.5,"South Sudan",2025,2248.62213080301,1238.53951140381,1010.0826193992
+"Aspirin for suspected ACS",2.5,"South Sudan",2026,2663.74685035644,1275.28306256446,1388.46378779199
+"Aspirin for suspected ACS",2.5,"South Sudan",2027,3105.51905443114,1314.0850314823,1791.43402294884
+"Aspirin for suspected ACS",2.5,"South Sudan",2028,3576.29900463345,1354.97087730573,2221.32812732772
+"Aspirin for suspected ACS",2.5,"South Sudan",2029,4078.37342619279,1397.95136833857,2680.42205785422
+"Aspirin for suspected ACS",2.5,"South Sudan",2030,4614.0807514688,1443.08687255705,3170.99387891174
+"CVD secondary prevention",2.6,"South Sudan",2020,4188402.23849346,4188402.23849346,0
+"CVD secondary prevention",2.6,"South Sudan",2021,4288670.67455752,4288670.67455752,0
+"CVD secondary prevention",2.6,"South Sudan",2022,4405089.86980521,4405089.86980521,0
+"CVD secondary prevention",2.6,"South Sudan",2023,5762069.22807566,4531660.23854199,1230408.98953367
+"CVD secondary prevention",2.6,"South Sudan",2024,7194244.79896654,4660576.74806791,2533668.05089863
+"CVD secondary prevention",2.6,"South Sudan",2025,8699245.69619527,4787330.06061651,3911915.63557876
+"CVD secondary prevention",2.6,"South Sudan",2026,10320144.7240803,4930642.18674387,5389502.53733639
+"CVD secondary prevention",2.6,"South Sudan",2027,12036523.6200538,5073580.78248977,6962942.83756405
+"CVD secondary prevention",2.6,"South Sudan",2028,13857769.3416701,5217603.41285157,8640165.92881853
+"CVD secondary prevention",2.6,"South Sudan",2029,15794867.642356,5364557.94608301,10430309.696273
+"CVD secondary prevention",2.6,"South Sudan",2030,17857789.9556568,5515959.69220474,12341830.263452
+"Heart failure chronic treatment",2.7,"South Sudan",2020,738408.461389176,738408.461389176,0
+"Heart failure chronic treatment",2.7,"South Sudan",2021,757019.940461872,757019.940461872,0
+"Heart failure chronic treatment",2.7,"South Sudan",2022,777572.02246218,777572.02246218,0
+"Heart failure chronic treatment",2.7,"South Sudan",2023,1015898.13594001,798967.351280115,216930.784659895
+"Heart failure chronic treatment",2.7,"South Sudan",2024,1265712.3762192,819829.915629273,445882.460589925
+"Heart failure chronic treatment",2.7,"South Sudan",2025,1526018.44978299,839331.338585964,686687.111197025
+"Heart failure chronic treatment",2.7,"South Sudan",2026,1814688.39516999,865864.805638419,948823.589531572
+"Heart failure chronic treatment",2.7,"South Sudan",2027,2120123.89296746,891444.41346796,1228679.4794995
+"Heart failure chronic treatment",2.7,"South Sudan",2028,2443384.71867104,916225.74579934,1527158.9728717
+"Heart failure chronic treatment",2.7,"South Sudan",2029,2785714.12880066,940498.125720933,1845216.00307973
+"Heart failure chronic treatment",2.7,"South Sudan",2030,3147703.74575153,964457.161316302,2183246.58443523
+"Alcohol use screening/brief intervention",2.9,"South Sudan",2020,53963.3384033651,53963.3384033651,0
+"Alcohol use screening/brief intervention",2.9,"South Sudan",2021,55176.4563779935,55176.4563779935,0
+"Alcohol use screening/brief intervention",2.9,"South Sudan",2022,56657.8924120203,56657.8924120203,0
+"Alcohol use screening/brief intervention",2.9,"South Sudan",2023,634338.274875346,58329.9563103766,576008.318564969
+"Alcohol use screening/brief intervention",2.9,"South Sudan",2024,1246910.56313976,60089.347820684,1186821.21531907
+"Alcohol use screening/brief intervention",2.9,"South Sudan",2025,1894982.76440093,61866.7481791667,1833116.01622177
+"Alcohol use screening/brief intervention",2.9,"South Sudan",2026,2575498.95456482,63568.0154039614,2511930.93916086
+"Alcohol use screening/brief intervention",2.9,"South Sudan",2027,3292517.43139138,65312.9926007901,3227204.43879059
+"Alcohol use screening/brief intervention",2.9,"South Sudan",2028,4047816.94980947,67104.6206327691,3980712.3291767
+"Alcohol use screening/brief intervention",2.9,"South Sudan",2029,4843647.25190316,68950.8616314829,4774696.39027168
+"Alcohol use screening/brief intervention",2.9,"South Sudan",2030,5682316.84367435,70856.7904019755,5611460.05327237
+"Medical management of ACS",3.1,"South Sudan",2020,160167.878871915,160167.878871915,0
+"Medical management of ACS",3.1,"South Sudan",2021,164162.281092144,164162.281092144,0
+"Medical management of ACS",3.1,"South Sudan",2022,168725.896949828,168725.896949828,0
+"Medical management of ACS",3.1,"South Sudan",2023,585960.679678504,173617.979164001,412342.700514503
+"Medical management of ACS",3.1,"South Sudan",2024,1026972.15225525,178531.006116721,848441.146138534
+"Medical management of ACS",3.1,"South Sudan",2025,1491359.47310336,183281.362408669,1308078.11069469
+"Medical management of ACS",3.1,"South Sudan",2026,1990280.80061468,188893.724476656,1801387.07613802
+"Medical management of ACS",3.1,"South Sudan",2027,2519685.05887596,194434.70146679,2325250.35740917
+"Medical management of ACS",3.1,"South Sudan",2028,3081574.76546002,199944.901722562,2881629.86373746
+"Medical management of ACS",3.1,"South Sudan",2029,3678420.61712589,205484.774598721,3472935.84252717
+"Medical management of ACS",3.1,"South Sudan",2030,4312394.59435837,211101.571019826,4101293.02333854
+"Heart failure acute treatment",3.2,"South Sudan",2020,704682.683762168,704682.683762168,0
+"Heart failure acute treatment",3.2,"South Sudan",2021,722339.587763692,722339.587763692,0
+"Heart failure acute treatment",3.2,"South Sudan",2022,741934.627639386,741934.627639386,0
+"Heart failure acute treatment",3.2,"South Sudan",2023,2573174.24109207,762421.997360613,1810752.24373146
+"Heart failure acute treatment",3.2,"South Sudan",2024,4501689.82154431,782486.153911601,3719203.66763271
+"Heart failure acute treatment",3.2,"South Sudan",2025,6523355.34338574,801331.527057468,5722023.81632827
+"Heart failure acute treatment",3.2,"South Sudan",2026,8718583.60384663,826585.834014263,7891997.76983237
+"Heart failure acute treatment",3.2,"South Sudan",2027,11050385.1573967,851013.608205065,10199371.5491916
+"Heart failure acute treatment",3.2,"South Sudan",2028,13525906.5781625,874760.816792886,12651145.7613696
+"Heart failure acute treatment",3.2,"South Sudan",2029,16154149.8609219,898100.994790515,15256048.8661314
+"Heart failure acute treatment",3.2,"South Sudan",2030,18940889.8031517,921216.949368749,18019672.853783
+"Cervical cancer screening and treatment",3.3,"South Sudan",2020,233165.155517935,233165.155517935,0
+"Cervical cancer screening and treatment",3.3,"South Sudan",2021,238201.415146649,238201.415146649,0
+"Cervical cancer screening and treatment",3.3,"South Sudan",2022,244367.096257919,244367.096257919,0
+"Cervical cancer screening and treatment",3.3,"South Sudan",2023,638894.736726276,251368.42100706,387526.315719217
+"Cervical cancer screening and treatment",3.3,"South Sudan",2024,1056880.13112993,258816.018010921,798064.113119004
+"Cervical cancer screening and treatment",3.3,"South Sudan",2025,1499006.92972643,266444.881738641,1232562.04798779
+"Cervical cancer screening and treatment",3.3,"South Sudan",2026,1962301.36979094,273700.969532498,1688600.40025844
+"Cervical cancer screening and treatment",3.3,"South Sudan",2027,2450895.12295401,281234.396045326,2169660.72690868
+"Cervical cancer screening and treatment",3.3,"South Sudan",2028,2966356.06622161,289051.895538946,2677304.17068266
+"Cervical cancer screening and treatment",3.3,"South Sudan",2029,3510478.98360651,297174.371655646,3213304.61195087
+"Cervical cancer screening and treatment",3.3,"South Sudan",2030,4085245.01468288,305625.302341904,3779619.71234097
+"Asthma/COPD acute treatment",3.4,"South Sudan",2020,654513.46980121,654513.46980121,0
+"Asthma/COPD acute treatment",3.4,"South Sudan",2021,664761.335754587,664761.335754587,0
+"Asthma/COPD acute treatment",3.4,"South Sudan",2022,677715.523195014,677715.523195014,0
+"Asthma/COPD acute treatment",3.4,"South Sudan",2023,2336337.17389843,692248.051525462,1644089.12237297
+"Asthma/COPD acute treatment",3.4,"South Sudan",2024,4066896.47535161,707244.412207632,3359652.06314397
+"Asthma/COPD acute treatment",3.4,"South Sudan",2025,5867136.17821629,721952.091247675,5145184.08696861
+"Asthma/COPD acute treatment",3.4,"South Sudan",2026,7741265.16909508,736883.884778956,7004381.28431613
+"Asthma/COPD acute treatment",3.4,"South Sudan",2027,9687758.08313159,751715.072174182,8936043.01095741
+"Asthma/COPD acute treatment",3.4,"South Sudan",2028,11707877.4103081,766500.779378949,10941376.6309291
+"Asthma/COPD acute treatment",3.4,"South Sudan",2029,13806874.3921051,781496.32552808,13025378.066577
+"Asthma/COPD acute treatment",3.4,"South Sudan",2030,15990861.0417552,796889.092442211,15193971.949313
+"Management of bowel obstruction",3.6,"South Sudan",2020,25522.3877241774,25522.3877241774,0
+"Management of bowel obstruction",3.6,"South Sudan",2021,25990.8503015616,25990.8503015616,0
+"Management of bowel obstruction",3.6,"South Sudan",2022,26562.4593652802,26562.4593652802,0
+"Management of bowel obstruction",3.6,"South Sudan",2023,296017.61782003,27220.0108340257,268797.606986004
+"Management of bowel obstruction",3.6,"South Sudan",2024,579377.831795952,27918.4815377235,551459.350258229
+"Management of bowel obstruction",3.6,"South Sudan",2025,877088.916633898,28627.1749364052,848461.741697493
+"Management of bowel obstruction",3.6,"South Sudan",2026,1189545.3087682,29341.4189738684,1160203.88979433
+"Management of bowel obstruction",3.6,"South Sudan",2027,1517260.41643377,30061.3652854897,1487199.05114829
+"Management of bowel obstruction",3.6,"South Sudan",2028,1861138.05572269,30793.0882463934,1830344.9674763
+"Management of bowel obstruction",3.6,"South Sudan",2029,2222439.56744835,31544.6265831735,2190894.94086518
+"Management of bowel obstruction",3.6,"South Sudan",2030,2602606.41942086,32323.2060185454,2570283.21340232
+"Management of appendicitis",3.7,"South Sudan",2020,3106.74665704876,3106.74665704876,0
+"Management of appendicitis",3.7,"South Sudan",2021,3161.55822265797,3161.55822265797,0
+"Management of appendicitis",3.7,"South Sudan",2022,3230.55429046938,3230.55429046938,0
+"Management of appendicitis",3.7,"South Sudan",2023,35982.7534468309,3308.75893763962,32673.9945091913
+"Management of appendicitis",3.7,"South Sudan",2024,70337.855513273,3389.74698023112,66948.1085330418
+"Management of appendicitis",3.7,"South Sudan",2025,106237.277982147,3468.86154219449,102768.416439953
+"Management of appendicitis",3.7,"South Sudan",2026,143536.685154694,3543.84758879269,139992.837565901
+"Management of appendicitis",3.7,"South Sudan",2027,182329.30975271,3618.92133226217,178710.388420448
+"Management of appendicitis",3.7,"South Sudan",2028,222628.175591136,3694.19676400131,218933.978827135
+"Management of appendicitis",3.7,"South Sudan",2029,264482.191918828,3770.23367297636,260711.958245851
+"Management of appendicitis",3.7,"South Sudan",2030,307880.337615732,3846.56840984254,304033.769205889
+"Repair of hernias",3.8,"South Sudan",2020,103922.996675659,103922.996675659,0
+"Repair of hernias",3.8,"South Sudan",2021,105796.255793866,105796.255793866,0
+"Repair of hernias",3.8,"South Sudan",2022,108141.702338781,108141.702338781,0
+"Repair of hernias",3.8,"South Sudan",2023,1205002.38378241,110804.816899532,1094197.56688288
+"Repair of hernias",3.8,"South Sudan",2024,2357367.10400646,113599.528981315,2243767.57502515
+"Repair of hernias",3.8,"South Sudan",2025,3565626.97008297,116396.947622165,3449230.02246081
+"Repair of hernias",3.8,"South Sudan",2026,4827764.92796686,119128.699673556,4708636.22829331
+"Repair of hernias",3.8,"South Sudan",2027,6147916.29678566,121899.012783696,6026017.28400196
+"Repair of hernias",3.8,"South Sudan",2028,7529206.38194578,124725.435177031,7404480.94676875
+"Repair of hernias",3.8,"South Sudan",2029,8976861.15756722,127645.22596868,8849215.93159854
+"Repair of hernias",3.8,"South Sudan",2030,10496838.8314745,130686.873303676,10366151.9581708
+"Repair of gastrointestinal perforations",3.9,"South Sudan",2020,451.022205997604,451.022205997604,0
+"Repair of gastrointestinal perforations",3.9,"South Sudan",2021,460.54370572178,460.54370572178,0
+"Repair of gastrointestinal perforations",3.9,"South Sudan",2022,472.152371474416,472.152371474416,0
+"Repair of gastrointestinal perforations",3.9,"South Sudan",2023,5276.60459587981,485.205020310787,4791.39957556902
+"Repair of gastrointestinal perforations",3.9,"South Sudan",2024,10352.445975484,498.850166787042,9853.59580869695
+"Repair of gastrointestinal perforations",3.9,"South Sudan",2025,15703.3591798667,512.52663691959,15190.8325429471
+"Repair of gastrointestinal perforations",3.9,"South Sudan",2026,21327.9232847441,526.044910162752,20801.8783745813
+"Repair of gastrointestinal perforations",3.9,"South Sudan",2027,27247.664531565,539.797852749186,26707.8666788158
+"Repair of gastrointestinal perforations",3.9,"South Sudan",2028,33479.2025413312,553.83207547095,32925.3704658602
+"Repair of gastrointestinal perforations",3.9,"South Sudan",2029,40042.6354514859,568.225001843502,39474.4104496424
+"Repair of gastrointestinal perforations",3.9,"South Sudan",2030,46957.1045774323,583.020588579719,46374.0839888526
+NA,4.1,"South Sudan",2020,NA,NA,NA
+NA,4.1,"South Sudan",2021,NA,NA,NA
+NA,4.1,"South Sudan",2022,NA,NA,NA
+NA,4.1,"South Sudan",2023,NA,NA,NA
+NA,4.1,"South Sudan",2024,NA,NA,NA
+NA,4.1,"South Sudan",2025,NA,NA,NA
+NA,4.1,"South Sudan",2026,NA,NA,NA
+NA,4.1,"South Sudan",2027,NA,NA,NA
+NA,4.1,"South Sudan",2028,NA,NA,NA
+NA,4.1,"South Sudan",2029,NA,NA,NA
+NA,4.1,"South Sudan",2030,NA,NA,NA
+"Management of acute ventilatory failure",4.2,"South Sudan",2020,31834.6161022776,31834.6161022776,0
+"Management of acute ventilatory failure",4.2,"South Sudan",2021,32391.7590751723,32391.7590751723,0
+"Management of acute ventilatory failure",4.2,"South Sudan",2022,33084.7945909825,33084.7945909825,0
+"Management of acute ventilatory failure",4.2,"South Sudan",2023,114279.82701894,33860.6894870933,80419.1375318466
+"Management of acute ventilatory failure",4.2,"South Sudan",2024,199330.969521199,34663.0613912712,164667.908129928
+"Management of acute ventilatory failure",4.2,"South Sudan",2025,288163.229812898,35454.3101501817,252708.919662716
+"Management of acute ventilatory failure",4.2,"South Sudan",2026,381031.798148915,36259.8671639122,344771.930985003
+"Management of acute ventilatory failure",4.2,"South Sudan",2027,477937.739924759,37065.6518393476,440872.088085412
+"Management of acute ventilatory failure",4.2,"South Sudan",2028,579018.48007167,37874.9567924811,541143.523279188
+"Management of acute ventilatory failure",4.2,"South Sudan",2029,684580.055274305,38699.2524878342,645880.802786471
+"Management of acute ventilatory failure",4.2,"South Sudan",2030,794957.624947901,39546.961448543,755410.663499358
+"Treatment of early-stage breast cancer",4.3,"South Sudan",2020,1147.66715280245,1147.66715280245,0
+"Treatment of early-stage breast cancer",4.3,"South Sudan",2021,1171.53376077853,1171.53376077853,0
+"Treatment of early-stage breast cancer",4.3,"South Sudan",2022,1201.79526263497,1201.79526263497,0
+"Treatment of early-stage breast cancer",4.3,"South Sudan",2023,3144.32809605213,1237.11269352871,1907.21540252342
+"Treatment of early-stage breast cancer",4.3,"South Sudan",2024,5209.39982585252,1275.5736484405,3933.82617741202
+"Treatment of early-stage breast cancer",4.3,"South Sudan",2025,7405.95340469362,1315.85751011803,6090.09589457559
+"Treatment of early-stage breast cancer",4.3,"South Sudan",2026,9709.15215039533,1352.95834919117,8356.19380120416
+"Treatment of early-stage breast cancer",4.3,"South Sudan",2027,12154.1782591178,1392.24310781795,10761.9351512998
+"Treatment of early-stage breast cancer",4.3,"South Sudan",2028,14756.0636337017,1433.85642261464,13322.2072110871
+"Treatment of early-stage breast cancer",4.3,"South Sudan",2029,17534.8222799746,1478.27211294086,16056.5501670337
+"Treatment of early-stage breast cancer",4.3,"South Sudan",2030,20515.0894455936,1526.06282246893,18989.0266231247
+"Treatment of early-stage colorectal cancer",4.4,"South Sudan",2020,19474.7366627455,19474.7366627455,0
+"Treatment of early-stage colorectal cancer",4.4,"South Sudan",2021,19860.8513640448,19860.8513640448,0
+"Treatment of early-stage colorectal cancer",4.4,"South Sudan",2022,20348.927252823,20348.927252823,0
+"Treatment of early-stage colorectal cancer",4.4,"South Sudan",2023,53172.1846511057,20920.2037971563,32251.9808539493
+"Treatment of early-stage colorectal cancer",4.4,"South Sudan",2024,87994.2995794125,21543.8945413976,66450.4050380149
+"Treatment of early-stage colorectal cancer",4.4,"South Sudan",2025,124992.708246297,22199.4887071242,102793.219539173
+"Treatment of early-stage colorectal cancer",4.4,"South Sudan",2026,163670.387779727,22787.1757469418,140883.212032785
+"Treatment of early-stage colorectal cancer",4.4,"South Sudan",2027,204663.354936311,23406.3630456362,181256.991890675
+"Treatment of early-stage colorectal cancer",4.4,"South Sudan",2028,248302.87644174,24066.2680436215,224236.608398119
+"Treatment of early-stage colorectal cancer",4.4,"South Sudan",2029,295106.720486189,24786.5294717596,270320.191014429
+"Treatment of early-stage colorectal cancer",4.4,"South Sudan",2030,345723.92512153,25586.5628634878,320137.362258042

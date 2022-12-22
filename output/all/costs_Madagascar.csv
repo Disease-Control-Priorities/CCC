@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"Madagascar",2020,3267.58930479192,3267.58930479192,0
+"IDU harm reduction measures",1.1,"Madagascar",2021,3373.42394894829,3373.42394894829,0
+"IDU harm reduction measures",1.1,"Madagascar",2022,3482.86191290226,3482.86191290226,0
+"IDU harm reduction measures",1.1,"Madagascar",2023,39096.4740982702,3595.07807800186,35501.3960202683
+"IDU harm reduction measures",1.1,"Madagascar",2024,76965.3607480854,3709.03293844224,73256.3278096432
+"IDU harm reduction measures",1.1,"Madagascar",2025,117132.421468536,3824.19963820951,113308.221830327
+"IDU harm reduction measures",1.1,"Madagascar",2026,159617.840508187,3939.90702458403,155677.933483603
+"IDU harm reduction measures",1.1,"Madagascar",2027,204494.768214061,4057.01251270768,200437.755701354
+"IDU harm reduction measures",1.1,"Madagascar",2028,251808.355698255,4175.32834854784,247633.027349707
+"IDU harm reduction measures",1.1,"Madagascar",2029,301610.557184925,4294.87532716345,297315.681857762
+"IDU harm reduction measures",1.1,"Madagascar",2030,353951.852024375,4415.66647383289,349536.185550542
+"Pulmonary rehabilitation",1.2,"Madagascar",2020,18327.6916031668,18327.6916031668,0
+"Pulmonary rehabilitation",1.2,"Madagascar",2021,19018.9546774424,19018.9546774424,0
+"Pulmonary rehabilitation",1.2,"Madagascar",2022,19740.0728423634,19740.0728423634,0
+"Pulmonary rehabilitation",1.2,"Madagascar",2023,30822.7975369848,20490.5764505276,10332.2210864571
+"Pulmonary rehabilitation",1.2,"Madagascar",2024,42732.632742859,21268.9125569285,21463.7201859305
+"Pulmonary rehabilitation",1.2,"Madagascar",2025,55537.2883944315,22075.4260826751,33461.8623117563
+"Pulmonary rehabilitation",1.2,"Madagascar",2026,69368.8702828339,22927.3232525279,46441.5470303059
+"Pulmonary rehabilitation",1.2,"Madagascar",2027,84276.5914217732,23806.8748876833,60469.7165340899
+"Pulmonary rehabilitation",1.2,"Madagascar",2028,100348.803615359,24714.3885663714,75634.4150489873
+"Pulmonary rehabilitation",1.2,"Madagascar",2029,117672.381530216,25650.4799928079,92021.9015374077
+"Pulmonary rehabilitation",1.2,"Madagascar",2030,136329.339146958,26616.2593800491,109713.079766909
+"Depression chronic treatment",2.1,"Madagascar",2020,0,0,0
+"Depression chronic treatment",2.1,"Madagascar",2021,0,0,0
+"Depression chronic treatment",2.1,"Madagascar",2022,0,0,0
+"Depression chronic treatment",2.1,"Madagascar",2023,0,0,0
+"Depression chronic treatment",2.1,"Madagascar",2024,0,0,0
+"Depression chronic treatment",2.1,"Madagascar",2025,0,0,0
+"Depression chronic treatment",2.1,"Madagascar",2026,0,0,0
+"Depression chronic treatment",2.1,"Madagascar",2027,0,0,0
+"Depression chronic treatment",2.1,"Madagascar",2028,0,0,0
+"Depression chronic treatment",2.1,"Madagascar",2029,0,0,0
+"Depression chronic treatment",2.1,"Madagascar",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"Madagascar",2020,457715.563523075,457715.563523075,0
+"Bipolar disorder chronic treatment",2.11,"Madagascar",2021,471663.79626299,471663.79626299,0
+"Bipolar disorder chronic treatment",2.11,"Madagascar",2022,486078.413095716,486078.413095716,0
+"Bipolar disorder chronic treatment",2.11,"Madagascar",2023,1792000.73047332,500880.279716811,1291120.45075651
+"Bipolar disorder chronic treatment",2.11,"Madagascar",2024,3176179.73360516,515971.298504746,2660208.43510041
+"Bipolar disorder chronic treatment",2.11,"Madagascar",2025,4640985.57886293,531321.431131258,4109664.14773167
+"Bipolar disorder chronic treatment",2.11,"Madagascar",2026,6186234.76505134,546685.278283051,5639549.48676829
+"Bipolar disorder chronic treatment",2.11,"Madagascar",2027,7816650.95818555,562343.924230711,7254307.03395484
+"Bipolar disorder chronic treatment",2.11,"Madagascar",2028,9535668.49113375,578320.587200444,8957347.90393331
+"Bipolar disorder chronic treatment",2.11,"Madagascar",2029,11347619.9790975,594673.555738269,10752946.4233592
+"Bipolar disorder chronic treatment",2.11,"Madagascar",2030,13254425.9385363,611324.625321568,12643101.3132148
+"Schizophrenia chronic treatment",2.12,"Madagascar",2020,1016865.36958229,1016865.36958229,0
+"Schizophrenia chronic treatment",2.12,"Madagascar",2021,1050242.1921378,1050242.1921378,0
+"Schizophrenia chronic treatment",2.12,"Madagascar",2022,1085089.06172383,1085089.06172383,0
+"Schizophrenia chronic treatment",2.12,"Madagascar",2023,1429540.15017374,1121207.96092058,308332.189253159
+"Schizophrenia chronic treatment",2.12,"Madagascar",2024,1795513.74475289,1158333.9382572,637179.806495687
+"Schizophrenia chronic treatment",2.12,"Madagascar",2025,2183751.02521369,1196341.25957611,987409.765637581
+"Schizophrenia chronic treatment",2.12,"Madagascar",2026,2593414.35480718,1234400.62304073,1359013.73176644
+"Schizophrenia chronic treatment",2.12,"Madagascar",2027,3026905.00985673,1273422.32828578,1753482.68157096
+"Schizophrenia chronic treatment",2.12,"Madagascar",2028,3485109.26685213,1313366.35211671,2171742.91473542
+"Schizophrenia chronic treatment",2.12,"Madagascar",2029,3969015.60788924,1354246.90146227,2614768.70642697
+"Schizophrenia chronic treatment",2.12,"Madagascar",2030,4479462.95638212,1396033.40242264,3083429.55395948
+"Epilepsy acute and chronic treatment",2.13,"Madagascar",2020,20773.8112109455,20773.8112109455,0
+"Epilepsy acute and chronic treatment",2.13,"Madagascar",2021,21303.225579821,21303.225579821,0
+"Epilepsy acute and chronic treatment",2.13,"Madagascar",2022,21841.1486465105,21841.1486465105,0
+"Epilepsy acute and chronic treatment",2.13,"Madagascar",2023,94209.766409378,22386.4791467829,71823.2872625951
+"Epilepsy acute and chronic treatment",2.13,"Madagascar",2024,170134.099670886,22938.0045303271,147196.095140559
+"Epilepsy acute and chronic treatment",2.13,"Madagascar",2025,249661.564673232,23492.2155188559,226169.349154376
+"Epilepsy acute and chronic treatment",2.13,"Madagascar",2026,333169.33641194,24071.4902756557,309097.846136284
+"Epilepsy acute and chronic treatment",2.13,"Madagascar",2027,420597.077692643,24655.1758246731,395941.90186797
+"Epilepsy acute and chronic treatment",2.13,"Madagascar",2028,512040.533899717,25243.2022522225,486797.331647494
+"Epilepsy acute and chronic treatment",2.13,"Madagascar",2029,607601.417752021,25835.9320455554,581765.485706466
+"Epilepsy acute and chronic treatment",2.13,"Madagascar",2030,707318.168832659,26431.5909725033,680886.577860155
+"Asthma/COPD chronic treatment",2.14,"Madagascar",2020,6349416.149639,6349416.149639,0
+"Asthma/COPD chronic treatment",2.14,"Madagascar",2021,6513085.47156273,6513085.47156273,0
+"Asthma/COPD chronic treatment",2.14,"Madagascar",2022,6680879.07094122,6680879.07094122,0
+"Asthma/COPD chronic treatment",2.14,"Madagascar",2023,10307628.5102943,6852371.1957161,3455257.3145782
+"Asthma/COPD chronic treatment",2.14,"Madagascar",2024,14114867.2720189,7027202.09693928,7087665.17507966
+"Asthma/COPD chronic treatment",2.14,"Madagascar",2025,18107427.9001415,7204708.18354184,10902719.7165996
+"Asthma/COPD chronic treatment",2.14,"Madagascar",2026,22294073.8602722,7385746.61470723,14908327.245565
+"Asthma/COPD chronic treatment",2.14,"Madagascar",2027,26677713.9092558,7568927.69785641,19108786.2113994
+"Asthma/COPD chronic treatment",2.14,"Madagascar",2028,31264637.2604664,7754362.09340908,23510275.1670573
+"Asthma/COPD chronic treatment",2.14,"Madagascar",2029,36061185.6095883,7942153.27978575,28119032.3298025
+"Asthma/COPD chronic treatment",2.14,"Madagascar",2030,41074204.7703931,8132538.10899157,32941666.6614016
+"Diabetes screening and treatment",2.3,"Madagascar",2020,7978986.20053662,7978986.20053662,0
+"Diabetes screening and treatment",2.3,"Madagascar",2021,8265230.53969829,8265230.53969829,0
+"Diabetes screening and treatment",2.3,"Madagascar",2022,8564460.72847657,8564460.72847657,0
+"Diabetes screening and treatment",2.3,"Madagascar",2023,13352215.4604537,8876371.17779636,4475844.28265738
+"Diabetes screening and treatment",2.3,"Madagascar",2024,18482912.045729,9200079.86431514,9282832.18141388
+"Diabetes screening and treatment",2.3,"Madagascar",2025,23982265.1278502,9535471.18736479,14446793.9404854
+"Diabetes screening and treatment",2.3,"Madagascar",2026,29864634.0945689,9877474.60188563,19987159.4926832
+"Diabetes screening and treatment",2.3,"Madagascar",2027,36167620.0389644,10229981.6655486,25937638.3734158
+"Diabetes screening and treatment",2.3,"Madagascar",2028,42925680.6749672,10593926.5187423,32331754.1562249
+"Diabetes screening and treatment",2.3,"Madagascar",2029,50176512.6078229,10970672.2068412,39205840.4009817
+"Diabetes screening and treatment",2.3,"Madagascar",2030,57956914.2035735,11361218.69857,46595695.5050035
+"CVD primary prevention",2.4,"Madagascar",2020,4307758.94815879,4307758.94815879,0
+"CVD primary prevention",2.4,"Madagascar",2021,4455838.15780668,4455838.15780668,0
+"CVD primary prevention",2.4,"Madagascar",2022,4612104.5180511,4612104.5180511,0
+"CVD primary prevention",2.4,"Madagascar",2023,7185053.36733511,4776525.72411191,2408527.6432232
+"CVD primary prevention",2.4,"Madagascar",2024,9941204.19496583,4948969.10173516,4992235.09323067
+"CVD primary prevention",2.4,"Madagascar",2025,12894979.9703514,5129463.34717033,7765516.62318111
+"CVD primary prevention",2.4,"Madagascar",2026,16049953.4307314,5314102.55355895,10735850.8771725
+"CVD primary prevention",2.4,"Madagascar",2027,19430298.9688014,5506930.63113826,13923368.3376631
+"CVD primary prevention",2.4,"Madagascar",2028,23048379.1378013,5706983.5463284,17341395.5914729
+"CVD primary prevention",2.4,"Madagascar",2029,26912860.6203413,5912954.14616737,20999906.4741739
+"CVD primary prevention",2.4,"Madagascar",2030,31031389.2720326,6123957.49640787,24907431.7756248
+"Aspirin for suspected ACS",2.5,"Madagascar",2020,1296.44402796702,1296.44402796702,0
+"Aspirin for suspected ACS",2.5,"Madagascar",2021,1342.75706183371,1342.75706183371,0
+"Aspirin for suspected ACS",2.5,"Madagascar",2022,1391.03686040838,1391.03686040838,0
+"Aspirin for suspected ACS",2.5,"Madagascar",2023,2168.00569647855,1441.26069074582,726.745005732734
+"Aspirin for suspected ACS",2.5,"Madagascar",2024,3000.01252219139,1493.36769622092,1506.64482597047
+"Aspirin for suspected ACS",2.5,"Madagascar",2025,3891.15606640892,1547.43620134135,2343.71986506757
+"Aspirin for suspected ACS",2.5,"Madagascar",2026,4840.49664385101,1601.66888629579,3238.82775755523
+"Aspirin for suspected ACS",2.5,"Madagascar",2027,5856.76777651254,1657.97857849315,4198.78919801939
+"Aspirin for suspected ACS",2.5,"Madagascar",2028,6946.24883652239,1716.68648650589,5229.5623500165
+"Aspirin for suspected ACS",2.5,"Madagascar",2029,8116.43896474933,1778.26015630185,6338.17880844748
+"Aspirin for suspected ACS",2.5,"Madagascar",2030,9374.93816064251,1843.04768339386,7531.89047724865
+"CVD secondary prevention",2.6,"Madagascar",2020,6417501.57366863,6417501.57366863,0
+"CVD secondary prevention",2.6,"Madagascar",2021,6671688.12059388,6671688.12059388,0
+"CVD secondary prevention",2.6,"Madagascar",2022,6935799.0349816,6935799.0349816,0
+"CVD secondary prevention",2.6,"Madagascar",2023,10846430.0233138,7210559.11103877,3635870.912275
+"CVD secondary prevention",2.6,"Madagascar",2024,15063309.9881375,7496288.04182871,7567021.94630877
+"CVD secondary prevention",2.6,"Madagascar",2025,19617618.8954097,7793876.56123214,11823742.3341776
+"CVD secondary prevention",2.6,"Madagascar",2026,24572742.6122849,8112191.90639112,16460550.7058938
+"CVD secondary prevention",2.6,"Madagascar",2027,29939395.5058143,8439242.79558448,21500152.7102298
+"CVD secondary prevention",2.6,"Madagascar",2028,35758848.1800117,8776278.4894511,26982569.6905606
+"CVD secondary prevention",2.6,"Madagascar",2029,42075323.9040268,9124901.36336959,32950422.5406572
+"CVD secondary prevention",2.6,"Madagascar",2030,48933244.5440727,9486787.00018638,39446457.5438864
+"Heart failure chronic treatment",2.7,"Madagascar",2020,1072455.34871679,1072455.34871679,0
+"Heart failure chronic treatment",2.7,"Madagascar",2021,1118983.1850055,1118983.1850055,0
+"Heart failure chronic treatment",2.7,"Madagascar",2022,1166261.30643172,1166261.30643172,0
+"Heart failure chronic treatment",2.7,"Madagascar",2023,1826464.2794397,1214208.6034569,612255.675982799
+"Heart failure chronic treatment",2.7,"Madagascar",2024,2537843.70157906,1262657.02968421,1275186.67189485
+"Heart failure chronic treatment",2.7,"Madagascar",2025,3304451.96271823,1311679.19205537,1992772.77066286
+"Heart failure chronic treatment",2.7,"Madagascar",2026,4159142.58144052,1370242.68321645,2788899.89822407
+"Heart failure chronic treatment",2.7,"Madagascar",2027,5089120.76049712,1429022.35409999,3660098.40639713
+"Heart failure chronic treatment",2.7,"Madagascar",2028,6101399.22708597,1488211.08665451,4613188.14043146
+"Heart failure chronic treatment",2.7,"Madagascar",2029,7203280.98608597,1548105.1041025,5655175.88198347
+"Heart failure chronic treatment",2.7,"Madagascar",2030,8401602.86805697,1609059.3193595,6792543.54869748
+"Alcohol use screening/brief intervention",2.9,"Madagascar",2020,128638.48537304,128638.48537304,0
+"Alcohol use screening/brief intervention",2.9,"Madagascar",2021,132839.727712015,132839.727712015,0
+"Alcohol use screening/brief intervention",2.9,"Madagascar",2022,137207.518512557,137207.518512557,0
+"Alcohol use screening/brief intervention",2.9,"Madagascar",2023,1541142.39539126,141714.243254369,1399428.15213689
+"Alcohol use screening/brief intervention",2.9,"Madagascar",2024,3036402.49368557,146323.258412405,2890079.23527316
+"Alcohol use screening/brief intervention",2.9,"Madagascar",2025,4625980.93493173,151017.018961084,4474963.91597065
+"Alcohol use screening/brief intervention",2.9,"Madagascar",2026,6309409.33452666,155703.303651081,6153706.03087558
+"Alcohol use screening/brief intervention",2.9,"Madagascar",2027,8092488.87977746,160483.335016517,7932005.54476094
+"Alcohol use screening/brief intervention",2.9,"Madagascar",2028,9978738.95602982,165352.839522177,9813386.11650764
+"Alcohol use screening/brief intervention",2.9,"Madagascar",2029,11971926.4748736,170313.827759583,11801612.647114
+"Alcohol use screening/brief intervention",2.9,"Madagascar",2030,14075313.6938234,175362.35139643,13899951.3424269
+"Medical management of ACS",3.1,"Madagascar",2020,383025.495252442,383025.495252442,0
+"Medical management of ACS",3.1,"Madagascar",2021,398461.805189001,398461.805189001,0
+"Medical management of ACS",3.1,"Madagascar",2022,414309.715368896,414309.715368896,0
+"Medical management of ACS",3.1,"Madagascar",2023,1453205.53180889,430579.416832264,1022626.11497663
+"Medical management of ACS",3.1,"Madagascar",2024,2573134.20720352,447261.032910363,2125873.17429316
+"Medical management of ACS",3.1,"Madagascar",2025,3780530.44894407,464389.561412064,3316140.887532
+"Medical management of ACS",3.1,"Madagascar",2026,5103129.07834056,483798.334776465,4619330.74356409
+"Medical management of ACS",3.1,"Madagascar",2027,6538774.79184736,503559.376316239,6035215.41553112
+"Medical management of ACS",3.1,"Madagascar",2028,8097635.78472028,523715.990384737,7573919.79433554
+"Medical management of ACS",3.1,"Madagascar",2029,9790434.79953748,544340.294372008,9246094.50516547
+"Medical management of ACS",3.1,"Madagascar",2030,11627466.4347251,565512.206074313,11061954.2286508
+"Heart failure acute treatment",3.2,"Madagascar",2020,1621025.20631732,1621025.20631732,0
+"Heart failure acute treatment",3.2,"Madagascar",2021,1691019.97876212,1691019.97876212,0
+"Heart failure acute treatment",3.2,"Madagascar",2022,1762244.37287941,1762244.37287941,0
+"Heart failure acute treatment",3.2,"Madagascar",2023,6191688.50783828,1834574.37269282,4357114.13514545
+"Heart failure acute treatment",3.2,"Madagascar",2024,10977222.0299174,1907751.15211869,9069470.87779872
+"Heart failure acute treatment",3.2,"Madagascar",2025,16143452.5503504,1981874.37629506,14161578.1740554
+"Heart failure acute treatment",3.2,"Madagascar",2026,21860981.4875457,2069735.44649608,19791246.0410496
+"Heart failure acute treatment",3.2,"Madagascar",2027,28092320.1946662,2158041.24220889,25934278.9524573
+"Heart failure acute treatment",3.2,"Madagascar",2028,34884009.328952,2247081.50926885,32636927.8196832
+"Heart failure acute treatment",3.2,"Madagascar",2029,42285625.778294,2337296.28892679,39948329.4893672
+"Heart failure acute treatment",3.2,"Madagascar",2030,50344843.4006184,2429207.7627137,47915635.6379047
+"Cervical cancer screening and treatment",3.3,"Madagascar",2020,524082.854906829,524082.854906829,0
+"Cervical cancer screening and treatment",3.3,"Madagascar",2021,541453.320320402,541453.320320402,0
+"Cervical cancer screening and treatment",3.3,"Madagascar",2022,559437.196947753,559437.196947753,0
+"Cervical cancer screening and treatment",3.3,"Madagascar",2023,1468954.82918408,577949.440990458,891005.388193623
+"Cervical cancer screening and treatment",3.3,"Madagascar",2024,2437520.07193898,596905.287557855,1840614.78438113
+"Cervical cancer screening and treatment",3.3,"Madagascar",2025,3467433.99500704,616284.655112477,2851149.33989456
+"Cervical cancer screening and treatment",3.3,"Madagascar",2026,4557461.37516847,635568.365251251,3921893.00991721
+"Cervical cancer screening and treatment",3.3,"Madagascar",2027,5712345.76834142,655277.353309126,5057068.41503229
+"Cervical cancer screening and treatment",3.3,"Madagascar",2028,6934632.43305296,675397.604896336,6259234.82815663
+"Cervical cancer screening and treatment",3.3,"Madagascar",2029,8226716.06393609,695908.441462204,7530807.62247388
+"Cervical cancer screening and treatment",3.3,"Madagascar",2030,9590797.39460647,716787.360684925,8874010.03392155
+"Asthma/COPD acute treatment",3.4,"Madagascar",2020,2256442.76981593,2256442.76981593,0
+"Asthma/COPD acute treatment",3.4,"Madagascar",2021,2315808.51649071,2315808.51649071,0
+"Asthma/COPD acute treatment",3.4,"Madagascar",2022,2376747.94271955,2376747.94271955,0
+"Asthma/COPD acute treatment",3.4,"Madagascar",2023,8232033.69230464,2439121.09401619,5792912.59828845
+"Asthma/COPD acute treatment",3.4,"Madagascar",2024,14392189.3874034,2502807.04983546,11889382.3375679
+"Asthma/COPD acute treatment",3.4,"Madagascar",2025,20867292.9076052,2567592.3118436,18299700.5957616
+"Asthma/COPD acute treatment",3.4,"Madagascar",2026,27672968.4911232,2633849.99596889,25039118.4951543
+"Asthma/COPD acute treatment",3.4,"Madagascar",2027,34817130.8679622,2701014.12743646,32116116.7405257
+"Asthma/COPD acute treatment",3.4,"Madagascar",2028,42311891.9751902,2769118.45655065,39542773.5186395
+"Asthma/COPD acute treatment",3.4,"Madagascar",2029,50169435.4650875,2838191.06154962,47331244.4035378
+"Asthma/COPD acute treatment",3.4,"Madagascar",2030,58402723.5769647,2908319.04464591,55494404.5323187
+"Management of bowel obstruction",3.6,"Madagascar",2020,60404.7397473493,60404.7397473493,0
+"Management of bowel obstruction",3.6,"Madagascar",2021,62274.5365737223,62274.5365737223,0
+"Management of bowel obstruction",3.6,"Madagascar",2022,64193.6019427759,64193.6019427759,0
+"Management of bowel obstruction",3.6,"Madagascar",2023,719529.635774523,66163.6446689217,653365.991105602
+"Management of bowel obstruction",3.6,"Madagascar",2024,1415053.6118638,68184.6090551518,1346869.00280865
+"Management of bowel obstruction",3.6,"Madagascar",2025,2153730.07793703,70285.2849817167,2083444.79295532
+"Management of bowel obstruction",3.6,"Madagascar",2026,2936612.56228791,72410.9145637035,2864201.64772421
+"Management of bowel obstruction",3.6,"Madagascar",2027,3766814.81170538,74586.4086622689,3692228.40304311
+"Management of bowel obstruction",3.6,"Madagascar",2028,4647355.45595122,76817.0104386583,4570538.44551256
+"Management of bowel obstruction",3.6,"Madagascar",2029,5581397.02709577,79107.5836512863,5502289.44344448
+"Management of bowel obstruction",3.6,"Madagascar",2030,6572154.9222931,81463.3196061458,6490691.60268695
+"Management of appendicitis",3.7,"Madagascar",2020,7999.08780982474,7999.08780982474,0
+"Management of appendicitis",3.7,"Madagascar",2021,8198.59444703489,8198.59444703489,0
+"Management of appendicitis",3.7,"Madagascar",2022,8401.98324666441,8401.98324666441,0
+"Management of appendicitis",3.7,"Madagascar",2023,93613.9791250245,8608.181988508,85005.7971365165
+"Management of appendicitis",3.7,"Madagascar",2024,182937.163441628,8816.12966207597,174121.033779552
+"Management of appendicitis",3.7,"Madagascar",2025,276370.860143191,9023.90667778018,267346.953465411
+"Management of appendicitis",3.7,"Madagascar",2026,374064.870203641,9235.10241348114,364829.767790159
+"Management of appendicitis",3.7,"Madagascar",2027,476074.400210835,9448.57459525289,466625.825615582
+"Management of appendicitis",3.7,"Madagascar",2028,582498.315328977,9664.64027241967,572833.675056557
+"Management of appendicitis",3.7,"Madagascar",2029,693476.277398601,9884.02374850164,683592.2536501
+"Management of appendicitis",3.7,"Madagascar",2030,808720.524789481,10101.7648420827,798618.759947399
+"Repair of hernias",3.8,"Madagascar",2020,213815.416917995,213815.416917995,0
+"Repair of hernias",3.8,"Madagascar",2021,220302.756343876,220302.756343876,0
+"Repair of hernias",3.8,"Madagascar",2022,227065.113617307,227065.113617307,0
+"Repair of hernias",3.8,"Madagascar",2023,2545815.21464347,234097.950771813,2311717.26387165
+"Repair of hernias",3.8,"Madagascar",2024,5009468.26672964,241388.150757111,4768080.11597253
+"Repair of hernias",3.8,"Madagascar",2025,7626854.09778664,248919.723656069,7377934.37413057
+"Repair of hernias",3.8,"Madagascar",2026,10396611.0885614,256418.735848494,10140192.3527129
+"Repair of hernias",3.8,"Madagascar",2027,13333803.4057531,264139.981313684,13069663.4244394
+"Repair of hernias",3.8,"Madagascar",2028,16449221.5849762,272094.734359344,16177126.8506168
+"Repair of hernias",3.8,"Madagascar",2029,19754230.6142491,280295.739884612,19473934.8743645
+"Repair of hernias",3.8,"Madagascar",2030,23263255.5415942,288790.506595803,22974465.0349984
+"Repair of gastrointestinal perforations",3.9,"Madagascar",2020,993.706997777528,993.706997777528,0
+"Repair of gastrointestinal perforations",3.9,"Madagascar",2021,1026.13400880792,1026.13400880792,0
+"Repair of gastrointestinal perforations",3.9,"Madagascar",2022,1059.61531344276,1059.61531344276,0
+"Repair of gastrointestinal perforations",3.9,"Madagascar",2023,11897.2620436442,1094.00110746154,10803.2609361827
+"Repair of gastrointestinal perforations",3.9,"Madagascar",2024,23431.9416214657,1129.07582735831,22302.8657941074
+"Repair of gastrointestinal perforations",3.9,"Madagascar",2025,35690.5582205052,1164.74238056508,34525.8158399401
+"Repair of gastrointestinal perforations",3.9,"Madagascar",2026,48705.205208157,1200.9866938276,47504.2185143294
+"Repair of gastrointestinal perforations",3.9,"Madagascar",2027,62510.3965781986,1237.78458572308,61272.6119924755
+"Repair of gastrointestinal perforations",3.9,"Madagascar",2028,77152.4777679932,1275.29245126479,75877.1853167284
+"Repair of gastrointestinal perforations",3.9,"Madagascar",2029,92689.6418121736,1313.74748833745,91375.8943238361
+"Repair of gastrointestinal perforations",3.9,"Madagascar",2030,109167.100928874,1353.12873238202,107813.972196492
+NA,4.1,"Madagascar",2020,NA,NA,NA
+NA,4.1,"Madagascar",2021,NA,NA,NA
+NA,4.1,"Madagascar",2022,NA,NA,NA
+NA,4.1,"Madagascar",2023,NA,NA,NA
+NA,4.1,"Madagascar",2024,NA,NA,NA
+NA,4.1,"Madagascar",2025,NA,NA,NA
+NA,4.1,"Madagascar",2026,NA,NA,NA
+NA,4.1,"Madagascar",2027,NA,NA,NA
+NA,4.1,"Madagascar",2028,NA,NA,NA
+NA,4.1,"Madagascar",2029,NA,NA,NA
+NA,4.1,"Madagascar",2030,NA,NA,NA
+"Management of acute ventilatory failure",4.2,"Madagascar",2020,118229.746656397,118229.746656397,0
+"Management of acute ventilatory failure",4.2,"Madagascar",2021,121602.866956343,121602.866956343,0
+"Management of acute ventilatory failure",4.2,"Madagascar",2022,125076.133403073,125076.133403073,0
+"Management of acute ventilatory failure",4.2,"Madagascar",2023,434162.540496214,128640.752739619,305521.787756595
+"Management of acute ventilatory failure",4.2,"Madagascar",2024,760739.227757965,132286.588223127,628452.639534838
+"Management of acute ventilatory failure",4.2,"Madagascar",2025,1105517.78888225,136003.688917851,969514.0999644
+"Management of acute ventilatory failure",4.2,"Madagascar",2026,1469738.55375829,139829.387921636,1329909.16583665
+"Management of acute ventilatory failure",4.2,"Madagascar",2027,1854003.28987674,143718.215953544,1710285.07392319
+"Management of acute ventilatory failure",4.2,"Madagascar",2028,2259273.61566082,147674.21074757,2111599.40491325
+"Management of acute ventilatory failure",4.2,"Madagascar",2029,2686565.50845672,151703.282146852,2534862.22630987
+"Management of acute ventilatory failure",4.2,"Madagascar",2030,3136917.18462383,155812.965254985,2981104.21936885
+"Treatment of early-stage breast cancer",4.3,"Madagascar",2020,3796.78746587601,3796.78746587601,0
+"Treatment of early-stage breast cancer",4.3,"Madagascar",2021,3932.1660774493,3932.1660774493,0
+"Treatment of early-stage breast cancer",4.3,"Madagascar",2022,4076.20193346285,4076.20193346285,0
+"Treatment of early-stage breast cancer",4.3,"Madagascar",2023,10747.248893951,4228.42579434139,6518.82309960965
+"Treatment of early-stage breast cancer",4.3,"Madagascar",2024,17922.6475535444,4388.44013740506,13534.2074161393
+"Treatment of early-stage breast cancer",4.3,"Madagascar",2025,25647.4092959848,4556.53029635275,21090.878999632
+"Treatment of early-stage breast cancer",4.3,"Madagascar",2026,33878.4770608629,4719.97861881909,29158.4984420438
+"Treatment of early-stage breast cancer",4.3,"Madagascar",2027,42716.5969088052,4891.29910873194,37825.2978000732
+"Treatment of early-stage breast cancer",4.3,"Madagascar",2028,52224.0081006295,5071.56081229806,47152.4472883314
+"Treatment of early-stage breast cancer",4.3,"Madagascar",2029,62461.1136130507,5261.07009921811,57200.0435138326
+"Treatment of early-stage breast cancer",4.3,"Madagascar",2030,73479.4559149182,5459.38552368848,68020.0703912297
+"Treatment of early-stage colorectal cancer",4.4,"Madagascar",2020,35577.085474584,35577.085474584,0
+"Treatment of early-stage colorectal cancer",4.4,"Madagascar",2021,36932.077815083,36932.077815083,0
+"Treatment of early-stage colorectal cancer",4.4,"Madagascar",2022,38380.8770248211,38380.8770248211,0
+"Treatment of early-stage colorectal cancer",4.4,"Madagascar",2023,101475.268930487,39924.6959726506,61550.5729578364
+"Treatment of early-stage colorectal cancer",4.4,"Madagascar",2024,169793.38970577,41568.561118616,128224.828587154
+"Treatment of early-stage colorectal cancer",4.4,"Madagascar",2025,243980.382071544,43322.7141135228,200657.667958021
+"Treatment of early-stage colorectal cancer",4.4,"Madagascar",2026,323468.374505038,45011.0835049652,278457.291000072
+"Treatment of early-stage colorectal cancer",4.4,"Madagascar",2027,409522.310881199,46787.4107426305,362734.900138568
+"Treatment of early-stage colorectal cancer",4.4,"Madagascar",2028,502972.613016518,48667.3117257946,454305.301290723
+"Treatment of early-stage colorectal cancer",4.4,"Madagascar",2029,604542.924669164,50648.2496844034,553894.67498476
+"Treatment of early-stage colorectal cancer",4.4,"Madagascar",2030,714826.074687354,52720.2657807967,662105.808906557

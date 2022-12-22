@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"Philippines",2020,52612.9207017985,52612.9207017985,0
+"IDU harm reduction measures",1.1,"Philippines",2021,53656.397415218,53656.397415218,0
+"IDU harm reduction measures",1.1,"Philippines",2022,54583.7234039378,54583.7234039378,0
+"IDU harm reduction measures",1.1,"Philippines",2023,602895.39994003,55438.6574657499,547456.74247428
+"IDU harm reduction measures",1.1,"Philippines",2024,1168123.01415665,56290.1291679876,1111832.88498866
+"IDU harm reduction measures",1.1,"Philippines",2025,1751278.22504378,57167.6457802483,1694110.57926353
+"IDU harm reduction measures",1.1,"Philippines",2026,2348618.38671176,57952.5876219419,2290665.79908982
+"IDU harm reduction measures",1.1,"Philippines",2027,2964614.04782259,58781.2572217497,2905832.79060084
+"IDU harm reduction measures",1.1,"Philippines",2028,3599322.3063152,59626.7816212191,3539695.52469398
+"IDU harm reduction measures",1.1,"Philippines",2029,4250561.60948709,60445.4957171184,4190116.11376998
+"IDU harm reduction measures",1.1,"Philippines",2030,4916560.8357617,61220.7684037086,4855340.06735799
+"Pulmonary rehabilitation",1.2,"Philippines",2020,1843508.82287869,1843508.82287869,0
+"Pulmonary rehabilitation",1.2,"Philippines",2021,1911791.49905077,1911791.49905077,0
+"Pulmonary rehabilitation",1.2,"Philippines",2022,1977629.15263169,1977629.15263169,0
+"Pulmonary rehabilitation",1.2,"Philippines",2023,2362899.42428486,2042301.03379132,320598.390493535
+"Pulmonary rehabilitation",1.2,"Philippines",2024,2771987.16385099,2108103.14932415,663884.01452684
+"Pulmonary rehabilitation",1.2,"Philippines",2025,3208866.25236225,2176228.97798068,1032637.27438157
+"Pulmonary rehabilitation",1.2,"Philippines",2026,3674962.32055451,2245487.5236643,1429474.79689021
+"Pulmonary rehabilitation",1.2,"Philippines",2027,4175173.92429743,2317002.2090872,1858171.71521023
+"Pulmonary rehabilitation",1.2,"Philippines",2028,4711582.92515998,2390042.89406426,2321540.03109572
+"Pulmonary rehabilitation",1.2,"Philippines",2029,5283758.83776975,2462992.55796264,2820766.27980711
+"Pulmonary rehabilitation",1.2,"Philippines",2030,5892150.42284289,2535235.19624163,3356915.22660127
+"Depression chronic treatment",2.1,"Philippines",2020,0,0,0
+"Depression chronic treatment",2.1,"Philippines",2021,0,0,0
+"Depression chronic treatment",2.1,"Philippines",2022,0,0,0
+"Depression chronic treatment",2.1,"Philippines",2023,0,0,0
+"Depression chronic treatment",2.1,"Philippines",2024,0,0,0
+"Depression chronic treatment",2.1,"Philippines",2025,0,0,0
+"Depression chronic treatment",2.1,"Philippines",2026,0,0,0
+"Depression chronic treatment",2.1,"Philippines",2027,0,0,0
+"Depression chronic treatment",2.1,"Philippines",2028,0,0,0
+"Depression chronic treatment",2.1,"Philippines",2029,0,0,0
+"Depression chronic treatment",2.1,"Philippines",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"Philippines",2020,5216133.89790639,5216133.89790639,0
+"Bipolar disorder chronic treatment",2.11,"Philippines",2021,5325831.5326608,5325831.5326608,0
+"Bipolar disorder chronic treatment",2.11,"Philippines",2022,5426565.42533229,5426565.42533229,0
+"Bipolar disorder chronic treatment",2.11,"Philippines",2023,19758330.9805752,5522630.75566597,14235700.2249093
+"Bipolar disorder chronic treatment",2.11,"Philippines",2024,34600355.7765277,5620334.60783755,28980021.1686902
+"Bipolar disorder chronic treatment",2.11,"Philippines",2025,49994058.3237155,5721917.49750686,44272140.8262087
+"Bipolar disorder chronic treatment",2.11,"Philippines",2026,65809287.7841826,5812129.67820521,59997158.1059773
+"Bipolar disorder chronic treatment",2.11,"Philippines",2027,82216736.8963726,5908527.4383246,76308209.458048
+"Bipolar disorder chronic treatment",2.11,"Philippines",2028,99223165.8704707,6007631.12997192,93215534.7404988
+"Bipolar disorder chronic treatment",2.11,"Philippines",2029,116761123.371315,6103945.8401913,110657177.531123
+"Bipolar disorder chronic treatment",2.11,"Philippines",2030,134788268.450914,6195806.4742142,128592461.9767
+"Schizophrenia chronic treatment",2.12,"Philippines",2020,48831418.9412571,48831418.9412571,0
+"Schizophrenia chronic treatment",2.12,"Philippines",2021,49907503.5091415,49907503.5091415,0
+"Schizophrenia chronic treatment",2.12,"Philippines",2022,50901282.0989961,50901282.0989961,0
+"Schizophrenia chronic treatment",2.12,"Philippines",2023,58331416.858089,51850148.3183014,6481268.53978767
+"Schizophrenia chronic treatment",2.12,"Philippines",2024,66023421.9323716,52812311.7424709,13211110.1899008
+"Schizophrenia chronic treatment",2.12,"Philippines",2025,74019548.2227786,53810364.7046723,20209183.5181063
+"Schizophrenia chronic treatment",2.12,"Philippines",2026,82125899.4799737,54701420.9609275,27424478.5190463
+"Schizophrenia chronic treatment",2.12,"Philippines",2027,90575421.1609316,55648872.5858658,34926548.5750658
+"Schizophrenia chronic treatment",2.12,"Philippines",2028,99347313.6892217,56624472.401605,42722841.2876167
+"Schizophrenia chronic treatment",2.12,"Philippines",2029,108372642.708237,57582230.0324412,50790412.6757956
+"Schizophrenia chronic treatment",2.12,"Philippines",2030,117613962.302055,58503939.2322422,59110023.0698125
+"Epilepsy acute and chronic treatment",2.13,"Philippines",2020,4443406.03297409,4443406.03297409,0
+"Epilepsy acute and chronic treatment",2.13,"Philippines",2021,4497572.99996908,4497572.99996908,0
+"Epilepsy acute and chronic treatment",2.13,"Philippines",2022,4549053.89758528,4549053.89758528,0
+"Epilepsy acute and chronic treatment",2.13,"Philippines",2023,4943358.00819435,4598472.56576218,344885.442432163
+"Epilepsy acute and chronic treatment",2.13,"Philippines",2024,5344965.08726746,4647076.14012207,697888.947145393
+"Epilepsy acute and chronic treatment",2.13,"Philippines",2025,5756613.8699617,4696808.05174454,1059805.81821715
+"Epilepsy acute and chronic treatment",2.13,"Philippines",2026,6183701.8642648,4751119.68185084,1432582.18241396
+"Epilepsy acute and chronic treatment",2.13,"Philippines",2027,6622133.3729357,4805812.15626817,1816321.21666754
+"Epilepsy acute and chronic treatment",2.13,"Philippines",2028,7072439.44784638,4860758.5987325,2211680.84911388
+"Epilepsy acute and chronic treatment",2.13,"Philippines",2029,7534963.34897272,4915790.18506326,2619173.16390946
+"Epilepsy acute and chronic treatment",2.13,"Philippines",2030,8008644.30626126,4969965.90635008,3038678.39991118
+"Asthma/COPD chronic treatment",2.14,"Philippines",2020,80742257.7835405,80742257.7835405,0
+"Asthma/COPD chronic treatment",2.14,"Philippines",2021,81727887.6395786,81727887.6395786,0
+"Asthma/COPD chronic treatment",2.14,"Philippines",2022,82636028.0393621,82636028.0393621,0
+"Asthma/COPD chronic treatment",2.14,"Philippines",2023,96584801.3953141,83480167.5055974,13104633.8897167
+"Asthma/COPD chronic treatment",2.14,"Philippines",2024,110777702.499734,84292955.5702672,26484746.9294664
+"Asthma/COPD chronic treatment",2.14,"Philippines",2025,125327903.842784,85149783.8491738,40178119.9936105
+"Asthma/COPD chronic treatment",2.14,"Philippines",2026,140505981.984096,86190776.9712155,54315205.0128805
+"Asthma/COPD chronic treatment",2.14,"Philippines",2027,156168843.378961,87274168.788839,68894674.5901221
+"Asthma/COPD chronic treatment",2.14,"Philippines",2028,172357345.481289,88398395.9469133,83958949.534376
+"Asthma/COPD chronic treatment",2.14,"Philippines",2029,189108776.454884,89561449.3587116,99547327.0961726
+"Asthma/COPD chronic treatment",2.14,"Philippines",2030,206339156.600239,90709500.3038321,115629656.296407
+"Diabetes screening and treatment",2.3,"Philippines",2020,596029064.843473,596029064.843473,0
+"Diabetes screening and treatment",2.3,"Philippines",2021,615916603.955113,615916603.955113,0
+"Diabetes screening and treatment",2.3,"Philippines",2022,635170180.105674,635170180.105674,0
+"Diabetes screening and treatment",2.3,"Philippines",2023,756978864.402708,654271909.095635,102706955.307072
+"Diabetes screening and treatment",2.3,"Philippines",2024,886025791.338114,673995136.742558,212030654.595556
+"Diabetes screening and treatment",2.3,"Philippines",2025,1023488457.5911,694696592.571617,328791865.019487
+"Diabetes screening and treatment",2.3,"Philippines",2026,1166527224.36641,714072359.671673,452454864.694736
+"Diabetes screening and treatment",2.3,"Philippines",2027,1319264523.06434,734508990.623213,584755532.441123
+"Diabetes screening and treatment",2.3,"Philippines",2028,1482135642.19273,755714612.351476,726421029.841251
+"Diabetes screening and treatment",2.3,"Philippines",2029,1654759090.89383,777111567.6071,877647523.28673
+"Diabetes screening and treatment",2.3,"Philippines",2030,1837109132.5068,798467663.399527,1038641469.10727
+"CVD primary prevention",2.4,"Philippines",2020,121813001.772171,121813001.772171,0
+"CVD primary prevention",2.4,"Philippines",2021,125170829.397142,125170829.397142,0
+"CVD primary prevention",2.4,"Philippines",2022,128424922.648675,128424922.648675,0
+"CVD primary prevention",2.4,"Philippines",2023,152308702.388046,131643444.975092,20665257.4129536
+"CVD primary prevention",2.4,"Philippines",2024,177343281.417306,134935770.488733,42407510.9285729
+"CVD primary prevention",2.4,"Philippines",2025,203651639.095568,138337030.316618,65314608.7789505
+"CVD primary prevention",2.4,"Philippines",2026,230686531.625975,141452194.818534,89234336.8074411
+"CVD primary prevention",2.4,"Philippines",2027,259156010.555064,144726446.361927,114429564.193137
+"CVD primary prevention",2.4,"Philippines",2028,289042289.667001,148086750.031849,140955539.635152
+"CVD primary prevention",2.4,"Philippines",2029,320172909.135073,151410026.159508,168762882.975565
+"CVD primary prevention",2.4,"Philippines",2030,352449537.978791,154643187.063516,197806350.915276
+"Aspirin for suspected ACS",2.5,"Philippines",2020,110704.972692591,110704.972692591,0
+"Aspirin for suspected ACS",2.5,"Philippines",2021,113878.162017401,113878.162017401,0
+"Aspirin for suspected ACS",2.5,"Philippines",2022,116901.585493485,116901.585493485,0
+"Aspirin for suspected ACS",2.5,"Philippines",2023,138692.850950849,119874.99339381,18817.857557039
+"Aspirin for suspected ACS",2.5,"Philippines",2024,161614.980332735,122955.299289433,38659.6810433023
+"Aspirin for suspected ACS",2.5,"Philippines",2025,185874.460012034,126216.052930979,59658.4070810553
+"Aspirin for suspected ACS",2.5,"Philippines",2026,210902.996472872,129219.945682079,81683.0507907933
+"Aspirin for suspected ACS",2.5,"Philippines",2027,237483.272948438,132437.669544789,105045.60340365
+"Aspirin for suspected ACS",2.5,"Philippines",2028,265708.99361437,135832.159742033,129876.833872338
+"Aspirin for suspected ACS",2.5,"Philippines",2029,295563.023325932,139326.875806622,156236.14751931
+"Aspirin for suspected ACS",2.5,"Philippines",2030,327079.382117522,142892.895660473,184186.486457049
+"CVD secondary prevention",2.6,"Philippines",2020,183483829.370059,183483829.370059,0
+"CVD secondary prevention",2.6,"Philippines",2021,190701955.926487,190701955.926487,0
+"CVD secondary prevention",2.6,"Philippines",2022,197723204.07497,197723204.07497,0
+"CVD secondary prevention",2.6,"Philippines",2023,236831476.051077,204698161.674752,32133314.3763254
+"CVD secondary prevention",2.6,"Philippines",2024,278614519.480218,211881219.022106,66733300.4581122
+"CVD secondary prevention",2.6,"Philippines",2025,323543119.923389,219404853.78831,104138266.135079
+"CVD secondary prevention",2.6,"Philippines",2026,371359893.924522,226868989.263981,144490904.660541
+"CVD secondary prevention",2.6,"Philippines",2027,422936544.515666,234639212.899087,188297331.61658
+"CVD secondary prevention",2.6,"Philippines",2028,478532564.075011,242643037.934281,235889526.14073
+"CVD secondary prevention",2.6,"Philippines",2029,538144742.049095,250713075.158497,287431666.890598
+"CVD secondary prevention",2.6,"Philippines",2030,601868647.968065,258787239.270907,343081408.697158
+"Heart failure chronic treatment",2.7,"Philippines",2020,27051785.668524,27051785.668524,0
+"Heart failure chronic treatment",2.7,"Philippines",2021,28260247.3171929,28260247.3171929,0
+"Heart failure chronic treatment",2.7,"Philippines",2022,29440400.713734,29440400.713734,0
+"Heart failure chronic treatment",2.7,"Philippines",2023,35418393.1203965,30612822.594811,4805570.52558557
+"Heart failure chronic treatment",2.7,"Philippines",2024,41845246.7989925,31815269.7869937,10029977.0119988
+"Heart failure chronic treatment",2.7,"Philippines",2025,48802121.5560424,33069768.849471,15732352.7065714
+"Heart failure chronic treatment",2.7,"Philippines",2026,56360809.863874,34376585.3390866,21984224.5247874
+"Heart failure chronic treatment",2.7,"Philippines",2027,64574306.5192345,35724235.4742641,28850071.0449703
+"Heart failure chronic treatment",2.7,"Philippines",2028,73497589.6835013,37105013.491555,36392576.1919464
+"Heart failure chronic treatment",2.7,"Philippines",2029,83145310.8542296,38496062.3737515,44649248.4804781
+"Heart failure chronic treatment",2.7,"Philippines",2030,93542579.9452412,39888686.8789876,53653893.0662536
+"Alcohol use screening/brief intervention",2.9,"Philippines",2020,605308.543519118,605308.543519118,0
+"Alcohol use screening/brief intervention",2.9,"Philippines",2021,618220.913573732,618220.913573732,0
+"Alcohol use screening/brief intervention",2.9,"Philippines",2022,630031.807355125,630031.807355125,0
+"Alcohol use screening/brief intervention",2.9,"Philippines",2023,6973280.80712312,641221.223643506,6332059.58347962
+"Alcohol use screening/brief intervention",2.9,"Philippines",2024,13542197.7542861,652547.629299434,12889650.1249867
+"Alcohol use screening/brief intervention",2.9,"Philippines",2025,20353747.4300805,664309.879833328,19689437.5502472
+"Alcohol use screening/brief intervention",2.9,"Philippines",2026,27358619.0257448,674845.578712717,26683773.4470321
+"Alcohol use screening/brief intervention",2.9,"Philippines",2027,34621986.9178267,686048.515929483,33935938.4018972
+"Alcohol use screening/brief intervention",2.9,"Philippines",2028,42148625.9544763,697558.762663031,41451067.1918133
+"Alcohol use screening/brief intervention",2.9,"Philippines",2029,49913029.4059643,708787.469983336,49204241.9359809
+"Alcohol use screening/brief intervention",2.9,"Philippines",2030,57894546.8206879,719503.557614449,57175043.2630734
+"Medical management of ACS",3.1,"Philippines",2020,37176973.6747369,37176973.6747369,0
+"Medical management of ACS",3.1,"Philippines",2021,38584551.5604174,38584551.5604174,0
+"Medical management of ACS",3.1,"Philippines",2022,39946060.9003958,39946060.9003958,0
+"Medical management of ACS",3.1,"Philippines",2023,49447079.3676373,41289143.7143907,8157935.65324656
+"Medical management of ACS",3.1,"Philippines",2024,59564474.1500409,42662535.5715423,16901938.5784987
+"Medical management of ACS",3.1,"Philippines",2025,70397208.6190617,44092154.8105308,26305053.8085309
+"Medical management of ACS",3.1,"Philippines",2026,81927982.3886432,45519987.1196509,36407995.2689922
+"Medical management of ACS",3.1,"Philippines",2027,94324159.7288685,47002019.9745315,47322139.7543371
+"Medical management of ACS",3.1,"Philippines",2028,107648147.771583,48524721.9833773,59123425.7882057
+"Medical management of ACS",3.1,"Philippines",2029,121904897.256736,50056355.8223462,71848541.4343897
+"Medical management of ACS",3.1,"Philippines",2030,137118819.32227,51585276.6828301,85533542.6394396
+"Heart failure acute treatment",3.2,"Philippines",2020,164922732.784832,164922732.784832,0
+"Heart failure acute treatment",3.2,"Philippines",2021,172388305.786304,172388305.786304,0
+"Heart failure acute treatment",3.2,"Philippines",2022,179658063.029655,179658063.029655,0
+"Heart failure acute treatment",3.2,"Philippines",2023,223765885.63362,186848281.606525,36917604.0270956
+"Heart failure acute treatment",3.2,"Philippines",2024,271196906.703819,194183843.469434,77013063.234385
+"Heart failure acute treatment",3.2,"Philippines",2025,322507845.573636,201800716.039829,120707129.533807
+"Heart failure acute treatment",3.2,"Philippines",2026,378570922.386387,209896140.839921,168674781.546465
+"Heart failure acute treatment",3.2,"Philippines",2027,439525931.552865,218210250.519339,221315681.033526
+"Heart failure acute treatment",3.2,"Philippines",2028,505801133.534175,226700527.29598,279100606.238195
+"Heart failure acute treatment",3.2,"Philippines",2029,577549037.539329,235232849.422339,342316188.11699
+"Heart failure acute treatment",3.2,"Philippines",2030,654974456.496872,243755036.320854,411219420.176018
+"Cervical cancer screening and treatment",3.3,"Philippines",2020,16835381.2603703,16835381.2603703,0
+"Cervical cancer screening and treatment",3.3,"Philippines",2021,17214183.9528841,17214183.9528841,0
+"Cervical cancer screening and treatment",3.3,"Philippines",2022,17565785.5410295,17565785.5410295,0
+"Cervical cancer screening and treatment",3.3,"Philippines",2023,29437834.393292,17903712.1456279,11534122.2476641
+"Cervical cancer screening and treatment",3.3,"Philippines",2024,41764015.0400459,18248029.3911496,23515985.6488963
+"Cervical cancer screening and treatment",3.3,"Philippines",2025,54585360.5723506,18606529.6088,35978830.9635507
+"Cervical cancer screening and treatment",3.3,"Philippines",2026,67749909.3640956,18927035.0753287,48822874.2887668
+"Cervical cancer screening and treatment",3.3,"Philippines",2027,81440834.6556886,19268304.2263484,62172530.4293402
+"Cervical cancer screening and treatment",3.3,"Philippines",2028,95667856.2379398,19622205.8085678,76045650.429372
+"Cervical cancer screening and treatment",3.3,"Philippines",2029,110390432.423776,19975311.7472967,90415120.676479
+"Cervical cancer screening and treatment",3.3,"Philippines",2030,125580843.00002,20322005.9568867,105258837.043133
+"Asthma/COPD acute treatment",3.4,"Philippines",2020,164315461.903711,164315461.903711,0
+"Asthma/COPD acute treatment",3.4,"Philippines",2021,166695872.782143,166695872.782143,0
+"Asthma/COPD acute treatment",3.4,"Philippines",2022,168917467.384864,168917467.384864,0
+"Asthma/COPD acute treatment",3.4,"Philippines",2023,204802990.420424,171013944.862846,33789045.5575784
+"Asthma/COPD acute treatment",3.4,"Philippines",2024,241507407.826363,173062164.94034,68445242.8860227
+"Asthma/COPD acute treatment",3.4,"Philippines",2025,279292162.761924,175211113.916274,104081048.84565
+"Asthma/COPD acute treatment",3.4,"Philippines",2026,318743453.522361,177716125.585139,141027327.937222
+"Asthma/COPD acute treatment",3.4,"Philippines",2027,359631873.250154,180317891.735739,179313981.514415
+"Asthma/COPD acute treatment",3.4,"Philippines",2028,402074900.587788,183008039.496181,219066861.091607
+"Asthma/COPD acute treatment",3.4,"Philippines",2029,446160585.687517,185770491.490279,260390094.197238
+"Asthma/COPD acute treatment",3.4,"Philippines",2030,491723017.145378,188499421.9062,303223595.239178
+"Management of bowel obstruction",3.6,"Philippines",2020,2193294.39593943,2193294.39593943,0
+"Management of bowel obstruction",3.6,"Philippines",2021,2240904.79384333,2240904.79384333,0
+"Management of bowel obstruction",3.6,"Philippines",2022,2290026.143306,2290026.143306,0
+"Management of bowel obstruction",3.6,"Philippines",2023,9850462.18979221,2340703.8866833,7509758.30310891
+"Management of bowel obstruction",3.6,"Philippines",2024,17755804.7829641,2393121.02843501,15362683.7545291
+"Management of bowel obstruction",3.6,"Philippines",2025,26029190.9696808,2446651.19511296,23582539.7745678
+"Management of bowel obstruction",3.6,"Philippines",2026,34723986.5497828,2503028.56148203,32220957.9883008
+"Management of bowel obstruction",3.6,"Philippines",2027,43845858.1446175,2559669.22776099,41286188.9168565
+"Management of bowel obstruction",3.6,"Philippines",2028,53415547.6172072,2616250.00333115,50799297.6138761
+"Management of bowel obstruction",3.6,"Philippines",2029,63446460.9100024,2672304.19897413,60774156.7110283
+"Management of bowel obstruction",3.6,"Philippines",2030,73953966.8579404,2727729.73903017,71226237.1189102
+"Management of appendicitis",3.7,"Philippines",2020,115802.909545505,115802.909545505,0
+"Management of appendicitis",3.7,"Philippines",2021,117192.504303496,117192.504303496,0
+"Management of appendicitis",3.7,"Philippines",2022,118363.793147817,118363.793147817,0
+"Management of appendicitis",3.7,"Philippines",2023,502459.293232085,119396.267698713,383063.025533372
+"Management of appendicitis",3.7,"Philippines",2024,892880.678234246,120385.582571278,772495.095662968
+"Management of appendicitis",3.7,"Philippines",2025,1289643.92104821,121368.638513945,1168275.28253426
+"Management of appendicitis",3.7,"Philippines",2026,1690181.29910001,122160.39183657,1568020.90726344
+"Management of appendicitis",3.7,"Philippines",2027,2096794.77718757,123000.32242383,1973794.45476374
+"Management of appendicitis",3.7,"Philippines",2028,2508752.85650313,123826.075062121,2384926.78144101
+"Management of appendicitis",3.7,"Philippines",2029,2924121.19868792,124558.124972855,2799563.07371506
+"Management of appendicitis",3.7,"Philippines",2030,3342560.2702498,125215.186417896,3217345.0838319
+"Repair of hernias",3.8,"Philippines",2020,10202804.2383806,10202804.2383806,0
+"Repair of hernias",3.8,"Philippines",2021,10422150.7918539,10422150.7918539,0
+"Repair of hernias",3.8,"Philippines",2022,10631005.054832,10631005.054832,0
+"Repair of hernias",3.8,"Philippines",2023,45597071.0237187,10834947.5699926,34762123.4537262
+"Repair of hernias",3.8,"Philippines",2024,81927938.312127,11043017.8785479,70884920.4335791
+"Repair of hernias",3.8,"Philippines",2025,119772659.093771,11260897.7491112,108511761.34466
+"Repair of hernias",3.8,"Philippines",2026,158993301.309878,11466999.071866,147526302.238012
+"Repair of hernias",3.8,"Philippines",2027,199939858.298788,11683808.4315357,188256049.867253
+"Repair of hernias",3.8,"Philippines",2028,242735255.776481,11907921.2687266,230827334.507754
+"Repair of hernias",3.8,"Philippines",2029,287399161.989964,12133344.4422765,275265817.547687
+"Repair of hernias",3.8,"Philippines",2030,333919566.433946,12355950.1554593,321563616.278487
+"Repair of gastrointestinal perforations",3.9,"Philippines",2020,97694.9945824271,97694.9945824271,0
+"Repair of gastrointestinal perforations",3.9,"Philippines",2021,100638.732242265,100638.732242265,0
+"Repair of gastrointestinal perforations",3.9,"Philippines",2022,103447.211301564,103447.211301564,0
+"Repair of gastrointestinal perforations",3.9,"Philippines",2023,446918.758056196,106198.516765829,340720.241290367
+"Repair of gastrointestinal perforations",3.9,"Philippines",2024,808915.543543913,109016.967838367,699898.575705547
+"Repair of gastrointestinal perforations",3.9,"Philippines",2025,1191405.30361903,111959.522427104,1079445.78119193
+"Repair of gastrointestinal perforations",3.9,"Philippines",2026,1592407.96068038,114723.925976613,1477684.03470377
+"Repair of gastrointestinal perforations",3.9,"Philippines",2027,2016808.3676227,117626.390027379,1899181.97759532
+"Repair of gastrointestinal perforations",3.9,"Philippines",2028,2466330.29648863,120619.909830506,2345710.38665812
+"Repair of gastrointestinal perforations",3.9,"Philippines",2029,2941105.13349895,123614.542948528,2817490.59055042
+"Repair of gastrointestinal perforations",3.9,"Philippines",2030,3441697.92913016,126582.742005356,3315115.1871248
+"PCI for ACS",4.1,"Philippines",2020,26497919.3966745,26497919.3966745,0
+"PCI for ACS",4.1,"Philippines",2021,27418820.9149814,27418820.9149814,0
+"PCI for ACS",4.1,"Philippines",2022,28335638.103064,28335638.103064,0
+"PCI for ACS",4.1,"Philippines",2023,35053303.6400848,29270098.6624277,5783204.9776571
+"PCI for ACS",4.1,"Philippines",2024,42224297.646504,30249467.7517073,11974829.8947968
+"PCI for ACS",4.1,"Philippines",2025,49903779.8244627,31279003.0942085,18624776.7302542
+"PCI for ACS",4.1,"Philippines",2026,57814294.6442618,32174000.2909022,25640294.3533595
+"PCI for ACS",4.1,"Philippines",2027,66268555.0575842,33118353.0180382,33150202.0395459
+"PCI for ACS",4.1,"Philippines",2028,75304962.4700651,34103339.2318475,41201623.2382175
+"PCI for ACS",4.1,"Philippines",2029,84919651.1434776,35105710.0575715,49813941.0859062
+"PCI for ACS",4.1,"Philippines",2030,95122503.1963742,36115491.0167993,59007012.1795749
+"Management of acute ventilatory failure",4.2,"Philippines",2020,3774826.3792869,3774826.3792869,0
+"Management of acute ventilatory failure",4.2,"Philippines",2021,3855418.3788674,3855418.3788674,0
+"Management of acute ventilatory failure",4.2,"Philippines",2022,3931519.92453108,3931519.92453108,0
+"Management of acute ventilatory failure",4.2,"Philippines",2023,4795906.06588425,4004662.3041727,791243.761711543
+"Management of acute ventilatory failure",4.2,"Philippines",2024,5691387.15566294,4077778.66815914,1613608.4875038
+"Management of acute ventilatory failure",4.2,"Philippines",2025,6624987.19127994,4154016.67289618,2470970.51838376
+"Management of acute ventilatory failure",4.2,"Philippines",2026,7606232.14839421,4236143.0999244,3370089.04846981
+"Management of acute ventilatory failure",4.2,"Philippines",2027,8635920.41084272,4321337.95454683,4314582.45629589
+"Management of acute ventilatory failure",4.2,"Philippines",2028,9717364.96002798,4408889.92944196,5308475.03058602
+"Management of acute ventilatory failure",4.2,"Philippines",2029,10851325.1979538,4497329.63107928,6353995.56687449
+"Management of acute ventilatory failure",4.2,"Philippines",2030,12035470.3475922,4584594.67941329,7450875.66817888
+"Treatment of early-stage breast cancer",4.3,"Philippines",2020,270141.502160116,270141.502160116,0
+"Treatment of early-stage breast cancer",4.3,"Philippines",2021,278022.231608403,278022.231608403,0
+"Treatment of early-stage breast cancer",4.3,"Philippines",2022,285718.492786603,285718.492786603,0
+"Treatment of early-stage breast cancer",4.3,"Philippines",2023,482430.94575539,293408.294494506,189022.651260884
+"Treatment of early-stage breast cancer",4.3,"Philippines",2024,689749.603422505,301348.665429095,388400.937993409
+"Treatment of early-stage breast cancer",4.3,"Philippines",2025,908550.635326818,309612.684484193,598937.950842625
+"Treatment of early-stage breast cancer",4.3,"Philippines",2026,1135237.8082981,316958.27200999,818279.536288105
+"Treatment of early-stage breast cancer",4.3,"Philippines",2027,1374151.59499305,324772.358718848,1049379.2362742
+"Treatment of early-stage breast cancer",4.3,"Philippines",2028,1625782.72526235,332912.489266691,1292870.23599566
+"Treatment of early-stage breast cancer",4.3,"Philippines",2029,1889665.28692798,341129.940198527,1548535.34672946
+"Treatment of early-stage breast cancer",4.3,"Philippines",2030,2165516.13060393,349313.082117229,1816203.0484867
+"Treatment of early-stage colorectal cancer",4.4,"Philippines",2020,2269404.8101579,2269404.8101579,0
+"Treatment of early-stage colorectal cancer",4.4,"Philippines",2021,2349217.06120083,2349217.06120083,0
+"Treatment of early-stage colorectal cancer",4.4,"Philippines",2022,2428514.66479658,2428514.66479658,0
+"Treatment of early-stage colorectal cancer",4.4,"Philippines",2023,4125450.21357882,2509045.74393098,1616404.46964784
+"Treatment of early-stage colorectal cancer",4.4,"Philippines",2024,5937262.22570545,2593134.55119408,3344127.67451137
+"Treatment of early-stage colorectal cancer",4.4,"Philippines",2025,7876669.13251525,2681330.80201495,5195338.3305003
+"Treatment of early-stage colorectal cancer",4.4,"Philippines",2026,9900605.66889239,2757875.14015962,7142730.52873277
+"Treatment of early-stage colorectal cancer",4.4,"Philippines",2027,12060084.7512938,2838669.01385153,9221415.7374423
+"Treatment of early-stage colorectal cancer",4.4,"Philippines",2028,14366285.4001086,2922883.62074382,11443401.7793648
+"Treatment of early-stage colorectal cancer",4.4,"Philippines",2029,16821483.1194559,3008447.76193002,13813035.3575259
+"Treatment of early-stage colorectal cancer",4.4,"Philippines",2030,19429498.8443562,3094460.52549369,16335038.3188625

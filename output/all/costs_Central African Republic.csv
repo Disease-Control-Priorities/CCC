@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"Central African Republic",2020,838.053119455897,838.053119455897,0
+"IDU harm reduction measures",1.1,"Central African Republic",2021,864.769514519526,864.769514519526,0
+"IDU harm reduction measures",1.1,"Central African Republic",2022,893.455867258185,893.455867258185,0
+"IDU harm reduction measures",1.1,"Central African Republic",2023,10048.132539285,923.966210508966,9124.16632877603
+"IDU harm reduction measures",1.1,"Central African Republic",2024,19842.0918770871,956.201544229945,18885.8903328571
+"IDU harm reduction measures",1.1,"Central African Republic",2025,30323.4139509737,989.996627994875,29333.4173229788
+"IDU harm reduction measures",1.1,"Central African Republic",2026,41499.4894606077,1024.32321744805,40475.1662431596
+"IDU harm reduction measures",1.1,"Central African Republic",2027,53447.821922688,1060.34407069633,52387.4778519917
+"IDU harm reduction measures",1.1,"Central African Republic",2028,66183.1831943589,1097.41850517326,65085.7646891857
+"IDU harm reduction measures",1.1,"Central African Republic",2029,79685.5294131633,1134.77581066379,78550.7536024995
+"IDU harm reduction measures",1.1,"Central African Republic",2030,93932.0268646921,1171.99939858923,92760.0274661028
+"Pulmonary rehabilitation",1.2,"Central African Republic",2020,2915.87478615261,2915.87478615261,0
+"Pulmonary rehabilitation",1.2,"Central African Republic",2021,2979.47398675462,2979.47398675462,0
+"Pulmonary rehabilitation",1.2,"Central African Republic",2022,3044.72600107661,3044.72600107661,0
+"Pulmonary rehabilitation",1.2,"Central African Republic",2023,4467.28755038432,3112.24965194345,1355.03789844087
+"Pulmonary rehabilitation",1.2,"Central African Republic",2024,5958.01086355843,3183.18095653478,2774.82990702364
+"Pulmonary rehabilitation",1.2,"Central African Republic",2025,7526.03568453019,3257.80446356866,4268.23122096153
+"Pulmonary rehabilitation",1.2,"Central African Republic",2026,9218.00093616866,3349.19043889381,5868.81049727485
+"Pulmonary rehabilitation",1.2,"Central African Republic",2027,11027.0631784778,3446.39634540118,7580.66683307657
+"Pulmonary rehabilitation",1.2,"Central African Republic",2028,12963.2744589171,3548.54319423709,9414.73126468001
+"Pulmonary rehabilitation",1.2,"Central African Republic",2029,15031.2642397122,3654.22432390556,11377.0399158067
+"Pulmonary rehabilitation",1.2,"Central African Republic",2030,17234.4859519492,3762.9340568424,13471.5518951068
+"Depression chronic treatment",2.1,"Central African Republic",2020,0,0,0
+"Depression chronic treatment",2.1,"Central African Republic",2021,0,0,0
+"Depression chronic treatment",2.1,"Central African Republic",2022,0,0,0
+"Depression chronic treatment",2.1,"Central African Republic",2023,0,0,0
+"Depression chronic treatment",2.1,"Central African Republic",2024,0,0,0
+"Depression chronic treatment",2.1,"Central African Republic",2025,0,0,0
+"Depression chronic treatment",2.1,"Central African Republic",2026,0,0,0
+"Depression chronic treatment",2.1,"Central African Republic",2027,0,0,0
+"Depression chronic treatment",2.1,"Central African Republic",2028,0,0,0
+"Depression chronic treatment",2.1,"Central African Republic",2029,0,0,0
+"Depression chronic treatment",2.1,"Central African Republic",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"Central African Republic",2020,69586.3262090431,69586.3262090431,0
+"Bipolar disorder chronic treatment",2.11,"Central African Republic",2021,71473.098280498,71473.098280498,0
+"Bipolar disorder chronic treatment",2.11,"Central African Republic",2022,73461.724291867,73461.724291867,0
+"Bipolar disorder chronic treatment",2.11,"Central African Republic",2023,270288.30232185,75548.0051815559,194740.297140294
+"Bipolar disorder chronic treatment",2.11,"Central African Republic",2024,478499.949117254,77730.619381206,400769.329736048
+"Bipolar disorder chronic treatment",2.11,"Central African Republic",2025,698823.005189092,79998.8874227349,618824.117766357
+"Bipolar disorder chronic treatment",2.11,"Central African Republic",2026,930553.389438129,82222.8885951388,848330.50084299
+"Bipolar disorder chronic treatment",2.11,"Central African Republic",2027,1175602.02286603,84556.544169556,1091045.47869647
+"Bipolar disorder chronic treatment",2.11,"Central African Republic",2028,1434384.37827332,86966.5606539728,1347417.81761935
+"Bipolar disorder chronic treatment",2.11,"Central African Republic",2029,1706908.82600198,89417.0221937686,1617491.80380821
+"Bipolar disorder chronic treatment",2.11,"Central African Republic",2030,1992973.93336021,91880.5384802317,1901093.39487998
+"Schizophrenia chronic treatment",2.12,"Central African Republic",2020,147379.641451713,147379.641451713,0
+"Schizophrenia chronic treatment",2.12,"Central African Republic",2021,151391.339751124,151391.339751124,0
+"Schizophrenia chronic treatment",2.12,"Central African Republic",2022,155738.223688,155738.223688,0
+"Schizophrenia chronic treatment",2.12,"Central African Republic",2023,204539.897597591,160423.44909615,44116.4485014411
+"Schizophrenia chronic treatment",2.12,"Central African Republic",2024,256493.309495521,165465.670022824,91027.6394726978
+"Schizophrenia chronic treatment",2.12,"Central African Republic",2025,311909.480305776,170859.885460734,141049.594845041
+"Schizophrenia chronic treatment",2.12,"Central African Republic",2026,370821.278366443,176468.994063072,194352.284303371
+"Schizophrenia chronic treatment",2.12,"Central African Republic",2027,433919.88076411,182496.175270168,251423.705493941
+"Schizophrenia chronic treatment",2.12,"Central African Republic",2028,501362.54967653,188859.548018216,312503.001658314
+"Schizophrenia chronic treatment",2.12,"Central African Republic",2029,573165.562725732,195461.427219031,377704.1355067
+"Schizophrenia chronic treatment",2.12,"Central African Republic",2030,649368.666743481,202246.951394845,447121.715348636
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2020,4310.56100486704,4310.56100486704,0
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2021,4393.90205897816,4393.90205897816,0
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2022,4481.46377306643,4481.46377306643,0
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2023,19244.6236774019,4572.97988373906,14671.6437936628
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2024,34626.8393580309,4668.4973684949,29958.341989536
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2025,50665.3820631012,4767.48118739143,45897.9008757098
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2026,67395.4308867353,4869.57865341298,62525.8522333223
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2027,84864.083001197,4975.35819326556,79888.7248079314
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2028,103096.215592809,5083.93237400619,98012.2832188023
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2029,122103.154508361,5194.38278650842,116908.771721853
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2030,141877.419754906,5305.62535010273,136571.794404803
+"Asthma/COPD chronic treatment",2.14,"Central African Republic",2020,694415.064976495,694415.064976495,0
+"Asthma/COPD chronic treatment",2.14,"Central African Republic",2021,705022.504615922,705022.504615922,0
+"Asthma/COPD chronic treatment",2.14,"Central African Republic",2022,716342.95069923,716342.95069923,0
+"Asthma/COPD chronic treatment",2.14,"Central African Republic",2023,1045289.01609806,728227.216144084,317061.799953976
+"Asthma/COPD chronic treatment",2.14,"Central African Republic",2024,1385979.44707875,740781.867787904,645197.579290845
+"Asthma/COPD chronic treatment",2.14,"Central African Republic",2025,1739870.52561781,754174.66253348,985695.863084327
+"Asthma/COPD chronic treatment",2.14,"Central African Republic",2026,2110572.18059174,769222.497687427,1341349.68290431
+"Asthma/COPD chronic treatment",2.14,"Central African Republic",2027,2497680.37156425,785028.442459622,1712651.92910463
+"Asthma/COPD chronic treatment",2.14,"Central African Republic",2028,2901873.27388257,801431.224008109,2100442.04987446
+"Asthma/COPD chronic treatment",2.14,"Central African Republic",2029,3323978.67604283,818392.05807601,2505586.61796682
+"Asthma/COPD chronic treatment",2.14,"Central African Republic",2030,3764663.55116219,835874.378547335,2928789.17261485
+"Diabetes screening and treatment",2.3,"Central African Republic",2020,2516231.77474673,2516231.77474673,0
+"Diabetes screening and treatment",2.3,"Central African Republic",2021,2575000.21607376,2575000.21607376,0
+"Diabetes screening and treatment",2.3,"Central African Republic",2022,2636844.26591496,2636844.26591496,0
+"Diabetes screening and treatment",2.3,"Central African Republic",2023,3878480.99859592,2702042.57098045,1176438.42761546
+"Diabetes screening and treatment",2.3,"Central African Republic",2024,5185934.54496927,2771114.75421069,2414819.79075858
+"Diabetes screening and treatment",2.3,"Central African Republic",2025,6566806.67951449,2844100.11638168,3722706.56313282
+"Diabetes screening and treatment",2.3,"Central African Republic",2026,8038229.03971646,2924132.00747146,5114097.032245
+"Diabetes screening and treatment",2.3,"Central African Republic",2027,9607062.79075839,3009359.53330734,6597703.25745105
+"Diabetes screening and treatment",2.3,"Central African Republic",2028,11280745.229872,3099024.98567674,8181720.24419524
+"Diabetes screening and treatment",2.3,"Central African Republic",2029,13063371.8075563,3192056.23050897,9871315.57704733
+"Diabetes screening and treatment",2.3,"Central African Republic",2030,14958960.5580516,3288040.29957569,11670920.2584759
+"CVD primary prevention",2.4,"Central African Republic",2020,728036.273392427,728036.273392427,0
+"CVD primary prevention",2.4,"Central African Republic",2021,743928.281615518,743928.281615518,0
+"CVD primary prevention",2.4,"Central African Republic",2022,761112.63401332,761112.63401332,0
+"CVD primary prevention",2.4,"Central African Republic",2023,1119556.97732471,779967.882906918,339589.094417792
+"CVD primary prevention",2.4,"Central African Republic",2024,1498968.88026561,801091.42242384,697877.457841767
+"CVD primary prevention",2.4,"Central African Republic",2025,1903372.53739918,824762.195934703,1078610.34146448
+"CVD primary prevention",2.4,"Central African Republic",2026,2338443.47173822,851628.483968412,1486814.98776981
+"CVD primary prevention",2.4,"Central African Republic",2027,2808476.97418308,881543.003362577,1926933.9708205
+"CVD primary prevention",2.4,"Central African Republic",2028,3316850.51355458,914183.870581173,2402666.6429734
+"CVD primary prevention",2.4,"Central African Republic",2029,3865697.43050756,949091.391310552,2916606.03919701
+"CVD primary prevention",2.4,"Central African Republic",2030,4457029.17033096,986000.092449476,3471029.07788148
+"Aspirin for suspected ACS",2.5,"Central African Republic",2020,228.026200439395,228.026200439395,0
+"Aspirin for suspected ACS",2.5,"Central African Republic",2021,232.265034934867,232.265034934867,0
+"Aspirin for suspected ACS",2.5,"Central African Republic",2022,236.821829423875,236.821829423875,0
+"Aspirin for suspected ACS",2.5,"Central African Republic",2023,346.923550916066,241.693127745185,105.230423170881
+"Aspirin for suspected ACS",2.5,"Central African Republic",2024,462.010872183614,246.880602174314,215.1302700093
+"Aspirin for suspected ACS",2.5,"Central African Republic",2025,582.665475407432,252.367050009984,330.298425397448
+"Aspirin for suspected ACS",2.5,"Central African Republic",2026,710.166600529067,258.372456955878,451.794143573189
+"Aspirin for suspected ACS",2.5,"Central African Republic",2027,845.592688432137,264.930156714487,580.66253171765
+"Aspirin for suspected ACS",2.5,"Central African Republic",2028,989.769629411736,271.991695094556,717.77793431718
+"Aspirin for suspected ACS",2.5,"Central African Republic",2029,1143.29035489236,279.487690262575,863.802664629782
+"Aspirin for suspected ACS",2.5,"Central African Republic",2030,1306.85856611994,287.422221801493,1019.43634431844
+"CVD secondary prevention",2.6,"Central African Republic",2020,882366.278534112,882366.278534112,0
+"CVD secondary prevention",2.6,"Central African Republic",2021,902299.674103057,902299.674103057,0
+"CVD secondary prevention",2.6,"Central African Republic",2022,921957.601410181,921957.601410181,0
+"CVD secondary prevention",2.6,"Central African Republic",2023,1351464.25684328,941531.995766127,409932.261077156
+"CVD secondary prevention",2.6,"Central African Republic",2024,1799751.57104812,961335.801388819,838415.769659296
+"CVD secondary prevention",2.6,"Central African Republic",2025,2269072.75573819,981454.305435864,1287618.45030233
+"CVD secondary prevention",2.6,"Central African Republic",2026,2782200.93816455,1009079.71128965,1773121.2268749
+"CVD secondary prevention",2.6,"Central African Republic",2027,3329785.23491118,1037346.82773196,2292438.40717922
+"CVD secondary prevention",2.6,"Central African Republic",2028,3914737.98533282,1066136.40007267,2848601.58526015
+"CVD secondary prevention",2.6,"Central African Republic",2029,4538244.07533216,1095133.6679697,3443110.40736246
+"CVD secondary prevention",2.6,"Central African Republic",2030,5201058.35159455,1124307.16692999,4076751.18466455
+"Heart failure chronic treatment",2.7,"Central African Republic",2020,94123.396725827,94123.396725827,0
+"Heart failure chronic treatment",2.7,"Central African Republic",2021,96688.5220575185,96688.5220575185,0
+"Heart failure chronic treatment",2.7,"Central African Republic",2022,99005.5974257617,99005.5974257617,0
+"Heart failure chronic treatment",2.7,"Central African Republic",2023,145028.073260307,101037.5010419,43990.5722184078
+"Heart failure chronic treatment",2.7,"Central African Republic",2024,192481.52837555,102777.39986285,89704.1285127001
+"Heart failure chronic treatment",2.7,"Central African Republic",2025,241153.858028375,104182.109590553,136971.748437823
+"Heart failure chronic treatment",2.7,"Central African Republic",2026,297393.645331872,107559.544984909,189834.100346963
+"Heart failure chronic treatment",2.7,"Central African Republic",2027,357341.23511067,110744.902181003,246596.332929667
+"Heart failure chronic treatment",2.7,"Central African Republic",2028,420953.885066043,113686.265586399,307267.619479644
+"Heart failure chronic treatment",2.7,"Central African Republic",2029,487767.204679839,116298.169372207,371469.035307632
+"Heart failure chronic treatment",2.7,"Central African Republic",2030,557093.274999223,118549.252109876,438544.022889347
+"Alcohol use screening/brief intervention",2.9,"Central African Republic",2020,17071.6101292584,17071.6101292584,0
+"Alcohol use screening/brief intervention",2.9,"Central African Republic",2021,17559.5785352916,17559.5785352916,0
+"Alcohol use screening/brief intervention",2.9,"Central African Republic",2022,18085.5623587388,18085.5623587388,0
+"Alcohol use screening/brief intervention",2.9,"Central African Republic",2023,202809.365937032,18649.1370976581,184160.228839374
+"Alcohol use screening/brief intervention",2.9,"Central African Republic",2024,399499.669890319,19251.5429868954,380248.126903424
+"Alcohol use screening/brief intervention",2.9,"Central African Republic",2025,609333.374091635,19891.4551677337,589441.918923902
+"Alcohol use screening/brief intervention",2.9,"Central African Republic",2026,832869.043766856,20552.9294548869,812316.114311969
+"Alcohol use screening/brief intervention",2.9,"Central African Republic",2027,1071973.92143222,21258.265634503,1050715.65579772
+"Alcohol use screening/brief intervention",2.9,"Central African Republic",2028,1327417.93749272,21996.9259240372,1305421.01156868
+"Alcohol use screening/brief intervention",2.9,"Central African Republic",2029,1599397.27485782,22756.3064275767,1576640.96843024
+"Alcohol use screening/brief intervention",2.9,"Central African Republic",2030,1888019.74283799,23529.2001379689,1864490.54270002
+"Medical management of ACS",3.1,"Central African Republic",2020,67958.5254191494,67958.5254191494,0
+"Medical management of ACS",3.1,"Central African Republic",2021,69543.5863223617,69543.5863223617,0
+"Medical management of ACS",3.1,"Central African Republic",2022,71080.3558683591,71080.3558683591,0
+"Medical management of ACS",3.1,"Central African Republic",2023,244946.445325446,72576.724540873,172369.720784573
+"Medical management of ACS",3.1,"Central African Republic",2024,426130.670127333,74053.1756082289,352077.494519104
+"Medical management of ACS",3.1,"Central African Republic",2025,615126.248067406,75509.3537053462,539616.89436206
+"Medical management of ACS",3.1,"Central African Republic",2026,820556.800812698,77683.0386372722,742873.762175426
+"Medical management of ACS",3.1,"Central African Republic",2027,1039725.17139804,79881.6237434354,959843.547654609
+"Medical management of ACS",3.1,"Central African Republic",2028,1273623.42618142,82087.7952716231,1191535.6309098
+"Medical management of ACS",3.1,"Central African Republic",2029,1522479.00187156,84267.1726068165,1438211.82926475
+"Medical management of ACS",3.1,"Central African Republic",2030,1786181.26312726,86411.24216192,1699770.02096534
+"Heart failure acute treatment",3.2,"Central African Republic",2020,120671.136122831,120671.136122831,0
+"Heart failure acute treatment",3.2,"Central African Republic",2021,123952.494151222,123952.494151222,0
+"Heart failure acute treatment",3.2,"Central African Republic",2022,126923.870702146,126923.870702146,0
+"Heart failure acute treatment",3.2,"Central African Republic",2023,437189.808821929,129537.721132423,307652.087689505
+"Heart failure acute treatment",3.2,"Central African Republic",2024,758572.570336182,131785.409583546,626787.160752636
+"Heart failure acute treatment",3.2,"Central African Republic",2025,1089558.13781114,133611.084715806,955947.053095338
+"Heart failure acute treatment",3.2,"Central African Republic",2026,1460377.16970585,137927.115229308,1322450.05447655
+"Heart failure acute treatment",3.2,"Central African Republic",2027,1856512.91905193,142007.23392105,1714505.68513088
+"Heart failure acute treatment",3.2,"Central African Republic",2028,2277959.7989843,145784.699331438,2132175.09965286
+"Heart failure acute treatment",3.2,"Central African Republic",2029,2722269.81255525,149150.217787371,2573119.59476788
+"Heart failure acute treatment",3.2,"Central African Republic",2030,3185442.78998231,152062.89769112,3033379.89229119
+"Cervical cancer screening and treatment",3.3,"Central African Republic",2020,85078.7315793783,85078.7315793783,0
+"Cervical cancer screening and treatment",3.3,"Central African Republic",2021,87547.5032390576,87547.5032390576,0
+"Cervical cancer screening and treatment",3.3,"Central African Republic",2022,90213.6830931683,90213.6830931683,0
+"Cervical cancer screening and treatment",3.3,"Central African Republic",2023,236556.418276641,93071.3776826128,143485.040594028
+"Cervical cancer screening and treatment",3.3,"Central African Republic",2024,392542.714855186,96122.5972980049,296420.117557181
+"Cervical cancer screening and treatment",3.3,"Central African Republic",2025,559110.780228537,99360.2976734804,459750.482555056
+"Cervical cancer screening and treatment",3.3,"Central African Republic",2026,736280.485931742,102651.711656255,633628.774275486
+"Cervical cancer screening and treatment",3.3,"Central African Republic",2027,925712.573924516,106144.791420661,819567.782503855
+"Cervical cancer screening and treatment",3.3,"Central African Republic",2028,1127939.22188129,109788.089277265,1018151.13260403
+"Cervical cancer screening and treatment",3.3,"Central African Republic",2029,1343009.40054236,113516.782207884,1229492.61833448
+"Cervical cancer screening and treatment",3.3,"Central African Republic",2030,1570945.81374908,117295.217972985,1453650.5957761
+"Asthma/COPD acute treatment",3.4,"Central African Republic",2020,224369.000199829,224369.000199829,0
+"Asthma/COPD acute treatment",3.4,"Central African Republic",2021,227836.685241077,227836.685241077,0
+"Asthma/COPD acute treatment",3.4,"Central African Republic",2022,231526.621288283,231526.621288283,0
+"Asthma/COPD acute treatment",3.4,"Central African Republic",2023,794468.374558141,235398.036906116,559070.337652025
+"Asthma/COPD acute treatment",3.4,"Central African Republic",2024,1377256.69404131,239491.932335811,1137764.7617055
+"Asthma/COPD acute treatment",3.4,"Central African Republic",2025,1982287.63330953,243864.243156289,1738423.39015324
+"Asthma/COPD acute treatment",3.4,"Central African Republic",2026,2615460.23879008,248836.814092072,2366623.42469801
+"Asthma/COPD acute treatment",3.4,"Central African Republic",2027,3277296.35238828,254071.972234825,3023224.38015346
+"Asthma/COPD acute treatment",3.4,"Central African Republic",2028,3969461.29084553,259517.725980879,3709943.56486465
+"Asthma/COPD acute treatment",3.4,"Central African Republic",2029,4693627.555995,265157.219045636,4428470.33694936
+"Asthma/COPD acute treatment",3.4,"Central African Republic",2030,5451196.10872588,270978.52235707,5180217.58636881
+"Management of bowel obstruction",3.6,"Central African Republic",2020,7599.51260890976,7599.51260890976,0
+"Management of bowel obstruction",3.6,"Central African Republic",2021,7742.49962857507,7742.49962857507,0
+"Management of bowel obstruction",3.6,"Central African Republic",2022,7895.11094447414,7895.11094447414,0
+"Management of bowel obstruction",3.6,"Central African Republic",2023,87636.0310156669,8058.48561063604,79577.5454050309
+"Management of bowel obstruction",3.6,"Central African Republic",2024,170856.288193507,8232.35133666411,162623.936856843
+"Management of bowel obstruction",3.6,"Central African Republic",2025,257991.339540631,8418.26267774324,249573.076862888
+"Management of bowel obstruction",3.6,"Central African Republic",2026,350139.018360839,8631.59035576984,341507.428005069
+"Management of bowel obstruction",3.6,"Central African Republic",2027,447132.68713244,8850.26748209657,438282.419650344
+"Management of bowel obstruction",3.6,"Central African Republic",2028,549279.12416671,9074.56407129592,540204.560095415
+"Management of bowel obstruction",3.6,"Central African Republic",2029,656774.062105423,9303.43704575313,647470.62505967
+"Management of bowel obstruction",3.6,"Central African Republic",2030,769839.065885562,9537.36670732995,760301.699178232
+"Management of appendicitis",3.7,"Central African Republic",2020,2179.28865351507,2179.28865351507,0
+"Management of appendicitis",3.7,"Central African Republic",2021,2227.05297470772,2227.05297470772,0
+"Management of appendicitis",3.7,"Central African Republic",2022,2276.09210483472,2276.09210483472,0
+"Management of appendicitis",3.7,"Central African Republic",2023,25298.3986396439,2326.2895300822,22972.1091095617
+"Management of appendicitis",3.7,"Central African Republic",2024,49338.4240911434,2377.71458434025,46960.7095068032
+"Management of appendicitis",3.7,"Central African Republic",2025,74413.2324999462,2429.6751461935,71983.5573537527
+"Management of appendicitis",3.7,"Central African Republic",2026,100359.003291873,2477.66983114858,97881.333460724
+"Management of appendicitis",3.7,"Central African Republic",2027,127358.926132499,2527.60854131983,124831.317591179
+"Management of appendicitis",3.7,"Central African Republic",2028,155432.728316158,2578.813176911,152853.915139247
+"Management of appendicitis",3.7,"Central African Republic",2029,184585.608162303,2630.78480986385,181954.823352439
+"Management of appendicitis",3.7,"Central African Republic",2030,214742.656745131,2682.2767422187,212060.380002912
+"Repair of hernias",3.8,"Central African Republic",2020,71110.1325111328,71110.1325111328,0
+"Repair of hernias",3.8,"Central African Republic",2021,72397.5183769923,72397.5183769923,0
+"Repair of hernias",3.8,"Central African Republic",2022,73770.9202989052,73770.9202989052,0
+"Repair of hernias",3.8,"Central African Republic",2023,818099.318018207,75227.5234959271,742871.79452228
+"Repair of hernias",3.8,"Central African Republic",2024,1593375.04026839,76779.0955582976,1516595.94471009
+"Repair of hernias",3.8,"Central African Republic",2025,2402871.64042228,78425.4724559909,2324446.16796629
+"Repair of hernias",3.8,"Central African Republic",2026,3250283.15216937,80172.355713051,3170110.79645632
+"Repair of hernias",3.8,"Central African Republic",2027,4140332.26352888,82039.5315344661,4058292.73199441
+"Repair of hernias",3.8,"Central African Republic",2028,5076401.03653023,84011.2199401032,4992389.81659012
+"Repair of hernias",3.8,"Central African Republic",2029,6061237.08809555,86072.4339158118,5975164.65417974
+"Repair of hernias",3.8,"Central African Republic",2030,7097337.77890504,88214.0858837809,7009123.69302126
+"Repair of gastrointestinal perforations",3.9,"Central African Republic",2020,258.650668040636,258.650668040636,0
+"Repair of gastrointestinal perforations",3.9,"Central African Republic",2021,265.228833158673,265.228833158673,0
+"Repair of gastrointestinal perforations",3.9,"Central African Republic",2022,272.038480483698,272.038480483698,0
+"Repair of gastrointestinal perforations",3.9,"Central African Republic",2023,3035.00558285268,279.080973135879,2755.92460971681
+"Repair of gastrointestinal perforations",3.9,"Central African Republic",2024,5944.13258315665,286.380107892265,5657.75247526438
+"Repair of gastrointestinal perforations",3.9,"Central African Republic",2025,9009.92194355427,293.905014877765,8716.0169286765
+"Repair of gastrointestinal perforations",3.9,"Central African Republic",2026,12267.6134442044,302.212057733883,11965.4013864706
+"Repair of gastrointestinal perforations",3.9,"Central African Republic",2027,15725.7115921524,310.877778426708,15414.8338137257
+"Repair of gastrointestinal perforations",3.9,"Central African Republic",2028,19395.3362043045,319.801539794679,19075.5346645098
+"Repair of gastrointestinal perforations",3.9,"Central African Republic",2029,23280.1111414428,328.854795423839,22951.256346019
+"Repair of gastrointestinal perforations",3.9,"Central African Republic",2030,27379.4449252309,337.954711774312,27041.4902134566
+NA,4.1,"Central African Republic",2020,NA,NA,NA
+NA,4.1,"Central African Republic",2021,NA,NA,NA
+NA,4.1,"Central African Republic",2022,NA,NA,NA
+NA,4.1,"Central African Republic",2023,NA,NA,NA
+NA,4.1,"Central African Republic",2024,NA,NA,NA
+NA,4.1,"Central African Republic",2025,NA,NA,NA
+NA,4.1,"Central African Republic",2026,NA,NA,NA
+NA,4.1,"Central African Republic",2027,NA,NA,NA
+NA,4.1,"Central African Republic",2028,NA,NA,NA
+NA,4.1,"Central African Republic",2029,NA,NA,NA
+NA,4.1,"Central African Republic",2030,NA,NA,NA
+"Management of acute ventilatory failure",4.2,"Central African Republic",2020,12638.8356428704,12638.8356428704,0
+"Management of acute ventilatory failure",4.2,"Central African Republic",2021,12869.6534880185,12869.6534880185,0
+"Management of acute ventilatory failure",4.2,"Central African Republic",2022,13112.5739714789,13112.5739714789,0
+"Management of acute ventilatory failure",4.2,"Central African Republic",2023,45109.9454927469,13365.9097756287,31744.0357171182
+"Management of acute ventilatory failure",4.2,"Central African Republic",2024,78397.6195586245,13631.5430014875,64766.076557137
+"Management of acute ventilatory failure",4.2,"Central African Republic",2025,113110.75285392,13911.3403501374,99199.412503783
+"Management of acute ventilatory failure",4.2,"Central African Republic",2026,149646.143343733,14228.7814924927,135417.361851241
+"Management of acute ventilatory failure",4.2,"Central African Republic",2027,188041.6360334,14561.7601835106,173479.87584989
+"Management of acute ventilatory failure",4.2,"Central African Republic",2028,228407.756851382,14906.7645211347,213500.992330247
+"Management of acute ventilatory failure",4.2,"Central African Republic",2029,270824.689072738,15261.1378930496,255563.551179688
+"Management of acute ventilatory failure",4.2,"Central African Republic",2030,315355.19769606,15623.6772603852,299731.520435675
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2020,646.799462117687,646.799462117687,0
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2021,658.439183782229,658.439183782229,0
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2022,671.32628360952,671.32628360952,0
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2023,1742.35992163036,685.518657690633,1056.84126393973
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2024,2864.17327804141,701.198483565309,2162.9747944761
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2025,4046.33796183068,718.513375505016,3327.82458632567
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2026,5284.06703616557,735.398398322269,4548.6686378433
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2027,6599.18544769222,754.268536522653,5844.91691116957
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2028,8003.67217972376,775.117631813528,7228.55454791023
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2029,9508.17221328638,797.843409881337,8710.32880340504
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2030,11123.1481844429,822.403378053837,10300.7448063891
+"Treatment of early-stage colorectal cancer",4.4,"Central African Republic",2020,4906.77120182919,4906.77120182919,0
+"Treatment of early-stage colorectal cancer",4.4,"Central African Republic",2021,5002.20768390654,5002.20768390654,0
+"Treatment of early-stage colorectal cancer",4.4,"Central African Republic",2022,5103.82122794197,5103.82122794197,0
+"Treatment of early-stage colorectal cancer",4.4,"Central African Republic",2023,13251.4619324697,5213.68994064381,8037.77199182588
+"Treatment of early-stage colorectal cancer",4.4,"Central African Republic",2024,21795.7583423899,5335.0152715934,16460.7430707965
+"Treatment of early-stage colorectal cancer",4.4,"Central African Republic",2025,30823.8835066714,5470.06998073804,25353.8135259334
+"Treatment of early-stage colorectal cancer",4.4,"Central African Republic",2026,40342.1429393545,5606.82802861566,34735.3149107388
+"Treatment of early-stage colorectal cancer",4.4,"Central African Republic",2027,50485.8474602395,5756.09803272129,44729.7494275182
+"Treatment of early-stage colorectal cancer",4.4,"Central African Republic",2028,61347.7786305811,5917.86492645095,55429.9137041302
+"Treatment of early-stage colorectal cancer",4.4,"Central African Republic",2029,73002.2169133912,6090.67146992145,66911.5454434697
+"Treatment of early-stage colorectal cancer",4.4,"Central African Republic",2030,85523.5830259579,6274.01068784888,79249.5723381091

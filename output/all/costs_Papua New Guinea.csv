@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"Papua New Guinea",2020,2888.56930571034,2888.56930571034,0
+"IDU harm reduction measures",1.1,"Papua New Guinea",2021,2956.99791691451,2956.99791691451,0
+"IDU harm reduction measures",1.1,"Papua New Guinea",2022,3027.00061795634,3027.00061795634,0
+"IDU harm reduction measures",1.1,"Papua New Guinea",2023,33692.4225532748,3098.15379800228,30594.2687552725
+"IDU harm reduction measures",1.1,"Papua New Guinea",2024,65780.5277573241,3169.89514259763,62610.6326147265
+"IDU harm reduction measures",1.1,"Papua New Guinea",2025,99309.783048341,3241.89606327754,96067.8869850635
+"IDU harm reduction measures",1.1,"Papua New Guinea",2026,134257.004987122,3312.99982023174,130944.005166891
+"IDU harm reduction measures",1.1,"Papua New Guinea",2027,170669.165348045,3384.28767821182,167284.877669834
+"IDU harm reduction measures",1.1,"Papua New Guinea",2028,208554.918748693,3455.46432783193,205099.454420861
+"IDU harm reduction measures",1.1,"Papua New Guinea",2029,247915.762100759,3526.29591989823,244389.466180861
+"IDU harm reduction measures",1.1,"Papua New Guinea",2030,288750.156242514,3596.64622821706,285153.510014297
+"Pulmonary rehabilitation",1.2,"Papua New Guinea",2020,61809.2562022271,61809.2562022271,0
+"Pulmonary rehabilitation",1.2,"Papua New Guinea",2021,63990.2290553617,63990.2290553617,0
+"Pulmonary rehabilitation",1.2,"Papua New Guinea",2022,66175.6948361498,66175.6948361498,0
+"Pulmonary rehabilitation",1.2,"Papua New Guinea",2023,95447.3873387055,68370.7468663715,27076.640472334
+"Pulmonary rehabilitation",1.2,"Papua New Guinea",2024,126570.124886003,70576.2204154231,55993.9044705799
+"Pulmonary rehabilitation",1.2,"Papua New Guinea",2025,159679.683931404,72798.8163976287,86880.8675337753
+"Pulmonary rehabilitation",1.2,"Papua New Guinea",2026,195958.704103207,75420.0291959871,120538.67490722
+"Pulmonary rehabilitation",1.2,"Papua New Guinea",2027,234855.072606247,78034.0888551729,156820.983751074
+"Pulmonary rehabilitation",1.2,"Papua New Guinea",2028,276533.146624712,80636.129622901,195897.017001811
+"Pulmonary rehabilitation",1.2,"Papua New Guinea",2029,321134.680281194,83225.1297077222,237909.550573472
+"Pulmonary rehabilitation",1.2,"Papua New Guinea",2030,368736.872247458,85802.0390466362,282934.833200821
+"Depression chronic treatment",2.1,"Papua New Guinea",2020,0,0,0
+"Depression chronic treatment",2.1,"Papua New Guinea",2021,0,0,0
+"Depression chronic treatment",2.1,"Papua New Guinea",2022,0,0,0
+"Depression chronic treatment",2.1,"Papua New Guinea",2023,0,0,0
+"Depression chronic treatment",2.1,"Papua New Guinea",2024,0,0,0
+"Depression chronic treatment",2.1,"Papua New Guinea",2025,0,0,0
+"Depression chronic treatment",2.1,"Papua New Guinea",2026,0,0,0
+"Depression chronic treatment",2.1,"Papua New Guinea",2027,0,0,0
+"Depression chronic treatment",2.1,"Papua New Guinea",2028,0,0,0
+"Depression chronic treatment",2.1,"Papua New Guinea",2029,0,0,0
+"Depression chronic treatment",2.1,"Papua New Guinea",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"Papua New Guinea",2020,245832.141375109,245832.141375109,0
+"Bipolar disorder chronic treatment",2.11,"Papua New Guinea",2021,251717.966247962,251717.966247962,0
+"Bipolar disorder chronic treatment",2.11,"Papua New Guinea",2022,257727.933015447,257727.933015447,0
+"Bipolar disorder chronic treatment",2.11,"Papua New Guinea",2023,943948.079508838,263841.956123339,680106.123385499
+"Bipolar disorder chronic treatment",2.11,"Papua New Guinea",2024,1662360.36479253,270029.36299675,1392331.00179578
+"Bipolar disorder chronic treatment",2.11,"Papua New Guinea",2025,2413852.31438142,276278.154755038,2137574.15962638
+"Bipolar disorder chronic treatment",2.11,"Papua New Guinea",2026,3196932.13596632,282361.354906116,2914570.7810602
+"Bipolar disorder chronic treatment",2.11,"Papua New Guinea",2027,4014090.58590425,288499.177042249,3725591.408862
+"Bipolar disorder chronic treatment",2.11,"Papua New Guinea",2028,4866552.59235455,294692.834025099,4571859.75832945
+"Bipolar disorder chronic treatment",2.11,"Papua New Guinea",2029,5755716.58161167,300951.515437509,5454765.06617416
+"Bipolar disorder chronic treatment",2.11,"Papua New Guinea",2030,6682478.83396887,307259.183470671,6375219.6504982
+"Schizophrenia chronic treatment",2.12,"Papua New Guinea",2020,2705415.52173416,2705415.52173416,0
+"Schizophrenia chronic treatment",2.12,"Papua New Guinea",2021,2771756.26357989,2771756.26357989,0
+"Schizophrenia chronic treatment",2.12,"Papua New Guinea",2022,2840045.78491061,2840045.78491061,0
+"Schizophrenia chronic treatment",2.12,"Papua New Guinea",2023,3273807.51024161,2910051.12021477,363756.390026845
+"Schizophrenia chronic treatment",2.12,"Papua New Guinea",2024,3727214.38287243,2981426.79350035,745787.589372074
+"Schizophrenia chronic treatment",2.12,"Papua New Guinea",2025,4200898.04697854,3053994.9698124,1146903.07716613
+"Schizophrenia chronic treatment",2.12,"Papua New Guinea",2026,4691076.99668221,3124653.38403905,1566423.61264317
+"Schizophrenia chronic treatment",2.12,"Papua New Guinea",2027,5202570.77345607,3196534.44152878,2006036.33192729
+"Schizophrenia chronic treatment",2.12,"Papua New Guinea",2028,5736009.5483281,3269481.50289821,2466528.0454299
+"Schizophrenia chronic treatment",2.12,"Papua New Guinea",2029,6292003.95999627,3343382.99472406,2948620.96527222
+"Schizophrenia chronic treatment",2.12,"Papua New Guinea",2030,6871061.86256577,3418126.66084033,3452935.20172544
+"Epilepsy acute and chronic treatment",2.13,"Papua New Guinea",2020,285730.339873809,285730.339873809,0
+"Epilepsy acute and chronic treatment",2.13,"Papua New Guinea",2021,291205.034430743,291205.034430743,0
+"Epilepsy acute and chronic treatment",2.13,"Papua New Guinea",2022,296699.566034073,296699.566034073,0
+"Epilepsy acute and chronic treatment",2.13,"Papua New Guinea",2023,324876.18259343,302210.402412493,22665.780180937
+"Epilepsy acute and chronic treatment",2.13,"Papua New Guinea",2024,353926.267272536,307730.136723654,46196.1305488825
+"Epilepsy acute and chronic treatment",2.13,"Papua New Guinea",2025,383861.029322007,313246.260552966,70614.7687690411
+"Epilepsy acute and chronic treatment",2.13,"Papua New Guinea",2026,414873.395552385,318882.077216375,95991.3183360097
+"Epilepsy acute and chronic treatment",2.13,"Papua New Guinea",2027,446830.606736856,324499.730357431,122330.876379425
+"Epilepsy acute and chronic treatment",2.13,"Papua New Guinea",2028,479758.71275041,330100.636720997,149658.076029413
+"Epilepsy acute and chronic treatment",2.13,"Papua New Guinea",2029,513683.037220436,335689.318627271,177993.718593164
+"Epilepsy acute and chronic treatment",2.13,"Papua New Guinea",2030,548602.364173241,341258.929223211,207343.43495003
+"Asthma/COPD chronic treatment",2.14,"Papua New Guinea",2020,2893332.40949767,2893332.40949767,0
+"Asthma/COPD chronic treatment",2.14,"Papua New Guinea",2021,2955982.50610772,2955982.50610772,0
+"Asthma/COPD chronic treatment",2.14,"Papua New Guinea",2022,3019319.03195481,3019319.03195481,0
+"Asthma/COPD chronic treatment",2.14,"Papua New Guinea",2023,4304540.07360482,3083422.4796978,1221117.59390703
+"Asthma/COPD chronic treatment",2.14,"Papua New Guinea",2024,5643306.39677193,3148390.86418305,2494915.53258888
+"Asthma/COPD chronic treatment",2.14,"Papua New Guinea",2025,7038354.40812127,3214336.2844528,3824018.12366847
+"Asthma/COPD chronic treatment",2.14,"Papua New Guinea",2026,8497574.45871588,3283015.67123991,5214558.78747597
+"Asthma/COPD chronic treatment",2.14,"Papua New Guinea",2027,10019347.9644424,3352005.00106532,6667342.96337713
+"Asthma/COPD chronic treatment",2.14,"Papua New Guinea",2028,11606721.8729722,3421364.97043952,8185356.90253267
+"Asthma/COPD chronic treatment",2.14,"Papua New Guinea",2029,13262685.792253,3491172.26200799,9771513.53024503
+"Asthma/COPD chronic treatment",2.14,"Papua New Guinea",2030,14990560.6106078,3561692.86090551,11428867.7497023
+"Diabetes screening and treatment",2.3,"Papua New Guinea",2020,44444161.3737332,44444161.3737332,0
+"Diabetes screening and treatment",2.3,"Papua New Guinea",2021,45730004.9424914,45730004.9424914,0
+"Diabetes screening and treatment",2.3,"Papua New Guinea",2022,47055606.6759394,47055606.6759394,0
+"Diabetes screening and treatment",2.3,"Papua New Guinea",2023,67598225.0290083,48421871.5769934,19176353.4520149
+"Diabetes screening and treatment",2.3,"Papua New Guinea",2024,89322784.0252117,49827272.4063108,39495511.6189009
+"Diabetes screening and treatment",2.3,"Papua New Guinea",2025,112315138.106182,51273243.8432506,61041894.2629318
+"Diabetes screening and treatment",2.3,"Papua New Guinea",2026,136529866.86513,52703913.202066,83825953.6630636
+"Diabetes screening and treatment",2.3,"Papua New Guinea",2027,162139145.489226,54164350.6646346,107974794.824591
+"Diabetes screening and treatment",2.3,"Papua New Guinea",2028,189244714.253029,55656623.8846003,133588090.368428
+"Diabetes screening and treatment",2.3,"Papua New Guinea",2029,217953136.412709,57183862.23627,160769274.176439
+"Diabetes screening and treatment",2.3,"Papua New Guinea",2030,248368770.217814,58749436.4671608,189619333.750653
+"CVD primary prevention",2.4,"Papua New Guinea",2020,3994895.22071305,3994895.22071305,0
+"CVD primary prevention",2.4,"Papua New Guinea",2021,4098853.23769503,4098853.23769503,0
+"CVD primary prevention",2.4,"Papua New Guinea",2022,4205755.18300518,4205755.18300518,0
+"CVD primary prevention",2.4,"Papua New Guinea",2023,6025636.55414256,4316276.04525297,1709360.5088896
+"CVD primary prevention",2.4,"Papua New Guinea",2024,7942873.30498564,4431224.21350901,3511649.09147663
+"CVD primary prevention",2.4,"Papua New Guinea",2025,9966306.95778186,4551180.06458742,5415126.89319444
+"CVD primary prevention",2.4,"Papua New Guinea",2026,12094314.4439749,4671960.0172428,7422354.42673213
+"CVD primary prevention",2.4,"Papua New Guinea",2027,14343466.3936847,4797596.56585157,9545869.82783311
+"CVD primary prevention",2.4,"Papua New Guinea",2028,16720900.0249931,4927376.62155882,11793523.4034342
+"CVD primary prevention",2.4,"Papua New Guinea",2029,19231073.3536488,5060225.53556219,14170847.8180866
+"CVD primary prevention",2.4,"Papua New Guinea",2030,21877663.5446754,5195430.68662115,16682232.8580542
+"Aspirin for suspected ACS",2.5,"Papua New Guinea",2020,3156.703597903,3156.703597903,0
+"Aspirin for suspected ACS",2.5,"Papua New Guinea",2021,3256.30566722909,3256.30566722909,0
+"Aspirin for suspected ACS",2.5,"Papua New Guinea",2022,3359.21082318356,3359.21082318356,0
+"Aspirin for suspected ACS",2.5,"Papua New Guinea",2023,4836.90593986449,3464.76609629333,1372.13984357117
+"Aspirin for suspected ACS",2.5,"Papua New Guinea",2024,6403.20368520292,3571.84522933467,2831.35845586825
+"Aspirin for suspected ACS",2.5,"Papua New Guinea",2025,8061.56191200548,3679.93352210891,4381.62838989657
+"Aspirin for suspected ACS",2.5,"Papua New Guinea",2026,9803.71234066387,3783.85820113376,6019.85413953011
+"Aspirin for suspected ACS",2.5,"Papua New Guinea",2027,11643.736683342,3888.56223888847,7755.17444445349
+"Aspirin for suspected ACS",2.5,"Papua New Guinea",2028,13589.1175422446,3994.64351186484,9594.47403037972
+"Aspirin for suspected ACS",2.5,"Papua New Guinea",2029,15649.3200021675,4103.0366724147,11546.2833297528
+"Aspirin for suspected ACS",2.5,"Papua New Guinea",2030,17833.8449990096,4214.50397218205,13619.3410268276
+"CVD secondary prevention",2.6,"Papua New Guinea",2020,5199699.98692996,5199699.98692996,0
+"CVD secondary prevention",2.6,"Papua New Guinea",2021,5388763.125347,5388763.125347,0
+"CVD secondary prevention",2.6,"Papua New Guinea",2022,5578851.11525427,5578851.11525427,0
+"CVD secondary prevention",2.6,"Papua New Guinea",2023,8055949.15683069,5770626.89642291,2285322.26040778
+"CVD secondary prevention",2.6,"Papua New Guinea",2024,10696777.6176753,5964297.32718003,4732480.29049525
+"CVD secondary prevention",2.6,"Papua New Guinea",2025,13515231.3321256,6160669.78429875,7354561.5478268
+"CVD secondary prevention",2.6,"Papua New Guinea",2026,16601488.4362298,6387370.41883045,10214118.0173993
+"CVD secondary prevention",2.6,"Papua New Guinea",2027,19916587.4058425,6613721.78921068,13302865.6166319
+"CVD secondary prevention",2.6,"Papua New Guinea",2028,23478014.7712781,6839955.76206439,16638059.0092137
+"CVD secondary prevention",2.6,"Papua New Guinea",2029,27303256.5983164,7066761.45521507,20236495.1431013
+"CVD secondary prevention",2.6,"Papua New Guinea",2030,31405634.4815036,7294840.37327637,24110794.1082272
+"Heart failure chronic treatment",2.7,"Papua New Guinea",2020,539883.664728908,539883.664728908,0
+"Heart failure chronic treatment",2.7,"Papua New Guinea",2021,562669.763906224,562669.763906224,0
+"Heart failure chronic treatment",2.7,"Papua New Guinea",2022,584918.85005002,584918.85005002,0
+"Heart failure chronic treatment",2.7,"Papua New Guinea",2023,846846.926518447,606612.27574616,240234.650772286
+"Heart failure chronic treatment",2.7,"Papua New Guinea",2024,1126074.13381816,627643.299358143,498430.834460012
+"Heart failure chronic treatment",2.7,"Papua New Guinea",2025,1423361.30732681,648042.201305973,775319.106020833
+"Heart failure chronic treatment",2.7,"Papua New Guinea",2026,1762375.7759044,676282.535835205,1086093.24006919
+"Heart failure chronic treatment",2.7,"Papua New Guinea",2027,2129091.2401648,703665.061477318,1425426.17868748
+"Heart failure chronic treatment",2.7,"Papua New Guinea",2028,2524892.43081138,730117.859747138,1794774.57106424
+"Heart failure chronic treatment",2.7,"Papua New Guinea",2029,2950890.0679642,755660.101246823,2195229.96671738
+"Heart failure chronic treatment",2.7,"Papua New Guinea",2030,3406977.69488414,780300.954184366,2626676.74069977
+"Alcohol use screening/brief intervention",2.9,"Papua New Guinea",2020,40084.1942477034,40084.1942477034,0
+"Alcohol use screening/brief intervention",2.9,"Papua New Guinea",2021,41050.9165101621,41050.9165101621,0
+"Alcohol use screening/brief intervention",2.9,"Papua New Guinea",2022,42041.1889900541,42041.1889900541,0
+"Alcohol use screening/brief intervention",2.9,"Papua New Guinea",2023,468174.414733721,43050.5208950548,425123.893838666
+"Alcohol use screening/brief intervention",2.9,"Papua New Guinea",2024,914606.460076388,44072.7486239144,870533.711452474
+"Alcohol use screening/brief intervention",2.9,"Papua New Guinea",2025,1381830.17762761,45104.7422621727,1336725.43536543
+"Alcohol use screening/brief intervention",2.9,"Papua New Guinea",2026,1869547.54185446,46124.7153979716,1823422.82645649
+"Alcohol use screening/brief intervention",2.9,"Papua New Guinea",2027,2378938.94472116,47156.2016941133,2331782.74302705
+"Alcohol use screening/brief intervention",2.9,"Papua New Guinea",2028,2910567.70438824,48196.5378407123,2862371.16654753
+"Alcohol use screening/brief intervention",2.9,"Papua New Guinea",2029,3464966.28501168,49244.1470149942,3415722.13799668
+"Alcohol use screening/brief intervention",2.9,"Papua New Guinea",2030,4042562.93466897,50297.3871872313,3992265.54748174
+"Medical management of ACS",3.1,"Papua New Guinea",2020,1698698.97184611,1698698.97184611,0
+"Medical management of ACS",3.1,"Papua New Guinea",2021,1761442.81309869,1761442.81309869,0
+"Medical management of ACS",3.1,"Papua New Guinea",2022,1824070.18761721,1824070.18761721,0
+"Medical management of ACS",3.1,"Papua New Guinea",2023,2259283.19929455,1886539.50648164,372743.692812905
+"Medical management of ACS",3.1,"Papua New Guinea",2024,2720794.15834544,1948591.16748607,772202.990859369
+"Medical management of ACS",3.1,"Papua New Guinea",2025,3210230.60532442,2010195.03687681,1200035.56844761
+"Medical management of ACS",3.1,"Papua New Guinea",2026,3755592.47015469,2085349.84639351,1670242.62376118
+"Medical management of ACS",3.1,"Papua New Guinea",2027,4339966.35041638,2159975.63039503,2179990.72002135
+"Medical management of ACS",3.1,"Papua New Guinea",2028,4965589.94546928,2233860.09784952,2731729.84761976
+"Medical management of ACS",3.1,"Papua New Guinea",2029,5634146.65068209,2306922.49305117,3327224.15763092
+"Medical management of ACS",3.1,"Papua New Guinea",2030,6345530.75036275,2378995.02001319,3966535.73034957
+"Heart failure acute treatment",3.2,"Papua New Guinea",2020,6183552.49724164,6183552.49724164,0
+"Heart failure acute treatment",3.2,"Papua New Guinea",2021,6448656.12313153,6448656.12313153,0
+"Heart failure acute treatment",3.2,"Papua New Guinea",2022,6705943.81636135,6705943.81636135,0
+"Heart failure acute treatment",3.2,"Papua New Guinea",2023,8328918.25428025,6954786.95980304,1374131.29447721
+"Heart failure acute treatment",3.2,"Papua New Guinea",2024,10048040.296356,7193416.53111682,2854623.76523914
+"Heart failure acute treatment",3.2,"Papua New Guinea",2025,11867325.0514154,7421657.93290784,4445667.11850759
+"Heart failure acute treatment",3.2,"Papua New Guinea",2026,13998752.1994755,7751150.69586011,6247601.50361541
+"Heart failure acute treatment",3.2,"Papua New Guinea",2027,16295693.9206564,8069431.24715442,8226262.67350195
+"Heart failure acute treatment",3.2,"Papua New Guinea",2028,18765017.4144664,8375097.23400845,10389920.1804579
+"Heart failure acute treatment",3.2,"Papua New Guinea",2029,21410431.7360098,8667819.82260128,12742611.9134085
+"Heart failure acute treatment",3.2,"Papua New Guinea",2030,24224854.1610099,8946948.01992223,15277906.1410877
+"Cervical cancer screening and treatment",3.3,"Papua New Guinea",2020,1013326.14007805,1013326.14007805,0
+"Cervical cancer screening and treatment",3.3,"Papua New Guinea",2021,1038807.0061357,1038807.0061357,0
+"Cervical cancer screening and treatment",3.3,"Papua New Guinea",2022,1064920.54881965,1064920.54881965,0
+"Cervical cancer screening and treatment",3.3,"Papua New Guinea",2023,1794935.82078949,1091656.87346262,703278.947326878
+"Cervical cancer screening and treatment",3.3,"Papua New Guinea",2024,2561141.94041618,1119005.24150762,1442136.69890856
+"Cervical cancer screening and treatment",3.3,"Papua New Guinea",2025,3365279.41129614,1146981.72084392,2218297.69045223
+"Cervical cancer screening and treatment",3.3,"Papua New Guinea",2026,4203376.7998215,1173948.58701405,3029428.21280745
+"Cervical cancer screening and treatment",3.3,"Papua New Guinea",2027,5080387.41521749,1201354.09338721,3879033.32183028
+"Cervical cancer screening and treatment",3.3,"Papua New Guinea",2028,5997900.84646506,1229170.3055214,4768730.54094366
+"Cervical cancer screening and treatment",3.3,"Papua New Guinea",2029,6957232.06056152,1257324.80020998,5699907.26035154
+"Cervical cancer screening and treatment",3.3,"Papua New Guinea",2030,7959643.55812011,1285766.58039306,6673876.97772705
+"Asthma/COPD acute treatment",3.4,"Papua New Guinea",2020,10292908.2013907,10292908.2013907,0
+"Asthma/COPD acute treatment",3.4,"Papua New Guinea",2021,10529461.5781607,10529461.5781607,0
+"Asthma/COPD acute treatment",3.4,"Papua New Guinea",2022,10768293.8899964,10768293.8899964,0
+"Asthma/COPD acute treatment",3.4,"Papua New Guinea",2023,13185133.854674,11009808.7406032,2175325.1140708
+"Asthma/COPD acute treatment",3.4,"Papua New Guinea",2024,15705999.9414544,11254421.7637304,4451578.17772397
+"Asthma/COPD acute treatment",3.4,"Papua New Guinea",2025,18337493.2274383,11502673.138717,6834820.08872127
+"Asthma/COPD acute treatment",3.4,"Papua New Guinea",2026,21108649.7019169,11766286.9391328,9342362.76278408
+"Asthma/COPD acute treatment",3.4,"Papua New Guinea",2027,24005980.1932811,12030959.6885648,11975020.5047163
+"Asthma/COPD acute treatment",3.4,"Papua New Guinea",2028,27036207.950865,12296785.7975305,14739422.1533345
+"Asthma/COPD acute treatment",3.4,"Papua New Guinea",2029,30205451.5191025,12563946.9280895,17641504.591013
+"Asthma/COPD acute treatment",3.4,"Papua New Guinea",2030,33519851.6532327,12833310.980932,20686540.6723008
+"Management of bowel obstruction",3.6,"Papua New Guinea",2020,94625.5416614069,94625.5416614069,0
+"Management of bowel obstruction",3.6,"Papua New Guinea",2021,96801.3026681762,96801.3026681762,0
+"Management of bowel obstruction",3.6,"Papua New Guinea",2022,98968.4133396186,98968.4133396186,0
+"Management of bowel obstruction",3.6,"Papua New Guinea",2023,425613.603310789,101135.905737217,324477.697573572
+"Management of bowel obstruction",3.6,"Papua New Guinea",2024,766445.866557431,103311.730132681,663134.13642475
+"Management of bowel obstruction",3.6,"Papua New Guinea",2025,1122472.1701771,105544.163476914,1016928.00670018
+"Management of bowel obstruction",3.6,"Papua New Guinea",2026,1496474.66612529,107947.814292293,1388526.851833
+"Management of bowel obstruction",3.6,"Papua New Guinea",2027,1887751.17863654,110340.515829505,1777410.66280704
+"Management of bowel obstruction",3.6,"Papua New Guinea",2028,2297109.84640151,112727.098036631,2184382.74836488
+"Management of bowel obstruction",3.6,"Papua New Guinea",2029,2725392.8993534,115113.673148282,2610279.22620511
+"Management of bowel obstruction",3.6,"Papua New Guinea",2030,3173431.07246643,117510.816236444,3055920.25622998
+"Management of appendicitis",3.7,"Papua New Guinea",2020,8357.5123713178,8357.5123713178,0
+"Management of appendicitis",3.7,"Papua New Guinea",2021,8515.68165427073,8515.68165427073,0
+"Management of appendicitis",3.7,"Papua New Guinea",2022,8675.09272505325,8675.09272505325,0
+"Management of appendicitis",3.7,"Papua New Guinea",2023,37181.0639331786,8835.10430095334,28345.9596322253
+"Management of appendicitis",3.7,"Papua New Guinea",2024,66714.9822089367,8994.96279945116,57720.0194094855
+"Management of appendicitis",3.7,"Papua New Guinea",2025,97266.9234065332,9153.42938705432,88113.4940194789
+"Management of appendicitis",3.7,"Papua New Guinea",2026,128835.36535418,9310.89439610213,119524.470958078
+"Management of appendicitis",3.7,"Papua New Guinea",2027,161432.750363935,9468.19713918105,151964.553224754
+"Management of appendicitis",3.7,"Papua New Guinea",2028,195061.185390326,9625.09589665922,185436.089493666
+"Management of appendicitis",3.7,"Papua New Guinea",2029,229723.198872839,9781.48703685076,219941.711835988
+"Management of appendicitis",3.7,"Papua New Guinea",2030,265383.451174074,9935.90502275409,255447.54615132
+"Repair of hernias",3.8,"Papua New Guinea",2020,616470.923098916,616470.923098916,0
+"Repair of hernias",3.8,"Papua New Guinea",2021,629455.030875915,629455.030875915,0
+"Repair of hernias",3.8,"Papua New Guinea",2022,642707.330499839,642707.330499839,0
+"Repair of hernias",3.8,"Papua New Guinea",2023,2761808.03950302,656271.217307649,2105536.82219537
+"Repair of hernias",3.8,"Papua New Guinea",2024,4971578.39580582,670191.514163338,4301386.88164248
+"Repair of hernias",3.8,"Papua New Guinea",2025,7277884.82054112,684512.99217492,6593371.8283662
+"Repair of hernias",3.8,"Papua New Guinea",2026,9678444.72699677,698592.901373431,8979851.82562334
+"Repair of hernias",3.8,"Papua New Guinea",2027,12181648.6137738,712866.481724508,11468782.1320493
+"Repair of hernias",3.8,"Papua New Guinea",2028,14793964.840079,727379.992402296,14066584.8476767
+"Repair of hernias",3.8,"Papua New Guinea",2029,17522301.7509296,742167.303322989,16780134.4476066
+"Repair of hernias",3.8,"Papua New Guinea",2030,20376947.94878,757374.799543169,19619573.1492368
+"Repair of gastrointestinal perforations",3.9,"Papua New Guinea",2020,4474.54653347903,4474.54653347903,0
+"Repair of gastrointestinal perforations",3.9,"Papua New Guinea",2021,4588.87447618223,4588.87447618223,0
+"Repair of gastrointestinal perforations",3.9,"Papua New Guinea",2022,4705.29713156701,4705.29713156701,0
+"Repair of gastrointestinal perforations",3.9,"Papua New Guinea",2023,20300.6692096368,4823.92139634933,15476.7478132874
+"Repair of gastrointestinal perforations",3.9,"Papua New Guinea",2024,36683.7033376259,4944.62236581167,31739.0809718142
+"Repair of gastrointestinal perforations",3.9,"Papua New Guinea",2025,53891.5495574368,5067.00493042463,48824.5446270122
+"Repair of gastrointestinal perforations",3.9,"Papua New Guinea",2026,72001.0224724533,5193.12009308916,66807.9023793641
+"Repair of gastrointestinal perforations",3.9,"Papua New Guinea",2027,91049.6244025485,5320.84443397146,85728.7799685771
+"Repair of gastrointestinal perforations",3.9,"Papua New Guinea",2028,111092.787217507,5450.11761218167,105642.669605325
+"Repair of gastrointestinal perforations",3.9,"Papua New Guinea",2029,132184.165244025,5580.9021385651,126603.26310546
+"Repair of gastrointestinal perforations",3.9,"Papua New Guinea",2030,154355.833646037,5712.64438135274,148643.189264685
+"PCI for ACS",4.1,"Papua New Guinea",2020,1306669.21841647,1306669.21841647,0
+"PCI for ACS",4.1,"Papua New Guinea",2021,1350706.46463965,1350706.46463965,0
+"PCI for ACS",4.1,"Papua New Guinea",2022,1396566.24406469,1396566.24406469,0
+"PCI for ACS",4.1,"Papua New Guinea",2023,1730199.54529444,1444745.74825933,285453.79703511
+"PCI for ACS",4.1,"Papua New Guinea",2024,2088130.23139032,1495774.95931021,592355.272080112
+"PCI for ACS",4.1,"Papua New Guinea",2025,2474217.15520678,1550230.98671231,923986.168494469
+"PCI for ACS",4.1,"Papua New Guinea",2026,2881997.7022016,1602498.06187773,1279499.64032387
+"PCI for ACS",4.1,"Papua New Guinea",2027,3319171.50448063,1656240.59542198,1662930.90905865
+"PCI for ACS",4.1,"Papua New Guinea",2028,3790102.63531825,1712204.91930337,2077897.71601487
+"PCI for ACS",4.1,"Papua New Guinea",2029,4298632.76937154,1770658.30535874,2527974.4640128
+"PCI for ACS",4.1,"Papua New Guinea",2030,4848393.39620136,1831736.23425447,3016657.16194689
+"Management of acute ventilatory failure",4.2,"Papua New Guinea",2020,285401.110956223,285401.110956223,0
+"Management of acute ventilatory failure",4.2,"Papua New Guinea",2021,293080.381948361,293080.381948361,0
+"Management of acute ventilatory failure",4.2,"Papua New Guinea",2022,300811.908879407,300811.908879407,0
+"Management of acute ventilatory failure",4.2,"Papua New Guinea",2023,369576.069158075,308602.239566338,60973.8295917362
+"Management of acute ventilatory failure",4.2,"Papua New Guinea",2024,441679.704089871,316448.547410987,125231.156678884
+"Management of acute ventilatory failure",4.2,"Papua New Guinea",2025,517340.802719876,324363.514584601,192977.288135274
+"Management of acute ventilatory failure",4.2,"Papua New Guinea",2026,598244.293118761,333120.779049711,265123.51406905
+"Management of acute ventilatory failure",4.2,"Papua New Guinea",2027,683439.966775704,341864.570435824,341575.39633988
+"Management of acute ventilatory failure",4.2,"Papua New Guinea",2028,773167.941817203,350593.258050664,422574.683766539
+"Management of acute ventilatory failure",4.2,"Papua New Guinea",2029,867646.439121885,359316.109779946,508330.329341939
+"Management of acute ventilatory failure",4.2,"Papua New Guinea",2030,967035.56791063,368055.004150228,598980.563760402
+"Treatment of early-stage breast cancer",4.3,"Papua New Guinea",2020,24649.3325961231,24649.3325961231,0
+"Treatment of early-stage breast cancer",4.3,"Papua New Guinea",2021,25349.7603630526,25349.7603630526,0
+"Treatment of early-stage breast cancer",4.3,"Papua New Guinea",2022,26080.9825450474,26080.9825450474,0
+"Treatment of early-stage breast cancer",4.3,"Papua New Guinea",2023,44138.9132480388,26844.7191683979,17294.1940796409
+"Treatment of early-stage breast cancer",4.3,"Papua New Guinea",2024,63273.5273324854,27641.8809663109,35631.6463661746
+"Treatment of early-stage breast cancer",4.3,"Papua New Guinea",2025,83578.330373666,28474.139348765,55104.191024901
+"Treatment of early-stage breast cancer",4.3,"Papua New Guinea",2026,104803.495454233,29243.9682939045,75559.5271603283
+"Treatment of early-stage breast cancer",4.3,"Papua New Guinea",2027,127252.628879227,30043.1942287426,97209.4346504846
+"Treatment of early-stage breast cancer",4.3,"Papua New Guinea",2028,151035.87496026,30874.4783679288,120161.396592331
+"Treatment of early-stage breast cancer",4.3,"Papua New Guinea",2029,176263.107269743,31738.8521934332,144524.255076309
+"Treatment of early-stage breast cancer",4.3,"Papua New Guinea",2030,203041.946195484,32636.5036962161,170405.442499268
+"Treatment of early-stage colorectal cancer",4.4,"Papua New Guinea",2020,50980.2736302506,50980.2736302506,0
+"Treatment of early-stage colorectal cancer",4.4,"Papua New Guinea",2021,52673.9162571543,52673.9162571543,0
+"Treatment of early-stage colorectal cancer",4.4,"Papua New Guinea",2022,54440.475584921,54440.475584921,0
+"Treatment of early-stage colorectal cancer",4.4,"Papua New Guinea",2023,92571.0762186618,56300.5375832797,36270.5386353821
+"Treatment of early-stage colorectal cancer",4.4,"Papua New Guinea",2024,133439.960985031,58275.2848946519,75164.676090379
+"Treatment of early-stage colorectal cancer",4.4,"Papua New Guinea",2025,177449.084521041,60386.6487914597,117062.435729581
+"Treatment of early-stage colorectal cancer",4.4,"Papua New Guinea",2026,224147.423153237,62391.3347668361,161756.088386401
+"Treatment of early-stage colorectal cancer",4.4,"Papua New Guinea",2027,274230.859198729,64460.0462269819,209770.812971747
+"Treatment of early-stage colorectal cancer",4.4,"Papua New Guinea",2028,328157.054396803,66619.677054556,261537.377342247
+"Treatment of early-stage colorectal cancer",4.4,"Papua New Guinea",2029,386370.27017162,68880.3116135595,317489.958558061
+"Treatment of early-stage colorectal cancer",4.4,"Papua New Guinea",2030,449314.20711967,71247.9918547813,378066.215264889

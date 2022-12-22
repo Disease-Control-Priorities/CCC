@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"Burkina Faso",2020,3879.10944793849,3879.10944793849,0
+"IDU harm reduction measures",1.1,"Burkina Faso",2021,4008.73591340987,4008.73591340987,0
+"IDU harm reduction measures",1.1,"Burkina Faso",2022,4143.72117698969,4143.72117698969,0
+"IDU harm reduction measures",1.1,"Burkina Faso",2023,46589.617236265,4284.1027343692,42305.5145018958
+"IDU harm reduction measures",1.1,"Burkina Faso",2024,91922.3159998605,4429.8400969842,87492.4759028763
+"IDU harm reduction measures",1.1,"Burkina Faso",2025,140309.71505333,4580.99593704513,135728.719116285
+"IDU harm reduction measures",1.1,"Burkina Faso",2026,191831.923119801,4735.32119451661,187096.601925284
+"IDU harm reduction measures",1.1,"Burkina Faso",2027,246712.822783453,4895.14453327108,241817.678250182
+"IDU harm reduction measures",1.1,"Burkina Faso",2028,305105.117883749,5060.07151369422,300045.046370054
+"IDU harm reduction measures",1.1,"Burkina Faso",2029,367148.811796576,5229.75295427205,361919.058842304
+"IDU harm reduction measures",1.1,"Burkina Faso",2030,432979.368773038,5403.97165160087,427575.397121437
+"Pulmonary rehabilitation",1.2,"Burkina Faso",2020,17136.9315904122,17136.9315904122,0
+"Pulmonary rehabilitation",1.2,"Burkina Faso",2021,17771.1457640517,17771.1457640517,0
+"Pulmonary rehabilitation",1.2,"Burkina Faso",2022,18428.530645881,18428.530645881,0
+"Pulmonary rehabilitation",1.2,"Burkina Faso",2023,25892.7412309406,19109.9291648999,6782.81206604069
+"Pulmonary rehabilitation",1.2,"Burkina Faso",2024,33892.1636067695,19815.1403696336,14077.0232371359
+"Pulmonary rehabilitation",1.2,"Burkina Faso",2025,42466.6050674535,20544.4168090149,21922.1882584387
+"Pulmonary rehabilitation",1.2,"Burkina Faso",2026,51735.0257524576,21327.5102946857,30407.515457772
+"Pulmonary rehabilitation",1.2,"Burkina Faso",2027,61701.0415881498,22137.2657013931,39563.7758867567
+"Pulmonary rehabilitation",1.2,"Burkina Faso",2028,72417.089637985,22974.7220129914,49442.3676249937
+"Pulmonary rehabilitation",1.2,"Burkina Faso",2029,83933.8927528402,23841.4873909704,60092.4053618698
+"Pulmonary rehabilitation",1.2,"Burkina Faso",2030,96295.9349617639,24739.2716591621,71556.6633026019
+"Depression chronic treatment",2.1,"Burkina Faso",2020,0,0,0
+"Depression chronic treatment",2.1,"Burkina Faso",2021,0,0,0
+"Depression chronic treatment",2.1,"Burkina Faso",2022,0,0,0
+"Depression chronic treatment",2.1,"Burkina Faso",2023,0,0,0
+"Depression chronic treatment",2.1,"Burkina Faso",2024,0,0,0
+"Depression chronic treatment",2.1,"Burkina Faso",2025,0,0,0
+"Depression chronic treatment",2.1,"Burkina Faso",2026,0,0,0
+"Depression chronic treatment",2.1,"Burkina Faso",2027,0,0,0
+"Depression chronic treatment",2.1,"Burkina Faso",2028,0,0,0
+"Depression chronic treatment",2.1,"Burkina Faso",2029,0,0,0
+"Depression chronic treatment",2.1,"Burkina Faso",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"Burkina Faso",2020,393218.553013459,393218.553013459,0
+"Bipolar disorder chronic treatment",2.11,"Burkina Faso",2021,406292.191336128,406292.191336128,0
+"Bipolar disorder chronic treatment",2.11,"Burkina Faso",2022,419936.224587901,419936.224587901,0
+"Bipolar disorder chronic treatment",2.11,"Burkina Faso",2023,1553171.13812574,434125.266180565,1119045.87194517
+"Bipolar disorder chronic treatment",2.11,"Burkina Faso",2024,2762702.50766949,448800.698816107,2313901.80885338
+"Bipolar disorder chronic treatment",2.11,"Burkina Faso",2025,4052282.92559101,463924.353544967,3588358.57204604
+"Bipolar disorder chronic treatment",2.11,"Burkina Faso",2026,5420633.26275552,479035.488280995,4941597.77447452
+"Bipolar disorder chronic treatment",2.11,"Burkina Faso",2027,6874929.16338476,494618.18189868,6380310.98148608
+"Bipolar disorder chronic treatment",2.11,"Burkina Faso",2028,8419174.18709441,510658.365423319,7908515.82167109
+"Bipolar disorder chronic treatment",2.11,"Burkina Faso",2029,10057349.6856832,527148.83070752,9530200.85497569
+"Bipolar disorder chronic treatment",2.11,"Burkina Faso",2030,11791132.896321,543981.194681186,11247151.7016399
+"Schizophrenia chronic treatment",2.12,"Burkina Faso",2020,939454.301750216,939454.301750216,0
+"Schizophrenia chronic treatment",2.12,"Burkina Faso",2021,971559.948209659,971559.948209659,0
+"Schizophrenia chronic treatment",2.12,"Burkina Faso",2022,1005082.17491553,1005082.17491553,0
+"Schizophrenia chronic treatment",2.12,"Burkina Faso",2023,1326025.0589517,1040019.65407977,286005.404871936
+"Schizophrenia chronic treatment",2.12,"Burkina Faso",2024,1668418.26060223,1076337.62993159,592080.630670642
+"Schizophrenia chronic treatment",2.12,"Burkina Faso",2025,2033509.09985437,1114029.12584342,919479.974010953
+"Schizophrenia chronic treatment",2.12,"Burkina Faso",2026,2420496.95175472,1152101.07306479,1268395.87868993
+"Schizophrenia chronic treatment",2.12,"Burkina Faso",2027,2832446.82653223,1191641.51089112,1640805.31564111
+"Schizophrenia chronic treatment",2.12,"Burkina Faso",2028,3270653.66370188,1232617.26448792,2038036.39921396
+"Schizophrenia chronic treatment",2.12,"Burkina Faso",2029,3736449.97846634,1275022.19366181,2461427.78480453
+"Schizophrenia chronic treatment",2.12,"Burkina Faso",2030,4231054.43836651,1318819.8768417,2912234.56152481
+"Epilepsy acute and chronic treatment",2.13,"Burkina Faso",2020,22679.2588811621,22679.2588811621,0
+"Epilepsy acute and chronic treatment",2.13,"Burkina Faso",2021,23311.7485394549,23311.7485394549,0
+"Epilepsy acute and chronic treatment",2.13,"Burkina Faso",2022,23956.2651246124,23956.2651246124,0
+"Epilepsy acute and chronic treatment",2.13,"Burkina Faso",2023,103577.622533854,24612.5043644802,78965.1181693739
+"Epilepsy acute and chronic treatment",2.13,"Burkina Faso",2024,187504.162306965,25280.1085762954,162224.053730669
+"Epilepsy acute and chronic treatment",2.13,"Burkina Faso",2025,275841.882382828,25956.7650817506,249885.117301077
+"Epilepsy acute and chronic treatment",2.13,"Burkina Faso",2026,368833.301909028,26651.3087293687,342181.993179659
+"Epilepsy acute and chronic treatment",2.13,"Burkina Faso",2027,466558.562673892,27356.0994069483,439202.463266944
+"Epilepsy acute and chronic treatment",2.13,"Burkina Faso",2028,569158.106474885,28071.2318528209,541086.874622065
+"Epilepsy acute and chronic treatment",2.13,"Burkina Faso",2029,676773.158599149,28796.9620141401,647976.196585009
+"Epilepsy acute and chronic treatment",2.13,"Burkina Faso",2030,789495.429436467,29531.9266646442,759963.502771822
+"Asthma/COPD chronic treatment",2.14,"Burkina Faso",2020,2934546.85555193,2934546.85555193,0
+"Asthma/COPD chronic treatment",2.14,"Burkina Faso",2021,3013815.72777745,3013815.72777745,0
+"Asthma/COPD chronic treatment",2.14,"Burkina Faso",2022,3094467.59307416,3094467.59307416,0
+"Asthma/COPD chronic treatment",2.14,"Burkina Faso",2023,4303772.64067707,3176364.74143937,1127407.89923771
+"Asthma/COPD chronic treatment",2.14,"Burkina Faso",2024,5573749.18110342,3259541.27038651,2314207.91071691
+"Asthma/COPD chronic treatment",2.14,"Burkina Faso",2025,6904426.88866356,3343127.62090797,3561299.26775559
+"Asthma/COPD chronic treatment",2.14,"Burkina Faso",2026,8302411.36398194,3429393.64885228,4873017.71512966
+"Asthma/COPD chronic treatment",2.14,"Burkina Faso",2027,9767671.62958239,3517043.24478918,6250628.38479321
+"Asthma/COPD chronic treatment",2.14,"Burkina Faso",2028,11302310.9248214,3606051.27800985,7696259.64681155
+"Asthma/COPD chronic treatment",2.14,"Burkina Faso",2029,12908720.5903565,3696516.88377455,9212203.70658195
+"Asthma/COPD chronic treatment",2.14,"Burkina Faso",2030,14590917.2169005,3788976.73674556,10801940.4801549
+"Diabetes screening and treatment",2.3,"Burkina Faso",2020,10787239.5271934,10787239.5271934,0
+"Diabetes screening and treatment",2.3,"Burkina Faso",2021,11175406.6271346,11175406.6271346,0
+"Diabetes screening and treatment",2.3,"Burkina Faso",2022,11579920.7409772,11579920.7409772,0
+"Diabetes screening and treatment",2.3,"Burkina Faso",2023,16262280.0529084,12002244.8414804,4260035.21142798
+"Diabetes screening and treatment",2.3,"Burkina Faso",2024,21283167.815328,12443136.3881372,8840031.42719078
+"Diabetes screening and treatment",2.3,"Burkina Faso",2025,26673834.5167917,12903719.0188732,13770115.4979186
+"Diabetes screening and treatment",2.3,"Burkina Faso",2026,32470044.55044,13384645.8445699,19085398.7058701
+"Diabetes screening and treatment",2.3,"Burkina Faso",2027,38700459.3392578,13883500.5609257,24816958.7783321
+"Diabetes screening and treatment",2.3,"Burkina Faso",2028,45403574.9173667,14402177.5901364,31001397.3272303
+"Diabetes screening and treatment",2.3,"Burkina Faso",2029,52619501.3522447,14942895.3916567,37676605.9605881
+"Diabetes screening and treatment",2.3,"Burkina Faso",2030,60387091.7776444,15507674.8660668,44879416.9115776
+"CVD primary prevention",2.4,"Burkina Faso",2020,4320791.51084416,4320791.51084416,0
+"CVD primary prevention",2.4,"Burkina Faso",2021,4473038.7629675,4473038.7629675,0
+"CVD primary prevention",2.4,"Burkina Faso",2022,4631809.53384504,4631809.53384504,0
+"CVD primary prevention",2.4,"Burkina Faso",2023,6500021.90973865,4797288.82923265,1702733.080506
+"CVD primary prevention",2.4,"Burkina Faso",2024,8498304.97519848,4969457.72102796,3528847.25417052
+"CVD primary prevention",2.4,"Burkina Faso",2025,10635498.5323801,5148393.03507393,5487105.49730613
+"CVD primary prevention",2.4,"Burkina Faso",2026,12914302.3376029,5331335.96962152,7582966.36798143
+"CVD primary prevention",2.4,"Burkina Faso",2027,15351275.2554161,5521883.66119153,9829391.59422462
+"CVD primary prevention",2.4,"Burkina Faso",2028,17957770.7291299,5720337.61418636,12237433.1149435
+"CVD primary prevention",2.4,"Burkina Faso",2029,20745871.1276148,5927165.27173408,14818705.8558807
+"CVD primary prevention",2.4,"Burkina Faso",2030,23727337.6403096,6142704.13569307,17584633.5046165
+"Aspirin for suspected ACS",2.5,"Burkina Faso",2020,1712.6910176557,1712.6910176557,0
+"Aspirin for suspected ACS",2.5,"Burkina Faso",2021,1779.07281675896,1779.07281675896,0
+"Aspirin for suspected ACS",2.5,"Burkina Faso",2022,1848.99163482968,1848.99163482968,0
+"Aspirin for suspected ACS",2.5,"Burkina Faso",2023,2604.46896496233,1922.20734717482,682.261617787515
+"Aspirin for suspected ACS",2.5,"Burkina Faso",2024,3417.50911809974,1998.24642730899,1419.26269079075
+"Aspirin for suspected ACS",2.5,"Burkina Faso",2025,4291.63053771929,2076.86564306554,2214.76489465375
+"Aspirin for suspected ACS",2.5,"Burkina Faso",2026,5225.27850308935,2155.70120205895,3069.5773010304
+"Aspirin for suspected ACS",2.5,"Burkina Faso",2027,6227.36968736686,2237.34143449872,3990.02825286814
+"Aspirin for suspected ACS",2.5,"Burkina Faso",2028,7303.14670706932,2322.02743526258,4981.11927180674
+"Aspirin for suspected ACS",2.5,"Burkina Faso",2029,8458.57069728975,2410.16291121074,6048.40778607901
+"Aspirin for suspected ACS",2.5,"Burkina Faso",2030,9699.51925729647,2502.06662753986,7197.45262975661
+"CVD secondary prevention",2.6,"Burkina Faso",2020,4270392.57536951,4270392.57536951,0
+"CVD secondary prevention",2.6,"Burkina Faso",2021,4436842.25319987,4436842.25319987,0
+"CVD secondary prevention",2.6,"Burkina Faso",2022,4607470.99998492,4607470.99998492,0
+"CVD secondary prevention",2.6,"Burkina Faso",2023,6480904.23832195,4783179.18578808,1697725.05253386
+"CVD secondary prevention",2.6,"Burkina Faso",2024,8493718.00005448,4964582.58773771,3529135.41231677
+"CVD secondary prevention",2.6,"Burkina Faso",2025,10660403.5385633,5152714.77867842,5507688.75988491
+"CVD secondary prevention",2.6,"Burkina Faso",2026,13041201.9218735,5365553.90106943,7675648.02080411
+"CVD secondary prevention",2.6,"Burkina Faso",2027,15617730.2108901,5583502.80769058,10034227.4031996
+"CVD secondary prevention",2.6,"Burkina Faso",2028,18408873.162213,5807868.89621785,12601004.2659952
+"CVD secondary prevention",2.6,"Burkina Faso",2029,21434185.6344658,6040218.90734221,15393966.7271236
+"CVD secondary prevention",2.6,"Burkina Faso",2030,24712564.9555402,6282272.45865799,18430292.4968822
+"Heart failure chronic treatment",2.7,"Burkina Faso",2020,582710.382137101,582710.382137101,0
+"Heart failure chronic treatment",2.7,"Burkina Faso",2021,607046.754902654,607046.754902654,0
+"Heart failure chronic treatment",2.7,"Burkina Faso",2022,630793.302019886,630793.302019886,0
+"Heart failure chronic treatment",2.7,"Burkina Faso",2023,886069.395238371,653956.38210593,232113.013132441
+"Heart failure chronic treatment",2.7,"Burkina Faso",2024,1157794.02114517,676494.067146308,481299.953998858
+"Heart failure chronic treatment",2.7,"Burkina Faso",2025,1446597.28629712,698391.555465662,748205.73083146
+"Heart failure chronic treatment",2.7,"Burkina Faso",2026,1779473.21068078,730148.90879715,1049324.30188363
+"Heart failure chronic treatment",2.7,"Burkina Faso",2027,2140220.67319786,761352.836604505,1378867.83659336
+"Heart failure chronic treatment",2.7,"Burkina Faso",2028,2530237.55522149,791993.167351825,1738244.38786966
+"Heart failure chronic treatment",2.7,"Burkina Faso",2029,2950259.57497529,822101.379888752,2128158.19508654
+"Heart failure chronic treatment",2.7,"Burkina Faso",2030,3400001.80255027,851787.190103623,2548214.61244665
+"Alcohol use screening/brief intervention",2.9,"Burkina Faso",2020,39409.201031121,39409.201031121,0
+"Alcohol use screening/brief intervention",2.9,"Burkina Faso",2021,40743.0446287199,40743.0446287199,0
+"Alcohol use screening/brief intervention",2.9,"Burkina Faso",2022,42133.1089105163,42133.1089105163,0
+"Alcohol use screening/brief intervention",2.9,"Burkina Faso",2023,473922.29283256,43579.0614098906,430343.23142267
+"Alcohol use screening/brief intervention",2.9,"Burkina Faso",2024,935449.43830286,45078.8373547197,890370.60094814
+"Alcohol use screening/brief intervention",2.9,"Burkina Faso",2025,1428432.55197819,46631.6759107637,1381800.87606743
+"Alcohol use screening/brief intervention",2.9,"Burkina Faso",2026,1953686.91392538,48213.4115255893,1905473.50239979
+"Alcohol use screening/brief intervention",2.9,"Burkina Faso",2027,2513657.47592311,49850.4143789335,2463807.06154418
+"Alcohol use screening/brief intervention",2.9,"Burkina Faso",2028,3110125.44967209,51540.5138085948,3058584.93586349
+"Alcohol use screening/brief intervention",2.9,"Burkina Faso",2029,3744818.51173581,53282.2805092246,3691536.23122659
+"Alcohol use screening/brief intervention",2.9,"Burkina Faso",2030,4419167.88154536,55071.9081685063,4364095.97337686
+"Medical management of ACS",3.1,"Burkina Faso",2020,239060.32049765,239060.32049765,0
+"Medical management of ACS",3.1,"Burkina Faso",2021,248582.665687221,248582.665687221,0
+"Medical management of ACS",3.1,"Burkina Faso",2022,258215.403736122,258215.403736122,0
+"Medical management of ACS",3.1,"Burkina Faso",2023,904472.512905777,267991.855675786,636480.657229991
+"Medical management of ACS",3.1,"Burkina Faso",2024,1599125.29761955,277931.416538773,1321193.88108078
+"Medical management of ACS",3.1,"Burkina Faso",2025,2345704.23250018,288075.869293706,2057628.36320647
+"Medical management of ACS",3.1,"Burkina Faso",2026,3168023.94571207,300237.63867065,2867786.30704142
+"Medical management of ACS",3.1,"Burkina Faso",2027,4060194.74970935,312556.318680157,3747638.4310292
+"Medical management of ACS",3.1,"Burkina Faso",2028,5027779.7167894,325080.873218094,4702698.84357131
+"Medical management of ACS",3.1,"Burkina Faso",2029,6076349.64889696,337878.01136912,5738471.63752784
+"Medical management of ACS",3.1,"Burkina Faso",2030,7210915.47415001,351029.630973839,6859885.84317617
+"Heart failure acute treatment",3.2,"Burkina Faso",2020,581898.397905463,581898.397905463,0
+"Heart failure acute treatment",3.2,"Burkina Faso",2021,606209.257537752,606209.257537752,0
+"Heart failure acute treatment",3.2,"Burkina Faso",2022,629957.850598729,629957.850598729,0
+"Heart failure acute treatment",3.2,"Burkina Faso",2023,2204384.90700024,653151.083555627,1551233.82344461
+"Heart failure acute treatment",3.2,"Burkina Faso",2024,3889124.78251532,675746.92791616,3213377.85459916
+"Heart failure acute treatment",3.2,"Burkina Faso",2025,5686792.27952071,697730.07841329,4989062.20110742
+"Heart failure acute treatment",3.2,"Burkina Faso",2026,7713788.30478164,729450.830711388,6984337.47407025
+"Heart failure acute treatment",3.2,"Burkina Faso",2027,9920627.4094063,760647.819154499,9159979.5902518
+"Heart failure acute treatment",3.2,"Burkina Faso",2028,12316415.0291295,791310.76453437,11525104.2645951
+"Heart failure acute treatment",3.2,"Burkina Faso",2029,14907076.9831745,821470.224855978,14085606.7583185
+"Heart failure acute treatment",3.2,"Burkina Faso",2030,17692941.8892036,851233.30519748,16841708.5840062
+"Cervical cancer screening and treatment",3.3,"Burkina Faso",2020,444527.535120064,444527.535120064,0
+"Cervical cancer screening and treatment",3.3,"Burkina Faso",2021,458839.986437337,458839.986437337,0
+"Cervical cancer screening and treatment",3.3,"Burkina Faso",2022,473830.086043662,473830.086043662,0
+"Cervical cancer screening and treatment",3.3,"Burkina Faso",2023,1244260.14506131,489544.97510609,754715.169955222
+"Cervical cancer screening and treatment",3.3,"Burkina Faso",2024,2066455.79130157,506030.787683322,1560425.00361825
+"Cervical cancer screening and treatment",3.3,"Burkina Faso",2025,2944534.24918537,523326.019014126,2421208.23017124
+"Cervical cancer screening and treatment",3.3,"Burkina Faso",2026,3877540.13182978,540710.910118459,3336829.22171132
+"Cervical cancer screening and treatment",3.3,"Burkina Faso",2027,4872464.37687754,558878.141395006,4313586.23548254
+"Cervical cancer screening and treatment",3.3,"Burkina Faso",2028,5933040.86760444,577781.070042925,5355259.79756151
+"Cervical cancer screening and treatment",3.3,"Burkina Faso",2029,7062531.44088858,597354.963148987,6465176.4777396
+"Cervical cancer screening and treatment",3.3,"Burkina Faso",2030,8264190.47572099,617562.824313584,7646627.65140741
+"Asthma/COPD acute treatment",3.4,"Burkina Faso",2020,881946.043511825,881946.043511825,0
+"Asthma/COPD acute treatment",3.4,"Burkina Faso",2021,906257.758832948,906257.758832948,0
+"Asthma/COPD acute treatment",3.4,"Burkina Faso",2022,931023.421228245,931023.421228245,0
+"Asthma/COPD acute treatment",3.4,"Burkina Faso",2023,3227200.61822191,956207.59058427,2270993.02763764
+"Asthma/COPD acute treatment",3.4,"Burkina Faso",2024,5645925.34459006,981821.767799609,4664103.57679045
+"Asthma/COPD acute treatment",3.4,"Burkina Faso",2025,8189208.54784248,1007622.37253633,7181586.17530616
+"Asthma/COPD acute treatment",3.4,"Burkina Faso",2026,10867707.6109674,1034360.19097633,9833347.41999105
+"Asthma/COPD acute treatment",3.4,"Burkina Faso",2027,13683759.8905508,1061569.64323311,12622190.2473177
+"Asthma/COPD acute treatment",3.4,"Burkina Faso",2028,16642418.3508156,1089249.30881388,15553169.0420017
+"Asthma/COPD acute treatment",3.4,"Burkina Faso",2029,19749177.1303505,1117435.24038714,18631741.8899634
+"Asthma/COPD acute treatment",3.4,"Burkina Faso",2030,23012062.38152,1146295.40285388,21865766.9786661
+"Management of bowel obstruction",3.6,"Burkina Faso",2020,55748.6680302304,55748.6680302304,0
+"Management of bowel obstruction",3.6,"Burkina Faso",2021,57477.4926710699,57477.4926710699,0
+"Management of bowel obstruction",3.6,"Burkina Faso",2022,59256.5534449737,59256.5534449737,0
+"Management of bowel obstruction",3.6,"Burkina Faso",2023,664397.72305447,61094.0434992616,603303.679555209
+"Management of bowel obstruction",3.6,"Burkina Faso",2024,1307369.96878497,62994.8749388096,1244375.09384617
+"Management of bowel obstruction",3.6,"Burkina Faso",2025,1991415.51972917,64986.8989507314,1926428.62077844
+"Management of bowel obstruction",3.6,"Burkina Faso",2026,2719077.11116577,67046.5755847367,2652030.53558103
+"Management of bowel obstruction",3.6,"Burkina Faso",2027,3492785.3175036,69164.0189269703,3423621.29857663
+"Management of bowel obstruction",3.6,"Burkina Faso",2028,4315704.90164701,71347.3163445479,4244357.58530246
+"Management of bowel obstruction",3.6,"Burkina Faso",2029,5191069.1738483,73602.4977415972,5117466.6761067
+"Management of bowel obstruction",3.6,"Burkina Faso",2030,6122183.60937831,75936.6456633878,6046246.96371492
+"Management of appendicitis",3.7,"Burkina Faso",2020,5766.99291547082,5766.99291547082,0
+"Management of appendicitis",3.7,"Burkina Faso",2021,5938.2587977988,5938.2587977988,0
+"Management of appendicitis",3.7,"Burkina Faso",2022,6114.6686078137,6114.6686078137,0
+"Management of appendicitis",3.7,"Burkina Faso",2023,68463.2502622412,6295.47128848195,62167.7789737593
+"Management of appendicitis",3.7,"Burkina Faso",2024,134450.336421965,6479.45636175751,127970.880060207
+"Management of appendicitis",3.7,"Burkina Faso",2025,204104.602588336,6664.3560412513,197440.246547085
+"Management of appendicitis",3.7,"Burkina Faso",2026,277370.956088299,6848.00172988213,270522.954358417
+"Management of appendicitis",3.7,"Burkina Faso",2027,354427.717455117,7034.53431150656,347393.183143611
+"Management of appendicitis",3.7,"Burkina Faso",2028,435348.05514031,7223.62222644589,428124.432913864
+"Management of appendicitis",3.7,"Burkina Faso",2029,520197.804750827,7415.01202469947,512782.792726127
+"Management of appendicitis",3.7,"Burkina Faso",2030,608743.826854563,7604.83939880616,601138.987455757
+"Repair of hernias",3.8,"Burkina Faso",2020,359107.415142691,359107.415142691,0
+"Repair of hernias",3.8,"Burkina Faso",2021,370761.580969175,370761.580969175,0
+"Repair of hernias",3.8,"Burkina Faso",2022,382856.586493393,382856.586493393,0
+"Repair of hernias",3.8,"Burkina Faso",2023,4300007.78284139,395403.014514151,3904604.76832724
+"Repair of hernias",3.8,"Burkina Faso",2024,8475378.6687488,408413.797821129,8066964.87092767
+"Repair of hernias",3.8,"Burkina Faso",2025,12924442.0395931,421885.79403644,12502556.2455567
+"Repair of hernias",3.8,"Burkina Faso",2026,17650308.3256994,435494.329313252,17214813.9963862
+"Repair of hernias",3.8,"Burkina Faso",2027,22676847.2419415,449571.538349132,22227275.7035924
+"Repair of hernias",3.8,"Burkina Faso",2028,28021772.7374029,464125.428019721,27557647.3093832
+"Repair of hernias",3.8,"Burkina Faso",2029,33703680.2521015,479171.985563476,33224508.266538
+"Repair of hernias",3.8,"Burkina Faso",2030,39745213.0814493,494772.096188269,39250440.9852611
+"Repair of gastrointestinal perforations",3.9,"Burkina Faso",2020,1488.33833822065,1488.33833822065,0
+"Repair of gastrointestinal perforations",3.9,"Burkina Faso",2021,1537.79661373515,1537.79661373515,0
+"Repair of gastrointestinal perforations",3.9,"Burkina Faso",2022,1588.74271481488,1588.74271481488,0
+"Repair of gastrointestinal perforations",3.9,"Burkina Faso",2023,17847.8189364835,1641.17875278009,16206.6401837034
+"Repair of gastrointestinal perforations",3.9,"Burkina Faso",2024,35177.6064265597,1695.01772480225,33482.5887017575
+"Repair of gastrointestinal perforations",3.9,"Burkina Faso",2025,53623.2790553122,1749.93583910875,51873.3432162035
+"Repair of gastrointestinal perforations",3.9,"Burkina Faso",2026,73299.1125707248,1807.43334790078,71491.6792228241
+"Repair of gastrointestinal perforations",3.9,"Burkina Faso",2027,94243.5810328762,1866.27032455919,92377.310708317
+"Repair of gastrointestinal perforations",3.9,"Burkina Faso",2028,116521.722506619,1926.45212157091,114595.270385048
+"Repair of gastrointestinal perforations",3.9,"Burkina Faso",2029,140196.6882316,1988.00788716048,138208.680344439
+"Repair of gastrointestinal perforations",3.9,"Burkina Faso",2030,165294.985869372,2050.58693982898,163244.398929543
+NA,4.1,"Burkina Faso",2020,NA,NA,NA
+NA,4.1,"Burkina Faso",2021,NA,NA,NA
+NA,4.1,"Burkina Faso",2022,NA,NA,NA
+NA,4.1,"Burkina Faso",2023,NA,NA,NA
+NA,4.1,"Burkina Faso",2024,NA,NA,NA
+NA,4.1,"Burkina Faso",2025,NA,NA,NA
+NA,4.1,"Burkina Faso",2026,NA,NA,NA
+NA,4.1,"Burkina Faso",2027,NA,NA,NA
+NA,4.1,"Burkina Faso",2028,NA,NA,NA
+NA,4.1,"Burkina Faso",2029,NA,NA,NA
+NA,4.1,"Burkina Faso",2030,NA,NA,NA
+"Management of acute ventilatory failure",4.2,"Burkina Faso",2020,42780.5762876148,42780.5762876148,0
+"Management of acute ventilatory failure",4.2,"Burkina Faso",2021,44064.6653175454,44064.6653175454,0
+"Management of acute ventilatory failure",4.2,"Burkina Faso",2022,45381.9926819106,45381.9926819106,0
+"Management of acute ventilatory failure",4.2,"Burkina Faso",2023,157718.282872594,46731.3430733612,110986.939799233
+"Management of acute ventilatory failure",4.2,"Burkina Faso",2024,276680.393610976,48112.1565558656,228568.23705511
+"Management of acute ventilatory failure",4.2,"Burkina Faso",2025,402494.640893164,49515.7979369572,352978.842956207
+"Management of acute ventilatory failure",4.2,"Burkina Faso",2026,535845.796207155,50981.1040315119,484864.692175643
+"Management of acute ventilatory failure",4.2,"Burkina Faso",2027,676936.690192488,52479.6409652517,624457.049227236
+"Management of acute ventilatory failure",4.2,"Burkina Faso",2028,826137.192785828,54011.4398931044,772125.752892724
+"Management of acute ventilatory failure",4.2,"Burkina Faso",2029,983826.071978678,55578.1662614759,928247.905717202
+"Management of acute ventilatory failure",4.2,"Burkina Faso",2030,1150449.29056679,57186.1554140301,1093263.13515276
+"Treatment of early-stage breast cancer",4.3,"Burkina Faso",2020,3570.83472688173,3570.83472688173,0
+"Treatment of early-stage breast cancer",4.3,"Burkina Faso",2021,3687.53230896058,3687.53230896058,0
+"Treatment of early-stage breast cancer",4.3,"Burkina Faso",2022,3811.45679924794,3811.45679924794,0
+"Treatment of early-stage breast cancer",4.3,"Burkina Faso",2023,10023.3087887925,3943.59690050851,6079.71188828395
+"Treatment of early-stage breast cancer",4.3,"Burkina Faso",2024,16684.3103893794,4084.87792772553,12599.4324616539
+"Treatment of early-stage breast cancer",4.3,"Burkina Faso",2025,23849.9677920578,4236.07430769591,19613.8934843619
+"Treatment of early-stage breast cancer",4.3,"Burkina Faso",2026,31459.9507293029,4380.68898884636,27079.2617404565
+"Treatment of early-stage breast cancer",4.3,"Burkina Faso",2027,39629.0581512523,4533.79275996234,35095.2653912899
+"Treatment of early-stage breast cancer",4.3,"Burkina Faso",2028,48422.2616313294,4696.4279332606,43725.8336980688
+"Treatment of early-stage breast cancer",4.3,"Burkina Faso",2029,57909.7694299736,4869.49333805949,53040.2760919141
+"Treatment of early-stage breast cancer",4.3,"Burkina Faso",2030,68163.8945172865,5053.60482673236,63110.2896905541
+"Treatment of early-stage colorectal cancer",4.4,"Burkina Faso",2020,21912.8778950937,21912.8778950937,0
+"Treatment of early-stage colorectal cancer",4.4,"Burkina Faso",2021,22690.0495276016,22690.0495276016,0
+"Treatment of early-stage colorectal cancer",4.4,"Burkina Faso",2022,23508.5358610666,23508.5358610666,0
+"Treatment of early-stage colorectal cancer",4.4,"Burkina Faso",2023,61979.7134286929,24385.4610211251,37594.2524075678
+"Treatment of early-stage colorectal cancer",4.4,"Burkina Faso",2024,103511.470701221,25337.4810327512,78173.9896684694
+"Treatment of early-stage colorectal cancer",4.4,"Burkina Faso",2025,148628.106054687,26378.6231434354,122249.482911252
+"Treatment of early-stage colorectal cancer",4.4,"Burkina Faso",2026,197051.442554613,27393.8015637079,169657.640990905
+"Treatment of early-stage colorectal cancer",4.4,"Burkina Faso",2027,249554.271102268,28467.6916053442,221086.579496924
+"Treatment of early-stage colorectal cancer",4.4,"Burkina Faso",2028,306739.693517578,29616.313718106,277123.379799472
+"Treatment of early-stage colorectal cancer",4.4,"Burkina Faso",2029,369314.509886172,30855.5247731996,338458.985112972
+"Treatment of early-stage colorectal cancer",4.4,"Burkina Faso",2030,438047.423165552,32198.0241536801,405849.399011871

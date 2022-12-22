@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"Sierra Leone",2020,2820.34728533284,2820.34728533284,0
+"IDU harm reduction measures",1.1,"Sierra Leone",2021,2893.81113314043,2893.81113314043,0
+"IDU harm reduction measures",1.1,"Sierra Leone",2022,2970.71361914421,2970.71361914421,0
+"IDU harm reduction measures",1.1,"Sierra Leone",2023,33175.2151839263,3050.59449967139,30124.6206842549
+"IDU harm reduction measures",1.1,"Sierra Leone",2024,65006.9027532333,3132.69211192957,61874.2106413037
+"IDU harm reduction measures",1.1,"Sierra Leone",2025,98528.6336888697,3216.64696369812,95311.9867251715
+"IDU harm reduction measures",1.1,"Sierra Leone",2026,133728.010203265,3300.49799108351,130427.512212181
+"IDU harm reduction measures",1.1,"Sierra Leone",2027,170707.607938379,3386.05236438087,167321.555573999
+"IDU harm reduction measures",1.1,"Sierra Leone",2028,209511.675745534,3472.93830681045,206038.737438723
+"IDU harm reduction measures",1.1,"Sierra Leone",2029,250175.123302813,3560.85448153458,246614.268821278
+"IDU harm reduction measures",1.1,"Sierra Leone",2030,292722.933031572,3649.53180066309,289073.401230909
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2020,5773.43263793967,5773.43263793967,0
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2021,5944.15435443122,5944.15435443122,0
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2022,6120.15172399224,6120.15172399224,0
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2023,8611.8815461891,6300.8129427908,2311.0686033983
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2024,11247.1046954508,6484.84580077014,4762.2588946807
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2025,14034.3887620293,6671.46217948565,7362.92658254368
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2026,17044.4837237482,6884.23536516112,10160.2483585871
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2027,20249.551704091,7099.6481972709,13149.9035068201
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2028,23664.4762524265,7318.3720519103,16346.1042005162
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2029,27303.4763993249,7541.19350266999,19762.2828966549
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2030,31178.0382520735,7768.83817659155,23409.200075482
+"Depression chronic treatment",2.1,"Sierra Leone",2020,0,0,0
+"Depression chronic treatment",2.1,"Sierra Leone",2021,0,0,0
+"Depression chronic treatment",2.1,"Sierra Leone",2022,0,0,0
+"Depression chronic treatment",2.1,"Sierra Leone",2023,0,0,0
+"Depression chronic treatment",2.1,"Sierra Leone",2024,0,0,0
+"Depression chronic treatment",2.1,"Sierra Leone",2025,0,0,0
+"Depression chronic treatment",2.1,"Sierra Leone",2026,0,0,0
+"Depression chronic treatment",2.1,"Sierra Leone",2027,0,0,0
+"Depression chronic treatment",2.1,"Sierra Leone",2028,0,0,0
+"Depression chronic treatment",2.1,"Sierra Leone",2029,0,0,0
+"Depression chronic treatment",2.1,"Sierra Leone",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"Sierra Leone",2020,119351.616587255,119351.616587255,0
+"Bipolar disorder chronic treatment",2.11,"Sierra Leone",2021,122457.198969112,122457.198969112,0
+"Bipolar disorder chronic treatment",2.11,"Sierra Leone",2022,125710.419156631,125710.419156631,0
+"Bipolar disorder chronic treatment",2.11,"Sierra Leone",2023,461827.380162073,129084.895682695,332742.484479378
+"Bipolar disorder chronic treatment",2.11,"Sierra Leone",2024,815885.407096311,132536.277679039,683349.129417272
+"Bipolar disorder chronic treatment",2.11,"Sierra Leone",2025,1188429.21393568,136041.872048124,1052387.34188756
+"Bipolar disorder chronic treatment",2.11,"Sierra Leone",2026,1578855.43687706,139492.470140106,1439362.96673696
+"Bipolar disorder chronic treatment",2.11,"Sierra Leone",2027,1988445.9952202,142992.706837454,1845453.28838274
+"Bipolar disorder chronic treatment",2.11,"Sierra Leone",2028,2417911.03307315,146545.553361331,2271365.47971182
+"Bipolar disorder chronic treatment",2.11,"Sierra Leone",2029,2868129.25517832,150161.078475501,2717968.17670282
+"Bipolar disorder chronic treatment",2.11,"Sierra Leone",2030,3339588.17255357,153827.070721261,3185761.10183231
+"Schizophrenia chronic treatment",2.12,"Sierra Leone",2020,289510.078862863,289510.078862863,0
+"Schizophrenia chronic treatment",2.12,"Sierra Leone",2021,297541.378616755,297541.378616755,0
+"Schizophrenia chronic treatment",2.12,"Sierra Leone",2022,305972.623562358,305972.623562358,0
+"Schizophrenia chronic treatment",2.12,"Sierra Leone",2023,401319.7761849,314760.60877247,86559.1674124294
+"Schizophrenia chronic treatment",2.12,"Sierra Leone",2024,501977.424664757,323826.844110344,178150.580554413
+"Schizophrenia chronic treatment",2.12,"Sierra Leone",2025,608162.409205007,333133.136887207,275029.272317799
+"Schizophrenia chronic treatment",2.12,"Sierra Leone",2026,719490.703217346,342367.803171633,377122.900045713
+"Schizophrenia chronic treatment",2.12,"Sierra Leone",2027,836703.827549064,351833.652585427,484870.174963637
+"Schizophrenia chronic treatment",2.12,"Sierra Leone",2028,960062.730214803,361524.893151909,598537.837062893
+"Schizophrenia chronic treatment",2.12,"Sierra Leone",2029,1089871.83380829,371452.946184457,718418.887623833
+"Schizophrenia chronic treatment",2.12,"Sierra Leone",2030,1226386.93544962,381611.226880155,844775.708569466
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2020,6809.08856553114,6809.08856553114,0
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2021,6945.92119768299,6945.92119768299,0
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2022,7083.97702135007,7083.97702135007,0
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2023,30396.4084871018,7222.90894743012,23173.4995396716
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2024,54608.256635448,7362.3281024072,47245.9285330408
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2025,79727.5725035211,7501.70104231535,72225.8714612058
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2026,105807.574000179,7643.9073397952,98163.6666603841
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2027,132830.234046719,7785.34142672727,125044.892619991
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2028,160807.282012559,7926.09631888944,152881.185693669
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2029,189751.349403869,8066.2974194121,181685.051984457
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2030,219672.284856644,8206.01818711461,211466.266669529
+"Asthma/COPD chronic treatment",2.14,"Sierra Leone",2020,1064112.32214537,1064112.32214537,0
+"Asthma/COPD chronic treatment",2.14,"Sierra Leone",2021,1085347.88521466,1085347.88521466,0
+"Asthma/COPD chronic treatment",2.14,"Sierra Leone",2022,1106972.29742082,1106972.29742082,0
+"Asthma/COPD chronic treatment",2.14,"Sierra Leone",2023,1542927.92943932,1128870.64405881,414057.285380507
+"Asthma/COPD chronic treatment",2.14,"Sierra Leone",2024,1995476.9442138,1150943.49543913,844533.44877467
+"Asthma/COPD chronic treatment",2.14,"Sierra Leone",2025,2464417.63629238,1172862.01088559,1291555.62540679
+"Asthma/COPD chronic treatment",2.14,"Sierra Leone",2026,2952518.78400609,1195643.25827327,1756875.52573282
+"Asthma/COPD chronic treatment",2.14,"Sierra Leone",2027,3458719.99385123,1218416.29207674,2240303.70177449
+"Asthma/COPD chronic treatment",2.14,"Sierra Leone",2028,3983397.99392938,1241155.96349717,2742242.03043221
+"Asthma/COPD chronic treatment",2.14,"Sierra Leone",2029,4526917.3609826,1263860.07568353,3263057.28529906
+"Asthma/COPD chronic treatment",2.14,"Sierra Leone",2030,5089862.57749042,1286611.45399685,3803251.12349357
+"Diabetes screening and treatment",2.3,"Sierra Leone",2020,2227750.49462606,2227750.49462606,0
+"Diabetes screening and treatment",2.3,"Sierra Leone",2021,2289472.14429436,2289472.14429436,0
+"Diabetes screening and treatment",2.3,"Sierra Leone",2022,2353363.60813277,2353363.60813277,0
+"Diabetes screening and treatment",2.3,"Sierra Leone",2023,3306790.26216605,2419386.14357399,887404.118592062
+"Diabetes screening and treatment",2.3,"Sierra Leone",2024,4313693.94615841,2487251.21759686,1826442.72856155
+"Diabetes screening and treatment",2.3,"Sierra Leone",2025,5378412.14481403,2556923.83343288,2821488.31138115
+"Diabetes screening and treatment",2.3,"Sierra Leone",2026,6519179.20718782,2633608.01562138,3885571.19156644
+"Diabetes screening and treatment",2.3,"Sierra Leone",2027,7730861.71964849,2711513.74258661,5019347.97706188
+"Diabetes screening and treatment",2.3,"Sierra Leone",2028,9019675.51137529,2791055.29395149,6228620.2174238
+"Diabetes screening and treatment",2.3,"Sierra Leone",2029,10392053.2764507,2872684.49449486,7519368.78195583
+"Diabetes screening and treatment",2.3,"Sierra Leone",2030,11854075.3355185,2956823.90429035,8897251.43122814
+"CVD primary prevention",2.4,"Sierra Leone",2020,1579861.50132861,1579861.50132861,0
+"CVD primary prevention",2.4,"Sierra Leone",2021,1626425.48438513,1626425.48438513,0
+"CVD primary prevention",2.4,"Sierra Leone",2022,1675237.04017911,1675237.04017911,0
+"CVD primary prevention",2.4,"Sierra Leone",2023,2359132.41078612,1726040.00042433,633092.410361798
+"CVD primary prevention",2.4,"Sierra Leone",2024,3083461.51723346,1778325.43780488,1305136.07942859
+"CVD primary prevention",2.4,"Sierra Leone",2025,3850086.26252528,1831828.06075624,2018258.20176904
+"CVD primary prevention",2.4,"Sierra Leone",2026,4660587.33081605,1886203.59708478,2774383.73373127
+"CVD primary prevention",2.4,"Sierra Leone",2027,5518094.77281007,1941799.47794978,3576295.29486029
+"CVD primary prevention",2.4,"Sierra Leone",2028,6425900.16458992,1998845.05195013,4427055.11263979
+"CVD primary prevention",2.4,"Sierra Leone",2029,7388078.40194661,2057724.02853888,5330354.37340773
+"CVD primary prevention",2.4,"Sierra Leone",2030,8408392.66988717,2118650.21098353,6289742.45890364
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2020,464.596839837022,464.596839837022,0
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2021,478.896942180025,478.896942180025,0
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2022,494.115969990701,494.115969990701,0
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2023,697.29232563128,510.168246820635,187.124078810646
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2024,913.667805416001,526.880821408123,386.786984007878
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2025,1144.13941643101,544.16147423752,599.977942193487
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2026,1389.6185219825,561.922059361412,827.696462621084
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2027,1651.32849398078,580.217045902658,1071.11144807812
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2028,1930.54884410099,599.091210618086,1331.4576334829
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2029,2228.67793453807,618.620497935061,1610.05743660301
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2030,2547.03724005707,638.86028349871,1908.17695655836
+"CVD secondary prevention",2.6,"Sierra Leone",2020,2211449.00438597,2211449.00438597,0
+"CVD secondary prevention",2.6,"Sierra Leone",2021,2276353.29711636,2276353.29711636,0
+"CVD secondary prevention",2.6,"Sierra Leone",2022,2341673.31291007,2341673.31291007,0
+"CVD secondary prevention",2.6,"Sierra Leone",2023,3290454.61295691,2407434.29897257,883020.313984335
+"CVD secondary prevention",2.6,"Sierra Leone",2024,4290883.21148057,2473464.6652677,1817418.54621287
+"CVD secondary prevention",2.6,"Sierra Leone",2025,5347077.67167588,2539827.42149768,2807250.2501782
+"CVD secondary prevention",2.6,"Sierra Leone",2026,6507517.91302455,2623780.06094625,3883737.8520783
+"CVD secondary prevention",2.6,"Sierra Leone",2027,7746298.11073584,2707363.17413228,5038934.93660356
+"CVD secondary prevention",2.6,"Sierra Leone",2028,9070331.21329102,2791142.74793118,6279188.46535984
+"CVD secondary prevention",2.6,"Sierra Leone",2029,10486113.0199854,2875658.11076296,7610454.90922248
+"CVD secondary prevention",2.6,"Sierra Leone",2030,11999562.1804606,2961596.54160983,9037965.63885073
+"Heart failure chronic treatment",2.7,"Sierra Leone",2020,294103.264766477,294103.264766477,0
+"Heart failure chronic treatment",2.7,"Sierra Leone",2021,303320.861152306,303320.861152306,0
+"Heart failure chronic treatment",2.7,"Sierra Leone",2022,311846.916886905,311846.916886905,0
+"Heart failure chronic treatment",2.7,"Sierra Leone",2023,436852.697292273,319619.715439568,117232.981852705
+"Heart failure chronic treatment",2.7,"Sierra Leone",2024,566755.287873301,326572.015890413,240183.271982888
+"Heart failure chronic treatment",2.7,"Sierra Leone",2025,701206.090766679,332611.305328923,368594.785437755
+"Heart failure chronic treatment",2.7,"Sierra Leone",2026,857629.332849298,344701.022692119,512928.31015718
+"Heart failure chronic treatment",2.7,"Sierra Leone",2027,1024531.08719009,356006.666436524,668524.420753564
+"Heart failure chronic treatment",2.7,"Sierra Leone",2028,1202153.9593121,366516.140972219,835637.818339882
+"Heart failure chronic treatment",2.7,"Sierra Leone",2029,1390188.00915175,376180.744318765,1014007.26483298
+"Heart failure chronic treatment",2.7,"Sierra Leone",2030,1587775.51137985,385009.597079255,1202765.91430059
+"Alcohol use screening/brief intervention",2.9,"Sierra Leone",2020,14071.0328732493,14071.0328732493,0
+"Alcohol use screening/brief intervention",2.9,"Sierra Leone",2021,14446.9034617058,14446.9034617058,0
+"Alcohol use screening/brief intervention",2.9,"Sierra Leone",2022,14839.5453688853,14839.5453688853,0
+"Alcohol use screening/brief intervention",2.9,"Sierra Leone",2023,165806.844901682,15246.6064277408,150560.238473941
+"Alcohol use screening/brief intervention",2.9,"Sierra Leone",2024,325059.701578452,15664.0218612962,309395.679717156
+"Alcohol use screening/brief intervention",2.9,"Sierra Leone",2025,492914.931265529,16089.7876629247,476825.143602605
+"Alcohol use screening/brief intervention",2.9,"Sierra Leone",2026,669464.12873184,16517.4189569976,652946.709774842
+"Alcohol use screening/brief intervention",2.9,"Sierra Leone",2027,855185.220309294,16952.7662859837,838232.454023311
+"Alcohol use screening/brief intervention",2.9,"Sierra Leone",2028,1050420.18559657,17395.4014533753,1033024.78414319
+"Alcohol use screening/brief intervention",2.9,"Sierra Leone",2029,1255539.18746569,17845.5763797703,1237693.61108592
+"Alcohol use screening/brief intervention",2.9,"Sierra Leone",2030,1470824.66763146,18302.5114830725,1452522.15614839
+"Medical management of ACS",3.1,"Sierra Leone",2020,119029.123991419,119029.123991419,0
+"Medical management of ACS",3.1,"Sierra Leone",2021,122646.023975581,122646.023975581,0
+"Medical management of ACS",3.1,"Sierra Leone",2022,126221.56130856,126221.56130856,0
+"Medical management of ACS",3.1,"Sierra Leone",2023,437885.459203984,129743.839764143,308141.61943984
+"Medical management of ACS",3.1,"Sierra Leone",2024,766432.065833937,133192.286104437,633239.779729499
+"Medical management of ACS",3.1,"Sierra Leone",2025,1112360.64295697,136555.020039942,975805.622917031
+"Medical management of ACS",3.1,"Sierra Leone",2026,1491277.89037402,141204.693532768,1350073.19684125
+"Medical management of ACS",3.1,"Sierra Leone",2027,1896624.73257072,145764.11038927,1750860.62218145
+"Medical management of ACS",3.1,"Sierra Leone",2028,2330064.76604426,150251.674637227,2179813.09140703
+"Medical management of ACS",3.1,"Sierra Leone",2029,2792989.37632218,154682.908952557,2638306.46736962
+"Medical management of ACS",3.1,"Sierra Leone",2030,3286355.76060282,159083.707051976,3127272.05355084
+"Heart failure acute treatment",3.2,"Sierra Leone",2020,307657.196485958,307657.196485958,0
+"Heart failure acute treatment",3.2,"Sierra Leone",2021,317293.441872077,317293.441872077,0
+"Heart failure acute treatment",3.2,"Sierra Leone",2022,326227.694435971,326227.694435971,0
+"Heart failure acute treatment",3.2,"Sierra Leone",2023,1128588.12779548,334396.482309773,794191.645485712
+"Heart failure acute treatment",3.2,"Sierra Leone",2024,1967063.12735041,341729.625510981,1625333.50183943
+"Heart failure acute treatment",3.2,"Sierra Leone",2025,2838963.23645901,348130.416905558,2490832.81955345
+"Heart failure acute treatment",3.2,"Sierra Leone",2026,3819800.17077798,360773.598841582,3459026.5719364
+"Heart failure acute treatment",3.2,"Sierra Leone",2027,4870862.10472822,372618.016380307,4498244.08834791
+"Heart failure acute treatment",3.2,"Sierra Leone",2028,5993693.04221867,383651.555461784,5610041.48675688
+"Heart failure acute treatment",3.2,"Sierra Leone",2029,7187091.33384859,393824.083264472,6793267.25058412
+"Heart failure acute treatment",3.2,"Sierra Leone",2030,8446697.69148305,403145.127273702,8043552.56420934
+"Cervical cancer screening and treatment",3.3,"Sierra Leone",2020,149987.125402962,149987.125402962,0
+"Cervical cancer screening and treatment",3.3,"Sierra Leone",2021,153985.756995188,153985.756995188,0
+"Cervical cancer screening and treatment",3.3,"Sierra Leone",2022,158182.008512698,158182.008512698,0
+"Cervical cancer screening and treatment",3.3,"Sierra Leone",2023,413186.668673726,162565.246691302,250621.421982424
+"Cervical cancer screening and treatment",3.3,"Sierra Leone",2024,682451.729721997,167110.79070616,515340.939015838
+"Cervical cancer screening and treatment",3.3,"Sierra Leone",2025,966846.89421095,171810.403305641,795036.490905309
+"Cervical cancer screening and treatment",3.3,"Sierra Leone",2026,1266124.58848512,176497.910069234,1089626.67841589
+"Cervical cancer screening and treatment",3.3,"Sierra Leone",2027,1581788.10231807,181320.322463313,1400467.77985475
+"Cervical cancer screening and treatment",3.3,"Sierra Leone",2028,1914555.46163935,186256.537583923,1728298.92405543
+"Cervical cancer screening and treatment",3.3,"Sierra Leone",2029,2264990.12812762,191281.82694329,2073708.30118433
+"Cervical cancer screening and treatment",3.3,"Sierra Leone",2030,2633653.06513504,196381.847741892,2437271.21739314
+"Asthma/COPD acute treatment",3.4,"Sierra Leone",2020,304475.865167425,304475.865167425,0
+"Asthma/COPD acute treatment",3.4,"Sierra Leone",2021,310787.55389907,310787.55389907,0
+"Asthma/COPD acute treatment",3.4,"Sierra Leone",2022,317222.919019492,317222.919019492,0
+"Asthma/COPD acute treatment",3.4,"Sierra Leone",2023,1092653.87939923,323749.297599771,768904.581799457
+"Asthma/COPD acute treatment",3.4,"Sierra Leone",2024,1899703.74240759,330335.468203977,1569368.27420362
+"Asthma/COPD acute treatment",3.4,"Sierra Leone",2025,2738618.3305549,336891.111505575,2401727.21904933
+"Asthma/COPD acute treatment",3.4,"Sierra Leone",2026,3613967.83545873,343791.299788741,3270176.53566999
+"Asthma/COPD acute treatment",3.4,"Sierra Leone",2027,4524856.75201851,350699.910003669,4174156.84201484
+"Asthma/COPD acute treatment",3.4,"Sierra Leone",2028,5472334.14575741,357614.389610459,5114719.75614695
+"Asthma/COPD acute treatment",3.4,"Sierra Leone",2029,6457447.89219267,364539.002389782,6092908.88980288
+"Asthma/COPD acute treatment",3.4,"Sierra Leone",2030,7481516.38973986,371501.201002451,7110015.18873741
+"Management of bowel obstruction",3.6,"Sierra Leone",2020,16545.6602830781,16545.6602830781,0
+"Management of bowel obstruction",3.6,"Sierra Leone",2021,16939.5038626466,16939.5038626466,0
+"Management of bowel obstruction",3.6,"Sierra Leone",2022,17338.6447178329,17338.6447178329,0
+"Management of bowel obstruction",3.6,"Sierra Leone",2023,192981.390806563,17745.4152465805,175235.975559982
+"Management of bowel obstruction",3.6,"Sierra Leone",2024,376944.205613618,18161.4304372942,358782.775176324
+"Management of bowel obstruction",3.6,"Sierra Leone",2025,569855.747624344,18591.4411138923,551264.306510451
+"Management of bowel obstruction",3.6,"Sierra Leone",2026,772976.785115149,19048.4462775221,753928.338837627
+"Management of bowel obstruction",3.6,"Sierra Leone",2027,986415.251082531,19511.3343484668,966903.916734064
+"Management of bowel obstruction",3.6,"Sierra Leone",2028,1210868.12511376,19982.2671222139,1190885.85799155
+"Management of bowel obstruction",3.6,"Sierra Leone",2029,1447042.4901952,20462.8357784064,1426579.65441679
+"Management of bowel obstruction",3.6,"Sierra Leone",2030,1695646.464207,20954.9487400436,1674691.51546696
+"Management of appendicitis",3.7,"Sierra Leone",2020,2150.0642163482,2150.0642163482,0
+"Management of appendicitis",3.7,"Sierra Leone",2021,2196.04322264975,2196.04322264975,0
+"Management of appendicitis",3.7,"Sierra Leone",2022,2243.38456932223,2243.38456932223,0
+"Management of appendicitis",3.7,"Sierra Leone",2023,24920.2496855904,2291.51721246808,22628.7324731223
+"Management of appendicitis",3.7,"Sierra Leone",2024,48548.5111701029,2339.63536088641,46208.8758092165
+"Management of appendicitis",3.7,"Sierra Leone",2025,73108.4144011582,2387.02548591448,70721.3889152437
+"Management of appendicitis",3.7,"Sierra Leone",2026,98555.0094370465,2433.01822962669,96121.9912074198
+"Management of appendicitis",3.7,"Sierra Leone",2027,124904.18751147,2478.65809450995,122425.52941696
+"Management of appendicitis",3.7,"Sierra Leone",2028,152151.330571904,2523.95287253419,149627.37769937
+"Management of appendicitis",3.7,"Sierra Leone",2029,180298.573121542,2568.99596758097,177729.577153961
+"Management of appendicitis",3.7,"Sierra Leone",2030,209288.802104105,2613.0915768995,206675.710527205
+"Repair of hernias",3.8,"Sierra Leone",2020,113550.964539495,113550.964539495,0
+"Repair of hernias",3.8,"Sierra Leone",2021,116326.075927906,116326.075927906,0
+"Repair of hernias",3.8,"Sierra Leone",2022,119215.284434229,119215.284434229,0
+"Repair of hernias",3.8,"Sierra Leone",2023,1329077.75285874,122214.046239884,1206863.70661885
+"Repair of hernias",3.8,"Sierra Leone",2024,2600586.11286103,125312.434345411,2475273.67851562
+"Repair of hernias",3.8,"Sierra Leone",2025,3937150.83138608,128499.683906788,3808651.14747929
+"Repair of hernias",3.8,"Sierra Leone",2026,5339261.70699191,131695.043626388,5207566.66336552
+"Repair of hernias",3.8,"Sierra Leone",2027,6811640.91905609,134961.005361786,6676679.9136943
+"Repair of hernias",3.8,"Sierra Leone",2028,8358176.27199959,138303.418595713,8219872.85340388
+"Repair of hernias",3.8,"Sierra Leone",2029,9983312.85721344,141732.754312978,9841580.10290046
+"Repair of hernias",3.8,"Sierra Leone",2030,11692226.0899969,145264.31224474,11546961.7777521
+"Repair of gastrointestinal perforations",3.9,"Sierra Leone",2020,393.958852882435,393.958852882435,0
+"Repair of gastrointestinal perforations",3.9,"Sierra Leone",2021,403.861026027259,403.861026027259,0
+"Repair of gastrointestinal perforations",3.9,"Sierra Leone",2022,414.004685389354,414.004685389354,0
+"Repair of gastrointestinal perforations",3.9,"Sierra Leone",2023,4614.56712938762,424.328011897712,4190.23911748991
+"Repair of gastrointestinal perforations",3.9,"Sierra Leone",2024,9022.68535688552,434.726798730906,8587.95855815461
+"Repair of gastrointestinal perforations",3.9,"Sierra Leone",2025,13642.6845338313,445.116597222043,13197.5679366092
+"Repair of gastrointestinal perforations",3.9,"Sierra Leone",2026,18516.5104367355,456.358792563538,18060.1516441719
+"Repair of gastrointestinal perforations",3.9,"Sierra Leone",2027,23635.31112947,467.609442821512,23167.7016866485
+"Repair of gastrointestinal perforations",3.9,"Sierra Leone",2028,29008.9835233544,478.883589743108,28530.0999336113
+"Repair of gastrointestinal perforations",3.9,"Sierra Leone",2029,34647.6192226493,490.205698905731,34157.4135237436
+"Repair of gastrointestinal perforations",3.9,"Sierra Leone",2030,40555.082936877,501.539091540295,40053.5438453367
+NA,4.1,"Sierra Leone",2020,NA,NA,NA
+NA,4.1,"Sierra Leone",2021,NA,NA,NA
+NA,4.1,"Sierra Leone",2022,NA,NA,NA
+NA,4.1,"Sierra Leone",2023,NA,NA,NA
+NA,4.1,"Sierra Leone",2024,NA,NA,NA
+NA,4.1,"Sierra Leone",2025,NA,NA,NA
+NA,4.1,"Sierra Leone",2026,NA,NA,NA
+NA,4.1,"Sierra Leone",2027,NA,NA,NA
+NA,4.1,"Sierra Leone",2028,NA,NA,NA
+NA,4.1,"Sierra Leone",2029,NA,NA,NA
+NA,4.1,"Sierra Leone",2030,NA,NA,NA
+"Management of acute ventilatory failure",4.2,"Sierra Leone",2020,18913.203512746,18913.203512746,0
+"Management of acute ventilatory failure",4.2,"Sierra Leone",2021,19354.8679088582,19354.8679088582,0
+"Management of acute ventilatory failure",4.2,"Sierra Leone",2022,19807.7084345822,19807.7084345822,0
+"Management of acute ventilatory failure",4.2,"Sierra Leone",2023,68409.6723643707,20269.5325524061,48140.1398119645
+"Management of acute ventilatory failure",4.2,"Sierra Leone",2024,119266.633503602,20737.4006662403,98529.2328373612
+"Management of acute ventilatory failure",4.2,"Sierra Leone",2025,172437.148139928,21206.6888437344,151230.459296194
+"Management of acute ventilatory failure",4.2,"Sierra Leone",2026,228387.81850546,21713.0462370088,206674.772268452
+"Management of acute ventilatory failure",4.2,"Sierra Leone",2027,287035.165466764,22222.2096967616,264812.955770002
+"Management of acute ventilatory failure",4.2,"Sierra Leone",2028,348500.653924674,22734.4616598426,325766.192264831
+"Management of acute ventilatory failure",4.2,"Sierra Leone",2029,412903.5537097,23250.4932028801,389653.06050682
+"Management of acute ventilatory failure",4.2,"Sierra Leone",2030,480361.06112098,23771.9006630503,456589.16045793
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2020,1156.92317018082,1156.92317018082,0
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2021,1188.30802181818,1188.30802181818,0
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2022,1221.98474897962,1221.98474897962,0
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2023,3197.50976338451,1258.03662821686,1939.47313516766
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2024,5295.28873342584,1296.38401821717,3998.90471520868
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2025,7529.42673258182,1337.046758594,6192.37997398782
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2026,9890.13882608947,1376.52347662355,8513.61534946592
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2027,12404.4250832462,1417.92532346569,10986.4997597806
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2028,15089.6917276976,1461.51574143142,13628.1759862662
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2029,17965.6519600911,1507.60501640076,16458.0469436904
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2030,21053.0689084491,1556.43669783697,19496.6322106122
+"Treatment of early-stage colorectal cancer",4.4,"Sierra Leone",2020,8496.3091018111,8496.3091018111,0
+"Treatment of early-stage colorectal cancer",4.4,"Sierra Leone",2021,8719.69950653168,8719.69950653168,0
+"Treatment of early-stage colorectal cancer",4.4,"Sierra Leone",2022,8952.7828972455,8952.7828972455,0
+"Treatment of early-stage colorectal cancer",4.4,"Sierra Leone",2023,23382.6943152065,9199.74858303206,14182.9457321744
+"Treatment of early-stage colorectal cancer",4.4,"Sierra Leone",2024,38664.6376142979,9463.24769388824,29201.3899204097
+"Treatment of early-stage colorectal cancer",4.4,"Sierra Leone",2025,54935.8015881011,9746.33475523725,45189.4668328639
+"Treatment of early-stage colorectal cancer",4.4,"Sierra Leone",2026,72277.4206694773,10039.3383086767,62238.0823608006
+"Treatment of early-stage colorectal cancer",4.4,"Sierra Leone",2027,90794.7871728193,10341.2336356775,80453.5535371418
+"Treatment of early-stage colorectal cancer",4.4,"Sierra Leone",2028,110660.757523775,10657.8099767356,100002.947547039
+"Treatment of early-stage colorectal cancer",4.4,"Sierra Leone",2029,132096.691341128,10995.8698663743,121100.821474753
+"Treatment of early-stage colorectal cancer",4.4,"Sierra Leone",2030,155359.983985123,11361.7100814965,143998.273903626

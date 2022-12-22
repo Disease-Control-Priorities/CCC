@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"The Gambia",2020,828.707568846482,828.707568846482,0
+"IDU harm reduction measures",1.1,"The Gambia",2021,855.212325299769,855.212325299769,0
+"IDU harm reduction measures",1.1,"The Gambia",2022,882.525468884924,882.525468884924,0
+"IDU harm reduction measures",1.1,"The Gambia",2023,9904.45179332971,910.754187892387,8993.69760543732
+"IDU harm reduction measures",1.1,"The Gambia",2024,19506.6327883451,940.048310331291,18566.5844780139
+"IDU harm reduction measures",1.1,"The Gambia",2025,29724.1768140835,970.477089152218,28753.6997249312
+"IDU harm reduction measures",1.1,"The Gambia",2026,40525.6706905465,1000.38375563372,39525.2869349128
+"IDU harm reduction measures",1.1,"The Gambia",2027,51980.2576290543,1031.39911313016,50948.8585159241
+"IDU harm reduction measures",1.1,"The Gambia",2028,64130.8092617384,1063.64554708247,63067.1637146559
+"IDU harm reduction measures",1.1,"The Gambia",2029,77023.3148148541,1097.22199587256,75926.0928189816
+"IDU harm reduction measures",1.1,"The Gambia",2030,90703.8456766843,1132.18282825628,89571.662848428
+"Pulmonary rehabilitation",1.2,"The Gambia",2020,3235.17216535872,3235.17216535872,0
+"Pulmonary rehabilitation",1.2,"The Gambia",2021,3353.80468794396,3353.80468794396,0
+"Pulmonary rehabilitation",1.2,"The Gambia",2022,3476.48738704182,3476.48738704182,0
+"Pulmonary rehabilitation",1.2,"The Gambia",2023,4444.53104665479,3602.91512799914,841.615918655653
+"Pulmonary rehabilitation",1.2,"The Gambia",2024,5479.1481372187,3733.01439211192,1746.13374510677
+"Pulmonary rehabilitation",1.2,"The Gambia",2025,6584.42423156284,3866.34590088103,2718.07833068181
+"Pulmonary rehabilitation",1.2,"The Gambia",2026,7783.04213048114,4011.66441605794,3771.3777144232
+"Pulmonary rehabilitation",1.2,"The Gambia",2027,9067.73256965432,4160.23145301305,4907.50111664127
+"Pulmonary rehabilitation",1.2,"The Gambia",2028,10445.5962159918,4312.79026357245,6132.80595241937
+"Pulmonary rehabilitation",1.2,"The Gambia",2029,11922.5020853358,4469.77751877273,7452.72456656303
+"Pulmonary rehabilitation",1.2,"The Gambia",2030,13504.6864070266,4632.13100507578,8872.55540195087
+"Depression chronic treatment",2.1,"The Gambia",2020,0,0,0
+"Depression chronic treatment",2.1,"The Gambia",2021,0,0,0
+"Depression chronic treatment",2.1,"The Gambia",2022,0,0,0
+"Depression chronic treatment",2.1,"The Gambia",2023,0,0,0
+"Depression chronic treatment",2.1,"The Gambia",2024,0,0,0
+"Depression chronic treatment",2.1,"The Gambia",2025,0,0,0
+"Depression chronic treatment",2.1,"The Gambia",2026,0,0,0
+"Depression chronic treatment",2.1,"The Gambia",2027,0,0,0
+"Depression chronic treatment",2.1,"The Gambia",2028,0,0,0
+"Depression chronic treatment",2.1,"The Gambia",2029,0,0,0
+"Depression chronic treatment",2.1,"The Gambia",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"The Gambia",2020,43683.024926333,43683.024926333,0
+"Bipolar disorder chronic treatment",2.11,"The Gambia",2021,45063.7702985926,45063.7702985926,0
+"Bipolar disorder chronic treatment",2.11,"The Gambia",2022,46507.2417779004,46507.2417779004,0
+"Bipolar disorder chronic treatment",2.11,"The Gambia",2023,171779.165877098,48013.8178466677,123765.348030431
+"Bipolar disorder chronic treatment",2.11,"The Gambia",2024,305228.698893407,49584.3957692677,255644.30312414
+"Bipolar disorder chronic treatment",2.11,"The Gambia",2025,447366.163439022,51216.8180322459,396149.345406776
+"Bipolar disorder chronic treatment",2.11,"The Gambia",2026,597896.43750726,52838.3880943799,545058.04941288
+"Bipolar disorder chronic treatment",2.11,"The Gambia",2027,757846.014504084,54524.9473511039,703321.06715298
+"Bipolar disorder chronic treatment",2.11,"The Gambia",2028,927793.616010985,56277.4181082465,871516.197902738
+"Bipolar disorder chronic treatment",2.11,"The Gambia",2029,1108281.87583997,58094.4278386689,1050187.4480013
+"Bipolar disorder chronic treatment",2.11,"The Gambia",2030,1299579.72003054,59962.8576845136,1239616.86234602
+"Schizophrenia chronic treatment",2.12,"The Gambia",2020,103978.235488119,103978.235488119,0
+"Schizophrenia chronic treatment",2.12,"The Gambia",2021,107515.884880077,107515.884880077,0
+"Schizophrenia chronic treatment",2.12,"The Gambia",2022,111197.80566312,111197.80566312,0
+"Schizophrenia chronic treatment",2.12,"The Gambia",2023,146658.696438147,115026.428578939,31632.2678592082
+"Schizophrenia chronic treatment",2.12,"The Gambia",2024,184470.738011153,119006.868887943,65463.8691232094
+"Schizophrenia chronic treatment",2.12,"The Gambia",2025,224775.025923266,123141.106479921,101633.919443345
+"Schizophrenia chronic treatment",2.12,"The Gambia",2026,267304.963516693,127234.46398916,140070.499527532
+"Schizophrenia chronic treatment",2.12,"The Gambia",2027,312495.125016488,131477.047353393,181018.077663095
+"Schizophrenia chronic treatment",2.12,"The Gambia",2028,360517.328836909,135880.736663403,224636.592173506
+"Schizophrenia chronic treatment",2.12,"The Gambia",2029,411552.048114507,140456.141767345,271095.906347162
+"Schizophrenia chronic treatment",2.12,"The Gambia",2030,465768.815412371,145207.22284233,320561.592570041
+"Epilepsy acute and chronic treatment",2.13,"The Gambia",2020,2262.35762740655,2262.35762740655,0
+"Epilepsy acute and chronic treatment",2.13,"The Gambia",2021,2326.93806425363,2326.93806425363,0
+"Epilepsy acute and chronic treatment",2.13,"The Gambia",2022,2392.6264643209,2392.6264643209,0
+"Epilepsy acute and chronic treatment",2.13,"The Gambia",2023,10349.646193423,2459.32186774407,7890.3243256789
+"Epilepsy acute and chronic treatment",2.13,"The Gambia",2024,18743.2853609286,2527.03498910397,16216.2503718246
+"Epilepsy acute and chronic treatment",2.13,"The Gambia",2025,27582.5489853137,2595.47826125182,24987.0707240619
+"Epilepsy acute and chronic treatment",2.13,"The Gambia",2026,36891.0405748395,2665.59578776498,34225.4447870745
+"Epilepsy acute and chronic treatment",2.13,"The Gambia",2027,46674.313253846,2736.53520268795,43937.778051158
+"Epilepsy acute and chronic treatment",2.13,"The Gambia",2028,56943.8585839374,2808.27168094522,54135.5869029922
+"Epilepsy acute and chronic treatment",2.13,"The Gambia",2029,67709.5081101255,2880.75072674795,64828.7573833776
+"Epilepsy acute and chronic treatment",2.13,"The Gambia",2030,78976.9602369349,2953.83052300686,76023.1297139281
+"Asthma/COPD chronic treatment",2.14,"The Gambia",2020,459015.338643862,459015.338643862,0
+"Asthma/COPD chronic treatment",2.14,"The Gambia",2021,472567.852201445,472567.852201445,0
+"Asthma/COPD chronic treatment",2.14,"The Gambia",2022,486361.563303078,486361.563303078,0
+"Asthma/COPD chronic treatment",2.14,"The Gambia",2023,617207.177015166,500332.892679713,116874.284335453
+"Asthma/COPD chronic treatment",2.14,"The Gambia",2024,754866.504181857,514454.456065778,240412.048116079
+"Asthma/COPD chronic treatment",2.14,"The Gambia",2025,899220.524411775,528551.682678175,370668.8417336
+"Asthma/COPD chronic treatment",2.14,"The Gambia",2026,1051325.66738856,543124.862453166,508200.804935394
+"Asthma/COPD chronic treatment",2.14,"The Gambia",2027,1210797.3483238,557794.797286594,653002.551037209
+"Asthma/COPD chronic treatment",2.14,"The Gambia",2028,1377760.52408978,572543.581305557,805216.942784219
+"Asthma/COPD chronic treatment",2.14,"The Gambia",2029,1552329.79235508,587365.628745773,964964.163609311
+"Asthma/COPD chronic treatment",2.14,"The Gambia",2030,1734736.285545,602309.717328074,1132426.56821692
+"Diabetes screening and treatment",2.3,"The Gambia",2020,1488965.1038206,1488965.1038206,0
+"Diabetes screening and treatment",2.3,"The Gambia",2021,1539675.54727904,1539675.54727904,0
+"Diabetes screening and treatment",2.3,"The Gambia",2022,1592332.06163917,1592332.06163917,0
+"Diabetes screening and treatment",2.3,"The Gambia",2023,2031852.87627722,1647101.43521613,384751.441061089
+"Diabetes screening and treatment",2.3,"The Gambia",2024,2501367.52433839,1704265.04003342,797102.484304969
+"Diabetes screening and treatment",2.3,"The Gambia",2025,3003658.57320263,1763904.0476863,1239754.52551633
+"Diabetes screening and treatment",2.3,"The Gambia",2026,3542797.63359239,1826512.4365033,1716285.19708909
+"Diabetes screening and treatment",2.3,"The Gambia",2027,4120416.94846127,1891266.2615587,2229150.68690257
+"Diabetes screening and treatment",2.3,"The Gambia",2028,4740332.47891063,1958598.89100242,2781733.58790821
+"Diabetes screening and treatment",2.3,"The Gambia",2029,5406148.23980159,2028833.68760676,3377314.55219483
+"Diabetes screening and treatment",2.3,"The Gambia",2030,6121491.80352279,2102341.30731801,4019150.49620478
+"CVD primary prevention",2.4,"The Gambia",2020,643323.328670425,643323.328670425,0
+"CVD primary prevention",2.4,"The Gambia",2021,667924.464341955,667924.464341955,0
+"CVD primary prevention",2.4,"The Gambia",2022,693793.266401816,693793.266401816,0
+"CVD primary prevention",2.4,"The Gambia",2023,889063.004786202,720710.130284612,168352.87450159
+"CVD primary prevention",2.4,"The Gambia",2024,1098214.350667,748413.180569943,349801.17009706
+"CVD primary prevention",2.4,"The Gambia",2025,1321738.34355649,776767.89698059,544970.446575901
+"CVD primary prevention",2.4,"The Gambia",2026,1559610.67843493,805405.387951124,754205.290483807
+"CVD primary prevention",2.4,"The Gambia",2027,1812884.9663923,834612.819255384,978272.147136919
+"CVD primary prevention",2.4,"The Gambia",2028,2082379.62314959,864470.595779495,1217909.02737009
+"CVD primary prevention",2.4,"The Gambia",2029,2369062.45778442,895104.513397609,1473957.94438681
+"CVD primary prevention",2.4,"The Gambia",2030,2674078.58816388,926682.091156642,1747396.49700724
+"Aspirin for suspected ACS",2.5,"The Gambia",2020,236.041748516778,236.041748516778,0
+"Aspirin for suspected ACS",2.5,"The Gambia",2021,244.182882058679,244.182882058679,0
+"Aspirin for suspected ACS",2.5,"The Gambia",2022,252.657868002231,252.657868002231,0
+"Aspirin for suspected ACS",2.5,"The Gambia",2023,322.643679828531,261.547907485641,61.0957723428904
+"Aspirin for suspected ACS",2.5,"The Gambia",2024,397.700084528246,270.998923840388,126.701160687858
+"Aspirin for suspected ACS",2.5,"The Gambia",2025,478.470564262789,281.097443386386,197.373120876404
+"Aspirin for suspected ACS",2.5,"The Gambia",2026,565.377850697265,291.753755416733,273.624095280532
+"Aspirin for suspected ACS",2.5,"The Gambia",2027,659.116755609637,303.042635455288,356.074120154349
+"Aspirin for suspected ACS",2.5,"The Gambia",2028,760.377523248993,315.009901492601,445.367621756392
+"Aspirin for suspected ACS",2.5,"The Gambia",2029,869.845593091538,327.694319313269,542.151273778269
+"Aspirin for suspected ACS",2.5,"The Gambia",2030,988.185739801743,341.128095853672,647.057643948071
+"CVD secondary prevention",2.6,"The Gambia",2020,870647.467136458,870647.467136458,0
+"CVD secondary prevention",2.6,"The Gambia",2021,900724.037536112,900724.037536112,0
+"CVD secondary prevention",2.6,"The Gambia",2022,931213.618686104,931213.618686104,0
+"CVD secondary prevention",2.6,"The Gambia",2023,1186986.99256895,962219.263938698,224767.72863025
+"CVD secondary prevention",2.6,"The Gambia",2024,1459230.19257343,993967.956019383,465262.236554045
+"CVD secondary prevention",2.6,"The Gambia",2025,1749539.851638,1026540.17135066,722999.680287338
+"CVD secondary prevention",2.6,"The Gambia",2026,2068697.70632691,1064472.08871843,1004225.61760848
+"CVD secondary prevention",2.6,"The Gambia",2027,2411243.23630137,1102901.2148022,1308342.02149917
+"CVD secondary prevention",2.6,"The Gambia",2028,2779672.18201272,1142216.23836286,1637455.94364986
+"CVD secondary prevention",2.6,"The Gambia",2029,3176033.75296161,1182669.87192091,1993363.88104071
+"CVD secondary prevention",2.6,"The Gambia",2030,3602668.08425561,1224733.04810624,2377935.03614938
+"Heart failure chronic treatment",2.7,"The Gambia",2020,118297.764369575,118297.764369575,0
+"Heart failure chronic treatment",2.7,"The Gambia",2021,122520.184524464,122520.184524464,0
+"Heart failure chronic treatment",2.7,"The Gambia",2022,126485.58285686,126485.58285686,0
+"Heart failure chronic treatment",2.7,"The Gambia",2023,160628.96612088,130212.282456068,30416.6836648113
+"Heart failure chronic treatment",2.7,"The Gambia",2024,196448.867705571,133760.456049919,62688.4116556519
+"Heart failure chronic treatment",2.7,"The Gambia",2025,233977.946711443,137105.33483843,96872.6118730135
+"Heart failure chronic treatment",2.7,"The Gambia",2026,277904.792056103,142563.978032935,135340.814023169
+"Heart failure chronic treatment",2.7,"The Gambia",2027,324992.116828936,147818.703874802,177173.412954134
+"Heart failure chronic treatment",2.7,"The Gambia",2028,375492.21554783,152922.127386961,222570.088160869
+"Heart failure chronic treatment",2.7,"The Gambia",2029,429403.355052122,157870.256375662,271533.098676459
+"Heart failure chronic treatment",2.7,"The Gambia",2030,486747.129640405,162739.684641248,324007.444999157
+"Alcohol use screening/brief intervention",2.9,"The Gambia",2020,4215.01388208687,4215.01388208687,0
+"Alcohol use screening/brief intervention",2.9,"The Gambia",2021,4352.50923370982,4352.50923370982,0
+"Alcohol use screening/brief intervention",2.9,"The Gambia",2022,4495.11202280185,4495.11202280185,0
+"Alcohol use screening/brief intervention",2.9,"The Gambia",2023,50492.8794734324,4643.02339985585,45849.8560735765
+"Alcohol use screening/brief intervention",2.9,"The Gambia",2024,99534.7925089304,4796.5455376373,94738.2469712931
+"Alcohol use screening/brief intervention",2.9,"The Gambia",2025,151802.681245971,4955.71547321389,146846.965772757
+"Alcohol use screening/brief intervention",2.9,"The Gambia",2026,207204.205384094,5113.58484713542,202090.620536958
+"Alcohol use screening/brief intervention",2.9,"The Gambia",2027,266072.057346217,5277.02102494481,260795.036321272
+"Alcohol use screening/brief intervention",2.9,"The Gambia",2028,328632.117377201,5446.5919541316,323185.525423069
+"Alcohol use screening/brief intervention",2.9,"The Gambia",2029,395121.686977989,5622.74241316674,389498.944564822
+"Alcohol use screening/brief intervention",2.9,"The Gambia",2030,465754.243987589,5805.45837466124,459948.785612928
+"Medical management of ACS",3.1,"The Gambia",2020,33760.5088680349,33760.5088680349,0
+"Medical management of ACS",3.1,"The Gambia",2021,34969.4141668528,34969.4141668528,0
+"Medical management of ACS",3.1,"The Gambia",2022,36175.241551115,36175.241551115,0
+"Medical management of ACS",3.1,"The Gambia",2023,126148.60240644,37377.3636759822,88771.2387304578
+"Medical management of ACS",3.1,"The Gambia",2024,221986.638538908,38580.445125966,183406.193412942
+"Medical management of ACS",3.1,"The Gambia",2025,323958.777030453,39781.5955389691,284177.181491484
+"Medical management of ACS",3.1,"The Gambia",2026,435641.178519534,41277.7289381039,394363.44958143
+"Medical management of ACS",3.1,"The Gambia",2027,555771.708313842,42767.9043978331,513003.803916009
+"Medical management of ACS",3.1,"The Gambia",2028,685033.580148078,44266.8227450467,640766.757403031
+"Medical management of ACS",3.1,"The Gambia",2029,823961.008225327,45781.4270294889,778179.581195838
+"Medical management of ACS",3.1,"The Gambia",2030,973164.456902078,47331.00895229,925833.447949788
+"Heart failure acute treatment",3.2,"The Gambia",2020,90832.5755496888,90832.5755496888,0
+"Heart failure acute treatment",3.2,"The Gambia",2021,94066.9347985198,94066.9347985198,0
+"Heart failure acute treatment",3.2,"The Gambia",2022,97110.7869654134,97110.7869654134,0
+"Heart failure acute treatment",3.2,"The Gambia",2023,337425.021127559,99977.7840377952,237447.237089764
+"Heart failure acute treatment",3.2,"The Gambia",2024,591189.271151048,102713.59878024,488475.672370808
+"Heart failure acute treatment",3.2,"The Gambia",2025,858424.454475787,105299.480531773,753124.973944014
+"Heart failure acute treatment",3.2,"The Gambia",2026,1158323.5862452,109481.518305951,1048842.06793925
+"Heart failure acute treatment",3.2,"The Gambia",2027,1481839.37954692,113513.64056136,1368325.73898556
+"Heart failure acute treatment",3.2,"The Gambia",2028,1830492.43806036,117434.782035759,1713057.6560246
+"Heart failure acute treatment",3.2,"The Gambia",2029,2204677.58835897,121241.749331021,2083435.83902795
+"Heart failure acute treatment",3.2,"The Gambia",2030,2604770.17597597,124991.663017728,2479778.51295825
+"Cervical cancer screening and treatment",3.3,"The Gambia",2020,49957.7954272091,49957.7954272091,0
+"Cervical cancer screening and treatment",3.3,"The Gambia",2021,51547.9381625279,51547.9381625279,0
+"Cervical cancer screening and treatment",3.3,"The Gambia",2022,53203.0394779216,53203.0394779216,0
+"Cervical cancer screening and treatment",3.3,"The Gambia",2023,139620.883765907,54932.8067275698,84688.0770383368
+"Cervical cancer screening and treatment",3.3,"The Gambia",2024,231739.614075946,56748.2343711426,174991.379704803
+"Cervical cancer screening and treatment",3.3,"The Gambia",2025,330021.315915194,58654.7118269924,271366.604088202
+"Cervical cancer screening and treatment",3.3,"The Gambia",2026,433893.261216555,60506.7562411666,373386.504975388
+"Cervical cancer screening and treatment",3.3,"The Gambia",2027,544398.734996795,62446.3743379582,481952.360658837
+"Cervical cancer screening and treatment",3.3,"The Gambia",2028,662092.145678478,64481.8758661447,597610.269812333
+"Cervical cancer screening and treatment",3.3,"The Gambia",2029,787579.655127548,66621.1836468809,720958.471480667
+"Cervical cancer screening and treatment",3.3,"The Gambia",2030,921447.14998966,68866.6754512045,852580.474538456
+"Asthma/COPD acute treatment",3.4,"The Gambia",2020,102559.059720386,102559.059720386,0
+"Asthma/COPD acute treatment",3.4,"The Gambia",2021,105653.409864495,105653.409864495,0
+"Asthma/COPD acute treatment",3.4,"The Gambia",2022,108808.336555813,108808.336555813,0
+"Asthma/COPD acute treatment",3.4,"The Gambia",2023,378029.845435518,112008.843092005,266021.002343513
+"Asthma/COPD acute treatment",3.4,"The Gambia",2024,662750.123285728,115247.819008045,547502.304277683
+"Asthma/COPD acute treatment",3.4,"The Gambia",2025,963085.428922568,118487.475615511,844597.953307057
+"Asthma/COPD acute treatment",3.4,"The Gambia",2026,1280638.66884848,121857.71342171,1158780.95542677
+"Asthma/COPD acute treatment",3.4,"The Gambia",2027,1615250.31162769,125253.423819275,1489996.88780842
+"Asthma/COPD acute treatment",3.4,"The Gambia",2028,1967341.82262036,128672.585837173,1838669.23678318
+"Asthma/COPD acute treatment",3.4,"The Gambia",2029,2337304.36981141,132115.282165837,2205189.08764557
+"Asthma/COPD acute treatment",3.4,"The Gambia",2030,2725720.55573493,135595.175826749,2590125.37990819
+"Management of bowel obstruction",3.6,"The Gambia",2020,6572.67769190144,6572.67769190144,0
+"Management of bowel obstruction",3.6,"The Gambia",2021,6766.41301568236,6766.41301568236,0
+"Management of bowel obstruction",3.6,"The Gambia",2022,6965.12841788315,6965.12841788315,0
+"Management of bowel obstruction",3.6,"The Gambia",2023,77970.11255995,7169.66552275403,70800.447037196
+"Management of bowel obstruction",3.6,"The Gambia",2024,153183.710123575,7381.00684863524,145802.703274939
+"Management of bowel obstruction",3.6,"The Gambia",2025,232952.067096166,7601.89252010678,225350.174576059
+"Management of bowel obstruction",3.6,"The Gambia",2026,317575.29056051,7830.43363318541,309744.856927324
+"Management of bowel obstruction",3.6,"The Gambia",2027,407279.499970987,8064.49458257065,399215.005388417
+"Management of bowel obstruction",3.6,"The Gambia",2028,502392.222847135,8304.96536274235,494087.257484392
+"Management of bowel obstruction",3.6,"The Gambia",2029,603217.859133594,8552.15041889552,594665.708714698
+"Management of bowel obstruction",3.6,"The Gambia",2030,710079.221143019,8806.83343278444,701272.387710235
+"Management of appendicitis",3.7,"The Gambia",2020,679.692122412857,679.692122412857,0
+"Management of appendicitis",3.7,"The Gambia",2021,699.299890578014,699.299890578014,0
+"Management of appendicitis",3.7,"The Gambia",2022,719.654385923671,719.654385923671,0
+"Management of appendicitis",3.7,"The Gambia",2023,8054.7366721959,740.665441121462,7314.07123107444
+"Management of appendicitis",3.7,"The Gambia",2024,15816.7413978365,762.243719596288,15054.4976782402
+"Management of appendicitis",3.7,"The Gambia",2025,24014.8130833006,784.125115264164,23230.6879680365
+"Management of appendicitis",3.7,"The Gambia",2026,32651.4280785893,806.133553186209,31845.294525403
+"Management of appendicitis",3.7,"The Gambia",2027,41753.0123545164,828.703628636637,40924.3087258798
+"Management of appendicitis",3.7,"The Gambia",2028,51331.0917044226,851.736220780321,50479.3554836423
+"Management of appendicitis",3.7,"The Gambia",2029,61391.2733280951,875.103263348882,60516.1700647462
+"Management of appendicitis",3.7,"The Gambia",2030,71903.239481195,898.291127760818,71004.9483534342
+"Repair of hernias",3.8,"The Gambia",2020,35128.5094003855,35128.5094003855,0
+"Repair of hernias",3.8,"The Gambia",2021,36182.9449607927,36182.9449607927,0
+"Repair of hernias",3.8,"The Gambia",2022,37268.3990723913,37268.3990723913,0
+"Repair of hernias",3.8,"The Gambia",2023,417450.999931223,38386.2988442504,379064.701086973
+"Repair of hernias",3.8,"The Gambia",2024,820542.795073836,39540.3977582533,781002.397315582
+"Repair of hernias",3.8,"The Gambia",2025,1247808.82772273,40731.3873028893,1207077.44041984
+"Repair of hernias",3.8,"The Gambia",2026,1699249.22830534,41926.4406787465,1657322.7876266
+"Repair of hernias",3.8,"The Gambia",2027,2176798.79237189,43156.2660094464,2133642.52636244
+"Repair of hernias",3.8,"The Gambia",2028,2682067.76309653,44425.9118276984,2637641.85126883
+"Repair of hernias",3.8,"The Gambia",2029,3216917.78419882,45741.3768089889,3171176.40738983
+"Repair of hernias",3.8,"The Gambia",2030,3783637.74868256,47111.3947181985,3736526.35396436
+"Repair of gastrointestinal perforations",3.9,"The Gambia",2020,118.780810692571,118.780810692571,0
+"Repair of gastrointestinal perforations",3.9,"The Gambia",2021,122.520473617992,122.520473617992,0
+"Repair of gastrointestinal perforations",3.9,"The Gambia",2022,126.359472455479,126.359472455479,0
+"Repair of gastrointestinal perforations",3.9,"The Gambia",2023,1417.01892254741,130.300590579072,1286.71833196834
+"Repair of gastrointestinal perforations",3.9,"The Gambia",2024,2788.33486397222,134.351706968181,2653.98315700404
+"Repair of gastrointestinal perforations",3.9,"The Gambia",2025,4244.08943512933,138.491361688321,4105.59807344101
+"Repair of gastrointestinal perforations",3.9,"The Gambia",2026,5793.13819425773,142.827242552523,5650.31095170521
+"Repair of gastrointestinal perforations",3.9,"The Gambia",2027,7438.86182107104,147.269335742126,7291.59248532891
+"Repair of gastrointestinal perforations",3.9,"The Gambia",2028,9187.73614505186,151.837245057905,9035.89889999396
+"Repair of gastrointestinal perforations",3.9,"The Gambia",2029,11045.8667494343,156.54011032732,10889.326639107
+"Repair of gastrointestinal perforations",3.9,"The Gambia",2030,13016.8236589443,161.358594865183,12855.4650640791
+NA,4.1,"The Gambia",2020,NA,NA,NA
+NA,4.1,"The Gambia",2021,NA,NA,NA
+NA,4.1,"The Gambia",2022,NA,NA,NA
+NA,4.1,"The Gambia",2023,NA,NA,NA
+NA,4.1,"The Gambia",2024,NA,NA,NA
+NA,4.1,"The Gambia",2025,NA,NA,NA
+NA,4.1,"The Gambia",2026,NA,NA,NA
+NA,4.1,"The Gambia",2027,NA,NA,NA
+NA,4.1,"The Gambia",2028,NA,NA,NA
+NA,4.1,"The Gambia",2029,NA,NA,NA
+NA,4.1,"The Gambia",2030,NA,NA,NA
+"Management of acute ventilatory failure",4.2,"The Gambia",2020,5541.0043828323,5541.0043828323,0
+"Management of acute ventilatory failure",4.2,"The Gambia",2021,5715.49227705469,5715.49227705469,0
+"Management of acute ventilatory failure",4.2,"The Gambia",2022,5894.12631887833,5894.12631887833,0
+"Management of acute ventilatory failure",4.2,"The Gambia",2023,20508.1692145684,6076.49458209435,14431.6746324741
+"Management of acute ventilatory failure",4.2,"The Gambia",2024,36016.6897968946,6262.64171220999,29754.0480846846
+"Management of acute ventilatory failure",4.2,"The Gambia",2025,52447.9791417094,6451.16172282974,45996.8174188797
+"Management of acute ventilatory failure",4.2,"The Gambia",2026,69917.3473986161,6649.48764292993,63267.8597556862
+"Management of acute ventilatory failure",4.2,"The Gambia",2027,88433.8709411086,6851.13687582653,81582.734065282
+"Management of acute ventilatory failure",4.2,"The Gambia",2028,108049.071796355,7056.42434339445,100992.647452961
+"Management of acute ventilatory failure",4.2,"The Gambia",2029,128809.928745001,7265.51271812723,121544.416026874
+"Management of acute ventilatory failure",4.2,"The Gambia",2030,150769.766313684,7479.20554670401,143290.56076698
+"Treatment of early-stage breast cancer",4.3,"The Gambia",2020,252.875423096799,252.875423096799,0
+"Treatment of early-stage breast cancer",4.3,"The Gambia",2021,262.056434765944,262.056434765944,0
+"Treatment of early-stage breast cancer",4.3,"The Gambia",2022,271.790420565651,271.790420565651,0
+"Treatment of early-stage breast cancer",4.3,"The Gambia",2023,717.097050547489,282.136544477701,434.960506069788
+"Treatment of early-stage breast cancer",4.3,"The Gambia",2024,1197.38116670308,293.165456669661,904.215710033415
+"Treatment of early-stage breast cancer",4.3,"The Gambia",2025,1716.51746779269,304.902138244019,1411.61532954867
+"Treatment of early-stage breast cancer",4.3,"The Gambia",2026,2271.19042482201,316.317854859308,1954.8725699627
+"Treatment of early-stage breast cancer",4.3,"The Gambia",2027,2869.44515254526,328.399767094445,2541.04538545082
+"Treatment of early-stage breast cancer",4.3,"The Gambia",2028,3515.85695712223,341.194243946132,3174.6627131761
+"Treatment of early-stage breast cancer",4.3,"The Gambia",2029,4215.7530564907,354.78070693079,3860.97234955991
+"Treatment of early-stage breast cancer",4.3,"The Gambia",2030,4974.54529996563,369.202367891042,4605.34293207459
+"Treatment of early-stage colorectal cancer",4.4,"The Gambia",2020,2404.58724456501,2404.58724456501,0
+"Treatment of early-stage colorectal cancer",4.4,"The Gambia",2021,2478.39850985286,2478.39850985286,0
+"Treatment of early-stage colorectal cancer",4.4,"The Gambia",2022,2556.13343481006,2556.13343481006,0
+"Treatment of early-stage colorectal cancer",4.4,"The Gambia",2023,6709.37046640213,2639.75231465002,4069.61815175211
+"Treatment of early-stage colorectal cancer",4.4,"The Gambia",2024,11156.2491138662,2730.76224773715,8425.48686612908
+"Treatment of early-stage colorectal cancer",4.4,"The Gambia",2025,15945.2799054601,2829.82575675933,13115.4541487007
+"Treatment of early-stage colorectal cancer",4.4,"The Gambia",2026,21034.6110797718,2923.95278808646,18110.6582916853
+"Treatment of early-stage colorectal cancer",4.4,"The Gambia",2027,26505.6648516151,3023.32135596766,23482.3434956474
+"Treatment of early-stage colorectal cancer",4.4,"The Gambia",2028,32419.8375038772,3129.97961679347,29289.8578870837
+"Treatment of early-stage colorectal cancer",4.4,"The Gambia",2029,38858.9926905099,3246.58329273653,35612.4093977734
+"Treatment of early-stage colorectal cancer",4.4,"The Gambia",2030,45917.2042062843,3375.34934417544,42541.8548621088

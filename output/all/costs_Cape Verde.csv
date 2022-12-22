@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"Cape Verde",2020,815.798778907362,815.798778907362,0
+"IDU harm reduction measures",1.1,"Cape Verde",2021,825.898214591367,825.898214591367,0
+"IDU harm reduction measures",1.1,"Cape Verde",2022,834.20858250996,834.20858250996,0
+"IDU harm reduction measures",1.1,"Cape Verde",2023,9144.35616343923,840.860336867975,8303.49582657126
+"IDU harm reduction measures",1.1,"Cape Verde",2024,17561.9290147104,846.334764676205,16715.5942500342
+"IDU harm reduction measures",1.1,"Cape Verde",2025,26063.4328985315,850.970645594879,25212.4622529366
+"IDU harm reduction measures",1.1,"Cape Verde",2026,34681.5908068762,856.154100399158,33825.436706477
+"IDU harm reduction measures",1.1,"Cape Verde",2027,43392.4110209703,861.053985134405,42531.3570358359
+"IDU harm reduction measures",1.1,"Cape Verde",2028,52180.0623648674,865.517680854688,51314.5446840127
+"IDU harm reduction measures",1.1,"Cape Verde",2029,61026.2267443289,869.443967236419,60156.7827770925
+"IDU harm reduction measures",1.1,"Cape Verde",2030,69921.2552881624,872.892215511872,69048.3630726505
+"Pulmonary rehabilitation",1.2,"Cape Verde",2020,6277.96649292103,6277.96649292103,0
+"Pulmonary rehabilitation",1.2,"Cape Verde",2021,6493.20256728636,6493.20256728636,0
+"Pulmonary rehabilitation",1.2,"Cape Verde",2022,6704.03812542697,6704.03812542697,0
+"Pulmonary rehabilitation",1.2,"Cape Verde",2023,7965.1850502305,6911.83961756906,1053.34543266145
+"Pulmonary rehabilitation",1.2,"Cape Verde",2024,9290.1938719907,7117.33015628494,2172.86371570575
+"Pulmonary rehabilitation",1.2,"Cape Verde",2025,10680.5504861093,7320.484207046,3360.06627906333
+"Pulmonary rehabilitation",1.2,"Cape Verde",2026,12191.0412711834,7553.36334809319,4637.6779230902
+"Pulmonary rehabilitation",1.2,"Cape Verde",2027,13786.3645825847,7786.28822717856,6000.07635540615
+"Pulmonary rehabilitation",1.2,"Cape Verde",2028,15471.5000969938,8020.25918775291,7451.24090924091
+"Pulmonary rehabilitation",1.2,"Cape Verde",2029,17250.2514724533,8255.99437148955,8994.25710096375
+"Pulmonary rehabilitation",1.2,"Cape Verde",2030,19128.7219480957,8495.6652997474,10633.0566483483
+"Depression chronic treatment",2.1,"Cape Verde",2020,0,0,0
+"Depression chronic treatment",2.1,"Cape Verde",2021,0,0,0
+"Depression chronic treatment",2.1,"Cape Verde",2022,0,0,0
+"Depression chronic treatment",2.1,"Cape Verde",2023,0,0,0
+"Depression chronic treatment",2.1,"Cape Verde",2024,0,0,0
+"Depression chronic treatment",2.1,"Cape Verde",2025,0,0,0
+"Depression chronic treatment",2.1,"Cape Verde",2026,0,0,0
+"Depression chronic treatment",2.1,"Cape Verde",2027,0,0,0
+"Depression chronic treatment",2.1,"Cape Verde",2028,0,0,0
+"Depression chronic treatment",2.1,"Cape Verde",2029,0,0,0
+"Depression chronic treatment",2.1,"Cape Verde",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"Cape Verde",2020,47283.3591388604,47283.3591388604,0
+"Bipolar disorder chronic treatment",2.11,"Cape Verde",2021,48079.6866365225,48079.6866365225,0
+"Bipolar disorder chronic treatment",2.11,"Cape Verde",2022,48837.9829567848,48837.9829567848,0
+"Bipolar disorder chronic treatment",2.11,"Cape Verde",2023,177353.223141214,49571.8168553345,127781.406285879
+"Bipolar disorder chronic treatment",2.11,"Cape Verde",2024,309673.587422979,50306.5449529313,259367.042470048
+"Bipolar disorder chronic treatment",2.11,"Cape Verde",2025,445924.978100364,51052.1061467047,394872.87195366
+"Bipolar disorder chronic treatment",2.11,"Cape Verde",2026,586038.560447094,51790.9463400714,534247.614107022
+"Bipolar disorder chronic treatment",2.11,"Cape Verde",2027,730283.618747576,52542.2596805701,677741.359067006
+"Bipolar disorder chronic treatment",2.11,"Cape Verde",2028,878654.599622927,53296.1825441642,825358.417078763
+"Bipolar disorder chronic treatment",2.11,"Cape Verde",2029,1030939.5158969,54037.2854060206,976902.230490884
+"Bipolar disorder chronic treatment",2.11,"Cape Verde",2030,1187083.67127408,54764.8599405022,1132318.81133358
+"Schizophrenia chronic treatment",2.12,"Cape Verde",2020,206392.855877983,206392.855877983,0
+"Schizophrenia chronic treatment",2.12,"Cape Verde",2021,211090.900719959,211090.900719959,0
+"Schizophrenia chronic treatment",2.12,"Cape Verde",2022,215555.909532561,215555.909532561,0
+"Schizophrenia chronic treatment",2.12,"Cape Verde",2023,247285.757284193,219809.562030394,27476.1952537992
+"Schizophrenia chronic treatment",2.12,"Cape Verde",2024,279936.214054716,223938.552957489,55997.6610972271
+"Schizophrenia chronic treatment",2.12,"Cape Verde",2025,313499.875288759,227963.329204011,85536.5460847473
+"Schizophrenia chronic treatment",2.12,"Cape Verde",2026,347577.33827934,231634.809499044,115942.528780297
+"Schizophrenia chronic treatment",2.12,"Cape Verde",2027,382550.01641717,235260.668240682,147289.348176488
+"Schizophrenia chronic treatment",2.12,"Cape Verde",2028,418353.479670587,238805.864342036,179547.615328551
+"Schizophrenia chronic treatment",2.12,"Cape Verde",2029,454887.919369907,242226.252047734,212661.667322173
+"Schizophrenia chronic treatment",2.12,"Cape Verde",2030,492089.673429124,245507.412875756,246582.260553368
+"Epilepsy acute and chronic treatment",2.13,"Cape Verde",2020,53764.0080945626,53764.0080945626,0
+"Epilepsy acute and chronic treatment",2.13,"Cape Verde",2021,54409.2919222437,54409.2919222437,0
+"Epilepsy acute and chronic treatment",2.13,"Cape Verde",2022,55034.6308942822,55034.6308942822,0
+"Epilepsy acute and chronic treatment",2.13,"Cape Verde",2023,59823.1163541642,55649.4105620132,4173.70579215099
+"Epilepsy acute and chronic treatment",2.13,"Cape Verde",2024,64713.2216278605,56267.2896391818,8445.93198867872
+"Epilepsy acute and chronic treatment",2.13,"Cape Verde",2025,69722.5593989673,56899.0457690425,12823.5136299248
+"Epilepsy acute and chronic treatment",2.13,"Cape Verde",2026,74889.0320804791,57567.3532695137,17321.6788109654
+"Epilepsy acute and chronic treatment",2.13,"Cape Verde",2027,80182.3922171533,58241.0350776592,21941.3571394942
+"Epilepsy acute and chronic treatment",2.13,"Cape Verde",2028,85599.5818519808,58914.2957550401,26685.2860969407
+"Epilepsy acute and chronic treatment",2.13,"Cape Verde",2029,91133.6922161141,59580.5291642727,31553.1630518414
+"Epilepsy acute and chronic treatment",2.13,"Cape Verde",2030,96787.4563430526,60240.9535102147,36546.5028328379
+"Asthma/COPD chronic treatment",2.14,"Cape Verde",2020,222502.778897222,222502.778897222,0
+"Asthma/COPD chronic treatment",2.14,"Cape Verde",2021,225174.816440212,225174.816440212,0
+"Asthma/COPD chronic treatment",2.14,"Cape Verde",2022,227749.331880325,227749.331880325,0
+"Asthma/COPD chronic treatment",2.14,"Cape Verde",2023,265328.663509454,230240.622980658,35088.0405287962
+"Asthma/COPD chronic treatment",2.14,"Cape Verde",2024,303621.602767047,232670.631929762,70950.9708372848
+"Asthma/COPD chronic treatment",2.14,"Cape Verde",2025,342748.29043845,235122.687899073,107625.602539377
+"Asthma/COPD chronic treatment",2.14,"Cape Verde",2026,382912.882495731,237691.972120696,145220.910375035
+"Asthma/COPD chronic treatment",2.14,"Cape Verde",2027,423949.719538986,240234.044284024,183715.675254962
+"Asthma/COPD chronic treatment",2.14,"Cape Verde",2028,465874.367286573,242746.225589198,223128.141697375
+"Asthma/COPD chronic treatment",2.14,"Cape Verde",2029,508703.962779672,245231.520732872,263472.442046799
+"Asthma/COPD chronic treatment",2.14,"Cape Verde",2030,552408.905811516,247675.633065081,304733.272746435
+"Diabetes screening and treatment",2.3,"Cape Verde",2020,3575400.18258562,3575400.18258562,0
+"Diabetes screening and treatment",2.3,"Cape Verde",2021,3691560.84018927,3691560.84018927,0
+"Diabetes screening and treatment",2.3,"Cape Verde",2022,3810698.24191806,3810698.24191806,0
+"Diabetes screening and treatment",2.3,"Cape Verde",2023,4534022.50114004,3934426.65207413,599595.849065915
+"Diabetes screening and treatment",2.3,"Cape Verde",2024,5305583.64000937,4064966.77548398,1240616.86452539
+"Diabetes screening and treatment",2.3,"Cape Verde",2025,6131023.68589139,4203124.01006147,1927899.67582992
+"Diabetes screening and treatment",2.3,"Cape Verde",2026,7012702.33428297,4346984.70409505,2665717.63018793
+"Diabetes screening and treatment",2.3,"Cape Verde",2027,7954721.28272467,4496341.56300852,3458379.71971615
+"Diabetes screening and treatment",2.3,"Cape Verde",2028,8961777.10222528,4651344.61044545,4310432.49177983
+"Diabetes screening and treatment",2.3,"Cape Verde",2029,10037804.4003133,4811810.13573151,5225994.26458177
+"Diabetes screening and treatment",2.3,"Cape Verde",2030,11187737.9585342,4978155.57947554,6209582.37905866
+"CVD primary prevention",2.4,"Cape Verde",2020,671108.52042942,671108.52042942,0
+"CVD primary prevention",2.4,"Cape Verde",2021,693419.488447878,693419.488447878,0
+"CVD primary prevention",2.4,"Cape Verde",2022,715596.71577504,715596.71577504,0
+"CVD primary prevention",2.4,"Cape Verde",2023,849909.86469828,737514.651215081,112395.213483199
+"CVD primary prevention",2.4,"Cape Verde",2024,990458.803838323,759003.866551931,231454.937286392
+"CVD primary prevention",2.4,"Cape Verde",2025,1136707.4582475,779764.298603582,356943.159643915
+"CVD primary prevention",2.4,"Cape Verde",2026,1285098.51640979,797709.655605938,487388.860803851
+"CVD primary prevention",2.4,"Cape Verde",2027,1438036.50013865,814861.607894571,623174.892244076
+"CVD primary prevention",2.4,"Cape Verde",2028,1595784.41302559,831479.184360976,764305.228664613
+"CVD primary prevention",2.4,"Cape Verde",2029,1758914.18264073,847900.964556167,911013.21808456
+"CVD primary prevention",2.4,"Cape Verde",2030,1927918.88429615,864345.011320868,1063573.87297528
+"Aspirin for suspected ACS",2.5,"Cape Verde",2020,558.474448830365,558.474448830365,0
+"Aspirin for suspected ACS",2.5,"Cape Verde",2021,579.928493223668,579.928493223668,0
+"Aspirin for suspected ACS",2.5,"Cape Verde",2022,602.632257254113,602.632257254113,0
+"Aspirin for suspected ACS",2.5,"Cape Verde",2023,722.188335078033,626.683487484592,95.5048475934411
+"Aspirin for suspected ACS",2.5,"Cape Verde",2024,851.225077050234,652.264548764879,198.960528285355
+"Aspirin for suspected ACS",2.5,"Cape Verde",2025,990.500186183177,679.325940952494,311.174245230683
+"Aspirin for suspected ACS",2.5,"Cape Verde",2026,1138.08280420902,706.135396501703,431.947407707315
+"Aspirin for suspected ACS",2.5,"Cape Verde",2027,1296.44383412299,734.061463247274,562.382370875717
+"Aspirin for suspected ACS",2.5,"Cape Verde",2028,1465.80938831301,762.863715299183,702.945673013823
+"Aspirin for suspected ACS",2.5,"Cape Verde",2029,1645.88211387784,792.127961638323,853.754152239521
+"Aspirin for suspected ACS",2.5,"Cape Verde",2030,1836.3978092081,821.579469173212,1014.81834003488
+"CVD secondary prevention",2.6,"Cape Verde",2020,764059.310265238,764059.310265238,0
+"CVD secondary prevention",2.6,"Cape Verde",2021,789725.215643191,789725.215643191,0
+"CVD secondary prevention",2.6,"Cape Verde",2022,815930.516153496,815930.516153496,0
+"CVD secondary prevention",2.6,"Cape Verde",2023,971933.221758233,843401.189729506,128532.032028726
+"CVD secondary prevention",2.6,"Cape Verde",2024,1139617.28329044,872952.861067351,266664.422223088
+"CVD secondary prevention",2.6,"Cape Verde",2025,1320903.97833239,904936.566182028,415967.412150365
+"CVD secondary prevention",2.6,"Cape Verde",2026,1522470.71916933,942369.52809562,580101.191073715
+"CVD secondary prevention",2.6,"Cape Verde",2027,1740784.90757571,981472.365725734,759312.541849972
+"CVD secondary prevention",2.6,"Cape Verde",2028,1977535.15954539,1022392.71117877,955142.448366613
+"CVD secondary prevention",2.6,"Cape Verde",2029,2234391.78619589,1065259.95451168,1169131.8316842
+"CVD secondary prevention",2.6,"Cape Verde",2030,2513369.71614442,1110360.2364766,1403009.47966782
+"Heart failure chronic treatment",2.7,"Cape Verde",2020,144291.440403501,144291.440403501,0
+"Heart failure chronic treatment",2.7,"Cape Verde",2021,148702.076062801,148702.076062801,0
+"Heart failure chronic treatment",2.7,"Cape Verde",2022,152932.123409938,152932.123409938,0
+"Heart failure chronic treatment",2.7,"Cape Verde",2023,181049.580070554,157106.916209019,23942.6638615348
+"Heart failure chronic treatment",2.7,"Cape Verde",2024,210676.700508869,161319.860220233,49356.8402886367
+"Heart failure chronic treatment",2.7,"Cape Verde",2025,242076.583117688,165648.400512333,76428.1826053552
+"Heart failure chronic treatment",2.7,"Cape Verde",2026,279957.214096607,172843.403665127,107113.810431481
+"Heart failure chronic treatment",2.7,"Cape Verde",2027,321080.928248353,180221.116383062,140859.811865291
+"Heart failure chronic treatment",2.7,"Cape Verde",2028,365706.791967057,187787.035579136,177919.756387921
+"Heart failure chronic treatment",2.7,"Cape Verde",2029,414025.204840095,195540.731377216,218484.473462879
+"Heart failure chronic treatment",2.7,"Cape Verde",2030,466381.60205792,203581.760650652,262799.841407268
+"Alcohol use screening/brief intervention",2.9,"Cape Verde",2020,2223.61472235979,2223.61472235979,0
+"Alcohol use screening/brief intervention",2.9,"Cape Verde",2021,2264.99461658641,2264.99461658641,0
+"Alcohol use screening/brief intervention",2.9,"Cape Verde",2022,2303.04307157869,2303.04307157869,0
+"Alcohol use screening/brief intervention",2.9,"Cape Verde",2023,25426.9723711995,2338.11240194938,23088.8599692501
+"Alcohol use screening/brief intervention",2.9,"Cape Verde",2024,49205.9841658672,2371.22688887373,46834.7572769934
+"Alcohol use screening/brief intervention",2.9,"Cape Verde",2025,73601.6770364124,2402.81819114995,71198.8588452625
+"Alcohol use screening/brief intervention",2.9,"Cape Verde",2026,98611.4629264865,2433.70565647216,96177.7572700144
+"Alcohol use screening/brief intervention",2.9,"Cape Verde",2027,124228.037596022,2463.94530380639,121764.092292215
+"Alcohol use screening/brief intervention",2.9,"Cape Verde",2028,150423.694922203,2493.20712357162,147930.487798632
+"Alcohol use screening/brief intervention",2.9,"Cape Verde",2029,177155.391452858,2521.14014608521,174634.251306773
+"Alcohol use screening/brief intervention",2.9,"Cape Verde",2030,204396.854160332,2547.7986120003,201849.055548332
+"Medical management of ACS",3.1,"Cape Verde",2020,163729.879000472,163729.879000472,0
+"Medical management of ACS",3.1,"Cape Verde",2021,169105.987141715,169105.987141715,0
+"Medical management of ACS",3.1,"Cape Verde",2022,174464.200196907,174464.200196907,0
+"Medical management of ACS",3.1,"Cape Verde",2023,215501.458144405,179947.345521254,35554.112623151
+"Medical management of ACS",3.1,"Cape Verde",2024,259223.30058666,185694.036611419,73529.2639752409
+"Medical management of ACS",3.1,"Cape Verde",2025,306019.029831528,191772.428299026,114246.601532502
+"Medical management of ACS",3.1,"Cape Verde",2026,358496.310550914,199417.725270365,159078.585280548
+"Medical management of ACS",3.1,"Cape Verde",2027,415161.023955437,207321.967231829,207839.056723607
+"Medical management of ACS",3.1,"Cape Verde",2028,476439.396973096,215530.20743706,260909.189536036
+"Medical management of ACS",3.1,"Cape Verde",2029,542759.124300992,224086.722128685,318672.402172307
+"Medical management of ACS",3.1,"Cape Verde",2030,614654.466819816,233078.479011373,381575.987808443
+"Heart failure acute treatment",3.2,"Cape Verde",2020,659208.721957678,659208.721957678,0
+"Heart failure acute treatment",3.2,"Cape Verde",2021,679569.483314559,679569.483314559,0
+"Heart failure acute treatment",3.2,"Cape Verde",2022,699130.348952838,699130.348952838,0
+"Heart failure acute treatment",3.2,"Cape Verde",2023,860401.427492197,718449.676828501,141951.750663696
+"Heart failure acute treatment",3.2,"Cape Verde",2024,1030461.16211281,737947.423760255,292513.738352556
+"Heart failure acute treatment",3.2,"Cape Verde",2025,1210690.13176687,757974.7708399,452715.36092697
+"Heart failure acute treatment",3.2,"Cape Verde",2026,1424778.98408196,790910.732486836,633868.251595121
+"Heart failure acute treatment",3.2,"Cape Verde",2027,1657413.26269534,824691.216061688,832722.046633656
+"Heart failure acute treatment",3.2,"Cape Verde",2028,1910084.88515792,859335.404443812,1050749.48071411
+"Heart failure acute treatment",3.2,"Cape Verde",2029,2183922.10888888,894832.247592951,1289089.86129593
+"Heart failure acute treatment",3.2,"Cape Verde",2030,2480874.99485219,931630.905009136,1549244.08984305
+"Cervical cancer screening and treatment",3.3,"Cape Verde",2020,87685.9556098717,87685.9556098717,0
+"Cervical cancer screening and treatment",3.3,"Cape Verde",2021,89406.0448141735,89406.0448141735,0
+"Cervical cancer screening and treatment",3.3,"Cape Verde",2022,91114.2749309675,91114.2749309675,0
+"Cervical cancer screening and treatment",3.3,"Cape Verde",2023,152564.023076918,92787.4760233886,59776.5470535292
+"Cervical cancer screening and treatment",3.3,"Cape Verde",2024,216144.58482473,94444.5718981966,121700.012926534
+"Cervical cancer screening and treatment",3.3,"Cape Verde",2025,281905.965991698,96106.8347554892,185799.131236209
+"Cervical cancer screening and treatment",3.3,"Cape Verde",2026,349842.927586469,97762.8933793826,252080.034207086
+"Cervical cancer screening and treatment",3.3,"Cape Verde",2027,420131.585903444,99449.4908608067,320682.095042637
+"Cervical cancer screening and treatment",3.3,"Cape Verde",2028,492810.280926722,101154.064386074,391656.216540648
+"Cervical cancer screening and treatment",3.3,"Cape Verde",2029,567827.85994379,102853.261273334,464974.598670456
+"Cervical cancer screening and treatment",3.3,"Cape Verde",2030,645091.007238694,104527.710903994,540563.296334701
+"Asthma/COPD acute treatment",3.4,"Cape Verde",2020,451085.780892217,451085.780892217,0
+"Asthma/COPD acute treatment",3.4,"Cape Verde",2021,457818.208654475,457818.208654475,0
+"Asthma/COPD acute treatment",3.4,"Cape Verde",2022,464357.958968764,464357.958968764,0
+"Asthma/COPD acute treatment",3.4,"Cape Verde",2023,563740.348618674,470732.681674852,93007.6669438216
+"Asthma/COPD acute treatment",3.4,"Cape Verde",2024,665548.836831016,476970.868254408,188577.968576608
+"Asthma/COPD acute treatment",3.4,"Cape Verde",2025,770006.404607343,483211.370893739,286795.033713604
+"Asthma/COPD acute treatment",3.4,"Cape Verde",2026,877931.197227008,489838.117717438,388093.07950957
+"Asthma/COPD acute treatment",3.4,"Cape Verde",2027,988752.276998834,496391.243076294,492361.03392254
+"Asthma/COPD acute treatment",3.4,"Cape Verde",2028,1102562.73790535,502883.815665621,599678.92223973
+"Asthma/COPD acute treatment",3.4,"Cape Verde",2029,1219465.6086365,509340.69231724,710124.916319264
+"Asthma/COPD acute treatment",3.4,"Cape Verde",2030,1339475.05406699,515758.227408349,823716.826658637
+"Management of bowel obstruction",3.6,"Cape Verde",2020,38085.832582743,38085.832582743,0
+"Management of bowel obstruction",3.6,"Cape Verde",2021,39143.6749293615,39143.6749293615,0
+"Management of bowel obstruction",3.6,"Cape Verde",2022,40229.1201704488,40229.1201704488,0
+"Management of bowel obstruction",3.6,"Cape Verde",2023,173972.113292637,41339.9081091413,132632.205183495
+"Management of bowel obstruction",3.6,"Cape Verde",2024,315082.902510729,42474.7013386422,272608.201172087
+"Management of bowel obstruction",3.6,"Cape Verde",2025,463837.808422999,43626.5160891862,420211.292333813
+"Management of bowel obstruction",3.6,"Cape Verde",2026,620414.781241328,44783.1596578263,575631.621583501
+"Management of bowel obstruction",3.6,"Cape Verde",2027,785253.627842091,45955.3994057514,739298.22843634
+"Management of bowel obstruction",3.6,"Cape Verde",2028,958661.003379468,47139.8138953063,911521.189484161
+"Management of bowel obstruction",3.6,"Cape Verde",2029,1140836.91446194,48330.9224980397,1092505.9919639
+"Management of bowel obstruction",3.6,"Cape Verde",2030,1332083.02381792,49530.8698430902,1282552.15397483
+"Management of appendicitis",3.7,"Cape Verde",2020,908.231461061051,908.231461061051,0
+"Management of appendicitis",3.7,"Cape Verde",2021,911.546355357164,911.546355357164,0
+"Management of appendicitis",3.7,"Cape Verde",2022,914.226391506907,914.226391506907,0
+"Management of appendicitis",3.7,"Cape Verde",2023,3857.24913984545,916.574053032582,2940.67508681287
+"Management of appendicitis",3.7,"Cape Verde",2024,6815.59174173223,918.943511274751,5896.64823045747
+"Management of appendicitis",3.7,"Cape Verde",2025,9792.36336933769,921.59010281032,8870.77326652737
+"Management of appendicitis",3.7,"Cape Verde",2026,12795.7984650958,924.897524914096,11870.9009401817
+"Management of appendicitis",3.7,"Cape Verde",2027,15821.7697493626,928.232788547619,14893.536960815
+"Management of appendicitis",3.7,"Cape Verde",2028,18868.1191637748,931.460362803674,17936.6588009711
+"Management of appendicitis",3.7,"Cape Verde",2029,21928.7912585403,934.352978727941,20994.4382798124
+"Management of appendicitis",3.7,"Cape Verde",2030,25006.0239073617,937.10470000785,24068.9192073538
+"Repair of hernias",3.8,"Cape Verde",2020,93793.1356126615,93793.1356126615,0
+"Repair of hernias",3.8,"Cape Verde",2021,96118.6577392213,96118.6577392213,0
+"Repair of hernias",3.8,"Cape Verde",2022,98455.1037543328,98455.1037543328,0
+"Repair of hernias",3.8,"Cape Verde",2023,424303.955960335,100824.702406416,323479.253553918
+"Repair of hernias",3.8,"Cape Verde",2024,766017.936387186,103274.046843444,662743.889543742
+"Repair of hernias",3.8,"Cape Verde",2025,1124760.9478517,105827.143221992,1018933.80462971
+"Repair of hernias",3.8,"Cape Verde",2026,1498535.89937977,108252.658074646,1390283.24130512
+"Repair of hernias",3.8,"Cape Verde",2027,1889990.17488586,110762.948145693,1779227.22674017
+"Repair of hernias",3.8,"Cape Verde",2028,2299951.79420113,113343.950028264,2186607.84417287
+"Repair of hernias",3.8,"Cape Verde",2029,2729017.38273722,115978.437474435,2613038.94526279
+"Repair of hernias",3.8,"Cape Verde",2030,3177600.17236571,118650.028376872,3058950.14398883
+"Repair of gastrointestinal perforations",3.9,"Cape Verde",2020,260.999069263073,260.999069263073,0
+"Repair of gastrointestinal perforations",3.9,"Cape Verde",2021,264.1690471477,264.1690471477,0
+"Repair of gastrointestinal perforations",3.9,"Cape Verde",2022,267.049872768,267.049872768,0
+"Repair of gastrointestinal perforations",3.9,"Cape Verde",2023,1135.41120054083,269.800681316632,865.610519224194
+"Repair of gastrointestinal perforations",3.9,"Cape Verde",2024,2022.26176841759,272.619532746264,1749.64223567132
+"Repair of gastrointestinal perforations",3.9,"Cape Verde",2025,2929.99806199173,275.612055088855,2654.38600690287
+"Repair of gastrointestinal perforations",3.9,"Cape Verde",2026,3868.79144323737,279.324225875629,3589.46721736174
+"Repair of gastrointestinal perforations",3.9,"Cape Verde",2027,4836.22750438569,283.147529761306,4553.07997462439
+"Repair of gastrointestinal perforations",3.9,"Cape Verde",2028,5834.44303733616,287.081065957698,5547.36197137846
+"Repair of gastrointestinal perforations",3.9,"Cape Verde",2029,6865.26748847973,291.113021429949,6574.15446704978
+"Repair of gastrointestinal perforations",3.9,"Cape Verde",2030,7931.88399003759,295.292198435334,7636.59179160226
+"PCI for ACS",4.1,"Cape Verde",2020,105804.045790107,105804.045790107,0
+"PCI for ACS",4.1,"Cape Verde",2021,109658.844938007,109658.844938007,0
+"PCI for ACS",4.1,"Cape Verde",2022,114047.020447984,114047.020447984,0
+"PCI for ACS",4.1,"Cape Verde",2023,142442.940567007,118942.253402754,23500.6871642537
+"PCI for ACS",4.1,"Cape Verde",2024,173707.436817298,124473.341716723,49234.0951005752
+"PCI for ACS",4.1,"Cape Verde",2025,208506.833735162,130789.170334629,77717.6634005336
+"PCI for ACS",4.1,"Cape Verde",2026,245891.52589815,137059.580902446,108831.944995704
+"PCI for ACS",4.1,"Cape Verde",2027,287209.973704711,143928.207507235,143281.766197476
+"PCI for ACS",4.1,"Cape Verde",2028,332986.768810624,151415.471523712,181571.297286912
+"PCI for ACS",4.1,"Cape Verde",2029,383150.945814023,159282.076398237,223868.869415786
+"PCI for ACS",4.1,"Cape Verde",2030,437232.325893849,167218.539435482,270013.786458367
+"Management of acute ventilatory failure",4.2,"Cape Verde",2020,11407.6210131279,11407.6210131279,0
+"Management of acute ventilatory failure",4.2,"Cape Verde",2021,11632.4416008912,11632.4416008912,0
+"Management of acute ventilatory failure",4.2,"Cape Verde",2022,11849.0319894796,11849.0319894796,0
+"Management of acute ventilatory failure",4.2,"Cape Verde",2023,14442.61388342,12059.8257343035,2382.78814911643
+"Management of acute ventilatory failure",4.2,"Cape Verde",2024,17119.4343872202,12267.8351771752,4851.59921004501
+"Management of acute ventilatory failure",4.2,"Cape Verde",2025,19886.7816305319,12476.689647714,7410.09198281783
+"Management of acute ventilatory failure",4.2,"Cape Verde",2026,22806.802893995,12717.9847131997,10088.8181807954
+"Management of acute ventilatory failure",4.2,"Cape Verde",2027,25842.1316143716,12961.056797694,12881.0748166776
+"Management of acute ventilatory failure",4.2,"Cape Verde",2028,28997.109022488,13205.5586784938,15791.5503439942
+"Management of acute ventilatory failure",4.2,"Cape Verde",2029,32273.3659058991,13450.6586116969,18822.7072942023
+"Management of acute ventilatory failure",4.2,"Cape Verde",2030,35673.6886597896,13696.8225589506,21976.866100839
+"Treatment of early-stage breast cancer",4.3,"Cape Verde",2020,831.697138789618,831.697138789618,0
+"Treatment of early-stage breast cancer",4.3,"Cape Verde",2021,860.049658475908,860.049658475908,0
+"Treatment of early-stage breast cancer",4.3,"Cape Verde",2022,891.241729904969,891.241729904969,0
+"Treatment of early-stage breast cancer",4.3,"Cape Verde",2023,1520.4858266947,924.739917989756,595.745908704939
+"Treatment of early-stage breast cancer",4.3,"Cape Verde",2024,2198.43857127882,960.527500288554,1237.91107099027
+"Treatment of early-stage breast cancer",4.3,"Cape Verde",2025,2930.56725550538,998.7939719007,1931.77328360468
+"Treatment of early-stage breast cancer",4.3,"Cape Verde",2026,3704.13140816279,1034.45286027049,2669.6785478923
+"Treatment of early-stage breast cancer",4.3,"Cape Verde",2027,4534.60387078545,1072.15910509318,3462.44476569227
+"Treatment of early-stage breast cancer",4.3,"Cape Verde",2028,5428.13146401372,1112.13470475971,4315.99675925401
+"Treatment of early-stage breast cancer",4.3,"Cape Verde",2029,6385.81373143245,1153.55857609069,5232.25515534176
+"Treatment of early-stage breast cancer",4.3,"Cape Verde",2030,7403.897621146,1195.19442064,6208.703200506
+"Treatment of early-stage colorectal cancer",4.4,"Cape Verde",2020,5681.71863083672,5681.71863083672,0
+"Treatment of early-stage colorectal cancer",4.4,"Cape Verde",2021,5873.59574578591,5873.59574578591,0
+"Treatment of early-stage colorectal cancer",4.4,"Cape Verde",2022,6100.22800754372,6100.22800754372,0
+"Treatment of early-stage colorectal cancer",4.4,"Cape Verde",2023,10455.5142000413,6358.90922107777,4096.60497896356
+"Treatment of early-stage colorectal cancer",4.4,"Cape Verde",2024,15243.0978878338,6658.74267565643,8584.35521217739
+"Treatment of early-stage colorectal cancer",4.4,"Cape Verde",2025,20585.0431770429,7011.58998878554,13573.4531882574
+"Treatment of early-stage colorectal cancer",4.4,"Cape Verde",2026,26435.9591476019,7372.89719855463,19063.0619490473
+"Treatment of early-stage colorectal cancer",4.4,"Cape Verde",2027,32964.3723674572,7774.87920327341,25189.4931641838
+"Treatment of early-stage colorectal cancer",4.4,"Cape Verde",2028,40291.415693051,8221.65595348337,32069.7597395676
+"Treatment of early-stage colorectal cancer",4.4,"Cape Verde",2029,48440.2967040832,8697.05308316561,39743.2436209176
+"Treatment of early-stage colorectal cancer",4.4,"Cape Verde",2030,57340.6995233543,9177.06680021376,48163.6327231406

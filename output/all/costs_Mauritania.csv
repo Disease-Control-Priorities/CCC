@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"Mauritania",2020,2393.41600345155,2393.41600345155,0
+"IDU harm reduction measures",1.1,"Mauritania",2021,2461.72981917867,2461.72981917867,0
+"IDU harm reduction measures",1.1,"Mauritania",2022,2530.97318883637,2530.97318883637,0
+"IDU harm reduction measures",1.1,"Mauritania",2023,28291.7212676895,2601.53758783351,25690.1836798559
+"IDU harm reduction measures",1.1,"Mauritania",2024,55487.3236218203,2674.037689609,52813.2859322113
+"IDU harm reduction measures",1.1,"Mauritania",2025,84186.4550984201,2748.74876914955,81437.7063292705
+"IDU harm reduction measures",1.1,"Mauritania",2026,114326.895138718,2822.40100504266,111504.494133675
+"IDU harm reduction measures",1.1,"Mauritania",2027,146053.258138634,2898.36596455479,143154.892174079
+"IDU harm reduction measures",1.1,"Mauritania",2028,179447.579090903,2976.74893487732,176470.830156025
+"IDU harm reduction measures",1.1,"Mauritania",2029,214593.009698878,3057.60440516135,211535.405293716
+"IDU harm reduction measures",1.1,"Mauritania",2030,251573.536508138,3140.97077407092,248432.565734067
+"Pulmonary rehabilitation",1.2,"Mauritania",2020,14154.7593292612,14154.7593292612,0
+"Pulmonary rehabilitation",1.2,"Mauritania",2021,14686.0302580907,14686.0302580907,0
+"Pulmonary rehabilitation",1.2,"Mauritania",2022,15226.6770946882,15226.6770946882,0
+"Pulmonary rehabilitation",1.2,"Mauritania",2023,19833.7968632952,15778.4394312943,4055.35743200091
+"Pulmonary rehabilitation",1.2,"Mauritania",2024,24754.2683215694,16346.4344099246,8407.83391164474
+"Pulmonary rehabilitation",1.2,"Mauritania",2025,30012.8013126355,16933.0259680108,13079.7753446247
+"Pulmonary rehabilitation",1.2,"Mauritania",2026,35664.573859802,17552.1392197631,18112.4346400388
+"Pulmonary rehabilitation",1.2,"Mauritania",2027,41710.189630485,18186.8671576534,23523.3224728316
+"Pulmonary rehabilitation",1.2,"Mauritania",2028,48180.3399785457,18838.6075446606,29341.7324338851
+"Pulmonary rehabilitation",1.2,"Mauritania",2029,55103.9848369074,19508.0657607849,35595.9190761225
+"Pulmonary rehabilitation",1.2,"Mauritania",2030,62507.6566477135,20196.1065427591,42311.5501049543
+"Depression chronic treatment",2.1,"Mauritania",2020,0,0,0
+"Depression chronic treatment",2.1,"Mauritania",2021,0,0,0
+"Depression chronic treatment",2.1,"Mauritania",2022,0,0,0
+"Depression chronic treatment",2.1,"Mauritania",2023,0,0,0
+"Depression chronic treatment",2.1,"Mauritania",2024,0,0,0
+"Depression chronic treatment",2.1,"Mauritania",2025,0,0,0
+"Depression chronic treatment",2.1,"Mauritania",2026,0,0,0
+"Depression chronic treatment",2.1,"Mauritania",2027,0,0,0
+"Depression chronic treatment",2.1,"Mauritania",2028,0,0,0
+"Depression chronic treatment",2.1,"Mauritania",2029,0,0,0
+"Depression chronic treatment",2.1,"Mauritania",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"Mauritania",2020,169975.543415276,169975.543415276,0
+"Bipolar disorder chronic treatment",2.11,"Mauritania",2021,175106.883446911,175106.883446911,0
+"Bipolar disorder chronic treatment",2.11,"Mauritania",2022,180353.335150618,180353.335150618,0
+"Bipolar disorder chronic treatment",2.11,"Mauritania",2023,664522.514783919,185740.004132238,478782.510651681
+"Bipolar disorder chronic treatment",2.11,"Mauritania",2024,1177589.36577986,191303.905272886,986285.460506978
+"Bipolar disorder chronic treatment",2.11,"Mauritania",2025,1721096.5327038,197053.971559245,1524042.56114456
+"Bipolar disorder chronic treatment",2.11,"Mauritania",2026,2293416.05018565,202705.693571494,2090710.35661416
+"Bipolar disorder chronic treatment",2.11,"Mauritania",2027,2897959.82993738,208545.389832291,2689414.44010509
+"Bipolar disorder chronic treatment",2.11,"Mauritania",2028,3536240.94644997,214562.69846448,3321678.24798549
+"Bipolar disorder chronic treatment",2.11,"Mauritania",2029,4209440.92497791,220734.427258182,3988706.49771973
+"Bipolar disorder chronic treatment",2.11,"Mauritania",2030,4918223.52584087,227024.263089317,4691199.26275155
+"Schizophrenia chronic treatment",2.12,"Mauritania",2020,694308.786346819,694308.786346819,0
+"Schizophrenia chronic treatment",2.12,"Mauritania",2021,716258.991304383,716258.991304383,0
+"Schizophrenia chronic treatment",2.12,"Mauritania",2022,738641.272556435,738641.272556435,0
+"Schizophrenia chronic treatment",2.12,"Mauritania",2023,856743.011082252,761549.343184224,95193.6678980279
+"Schizophrenia chronic treatment",2.12,"Mauritania",2024,981446.126873033,785133.541322172,196312.585550861
+"Schizophrenia chronic treatment",2.12,"Mauritania",2025,1113117.28997034,809447.760175739,303669.529794599
+"Schizophrenia chronic treatment",2.12,"Mauritania",2026,1249877.19105833,833024.48039349,416852.71066484
+"Schizophrenia chronic treatment",2.12,"Mauritania",2027,1393901.79652403,857339.555178376,536562.241345658
+"Schizophrenia chronic treatment",2.12,"Mauritania",2028,1545547.69880961,882405.629455175,663142.069354432
+"Schizophrenia chronic treatment",2.12,"Mauritania",2029,1705123.01716005,908205.855938071,796917.16122198
+"Schizophrenia chronic treatment",2.12,"Mauritania",2030,1872929.64406953,934725.375770158,938204.268299368
+"Epilepsy acute and chronic treatment",2.13,"Mauritania",2020,186742.629299928,186742.629299928,0
+"Epilepsy acute and chronic treatment",2.13,"Mauritania",2021,191724.730294488,191724.730294488,0
+"Epilepsy acute and chronic treatment",2.13,"Mauritania",2022,196741.279443877,196741.279443877,0
+"Epilepsy acute and chronic treatment",2.13,"Mauritania",2023,216933.134892692,201798.265016457,15134.8698762343
+"Epilepsy acute and chronic treatment",2.13,"Mauritania",2024,237954.37001844,206908.934530328,31045.4354881116
+"Epilepsy acute and chronic treatment",2.13,"Mauritania",2025,259830.049097091,212075.190409221,47754.8586878703
+"Epilepsy acute and chronic treatment",2.13,"Mauritania",2026,282686.235651946,217373.401064883,65312.8345870621
+"Epilepsy acute and chronic treatment",2.13,"Mauritania",2027,306455.427379768,222722.481414973,83732.9459647954
+"Epilepsy acute and chronic treatment",2.13,"Mauritania",2028,331166.122155325,228124.384720308,103041.737435017
+"Epilepsy acute and chronic treatment",2.13,"Mauritania",2029,356846.982578319,233581.892745486,123265.089832833
+"Epilepsy acute and chronic treatment",2.13,"Mauritania",2030,383515.924121732,239092.509101495,144423.415020237
+"Asthma/COPD chronic treatment",2.14,"Mauritania",2020,1629019.66815122,1629019.66815122,0
+"Asthma/COPD chronic treatment",2.14,"Mauritania",2021,1675277.11609847,1675277.11609847,0
+"Asthma/COPD chronic treatment",2.14,"Mauritania",2022,1721807.6765383,1721807.6765383,0
+"Asthma/COPD chronic treatment",2.14,"Mauritania",2023,2223236.54740821,1768657.98548328,454578.561924932
+"Asthma/COPD chronic treatment",2.14,"Mauritania",2024,2749616.68168292,1815984.76667267,933631.91501025
+"Asthma/COPD chronic treatment",2.14,"Mauritania",2025,3301278.19528777,1863634.89299085,1437643.30229692
+"Asthma/COPD chronic treatment",2.14,"Mauritania",2026,3880076.40305463,1912226.83487809,1967849.56817654
+"Asthma/COPD chronic treatment",2.14,"Mauritania",2027,4486287.003722,1961385.74194905,2524901.26177295
+"Asthma/COPD chronic treatment",2.14,"Mauritania",2028,5120903.46667419,2011156.1954115,3109747.27126269
+"Asthma/COPD chronic treatment",2.14,"Mauritania",2029,5785013.66615959,2061603.79616438,3723409.86999521
+"Asthma/COPD chronic treatment",2.14,"Mauritania",2030,6479703.61309873,2112790.93358259,4366912.67951614
+"Diabetes screening and treatment",2.3,"Mauritania",2020,4478320.64154733,4478320.64154733,0
+"Diabetes screening and treatment",2.3,"Mauritania",2021,4637855.83146659,4637855.83146659,0
+"Diabetes screening and treatment",2.3,"Mauritania",2022,4801993.5323215,4801993.5323215,0
+"Diabetes screening and treatment",2.3,"Mauritania",2023,6249736.20437908,4971871.23786943,1277864.96650965
+"Diabetes screening and treatment",2.3,"Mauritania",2024,7797651.43334888,5149250.94539035,2648400.48795853
+"Diabetes screening and treatment",2.3,"Mauritania",2025,9455607.34379314,5335094.9905665,4120512.35322664
+"Diabetes screening and treatment",2.3,"Mauritania",2026,11220982.4730414,5523147.86524668,5697834.60779474
+"Diabetes screening and treatment",2.3,"Mauritania",2027,13109518.7168939,5717762.53251627,7391756.18437759
+"Diabetes screening and treatment",2.3,"Mauritania",2028,15133094.4868509,5919856.97241717,9213237.51443375
+"Diabetes screening and treatment",2.3,"Mauritania",2029,17303551.3745391,6130012.83906151,11173538.5354776
+"Diabetes screening and treatment",2.3,"Mauritania",2030,19633169.5741956,6348907.72660001,13284261.8475956
+"CVD primary prevention",2.4,"Mauritania",2020,1939456.44220653,1939456.44220653,0
+"CVD primary prevention",2.4,"Mauritania",2021,2007163.80281535,2007163.80281535,0
+"CVD primary prevention",2.4,"Mauritania",2022,2075868.75447566,2075868.75447566,0
+"CVD primary prevention",2.4,"Mauritania",2023,2697480.70128709,2145934.84826447,551545.853022627
+"CVD primary prevention",2.4,"Mauritania",2024,3358392.18594684,2218006.95191904,1140385.2340278
+"CVD primary prevention",2.4,"Mauritania",2025,4061098.57766082,2292399.75422021,1768698.82344061
+"CVD primary prevention",2.4,"Mauritania",2026,4799265.55174198,2364826.99801017,2434438.55373181
+"CVD primary prevention",2.4,"Mauritania",2027,5581400.2574374,2439384.50696706,3142015.75047034
+"CVD primary prevention",2.4,"Mauritania",2028,6410158.97750991,2516185.03536072,3893973.94214919
+"CVD primary prevention",2.4,"Mauritania",2029,7287978.07586052,2595221.84691177,4692756.22894875
+"CVD primary prevention",2.4,"Mauritania",2030,8217419.92464262,2676553.43676576,5540866.48787686
+"Aspirin for suspected ACS",2.5,"Mauritania",2020,1182.95656976658,1182.95656976658,0
+"Aspirin for suspected ACS",2.5,"Mauritania",2021,1229.30241351235,1229.30241351235,0
+"Aspirin for suspected ACS",2.5,"Mauritania",2022,1277.51894276202,1277.51894276202,0
+"Aspirin for suspected ACS",2.5,"Mauritania",2023,1669.0373836008,1327.77427575891,341.263107841891
+"Aspirin for suspected ACS",2.5,"Mauritania",2024,2090.18778205678,1380.37715996776,709.810622089022
+"Aspirin for suspected ACS",2.5,"Mauritania",2025,2543.34011051044,1435.42360886911,1107.91650164132
+"Aspirin for suspected ACS",2.5,"Mauritania",2026,3024.05652595773,1489.51586677197,1534.54065918576
+"Aspirin for suspected ACS",2.5,"Mauritania",2027,3539.45144585714,1545.79876316527,1993.65268269187
+"Aspirin for suspected ACS",2.5,"Mauritania",2028,4091.44521362915,1604.07656403441,2487.36864959474
+"Aspirin for suspected ACS",2.5,"Mauritania",2029,4681.2032580672,1663.95612408722,3017.24713397998
+"Aspirin for suspected ACS",2.5,"Mauritania",2030,5309.96115643603,1725.22144320847,3584.73971322755
+"CVD secondary prevention",2.6,"Mauritania",2020,2304626.64870489,2304626.64870489,0
+"CVD secondary prevention",2.6,"Mauritania",2021,2395000.27125053,2395000.27125053,0
+"CVD secondary prevention",2.6,"Mauritania",2022,2487016.68807754,2487016.68807754,0
+"CVD secondary prevention",2.6,"Mauritania",2023,3244717.51289323,2581279.77722667,663437.73566656
+"CVD secondary prevention",2.6,"Mauritania",2024,4057208.52808749,2678896.02053094,1378312.50755655
+"CVD secondary prevention",2.6,"Mauritania",2025,4930446.24948499,2780658.56111103,2149787.68837397
+"CVD secondary prevention",2.6,"Mauritania",2026,5879360.25251195,2890845.74568612,2988514.50682583
+"CVD secondary prevention",2.6,"Mauritania",2027,6900363.2125116,3003519.43495507,3896843.77755652
+"CVD secondary prevention",2.6,"Mauritania",2028,8000912.49630858,3119367.49109943,4881545.00520915
+"CVD secondary prevention",2.6,"Mauritania",2029,9188686.32767377,3238955.03223272,5949731.29544104
+"CVD secondary prevention",2.6,"Mauritania",2030,10471633.5081042,3362946.51790855,7108686.99019561
+"Heart failure chronic treatment",2.7,"Mauritania",2020,345171.687331732,345171.687331732,0
+"Heart failure chronic treatment",2.7,"Mauritania",2021,359544.807280824,359544.807280824,0
+"Heart failure chronic treatment",2.7,"Mauritania",2022,373628.506946922,373628.506946922,0
+"Heart failure chronic treatment",2.7,"Mauritania",2023,486957.405647837,387390.673787413,99566.7318604245
+"Heart failure chronic treatment",2.7,"Mauritania",2024,607412.408376377,400984.170937736,206428.237438641
+"Heart failure chronic treatment",2.7,"Mauritania",2025,735480.828085578,414495.334829159,320985.493256419
+"Heart failure chronic treatment",2.7,"Mauritania",2026,881434.807148114,432636.388001347,448798.419146767
+"Heart failure chronic treatment",2.7,"Mauritania",2027,1038558.67134816,450531.321313149,588027.350035007
+"Heart failure chronic treatment",2.7,"Mauritania",2028,1207643.36409339,468212.134909775,739431.229183618
+"Heart failure chronic treatment",2.7,"Mauritania",2029,1389403.23337905,485714.756838193,903688.476540853
+"Heart failure chronic treatment",2.7,"Mauritania",2030,1584292.17031814,503079.560391086,1081212.60992706
+"Alcohol use screening/brief intervention",2.9,"Mauritania",2020,9454.13843684299,9454.13843684299,0
+"Alcohol use screening/brief intervention",2.9,"Mauritania",2021,9738.00129203173,9738.00129203173,0
+"Alcohol use screening/brief intervention",2.9,"Mauritania",2022,10026.5277702366,10026.5277702366,0
+"Alcohol use screening/brief intervention",2.9,"Mauritania",2023,112243.8756748,10321.2759241195,101922.59975068
+"Alcohol use screening/brief intervention",2.9,"Mauritania",2024,220470.323794951,10624.6893477344,209845.634447217
+"Alcohol use screening/brief intervention",2.9,"Mauritania",2025,335014.884205568,10937.7459493821,324077.138256186
+"Alcohol use screening/brief intervention",2.9,"Mauritania",2026,455637.098019769,11246.5318183718,444390.566201398
+"Alcohol use screening/brief intervention",2.9,"Mauritania",2027,582965.289378129,11565.0658254843,571400.223552644
+"Alcohol use screening/brief intervention",2.9,"Mauritania",2028,717354.585437502,11893.5086670985,705461.076770404
+"Alcohol use screening/brief intervention",2.9,"Mauritania",2029,859137.612588831,12231.5681606065,846906.044428224
+"Alcohol use screening/brief intervention",2.9,"Mauritania",2030,1008616.56228182,12578.7498632052,996037.812418612
+"Medical management of ACS",3.1,"Mauritania",2020,712994.181309811,712994.181309811,0
+"Medical management of ACS",3.1,"Mauritania",2021,741353.31161689,741353.31161689,0
+"Medical management of ACS",3.1,"Mauritania",2022,769920.668112708,769920.668112708,0
+"Medical management of ACS",3.1,"Mauritania",2023,956643.46427628,798813.39777952,157830.06649676
+"Medical management of ACS",3.1,"Mauritania",2024,1156093.3525519,828363.810331044,327729.542220861
+"Medical management of ACS",3.1,"Mauritania",2025,1369569.15961765,858790.0386104,510779.121007246
+"Medical management of ACS",3.1,"Mauritania",2026,1604411.74716545,893410.330613464,711001.416551988
+"Medical management of ACS",3.1,"Mauritania",2027,1856668.36269665,928503.226946701,928165.135749945
+"Medical management of ACS",3.1,"Mauritania",2028,2127975.48009892,964227.920241421,1163747.5598575
+"Medical management of ACS",3.1,"Mauritania",2029,2419934.23898645,1000717.79196339,1419216.44702305
+"Medical management of ACS",3.1,"Mauritania",2030,2734044.57149827,1038126.78900072,1695917.78249755
+"Heart failure acute treatment",3.2,"Mauritania",2020,2185474.51459888,2185474.51459888,0
+"Heart failure acute treatment",3.2,"Mauritania",2021,2276518.48306844,2276518.48306844,0
+"Heart failure acute treatment",3.2,"Mauritania",2022,2365853.09288997,2365853.09288997,0
+"Heart failure acute treatment",3.2,"Mauritania",2023,2937997.48424119,2453277.36057851,484720.123662689
+"Heart failure acute treatment",3.2,"Mauritania",2024,3545124.89294848,2539747.95706754,1005376.93588094
+"Heart failure acute treatment",3.2,"Mauritania",2025,4190005.94127142,2625802.66672575,1564203.27454567
+"Heart failure acute treatment",3.2,"Mauritania",2026,4928665.26883363,2740591.47829229,2188073.79054134
+"Heart failure acute treatment",3.2,"Mauritania",2027,5722517.33217859,2853947.34993611,2868569.98224249
+"Heart failure acute treatment",3.2,"Mauritania",2028,6575622.49482384,2966063.58721913,3609558.9076047
+"Heart failure acute treatment",3.2,"Mauritania",2029,7491564.59929634,3077161.72023309,4414402.87906325
+"Heart failure acute treatment",3.2,"Mauritania",2030,8472509.58911785,3187485.22534948,5285024.36376837
+"Cervical cancer screening and treatment",3.3,"Mauritania",2020,352543.756431825,352543.756431825,0
+"Cervical cancer screening and treatment",3.3,"Mauritania",2021,363108.18796085,363108.18796085,0
+"Cervical cancer screening and treatment",3.3,"Mauritania",2022,373933.918835104,373933.918835104,0
+"Cervical cancer screening and treatment",3.3,"Mauritania",2023,633175.099415691,385088.949352233,248086.150063458
+"Cervical cancer screening and treatment",3.3,"Mauritania",2024,907798.499663343,396668.740425437,511129.759237906
+"Cervical cancer screening and treatment",3.3,"Mauritania",2025,1198811.47072742,408709.605753227,790101.86497419
+"Cervical cancer screening and treatment",3.3,"Mauritania",2026,1504170.34070648,420358.834103316,1083811.50660317
+"Cervical cancer screening and treatment",3.3,"Mauritania",2027,1826785.7707794,432450.747878208,1394335.02290119
+"Cervical cancer screening and treatment",3.3,"Mauritania",2028,2167854.21396815,445020.845402439,1722833.36856572
+"Cervical cancer screening and treatment",3.3,"Mauritania",2029,2528680.2235365,458104.355504733,2070575.86803176
+"Cervical cancer screening and treatment",3.3,"Mauritania",2030,2910604.41438477,471725.000465107,2438879.41391967
+"Asthma/COPD acute treatment",3.4,"Mauritania",2020,3607394.66337337,3607394.66337337,0
+"Asthma/COPD acute treatment",3.4,"Mauritania",2021,3711795.98556167,3711795.98556167,0
+"Asthma/COPD acute treatment",3.4,"Mauritania",2022,3816883.07522058,3816883.07522058,0
+"Asthma/COPD acute treatment",3.4,"Mauritania",2023,4697842.32991016,3922777.43372969,775064.896180463
+"Asthma/COPD acute treatment",3.4,"Mauritania",2024,5622686.79637003,4029881.25798968,1592805.53838035
+"Asthma/COPD acute treatment",3.4,"Mauritania",2025,6592201.66250732,4137911.20856938,2454290.45393794
+"Asthma/COPD acute treatment",3.4,"Mauritania",2026,7610373.29139503,4248358.05679685,3362015.23459819
+"Asthma/COPD acute treatment",3.4,"Mauritania",2027,8677453.67343909,4360195.54356603,4317258.12987306
+"Asthma/COPD acute treatment",3.4,"Mauritania",2028,9795438.90315836,4473539.61686717,5321899.28629119
+"Asthma/COPD acute treatment",3.4,"Mauritania",2029,10966455.4939232,4588541.99853126,6377913.49539192
+"Asthma/COPD acute treatment",3.4,"Mauritania",2030,12192604.6085629,4705358.37664,7487246.23192292
+"Management of bowel obstruction",3.6,"Mauritania",2020,97565.8827226906,97565.8827226906,0
+"Management of bowel obstruction",3.6,"Mauritania",2021,100584.801474953,100584.801474953,0
+"Management of bowel obstruction",3.6,"Mauritania",2022,103685.458952133,103685.458952133,0
+"Management of bowel obstruction",3.6,"Mauritania",2023,449764.007699559,106874.615690984,342889.392008575
+"Management of bowel obstruction",3.6,"Mauritania",2024,817134.883331118,110164.027441298,706970.85588982
+"Management of bowel obstruction",3.6,"Mauritania",2025,1207257.73081135,113579.313905854,1093678.4169055
+"Management of bowel obstruction",3.6,"Mauritania",2026,1620405.20449471,117025.268526625,1503379.93596809
+"Management of bowel obstruction",3.6,"Mauritania",2027,2058248.63700513,120553.787129035,1937694.84987609
+"Management of bowel obstruction",3.6,"Mauritania",2028,2522351.83129902,124174.455156435,2398177.37614259
+"Management of bowel obstruction",3.6,"Mauritania",2029,3014392.39866069,127895.310004043,2886497.08865665
+"Management of bowel obstruction",3.6,"Mauritania",2030,3536192.65469397,131727.464544566,3404465.19014941
+"Management of appendicitis",3.7,"Mauritania",2020,5152.89928382775,5152.89928382775,0
+"Management of appendicitis",3.7,"Mauritania",2021,5290.27607020269,5290.27607020269,0
+"Management of appendicitis",3.7,"Mauritania",2022,5429.31054038245,5429.31054038245,0
+"Management of appendicitis",3.7,"Mauritania",2023,23441.9301262375,5570.35963395743,17871.5704922801
+"Management of appendicitis",3.7,"Mauritania",2024,42378.1609868699,5713.86973740196,36664.291249468
+"Management of appendicitis",3.7,"Mauritania",2025,62252.6556658918,5858.91738895213,56393.7382769397
+"Management of appendicitis",3.7,"Mauritania",2026,83071.1283553544,6004.75665200122,77066.3717033532
+"Management of appendicitis",3.7,"Mauritania",2027,104874.837752277,6153.26691111131,98721.5708411658
+"Management of appendicitis",3.7,"Mauritania",2028,127679.403686852,6303.8562179355,121375.547468916
+"Management of appendicitis",3.7,"Mauritania",2029,151485.857499357,6455.6268558696,145030.230643488
+"Management of appendicitis",3.7,"Mauritania",2030,176242.367617602,6606.12810950671,169636.239508095
+"Repair of hernias",3.8,"Mauritania",2020,382908.490551419,382908.490551419,0
+"Repair of hernias",3.8,"Mauritania",2021,394867.373245825,394867.373245825,0
+"Repair of hernias",3.8,"Mauritania",2022,407093.343472131,407093.343472131,0
+"Repair of hernias",3.8,"Mauritania",2023,1765949.1656089,419631.484897163,1346317.68071173
+"Repair of hernias",3.8,"Mauritania",2024,3208224.22500009,432547.405226844,2775676.81977325
+"Repair of hernias",3.8,"Mauritania",2025,4738531.0767828,445892.353786575,4292638.72299623
+"Repair of hernias",3.8,"Mauritania",2026,6352731.32109592,459018.27465103,5893713.04644489
+"Repair of hernias",3.8,"Mauritania",2027,8059721.15552886,472516.375736464,7587204.7797924
+"Repair of hernias",3.8,"Mauritania",2028,9864493.229701,486400.95203605,9378092.27766495
+"Repair of hernias",3.8,"Mauritania",2029,11772307.0739445,500683.909319389,11271623.1646251
+"Repair of hernias",3.8,"Mauritania",2030,13789667.0159003,515414.658317592,13274252.3575828
+"Repair of gastrointestinal perforations",3.9,"Mauritania",2020,1230.98025799133,1230.98025799133,0
+"Repair of gastrointestinal perforations",3.9,"Mauritania",2021,1268.80990116986,1268.80990116986,0
+"Repair of gastrointestinal perforations",3.9,"Mauritania",2022,1307.20253252571,1307.20253252571,0
+"Repair of gastrointestinal perforations",3.9,"Mauritania",2023,5665.99434001018,1346.37489267569,4319.6194473345
+"Repair of gastrointestinal perforations",3.9,"Mauritania",2024,10285.4086382902,1386.65480783051,8898.75383045966
+"Repair of gastrointestinal perforations",3.9,"Mauritania",2025,15178.9715270771,1428.05387968102,13750.9176473961
+"Repair of gastrointestinal perforations",3.9,"Mauritania",2026,20361.253189551,1470.50842063479,18890.7447689162
+"Repair of gastrointestinal perforations",3.9,"Mauritania",2027,25847.6817260982,1513.97806524996,24333.7036608483
+"Repair of gastrointestinal perforations",3.9,"Mauritania",2028,31656.6213863592,1558.54971238785,30098.0716739713
+"Repair of gastrointestinal perforations",3.9,"Mauritania",2029,37805.5287611104,1604.21834464565,36201.3104164647
+"Repair of gastrointestinal perforations",3.9,"Mauritania",2030,44306.4634439137,1650.80207716846,42655.6613667453
+"PCI for ACS",4.1,"Mauritania",2020,564183.861774676,564183.861774676,0
+"PCI for ACS",4.1,"Mauritania",2021,585042.561790671,585042.561790671,0
+"PCI for ACS",4.1,"Mauritania",2022,606979.075204304,606979.075204304,0
+"PCI for ACS",4.1,"Mauritania",2023,754871.841755833,630330.696146285,124541.145609548
+"PCI for ACS",4.1,"Mauritania",2024,914733.195728463,655499.444760791,259233.750967672
+"PCI for ACS",4.1,"Mauritania",2025,1088404.86719442,682766.001755393,405638.865439027
+"PCI for ACS",4.1,"Mauritania",2026,1270846.67968842,708387.078491708,562459.601196713
+"PCI for ACS",4.1,"Mauritania",2027,1467769.82793833,735471.749723331,732298.078214997
+"PCI for ACS",4.1,"Mauritania",2028,1681193.99278866,764282.768958479,916911.223830178
+"PCI for ACS",4.1,"Mauritania",2029,1913366.24502006,795064.617644692,1118301.62737537
+"PCI for ACS",4.1,"Mauritania",2030,2166850.4785546,828084.043180308,1338766.43537429
+"Management of acute ventilatory failure",4.2,"Mauritania",2020,115055.786593259,115055.786593259,0
+"Management of acute ventilatory failure",4.2,"Mauritania",2021,118561.835822695,118561.835822695,0
+"Management of acute ventilatory failure",4.2,"Mauritania",2022,122104.477420057,122104.477420057,0
+"Management of acute ventilatory failure",4.2,"Mauritania",2023,150524.217395242,125690.255602761,24833.961792481
+"Management of acute ventilatory failure",4.2,"Mauritania",2024,180464.207890693,129338.313184749,51125.8947059442
+"Management of acute ventilatory failure",4.2,"Mauritania",2025,211981.416870876,133046.205994799,78935.2108760765
+"Management of acute ventilatory failure",4.2,"Mauritania",2026,245249.165265762,136870.764350857,108378.400914905
+"Management of acute ventilatory failure",4.2,"Mauritania",2027,280276.443437028,140761.647150201,139514.796286827
+"Management of acute ventilatory failure",4.2,"Mauritania",2028,317154.001164614,144723.064208697,172430.936955917
+"Management of acute ventilatory failure",4.2,"Mauritania",2029,355970.842463401,148758.424652183,207212.417811218
+"Management of acute ventilatory failure",4.2,"Mauritania",2030,396811.747960555,152871.945477715,243939.802482839
+"Treatment of early-stage breast cancer",4.3,"Mauritania",2020,2870.52458201822,2870.52458201822,0
+"Treatment of early-stage breast cancer",4.3,"Mauritania",2021,2971.0650308286,2971.0650308286,0
+"Treatment of early-stage breast cancer",4.3,"Mauritania",2022,3076.80490544231,3076.80490544231,0
+"Treatment of early-stage breast cancer",4.3,"Mauritania",2023,5242.93328487706,3188.68457091938,2054.24871395768
+"Treatment of early-stage breast cancer",4.3,"Mauritania",2024,7571.28322185312,3308.01620685303,4263.26701500009
+"Treatment of early-stage breast cancer",4.3,"Mauritania",2025,10079.7926547002,3435.26404315006,6644.52861155015
+"Treatment of early-stage breast cancer",4.3,"Mauritania",2026,12728.5683880806,3554.1196990904,9174.4486889902
+"Treatment of early-stage breast cancer",4.3,"Mauritania",2027,15569.6661180752,3679.8145927453,11889.8515253299
+"Treatment of early-stage breast cancer",4.3,"Mauritania",2028,18622.5069427465,3812.67872109786,14809.8282216486
+"Treatment of early-stage breast cancer",4.3,"Mauritania",2029,21908.3555493586,3953.13104435345,17955.2245050051
+"Treatment of early-stage breast cancer",4.3,"Mauritania",2030,25450.8034917118,4101.71208215212,21349.0914095597
+"Treatment of early-stage colorectal cancer",4.4,"Mauritania",2020,17834.6179603653,17834.6179603653,0
+"Treatment of early-stage colorectal cancer",4.4,"Mauritania",2021,18482.2124552375,18482.2124552375,0
+"Treatment of early-stage colorectal cancer",4.4,"Mauritania",2022,19163.4636826419,19163.4636826419,0
+"Treatment of early-stage colorectal cancer",4.4,"Mauritania",2023,32704.7403902574,19890.6023426127,12814.1380476447
+"Treatment of early-stage colorectal cancer",4.4,"Mauritania",2024,47332.7929189953,20677.9281001265,26654.8648188688
+"Treatment of early-stage colorectal cancer",4.4,"Mauritania",2025,63218.3390856612,21535.2715043073,41683.0675813539
+"Treatment of early-stage colorectal cancer",4.4,"Mauritania",2026,80095.7203215218,22339.9301062606,57755.7902152612
+"Treatment of early-stage colorectal cancer",4.4,"Mauritania",2027,98328.4688457125,23190.5789700144,75137.8898756981
+"Treatment of early-stage colorectal cancer",4.4,"Mauritania",2028,118110.153877756,24096.8208265914,94013.3330511642
+"Treatment of early-stage colorectal cancer",4.4,"Mauritania",2029,139673.920208286,25069.4691230574,114604.451085229
+"Treatment of early-stage colorectal cancer",4.4,"Mauritania",2030,163296.185331492,26120.4313612076,137175.753970284

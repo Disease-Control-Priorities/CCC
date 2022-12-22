@@ -1,0 +1,276 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"Guinea-Bissau",2020,488.699943636422,488.699943636422,0
+"IDU harm reduction measures",1.1,"Guinea-Bissau",2021,502.345019032155,502.345019032155,0
+"IDU harm reduction measures",1.1,"Guinea-Bissau",2022,516.255186550854,516.255186550854,0
+"IDU harm reduction measures",1.1,"Guinea-Bissau",2023,5769.64643143519,530.542200591741,5239.10423084345
+"IDU harm reduction measures",1.1,"Guinea-Bissau",2024,11316.3161981559,545.344711726272,10770.9714864296
+"IDU harm reduction measures",1.1,"Guinea-Bissau",2025,17174.8715802887,560.741343868396,16614.1302364203
+"IDU harm reduction measures",1.1,"Guinea-Bissau",2026,23342.6332310559,576.19874637181,22766.4344846841
+"IDU harm reduction measures",1.1,"Guinea-Bissau",2027,29847.6212283787,592.206762998906,29255.4144653798
+"IDU harm reduction measures",1.1,"Guinea-Bissau",2028,36708.6575009439,608.780019289077,36099.8774816549
+"IDU harm reduction measures",1.1,"Guinea-Bissau",2029,43944.4759233857,625.924636528383,43318.5512868573
+"IDU harm reduction measures",1.1,"Guinea-Bissau",2030,51572.2535791919,643.626981447356,50928.6265977445
+"Pulmonary rehabilitation",1.2,"Guinea-Bissau",2020,3030.91526805908,3030.91526805908,0
+"Pulmonary rehabilitation",1.2,"Guinea-Bissau",2021,3129.91061529388,3129.91061529388,0
+"Pulmonary rehabilitation",1.2,"Guinea-Bissau",2022,3230.90978126677,3230.90978126677,0
+"Pulmonary rehabilitation",1.2,"Guinea-Bissau",2023,4166.51318045281,3334.14192113733,832.371259315482
+"Pulmonary rehabilitation",1.2,"Guinea-Bissau",2024,5159.44993006371,3440.05792575691,1719.3920043068
+"Pulmonary rehabilitation",1.2,"Guinea-Bissau",2025,6213.61570808122,3548.63205200171,2664.98365607951
+"Pulmonary rehabilitation",1.2,"Guinea-Bissau",2026,7346.9762312695,3666.41043733348,3680.56579393602
+"Pulmonary rehabilitation",1.2,"Guinea-Bissau",2027,8554.05926452128,3786.64626154656,4767.41300297472
+"Pulmonary rehabilitation",1.2,"Guinea-Bissau",2028,9840.33713011273,3909.7561736998,5930.58095641293
+"Pulmonary rehabilitation",1.2,"Guinea-Bissau",2029,11210.8350207829,4036.14276312352,7174.69225765938
+"Pulmonary rehabilitation",1.2,"Guinea-Bissau",2030,12669.0052011472,4166.04061775833,8502.9645833889
+"Depression chronic treatment",2.1,"Guinea-Bissau",2020,0,0,0
+"Depression chronic treatment",2.1,"Guinea-Bissau",2021,0,0,0
+"Depression chronic treatment",2.1,"Guinea-Bissau",2022,0,0,0
+"Depression chronic treatment",2.1,"Guinea-Bissau",2023,0,0,0
+"Depression chronic treatment",2.1,"Guinea-Bissau",2024,0,0,0
+"Depression chronic treatment",2.1,"Guinea-Bissau",2025,0,0,0
+"Depression chronic treatment",2.1,"Guinea-Bissau",2026,0,0,0
+"Depression chronic treatment",2.1,"Guinea-Bissau",2027,0,0,0
+"Depression chronic treatment",2.1,"Guinea-Bissau",2028,0,0,0
+"Depression chronic treatment",2.1,"Guinea-Bissau",2029,0,0,0
+"Depression chronic treatment",2.1,"Guinea-Bissau",2030,0,0,0
+"Bipolar disorder chronic treatment",2.11,"Guinea-Bissau",2020,37054.004057364,37054.004057364,0
+"Bipolar disorder chronic treatment",2.11,"Guinea-Bissau",2021,38098.2632815986,38098.2632815986,0
+"Bipolar disorder chronic treatment",2.11,"Guinea-Bissau",2022,39176.9733205075,39176.9733205075,0
+"Bipolar disorder chronic treatment",2.11,"Guinea-Bissau",2023,144159.538054984,40293.8841022428,103865.653952741
+"Bipolar disorder chronic treatment",2.11,"Guinea-Bissau",2024,255166.325214508,41451.5387613061,213714.786453202
+"Bipolar disorder chronic treatment",2.11,"Guinea-Bissau",2025,372536.255457728,42649.07203095,329887.183426778
+"Bipolar disorder chronic treatment",2.11,"Guinea-Bissau",2026,496130.808599194,43843.0401897907,452287.768409403
+"Bipolar disorder chronic treatment",2.11,"Guinea-Bissau",2027,626532.55340082,45073.6631472514,581458.890253569
+"Bipolar disorder chronic treatment",2.11,"Guinea-Bissau",2028,764059.388152575,46339.736819829,717719.651332746
+"Bipolar disorder chronic treatment",2.11,"Guinea-Bissau",2029,908962.663812343,47637.3431835423,861325.320628801
+"Bipolar disorder chronic treatment",2.11,"Guinea-Bissau",2030,1061373.05958152,48959.1761357168,1012413.8834458
+"Schizophrenia chronic treatment",2.12,"Guinea-Bissau",2020,89840.940732199,89840.940732199,0
+"Schizophrenia chronic treatment",2.12,"Guinea-Bissau",2021,92542.9178540621,92542.9178540621,0
+"Schizophrenia chronic treatment",2.12,"Guinea-Bissau",2022,95314.5679542901,95314.5679542901,0
+"Schizophrenia chronic treatment",2.12,"Guinea-Bissau",2023,125164.915290785,98168.5610123803,26996.3542784046
+"Schizophrenia chronic treatment",2.12,"Guinea-Bissau",2024,156743.26772093,101118.515001652,55624.7527192774
+"Schizophrenia chronic treatment",2.12,"Guinea-Bissau",2025,190151.958707132,104170.780331056,85981.178376076
+"Schizophrenia chronic treatment",2.12,"Guinea-Bissau",2026,225233.771481482,107203.445740989,118030.325740493
+"Schizophrenia chronic treatment",2.12,"Guinea-Bissau",2027,262260.624941566,110331.245785754,151929.379155812
+"Schizophrenia chronic treatment",2.12,"Guinea-Bissau",2028,301340.776546938,113559.468870426,187781.307676512
+"Schizophrenia chronic treatment",2.12,"Guinea-Bissau",2029,342582.12037046,116891.593910878,225690.526459583
+"Schizophrenia chronic treatment",2.12,"Guinea-Bissau",2030,386084.568798955,120327.9283866,265756.640412355
+"Epilepsy acute and chronic treatment",2.13,"Guinea-Bissau",2020,2317.33694438535,2317.33694438535,0
+"Epilepsy acute and chronic treatment",2.13,"Guinea-Bissau",2021,2374.14218050699,2374.14218050699,0
+"Epilepsy acute and chronic treatment",2.13,"Guinea-Bissau",2022,2431.36344733509,2431.36344733509,0
+"Epilepsy acute and chronic treatment",2.13,"Guinea-Bissau",2023,10474.631042645,2489.02123785625,7985.60980478879
+"Epilepsy acute and chronic treatment",2.13,"Guinea-Bissau",2024,18892.8248853793,2547.19872175055,16345.6261636288
+"Epilepsy acute and chronic treatment",2.13,"Guinea-Bissau",2025,27692.4675991977,2605.82627915009,25086.6413200476
+"Epilepsy acute and chronic treatment",2.13,"Guinea-Bissau",2026,36890.1287635265,2665.53802019002,34224.5907433365
+"Epilepsy acute and chronic treatment",2.13,"Guinea-Bissau",2027,46488.3089747452,2725.63683200898,43762.6721427363
+"Epilepsy acute and chronic treatment",2.13,"Guinea-Bissau",2028,56494.9424864824,2786.13047543116,53708.8120110512
+"Epilepsy acute and chronic treatment",2.13,"Guinea-Bissau",2029,66917.2410442058,2847.0160739659,64070.2249702399
+"Epilepsy acute and chronic treatment",2.13,"Guinea-Bissau",2030,77758.8621784118,2908.20750368043,74850.6546747314
+"Asthma/COPD chronic treatment",2.14,"Guinea-Bissau",2020,398029.228555276,398029.228555276,0
+"Asthma/COPD chronic treatment",2.14,"Guinea-Bissau",2021,408008.149969981,408008.149969981,0
+"Asthma/COPD chronic treatment",2.14,"Guinea-Bissau",2022,418016.701554157,418016.701554157,0
+"Asthma/COPD chronic treatment",2.14,"Guinea-Bissau",2023,534918.791177845,428054.607972302,106864.183205543
+"Asthma/COPD chronic treatment",2.14,"Guinea-Bissau",2024,656975.698399936,438149.815561697,218825.882838239
+"Asthma/COPD chronic treatment",2.14,"Guinea-Bissau",2025,784245.660984929,448274.463726582,335971.197258347
+"Asthma/COPD chronic treatment",2.14,"Guinea-Bissau",2026,917242.90366818,458629.411169222,458613.492498957
+"Asthma/COPD chronic treatment",2.14,"Guinea-Bissau",2027,1055872.01255369,469055.053486151,586816.959067538
+"Asthma/COPD chronic treatment",2.14,"Guinea-Bissau",2028,1200301.99347865,479563.080834687,720738.912643965
+"Asthma/COPD chronic treatment",2.14,"Guinea-Bissau",2029,1350722.13064858,490175.334001309,860546.796647268
+"Asthma/COPD chronic treatment",2.14,"Guinea-Bissau",2030,1507316.33625531,500916.224755358,1006400.11149995
+"Diabetes screening and treatment",2.3,"Guinea-Bissau",2020,1481921.59917334,1481921.59917334,0
+"Diabetes screening and treatment",2.3,"Guinea-Bissau",2021,1527384.8809615,1527384.8809615,0
+"Diabetes screening and treatment",2.3,"Guinea-Bissau",2022,1573648.8050774,1573648.8050774,0
+"Diabetes screening and treatment",2.3,"Guinea-Bissau",2023,2025661.91483144,1620982.34561611,404679.569215334
+"Diabetes screening and treatment",2.3,"Guinea-Bissau",2024,2504242.26314627,1669729.63607099,834512.62707528
+"Diabetes screening and treatment",2.3,"Guinea-Bissau",2025,3011671.36280143,1720070.39846702,1291600.96433441
+"Diabetes screening and treatment",2.3,"Guinea-Bissau",2026,3552945.36774724,1773264.12669881,1779681.24104844
+"Diabetes screening and treatment",2.3,"Guinea-Bissau",2027,4127724.38430493,1827644.71723846,2300079.66706647
+"Diabetes screening and treatment",2.3,"Guinea-Bissau",2028,4738997.41241642,1883572.30323885,2855425.10917758
+"Diabetes screening and treatment",2.3,"Guinea-Bissau",2029,5389605.32076255,1941325.46449799,3448279.85626456
+"Diabetes screening and treatment",2.3,"Guinea-Bissau",2030,6082091.31035751,2001151.26839625,4080940.04196126
+"CVD primary prevention",2.4,"Guinea-Bissau",2020,557978.45439424,557978.45439424,0
+"CVD primary prevention",2.4,"Guinea-Bissau",2021,576637.644515807,576637.644515807,0
+"CVD primary prevention",2.4,"Guinea-Bissau",2022,595745.246307455,595745.246307455,0
+"CVD primary prevention",2.4,"Guinea-Bissau",2023,768886.007788375,615280.681978915,153605.32580946
+"CVD primary prevention",2.4,"Guinea-Bissau",2024,952476.816368807,635190.777955542,317286.038413265
+"CVD primary prevention",2.4,"Guinea-Bissau",2025,1146869.68597849,655429.198344027,491440.487634464
+"CVD primary prevention",2.4,"Guinea-Bissau",2026,1351766.26756827,675619.561134491,676146.706433782
+"CVD primary prevention",2.4,"Guinea-Bissau",2027,1568144.72669351,696119.029275022,872025.697418489
+"CVD primary prevention",2.4,"Guinea-Bissau",2028,1796689.11814306,717027.310578184,1079661.80756488
+"CVD primary prevention",2.4,"Guinea-Bissau",2029,2038191.20357572,738460.823563208,1299730.38001251
+"CVD primary prevention",2.4,"Guinea-Bissau",2030,2293434.91279434,760516.700100986,1532918.21269336
+"Aspirin for suspected ACS",2.5,"Guinea-Bissau",2020,211.703029990622,211.703029990622,0
+"Aspirin for suspected ACS",2.5,"Guinea-Bissau",2021,219.283077717489,219.283077717489,0
+"Aspirin for suspected ACS",2.5,"Guinea-Bissau",2022,227.345852902277,227.345852902277,0
+"Aspirin for suspected ACS",2.5,"Guinea-Bissau",2023,294.720258933317,235.842088518541,58.8781704147757
+"Aspirin for suspected ACS",2.5,"Guinea-Bissau",2024,366.948862463079,244.690019502586,122.258842960492
+"Aspirin for suspected ACS",2.5,"Guinea-Bissau",2025,444.285710543548,253.829669913534,190.456040630014
+"Aspirin for suspected ACS",2.5,"Guinea-Bissau",2026,526.824735372368,263.13308351709,263.691651855277
+"Aspirin for suspected ACS",2.5,"Guinea-Bissau",2027,615.017699206247,272.687642915331,342.330056290916
+"Aspirin for suspected ACS",2.5,"Guinea-Bissau",2028,709.23320425132,282.514541295251,426.718662956069
+"Aspirin for suspected ACS",2.5,"Guinea-Bissau",2029,809.879031984343,292.650507959155,517.228524025189
+"Aspirin for suspected ACS",2.5,"Guinea-Bissau",2030,917.292299386279,303.110912535348,614.18138685093
+"CVD secondary prevention",2.6,"Guinea-Bissau",2020,697841.090540775,697841.090540775,0
+"CVD secondary prevention",2.6,"Guinea-Bissau",2021,721394.719262562,721394.719262562,0
+"CVD secondary prevention",2.6,"Guinea-Bissau",2022,744761.290111979,744761.290111979,0
+"CVD secondary prevention",2.6,"Guinea-Bissau",2023,959789.434280354,768046.097468731,191743.336811624
+"CVD secondary prevention",2.6,"Guinea-Bissau",2024,1187282.05174958,791451.644739039,395830.407010537
+"CVD secondary prevention",2.6,"Guinea-Bissau",2025,1428162.55638512,815045.433243333,613117.12314179
+"CVD secondary prevention",2.6,"Guinea-Bissau",2026,1691571.81255615,842787.47557352,848784.336982628
+"CVD secondary prevention",2.6,"Guinea-Bissau",2027,1972061.82709875,870410.243415806,1101651.58368295
+"CVD secondary prevention",2.6,"Guinea-Bissau",2028,2270995.64201337,898110.03769209,1372885.60432128
+"CVD secondary prevention",2.6,"Guinea-Bissau",2029,2589500.78676247,926036.557172281,1663464.22959018
+"CVD secondary prevention",2.6,"Guinea-Bissau",2030,2928411.63608882,954366.799300734,1974044.83678809
+"Heart failure chronic treatment",2.7,"Guinea-Bissau",2020,83479.8774283095,83479.8774283095,0
+"Heart failure chronic treatment",2.7,"Guinea-Bissau",2021,86747.0365469608,86747.0365469608,0
+"Heart failure chronic treatment",2.7,"Guinea-Bissau",2022,89795.4236613989,89795.4236613989,0
+"Heart failure chronic treatment",2.7,"Guinea-Bissau",2023,115694.084857221,92581.1299865273,23112.954870694
+"Heart failure chronic treatment",2.7,"Guinea-Bissau",2024,142717.41428477,95101.4331770134,47615.9811077563
+"Heart failure chronic treatment",2.7,"Guinea-Bissau",2025,170725.44672078,97311.4931365228,73413.9535842576
+"Heart failure chronic treatment",2.7,"Guinea-Bissau",2026,203287.152209861,100992.204350877,102294.947858984
+"Heart failure chronic treatment",2.7,"Guinea-Bissau",2027,237799.855935927,104397.610973218,133402.244962709
+"Heart failure chronic treatment",2.7,"Guinea-Bissau",2028,274226.673055061,107517.925162506,166708.747892555
+"Heart failure chronic treatment",2.7,"Guinea-Bissau",2029,312418.454245412,110343.103788518,202075.350456893
+"Heart failure chronic treatment",2.7,"Guinea-Bissau",2030,352034.730827752,112864.506765383,239170.22406237
+"Alcohol use screening/brief intervention",2.9,"Guinea-Bissau",2020,3830.20063066886,3830.20063066886,0
+"Alcohol use screening/brief intervention",2.9,"Guinea-Bissau",2021,3940.32308261386,3940.32308261386,0
+"Alcohol use screening/brief intervention",2.9,"Guinea-Bissau",2022,4052.83873847058,4052.83873847058,0
+"Alcohol use screening/brief intervention",2.9,"Guinea-Bissau",2023,45330.7513988232,4168.34495621363,41162.4064426096
+"Alcohol use screening/brief intervention",2.9,"Guinea-Bissau",2024,88972.2137968641,4287.52445987698,84684.6893369871
+"Alcohol use screening/brief intervention",2.9,"Guinea-Bissau",2025,135108.329296793,4410.66047203459,130697.668824759
+"Alcohol use screening/brief intervention",2.9,"Guinea-Bissau",2026,183737.857271153,4534.32972594736,179203.527545206
+"Alcohol use screening/brief intervention",2.9,"Guinea-Bissau",2027,235058.073976688,4661.66927243821,230396.40470425
+"Alcohol use screening/brief intervention",2.9,"Guinea-Bissau",2028,289214.517371899,4792.88426029559,284421.633111604
+"Alcohol use screening/brief intervention",2.9,"Guinea-Bissau",2029,346350.328026246,4928.06269323005,341422.265333015
+"Alcohol use screening/brief intervention",2.9,"Guinea-Bissau",2030,406589.648939403,5067.08392693196,401522.565012471
+"Medical management of ACS",3.1,"Guinea-Bissau",2020,28702.7994388288,28702.7994388288,0
+"Medical management of ACS",3.1,"Guinea-Bissau",2021,29699.7143616702,29699.7143616702,0
+"Medical management of ACS",3.1,"Guinea-Bissau",2022,30678.9522268136,30678.9522268136,0
+"Medical management of ACS",3.1,"Guinea-Bissau",2023,106787.74657013,31640.8137985571,75146.9327715732
+"Medical management of ACS",3.1,"Guinea-Bissau",2024,187518.168098422,32591.7670075144,154926.401090907
+"Medical management of ACS",3.1,"Guinea-Bissau",2025,273005.303529211,33530.5498318119,239474.753697399
+"Medical management of ACS",3.1,"Guinea-Bissau",2026,366271.823272317,34718.288760926,331553.534511391
+"Medical management of ACS",3.1,"Guinea-Bissau",2027,466035.154971374,35886.0767001643,430149.07827121
+"Medical management of ACS",3.1,"Guinea-Bissau",2028,572619.8140418,37038.1656735827,535581.648368217
+"Medical management of ACS",3.1,"Guinea-Bissau",2029,686273.885697286,38178.0068730456,648095.878824241
+"Medical management of ACS",3.1,"Guinea-Bissau",2030,807078.665338496,39309.8893383873,767768.776000108
+"Heart failure acute treatment",3.2,"Guinea-Bissau",2020,66320.5187467128,66320.5187467128,0
+"Heart failure acute treatment",3.2,"Guinea-Bissau",2021,68909.9088612272,68909.9088612272,0
+"Heart failure acute treatment",3.2,"Guinea-Bissau",2022,71329.7037588262,71329.7037588262,0
+"Heart failure acute treatment",3.2,"Guinea-Bissau",2023,248218.230523121,73546.142377221,174672.0881459
+"Heart failure acute treatment",3.2,"Guinea-Bissau",2024,434852.157131656,75557.4871365885,359294.669995068
+"Heart failure acute treatment",3.2,"Guinea-Bissau",2025,630234.448375484,77328.3515039809,552906.096871503
+"Heart failure acute treatment",3.2,"Guinea-Bissau",2026,848590.725772417,80251.1266740648,768339.599098353
+"Heart failure acute treatment",3.2,"Guinea-Bissau",2027,1082001.65036455,82961.3021677958,999040.348196753
+"Heart failure acute treatment",3.2,"Guinea-Bissau",2028,1330231.9352623,85451.4223146742,1244780.51294763
+"Heart failure acute treatment",3.2,"Guinea-Bissau",2029,1592477.88691761,87713.7356272581,1504764.15129035
+"Heart failure acute treatment",3.2,"Guinea-Bissau",2030,1866843.60024984,89741.5478476783,1777102.05240216
+"Cervical cancer screening and treatment",3.3,"Guinea-Bissau",2020,45155.9468508648,45155.9468508648,0
+"Cervical cancer screening and treatment",3.3,"Guinea-Bissau",2021,46357.6846746877,46357.6846746877,0
+"Cervical cancer screening and treatment",3.3,"Guinea-Bissau",2022,47589.1316886879,47589.1316886879,0
+"Cervical cancer screening and treatment",3.3,"Guinea-Bissau",2023,124190.968726369,48862.020482506,75328.9482438634
+"Cervical cancer screening and treatment",3.3,"Guinea-Bissau",2024,204971.285039924,50192.7729402719,154778.512099652
+"Cervical cancer screening and treatment",3.3,"Guinea-Bissau",2025,290285.81695348,51590.8323416737,238694.984611807
+"Cervical cancer screening and treatment",3.3,"Guinea-Bissau",2026,379964.913431209,52982.344257549,326982.56917366
+"Cervical cancer screening and treatment",3.3,"Guinea-Bissau",2027,474611.741451667,54433.3887272115,420178.352724456
+"Cervical cancer screening and treatment",3.3,"Guinea-Bissau",2028,574611.627768601,55948.4079580383,518663.219810563
+"Cervical cancer screening and treatment",3.3,"Guinea-Bissau",2029,680270.17748423,57522.6781437755,622747.499340455
+"Cervical cancer screening and treatment",3.3,"Guinea-Bissau",2030,791866.45468208,59152.0513450918,732714.403336988
+"Asthma/COPD acute treatment",3.4,"Guinea-Bissau",2020,94649.0861800569,94649.0861800569,0
+"Asthma/COPD acute treatment",3.4,"Guinea-Bissau",2021,97085.5876395989,97085.5876395989,0
+"Asthma/COPD acute treatment",3.4,"Guinea-Bissau",2022,99533.3072183475,99533.3072183475,0
+"Asthma/COPD acute treatment",3.4,"Guinea-Bissau",2023,344223.77968809,101992.231018693,242231.548669396
+"Asthma/COPD acute treatment",3.4,"Guinea-Bissau",2024,600762.314322055,104468.985190406,496293.329131649
+"Asthma/COPD acute treatment",3.4,"Guinea-Bissau",2025,869353.88996974,106957.111456008,762396.778513732
+"Asthma/COPD acute treatment",3.4,"Guinea-Bissau",2026,1150928.54942753,109518.421411199,1041410.12801633
+"Asthma/COPD acute treatment",3.4,"Guinea-Bissau",2027,1445550.50111887,112099.833930357,1333450.66718852
+"Asthma/COPD acute treatment",3.4,"Guinea-Bissau",2028,1753652.49838567,114705.202917854,1638947.29546782
+"Asthma/COPD acute treatment",3.4,"Guinea-Bissau",2029,2075710.97836067,117340.788303932,1958370.19005674
+"Asthma/COPD acute treatment",3.4,"Guinea-Bissau",2030,2412189.90650382,120013.245825926,2292176.66067789
+"Management of bowel obstruction",3.6,"Guinea-Bissau",2020,4438.48274915855,4438.48274915855,0
+"Management of bowel obstruction",3.6,"Guinea-Bissau",2021,4554.88868567936,4554.88868567936,0
+"Management of bowel obstruction",3.6,"Guinea-Bissau",2022,4672.68199018676,4672.68199018676,0
+"Management of bowel obstruction",3.6,"Guinea-Bissau",2023,52114.1005837897,4792.1012031071,47321.9993806826
+"Management of bowel obstruction",3.6,"Guinea-Bissau",2024,101973.378373658,4913.4252201238,97059.9531535344
+"Management of bowel obstruction",3.6,"Guinea-Bissau",2025,154371.383095568,5037.35277940821,149334.030316159
+"Management of bowel obstruction",3.6,"Guinea-Bissau",2026,209584.0483214,5167.15029727597,204416.898024124
+"Management of bowel obstruction",3.6,"Guinea-Bissau",2027,267641.200947041,5298.46439899126,262342.73654805
+"Management of bowel obstruction",3.6,"Guinea-Bissau",2028,328711.30227452,5432.0900705068,323279.212204013
+"Management of bowel obstruction",3.6,"Guinea-Bissau",2029,392970.868937969,5568.69910843685,387402.169829532
+"Management of bowel obstruction",3.6,"Guinea-Bissau",2030,460578.823519937,5708.8094987417,454870.014021195
+"Management of appendicitis",3.7,"Guinea-Bissau",2020,536.632882860242,536.632882860242,0
+"Management of appendicitis",3.7,"Guinea-Bissau",2021,550.058751362083,550.058751362083,0
+"Management of appendicitis",3.7,"Guinea-Bissau",2022,563.814712043842,563.814712043842,0
+"Management of appendicitis",3.7,"Guinea-Bissau",2023,6284.47778328392,577.883014554843,5706.59476872907
+"Management of appendicitis",3.7,"Guinea-Bissau",2024,12288.5424562872,592.211124769326,11696.3313315179
+"Management of appendicitis",3.7,"Guinea-Bissau",2025,18579.9353489815,606.663848735744,17973.2715002457
+"Management of appendicitis",3.7,"Guinea-Bissau",2026,25153.5643087094,621.011149284162,24532.5531594253
+"Management of appendicitis",3.7,"Guinea-Bissau",2027,32020.8927358096,635.529920612399,31385.3628151972
+"Management of appendicitis",3.7,"Guinea-Bissau",2028,39184.0911885845,650.160343325083,38533.9308452594
+"Management of appendicitis",3.7,"Guinea-Bissau",2029,46640.2111867307,664.803145211638,45975.4080415191
+"Management of appendicitis",3.7,"Guinea-Bissau",2030,54372.3889676631,679.234613445878,53693.1543542172
+"Repair of hernias",3.8,"Guinea-Bissau",2020,32375.3986359049,32375.3986359049,0
+"Repair of hernias",3.8,"Guinea-Bissau",2021,33275.5914894206,33275.5914894206,0
+"Repair of hernias",3.8,"Guinea-Bissau",2022,34195.3994853501,34195.3994853501,0
+"Repair of hernias",3.8,"Guinea-Bissau",2023,382132.96068945,35138.6630519034,346994.297637546
+"Repair of hernias",3.8,"Guinea-Bissau",2024,749339.605983878,36109.4640629864,713230.141920892
+"Repair of hernias",3.8,"Guinea-Bissau",2025,1136847.72328468,37110.0429561615,1099737.68032852
+"Repair of hernias",3.8,"Guinea-Bissau",2026,1544805.62031735,38117.2175428711,1506688.40277448
+"Repair of hernias",3.8,"Guinea-Bissau",2027,1974641.04643545,39150.8307529853,1935490.21568247
+"Repair of hernias",3.8,"Guinea-Bissau",2028,2427485.5956714,40212.6905556908,2387272.9051157
+"Repair of hernias",3.8,"Guinea-Bissau",2029,2904578.14676514,41305.3795493058,2863272.76721584
+"Repair of hernias",3.8,"Guinea-Bissau",2030,3407232.64041302,42431.5581406313,3364801.08227239
+"Repair of gastrointestinal perforations",3.9,"Guinea-Bissau",2020,135.164840179623,135.164840179623,0
+"Repair of gastrointestinal perforations",3.9,"Guinea-Bissau",2021,138.979137308607,138.979137308607,0
+"Repair of gastrointestinal perforations",3.9,"Guinea-Bissau",2022,142.834129653406,142.834129653406,0
+"Repair of gastrointestinal perforations",3.9,"Guinea-Bissau",2023,1595.83185239754,146.743158841153,1449.08869355639
+"Repair of gastrointestinal perforations",3.9,"Guinea-Bissau",2024,3128.14279801485,150.727670230115,2977.41512778474
+"Repair of gastrointestinal perforations",3.9,"Guinea-Bissau",2025,4743.02583411449,154.781883812217,4588.24395030227
+"Repair of gastrointestinal perforations",3.9,"Guinea-Bissau",2026,6451.52075739618,159.079840293758,6292.44091710242
+"Repair of gastrointestinal perforations",3.9,"Guinea-Bissau",2027,8253.3497296115,163.429070770237,8089.92065884127
+"Repair of gastrointestinal perforations",3.9,"Guinea-Bissau",2028,10152.4601555718,167.832663493332,9984.62749207843
+"Repair of gastrointestinal perforations",3.9,"Guinea-Bissau",2029,12152.1638906942,172.288375923288,11979.875514771
+"Repair of gastrointestinal perforations",3.9,"Guinea-Bissau",2030,14253.4467258513,176.776990346673,14076.6697355047
+NA,4.1,"Guinea-Bissau",2020,NA,NA,NA
+NA,4.1,"Guinea-Bissau",2021,NA,NA,NA
+NA,4.1,"Guinea-Bissau",2022,NA,NA,NA
+NA,4.1,"Guinea-Bissau",2023,NA,NA,NA
+NA,4.1,"Guinea-Bissau",2024,NA,NA,NA
+NA,4.1,"Guinea-Bissau",2025,NA,NA,NA
+NA,4.1,"Guinea-Bissau",2026,NA,NA,NA
+NA,4.1,"Guinea-Bissau",2027,NA,NA,NA
+NA,4.1,"Guinea-Bissau",2028,NA,NA,NA
+NA,4.1,"Guinea-Bissau",2029,NA,NA,NA
+NA,4.1,"Guinea-Bissau",2030,NA,NA,NA
+"Management of acute ventilatory failure",4.2,"Guinea-Bissau",2020,4968.23654519639,4968.23654519639,0
+"Management of acute ventilatory failure",4.2,"Guinea-Bissau",2021,5104.14819218812,5104.14819218812,0
+"Management of acute ventilatory failure",4.2,"Guinea-Bissau",2022,5241.57410647653,5241.57410647653,0
+"Management of acute ventilatory failure",4.2,"Guinea-Bissau",2023,18160.0746531741,5380.76286019973,12779.3117929744
+"Management of acute ventilatory failure",4.2,"Guinea-Bissau",2024,31758.7692844548,5522.33902909169,26236.4302553632
+"Management of acute ventilatory failure",4.2,"Guinea-Bissau",2025,46064.065808762,5666.16904764311,40397.8967611189
+"Management of acute ventilatory failure",4.2,"Guinea-Bissau",2026,61158.1393549861,5816.99651098128,55341.1428440048
+"Management of acute ventilatory failure",4.2,"Guinea-Bissau",2027,77049.8322596816,5970.21313154834,71079.6191281333
+"Management of acute ventilatory failure",4.2,"Guinea-Bissau",2028,93778.5111021021,6126.07088656492,87652.4402155371
+"Management of acute ventilatory failure",4.2,"Guinea-Bissau",2029,111382.802573156,6284.83593873466,105097.966634422
+"Management of acute ventilatory failure",4.2,"Guinea-Bissau",2030,129895.468352496,6446.72624164344,123448.742110852
+"Treatment of early-stage breast cancer",4.3,"Guinea-Bissau",2020,426.308234536644,426.308234536644,0
+"Treatment of early-stage breast cancer",4.3,"Guinea-Bissau",2021,439.29685839752,439.29685839752,0
+"Treatment of early-stage breast cancer",4.3,"Guinea-Bissau",2022,452.929048730267,452.929048730267,0
+"Treatment of early-stage breast cancer",4.3,"Guinea-Bissau",2023,1187.58300344622,467.245771847693,720.337231598527
+"Treatment of early-stage breast cancer",4.3,"Guinea-Bissau",2024,1970.03085079018,482.345915645781,1487.68493514439
+"Treatment of early-stage breast cancer",4.3,"Guinea-Bissau",2025,2805.36134543764,498.3307775614,2307.03056787624
+"Treatment of early-stage breast cancer",4.3,"Guinea-Bissau",2026,3688.5545658815,513.75853177371,3174.79603410779
+"Treatment of early-stage breast cancer",4.3,"Guinea-Bissau",2027,4629.73475923165,529.922212808469,4099.81254642319
+"Treatment of early-stage breast cancer",4.3,"Guinea-Bissau",2028,5635.70888963887,546.997856033367,5088.7110336055
+"Treatment of early-stage breast cancer",4.3,"Guinea-Bissau",2029,6712.18335668271,564.973270245315,6147.21008643739
+"Treatment of early-stage breast cancer",4.3,"Guinea-Bissau",2030,7863.65582394542,583.762302683613,7279.89352126181
+"Treatment of early-stage colorectal cancer",4.4,"Guinea-Bissau",2020,3004.21693690927,3004.21693690927,0
+"Treatment of early-stage colorectal cancer",4.4,"Guinea-Bissau",2021,3096.96366584674,3096.96366584674,0
+"Treatment of early-stage colorectal cancer",4.4,"Guinea-Bissau",2022,3191.25852135399,3191.25852135399,0
+"Treatment of early-stage colorectal cancer",4.4,"Guinea-Bissau",2023,8359.45129279124,3288.9644430654,5070.48684972583
+"Treatment of early-stage colorectal cancer",4.4,"Guinea-Bissau",2024,13860.6373878594,3392.93628467435,10467.701103185
+"Treatment of early-stage colorectal cancer",4.4,"Guinea-Bissau",2025,19749.5364784328,3505.67587351725,16243.8606049155
+"Treatment of early-stage colorectal cancer",4.4,"Guinea-Bissau",2026,26016.3361910698,3617.91281881316,22398.4233722567
+"Treatment of early-stage colorectal cancer",4.4,"Guinea-Bissau",2027,32722.3695260855,3734.80896618698,28987.5605598985
+"Treatment of early-stage colorectal cancer",4.4,"Guinea-Bissau",2028,39937.2563396484,3859.03024404508,36078.2260956033
+"Treatment of early-stage colorectal cancer",4.4,"Guinea-Bissau",2029,47703.3307282272,3989.60852225181,43713.7222059753
+"Treatment of early-stage colorectal cancer",4.4,"Guinea-Bissau",2030,56045.8749862011,4125.05815348311,51920.816832718
