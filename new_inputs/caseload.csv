@@ -1,0 +1,33 @@
+NCD,sub_id,Intervention,Epi1,Measure1,StartAge1,StopAge1,Sex1,Adjustment1,Cost adjustment,Traded,Unit cost,Original Unit Cost,Original Currency,Year,Country,calc_ICER,Platform
+1.2,a,Pulmonary rehabilitation,Chronic obstructive pulmonary disease,Prevalence,30,95+,Both,0.021,1.17,0,61.5186,52.58,USD,2016,LIC+LMIC+UMIC,yes,C
+3.3,a,Cervical cancer screening and treatment,Cervical cancer,Incidence,20,80,Female,0.236,1.42038,0.3,210.2339772,161.01,USD,2013,LMIC,yes,FLH
+3.1,a,Medical management of ACS,Ischemic heart disease,Incidence,30,95+,Both,1,1.17,0.3,1619.046,1383.8,R,2005,Brazil,yes,FLH
+3.4,a,Asthma/COPD acute treatment,Chronic obstructive pulmonary disease,Prevalence,30,95+,Both,0.0855,1.42038,0.3,254.6154,195,USD,2005,Vietnam,yes,FLH
+3.4,b,Asthma/COPD acute treatment,Asthma,Prevalence,0,95+,Both,0.13095,1.42038,0.3,254.6154,195,USD,2005,Vietnam,yes,FLH
+3.2,a,Heart failure acute treatmentC,Heart failure due to ischemic heart disease,Prevalence,30,95+,Both,0.5,1.17,0.3,4719.3354,4033.62,R,2002,Brazil,yes,FLH
+3.2,b,Heart failure acute treatment,Heart failure due to myocarditis,Prevalence,0,95+,Both,0.5,1.17,0.3,4719.3354,4033.62,R,2002,Brazil,yes,FLH
+3.2,c,Heart failure acute treatment,Hypertensive heart disease,Prevalence,30,95+,Both,0.5,1.17,0.3,4719.3354,4033.62,R,2002,Brazil,yes,FLH
+3.2,d,Heart failure acute treatment,Alcoholic cardiomyopathy,Prevalence,15,95+,Both,0.5,1.17,0.3,4719.3354,4033.62,R,2002,Brazil,yes,FLH
+3.2,e,Heart failure acute treatment,Other cardiomyopathy,Prevalence,0,95+,Both,0.5,1.17,0.3,4719.3354,4033.62,R,2002,Brazil,yes,FLH
+2.4,b,CVD primary prevention,All,Population,30,95+,Both,0.05,1.25073,0.15,22.567545,18.37,USD,2012,Tanzania,yes,HC
+2.4,e,CVD primary prevention,All,Population,30,95+,Both,0.014,1.25073,1,23.378355,19.03,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.14,a,Asthma/COPD chronic treatment,Chronic obstructive pulmonary disease,Prevalence,0,95+,Both,0.33,1.25073,0.52,30.34395,24.7,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.14,b,Asthma/COPD chronic treatment,Asthma,Prevalence,0,95+,Both,1,1.25073,0.52,30.34395,24.7,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.5,a,Aspirin for suspected ACS,All,Population,40,95+,Both,0.005,1.25073,0.02,1.339065,1.09,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.3,c,Diabetes screening/treatment,Diabetes mellitus type 2,Prevalence,0,95+,Both,0.8,1.17,0.36,176.67,151,USD,2014,Rwanda,yes,HC
+2.3,d,Diabetes screening/treatment,Diabetes mellitus type 1,Prevalence,0,95+,Both,1,1.17,0.36,176.67,151,USD,2014,Rwanda,yes,HC
+2.3,e,Diabetes screening/treatment,Chronic kidney disease due to diabetes mellitus type 1,Prevalence,0,95+,Both,1,1.17,0.36,176.67,151,USD,2014,Rwanda,yes,HC
+2.3,f,Diabetes screening/treatment,Chronic kidney disease due to diabetes mellitus type 2,Prevalence,0,95+,Both,1,1.17,0.36,176.67,151,USD,2014,Rwanda,yes,HC
+2.6,a,CVD secondary prevention,Ischemic heart disease,Prevalence,30,95+,Both,1,1.25073,0.15,45.13509,36.74,USD,2012,Tanzania,yes,HC
+2.6,f,CVD secondary prevention,Ischemic stroke,Incidence,30,95+,Both,1,1.42038,0.3,504.4388076,386.33,R,2007,Brazil,yes,FLH
+2.6,g,CVD secondary prevention,Intracerebral hemorrhage,Incidence,30,95+,Both,1,1.42038,0.3,504.4388076,386.33,R,2007,Brazil,yes,FLH
+2.7,a,Heart failure chronic treatment,Heart failure due to ischemic heart disease,Prevalence,30,95+,Both,1,1.25073,1,18.218655,14.83,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.7,c,Heart failure chronic treatment,Heart failure due to myocarditis,Prevalence,0,95+,Both,1,1.25073,0.3,8.1081,6.6,USD,2017,Brazil,yes,HC
+2.7,d,Heart failure chronic treatment,Hypertensive heart disease,Prevalence,30,95+,Both,1,1.25073,0.3,8.1081,6.6,USD,2017,Brazil,yes,HC
+2.7,e,Heart failure chronic treatment,Alcoholic cardiomyopathy,Prevalence,15,95+,Both,1,1.25073,0.3,8.1081,6.6,USD,2017,Brazil,yes,HC
+2.7,f,Heart failure chronic treatment,Other cardiomyopathy,Prevalence,0,95+,Both,1,1.25073,0.3,8.1081,6.6,USD,2017,Brazil,yes,HC
+4.2,a,Management of acute ventilatory failure,Chronic obstructive pulmonary disease,Prevalence,15,95+,Both,0.0095,1.17,0.3,318.9303,272.59,Pounds,2003,United Kingdom,yes,RH
+4.2,b,Management of acute ventilatory failure,Asthma,Prevalence,0,95+,Both,0.00405,1.17,0.3,318.9303,272.59,Pounds,2003,United Kingdom,yes,RH
+4.1,a,PCI for ACS,Ischemic heart disease,Incidence,30,80,Both,0.205,1.17,0.3,15756.39,13467,RM,2014,Malaysia,yes,RH
+4.3,a,Treatment of early-stage breast cancer,Breast cancer,Incidence,30,80,Female,0.236,1.42038,0.3,276.5178,195,USD,2010,Vietnam,yes,RH
+4.4,a,Treatment of early-stage colorectal cancer,Colon and rectum cancer,Incidence,30,80,Both,0.254,1.42038,0.3,204315.4148,144082.97,THB,2013,Thailand,yes,RH

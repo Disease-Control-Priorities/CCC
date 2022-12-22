@@ -1,0 +1,77 @@
+NCD,sub_id,Intervention,Epi1,Measure1,StartAge1,StopAge1,Sex1,Adjustment1,Cost adjustment,Ancilary,HS,Traded,Unit cost,Original Unit Cost,Original Currency,Year,Country,calc_ICER,Platform
+1.1,a,IDU harm reduction measures,Opioid use disorders,Prevalence,15,95+,Both,1,1.17,1,1.17,0.3,40.87,40.87,USD,2011,Ukraine,yes,HC
+1.2,a,Pulmonary rehabilitation,Chronic obstructive pulmonary disease,Prevalence,30,95+,Both,0.021,1.17,1,1.17,0,1583,1583,Euros,2015,France,yes,C
+2.1,a,Depression chronic treatment,Major depressive disorder,Prevalence,0,95+,Both,0.0775,1.2285,1.05,1.17,0.3,61.3625,61.3625,USD,2008,South Africa,yes,HC
+2.11,a,Bipolar disorder chronic treatment,Bipolar disorder,Prevalence,0,95+,Both,1,1.2285,1.05,1.17,0.3,100,100,USD,2022,LIC,yes,HC
+2.12,a,Schizophrenia chronic treatment,Schizophrenia,Prevalence,0,95+,Both,1,1.2285,1.05,1.17,0.3,100,100,USD,2022,LIC,yes,HC
+2.13,a,Epilepsy acute and chronic treatment,Idiopathic epilepsy,Incidence,0,95+,Both,1,1.2285,1.05,1.17,0.3,2.05,2.05,USD,2021,LIC,yes,HC
+2.13,b,Epilepsy acute and chronic treatment,Idiopathic epilepsy,Prevalence,0,95+,Both,0.4,1.2285,1.05,1.17,0.3,8.26,8.26,USD,2021,LIC,yes,HC
+2.13,c,Epilepsy acute and chronic treatment,Idiopathic epilepsy,Prevalence,0,95+,Both,1,1.2285,1.05,1.17,0.3,5.11,5.11,USD,2021,LIC,yes,HC
+2.14,a,Asthma/COPD chronic treatment,Chronic obstructive pulmonary disease,Prevalence,0,95+,Both,0.33,1.25658,1.074,1.17,0.52,30.34395,24.7,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.14,b,Asthma/COPD chronic treatment,Asthma,Prevalence,0,95+,Both,1,1.25658,1.074,1.17,0.52,30.34395,24.7,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.3,a,Diabetes screening and treatment,Diabetes mellitus type 2,Prevalence,0,95+,Both,1,1.25658,1.074,1.17,0.3,88.452,72,Yuan,2016,China,yes,HC
+2.3,b,Diabetes screening and treatment,Diabetes mellitus type 1,Prevalence,0,95+,Both,1,1.25658,1.074,1.17,0.3,88.452,72,Yuan,2016,China,yes,HC
+2.3,c,Diabetes screening and treatment,Diabetes mellitus type 2,Prevalence,0,95+,Both,0.8,1.17,1,1.17,0.36,176.67,151,USD,2014,Rwanda,yes,HC
+2.3,d,Diabetes screening and treatment,Diabetes mellitus type 1,Prevalence,0,95+,Both,1,1.17,1,1.17,0.36,176.67,151,USD,2014,Rwanda,yes,HC
+2.3,e,Diabetes screening and treatment,Chronic kidney disease due to diabetes mellitus type 1,Prevalence,0,95+,Both,1,1.17,1,1.17,0.36,176.67,151,USD,2014,Rwanda,yes,HC
+2.3,f,Diabetes screening and treatment,Chronic kidney disease due to diabetes mellitus type 2,Prevalence,0,95+,Both,1,1.17,1,1.17,0.36,176.67,151,USD,2014,Rwanda,yes,HC
+2.4,a,CVD primary prevention,All,Population,30,95+,Both,1,1.17,1,1.17,0.3,1.17,1,USD,2012,South Africa,yes,C
+2.4,b,CVD primary prevention,All,Population,30,95+,Both,0.05,1.25658,1.074,1.17,0.15,22.56755,18.37,USD,2012,Tanzania,yes,HC
+2.4,c,CVD primary prevention,All,Population,30,95+,Both,0.05,1.25658,1.074,1.17,1,23.37836,19.03,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.4,d,CVD primary prevention,All,Population,30,95+,Both,0.014,1.25658,1.074,1.17,0.15,35.60193,28.98,USD,2012,Tanzania,yes,HC
+2.4,e,CVD primary prevention,All,Population,30,95+,Both,0.014,1.25658,1.074,1.17,1,23.37836,19.03,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.5,a,Aspirin for suspected ACS,All,Population,40,95+,Both,0.005,1.25658,1.074,1.17,0.02,1.339065,1.09,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.6,a,CVD secondary prevention,Ischemic heart disease,Prevalence,30,95+,Both,1,1.25658,1.074,1.17,0.15,45.13509,36.74,USD,2012,Tanzania,yes,HC
+2.6,b,CVD secondary prevention,Ischemic stroke,Prevalence,30,95+,Both,0.5,1.25658,1.074,1.17,0.15,45.13509,36.74,USD,2012,Tanzania,yes,HC
+2.6,c,CVD secondary prevention,Ischemic heart disease,Prevalence,30,95+,Both,1,1.25658,1.074,1.17,1,74.65595,60.77,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.6,d,CVD secondary prevention,Ischemic stroke,Prevalence,30,95+,Both,0.5,1.25658,1.074,1.17,1,74.65595,60.77,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.6,e,CVD secondary prevention,Ischemic heart disease,Incidence,30,95+,Both,0.25,1.48824,1.272,1.17,0.3,61.53858,47.13,USD,2014,Brazil,yes,FLH
+2.6,f,CVD secondary prevention,Ischemic stroke,Incidence,30,95+,Both,1,1.48824,1.272,1.17,0.3,504.4388,386.33,R,2007,Brazil,yes,FLH
+2.6,g,CVD secondary prevention,Intracerebral hemorrhage,Incidence,30,95+,Both,1,1.48824,1.272,1.17,0.3,504.4388,386.33,R,2007,Brazil,yes,FLH
+2.7,a,Heart failure chronic treatment,Heart failure due to ischemic heart disease,Prevalence,30,95+,Both,1,1.25658,1.074,1.17,1,18.21866,14.83,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.7,b,Heart failure chronic treatment,Heart failure due to ischemic heart disease,Prevalence,30,95+,Both,1,1.25658,1.074,1.17,0.3,8.1081,6.6,USD,2017,Brazil,yes,HC
+2.7,c,Heart failure chronic treatment,Heart failure due to myocarditis,Prevalence,0,95+,Both,1,1.25658,1.074,1.17,0.3,8.1081,6.6,USD,2017,Brazil,yes,HC
+2.7,d,Heart failure chronic treatment,Hypertensive heart disease,Prevalence,30,95+,Both,1,1.25658,1.074,1.17,0.3,8.1081,6.6,USD,2017,Brazil,yes,HC
+2.7,e,Heart failure chronic treatment,Alcoholic cardiomyopathy,Prevalence,15,95+,Both,1,1.25658,1.074,1.17,0.3,8.1081,6.6,USD,2017,Brazil,yes,HC
+2.7,f,Heart failure chronic treatment,Other cardiomyopathy,Prevalence,0,95+,Both,1,1.25658,1.074,1.17,0.3,8.1081,6.6,USD,2017,Brazil,yes,HC
+2.7,g,Heart failure chronic treatment,Heart failure due to myocarditis,Prevalence,0,95+,Both,1,1.25658,1.074,1.17,0.15,45.13509,36.74,USD,2012,Tanzania,yes,HC
+2.7,h,Heart failure chronic treatment,Hypertensive heart disease,Prevalence,30,95+,Both,1,1.25658,1.074,1.17,0.15,45.13509,36.74,USD,2012,Tanzania,yes,HC
+2.7,i,Heart failure chronic treatment,Alcoholic cardiomyopathy,Prevalence,15,95+,Both,1,1.25658,1.074,1.17,0.15,45.13509,36.74,USD,2012,Tanzania,yes,HC
+2.7,j,Heart failure chronic treatment,Other cardiomyopathy,Prevalence,0,95+,Both,1,1.25658,1.074,1.17,0.15,45.13509,36.74,USD,2012,Tanzania,yes,HC
+2.7,k,Heart failure chronic treatment,Heart failure due to myocarditis,Prevalence,0,95+,Both,1,1.25658,1.074,1.17,1,68.12033,55.45,USD,2012,LIC+LMIC+UMIC,yes,HC
+2.7,l,Heart failure chronic treatment,Hypertensive heart disease,Prevalence,30,95+,Both,1,1.25658,1.074,1.17,1,68.12033,55.45,USD,2012,LIC+LMIC+UMIC,yes,HC
+2.7,m,Heart failure chronic treatment,Alcoholic cardiomyopathy,Prevalence,15,95+,Both,1,1.25658,1.074,1.17,1,68.12033,55.45,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.7,n,Heart failure chronic treatment,Other cardiomyopathy,Prevalence,0,95+,Both,1,1.25658,1.074,1.17,1,68.12033,55.45,USD,2016,LIC+LMIC+UMIC,yes,HC
+2.9,a,Alcohol use screening/brief intervention,Alcohol use disorders,Prevalence,10,95+,Both,1,1.2285,1.05,1.17,0.3,68.42,68.42,USD,2008,South Africa,yes,HC
+3.1,a,Medical management of ACS,Ischemic heart disease,Incidence,30,95+,Both,1,1.17,1,1.17,0.3,1619.046,1383.8,R,2005,Brazil,yes,FLH
+3.2,a,Heart failure acute treatment,Heart failure due to ischemic heart disease,Prevalence,30,95+,Both,0.5,1.17,1,1.17,0.3,4719.335,4033.62,R,2002,Brazil,yes,FLH
+3.2,b,Heart failure acute treatment,Heart failure due to myocarditis,Prevalence,0,95+,Both,0.5,1.17,1,1.17,0.3,4719.335,4033.62,R,2002,Brazil,yes,FLH
+3.2,c,Heart failure acute treatment,Hypertensive heart disease,Prevalence,30,95+,Both,0.5,1.17,1,1.17,0.3,4719.335,4033.62,R,2002,Brazil,yes,FLH
+3.2,d,Heart failure acute treatment,Alcoholic cardiomyopathy,Prevalence,15,95+,Both,0.5,1.17,1,1.17,0.3,4719.335,4033.62,R,2002,Brazil,yes,FLH
+3.2,e,Heart failure acute treatment,Other cardiomyopathy,Prevalence,0,95+,Both,0.5,1.17,1,1.17,0.3,4719.335,4033.62,R,2002,Brazil,yes,FLH
+3.3,a,Cervical cancer screening and treatment,Cervical cancer,Incidence,20,80,Female,0.236,1.48824,1.272,1.17,0.3,210.234,161.01,USD,2013,LMIC,yes,FLH
+3.3,b,Cervical cancer screening and treatment,All,Population,20,80,Female,0.2,1.2285,1.05,1.17,0.3,11.80589,9.61,USD,2013,LMIC,yes,HC
+3.4,a,Asthma/COPD acute treatment,Chronic obstructive pulmonary disease,Prevalence,30,95+,Both,0.0855,1.48824,1.272,1.17,0.3,254.6154,195,USD,2005,Vietnam,yes,FLH
+3.4,b,Asthma/COPD acute treatment,Asthma,Prevalence,0,95+,Both,0.13095,1.48824,1.272,1.17,0.3,254.6154,195,USD,2005,Vietnam,yes,FLH
+3.6,a,Management of bowel obstruction,Paralytic ileus and intestinal obstruction,Incidence,0,95+,Both,1,1.48824,1.272,1.17,0.3,179,179,USD,2012,LIC,yes,FLH
+3.6,b,Management of bowel obstruction,Colon and rectum cancer,Incidence,0,95+,Both,0.264,1.48824,1.272,1.17,0.3,179,179,USD,2012,LIC,yes,FLH
+3.7,a,Management of appendicitis,Appendicitis,Prevalence,0,95+,Both,0.773,1.48824,1.272,1.17,0.3,384,384,USD,2021,Colombia,yes,FLH
+3.7,a,Management of appendicitis,Appendicitis,Prevalence,0,95+,Both,0.227,1.48824,1.272,1.17,0.3,392,392,USD,2021,Colombia,yes,FLH
+3.8,a,Repair of hernias,"Inguinal, femoral, and abdominal hernia",Prevalence,0,95+,Both,1,1.48824,1.272,1.17,0.3,179,179,USD,2012,LIC,yes,FLH
+3.9,a,Repair of gastrointestinal perforations,Peptic ulcer disease,Incidence,0,95+,Both,0.045,1.48824,1.272,1.17,0.3,179,179,USD,2012,LIC,yes,FLH
+4.1,a,PCI for ACS,Ischemic heart disease,Incidence,30,80,Both,0.205,1.17,1,1.17,0.3,15756.39,13467,RM,2014,Malaysia,yes,RH
+4.2,a,Management of acute ventilatory failure,Chronic obstructive pulmonary disease,Prevalence,15,95+,Both,0.0095,1.17,1,1.17,0.3,318.9303,272.59,Pounds,2003,United Kingdom,yes,RH
+4.2,b,Management of acute ventilatory failure,Asthma,Prevalence,0,95+,Both,0.00405,1.17,1,1.17,0.3,318.9303,272.59,Pounds,2003,United Kingdom,yes,RH
+4.3,a,Treatment of early-stage breast cancer,Breast cancer,Incidence,30,80,Female,0.236,1.48824,1.272,1.17,0.3,276.5178,195,USD,2010,Vietnam,yes,RH
+4.4,a,Treatment of early-stage colorectal cancer,Colon and rectum cancer,Incidence,30,80,Both,0.254,1.48824,1.272,1.17,0.3,204315.4,144083,THB,2013,Thailand,yes,RH
+5.1,a,Tobacco tax,All,Population,0,95+,Both,1,1,1,1,0,0.004,0.004,USD,2017,China,yes,Int
+5.2,a,Alcohol tax,All,Population,0,95+,Both,1,1,1,1,0,0.004,0.004,USD,2017,China,yes,Int
+5.3,a,Tobacco policy,All,Population,0,95+,Both,1,1,1,1,0,0.0231,0.0231,USD,2017,China,yes,Int
+5.4,a,Alcohol policy,All,Population,0,95+,Both,1,1,1,1,0,0.0056,0.0056,USD,2017,China,yes,Int
+5.5,a,Salt policy,All,Population,0,95+,Both,1,1,1,1,0,0.0652031,0.0652031,Pounds,2014,United Kingdom,yes,Int
+5.5,b,Salt policy,All,Population,0,95+,Both,1,1,1,1,0,0.842316,0.842316,Pounds,2014,United Kingdom,yes,Int
+5.6,a,Trans fat policy,All,Population,0,95+,Both,1,1,1,1,0,0.067711599,0.067711599,Pounds,2015,United Kingdom,yes,Int
+5.6,b,Trans fat policy,All,Population,0,95+,Both,1,1,1,1,0,0.388714734,0.388714734,Pounds,2015,United Kingdom,yes,Int
+5.7,a,SSB,All,Population,0,95+,Both,1,1,1,1,0,0.004,0.004,USD,2017,China,yes,Int
+5.8,a,Fossil fuel tax,All,Population,0,95+,Both,1,1,1,1,0,0.004,0.004,USD,2017,China,yes,Int
+5.9,a,Fossil fuel policy,All,Population,0,95+,Both,1,1,1,1,0,0.040403675,0.040403675,USD,2017,China,yes,Int

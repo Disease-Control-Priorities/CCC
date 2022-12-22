@@ -1,0 +1,196 @@
+Super_region,Region,location_gbd,gbd2019,location_wb,location_who,location_ncdrisc,NCD_region,SDI,World_bank_2015,iso3,LocID,wb2021
+South Asia,South Asia,Afghanistan,Afghanistan,Afghanistan,Afghanistan,Afghanistan,South Asia,Low SDI,LIC,AFG,4,LIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Albania,Albania,Albania,Albania,Albania,Central and Eastern Europe,Middle SDI,UMIC,ALB,8,UMIC
+North Africa and Middle East,North Africa and Middle East,Algeria,Algeria,Algeria,Algeria,Algeria,"Central Asia, Middle East and North Africa",Middle SDI,UMIC,DZA,12,LMIC
+"Southeast Asia, East Asia, and Oceania",Oceania,American Samoa,American Samoa,American Samoa,NA,American Samoa,NA,Middle SDI,UMIC,ASM,16,UMIC
+High-income,Western Europe,Andorra,Andorra,Andorra,NA,Andorra,NA,High SDI,HIC,AND,20,HIC
+Sub-Saharan Africa,Central Sub-Saharan Africa,Angola,Angola,Angola,Angola,Angola,Sub-Saharan Africa,Low SDI,UMIC,AGO,24,LMIC
+Latin America and Caribbean,Caribbean,Antigua and Barbuda,Antigua and Barbuda,Antigua and Barbuda,Antigua and Barbuda,Antigua and Barbuda,NA,High-middle SDI,HIC,ATG,28,HIC
+High-income,Southern Latin America,Argentina,Argentina,Argentina,Argentina,Argentina,Latin America and Caribbean,High-middle SDI,UMIC,ARG,32,UMIC
+"Central Europe, Eastern Europe, and Central Asia",Central Asia,Armenia,Armenia,Armenia,Armenia,Armenia,"Central Asia, Middle East and North Africa",High-middle SDI,LMIC,ARM,51,UMIC
+High-income,Australasia,Australia,Australia,Australia,Australia,Australia,High-income Western countries,High SDI,HIC,AUS,36,HIC
+High-income,Western Europe,Austria,Austria,Austria,Austria,Austria,High-income Western countries,High SDI,HIC,AUT,40,HIC
+"Central Europe, Eastern Europe, and Central Asia",Central Asia,Azerbaijan,Azerbaijan,Azerbaijan,Azerbaijan,Azerbaijan,"Central Asia, Middle East and North Africa",High-middle SDI,UMIC,AZE,31,UMIC
+North Africa and Middle East,North Africa and Middle East,Bahrain,Bahrain,Bahrain,Bahrain,Bahrain,"Central Asia, Middle East and North Africa",Middle SDI,HIC,BHR,48,HIC
+South Asia,South Asia,Bangladesh,Bangladesh,Bangladesh,Bangladesh,Bangladesh,South Asia,Low-middle SDI,LMIC,BGD,50,LMIC
+Latin America and Caribbean,Caribbean,Barbados,Barbados,Barbados,Barbados,Barbados,Latin America and Caribbean,High-middle SDI,HIC,BRB,52,HIC
+"Central Europe, Eastern Europe, and Central Asia",Eastern Europe,Belarus,Belarus,Belarus,Belarus,Belarus,Central and Eastern Europe,High-middle SDI,UMIC,BLR,112,UMIC
+High-income,Western Europe,Belgium,Belgium,Belgium,Belgium,Belgium,High-income Western countries,High SDI,HIC,BEL,56,HIC
+Latin America and Caribbean,Caribbean,Belize,Belize,Belize,Belize,Belize,Latin America and Caribbean,Low-middle SDI,UMIC,BLZ,84,LMIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Benin,Benin,Benin,Benin,Benin,Sub-Saharan Africa,Low SDI,LIC,BEN,204,LMIC
+Latin America and Caribbean,Caribbean,Bermuda,Bermuda,Bermuda,NA,Bermuda,NA,High-middle SDI,HIC,BMU,60,HIC
+South Asia,South Asia,Bhutan,Bhutan,Bhutan,Bhutan,Bhutan,South Asia,Low-middle SDI,LMIC,BTN,64,LMIC
+Latin America and Caribbean,Andean Latin America,Bolivia,Bolivia (Plurinational State of),Bolivia,Bolivia (Plurinational State of),Bolivia,Latin America and Caribbean,Low-middle SDI,LMIC,BOL,68,LMIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Bosnia and Herzegovina,Bosnia and Herzegovina,Bosnia and Herzegovina,Bosnia and Herzegovina,Bosnia and Herzegovina,Central and Eastern Europe,Middle SDI,UMIC,BIH,70,UMIC
+Sub-Saharan Africa,Southern Sub-Saharan Africa,Botswana,Botswana,Botswana,Botswana,Botswana,Sub-Saharan Africa,Middle SDI,UMIC,BWA,72,UMIC
+Latin America and Caribbean,Tropical Latin America,Brazil,Brazil,Brazil,Brazil,Brazil,Latin America and Caribbean,Middle SDI,UMIC,BRA,76,UMIC
+High-income,High-income Asia Pacific,Brunei,Brunei Darussalam,Brunei Darussalam,Brunei Darussalam,Brunei Darussalam,East and South East Asia,High SDI,HIC,BRN,96,HIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Bulgaria,Bulgaria,Bulgaria,Bulgaria,Bulgaria,Central and Eastern Europe,High-middle SDI,UMIC,BGR,100,UMIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Burkina Faso,Burkina Faso,Burkina Faso,Burkina Faso,Burkina Faso,Sub-Saharan Africa,Low SDI,LIC,BFA,854,LIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Burundi,Burundi,Burundi,Burundi,Burundi,Sub-Saharan Africa,Low SDI,LIC,BDI,108,LIC
+"Southeast Asia, East Asia, and Oceania",Southeast Asia,Cambodia,Cambodia,Cambodia,Cambodia,Cambodia,East and South East Asia,Low-middle SDI,LMIC,KHM,132,LMIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Cameroon,Cameroon,Cameroon,Cameroon,Cameroon,Sub-Saharan Africa,Low-middle SDI,LMIC,CMR,116,LMIC
+High-income,High-income North America,Canada,Canada,Canada,Canada,Canada,High-income Western countries,High SDI,HIC,CAN,120,HIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Cape Verde,Cabo Verde,Cabo Verde,Cabo Verde,Cabo Verde,Sub-Saharan Africa,Low-middle SDI,LMIC,CPV,124,LMIC
+Sub-Saharan Africa,Central Sub-Saharan Africa,Central African Republic,Central African Republic,Central African Republic,Central African Republic,Central African Republic,Sub-Saharan Africa,Low SDI,LIC,CAF,140,LIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Chad,Chad,Chad,Chad,Chad,Sub-Saharan Africa,Low SDI,LIC,TCD,148,LIC
+High-income,Southern Latin America,Chile,Chile,Chile,Chile,Chile,Latin America and Caribbean,High-middle SDI,HIC,CHL,152,HIC
+"Southeast Asia, East Asia, and Oceania",East Asia,China,China,China,China,China,East and South East Asia,Middle SDI,UMIC,CHN,156,UMIC
+Latin America and Caribbean,Central Latin America,Colombia,Colombia,Colombia,Colombia,Colombia,Latin America and Caribbean,Middle SDI,UMIC,COL,170,UMIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Comoros,Comoros,Comoros,Comoros,Comoros,Sub-Saharan Africa,Low SDI,LIC,COM,174,LMIC
+Sub-Saharan Africa,Central Sub-Saharan Africa,Congo,Congo,"Congo, Rep.",Congo,Congo,Sub-Saharan Africa,Low-middle SDI,LMIC,COG,178,LMIC
+Latin America and Caribbean,Central Latin America,Costa Rica,Costa Rica,Costa Rica,Costa Rica,Costa Rica,Latin America and Caribbean,Middle SDI,UMIC,CRI,188,UMIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Cote d'Ivoire,Côte d'Ivoire,Cote d'Ivoire,Côte d'Ivoire,Cote d'Ivoire,Sub-Saharan Africa,Low SDI,LMIC,CIV,384,LMIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Croatia,Croatia,Croatia,Croatia,Croatia,Central and Eastern Europe,High SDI,HIC,HRV,191,HIC
+Latin America and Caribbean,Caribbean,Cuba,Cuba,Cuba,Cuba,Cuba,Latin America and Caribbean,High-middle SDI,UMIC,CUB,192,UMIC
+High-income,Western Europe,Cyprus,Cyprus,Cyprus,Cyprus,Cyprus,High-income Western countries,High SDI,HIC,CYP,196,HIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Czech Republic,Czechia,Czech Republic,Czechia,Czech Republic,Central and Eastern Europe,High SDI,HIC,CZE,203,HIC
+Sub-Saharan Africa,Central Sub-Saharan Africa,Democratic Republic of the Congo,Democratic Republic of the Congo,"Congo, Dem. Rep.",Democratic Republic of the Congo,DR Congo,Sub-Saharan Africa,Low SDI,LIC,COD,180,LIC
+High-income,Western Europe,Denmark,Denmark,Denmark,Denmark,Denmark,High-income Western countries,High SDI,HIC,DNK,208,HIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Djibouti,Djibouti,Djibouti,Djibouti,Djibouti,Sub-Saharan Africa,Low SDI,LMIC,DJI,262,LMIC
+Latin America and Caribbean,Caribbean,Dominica,Dominica,Dominica,NA,Dominica,NA,Middle SDI,UMIC,DMA,212,UMIC
+Latin America and Caribbean,Caribbean,Dominican Republic,Dominican Republic,Dominican Republic,Dominican Republic,Dominican Republic,Latin America and Caribbean,Middle SDI,UMIC,DOM,214,UMIC
+Latin America and Caribbean,Andean Latin America,Ecuador,Ecuador,Ecuador,Ecuador,Ecuador,Latin America and Caribbean,Middle SDI,UMIC,ECU,218,UMIC
+North Africa and Middle East,North Africa and Middle East,Egypt,Egypt,"Egypt, Arab Rep.",Egypt,Egypt,"Central Asia, Middle East and North Africa",Middle SDI,LMIC,EGY,818,LMIC
+Latin America and Caribbean,Central Latin America,El Salvador,El Salvador,El Salvador,El Salvador,El Salvador,Latin America and Caribbean,Middle SDI,LMIC,SLV,222,LMIC
+Sub-Saharan Africa,Central Sub-Saharan Africa,Equatorial Guinea,Equatorial Guinea,Equatorial Guinea,Equatorial Guinea,Equatorial Guinea,Sub-Saharan Africa,Middle SDI,UMIC,GNQ,226,UMIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Eritrea,Eritrea,Eritrea,Eritrea,Eritrea,Sub-Saharan Africa,Low SDI,LIC,ERI,232,LIC
+"Central Europe, Eastern Europe, and Central Asia",Eastern Europe,Estonia,Estonia,Estonia,Estonia,Estonia,Central and Eastern Europe,High SDI,HIC,EST,233,HIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Ethiopia,Ethiopia,Ethiopia,Ethiopia,Ethiopia,Sub-Saharan Africa,Low SDI,LIC,ETH,231,LIC
+"Southeast Asia, East Asia, and Oceania",Oceania,Federated States of Micronesia,Micronesia (Federated States of),"Micronesia, Fed. Sts.",Micronesia (Fed. States of),Micronesia (Federated States of),NA,Low-middle SDI,LMIC,FSM,583,LMIC
+"Southeast Asia, East Asia, and Oceania",Oceania,Fiji,Fiji,Fiji,Fiji,Fiji,Oceania,Middle SDI,UMIC,FJI,242,UMIC
+High-income,Western Europe,Finland,Finland,Finland,Finland,Finland,High-income Western countries,High SDI,HIC,FIN,246,HIC
+High-income,Western Europe,France,France,France,France,France,High-income Western countries,High SDI,HIC,FRA,250,HIC
+Sub-Saharan Africa,Central Sub-Saharan Africa,Gabon,Gabon,Gabon,Gabon,Gabon,Sub-Saharan Africa,Low-middle SDI,UMIC,GAB,266,UMIC
+"Central Europe, Eastern Europe, and Central Asia",Central Asia,Georgia,Georgia,Georgia,Georgia,Georgia,"Central Asia, Middle East and North Africa",High-middle SDI,UMIC,GEO,268,UMIC
+High-income,Western Europe,Germany,Germany,Germany,Germany,Germany,High-income Western countries,High SDI,HIC,DEU,276,HIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Ghana,Ghana,Ghana,Ghana,Ghana,Sub-Saharan Africa,Low-middle SDI,LMIC,GHA,288,LMIC
+High-income,Western Europe,Greece,Greece,Greece,Greece,Greece,High-income Western countries,High SDI,HIC,GRC,300,HIC
+High-income,High-income North America,Greenland,Greenland,Greenland,NA,Greenland,NA,High-middle SDI,HIC,GRL,304,HIC
+Latin America and Caribbean,Caribbean,Grenada,Grenada,Grenada,Grenada,Grenada,NA,Middle SDI,UMIC,GRD,308,UMIC
+"Southeast Asia, East Asia, and Oceania",Oceania,Guam,Guam,Guam,Guam,NA,NA,High-middle SDI,HIC,GUM,316,HIC
+Latin America and Caribbean,Central Latin America,Guatemala,Guatemala,Guatemala,Guatemala,Guatemala,Latin America and Caribbean,Low-middle SDI,LMIC,GTM,320,UMIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Guinea,Guinea,Guinea,Guinea,Guinea,Sub-Saharan Africa,Low SDI,LIC,GIN,324,LIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Guinea-Bissau,Guinea-Bissau,Guinea-Bissau,Guinea-Bissau,Guinea Bissau,Sub-Saharan Africa,Low SDI,LIC,GNB,624,LIC
+Latin America and Caribbean,Caribbean,Guyana,Guyana,Guyana,Guyana,Guyana,Latin America and Caribbean,Middle SDI,UMIC,GUY,328,UMIC
+Latin America and Caribbean,Caribbean,Haiti,Haiti,Haiti,Haiti,Haiti,Latin America and Caribbean,Low SDI,LIC,HTI,332,LMIC
+Latin America and Caribbean,Central Latin America,Honduras,Honduras,Honduras,Honduras,Honduras,Latin America and Caribbean,Low-middle SDI,LMIC,HND,340,LMIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Hungary,Hungary,Hungary,Hungary,Hungary,Central and Eastern Europe,High-middle SDI,HIC,HUN,348,HIC
+High-income,Western Europe,Iceland,Iceland,Iceland,Iceland,Iceland,High-income Western countries,High SDI,HIC,ISL,352,HIC
+South Asia,South Asia,India,India,India,India,India,South Asia,Low-middle SDI,LMIC,IND,356,LMIC
+"Southeast Asia, East Asia, and Oceania",Southeast Asia,Indonesia,Indonesia,Indonesia,Indonesia,Indonesia,East and South East Asia,Middle SDI,LMIC,IDN,360,LMIC
+North Africa and Middle East,North Africa and Middle East,Iran,Iran (Islamic Republic of),"Iran, Islamic Rep.",Iran (Islamic Republic of),Iran,"Central Asia, Middle East and North Africa",High-middle SDI,UMIC,IRN,364,LMIC
+North Africa and Middle East,North Africa and Middle East,Iraq,Iraq,Iraq,Iraq,Iraq,"Central Asia, Middle East and North Africa",Low-middle SDI,UMIC,IRQ,368,UMIC
+High-income,Western Europe,Ireland,Ireland,Ireland,Ireland,Ireland,High-income Western countries,High SDI,HIC,IRL,372,HIC
+High-income,Western Europe,Israel,Israel,Israel,Israel,Israel,High-income Western countries,High-middle SDI,HIC,ISR,376,HIC
+High-income,Western Europe,Italy,Italy,Italy,Italy,Italy,High-income Western countries,High SDI,HIC,ITA,380,HIC
+Latin America and Caribbean,Caribbean,Jamaica,Jamaica,Jamaica,Jamaica,Jamaica,Latin America and Caribbean,Middle SDI,UMIC,JAM,388,UMIC
+High-income,High-income Asia Pacific,Japan,Japan,Japan,Japan,Japan,High-income Asia Pacific,High SDI,HIC,JPN,392,HIC
+North Africa and Middle East,North Africa and Middle East,Jordan,Jordan,Jordan,Jordan,Jordan,"Central Asia, Middle East and North Africa",Middle SDI,UMIC,JOR,400,UMIC
+"Central Europe, Eastern Europe, and Central Asia",Central Asia,Kazakhstan,Kazakhstan,Kazakhstan,Kazakhstan,Kazakhstan,"Central Asia, Middle East and North Africa",High-middle SDI,UMIC,KAZ,398,UMIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Kenya,Kenya,Kenya,Kenya,Kenya,Sub-Saharan Africa,Low-middle SDI,LMIC,KEN,404,LMIC
+"Southeast Asia, East Asia, and Oceania",Oceania,Kiribati,Kiribati,Kiribati,Kiribati,Kiribati,NA,Low SDI,LMIC,KIR,296,LMIC
+North Africa and Middle East,North Africa and Middle East,Kuwait,Kuwait,Kuwait,Kuwait,Kuwait,"Central Asia, Middle East and North Africa",High-middle SDI,HIC,KWT,414,HIC
+"Central Europe, Eastern Europe, and Central Asia",Central Asia,Kyrgyzstan,Kyrgyzstan,Kyrgyz Republic,Kyrgyzstan,Kyrgyzstan,"Central Asia, Middle East and North Africa",Low-middle SDI,LMIC,KGZ,417,LMIC
+"Southeast Asia, East Asia, and Oceania",Southeast Asia,Laos,Lao People's Democratic Republic,Lao PDR,Lao People's Democratic Republic,Lao PDR,East and South East Asia,Low-middle SDI,LMIC,LAO,418,LMIC
+"Central Europe, Eastern Europe, and Central Asia",Eastern Europe,Latvia,Latvia,Latvia,Latvia,Latvia,Central and Eastern Europe,High SDI,HIC,LVA,428,HIC
+North Africa and Middle East,North Africa and Middle East,Lebanon,Lebanon,Lebanon,Lebanon,Lebanon,"Central Asia, Middle East and North Africa",High-middle SDI,UMIC,LBN,422,UMIC
+Sub-Saharan Africa,Southern Sub-Saharan Africa,Lesotho,Lesotho,Lesotho,Lesotho,Lesotho,Sub-Saharan Africa,Low-middle SDI,LMIC,LSO,426,LMIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Liberia,Liberia,Liberia,Liberia,Liberia,Sub-Saharan Africa,Low SDI,LIC,LBR,430,LIC
+North Africa and Middle East,North Africa and Middle East,Libya,Libya,Libya,Libya,Libya,"Central Asia, Middle East and North Africa",High-middle SDI,UMIC,LBY,434,UMIC
+"Central Europe, Eastern Europe, and Central Asia",Eastern Europe,Lithuania,Lithuania,Lithuania,Lithuania,Lithuania,Central and Eastern Europe,High SDI,HIC,LTU,440,HIC
+High-income,Western Europe,Luxembourg,Luxembourg,Luxembourg,Luxembourg,Luxembourg,High-income Western countries,High SDI,HIC,LUX,442,HIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Macedonia,North Macedonia,North Macedonia,North Macedonia,Macedonia (TFYR),Central and Eastern Europe,High-middle SDI,LMIC,MKD,807,UMIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Madagascar,Madagascar,Madagascar,Madagascar,Madagascar,Sub-Saharan Africa,Low SDI,LIC,MDG,450,LIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Malawi,Malawi,Malawi,Malawi,Malawi,Sub-Saharan Africa,Low SDI,LIC,MWI,454,LIC
+"Southeast Asia, East Asia, and Oceania",Southeast Asia,Malaysia,Malaysia,Malaysia,Malaysia,Malaysia,East and South East Asia,High-middle SDI,UMIC,MYS,458,UMIC
+"Southeast Asia, East Asia, and Oceania",Southeast Asia,Maldives,Maldives,Maldives,Maldives,Maldives,East and South East Asia,Middle SDI,UMIC,MDV,462,UMIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Mali,Mali,Mali,Mali,Mali,Sub-Saharan Africa,Low SDI,LIC,MLI,466,LIC
+High-income,Western Europe,Malta,Malta,Malta,Malta,Malta,High-income Western countries,High SDI,HIC,MLT,470,HIC
+"Southeast Asia, East Asia, and Oceania",Oceania,Marshall Islands,Marshall Islands,Marshall Islands,NA,Marshall Islands,NA,Low-middle SDI,UMIC,MHL,584,UMIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Mauritania,Mauritania,Mauritania,Mauritania,Mauritania,Sub-Saharan Africa,Low-middle SDI,LMIC,MRT,478,LMIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Mauritius,Mauritius,Mauritius,Mauritius,Mauritius,Sub-Saharan Africa,High-middle SDI,UMIC,MUS,480,UMIC
+Latin America and Caribbean,Central Latin America,Mexico,Mexico,Mexico,Mexico,Mexico,Latin America and Caribbean,Middle SDI,UMIC,MEX,484,UMIC
+"Central Europe, Eastern Europe, and Central Asia",Eastern Europe,Moldova,Republic of Moldova,Moldova,Republic of Moldova,Moldova,Central and Eastern Europe,Middle SDI,HIC,MDA,498,UMIC
+"Central Europe, Eastern Europe, and Central Asia",Central Asia,Mongolia,Mongolia,Mongolia,Mongolia,Mongolia,"Central Asia, Middle East and North Africa",Middle SDI,LMIC,MNG,496,LMIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Montenegro,Montenegro,Montenegro,Montenegro,Montenegro,Central and Eastern Europe,High-middle SDI,UMIC,MNE,499,UMIC
+North Africa and Middle East,North Africa and Middle East,Morocco,Morocco,Morocco,Morocco,Morocco,"Central Asia, Middle East and North Africa",Low-middle SDI,LMIC,MAR,504,LMIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Mozambique,Mozambique,Mozambique,Mozambique,Mozambique,Sub-Saharan Africa,Low SDI,LIC,MOZ,508,LIC
+"Southeast Asia, East Asia, and Oceania",Southeast Asia,Myanmar,Myanmar,Myanmar,Myanmar,Myanmar,East and South East Asia,Low-middle SDI,LMIC,MMR,104,LMIC
+Sub-Saharan Africa,Southern Sub-Saharan Africa,Namibia,Namibia,Namibia,Namibia,Namibia,Sub-Saharan Africa,Low-middle SDI,UMIC,NAM,516,UMIC
+South Asia,South Asia,Nepal,Nepal,Nepal,Nepal,Nepal,South Asia,Low-middle SDI,LIC,NPL,524,LMIC
+High-income,Western Europe,Netherlands,Netherlands,Netherlands,Netherlands,Netherlands,High-income Western countries,High SDI,HIC,NLD,528,HIC
+High-income,Australasia,New Zealand,New Zealand,New Zealand,New Zealand,New Zealand,High-income Western countries,High SDI,HIC,NZL,554,HIC
+Latin America and Caribbean,Central Latin America,Nicaragua,Nicaragua,Nicaragua,Nicaragua,Nicaragua,Latin America and Caribbean,Low-middle SDI,LMIC,NIC,558,LMIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Niger,Niger,Niger,Niger,Niger,Sub-Saharan Africa,Low SDI,LIC,NER,562,LIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Nigeria,Nigeria,Nigeria,Nigeria,Nigeria,Sub-Saharan Africa,Low-middle SDI,LMIC,NGA,566,LMIC
+"Southeast Asia, East Asia, and Oceania",East Asia,North Korea,Democratic People's Republic of Korea,"Korea, Dem. People�s Rep.",Dem. People's Republic of Korea,North Korea,East and South East Asia,Low-middle SDI,LIC,PRK,408,LIC
+"Southeast Asia, East Asia, and Oceania",Oceania,Northern Mariana Islands,Northern Mariana Islands,Northern Mariana Islands,NA,NA,NA,High-middle SDI,HIC,MNP,580,HIC
+High-income,Western Europe,Norway,Norway,Norway,Norway,Norway,High-income Western countries,High SDI,HIC,NOR,578,HIC
+North Africa and Middle East,North Africa and Middle East,Oman,Oman,Oman,Oman,Oman,"Central Asia, Middle East and North Africa",Middle SDI,HIC,OMN,512,HIC
+South Asia,South Asia,Pakistan,Pakistan,Pakistan,Pakistan,Pakistan,South Asia,Low-middle SDI,LMIC,PAK,586,LMIC
+North Africa and Middle East,North Africa and Middle East,Palestine,Palestine,West Bank and Gaza,State of Palestine,Occupied Palestinian Territory,"Central Asia, Middle East and North Africa",Low SDI,LMIC,PSE,275,LMIC
+Latin America and Caribbean,Central Latin America,Panama,Panama,Panama,Panama,Panama,Latin America and Caribbean,High-middle SDI,UMIC,PAN,591,UMIC
+"Southeast Asia, East Asia, and Oceania",Oceania,Papua New Guinea,Papua New Guinea,Papua New Guinea,Papua New Guinea,Papua New Guinea,Oceania,Low SDI,LMIC,PNG,598,LMIC
+Latin America and Caribbean,Tropical Latin America,Paraguay,Paraguay,Paraguay,Paraguay,Paraguay,Latin America and Caribbean,Middle SDI,UMIC,PRY,600,UMIC
+Latin America and Caribbean,Andean Latin America,Peru,Peru,Peru,Peru,Peru,Latin America and Caribbean,Middle SDI,UMIC,PER,604,UMIC
+"Southeast Asia, East Asia, and Oceania",Southeast Asia,Philippines,Philippines,Philippines,Philippines,Philippines,East and South East Asia,Middle SDI,LMIC,PHL,608,LMIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Poland,Poland,Poland,Poland,Poland,Central and Eastern Europe,High SDI,HIC,POL,616,HIC
+High-income,Western Europe,Portugal,Portugal,Portugal,Portugal,Portugal,High-income Western countries,High-middle SDI,HIC,PRT,620,HIC
+Latin America and Caribbean,Caribbean,Puerto Rico,Puerto Rico,Puerto Rico,Puerto Rico,Puerto Rico,Latin America and Caribbean,High SDI,HIC,PRI,630,HIC
+North Africa and Middle East,North Africa and Middle East,Qatar,Qatar,Qatar,Qatar,Qatar,"Central Asia, Middle East and North Africa",High-middle SDI,HIC,QAT,634,HIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Romania,Romania,Romania,Romania,Romania,Central and Eastern Europe,High-middle SDI,UMIC,ROU,642,UMIC
+"Central Europe, Eastern Europe, and Central Asia",Eastern Europe,Russian Federation,Russian Federation,Russian Federation,Russian Federation,Russian Federation,Central and Eastern Europe,High-middle SDI,UMIC,RUS,643,UMIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Rwanda,Rwanda,Rwanda,Rwanda,Rwanda,Sub-Saharan Africa,Low SDI,LIC,RWA,646,LIC
+Latin America and Caribbean,Caribbean,Saint Lucia,Saint Lucia,St. Lucia,Saint Lucia,Saint Lucia,NA,Middle SDI,UMIC,LCA,662,UMIC
+Latin America and Caribbean,Caribbean,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,St. Vincent and the Grenadines,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,NA,Middle SDI,UMIC,VCT,670,UMIC
+"Southeast Asia, East Asia, and Oceania",Oceania,Samoa,Samoa,Samoa,Samoa,Samoa,NA,Low-middle SDI,LMIC,WSM,882,LMIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Sao Tome and Principe,Sao Tome and Principe,Sao Tome and Principe,Sao Tome and Principe,Sao Tome and Principe,NA,Low SDI,LMIC,STP,678,LMIC
+North Africa and Middle East,North Africa and Middle East,Saudi Arabia,Saudi Arabia,Saudi Arabia,Saudi Arabia,Saudi Arabia,"Central Asia, Middle East and North Africa",High-middle SDI,HIC,SAU,682,HIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Senegal,Senegal,Senegal,Senegal,Senegal,Sub-Saharan Africa,Low SDI,LIC,SEN,686,LMIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Serbia,Serbia,Serbia,Serbia,Serbia,Central and Eastern Europe,High-middle SDI,UMIC,SRB,688,UMIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Seychelles,Seychelles,Seychelles,Seychelles,Seychelles,NA,Middle SDI,HIC,SYC,690,HIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Sierra Leone,Sierra Leone,Sierra Leone,Sierra Leone,Sierra Leone,Sub-Saharan Africa,Low SDI,LIC,SLE,694,LIC
+High-income,High-income Asia Pacific,Singapore,Singapore,Singapore,Singapore,Singapore,High-income Asia Pacific,High SDI,HIC,SGP,702,HIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Slovakia,Slovakia,Slovak Republic,Slovakia,Slovakia,Central and Eastern Europe,High SDI,HIC,SVK,703,HIC
+"Central Europe, Eastern Europe, and Central Asia",Central Europe,Slovenia,Slovenia,Slovenia,Slovenia,Slovenia,Central and Eastern Europe,High SDI,HIC,SVN,705,HIC
+"Southeast Asia, East Asia, and Oceania",Oceania,Solomon Islands,Solomon Islands,Solomon Islands,Solomon Islands,Solomon Islands,Oceania,Low SDI,LMIC,SLB,90,LMIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Somalia,Somalia,Somalia,Somalia,Somalia,Sub-Saharan Africa,Low SDI,LIC,SOM,706,LIC
+Sub-Saharan Africa,Southern Sub-Saharan Africa,South Africa,South Africa,South Africa,South Africa,South Africa,Sub-Saharan Africa,Middle SDI,UMIC,ZAF,710,UMIC
+High-income,High-income Asia Pacific,South Korea,Republic of Korea,"Korea, Rep.",Republic of Korea,South Korea,High-income Asia Pacific,High SDI,HIC,KOR,410,HIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,South Sudan,South Sudan,South Sudan,South Sudan,South Sudan,Sub-Saharan Africa,Low SDI,LIC,SSD,728,LIC
+High-income,Western Europe,Spain,Spain,Spain,Spain,Spain,High-income Western countries,High-middle SDI,HIC,ESP,724,HIC
+"Southeast Asia, East Asia, and Oceania",Southeast Asia,Sri Lanka,Sri Lanka,Sri Lanka,Sri Lanka,Sri Lanka,East and South East Asia,Middle SDI,LMIC,LKA,144,LMIC
+North Africa and Middle East,North Africa and Middle East,Sudan,Sudan,Sudan,Sudan,Sudan,Sub-Saharan Africa,Low-middle SDI,LMIC,SDN,729,LIC
+Latin America and Caribbean,Caribbean,Suriname,Suriname,Suriname,Suriname,Suriname,Latin America and Caribbean,Middle SDI,UMIC,SUR,740,UMIC
+Sub-Saharan Africa,Southern Sub-Saharan Africa,Swaziland,Eswatini,Eswatini,Eswatini,Swaziland,Sub-Saharan Africa,Low-middle SDI,LMIC,SWZ,748,LMIC
+High-income,Western Europe,Sweden,Sweden,Sweden,Sweden,Sweden,High-income Western countries,High SDI,HIC,SWE,752,HIC
+High-income,Western Europe,Switzerland,Switzerland,Switzerland,Switzerland,Switzerland,High-income Western countries,High SDI,HIC,CHE,756,HIC
+North Africa and Middle East,North Africa and Middle East,Syria,Syrian Arab Republic,Syrian Arab Republic,Syrian Arab Republic,Syrian Arab Republic,"Central Asia, Middle East and North Africa",Low-middle SDI,LMIC,SYR,760,LIC
+"Southeast Asia, East Asia, and Oceania",East Asia,Taiwan (Province of China),Taiwan (Province of China),NA,"China, Taiwan Province of China",Taiwan,East and South East Asia,High SDI,HIC,TWN,158,HIC
+"Central Europe, Eastern Europe, and Central Asia",Central Asia,Tajikistan,Tajikistan,Tajikistan,Tajikistan,Tajikistan,"Central Asia, Middle East and North Africa",Low-middle SDI,LMIC,TJK,762,LMIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Tanzania,United Republic of Tanzania,Tanzania,United Republic of Tanzania,Tanzania,Sub-Saharan Africa,Low SDI,LIC,TZA,834,LMIC
+"Southeast Asia, East Asia, and Oceania",Southeast Asia,Thailand,Thailand,Thailand,Thailand,Thailand,East and South East Asia,Middle SDI,UMIC,THA,764,UMIC
+Latin America and Caribbean,Caribbean,The Bahamas,Bahamas,"Bahamas, The",Bahamas,Bahamas,Latin America and Caribbean,High-middle SDI,HIC,BHS,44,HIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,The Gambia,Gambia,"Gambia, The",Gambia,Gambia,Sub-Saharan Africa,Low SDI,LIC,GMB,270,LIC
+"Southeast Asia, East Asia, and Oceania",Southeast Asia,Timor-Leste,Timor-Leste,Timor-Leste,Timor-Leste,Timor-Leste,East and South East Asia,Low-middle SDI,LMIC,TLS,626,LMIC
+Sub-Saharan Africa,Western Sub-Saharan Africa,Togo,Togo,Togo,Togo,Togo,Sub-Saharan Africa,Low SDI,LIC,TGO,768,LIC
+"Southeast Asia, East Asia, and Oceania",Oceania,Tonga,Tonga,Tonga,Tonga,Tonga,NA,Low-middle SDI,LMIC,TON,776,UMIC
+Latin America and Caribbean,Caribbean,Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,Latin America and Caribbean,High-middle SDI,HIC,TTO,780,HIC
+North Africa and Middle East,North Africa and Middle East,Tunisia,Tunisia,Tunisia,Tunisia,Tunisia,"Central Asia, Middle East and North Africa",Middle SDI,LMIC,TUN,788,LMIC
+North Africa and Middle East,North Africa and Middle East,Turkey,Turkey,Turkey,Turkey,Turkey,"Central Asia, Middle East and North Africa",High-middle SDI,UMIC,TUR,792,UMIC
+"Central Europe, Eastern Europe, and Central Asia",Central Asia,Turkmenistan,Turkmenistan,Turkmenistan,Turkmenistan,Turkmenistan,"Central Asia, Middle East and North Africa",High-middle SDI,UMIC,TKM,795,UMIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Uganda,Uganda,Uganda,Uganda,Uganda,Sub-Saharan Africa,Low SDI,LIC,UGA,800,LIC
+"Central Europe, Eastern Europe, and Central Asia",Eastern Europe,Ukraine,Ukraine,Ukraine,Ukraine,Ukraine,Central and Eastern Europe,High-middle SDI,LMIC,UKR,804,LMIC
+North Africa and Middle East,North Africa and Middle East,United Arab Emirates,United Arab Emirates,United Arab Emirates,United Arab Emirates,United Arab Emirates,"Central Asia, Middle East and North Africa",High-middle SDI,HIC,ARE,784,HIC
+High-income,Western Europe,United Kingdom,United Kingdom,United Kingdom,United Kingdom,United Kingdom,High-income Western countries,High SDI,HIC,GBR,826,HIC
+High-income,High-income North America,United States,United States of America,United States,United States of America,United States of America,High-income Western countries,High SDI,HIC,USA,840,HIC
+High-income,Southern Latin America,Uruguay,Uruguay,Uruguay,Uruguay,Uruguay,Latin America and Caribbean,Middle SDI,HIC,URY,858,HIC
+"Central Europe, Eastern Europe, and Central Asia",Central Asia,Uzbekistan,Uzbekistan,Uzbekistan,Uzbekistan,Uzbekistan,"Central Asia, Middle East and North Africa",Middle SDI,LMIC,UZB,860,LMIC
+"Southeast Asia, East Asia, and Oceania",Oceania,Vanuatu,Vanuatu,Vanuatu,Vanuatu,Vanuatu,Oceania,Low-middle SDI,LMIC,VUT,548,LMIC
+Latin America and Caribbean,Central Latin America,Venezuela,Venezuela (Bolivarian Republic of),"Venezuela, RB",Venezuela (Bolivarian Republic of),Venezuela,Latin America and Caribbean,Middle SDI,UMIC,VEN,862,UMIC
+"Southeast Asia, East Asia, and Oceania",Southeast Asia,Vietnam,Viet Nam,Vietnam,Viet Nam,Viet Nam,East and South East Asia,Middle SDI,LMIC,VNM,704,LMIC
+Latin America and Caribbean,Caribbean,"Virgin Islands, U.S.",United States Virgin Islands,Virgin Islands (U.S.),United States Virgin Islands,NA,NA,High SDI,HIC,VIR,850,HIC
+North Africa and Middle East,North Africa and Middle East,Yemen,Yemen,"Yemen, Rep.",Yemen,Yemen,"Central Asia, Middle East and North Africa",Low SDI,LMIC,YEM,887,LIC
+Sub-Saharan Africa,Eastern Sub-Saharan Africa,Zambia,Zambia,Zambia,Zambia,Zambia,Sub-Saharan Africa,Low-middle SDI,LMIC,ZMB,894,LMIC
+Sub-Saharan Africa,Southern Sub-Saharan Africa,Zimbabwe,Zimbabwe,Zimbabwe,Zimbabwe,Zimbabwe,Sub-Saharan Africa,Low-middle SDI,LIC,ZWE,716,LMIC

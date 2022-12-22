@@ -1,0 +1,580 @@
+IndicatorCode,Indicator,ValueType,ParentLocationCode,ParentLocation,Location type,SpatialDimValueCode,Location,Period type,Period,IsLatestYear,Dim1 type,Dim1,Dim1ValueCode,Dim2 type,Dim2,Dim2ValueCode,Dim3 type,Dim3,Dim3ValueCode,DataSourceDimValueCode,DataSource,FactValueNumericPrefix,FactValueNumeric,FactValueUoM,FactValueNumericLowPrefix,FactValueNumericLow,FactValueNumericHighPrefix,FactValueNumericHigh,Value,FactValueTranslationID,FactComments,Language,DateModified
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,MHL,Marshall Islands,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,MHL,Marshall Islands,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,MHL,Marshall Islands,Year,2016,true,Sex,Male,MLE,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MCO,Monaco,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MCO,Monaco,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MCO,Monaco,Year,2016,true,Sex,Male,MLE,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,PLW,Palau,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,PLW,Palau,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,PLW,Palau,Year,2016,true,Sex,Male,MLE,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SMR,San Marino,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SMR,San Marino,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SMR,San Marino,Year,2016,true,Sex,Male,MLE,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SSD,South Sudan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SSD,South Sudan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SSD,South Sudan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,,,,,,,.,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,LBY,Libya,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,0.1,,,,,,0.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,LBY,Libya,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,0.1,,,,,,0.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,KWT,Kuwait,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,0.2,,,,,,0.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,LBY,Libya,Year,2016,true,Sex,Male,MLE,,,,,,,,,,0.2,,,,,,0.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,AFG,Afghanistan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,0.3,,,,,,0.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,SLB,Solomon Islands,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,0.3,,,,,,0.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,YEM,Yemen,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,0.3,,,,,,0.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MRT,Mauritania,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,0.5,,,,,,0.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,KWT,Kuwait,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,0.6,,,,,,0.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,PAK,Pakistan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,0.6,,,,,,0.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,AFG,Afghanistan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,0.7,,,,,,0.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,SLB,Solomon Islands,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,0.7,,,,,,0.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SYR,Syrian Arab Republic,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,0.7,,,,,,0.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,YEM,Yemen,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,0.7,,,,,,0.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,KWT,Kuwait,Year,2016,true,Sex,Male,MLE,,,,,,,,,,0.8,,,,,,0.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MRT,Mauritania,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,0.9,,,,,,0.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,AFG,Afghanistan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,1,,,,,,1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,BGD,Bangladesh,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,1,,,,,,1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,IRN,Iran (Islamic Republic of),Year,2016,true,Sex,Female,FMLE,,,,,,,,,,1.1,,,,,,1.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,SLB,Solomon Islands,Year,2016,true,Sex,Male,MLE,,,,,,,,,,1.1,,,,,,1.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SDN,Sudan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,1.1,,,,,,1.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,YEM,Yemen,Year,2016,true,Sex,Male,MLE,,,,,,,,,,1.1,,,,,,1.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,PAK,Pakistan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,1.2,,,,,,1.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,MAR,Morocco,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,1.3,,,,,,1.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,EGY,Egypt,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,1.4,,,,,,1.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,JOR,Jordan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,1.4,,,,,,1.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MRT,Mauritania,Year,2016,true,Sex,Male,MLE,,,,,,,,,,1.4,,,,,,1.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,DZA,Algeria,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,1.5,,,,,,1.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,IRQ,Iraq,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,1.5,,,,,,1.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,TUN,Tunisia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,1.6,,,,,,1.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,PAK,Pakistan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,1.8,,,,,,1.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,COM,Comoros,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,1.9,,,,,,1.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ZWE,Zimbabwe,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,10,,,,,,10,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,OMN,Oman,Year,2016,true,Sex,Male,MLE,,,,,,,,,,10.4,,,,,,10.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,TUR,Türkiye,Year,2016,true,Sex,Male,MLE,,,,,,,,,,11,,,,,,11,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,DJI,Djibouti,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,11.1,,,,,,11.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,BHR,Bahrain,Year,2016,true,Sex,Male,MLE,,,,,,,,,,11.5,,,,,,11.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ERI,Eritrea,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,11.6,,,,,,11.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,NER,Niger,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,11.7,,,,,,11.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,TJK,Tajikistan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,11.8,,,,,,11.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MDG,Madagascar,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,12,,,,,,12,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,UZB,Uzbekistan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,12,,,,,,12,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,KIR,Kiribati,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,12.1,,,,,,12.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,MDV,Maldives,Year,2016,true,Sex,Male,MLE,,,,,,,,,,12.1,,,,,,12.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MOZ,Mozambique,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,12.3,,,,,,12.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,TLS,Timor-Leste,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,12.4,,,,,,12.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SEN,Senegal,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,12.5,,,,,,12.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GIN,Guinea,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,12.6,,,,,,12.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,AZE,Azerbaijan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,12.8,,,,,,12.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MLI,Mali,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,12.8,,,,,,12.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,NRU,Nauru,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,12.8,,,,,,12.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,TCD,Chad,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,13.1,,,,,,13.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ETH,Ethiopia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,13.2,,,,,,13.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,IDN,Indonesia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,13.2,,,,,,13.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SVN,Slovenia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,13.5,,,,,,13.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,VUT,Vanuatu,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,13.6,,,,,,13.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,PNG,Papua New Guinea,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,13.7,,,,,,13.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MWI,Malawi,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,13.9,,,,,,13.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,KEN,Kenya,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,14,,,,,,14,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,TON,Tonga,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,14.2,,,,,,14.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,TUV,Tuvalu,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,14.4,,,,,,14.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,FSM,Micronesia (Federated States of),Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,15.2,,,,,,15.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,TGO,Togo,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,15.2,,,,,,15.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BEN,Benin,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,15.4,,,,,,15.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,KGZ,Kyrgyzstan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,15.5,,,,,,15.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GHA,Ghana,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,15.7,,,,,,15.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,WSM,Samoa,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,16,,,,,,16,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ARM,Armenia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,16.2,,,,,,16.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GMB,Gambia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,16.2,,,,,,16.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,MMR,Myanmar,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,16.5,,,,,,16.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ZMB,Zambia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,16.5,,,,,,16.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,GTM,Guatemala,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,16.9,,,,,,16.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,NPL,Nepal,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,17.1,,,,,,17.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,BTN,Bhutan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,17.3,,,,,,17.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GNB,Guinea-Bissau,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,17.5,,,,,,17.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ZWE,Zimbabwe,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,17.6,,,,,,17.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SWZ,Eswatini,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,17.7,,,,,,17.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,FJI,Fiji,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,17.7,,,,,,17.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,LSO,Lesotho,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,17.8,,,,,,17.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,LKA,Sri Lanka,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,17.9,,,,,,17.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,KIR,Kiribati,Year,2016,true,Sex,Male,MLE,,,,,,,,,,18.1,,,,,,18.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,MYS,Malaysia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,18.2,,,,,,18.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,HND,Honduras,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,18.5,,,,,,18.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,ARE,United Arab Emirates,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,18.5,,,,,,18.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,LBR,Liberia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,18.9,,,,,,18.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,SLV,El Salvador,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,19,,,,,,19,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,TKM,Turkmenistan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,19,,,,,,19,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,NAM,Namibia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,19.1,,,,,,19.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SLE,Sierra Leone,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,19.2,,,,,,19.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SOM,Somalia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,19.4,,,,,,19.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MUS,Mauritius,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,19.5,,,,,,19.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,KHM,Cambodia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,19.6,,,,,,19.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,DJI,Djibouti,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,19.7,,,,,,19.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SVN,Slovenia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,19.7,,,,,,19.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,PNG,Papua New Guinea,Year,2016,true,Sex,Male,MLE,,,,,,,,,,19.9,,,,,,19.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,VUT,Vanuatu,Year,2016,true,Sex,Male,MLE,,,,,,,,,,19.9,,,,,,19.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SYR,Syrian Arab Republic,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,2,,,,,,2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,BGD,Bangladesh,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,2.2,,,,,,2.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SDN,Sudan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,2.3,,,,,,2.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,MAR,Morocco,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,2.6,,,,,,2.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,EGY,Egypt,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,2.8,,,,,,2.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BWA,Botswana,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,20,,,,,,20,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BDI,Burundi,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,20,,,,,,20,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,NER,Niger,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,20.2,,,,,,20.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ERI,Eritrea,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,20.3,,,,,,20.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,TJK,Tajikistan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,20.7,,,,,,20.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,NIC,Nicaragua,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,20.8,,,,,,20.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,UZB,Uzbekistan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,20.8,,,,,,20.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MDG,Madagascar,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,20.9,,,,,,20.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,TON,Tonga,Year,2016,true,Sex,Male,MLE,,,,,,,,,,20.9,,,,,,20.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MOZ,Mozambique,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,21,,,,,,21,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,PHL,Philippines,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,21,,,,,,21,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,NIU,Niue,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,21.1,,,,,,21.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SEN,Senegal,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,21.1,,,,,,21.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,TUV,Tuvalu,Year,2016,true,Sex,Male,MLE,,,,,,,,,,21.1,,,,,,21.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CMR,Cameroon,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,21.4,,,,,,21.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,MNG,Mongolia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,21.5,,,,,,21.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,STP,Sao Tome and Principe,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,21.5,,,,,,21.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GIN,Guinea,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,21.6,,,,,,21.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,TLS,Timor-Leste,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,21.6,,,,,,21.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,ARE,United Arab Emirates,Year,2016,true,Sex,Male,MLE,,,,,,,,,,21.7,,,,,,21.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,AZE,Azerbaijan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,21.9,,,,,,21.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MLI,Mali,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,21.9,,,,,,21.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,FSM,Micronesia (Federated States of),Year,2016,true,Sex,Male,MLE,,,,,,,,,,22,,,,,,22,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,NRU,Nauru,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,22,,,,,,22,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,TCD,Chad,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,22.4,,,,,,22.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ETH,Ethiopia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,22.6,,,,,,22.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,JAM,Jamaica,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,22.6,,,,,,22.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,IDN,Indonesia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,22.7,,,,,,22.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,HTI,Haiti,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,22.9,,,,,,22.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,WSM,Samoa,Year,2016,true,Sex,Male,MLE,,,,,,,,,,22.9,,,,,,22.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,GEO,Georgia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,23,,,,,,23,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BFA,Burkina Faso,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,23.2,,,,,,23.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,PRY,Paraguay,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,23.2,,,,,,23.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,RWA,Rwanda,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,23.4,,,,,,23.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MWI,Malawi,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,23.7,,,,,,23.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,COD,Democratic Republic of the Congo,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,23.8,,,,,,23.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,UGA,Uganda,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,23.8,,,,,,23.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CRI,Costa Rica,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,23.9,,,,,,23.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,KEN,Kenya,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,23.9,,,,,,23.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,VNM,Viet Nam,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,23.9,,,,,,23.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,TZA,United Republic of Tanzania,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,24,,,,,,24,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CIV,Côte d’Ivoire,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,24.1,,,,,,24.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CAF,Central African Republic,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,24.9,,,,,,24.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CPV,Cabo Verde,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,25,,,,,,25,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,QAT,Qatar,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,25.2,,,,,,25.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,VEN,Venezuela (Bolivarian Republic of),Year,2016,true,Sex,Female,FMLE,,,,,,,,,,25.2,,,,,,25.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,IND,India,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,25.4,,,,,,25.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,FJI,Fiji,Year,2016,true,Sex,Male,MLE,,,,,,,,,,25.5,,,,,,25.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,COL,Colombia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,25.6,,,,,,25.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,TGO,Togo,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,25.7,,,,,,25.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ZWE,Zimbabwe,Year,2016,true,Sex,Male,MLE,,,,,,,,,,25.7,,,,,,25.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,GUY,Guyana,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,25.9,,,,,,25.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,KGZ,Kyrgyzstan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,25.9,,,,,,25.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ARM,Armenia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,26,,,,,,26,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GHA,Ghana,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,26,,,,,,26,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BEN,Benin,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,26.1,,,,,,26.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,LSO,Lesotho,Year,2016,true,Sex,Male,MLE,,,,,,,,,,26.1,,,,,,26.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GMB,Gambia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,26.7,,,,,,26.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,LAO,Lao People's Democratic Republic,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,27,,,,,,27,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,MMR,Myanmar,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,27.1,,,,,,27.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,NPL,Nepal,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,27.1,,,,,,27.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,KAZ,Kazakhstan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,27.2,,,,,,27.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BRA,Brazil,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,27.3,,,,,,27.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,GTM,Guatemala,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,27.3,,,,,,27.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ZMB,Zambia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,27.3,,,,,,27.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,PRK,Democratic People's Republic of Korea,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,27.7,,,,,,27.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,THA,Thailand,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,27.7,,,,,,27.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,DJI,Djibouti,Year,2016,true,Sex,Male,MLE,,,,,,,,,,28.2,,,,,,28.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BLZ,Belize,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,28.4,,,,,,28.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,LKA,Sri Lanka,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,28.7,,,,,,28.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,SUR,Suriname,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,28.7,,,,,,28.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SWZ,Eswatini,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,28.8,,,,,,28.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GNB,Guinea-Bissau,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,28.8,,,,,,28.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,NER,Niger,Year,2016,true,Sex,Male,MLE,,,,,,,,,,28.8,,,,,,28.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,BRN,Brunei Darussalam,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,29.1,,,,,,29.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ERI,Eritrea,Year,2016,true,Sex,Male,MLE,,,,,,,,,,29.2,,,,,,29.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,SLV,El Salvador,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,29.4,,,,,,29.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,MEX,Mexico,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,29.4,,,,,,29.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,BTN,Bhutan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,29.6,,,,,,29.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,MYS,Malaysia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,29.6,,,,,,29.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,TJK,Tajikistan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,29.6,,,,,,29.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,DOM,Dominican Republic,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,29.7,,,,,,29.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,HND,Honduras,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,29.8,,,,,,29.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,JOR,Jordan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,3,,,,,,3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,LBN,Lebanon,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,3,,,,,,3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,TUR,Türkiye,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,3,,,,,,3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,IRQ,Iraq,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,3.1,,,,,,3.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,DZA,Algeria,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,3.2,,,,,,3.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,OMN,Oman,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,3.3,,,,,,3.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SDN,Sudan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,3.4,,,,,,3.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SYR,Syrian Arab Republic,Year,2016,true,Sex,Male,MLE,,,,,,,,,,3.4,,,,,,3.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,BGD,Bangladesh,Year,2016,true,Sex,Male,MLE,,,,,,,,,,3.5,,,,,,3.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,IRN,Iran (Islamic Republic of),Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,3.5,,,,,,3.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SAU,Saudi Arabia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,3.5,,,,,,3.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,BHR,Bahrain,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,3.8,,,,,,3.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,MDV,Maldives,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,3.9,,,,,,3.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,MAR,Morocco,Year,2016,true,Sex,Male,MLE,,,,,,,,,,3.9,,,,,,3.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MDG,Madagascar,Year,2016,true,Sex,Male,MLE,,,,,,,,,,30,,,,,,30,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,UZB,Uzbekistan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,30.1,,,,,,30.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,NAM,Namibia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,30.3,,,,,,30.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SEN,Senegal,Year,2016,true,Sex,Male,MLE,,,,,,,,,,30.4,,,,,,30.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,TKM,Turkmenistan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,30.4,,,,,,30.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BHS,Bahamas,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,30.5,,,,,,30.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MOZ,Mozambique,Year,2016,true,Sex,Male,MLE,,,,,,,,,,30.5,,,,,,30.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,TLS,Timor-Leste,Year,2016,true,Sex,Male,MLE,,,,,,,,,,30.6,,,,,,30.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GIN,Guinea,Year,2016,true,Sex,Male,MLE,,,,,,,,,,30.7,,,,,,30.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,LBR,Liberia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,30.8,,,,,,30.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,KHM,Cambodia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,30.9,,,,,,30.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SLE,Sierra Leone,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,30.9,,,,,,30.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SOM,Somalia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,31,,,,,,31,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MLI,Mali,Year,2016,true,Sex,Male,MLE,,,,,,,,,,31.1,,,,,,31.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MUS,Mauritius,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,31.2,,,,,,31.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,NRU,Nauru,Year,2016,true,Sex,Male,MLE,,,,,,,,,,31.5,,,,,,31.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,AZE,Azerbaijan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,31.6,,,,,,31.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BDI,Burundi,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,31.6,,,,,,31.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,TCD,Chad,Year,2016,true,Sex,Male,MLE,,,,,,,,,,31.7,,,,,,31.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,DMA,Dominica,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,31.7,,,,,,31.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BOL,Bolivia (Plurinational State of),Year,2016,true,Sex,Female,FMLE,,,,,,,,,,31.9,,,,,,31.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BWA,Botswana,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,32,,,,,,32,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ETH,Ethiopia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,32.1,,,,,,32.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CUB,Cuba,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,32.3,,,,,,32.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,IDN,Indonesia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,32.3,,,,,,32.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,NIC,Nicaragua,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,32.5,,,,,,32.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,VCT,Saint Vincent and the Grenadines,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,32.8,,,,,,32.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,ECU,Ecuador,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,32.9,,,,,,32.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,PHL,Philippines,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,33.1,,,,,,33.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,NIU,Niue,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,33.2,,,,,,33.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,BRN,Brunei Darussalam,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,33.3,,,,,,33.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MWI,Malawi,Year,2016,true,Sex,Male,MLE,,,,,,,,,,33.6,,,,,,33.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,MNG,Mongolia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,33.6,,,,,,33.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CMR,Cameroon,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,33.8,,,,,,33.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,KEN,Kenya,Year,2016,true,Sex,Male,MLE,,,,,,,,,,33.8,,,,,,33.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BIH,Bosnia and Herzegovina,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,34,,,,,,34,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,PAN,Panama,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,34,,,,,,34,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,STP,Sao Tome and Principe,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,34,,,,,,34,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,AGO,Angola,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,34.3,,,,,,34.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,JAM,Jamaica,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,34.9,,,,,,34.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,RWA,Rwanda,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,35,,,,,,35,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,GEO,Georgia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,35.1,,,,,,35.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,HTI,Haiti,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,35.1,,,,,,35.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,GRD,Grenada,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,35.7,,,,,,35.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,PRY,Paraguay,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,36,,,,,,36,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,LCA,Saint Lucia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,36.3,,,,,,36.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,UGA,Uganda,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,36.3,,,,,,36.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,COD,Democratic Republic of the Congo,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,36.4,,,,,,36.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,TZA,United Republic of Tanzania,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,36.4,,,,,,36.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,ATG,Antigua and Barbuda,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,36.5,,,,,,36.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,TGO,Togo,Year,2016,true,Sex,Male,MLE,,,,,,,,,,36.5,,,,,,36.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CRI,Costa Rica,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,36.6,,,,,,36.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GHA,Ghana,Year,2016,true,Sex,Male,MLE,,,,,,,,,,36.8,,,,,,36.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,KGZ,Kyrgyzstan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,36.8,,,,,,36.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BFA,Burkina Faso,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,36.9,,,,,,36.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BEN,Benin,Year,2016,true,Sex,Male,MLE,,,,,,,,,,37,,,,,,37,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,COK,Cook Islands,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,37,,,,,,37,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,BRN,Brunei Darussalam,Year,2016,true,Sex,Male,MLE,,,,,,,,,,37.3,,,,,,37.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BRB,Barbados,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,37.4,,,,,,37.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ALB,Albania,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,37.6,,,,,,37.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CAF,Central African Republic,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,37.6,,,,,,37.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,NGA,Nigeria,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,37.7,,,,,,37.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GMB,Gambia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,37.8,,,,,,37.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ARM,Armenia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,38,,,,,,38,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,COG,Congo,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,38,,,,,,38,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,VEN,Venezuela (Bolivarian Republic of),Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,38,,,,,,38,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,COL,Colombia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,38.3,,,,,,38.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,MMR,Myanmar,Year,2016,true,Sex,Male,MLE,,,,,,,,,,38.3,,,,,,38.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,ZMB,Zambia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,38.3,,,,,,38.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,NPL,Nepal,Year,2016,true,Sex,Male,MLE,,,,,,,,,,38.4,,,,,,38.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CIV,Côte d’Ivoire,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,38.5,,,,,,38.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,GTM,Guatemala,Year,2016,true,Sex,Male,MLE,,,,,,,,,,38.6,,,,,,38.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,IND,India,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,38.8,,,,,,38.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,GUY,Guyana,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,39.1,,,,,,39.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CPV,Cabo Verde,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,39.4,,,,,,39.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,PER,Peru,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,39.6,,,,,,39.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,BTN,Bhutan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,39.8,,,,,,39.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,KAZ,Kazakhstan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,39.9,,,,,,39.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MKD,The former Yugoslav Republic of Macedonia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,39.9,,,,,,39.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,COM,Comoros,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,4.1,,,,,,4.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,EGY,Egypt,Year,2016,true,Sex,Male,MLE,,,,,,,,,,4.2,,,,,,4.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,JOR,Jordan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,4.5,,,,,,4.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,IRQ,Iraq,Year,2016,true,Sex,Male,MLE,,,,,,,,,,4.7,,,,,,4.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,DZA,Algeria,Year,2016,true,Sex,Male,MLE,,,,,,,,,,4.8,,,,,,4.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,LAO,Lao People's Democratic Republic,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,40,,,,,,40,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BRA,Brazil,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,40.3,,,,,,40.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,PRK,Democratic People's Republic of Korea,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,40.3,,,,,,40.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SWZ,Eswatini,Year,2016,true,Sex,Male,MLE,,,,,,,,,,40.4,,,,,,40.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MNE,Montenegro,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,40.4,,,,,,40.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GNB,Guinea-Bissau,Year,2016,true,Sex,Male,MLE,,,,,,,,,,40.5,,,,,,40.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,LKA,Sri Lanka,Year,2016,true,Sex,Male,MLE,,,,,,,,,,40.6,,,,,,40.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SYC,Seychelles,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,40.9,,,,,,40.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,THA,Thailand,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,40.9,,,,,,40.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,MYS,Malaysia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,41.2,,,,,,41.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,HND,Honduras,Year,2016,true,Sex,Male,MLE,,,,,,,,,,41.3,,,,,,41.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,KNA,Saint Kitts and Nevis,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,41.3,,,,,,41.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BLZ,Belize,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,41.5,,,,,,41.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ISR,Israel,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,41.6,,,,,,41.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,SLV,El Salvador,Year,2016,true,Sex,Male,MLE,,,,,,,,,,41.8,,,,,,41.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,SUR,Suriname,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,42.2,,,,,,42.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,NAM,Namibia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,42.4,,,,,,42.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,TKM,Turkmenistan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,42.5,,,,,,42.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,CHN,China,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,42.6,,,,,,42.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,LBR,Liberia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,42.7,,,,,,42.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,MEX,Mexico,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,42.7,,,,,,42.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,DOM,Dominican Republic,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,43,,,,,,43,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SLE,Sierra Leone,Year,2016,true,Sex,Male,MLE,,,,,,,,,,43.1,,,,,,43.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,KHM,Cambodia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,43.2,,,,,,43.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SOM,Somalia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,43.2,,,,,,43.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,MUS,Mauritius,Year,2016,true,Sex,Male,MLE,,,,,,,,,,43.4,,,,,,43.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BDI,Burundi,Year,2016,true,Sex,Male,MLE,,,,,,,,,,43.7,,,,,,43.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,JPN,Japan,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,43.7,,,,,,43.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BHS,Bahamas,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,43.8,,,,,,43.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BWA,Botswana,Year,2016,true,Sex,Male,MLE,,,,,,,,,,44,,,,,,44,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,NIC,Nicaragua,Year,2016,true,Sex,Male,MLE,,,,,,,,,,44.9,,,,,,44.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,DMA,Dominica,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,45.2,,,,,,45.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,PHL,Philippines,Year,2016,true,Sex,Male,MLE,,,,,,,,,,45.3,,,,,,45.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BOL,Bolivia (Plurinational State of),Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,45.4,,,,,,45.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,NIU,Niue,Year,2016,true,Sex,Male,MLE,,,,,,,,,,45.5,,,,,,45.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,QAT,Qatar,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,45.6,,,,,,45.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,TTO,Trinidad and Tobago,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,45.6,,,,,,45.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CUB,Cuba,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,46.1,,,,,,46.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,MNG,Mongolia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,46.3,,,,,,46.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,ECU,Ecuador,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,46.5,,,,,,46.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,VCT,Saint Vincent and the Grenadines,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,46.6,,,,,,46.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,HRV,Croatia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,46.8,,,,,,46.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,STP,Sao Tome and Principe,Year,2016,true,Sex,Male,MLE,,,,,,,,,,46.8,,,,,,46.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CMR,Cameroon,Year,2016,true,Sex,Male,MLE,,,,,,,,,,46.9,,,,,,46.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SRB,Serbia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,47,,,,,,47,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,JAM,Jamaica,Year,2016,true,Sex,Male,MLE,,,,,,,,,,47.4,,,,,,47.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,AGO,Angola,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,47.7,,,,,,47.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,PAN,Panama,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,47.7,,,,,,47.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BIH,Bosnia and Herzegovina,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,47.9,,,,,,47.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,HTI,Haiti,Year,2016,true,Sex,Male,MLE,,,,,,,,,,47.9,,,,,,47.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,PRY,Paraguay,Year,2016,true,Sex,Male,MLE,,,,,,,,,,48.4,,,,,,48.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,RWA,Rwanda,Year,2016,true,Sex,Male,MLE,,,,,,,,,,48.4,,,,,,48.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,GEO,Georgia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,48.9,,,,,,48.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,UGA,Uganda,Year,2016,true,Sex,Male,MLE,,,,,,,,,,49.1,,,,,,49.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,COD,Democratic Republic of the Congo,Year,2016,true,Sex,Male,MLE,,,,,,,,,,49.2,,,,,,49.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,TZA,United Republic of Tanzania,Year,2016,true,Sex,Male,MLE,,,,,,,,,,49.3,,,,,,49.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,ATG,Antigua and Barbuda,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,49.4,,,,,,49.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CRI,Costa Rica,Year,2016,true,Sex,Male,MLE,,,,,,,,,,49.5,,,,,,49.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,GRD,Grenada,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,49.6,,,,,,49.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,LCA,Saint Lucia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,49.7,,,,,,49.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,TUN,Tunisia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,5.2,,,,,,5.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SAU,Saudi Arabia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,5.8,,,,,,5.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MLT,Malta,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,50,,,,,,50,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,VNM,Viet Nam,Year,2016,true,Sex,Male,MLE,,,,,,,,,,50,,,,,,50,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BRB,Barbados,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,50.5,,,,,,50.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,COK,Cook Islands,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,50.6,,,,,,50.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CAF,Central African Republic,Year,2016,true,Sex,Male,MLE,,,,,,,,,,50.8,,,,,,50.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ALB,Albania,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,51,,,,,,51,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,BFA,Burkina Faso,Year,2016,true,Sex,Male,MLE,,,,,,,,,,51.2,,,,,,51.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,KOR,Republic of Korea,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,51.2,,,,,,51.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,VEN,Venezuela (Bolivarian Republic of),Year,2016,true,Sex,Male,MLE,,,,,,,,,,51.2,,,,,,51.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,IND,India,Year,2016,true,Sex,Male,MLE,,,,,,,,,,51.4,,,,,,51.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,COL,Colombia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,51.7,,,,,,51.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,COG,Congo,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,51.7,,,,,,51.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CAN,Canada,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,52.1,,,,,,52.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,QAT,Qatar,Year,2016,true,Sex,Male,MLE,,,,,,,,,,52.1,,,,,,52.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,GUY,Guyana,Year,2016,true,Sex,Male,MLE,,,,,,,,,,52.2,,,,,,52.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CIV,Côte d’Ivoire,Year,2016,true,Sex,Male,MLE,,,,,,,,,,52.3,,,,,,52.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,NGA,Nigeria,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,52.6,,,,,,52.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,PER,Peru,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,53.2,,,,,,53.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,GRC,Greece,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,53.3,,,,,,53.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,LAO,Lao People's Democratic Republic,Year,2016,true,Sex,Male,MLE,,,,,,,,,,53.4,,,,,,53.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,PRK,Democratic People's Republic of Korea,Year,2016,true,Sex,Male,MLE,,,,,,,,,,53.7,,,,,,53.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MKD,The former Yugoslav Republic of Macedonia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,53.7,,,,,,53.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,CPV,Cabo Verde,Year,2016,true,Sex,Male,MLE,,,,,,,,,,53.8,,,,,,53.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BGR,Bulgaria,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,53.9,,,,,,53.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BRA,Brazil,Year,2016,true,Sex,Male,MLE,,,,,,,,,,54,,,,,,54,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MNE,Montenegro,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,54,,,,,,54,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GAB,Gabon,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,54.1,,,,,,54.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,KAZ,Kazakhstan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,54.3,,,,,,54.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ITA,Italy,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,54.4,,,,,,54.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,THA,Thailand,Year,2016,true,Sex,Male,MLE,,,,,,,,,,54.6,,,,,,54.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,HUN,Hungary,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,54.8,,,,,,54.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MDA,Republic of Moldova,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,54.8,,,,,,54.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,KNA,Saint Kitts and Nevis,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,54.8,,,,,,54.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BLZ,Belize,Year,2016,true,Sex,Male,MLE,,,,,,,,,,54.9,,,,,,54.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SYC,Seychelles,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,54.9,,,,,,54.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ISR,Israel,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,55,,,,,,55,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,RUS,Russian Federation,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,55.4,,,,,,55.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ROU,Romania,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,55.5,,,,,,55.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,ARG,Argentina,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,55.7,,,,,,55.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CHL,Chile,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,55.8,,,,,,55.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,SUR,Suriname,Year,2016,true,Sex,Male,MLE,,,,,,,,,,55.8,,,,,,55.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,CHN,China,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,55.9,,,,,,55.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,UKR,Ukraine,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,56.1,,,,,,56.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,MEX,Mexico,Year,2016,true,Sex,Male,MLE,,,,,,,,,,56.4,,,,,,56.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,POL,Poland,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,56.4,,,,,,56.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,CYP,Cyprus,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,56.6,,,,,,56.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,DOM,Dominican Republic,Year,2016,true,Sex,Male,MLE,,,,,,,,,,56.7,,,,,,56.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,JPN,Japan,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,57,,,,,,57,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ESP,Spain,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,57,,,,,,57,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,URY,Uruguay,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,57.6,,,,,,57.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BHS,Bahamas,Year,2016,true,Sex,Male,MLE,,,,,,,,,,57.9,,,,,,57.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,RUS,Russian Federation,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,58.1,,,,,,58.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,PRT,Portugal,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,58.3,,,,,,58.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,TTO,Trinidad and Tobago,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,58.7,,,,,,58.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,SGP,Singapore,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,58.8,,,,,,58.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,DMA,Dominica,Year,2016,true,Sex,Male,MLE,,,,,,,,,,59,,,,,,59,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BOL,Bolivia (Plurinational State of),Year,2016,true,Sex,Male,MLE,,,,,,,,,,59.1,,,,,,59.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,HRV,Croatia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,59.7,,,,,,59.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CUB,Cuba,Year,2016,true,Sex,Male,MLE,,,,,,,,,,59.9,,,,,,59.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,IRN,Iran (Islamic Republic of),Year,2016,true,Sex,Male,MLE,,,,,,,,,,6,,,,,,6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,LBN,Lebanon,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,6.1,,,,,,6.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,COM,Comoros,Year,2016,true,Sex,Male,MLE,,,,,,,,,,6.2,,,,,,6.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,KIR,Kiribati,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,6.5,,,,,,6.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,TUR,Türkiye,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,6.9,,,,,,6.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SRB,Serbia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,60,,,,,,60,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SVK,Slovakia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,60,,,,,,60,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,ECU,Ecuador,Year,2016,true,Sex,Male,MLE,,,,,,,,,,60.3,,,,,,60.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ISL,Iceland,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,60.3,,,,,,60.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,VCT,Saint Vincent and the Grenadines,Year,2016,true,Sex,Male,MLE,,,,,,,,,,60.3,,,,,,60.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,USA,United States of America,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,60.7,,,,,,60.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,NLD,Netherlands,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,61.2,,,,,,61.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,RUS,Russian Federation,Year,2016,true,Sex,Male,MLE,,,,,,,,,,61.4,,,,,,61.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,PAN,Panama,Year,2016,true,Sex,Male,MLE,,,,,,,,,,61.5,,,,,,61.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,AGO,Angola,Year,2016,true,Sex,Male,MLE,,,,,,,,,,61.6,,,,,,61.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GNQ,Equatorial Guinea,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,61.7,,,,,,61.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,FIN,Finland,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,61.7,,,,,,61.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,UKR,Ukraine,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,61.8,,,,,,61.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BIH,Bosnia and Herzegovina,Year,2016,true,Sex,Male,MLE,,,,,,,,,,62.1,,,,,,62.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SWE,Sweden,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,62.2,,,,,,62.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,EST,Estonia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,62.6,,,,,,62.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MLT,Malta,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,63,,,,,,63,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,GBR,United Kingdom of Great Britain and Northern Ireland,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,63,,,,,,63,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,GRD,Grenada,Year,2016,true,Sex,Male,MLE,,,,,,,,,,63.6,,,,,,63.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,ATG,Antigua and Barbuda,Year,2016,true,Sex,Male,MLE,,,,,,,,,,63.9,,,,,,63.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,KOR,Republic of Korea,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,63.9,,,,,,63.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,LCA,Saint Lucia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,63.9,,,,,,63.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,DNK,Denmark,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,64.2,,,,,,64.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,AND,Andorra,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,64.3,,,,,,64.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CAN,Canada,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,64.5,,,,,,64.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,COK,Cook Islands,Year,2016,true,Sex,Male,MLE,,,,,,,,,,64.5,,,,,,64.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,NZL,New Zealand,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,64.8,,,,,,64.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ALB,Albania,Year,2016,true,Sex,Male,MLE,,,,,,,,,,65,,,,,,65,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,BRB,Barbados,Year,2016,true,Sex,Male,MLE,,,,,,,,,,65.2,,,,,,65.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,CZE,Czechia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,65.4,,,,,,65.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,GRC,Greece,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,65.4,,,,,,65.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,COG,Congo,Year,2016,true,Sex,Male,MLE,,,,,,,,,,65.5,,,,,,65.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,LVA,Latvia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,65.5,,,,,,65.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,FRA,France,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,65.6,,,,,,65.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BGR,Bulgaria,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,66,,,,,,66,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GAB,Gabon,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,66.5,,,,,,66.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,HUN,Hungary,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,66.6,,,,,,66.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MDA,Republic of Moldova,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,66.6,,,,,,66.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BEL,Belgium,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,66.8,,,,,,66.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,NGA,Nigeria,Year,2016,true,Sex,Male,MLE,,,,,,,,,,67,,,,,,67,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,PER,Peru,Year,2016,true,Sex,Male,MLE,,,,,,,,,,67.1,,,,,,67.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ROU,Romania,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,67.2,,,,,,67.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,ARG,Argentina,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,67.4,,,,,,67.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CHL,Chile,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,67.6,,,,,,67.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MKD,The former Yugoslav Republic of Macedonia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,67.7,,,,,,67.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ITA,Italy,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,67.8,,,,,,67.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,POL,Poland,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,68,,,,,,68,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MNE,Montenegro,Year,2016,true,Sex,Male,MLE,,,,,,,,,,68.2,,,,,,68.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,CHN,China,Year,2016,true,Sex,Male,MLE,,,,,,,,,,68.6,,,,,,68.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,KNA,Saint Kitts and Nevis,Year,2016,true,Sex,Male,MLE,,,,,,,,,,68.6,,,,,,68.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ESP,Spain,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,68.6,,,,,,68.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,SYC,Seychelles,Year,2016,true,Sex,Male,MLE,,,,,,,,,,68.7,,,,,,68.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,UKR,Ukraine,Year,2016,true,Sex,Male,MLE,,,,,,,,,,68.7,,,,,,68.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,CYP,Cyprus,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,68.8,,,,,,68.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,AUT,Austria,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,68.9,,,,,,68.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ISR,Israel,Year,2016,true,Sex,Male,MLE,,,,,,,,,,68.9,,,,,,68.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,URY,Uruguay,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,68.9,,,,,,68.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BLR,Belarus,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,69.2,,,,,,69.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,PRT,Portugal,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,69.2,,,,,,69.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,NOR,Norway,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,69.8,,,,,,69.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,PNG,Papua New Guinea,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,7.3,,,,,,7.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,SAU,Saudi Arabia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,7.3,,,,,,7.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SVN,Slovenia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,7.3,,,,,,7.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,VUT,Vanuatu,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,7.4,,,,,,7.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,TON,Tonga,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,7.7,,,,,,7.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,TUV,Tuvalu,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,7.8,,,,,,7.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,SEAR,South-East Asia,Country,MDV,Maldives,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,7.9,,,,,,7.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,ARE,United Arab Emirates,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,7.9,,,,,,7.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,SGP,Singapore,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,70,,,,,,70,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,AUS,Australia,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,70.6,,,,,,70.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,DEU,Germany,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,70.6,,,,,,70.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,LTU,Lithuania,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,70.9,,,,,,70.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,JPN,Japan,Year,2016,true,Sex,Male,MLE,,,,,,,,,,71.3,,,,,,71.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SVK,Slovakia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,71.3,,,,,,71.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ISL,Iceland,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,71.5,,,,,,71.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,USA,United States of America,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,71.7,,,,,,71.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,NLD,Netherlands,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,72.1,,,,,,72.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,FIN,Finland,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,72.5,,,,,,72.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,TTO,Trinidad and Tobago,Year,2016,true,Sex,Male,MLE,,,,,,,,,,72.5,,,,,,72.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,EST,Estonia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,72.8,,,,,,72.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GNQ,Equatorial Guinea,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,72.9,,,,,,72.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SWE,Sweden,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,73,,,,,,73,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,CHE,Switzerland,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,73,,,,,,73,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,IRL,Ireland,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,73.1,,,,,,73.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,GBR,United Kingdom of Great Britain and Northern Ireland,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,73.4,,,,,,73.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BLR,Belarus,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,73.6,,,,,,73.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SRB,Serbia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,73.8,,,,,,73.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,HRV,Croatia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,73.9,,,,,,73.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,DNK,Denmark,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,74.4,,,,,,74.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,AND,Andorra,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,74.6,,,,,,74.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,NZL,New Zealand,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,74.6,,,,,,74.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,LVA,Latvia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,75,,,,,,75,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,FRA,France,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,75.3,,,,,,75.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,CZE,Czechia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,75.4,,,,,,75.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MLT,Malta,Year,2016,true,Sex,Male,MLE,,,,,,,,,,76.2,,,,,,76.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BEL,Belgium,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,76.5,,,,,,76.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,KOR,Republic of Korea,Year,2016,true,Sex,Male,MLE,,,,,,,,,,77,,,,,,77,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CAN,Canada,Year,2016,true,Sex,Male,MLE,,,,,,,,,,77.3,,,,,,77.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,AUT,Austria,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,78.1,,,,,,78.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,GRC,Greece,Year,2016,true,Sex,Male,MLE,,,,,,,,,,78.3,,,,,,78.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GAB,Gabon,Year,2016,true,Sex,Male,MLE,,,,,,,,,,78.6,,,,,,78.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BLR,Belarus,Year,2016,true,Sex,Male,MLE,,,,,,,,,,79,,,,,,79,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,NOR,Norway,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,79,,,,,,79,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,LTU,Lithuania,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,79.1,,,,,,79.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BGR,Bulgaria,Year,2016,true,Sex,Male,MLE,,,,,,,,,,79.2,,,,,,79.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,AUS,Australia,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,79.4,,,,,,79.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,DEU,Germany,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,79.4,,,,,,79.4,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,MDA,Republic of Moldova,Year,2016,true,Sex,Male,MLE,,,,,,,,,,79.6,,,,,,79.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,ARG,Argentina,Year,2016,true,Sex,Male,MLE,,,,,,,,,,79.9,,,,,,79.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,HUN,Hungary,Year,2016,true,Sex,Male,MLE,,,,,,,,,,79.9,,,,,,79.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,FSM,Micronesia (Federated States of),Year,2016,true,Sex,Female,FMLE,,,,,,,,,,8.1,,,,,,8.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,OMN,Oman,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,8.3,,,,,,8.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,WSM,Samoa,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,8.5,,,,,,8.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,BHR,Bahrain,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,8.8,,,,,,8.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,TUN,Tunisia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,8.9,,,,,,8.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,CHL,Chile,Year,2016,true,Sex,Male,MLE,,,,,,,,,,80,,,,,,80,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ROU,Romania,Year,2016,true,Sex,Male,MLE,,,,,,,,,,80.1,,,,,,80.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,CYP,Cyprus,Year,2016,true,Sex,Male,MLE,,,,,,,,,,80.6,,,,,,80.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,POL,Poland,Year,2016,true,Sex,Male,MLE,,,,,,,,,,80.7,,,,,,80.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ESP,Spain,Year,2016,true,Sex,Male,MLE,,,,,,,,,,80.9,,,,,,80.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ITA,Italy,Year,2016,true,Sex,Male,MLE,,,,,,,,,,81.2,,,,,,81.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,CHE,Switzerland,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,81.2,,,,,,81.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,IRL,Ireland,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,81.3,,,,,,81.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,URY,Uruguay,Year,2016,true,Sex,Male,MLE,,,,,,,,,,81.3,,,,,,81.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,PRT,Portugal,Year,2016,true,Sex,Male,MLE,,,,,,,,,,81.6,,,,,,81.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,SGP,Singapore,Year,2016,true,Sex,Male,MLE,,,,,,,,,,81.7,,,,,,81.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,ISL,Iceland,Year,2016,true,Sex,Male,MLE,,,,,,,,,,82.6,,,,,,82.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SVK,Slovakia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,82.9,,,,,,82.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AMR,Americas,Country,USA,United States of America,Year,2016,true,Sex,Male,MLE,,,,,,,,,,83,,,,,,83,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,GNQ,Equatorial Guinea,Year,2016,true,Sex,Male,MLE,,,,,,,,,,83.3,,,,,,83.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,NLD,Netherlands,Year,2016,true,Sex,Male,MLE,,,,,,,,,,83.3,,,,,,83.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,FIN,Finland,Year,2016,true,Sex,Male,MLE,,,,,,,,,,83.8,,,,,,83.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,SWE,Sweden,Year,2016,true,Sex,Male,MLE,,,,,,,,,,83.9,,,,,,83.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,GBR,United Kingdom of Great Britain and Northern Ireland,Year,2016,true,Sex,Male,MLE,,,,,,,,,,84.3,,,,,,84.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,EST,Estonia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,84.9,,,,,,84.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,DNK,Denmark,Year,2016,true,Sex,Male,MLE,,,,,,,,,,85,,,,,,85,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,NZL,New Zealand,Year,2016,true,Sex,Male,MLE,,,,,,,,,,85.1,,,,,,85.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,AND,Andorra,Year,2016,true,Sex,Male,MLE,,,,,,,,,,85.2,,,,,,85.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,FRA,France,Year,2016,true,Sex,Male,MLE,,,,,,,,,,85.8,,,,,,85.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,CZE,Czechia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,86,,,,,,86,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,LVA,Latvia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,86.5,,,,,,86.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,BEL,Belgium,Year,2016,true,Sex,Male,MLE,,,,,,,,,,86.6,,,,,,86.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,AUT,Austria,Year,2016,true,Sex,Male,MLE,,,,,,,,,,87.7,,,,,,87.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,LUX,Luxembourg,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,87.7,,,,,,87.7,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,NOR,Norway,Year,2016,true,Sex,Male,MLE,,,,,,,,,,88,,,,,,88,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,AUS,Australia,Year,2016,true,Sex,Male,MLE,,,,,,,,,,88.3,,,,,,88.3,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,DEU,Germany,Year,2016,true,Sex,Male,MLE,,,,,,,,,,88.5,,,,,,88.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,LTU,Lithuania,Year,2016,true,Sex,Male,MLE,,,,,,,,,,89.1,,,,,,89.1,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,IRL,Ireland,Year,2016,true,Sex,Male,MLE,,,,,,,,,,89.5,,,,,,89.5,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,CHE,Switzerland,Year,2016,true,Sex,Male,MLE,,,,,,,,,,89.6,,,,,,89.6,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EMR,Eastern Mediterranean,Country,LBN,Lebanon,Year,2016,true,Sex,Male,MLE,,,,,,,,,,9.2,,,,,,9.2,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,FJI,Fiji,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,9.8,,,,,,9.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,AFR,Africa,Country,LSO,Lesotho,Year,2016,true,Sex,Female,FMLE,,,,,,,,,,9.9,,,,,,9.9,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,LUX,Luxembourg,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,91.8,,,,,,91.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,EUR,Europe,Country,LUX,Luxembourg,Year,2016,true,Sex,Male,MLE,,,,,,,,,,95.8,,,,,,95.8,,,EN,2018-08-30T07:00:00.000Z
+SA_0000001413,"Alcohol, consumers past 12 months (%)",numeric,WPR,Western Pacific,Country,VNM,Viet Nam,Year,2016,true,Sex,Both sexes,BTSX,,,,,,,,,,99.4,,,,,,99.4,,,EN,2018-08-30T07:00:00.000Z

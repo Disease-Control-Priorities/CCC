@@ -1,0 +1,4 @@
+starting worker for localhost:11335 
+Error in unserialize(node$con) : error reading from connection
+Calls: local ... doTryCatch -> recvData -> recvData.SOCKnode -> unserialize
+Execution halted

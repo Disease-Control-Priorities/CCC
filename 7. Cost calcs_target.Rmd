@@ -1,0 +1,527 @@
+---
+title: "NCDC Costs"
+author: "Sarah Pickresgill"
+date: "7/16/2021"
+output: html_document
+---
+# Install the package
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+rm(list=ls()) #Remove all
+library(dplyr)
+library(ggplot2)
+library(readxl)
+library(tidyverse)
+library(kableExtra)
+library(reshape2)
+library(stringr)
+
+'%!in%' <- function(x,y)!('%in%'(x,y))
+```
+
+# Functions
+```{r}
+tradable_conversion <- function(unit_cost, tradable_ratio, currency, global_inflation, exchange){
+  if(currency == "USD") {
+    unit_cost*tradable_ratio*global_inflation} else {
+      ((unit_cost*tradable_ratio)/exchange)*global_inflation
+    }
+}
+
+nontradable_conversion <- function(unit_cost,tradable_ratio, currency, cpi_adjust, exchange,country, exchange_end, gni, gni_selected_country){
+  if(currency == "USD" & (country == "LIC" | country == "LMIC" | country == "LIC+LMIC+UMIC")) {
+    unit_cost*(1-tradable_ratio)*cpi_adjust*(gni_selected_country/gni)
+  } else if (currency == "USD" & (country != "LIC" & country != "LMIC" & country != "LIC+LMIC+UMIC")){
+    ((unit_cost*exchange)*(1-tradable_ratio))*cpi_adjust/exchange_end*(gni_selected_country/gni)} 
+  else {
+      ((unit_cost*(1-tradable_ratio)*cpi_adjust)/exchange_end)*(gni_selected_country/gni)
+    }
+}
+```
+
+# Install the necessary input files
+```{r}
+load("ccc/results_target_optb.Rda")
+
+#intersectoral only
+#regions<-read.csv("../new_inputs/Country_groupings.csv")%>%
+#    select(c(Country, NCD_region))%>%rename(location_name=Country)
+#deaths_avert<-left_join(dadt.all.opt, regions, by="location_name")%>%filter(byear==2015)%>%
+#  group_by(NCD_region)%>%summarise(DA=sum(Deaths.Avert))
+
+all.pin.opt$unique_id<-paste0("C", all.pin.opt$Code, "_", all.pin.opt$sub_id)
+
+# Unit cost adjustment
+uc <- read.csv("../new_inputs/PIN_new.csv", stringsAsFactors=F)
+uc$unique_id <- paste0("C",uc$NCD,"_",uc$sub_id)
+
+#table(uc$unique_id)
+uc <- uc %>%filter(Original.Currency != "NA")
+
+# Necessary files
+# Exchange rate
+exchange <- read_xlsx("../new_inputs/Exchange_rate.xlsx", na = "..")
+exchange<-exchange[,c(1:60)]
+ex2<-read_xlsx("../new_inputs/Exchange_rate_2020.xlsx", skip=3)
+ex2<-ex2[,c(1,61,62)]
+
+exchange<-left_join(exchange, ex2, by="Country")
+exchange <- exchange%>%gather(year, value, -Country)%>%group_by(Country)%>%fill(value)%>%spread(year, value)
+
+
+# Regional inflation
+#regional_inflation <- read_xls("../new_inputs/Regional_inflation_20200212.xls", sheet = "Data")
+regional_inflation <- read_xls("../new_inputs/Regional_inflation_2020.xls", sheet = "Data", skip=3)
+#regional_inflation[,c(5:64)] <- (regional_inflation[,c(5:64)]/100)+1
+regional_inflation[,c(5:65)] <- (regional_inflation[,c(5:65)]/100)+1
+
+# COUntry grouping
+class <- read.csv("../new_inputs/Country_groupings.csv")
+
+#Country list: only eligible countries
+table(class$NCD_region)
+country_list <- class %>% 
+  select(wb2021, NCD_region ,location_gbd, iso3)%>%
+  rename(Country = location_gbd,
+         World_bank = wb2021)
+
+
+# CPI adjusted
+cpi <- read.csv("../new_inputs/CPI_WB_2018_added2.csv", stringsAsFactors=F)
+cpi<-cpi[,-c(66:71)]
+#add 2020 data
+cpi2<-read.csv("../new_inputs/CPI_2020.csv", stringsAsFactors=F)
+names(cpi2)[1]<-"Country"
+cpi2<-cpi2[,c(1,65)]
+cpi<-left_join(cpi, cpi2, by="Country")
+
+cpi <- cpi[,c(3,6:66)]%>%gather(year, value, -Country)%>%group_by(Country)%>%fill(value)%>%spread(year, value)
+
+#also add France
+#france<-read.csv("../new_inputs/CPI_2020.csv", stringsAsFactors=F)%>%filter(Country.Code=="FRA")
+#names(france)[1]<-"Country"
+#cpi<-bind_rows(cpi, france[,-c(2,3,4)])
+
+# GNI
+GNI <- read.csv("../new_inputs/GNI_WB_USD_2017_re2.csv", stringsAsFactors=F)
+GNI<-GNI[,-c(1,4,5,6,66,67,68)]
+GNI2 <- read.csv("../new_inputs/GNI_2020.csv", stringsAsFactors=F)
+GNI2<-GNI2[,c(1,64,65)]
+names(GNI2)[1]<-"Country"
+
+GNI<-left_join(GNI, GNI2, by="Country")
+GNI <- GNI%>%gather(year, value, -Country, -Country.Code)%>%group_by(Country.Code)%>%fill(value)%>%spread(year, value)
+#load("../new_demography/output/icer_rank_output.Rda")
+
+```
+
+
+# Table2 (NCD interventions): Based on ICER ranking
+```{r data install}
+
+#country list of no alcohol
+noalc.list<-c("Afghanistan", "Bangladesh", "Iran", "Libya", "Sudan", "Yemen")
+
+#list of alcohol policy unique_ids
+intersectoral.alc<-c("5.2_a", "5.4_a")
+
+###########################################  
+##update PIN for intersectoral policies##
+############################################
+
+##edit for countries in which alcohol is banned##
+all.pin.opt$pin[all.pin.opt$unique_id%in%intersectoral.alc & all.pin.opt$location_name%in%noalc.list]<-0
+
+
+benefits.opt <- merge(y = dalys.opt, x = class, by.x = "location_gbd", by.y = "location_name")%>%rename(Country  = location_gbd)
+```
+
+# Settings
+```{r}
+#Setting
+#tradable_ratio <- 0.3
+UC_Years <- 2020  # The output year
+# ancillary_HF_cost <- 0.5 # possible change
+# above_HF <- 0.17 # possible change
+```
+
+```{r data.frame development}
+final_all <- data.frame(Code = character() ,
+                        adjusted_uc = numeric(),
+                        pin_sum= numeric(),
+                        year_id =  numeric(),
+                        total_cost = numeric(),
+                        senario = character() ,
+                        Country = character(),
+                        Class = character(),
+                        Region = character(),
+                        stringsAsFactors=FALSE)
+
+
+final_all_intervention <- data.frame(Code = character(),
+                                     Intervention = character(),
+                                     senario = character() ,
+                                     Country = character(),
+                                     adjusted_uc = numeric(),
+                                     pin_sum = numeric(),
+                                     total_cost = numeric(),
+                                     Region = character(),
+                                     stringsAsFactors=FALSE) 
+
+
+
+
+final_all_ICER <- data.frame(Country = character(),
+                             year_id = numeric(),
+                             Region = character(),
+                             sum_increment = numeric(),
+                             life_years_gained = numeric(),
+                             ICER = numeric()
+)
+
+increment_all_year      <- data.frame(
+                             unique_id = character(),
+                             year_id = numeric(),
+                             Class = character(),
+                             Region = character(),
+                             adjusted_uc = numeric(),
+                             base_pin = numeric(),
+                             base_total = numeric(),
+                             adjust_pin = numeric(),
+                             adjust_total = numeric(),
+                             increment = numeric()
+)
+```
+
+
+```{r re-run}
+# Calculate adjusted costs & total by interventions
+i <- 1
+c <- 1
+n <- 1
+y <- 1
+
+locs<-unique(all.pin.opt$location_name)
+country_list<-country_list%>%filter(Country%in% locs, World_bank!="HIC")
+
+locs<-as.character(country_list$Country)
+
+for (c in 1:77){
+ 
+  selected_country <- as.character(country_list$Country[c])
+  selected_country_code <- as.character(country_list$iso3[c])
+  selected_country_category <- as.character(country_list$World_bank[c])
+  selected_country_region <- as.character(country_list$NCD_region[c])
+  
+  country_class <- as.character(country_list[country_list$Country == selected_country,]$World_bank) 
+# Adjusted UC install
+# Adjustment database
+  no <- nrow(uc)
+
+  file.name <- paste0("../new_demography/output/costs/bycountry/",selected_country,"_adjusted_uc_",UC_Years,".csv")
+  adjusted_uc <- read.csv(file.name)
+        
+# Adjusted UC end 
+     
+    result.df <- adjusted_uc %>% select(unique_id)
+    result.df2 <- adjusted_uc %>% select(unique_id)
+
+    
+# full data -----------------------
+  country.pop <- all.pin.opt %>% 
+  filter(location_name == selected_country)
+    
+  full.data <- merge.data.frame(x = country.pop, y = adjusted_uc[,c("unique_id", "Original.Unit.Cost", "Cost.adjustment", "Traded", "tradable_uc", "nontradable_uc", "adjusted_uc" )], by = "unique_id", all.x = T)
+
+  full.data$total_cost <- full.data$pin * full.data$adjusted_uc
+  
+  #file.name <- paste0("Result_0706/Optimal/All_pop_cost/",selected_country,"_all_by_intervention_year",".csv")
+  #write.csv(full.data, file.name)
+  
+    
+# Baseline population in need------------------
+for (y in 3:10){
+  
+##PIN by intervention
+# pin_group = all code
+pin_group <- all.pin.opt %>% 
+  filter(location_name == selected_country,
+         year_id == 2020 + y, 
+         group == "Baseline") %>% 
+  group_by(unique_id) %>% 
+  summarize(pin_sum = sum(pin))
+
+pin_group$year_id <- 2020 + y
+
+uc_pin <- merge.data.frame(adjusted_uc, pin_group, by = "unique_id")
+
+uc_pin <- uc_pin %>% 
+  mutate(total_cost = adjusted_uc * pin_sum)
+
+uc_pin_all <- if(y == 3) {
+  uc_pin
+} else {
+  rbind(uc_pin_all, uc_pin)
+}
+
+result.df <- merge(result.df, uc_pin[,c("unique_id","total_cost")], by = "unique_id")
+
+label <- paste0("cost_",2020+y)
+names(result.df)[ which( names(result.df)=="total_cost" ) ] <- label
+}
+
+  
+# By Interventions
+final.df1_int <- result.df
+final.df1_int$senario <- "Baseline"
+final.df1_int$Country <- selected_country
+final.df1_int$Class <- country_class
+final.df1_int$Region <- selected_country_region
+
+final.df1_int$total_cost <- apply(final.df1_int[,2:9],1,sum)
+
+# Add unit cost
+final.df1_int <- merge(final.df1_int, uc_pin[,c("unique_id", "adjusted_uc")] , by = "unique_id")
+
+# Add pin
+pin_code <- all.pin.opt %>% 
+  filter(location_name == selected_country,
+         group == "Baseline") %>% 
+  group_by(unique_id) %>% 
+  summarize(pin_sum = sum(pin))
+
+final.df1_int <- merge(final.df1_int, pin_code[,c("unique_id", "pin_sum")], by = "unique_id")
+
+ # final.df1_int <- final.df1_int %>%
+ #   select(unique_id, senario, Country, adjusted_uc, pin_sum ,total_cost, Region)
+ # 
+
+# years
+result.df1_long <- uc_pin_all
+
+result.df1_long$senario <- "Baseline"
+result.df1_long$Country <- selected_country
+result.df1_long$Class <- country_class
+result.df1_long$Region <- selected_country_region
+
+
+
+
+
+#Adjustment-------------
+
+for (y in 3:10){
+#PIN by intervention
+
+# pin_group = all code
+pin_group <- all.pin.opt %>% 
+  filter(location_name == selected_country,
+         year_id == 2020 + y, 
+         group == "Adjusted") %>% 
+  group_by(unique_id) %>% 
+  summarize(pin_sum = sum(pin))
+
+pin_group$year_id <- 2020 + y
+
+uc_pin <- merge.data.frame(adjusted_uc, pin_group, by = "unique_id")
+
+uc_pin <- uc_pin %>% 
+  mutate(total_cost = adjusted_uc * pin_sum)
+
+uc_pin_all <- if(y == 3) {
+  uc_pin
+} else {
+  rbind(uc_pin_all, uc_pin)
+}
+
+result.df2 <- merge(result.df2, uc_pin[,c("unique_id","total_cost")], by = "unique_id")
+
+label <- paste0("cost_",2020+y)
+names(result.df2)[ which( names(result.df2)=="total_cost" ) ] <- label
+
+}
+
+# By intervention & save
+
+final.df2_int <- result.df2
+final.df2_int$senario <- "Adjusted"
+final.df2_int$Country <- selected_country
+final.df2_int$Class <- country_class
+final.df2_int$Region <- selected_country_region
+
+final.df2_int$total_cost <- apply(final.df2_int[,2:9],1,sum)
+
+# Add unit cost
+final.df2_int <- merge(final.df2_int, uc_pin[,c("unique_id", "adjusted_uc")])
+
+# Add pin
+pin_code <- all.pin.opt %>% 
+  filter(location_name == selected_country, 
+         group == "Adjusted") %>% 
+  group_by(unique_id) %>% 
+  summarize(pin_sum = sum(pin))
+
+final.df2_int <- merge(final.df2_int, pin_code[,c("unique_id", "pin_sum")])
+
+# 
+#  final.df2_int <- final.df2_int %>% 
+#    select(Code, senario, Country, adjusted_uc, pin_sum ,total_cost, Region)
+  
+final_country_tc_int <- rbind(final.df1_int,final.df2_int)
+
+
+#Final dataset by interventions-------------------
+file.name <- paste0("output/table2/Total_cost_intervention/",selected_country,"_total_cost_2030_intervention",".csv")
+#write.csv(final_country_tc_int, file.name)
+
+final_all_intervention <- rbind(final_all_intervention, final_country_tc_int)
+#--------------------------------------------------
+
+# By year
+result.df2_long <- uc_pin_all
+
+result.df2_long$senario <- "Adjusted"
+result.df2_long$Country <- selected_country
+result.df2_long$Class <- country_class
+result.df2_long$Region <- selected_country_region
+
+# Save
+final_country_tc3 <- rbind(result.df1_long,result.df2_long)
+file.name <- paste0("output/table2/Total_cost_year/",selected_country,"_total_cost_2030",".csv")
+#write.csv(final_country_tc3, file.name)
+
+#Final dataset-------------------
+  final_all <- rbind(final_all, final_country_tc3)
+
+# ----------------------
+# incremental cost by year and intervention
+base_result <- result.df1_long %>% 
+  filter(senario == "Baseline")%>% 
+  select(unique_id, Country, Class, Region, year_id, adjusted_uc, pin_sum, total_cost) %>% 
+  rename(base_pin = pin_sum,
+         base_total = total_cost) 
+
+adjust_result <- result.df2_long %>%
+  filter(senario == "Adjusted") %>% 
+  select(unique_id, year_id, pin_sum, total_cost) %>% 
+  rename(adjust_pin = pin_sum,
+         adjust_total = total_cost) 
+
+
+increment_by_year <- merge(base_result, adjust_result , by = c("unique_id", "year_id"))
+
+increment_by_year$incremental <- increment_by_year$adjust_total - increment_by_year$base_total
+
+file.name <- paste0("output/table2/incremental_cost_year/",selected_country,"_increment_cost_2020_2030",".csv")
+#write.csv(increment_by_year, file.name)
+
+increment_all_year <- rbind(increment_all_year, increment_by_year)
+
+country.all.id <- colsplit(increment_by_year$unique_id,"_",names=c("Code","sub_id"))
+# From unique_id to Code
+increment_by_year$Code <- country.all.id$Code
+increment_by_year$sub_id <- country.all.id$sub_id
+
+
+country.all.sum <- increment_by_year %>% 
+  group_by(Country, Region, year_id) %>% 
+  summarize(sum_increment = sum(incremental))
+
+
+# Benefit
+benefits.country <- benefits.opt %>% 
+  filter(Country == selected_country) 
+
+
+country.all2 <- merge(x = country.all.sum, y = benefits.country[,c("Country", "year_id", "DALY.ave")], by = c("Country", "year_id"),all.x = T)
+
+
+country.all2 <- country.all2 %>% 
+  mutate(ICER = sum_increment / DALY.ave
+         )
+
+file.name <- paste0("output/",selected_country,"_ICER_2020_2030",".csv")
+#write.csv(country.all2, file.name)
+
+final_all_ICER <- rbind(final_all_ICER, country.all2)
+
+}
+
+```
+
+```{r}
+file.name <- paste0("ccc/All_TC_opt",".csv")
+write.csv(final_all, file.name)
+
+final_HLI<-final_all%>%
+  group_by(Country, NCD, Intervention, year_id, total_cost, senario)%>%
+  summarise(total_cost = sum(total_cost))
+
+write.csv(final_HLI, "ccc/Total_costs_opt.csv")
+final_HLI<-read.csv("ccc/Total_costs_opt.csv")
+
+##
+f1<-final_HLI%>%filter(senario=="Baseline")%>%
+  rename(Baseline_totalcost = total_cost)%>%
+  select(-senario)%>%
+  group_by(year_id, Country)%>%
+  summarise(Base_cost = sum(Baseline_totalcost))
+
+f2<-final_HLI%>%filter(senario=="Adjusted")%>%
+  rename(Adjusted_totalcost = total_cost)%>%
+  select(-senario)%>%
+  group_by(year_id, Country)%>%
+  summarise(Adj_cost = sum(Adjusted_totalcost))
+
+final_HLI<-left_join(f1,f2)
+
+da<-dadt.all.opt%>%group_by(year_id, location_name)%>%
+  summarise(deaths_averted = sum(Deaths.Avert))
+
+sum(da$deaths_averted)/1e6
+
+dalys<-dalys.opt%>%group_by(year_id, location_name)%>%
+  summarise(dalys_averted = sum(DALY.ave))%>%
+  mutate(year_id = as.numeric(year_id))
+
+sum(dalys$dalys_averted)/1e6
+
+final_HLI<-left_join(final_HLI, da)
+final_HLI<-left_join(final_HLI, dalys)
+
+groups<-read.csv("../new_inputs/Country_groupings_HLI.csv", stringsAsFactors = F)%>%
+  select(location_name, iso3, countryname_WHO)
+
+gdp<-read.csv("../new_inputs/gdp_pc.csv", stringsAsFactors = F, skip=4)%>% 
+  pivot_longer(X1960:X2021) %>% 
+  group_by(Country.Code) %>% 
+  fill(value, .direction = "down") %>% 
+  pivot_wider(Country.Code)%>%
+  select(Country.Code, X2021)%>%
+  rename(iso3 = Country.Code, gdp_pc = X2021)%>%
+  left_join(., groups%>%select(-countryname_WHO))
+
+#add 40q30
+#add economic benefit
+#2020 total cost
+
+table2<-final_HLI%>%
+  mutate(sum_increment_all = Adj_cost-Base_cost,
+         DALY.ave = ((1-0.05)^(year_id-2022))*dalys_averted,
+         sum_increment_all =  ((1-0.05)^(year_id-2022))*sum_increment_all,
+         Total.cost = ((1-0.05)^(year_id-2022))*sum_increment_all)%>%
+  left_join(., gdp)%>%
+  mutate(benefit = 1.65*gdp_pc*DALY.ave)%>%
+  ungroup()%>%
+  summarise(DALY.ave = sum(DALY.ave)/1e6,
+            DA = sum(deaths_averted)/1e6,
+            Incremental.cost = sum(sum_increment_all)/1e9,
+            benefit = sum(benefit, na.rm=T)/1e9)
+  
+write.csv(final_all_ICER, "ccc/all_costs_opt.csv", row.names = F)
+
+
+
+```
+
+

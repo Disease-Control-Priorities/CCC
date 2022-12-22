@@ -1,0 +1,64 @@
+GBD Cause,Link,Risk factor
+Ischemic stroke,Tobacco-CVD,Tobacco
+Ischemic heart disease,Tobacco-CVD,Tobacco
+Intracerebral hemorrhage,Tobacco-CVD,Tobacco
+Aortic aneurysm,Tobacco-CVD,Tobacco
+Other cardiovascular and circulatory diseases,Tobacco-CVD,Tobacco
+Hypertensive heart disease,Tobacco-CVD,Tobacco
+Stomach cancer,Tobacco-CA,Tobacco
+Prostate cancer,Tobacco-CA,Tobacco
+"Tracheal, bronchus, and lung cancer",Tobacco-CA,Tobacco
+Chronic obstructive pulmonary disease,Tobacco-Resp,Tobacco
+Larynx cancer,Tobacco-CA,Tobacco
+Lip and oral cavity cancer,Tobacco-CA,Tobacco
+Nasopharynx cancer,Tobacco-CA,Tobacco
+Oesophageal cancer,Tobacco-CA,Tobacco
+Asthma,Tobacco-Resp,Tobacco
+Bladder cancer,Tobacco-CA,Tobacco
+Liver cancer due to hepatitis B,Tobacco-CA,Tobacco
+Liver cancer due to other cause,Tobacco-CA,Tobacco
+Peptic ulcer disease,Tobacco-Other,Tobacco
+Peripheral vascular disease,Tobacco-CVD,Tobacco
+Acute lymphoid leukaemia,Tobacco-CA,Tobacco
+Acute myeloid leukaemia,Tobacco-CA,Tobacco
+Cervical cancer,Tobacco-CA,Tobacco
+Chronic lymphoid leukaemia,Tobacco-CA,Tobacco
+Chronic myeloid leukaemia,Tobacco-CA,Tobacco
+Kidney cancer,Tobacco-CA,Tobacco
+Liver cancer due to alcohol use,Tobacco-CA,Tobacco
+Liver cancer due to hepatitis C,Tobacco-CA,Tobacco
+Other leukaemia,Tobacco-CA,Tobacco
+Pancreatic cancer,Tobacco-CA,Tobacco
+Multiple sclerosis,Tobacco-Other,Tobacco
+Alcohol use disorders,Alcohol-MH,Alcohol
+Alcoholic cardiomyopathy,Alcohol-CVD,Alcohol
+Cirrhosis and other chronic liver diseases due to alcohol use,Alcohol-GI,Alcohol
+Epilepsy,Alcohol-MH,Alcohol
+Intracerebral hemorrhage,Alcohol-CVD,Alcohol
+Hypertensive heart disease,Alcohol-CVD,Alcohol
+Larynx cancer,Alcohol-CA1,Alcohol
+Lip and oral cavity cancer,Alcohol-CA1,Alcohol
+Liver cancer due to alcohol use,Alcohol-CA2,Alcohol
+Nasopharynx cancer,Alcohol-CA1,Alcohol
+Oesophageal cancer,Alcohol-CA1,Alcohol
+Other pharynx cancer,Alcohol-CA1,Alcohol
+Pancreatitis,Alcohol-GI,Alcohol
+Self-harm by firearm,Alcohol-MH,Alcohol
+Self-harm by other specified means,Alcohol-MH,Alcohol
+Assault by firearm,Alcohol-MH,Alcohol
+Assault by other means,Alcohol-MH,Alcohol
+Assault by sharp object,Alcohol-MH,Alcohol
+Colon and rectum cancer,Alcohol-CA2,Alcohol
+Cyclist road injuries,Alcohol-MH,Alcohol
+Motor vehicle road injuries,Alcohol-MH,Alcohol
+Motorcyclist road injuries,Alcohol-MH,Alcohol
+Other road injuries,Alcohol-MH,Alcohol
+Other transport injuries,Alcohol-MH,Alcohol
+Pedestrian road injuries,Alcohol-MH,Alcohol
+Atrial fibrillation and flutter,Alcohol-CVD,Alcohol
+Breast cancer,Alcohol-CA2,Alcohol
+Drowning,Alcohol-MH,Alcohol
+"Fire, heat, and hot substances",Alcohol-MH,Alcohol
+Other unintentional injuries,Alcohol-MH,Alcohol
+Poisonings,Alcohol-MH,Alcohol
+Unintentional firearm injuries,Alcohol-MH,Alcohol
