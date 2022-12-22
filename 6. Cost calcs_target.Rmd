@@ -173,30 +173,19 @@ for (c in 1:77){
 ```
 
 ```{r}
-file.name <- paste0("ccc/All_TC_opt",".csv")
-write.csv(final_all, file.name)
 
-final_HLI<-final_all%>%
-  group_by(Country, NCD, Intervention, year_id, total_cost, senario)%>%
-  summarise(total_cost = sum(total_cost))
+all.costs<-read.csv("output/all/costs_Afghanistan.csv", stringsAsFactors = F)
 
-write.csv(final_HLI, "ccc/Total_costs_opt.csv")
-final_HLI<-read.csv("ccc/Total_costs_opt.csv")
+for (i in 2:77){
+  temp<-read.csv(paste0("output/all/costs_", locs[i], ".csv"), stringsAsFactors = F)
+  all.costs<-bind_rows(all.costs, temp)
+  
+}
 
-##
-f1<-final_HLI%>%filter(senario=="Baseline")%>%
-  rename(Baseline_totalcost = total_cost)%>%
-  select(-senario)%>%
-  group_by(year_id, Country)%>%
-  summarise(Base_cost = sum(Baseline_totalcost))
+write.csv(all.costs, "output/costs_all.csv", row.names = F)
+sum(all.costs$incremental.cost, na.rm=T)/1e9
 
-f2<-final_HLI%>%filter(senario=="Adjusted")%>%
-  rename(Adjusted_totalcost = total_cost)%>%
-  select(-senario)%>%
-  group_by(year_id, Country)%>%
-  summarise(Adj_cost = sum(Adjusted_totalcost))
-
-final_HLI<-left_join(f1,f2)
+##### Results table ######
 
 da<-dadt.all.opt%>%group_by(year_id, location_name)%>%
   summarise(deaths_averted = sum(Deaths.Avert))

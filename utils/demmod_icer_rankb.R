@@ -429,19 +429,19 @@ project_pop <- function(is, inter, inc.val, tas, sel.cse, inc.type, est.pin, cov
   pop.1.yll<- do.call(rbind, replicate(reps.yll, P1, simplify=FALSE))[,2:n]
   yll1     <- ex0.yll*pop.1.yll*mx.pin.1 %>% data.table()  
   
-  if (any(dis.df.in$metric=="disability")){
-    daly1     <- yll1 %>% 
-      cbind(cse.yll.vec) %>% gather(year_id, YLL, -cause_name) %>%
-      left_join(yldyll %>% filter(location_name==is), by = "cause_name") %>%
-      filter(!is.na(scale)) %>%
-      mutate(YLD = YLL*scale) %>%
-      cbind(.,disab.df%>%ungroup()%>%select(Imp))%>%# add disability impacts here
-      mutate(YLD = YLD*Imp,
-             DALY = YLD + YLL)%>%
-      group_by(year_id) %>%
-      summarise(DALY=sum(DALY), .groups = "drop") %>% ungroup() %>% mutate(group = "Adjusted")
-  }
-  else{
+  #if (any(dis.df.in$metric=="disability")){
+  #  daly1     <- yll1 %>% 
+  #    cbind(cse.yll.vec) %>% gather(year_id, YLL, -cause_name) %>%
+  #    left_join(yldyll %>% filter(location_name==is), by = "cause_name") %>%
+  #    filter(!is.na(scale)) %>%
+  #    mutate(YLD = YLL*scale) %>%
+  #    cbind(.,disab.df%>%ungroup()%>%select(Imp))%>%# add disability impacts here
+  #    mutate(YLD = YLD*Imp,
+  #           DALY = YLD + YLL)%>%
+  #    group_by(year_id) %>%
+  #    summarise(DALY=sum(DALY), .groups = "drop") %>% ungroup() %>% mutate(group = "Adjusted")
+  #}
+  #else{
     daly1     <- yll1 %>% 
       cbind(cse.yll.vec) %>% gather(year_id, YLL, -cause_name) %>%
       left_join(yldyll %>% filter(location_name==is), by = "cause_name") %>%
@@ -450,7 +450,7 @@ project_pop <- function(is, inter, inc.val, tas, sel.cse, inc.type, est.pin, cov
              DALY = YLD + YLL) %>%
       group_by(year_id) %>%
       summarise(DALY=sum(DALY), .groups = "drop") %>% ungroup() %>% mutate(group = "Adjusted")
-  }
+  #}
   
   mx.pin.0 <- b0$mx.pin %>% arrange(cause_name, sex_name, age_name) %>%
     spread(year_id, mx.dis) %>% select(paste0(2020:2030)) %>% as.matrix()

@@ -26,16 +26,14 @@ names<-read.csv("new_inputs/PIN_new.csv", stringsAsFactors = F)%>%
   select(NCD, Intervention)%>%
   rename(Code = NCD)%>% distinct()
 
-df<-read.csv("output/bca_costs/All_increment_2030_new.csv", stringsAsFactors = F)%>%
+df<-read.csv("output/bca_costs/All_increment_2030_pesm.csv", stringsAsFactors = F)%>%
   mutate(Code = as.numeric(gsub("_.*$", "", unique_id)))%>%
   group_by(year_id, Country, Code)%>%
   summarise(sum_increment_all = sum(incremental))%>%
   ungroup()%>%
   rename(location_name = Country)%>%
   left_join(., all.dalys%>%mutate(year_id = as.numeric(year_id))%>%
-              select(year_id, Code, DALY.ave, location_name))%>%
-  mutate(DALY.ave = ifelse(DALY.ave<1,0,DALY.ave), #delete
-         DALY.ave = ifelse(Code==1.1, 0.1*DALY.ave, DALY.ave)) #delete
+              select(year_id, Code, DALY.ave, location_name))
 
 
 WB<-read.csv("new_inputs/country_groupings.csv", stringsAsFactors = F)%>%
@@ -117,7 +115,7 @@ write.csv(bind_rows(df_code, df_both)%>%arrange(wb2021), "Figures/BCRs_int_pesm.
 #how much from int
 DA<-sum(df_code$`DALY.ave (millions)`)
 int<-sum(df_code$`DALY.ave (millions)`[df_code$Code>5])
-hpp<-sum(df_code%>%filter(Code %in% c(5.1,5.3,2.4,2.6))%>%pull(` DALY.ave (millions)`))
+hpp<-sum(df_code%>%filter(Code %in% c(5.1,5.3,2.4,2.6))%>%pull(`DALY.ave (millions)`))
 
 int/DA
 hpp/DA

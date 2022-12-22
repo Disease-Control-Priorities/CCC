@@ -23,7 +23,7 @@ sel.cse       <- cse_g %>% pull(cause_name) %>% unique()
 time1<-Sys.time()
 for (is in all.locs){
     
-    projection = project_pop(is, interventions, 0.80, "yes", sel.cse, "varying", "yes", "yes", 1)      
+    projection = project_pop(is, interventions, 0.80, "no", sel.cse, "varying", "yes", "yes", 1)      
     
     all.pin    = data.table(projection$pin.est)
     all.dalys  = data.table(projection$dalys) 
