@@ -1,0 +1,56 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"Epilepsy acute and chronic treatment",2.13,"Swaziland",2020,98868.5513282982,98868.5513282982,0
+"Epilepsy acute and chronic treatment",2.13,"Swaziland",2021,100088.406980922,100088.406980922,0
+"Epilepsy acute and chronic treatment",2.13,"Swaziland",2022,101416.368679414,101416.368679414,0
+"Epilepsy acute and chronic treatment",2.13,"Swaziland",2023,110543.311325162,102830.98727922,7712.32404594148
+"Epilepsy acute and chronic treatment",2.13,"Swaziland",2024,119945.92136478,104292.0544098,15653.8669549803
+"Epilepsy acute and chronic treatment",2.13,"Swaziland",2025,129604.285366141,105774.978300183,23829.3070659584
+"Epilepsy acute and chronic treatment",2.13,"Swaziland",2026,139595.048118028,107333.948712458,32261.0994055702
+"Epilepsy acute and chronic treatment",2.13,"Swaziland",2027,149830.802987245,108893.366224576,40937.436762668
+"Epilepsy acute and chronic treatment",2.13,"Swaziland",2028,160372.734161997,110495.988993862,49876.7451681353
+"Epilepsy acute and chronic treatment",2.13,"Swaziland",2029,171331.665505457,112208.992999724,59122.672505733
+"Epilepsy acute and chronic treatment",2.13,"Swaziland",2030,182789.710072893,114069.479337391,68720.2307355019
+"Heart failure chronic treatment",2.7,"Swaziland",2020,128316.717856782,128316.717856782,0
+"Heart failure chronic treatment",2.7,"Swaziland",2021,131192.130429969,131192.130429969,0
+"Heart failure chronic treatment",2.7,"Swaziland",2022,133944.834814665,133944.834814665,0
+"Heart failure chronic treatment",2.7,"Swaziland",2023,159042.977814525,136492.903773973,22550.0740405517
+"Heart failure chronic treatment",2.7,"Swaziland",2024,184773.26660602,138740.708504837,46032.5581011832
+"Heart failure chronic treatment",2.7,"Swaziland",2025,210943.12399594,140643.126271972,70299.9977239676
+"Heart failure chronic treatment",2.7,"Swaziland",2026,241648.84168157,144720.107773244,96928.733908326
+"Heart failure chronic treatment",2.7,"Swaziland",2027,273167.271473959,148337.203472786,124830.068001173
+"Heart failure chronic treatment",2.7,"Swaziland",2028,305353.591176273,151542.903796178,153810.687380095
+"Heart failure chronic treatment",2.7,"Swaziland",2029,338372.349539356,154528.730305505,183843.619233851
+"Heart failure chronic treatment",2.7,"Swaziland",2030,372106.385361074,157331.026233505,214775.359127569
+"Heart failure acute treatment",3.2,"Swaziland",2020,794196.451369195,794196.451369195,0
+"Heart failure acute treatment",3.2,"Swaziland",2021,811915.542452254,811915.542452254,0
+"Heart failure acute treatment",3.2,"Swaziland",2022,829326.529042057,829326.529042057,0
+"Heart failure acute treatment",3.2,"Swaziland",2023,1013111.31917781,845965.007259583,167146.311918224
+"Heart failure acute treatment",3.2,"Swaziland",2024,1202708.58846553,861237.284141562,341471.304323969
+"Heart failure acute treatment",3.2,"Swaziland",2025,1397103.79654819,874888.738558864,522215.05798933
+"Heart failure acute treatment",3.2,"Swaziland",2026,1620659.25411981,900764.726098014,719894.528021797
+"Heart failure acute treatment",3.2,"Swaziland",2027,1851820.58103654,924326.556294506,927494.024742038
+"Heart failure acute treatment",3.2,"Swaziland",2028,2089929.03622284,945923.629967083,1144005.40625576
+"Heart failure acute treatment",3.2,"Swaziland",2029,2336364.390976,966729.453209379,1369634.93776663
+"Heart failure acute treatment",3.2,"Swaziland",2030,2590766.21185845,987003.846080436,1603762.36577801
+"Tobacco tax",5.1,"Swaziland",2020,0,0,0
+"Tobacco tax",5.1,"Swaziland",2021,0,0,0
+"Tobacco tax",5.1,"Swaziland",2022,0,0,0
+"Tobacco tax",5.1,"Swaziland",2023,234.41344028634,0,234.41344028634
+"Tobacco tax",5.1,"Swaziland",2024,474.823786275204,0,474.823786275204
+"Tobacco tax",5.1,"Swaziland",2025,721.505897681515,0,721.505897681515
+"Tobacco tax",5.1,"Swaziland",2026,974.534640498991,0,974.534640498991
+"Tobacco tax",5.1,"Swaziland",2027,1234.04247471956,0,1234.04247471956
+"Tobacco tax",5.1,"Swaziland",2028,1500.72716741069,0,1500.72716741069
+"Tobacco tax",5.1,"Swaziland",2029,1775.95598712354,0,1775.95598712354
+"Tobacco tax",5.1,"Swaziland",2030,2061.32971046836,0,2061.32971046836
+"Alcohol policy",5.4,"Swaziland",2020,0,0,0
+"Alcohol policy",5.4,"Swaziland",2021,0,0,0
+"Alcohol policy",5.4,"Swaziland",2022,0,0,0
+"Alcohol policy",5.4,"Swaziland",2023,328.178816400876,0,328.178816400876
+"Alcohol policy",5.4,"Swaziland",2024,664.752106713671,0,664.752106713671
+"Alcohol policy",5.4,"Swaziland",2025,1010.10175777691,0,1010.10175777691
+"Alcohol policy",5.4,"Swaziland",2026,1364.32810206458,0,1364.32810206458
+"Alcohol policy",5.4,"Swaziland",2027,1727.61136376068,0,1727.61136376068
+"Alcohol policy",5.4,"Swaziland",2028,2100.92286224023,0,2100.92286224023
+"Alcohol policy",5.4,"Swaziland",2029,2486.1713499863,0,2486.1713499863
+"Alcohol policy",5.4,"Swaziland",2030,2885.59332976381,0,2885.59332976381

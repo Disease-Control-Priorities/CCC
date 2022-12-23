@@ -1,0 +1,56 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"Epilepsy acute and chronic treatment",2.13,"Djibouti",2020,72350.5462960656,72350.5462960656,0
+"Epilepsy acute and chronic treatment",2.13,"Djibouti",2021,73398.0769939653,73398.0769939653,0
+"Epilepsy acute and chronic treatment",2.13,"Djibouti",2022,74392.9628319936,74392.9628319936,0
+"Epilepsy acute and chronic treatment",2.13,"Djibouti",2023,80994.6118194511,75343.8249483266,5650.7868711245
+"Epilepsy acute and chronic treatment",2.13,"Djibouti",2024,87708.8455110151,76265.9399653094,11442.9055457057
+"Epilepsy acute and chronic treatment",2.13,"Djibouti",2025,94558.040877242,77182.4874829251,17375.553394317
+"Epilepsy acute and chronic treatment",2.13,"Djibouti",2026,101664.938321185,78188.0378749578,23476.9004462272
+"Epilepsy acute and chronic treatment",2.13,"Djibouti",2027,108892.75242121,79168.1888109705,29724.5636102391
+"Epilepsy acute and chronic treatment",2.13,"Djibouti",2028,116233.491210698,80121.0976247074,36112.3935859906
+"Epilepsy acute and chronic treatment",2.13,"Djibouti",2029,123673.85344668,81041.9661395909,42631.8873070895
+"Epilepsy acute and chronic treatment",2.13,"Djibouti",2030,131216.861441039,81937.2291004864,49279.6323405522
+"Aspirin for suspected ACS",2.5,"Djibouti",2020,649.162607385789,649.162607385789,0
+"Aspirin for suspected ACS",2.5,"Djibouti",2021,673.287797728918,673.287797728918,0
+"Aspirin for suspected ACS",2.5,"Djibouti",2022,697.246631796186,697.246631796186,0
+"Aspirin for suspected ACS",2.5,"Djibouti",2023,924.853551423886,721.461800175283,203.391751248603
+"Aspirin for suspected ACS",2.5,"Djibouti",2024,1167.85250847795,746.740790665814,421.111717812137
+"Aspirin for suspected ACS",2.5,"Djibouti",2025,1427.88951355143,773.467156687817,654.422356863613
+"Aspirin for suspected ACS",2.5,"Djibouti",2026,1703.03767210426,800.139116411371,902.898555692892
+"Aspirin for suspected ACS",2.5,"Djibouti",2027,1996.14383654952,827.940852352085,1168.20298419743
+"Aspirin for suspected ACS",2.5,"Djibouti",2028,2307.23025296955,856.511581340931,1450.71867162862
+"Aspirin for suspected ACS",2.5,"Djibouti",2029,2634.83170014333,885.128547156501,1749.70315298683
+"Aspirin for suspected ACS",2.5,"Djibouti",2030,2977.886608096,913.444618194922,2064.44198990108
+"Heart failure chronic treatment",2.7,"Djibouti",2020,188900.380165715,188900.380165715,0
+"Heart failure chronic treatment",2.7,"Djibouti",2021,197011.189468133,197011.189468133,0
+"Heart failure chronic treatment",2.7,"Djibouti",2022,205087.201325997,205087.201325997,0
+"Heart failure chronic treatment",2.7,"Djibouti",2023,273380.570824318,213259.319225408,60121.2515989099
+"Heart failure chronic treatment",2.7,"Djibouti",2024,346821.198077211,221726.438647203,125094.759430008
+"Heart failure chronic treatment",2.7,"Djibouti",2025,425964.611261422,230633.525145847,195331.086115574
+"Heart failure chronic treatment",2.7,"Djibouti",2026,513520.693156257,241053.058103376,272467.635052881
+"Heart failure chronic treatment",2.7,"Djibouti",2027,607694.679031171,251691.678077042,356003.00095413
+"Heart failure chronic treatment",2.7,"Djibouti",2028,708711.694744985,262549.932078291,446161.762666694
+"Heart failure chronic treatment",2.7,"Djibouti",2029,816658.472407131,273584.962898357,543073.509508774
+"Heart failure chronic treatment",2.7,"Djibouti",2030,931951.31506743,284873.156534171,647078.158533259
+"Treatment of early-stage breast cancer",4.3,"Djibouti",2020,1320.38340568652,1320.38340568652,0
+"Treatment of early-stage breast cancer",4.3,"Djibouti",2021,1368.11474789085,1368.11474789085,0
+"Treatment of early-stage breast cancer",4.3,"Djibouti",2022,1415.45863680209,1415.45863680209,0
+"Treatment of early-stage breast cancer",4.3,"Djibouti",2023,2406.89940079741,1463.84524960778,943.054151189628
+"Treatment of early-stage breast cancer",4.3,"Djibouti",2024,3468.039967181,1515.34502170517,1952.69494547583
+"Treatment of early-stage breast cancer",4.3,"Djibouti",2025,4607.12804264049,1570.65542008126,3036.47262255923
+"Treatment of early-stage breast cancer",4.3,"Djibouti",2026,5804.90178289565,1622.28621465758,4182.61556823807
+"Treatment of early-stage breast cancer",4.3,"Djibouti",2027,7082.225047756,1676.82588311246,5405.39916464353
+"Treatment of early-stage breast cancer",4.3,"Djibouti",2028,8443.9688224363,1734.08806785988,6709.88075457642
+"Treatment of early-stage breast cancer",4.3,"Djibouti",2029,9890.72013563958,1793.19600277973,8097.52413285985
+"Treatment of early-stage breast cancer",4.3,"Djibouti",2030,11428.0577035017,1854.44563601394,9573.61206748779
+"Tobacco tax",5.1,"Djibouti",2020,0,0,0
+"Tobacco tax",5.1,"Djibouti",2021,0,0,0
+"Tobacco tax",5.1,"Djibouti",2022,0,0,0
+"Tobacco tax",5.1,"Djibouti",2023,169.96100335482,0,169.96100335482
+"Tobacco tax",5.1,"Djibouti",2024,344.447860983351,0,344.447860983351
+"Tobacco tax",5.1,"Djibouti",2025,523.468898040928,0,523.468898040928
+"Tobacco tax",5.1,"Djibouti",2026,707.016527038082,0,707.016527038082
+"Tobacco tax",5.1,"Djibouti",2027,894.998037952727,0,894.998037952727
+"Tobacco tax",5.1,"Djibouti",2028,1087.33561937103,0,1087.33561937103
+"Tobacco tax",5.1,"Djibouti",2029,1283.88341688744,0,1283.88341688744
+"Tobacco tax",5.1,"Djibouti",2030,1484.52265290128,0,1484.52265290128

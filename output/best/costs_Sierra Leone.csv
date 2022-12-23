@@ -1,0 +1,100 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"IDU harm reduction measures",1.1,"Sierra Leone",2020,2820.34728533284,2820.34728533284,0
+"IDU harm reduction measures",1.1,"Sierra Leone",2021,2893.81113314043,2893.81113314043,0
+"IDU harm reduction measures",1.1,"Sierra Leone",2022,2970.71361914421,2970.71361914421,0
+"IDU harm reduction measures",1.1,"Sierra Leone",2023,33175.2151839263,3050.59449967139,30124.6206842549
+"IDU harm reduction measures",1.1,"Sierra Leone",2024,65004.5677205519,3132.69211192957,61871.8756086223
+"IDU harm reduction measures",1.1,"Sierra Leone",2025,98515.1516875728,3216.64696369812,95298.5047238747
+"IDU harm reduction measures",1.1,"Sierra Leone",2026,133684.357376639,3300.49799108351,130383.859385556
+"IDU harm reduction measures",1.1,"Sierra Leone",2027,170601.944062895,3386.05236438087,167215.891698514
+"IDU harm reduction measures",1.1,"Sierra Leone",2028,209297.808305929,3472.93830681045,205824.869999119
+"IDU harm reduction measures",1.1,"Sierra Leone",2029,249792.130907026,3560.85448153458,246231.276425491
+"IDU harm reduction measures",1.1,"Sierra Leone",2030,292095.79806965,3649.53180066309,288446.266268987
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2020,5773.43263793967,5773.43263793967,0
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2021,5944.15435443122,5944.15435443122,0
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2022,6120.15172399224,6120.15172399224,0
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2023,8611.8815461891,6300.8129427908,2311.0686033983
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2024,11243.4323825775,6484.84580077014,4758.58658180735
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2025,14017.6437136849,6671.46217948565,7346.18153419921
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2026,16996.5989795125,6884.23536516112,10112.3636143514
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2027,20143.2364841942,7099.6481972709,13043.5882869233
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2028,23463.3225078944,7318.3720519103,16144.9504559841
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2029,26963.7916101656,7541.19350266999,19422.5981074956
+"Pulmonary rehabilitation",1.2,"Sierra Leone",2030,30652.2044502849,7768.83817659155,22883.3662736934
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2020,6809.08856553114,6809.08856553114,0
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2021,6945.92119768299,6945.92119768299,0
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2022,7083.97702135007,7083.97702135007,0
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2023,30396.4084871018,7222.90894743012,23173.4995396716
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2024,54605.2390973494,7362.3281024072,47242.9109949422
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2025,79711.1158497619,7501.70104231535,72209.4148074466
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2026,105755.283848547,7643.9073397952,98111.3765087515
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2027,132705.276756812,7785.34142672727,124919.935330085
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2028,160557.196790684,7926.09631888944,152631.100471795
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2029,189308.93273043,8066.2974194121,181242.635311018
+"Epilepsy acute and chronic treatment",2.13,"Sierra Leone",2030,218958.372113476,8206.01818711461,210752.353926361
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2020,464.596839837022,464.596839837022,0
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2021,478.896942180025,478.896942180025,0
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2022,494.115969990701,494.115969990701,0
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2023,697.29232563128,510.168246820635,187.124078810646
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2024,913.468926034244,526.880821408123,386.588104626121
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2025,1143.22497920639,544.16147423752,599.063504968869
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2026,1387.02253271835,561.922059361412,825.100473356934
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2027,1645.59070075031,580.217045902658,1065.37365484765
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2028,1919.70570234281,599.091210618086,1320.61449172473
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2029,2210.31558210152,618.620497935061,1591.69508416646
+"Aspirin for suspected ACS",2.5,"Sierra Leone",2030,2518.39314853086,638.86028349871,1879.53286503215
+"Heart failure chronic treatment",2.7,"Sierra Leone",2020,294103.264766477,294103.264766477,0
+"Heart failure chronic treatment",2.7,"Sierra Leone",2021,303320.861152306,303320.861152306,0
+"Heart failure chronic treatment",2.7,"Sierra Leone",2022,311846.916886905,311846.916886905,0
+"Heart failure chronic treatment",2.7,"Sierra Leone",2023,436852.697292273,319619.715439568,117232.981852705
+"Heart failure chronic treatment",2.7,"Sierra Leone",2024,566305.991610005,326572.015890413,239733.975719592
+"Heart failure chronic treatment",2.7,"Sierra Leone",2025,699192.475020984,332611.305328923,366581.16969206
+"Heart failure chronic treatment",2.7,"Sierra Leone",2026,851830.836020122,344701.022692119,507129.813328003
+"Heart failure chronic treatment",2.7,"Sierra Leone",2027,1011598.39433816,356006.666436524,655591.727901641
+"Heart failure chronic treatment",2.7,"Sierra Leone",2028,1177662.45061136,366516.140972219,811146.309639138
+"Heart failure chronic treatment",2.7,"Sierra Leone",2029,1348993.39669291,376180.744318765,972812.652374142
+"Heart failure chronic treatment",2.7,"Sierra Leone",2030,1524653.96487209,385009.597079255,1139644.36779283
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2020,1156.92317018082,1156.92317018082,0
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2021,1188.30802181818,1188.30802181818,0
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2022,1221.98474897962,1221.98474897962,0
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2023,3197.50976338451,1258.03662821686,1939.47313516766
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2024,5294.07921802447,1296.38401821717,3997.6951998073
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2025,7522.98137018463,1337.046758594,6185.93461159062
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2026,9870.37256893199,1376.52347662355,8493.84909230844
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2027,12358.3918568764,1417.92532346569,10940.4665334107
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2028,14999.1832969629,1461.51574143142,13537.6675555314
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2029,17807.0958430679,1507.60501640076,16299.4908266672
+"Treatment of early-stage breast cancer",4.3,"Sierra Leone",2030,20797.5596394065,1556.43669783697,19241.1229415695
+"Tobacco tax",5.1,"Sierra Leone",2020,0,0,0
+"Tobacco tax",5.1,"Sierra Leone",2021,0,0,0
+"Tobacco tax",5.1,"Sierra Leone",2022,0,0,0
+"Tobacco tax",5.1,"Sierra Leone",2023,206.115034047839,0,206.115034047839
+"Tobacco tax",5.1,"Sierra Leone",2024,420.463895700529,0,420.463895700529
+"Tobacco tax",5.1,"Sierra Leone",2025,643.131951522272,0,643.131951522272
+"Tobacco tax",5.1,"Sierra Leone",2026,874.189783077937,0,874.189783077937
+"Tobacco tax",5.1,"Sierra Leone",2027,1113.60870113304,0,1113.60870113304
+"Tobacco tax",5.1,"Sierra Leone",2028,1361.42407942013,0,1361.42407942013
+"Tobacco tax",5.1,"Sierra Leone",2029,1617.69546752417,0,1617.69546752417
+"Tobacco tax",5.1,"Sierra Leone",2030,1882.5089263884,0,1882.5089263884
+"Tobacco policy",5.3,"Sierra Leone",2020,1493.8595609333,1493.8595609333,0
+"Tobacco policy",5.3,"Sierra Leone",2021,1524.57292658975,1524.57292658975,0
+"Tobacco policy",5.3,"Sierra Leone",2022,1555.66178035987,1555.66178035987,0
+"Tobacco policy",5.3,"Sierra Leone",2023,2579.01436630098,1587.08576534253,991.928600958452
+"Tobacco policy",5.3,"Sierra Leone",2024,3642.26002806529,1618.78140883033,2023.47861923495
+"Tobacco policy",5.3,"Sierra Leone",2025,4745.73930524328,1650.68898550811,3095.05031973517
+"Tobacco policy",5.3,"Sierra Leone",2026,5889.74421829835,1682.77718881425,4206.9670294841
+"Tobacco policy",5.3,"Sierra Leone",2027,7073.95495778472,1714.88515211911,5359.0698056656
+"Tobacco policy",5.3,"Sierra Leone",2028,8298.5440482476,1747.04014566162,6551.50390258599
+"Tobacco policy",5.3,"Sierra Leone",2029,9563.80734061318,1779.2795857885,7784.52775482468
+"Tobacco policy",5.3,"Sierra Leone",2030,10870.1722119787,1811.6471483428,9058.52506363591
+"Alcohol policy",5.4,"Sierra Leone",2020,0,0,0
+"Alcohol policy",5.4,"Sierra Leone",2021,0,0,0
+"Alcohol policy",5.4,"Sierra Leone",2022,0,0,0
+"Alcohol policy",5.4,"Sierra Leone",2023,288.561047666975,0,288.561047666975
+"Alcohol policy",5.4,"Sierra Leone",2024,588.648551443997,0,588.648551443997
+"Alcohol policy",5.4,"Sierra Leone",2025,900.379325191418,0,900.379325191418
+"Alcohol policy",5.4,"Sierra Leone",2026,1223.84758656078,0,1223.84758656078
+"Alcohol policy",5.4,"Sierra Leone",2027,1559.00708476729,0,1559.00708476729
+"Alcohol policy",5.4,"Sierra Leone",2028,1905.89992820391,0,1905.89992820391
+"Alcohol policy",5.4,"Sierra Leone",2029,2264.60106781513,0,2264.60106781513
+"Alcohol policy",5.4,"Sierra Leone",2030,2635.22186862035,0,2635.22186862035

@@ -1,0 +1,78 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"Pulmonary rehabilitation",1.2,"Central African Republic",2020,2915.87478615261,2915.87478615261,0
+"Pulmonary rehabilitation",1.2,"Central African Republic",2021,2979.47398675462,2979.47398675462,0
+"Pulmonary rehabilitation",1.2,"Central African Republic",2022,3044.72600107661,3044.72600107661,0
+"Pulmonary rehabilitation",1.2,"Central African Republic",2023,4467.28755038432,3112.24965194345,1355.03789844087
+"Pulmonary rehabilitation",1.2,"Central African Republic",2024,5956.07407352327,3183.18095653478,2772.89311698848
+"Pulmonary rehabilitation",1.2,"Central African Republic",2025,7516.76372760653,3257.80446356866,4258.95926403787
+"Pulmonary rehabilitation",1.2,"Central African Republic",2026,9190.79629229834,3349.19043889381,5841.60585340453
+"Pulmonary rehabilitation",1.2,"Central African Republic",2027,10965.8304005162,3446.39634540118,7519.43405511499
+"Pulmonary rehabilitation",1.2,"Central African Republic",2028,12846.7136444212,3548.54319423709,9298.17045018413
+"Pulmonary rehabilitation",1.2,"Central African Republic",2029,14834.3857388982,3654.22432390556,11180.1614149927
+"Pulmonary rehabilitation",1.2,"Central African Republic",2030,16931.0990409298,3762.9340568424,13168.1649840874
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2020,4310.56100486704,4310.56100486704,0
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2021,4393.90205897816,4393.90205897816,0
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2022,4481.46377306643,4481.46377306643,0
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2023,19244.6236774019,4572.97988373906,14671.6437936628
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2024,34625.4555830899,4668.4973684949,29956.958214595
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2025,50657.6605576363,4767.48118739143,45890.1793702449
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2026,67370.6898708037,4869.57865341298,62501.1112173907
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2027,84804.9832518769,4975.35819326556,79829.6250586113
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2028,102978.673596777,5083.93237400619,97894.7412227706
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2029,121897.552264085,5194.38278650842,116703.169477576
+"Epilepsy acute and chronic treatment",2.13,"Central African Republic",2030,141550.93254722,5305.62535010273,136245.307197118
+"Aspirin for suspected ACS",2.5,"Central African Republic",2020,228.026200439395,228.026200439395,0
+"Aspirin for suspected ACS",2.5,"Central African Republic",2021,232.265034934867,232.265034934867,0
+"Aspirin for suspected ACS",2.5,"Central African Republic",2022,236.821829423875,236.821829423875,0
+"Aspirin for suspected ACS",2.5,"Central African Republic",2023,346.923550916066,241.693127745185,105.230423170881
+"Aspirin for suspected ACS",2.5,"Central African Republic",2024,461.911790595742,246.880602174314,215.031188421428
+"Aspirin for suspected ACS",2.5,"Central African Republic",2025,582.190009672075,252.367050009984,329.822959662091
+"Aspirin for suspected ACS",2.5,"Central African Republic",2026,708.786701781165,258.372456955878,450.414244825287
+"Aspirin for suspected ACS",2.5,"Central African Republic",2027,842.511981069199,264.930156714487,577.581824354713
+"Aspirin for suspected ACS",2.5,"Central African Republic",2028,983.934640864985,271.991695094556,711.942945770429
+"Aspirin for suspected ACS",2.5,"Central African Republic",2029,1133.44670711684,279.487690262575,853.959016854269
+"Aspirin for suspected ACS",2.5,"Central African Republic",2030,1291.64028080667,287.422221801493,1004.21805900517
+"Heart failure chronic treatment",2.7,"Central African Republic",2020,94123.396725827,94123.396725827,0
+"Heart failure chronic treatment",2.7,"Central African Republic",2021,96688.5220575185,96688.5220575185,0
+"Heart failure chronic treatment",2.7,"Central African Republic",2022,99005.5974257617,99005.5974257617,0
+"Heart failure chronic treatment",2.7,"Central African Republic",2023,145028.073260307,101037.5010419,43990.5722184078
+"Heart failure chronic treatment",2.7,"Central African Republic",2024,192346.673991861,102777.39986285,89569.2741290114
+"Heart failure chronic treatment",2.7,"Central African Republic",2025,240516.42131491,104182.109590553,136334.311724358
+"Heart failure chronic treatment",2.7,"Central African Republic",2026,295492.480306825,107559.544984909,187932.935321916
+"Heart failure chronic treatment",2.7,"Central African Republic",2027,353010.935221303,110744.902181003,242266.0330403
+"Heart failure chronic treatment",2.7,"Central African Republic",2028,412658.582857107,113686.265586399,298972.317270708
+"Heart failure chronic treatment",2.7,"Central African Republic",2029,473767.127957429,116298.169372207,357468.958585221
+"Heart failure chronic treatment",2.7,"Central African Republic",2030,535726.929869584,118549.252109876,417177.677759708
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2020,646.799462117687,646.799462117687,0
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2021,658.439183782229,658.439183782229,0
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2022,671.32628360952,671.32628360952,0
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2023,1742.35992163036,685.518657690633,1056.84126393973
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2024,2863.58108525595,701.198483565309,2162.38260169064
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2025,4043.06362133176,718.513375505016,3324.55024582674
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2026,5273.89268553412,735.398398322269,4538.49428721185
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2027,6575.41156732899,754.268536522653,5821.14303080633
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2028,7957.0277398211,775.117631813528,7181.91010800758
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2029,9426.96508250784,797.843409881337,8629.1216726265
+"Treatment of early-stage breast cancer",4.3,"Central African Republic",2030,10993.6008732098,822.403378053837,10171.1974951559
+"Alcohol tax",5.2,"Central African Republic",2020,488.945361241398,488.945361241398,0
+"Alcohol tax",5.2,"Central African Republic",2021,497.847651556812,497.847651556812,0
+"Alcohol tax",5.2,"Central African Republic",2022,507.321470930971,507.321470930971,0
+"Alcohol tax",5.2,"Central African Republic",2023,582.033819664733,517.363395257541,64.6704244071925
+"Alcohol tax",5.2,"Central African Republic",2024,659.969317290548,527.975299202689,131.994018087859
+"Alcohol tax",5.2,"Central African Republic",2025,741.32862573457,539.147635555171,202.180990179399
+"Alcohol tax",5.2,"Central African Republic",2026,826.356361140224,550.903330652184,275.45303048804
+"Alcohol tax",5.2,"Central African Republic",2027,915.016104243492,563.085322375874,351.930781867618
+"Alcohol tax",5.2,"Central African Republic",2028,1007.37335881621,575.639667028424,431.733691787784
+"Alcohol tax",5.2,"Central African Republic",2029,1103.4323352963,588.494121683806,514.938213612495
+"Alcohol tax",5.2,"Central African Republic",2030,1203.18238912545,601.587082145149,601.595306980304
+"Alcohol policy",5.4,"Central African Republic",2020,0,0,0
+"Alcohol policy",5.4,"Central African Republic",2021,0,0,0
+"Alcohol policy",5.4,"Central African Republic",2022,0,0,0
+"Alcohol policy",5.4,"Central African Republic",2023,181.07718834014,0,181.07718834014
+"Alcohol policy",5.4,"Central African Republic",2024,369.583181492798,0,369.583181492798
+"Alcohol policy",5.4,"Central African Republic",2025,566.107104589257,0,566.107104589257
+"Alcohol policy",5.4,"Central African Republic",2026,771.270217950694,0,771.270217950694
+"Alcohol policy",5.4,"Central African Republic",2027,985.410841046514,0,985.410841046514
+"Alcohol policy",5.4,"Central African Republic",2028,1208.86391646423,0,1208.86391646423
+"Alcohol policy",5.4,"Central African Republic",2029,1441.84395236644,0,1441.84395236644
+"Alcohol policy",5.4,"Central African Republic",2030,1684.49400682818,0,1684.49400682818

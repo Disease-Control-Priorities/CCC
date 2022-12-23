@@ -112,6 +112,42 @@ df_both<-left_join(newdf, ccc.vsl)%>%
 #add intervention names
 write.csv(bind_rows(df_code, df_both)%>%arrange(wb2021), "Figures/BCRs_int.csv")
 
+#get country-specific BCRs for optimal benefit package
+cdf<-df%>%
+  filter(location_name %in% all.locs)%>%
+  mutate(DALY.ave = ifelse(DALY.ave<1,0,DALY.ave))%>%
+  mutate(`Intervention package` = ifelse(Code==5.4,"Alcohol regulations",
+                                         ifelse(Code==5.2, "Alcohol tax",
+                                                ifelse(Code==5.1, "Tobacco tax",
+                                                       ifelse(Code==5.3, "Tobacco regulations",
+                                                              ifelse(Code==5.5, "Sodium regulations", 
+                                                                     ifelse(Code==5.6, "Trans fat regulations", `Intervention package`)))))))%>%
+  mutate(DALY.benefit = ifelse(Code%in%c(5.1,5.2,5.3,5.4), DALY.ave*0.10, DALY.ave), #consumer surplus
+         DALY.benefit = ifelse(Code %in% c(5.5,5.6), DALY.benefit*0.50, DALY.benefit),  #consumer surplus
+         DALY.ave = ((1-0.08)^(year_id-2022))*DALY.ave, #discount at 8%
+         DALY.benefit = ((1-0.08)^(year_id-2022))*DALY.benefit, #discount at 8%
+         sum_increment_all =  ((1-0.08)^(year_id-2022))*sum_increment_all)%>% #discount at 8%
+  group_by(location_name, wb2021, Code, `Intervention package`, year_id)%>%
+  summarise(DALY.ave = sum(DALY.ave, na.rm=T),
+            DALY.benefit = sum(DALY.benefit, na.rm=T),
+            sum_increment_all = sum(sum_increment_all, na.rm=T))
+
+
+cdf_code<-left_join(cdf, ccc.vsl)%>%
+  mutate(benefit = val*DALY.benefit)%>%
+  group_by(Code, `Intervention package`, location_name)%>%
+  summarise(`Incremental cost (billions)` = sum(sum_increment_all, na.rm=T)/1e9,
+            `DALY.ave (millions)` = sum(DALY.ave, na.rm=T)/1e6,
+            `benefit (billions)`=sum(benefit, na.rm=T)/1e9,
+            BCR =  `benefit (billions)`/`Incremental cost (billions)`)%>%
+  left_join(., names)%>%
+  arrange(-BCR)%>%
+  filter(Intervention!="Heart failure acute treatmentC")%>%
+  mutate(Intervention = ifelse(Code>5, `Intervention package`, Intervention))%>%
+  mutate(BCR = ifelse(BCR==Inf,0,BCR))
+
+write.csv(cdf_code, "Figures/BCRs_int_bycountry.csv")
+
 #how much from int
 DA<-sum(df_code$`DALY.ave (millions)`)
 int<-sum(df_code$`DALY.ave (millions)`[df_code$Code>5])

@@ -58,3 +58,46 @@ for(is in all.locs[c(2:77)]){
 }
 
 save(all.pin.opt, dadt.all.opt, q30.opt, dalys.opt, file = paste0("output/results_target_all.Rda"))
+
+
+
+
+
+############
+#for 3q0 and all baseline NCD deaths
+############
+
+
+time1<-Sys.time()
+for (is in all.locs){
+    
+    projection = project_pop(is, interventions, 0.80, "yes", sel.cse, "varying", "yes", "yes", 1)      
+    
+    all.q30    = data.table(projection$q30df) 
+    cse.deaths = data.table(projection$D0cse)
+    
+    #########################################################################################
+    save(all.q30, cse.deaths, file = paste0("output/for_q30/results_", is, ".Rda"))
+    
+}
+
+time2<-Sys.time()
+
+time2-time1
+
+## 40 mins
+
+load("output/for_q30/results_Afghanistan.Rda")
+
+q30.opt<-all.q30
+ncds.opt<-cse.deaths%>%mutate(location = "Afghanistan")
+
+for(is in all.locs[c(2:77)]){
+    load(paste0("output/for_q30/results_", is, ".Rda"))
+    q30.opt<-bind_rows(q30.opt, all.q30)
+    ncds.opt<-bind_rows(ncds.opt, cse.deaths%>%mutate(location = is))
+    
+}
+
+save(q30.opt, ncds.opt,  file = paste0("output/results_q30.Rda"))
+

@@ -10,20 +10,19 @@ source("utils/demmod_icer_rankb.R")
 
 ###############################################################################################################################
 
-hics<-read.csv("new_inputs/country_groupings.csv", stringsAsFactors = F)%>%
-    filter(wb2021%in%c("HIC","UMIC"))%>%pull(location_gbd)
+hics          <- read.csv("new_inputs/country_groupings.csv", stringsAsFactors = F)%>%filter(wb2021%in%c("HIC","UMIC"))%>%pull(location_gbd)
 all.locs      <- data.frame(loc=c(countries[c(1:118, 120:126, 128:175)]))# not palestine, not puerto rico
-all.locs      <-as.character(all.locs%>%filter(loc%!in%hics)%>%pull(loc)) #77 countries
-interventions <- read.csv("Figures/BCRs_int.csv") %>% filter(Code<5 & BCR>15)%>% pull(Code) %>% unique() %>% sort()
+all.locs      <- as.character(all.locs%>%filter(loc%!in%hics)%>%pull(loc)) #77 countries
 
-total         <- length(interventions)
 sel.cse       <- cse_g %>% pull(cause_name) %>% unique()
-
+codes         <- read.csv("Figures/BCRs_int_bycountry.csv")
 
 time1<-Sys.time()
 for (is in all.locs){
     
-    projection = project_pop(is, interventions, 0.80, "yes", sel.cse, "varying", "yes", "yes", 1)      
+    interventions <- codes %>% filter(location_name==is, Code<5, BCR>=15)%>% pull(Code) %>% unique() %>% sort()
+    
+    projection = project_pop(is, interventions, 0.80, "no", sel.cse, "varying", "yes", "yes", 1)      
     
     all.pin    = data.table(projection$pin.est)
     all.dalys  = data.table(projection$dalys) 
@@ -39,7 +38,7 @@ time2<-Sys.time()
 
 time2-time1
 
-## 40 mins
+## 55 mins
 
 load("output/best/results_Afghanistan.Rda")
 
@@ -58,3 +57,6 @@ for(is in all.locs[c(2:77)]){
 }
 
 save(all.pin.opt, dadt.all.opt, q30.opt, dalys.opt, file = paste0("output/results_target_best.Rda"))
+
+
+

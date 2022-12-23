@@ -16,58 +16,28 @@ library(stringr)
 '%!in%' <- function(x,y)!('%in%'(x,y))
 ```
 
-# Functions
-```{r}
-tradable_conversion <- function(unit_cost, tradable_ratio, currency, global_inflation, exchange){
-  if(currency == "USD") {
-    unit_cost*tradable_ratio*global_inflation} else {
-      ((unit_cost*tradable_ratio)/exchange)*global_inflation
-    }
-}
-
-nontradable_conversion <- function(unit_cost,tradable_ratio, currency, cpi_adjust, exchange,country, exchange_end, gni, gni_selected_country){
-  if(currency == "USD" & (country == "LIC" | country == "LMIC" | country == "LIC+LMIC+UMIC")) {
-    unit_cost*(1-tradable_ratio)*cpi_adjust*(gni_selected_country/gni)
-  } else if (currency == "USD" & (country != "LIC" & country != "LMIC" & country != "LIC+LMIC+UMIC")){
-    ((unit_cost*exchange)*(1-tradable_ratio))*cpi_adjust/exchange_end*(gni_selected_country/gni)} 
-  else {
-      ((unit_cost*(1-tradable_ratio)*cpi_adjust)/exchange_end)*(gni_selected_country/gni)
-    }
-}
-```
 
 # Install the necessary input files
 ```{r}
-load("output/results_target_all.Rda")
 
+#clinical interventions
+load("output/results_target_all.Rda")
 all.pin.opt$unique_id<-paste0("C", all.pin.opt$Code, "_", all.pin.opt$sub_id)
 
-# Unit cost adjustment
-uc <- read.csv("new_inputs/PIN_new.csv", stringsAsFactors=F)
-uc$unique_id <- paste0("C",uc$NCD,"_",uc$sub_id)
+clinical.pin<-all.pin.opt
+clinical.dadt<-dadt.all.opt
+clinical.dalys<-dalys.opt
+clinical.q30<-q30.opt
 
-#table(uc$unique_id)
-uc <- uc %>%filter(Original.Currency != "NA")%>%
-  mutate(Year = ifelse(Year>2020,2020,Year))
+load("for_parallel_processing/output2023_target_intersectoral.Rda")
+all.pin$unique_id<-paste0("C", all.pin$Code, "_", all.pin$sub_id)
 
-# Necessary files
-# Exchange rate
-exchange <- read_xlsx("new_inputs/Exchange_rate.xlsx", na = "..")
-exchange<-exchange[,c(1:60)]
-ex2<-read_xlsx("new_inputs/Exchange_rate_2020.xlsx", skip=3)
-ex2<-ex2[,c(1,61,62)]
+int.pin<-all.pin
+int.dadt<-dadt.all
+int.dalys<-all.dalys
+int.q30<-all.q30
 
-exchange<-left_join(exchange, ex2, by="Country")
-exchange <- exchange%>%gather(year, value, -Country)%>%group_by(Country)%>%fill(value)%>%spread(year, value)
-
-
-# Regional inflation
-#regional_inflation <- read_xls("new_inputs/Regional_inflation_20200212.xls", sheet = "Data")
-regional_inflation <- read_xls("new_inputs/Regional_inflation_2020.xls", sheet = "Data", skip=3)
-#regional_inflation[,c(5:64)] <- (regional_inflation[,c(5:64)]/100)+1
-regional_inflation[,c(5:65)] <- (regional_inflation[,c(5:65)]/100)+1
-
-# COUntry grouping
+# Country grouping
 class <- read.csv("new_inputs/Country_groupings.csv")
 
 #Country list: only eligible countries
@@ -77,39 +47,12 @@ country_list <- class %>%
   rename(Country = location_gbd,
          World_bank = wb2021)
 
-
-# CPI adjusted
-cpi <- read.csv("new_inputs/CPI_WB_2018_added2.csv", stringsAsFactors=F)
-cpi<-cpi[,-c(66:71)]
-#add 2020 data
-cpi2<-read.csv("new_inputs/CPI_2020.csv", stringsAsFactors=F)
-names(cpi2)[1]<-"Country"
-cpi2<-cpi2[,c(1,65)]
-cpi<-left_join(cpi, cpi2, by="Country")
-
-cpi <- cpi[,c(3,6:66)]%>%gather(year, value, -Country)%>%group_by(Country)%>%fill(value)%>%spread(year, value)
-
-#also add France
-#france<-read.csv("new_inputs/CPI_2020.csv", stringsAsFactors=F)%>%filter(Country.Code=="FRA")
-#names(france)[1]<-"Country"
-#cpi<-bind_rows(cpi, france[,-c(2,3,4)])
-
-# GNI
-GNI <- read.csv("new_inputs/GNI_WB_USD_2017_re2.csv", stringsAsFactors=F)
-GNI<-GNI[,-c(1,4,5,6,66,67,68)]
-GNI2 <- read.csv("new_inputs/GNI_2020.csv", stringsAsFactors=F)
-GNI2<-GNI2[,c(1,64,65)]
-names(GNI2)[1]<-"Country"
-
-GNI<-left_join(GNI, GNI2, by="Country")
-GNI <- GNI%>%gather(year, value, -Country, -Country.Code)%>%group_by(Country.Code)%>%fill(value)%>%spread(year, value)
-#load("new_demography/output/icer_rank_output.Rda")
-
 ```
 
 
-# Table2 (NCD interventions): Based on ICER ranking
 ```{r data install}
+
+all.pin.opt<-bind_rows(clinical.pin, int.pin)
 
 #country list of no alcohol
 noalc.list<-c("Afghanistan", "Bangladesh", "Iran", "Libya", "Sudan", "Yemen")
@@ -117,23 +60,9 @@ noalc.list<-c("Afghanistan", "Bangladesh", "Iran", "Libya", "Sudan", "Yemen")
 #list of alcohol policy unique_ids
 intersectoral.alc<-c("5.2_a", "5.4_a")
 
-###########################################  
-##update PIN for intersectoral policies##
-############################################
-
 ##edit for countries in which alcohol is banned##
 all.pin.opt$pin[all.pin.opt$unique_id%in%intersectoral.alc & all.pin.opt$location_name%in%noalc.list]<-0
 
-benefits.opt <- merge(y = dalys.opt, x = class, by.x = "location_gbd", by.y = "location_name")%>%rename(Country  = location_gbd)
-```
-
-# Settings
-```{r}
-#Setting
-#tradable_ratio <- 0.3
-UC_Years <- 2020  # The output year
-# ancillary_HF_cost <- 0.5 # possible change
-# above_HF <- 0.17 # possible change
 ```
 
 
@@ -143,6 +72,8 @@ i <- 1
 c <- 1
 n <- 1
 y <- 1
+
+UC_Years<-2020
 
 locs<-unique(all.pin.opt$location_name)
 country_list<-country_list%>%filter(Country%in% locs, World_bank!="HIC")
@@ -183,55 +114,138 @@ for (i in 2:77){
 }
 
 write.csv(all.costs, "output/costs_all.csv", row.names = F)
-sum(all.costs$incremental.cost, na.rm=T)/1e9
 
-##### Results table ######
 
-da<-dadt.all.opt%>%group_by(year_id, location_name)%>%
-  summarise(deaths_averted = sum(Deaths.Avert))
+```
 
-sum(da$deaths_averted)/1e6
+```{r}
 
-dalys<-dalys.opt%>%group_by(year_id, location_name)%>%
-  summarise(dalys_averted = sum(DALY.ave))%>%
-  mutate(year_id = as.numeric(year_id))
+##### Results ######
 
-sum(dalys$dalys_averted)/1e6
+#Table 2#
 
-final_HLI<-left_join(final_HLI, da)
-final_HLI<-left_join(final_HLI, dalys)
+#Total pop 2022
+pop<-read.csv("ccc_pop.csv", stringsAsFactors = F)%>%
+  gather(year, pop, -region)%>%
+  mutate(year = as.numeric(gsub("X", "", year)),
+         region = ifelse(region=="LMC", "LMIC", region),
+         pop = pop*1e6)%>%
+  filter(region%in%c("LIC", "LMIC"))
 
-groups<-read.csv("new_inputs/Country_groupings_HLI.csv", stringsAsFactors = F)%>%
-  select(location_name, iso3, countryname_WHO)
+pop%>%filter(year==2022)
 
-gdp<-read.csv("new_inputs/gdp_pc.csv", stringsAsFactors = F, skip=4)%>% 
-  pivot_longer(X1960:X2021) %>% 
-  group_by(Country.Code) %>% 
-  fill(value, .direction = "down") %>% 
-  pivot_wider(Country.Code)%>%
-  select(Country.Code, X2021)%>%
-  rename(iso3 = Country.Code, gdp_pc = X2021)%>%
-  left_join(., groups%>%select(-countryname_WHO))
+#Spending in 2022
+sum(all.costs$Baseline[all.costs$year_id==2022], na.rm=T)/1e9
+WB<-read.csv("new_inputs/country_groupings.csv", stringsAsFactors = F)%>%
+  select(wb2021, location_gbd)%>%rename(location_name = location_gbd)
+all.costs%>%left_join(., WB)%>%filter(year_id==2022)%>%
+  group_by(wb2021)%>%summarise(cost = sum(Baseline, na.rm=T)/1e9)
 
-#add 40q30
-#add economic benefit
-#2020 total cost
+#NCD deaths 2022 (n=4)
+load("output/results_q30.Rda")
+sum(ncds.opt$V4)/1e6
+left_join(ncds.opt%>%rename(location_name = location), WB)%>%group_by(wb2021)%>%summarise(deaths = sum(V4)/1e6)
 
-table2<-final_HLI%>%
-  mutate(sum_increment_all = Adj_cost-Base_cost,
-         DALY.ave = ((1-0.05)^(year_id-2022))*dalys_averted,
-         sum_increment_all =  ((1-0.05)^(year_id-2022))*sum_increment_all,
-         Total.cost = ((1-0.05)^(year_id-2022))*sum_increment_all)%>%
-  left_join(., gdp)%>%
-  mutate(benefit = 1.65*gdp_pc*DALY.ave)%>%
-  ungroup()%>%
-  summarise(DALY.ave = sum(DALY.ave)/1e6,
-            DA = sum(deaths_averted)/1e6,
-            Incremental.cost = sum(sum_increment_all)/1e9,
-            benefit = sum(benefit, na.rm=T)/1e9)
-  
-write.csv(final_all_ICER, "ccc/all_costs_opt.csv", row.names = F)
+#NCD deaths 2030 (n=12)
+sum(ncds.opt$V12)/1e6
+left_join(ncds.opt%>%rename(location_name = location), WB)%>%group_by(wb2021)%>%summarise(deaths = sum(V12)/1e6)
 
+
+#% achieving 1/3 reduction in 40q30
+load("output/goal.q30.covid_0830.Rda")
+
+reached.q30<-left_join(q30.opt, goal.q30.out%>%select(location_name, Baseline_2015, Target_40q30)%>%unique())%>%
+  mutate(reached = ifelse(Adjusted - Target_40q30<=0,1,0))%>%
+  filter(year_id==2030)%>%
+  left_join(., WB)%>%
+  mutate(all = 1)%>%
+  group_by(wb2021)%>%
+  summarise(prop_reached = sum(reached, na.rm=T)/sum(all, na.rm=T))
+
+#Deaths averted 2023-2030
+dadt.all.opt<-bind_rows(clinical.dadt, int.dadt)
+sum(dadt.all.opt$Deaths.Avert)/1e6
+
+#Deaths averted 2023-2030
+dalys.opt<-bind_rows(clinical.dalys, int.dalys)
+sum(dalys.opt$DALY.ave)/1e6
+
+#Economic benefit
+value.daly<-read.csv("DALY_value.csv", stringsAsFactors = F)%>%
+  gather(year, val, -wb2021)%>%
+  mutate(year = as.numeric(gsub("X", "", year)))
+
+ben.costs<-all.costs%>%
+  mutate(Code = ifelse(Code<5,1,Code))%>%
+  group_by(Code, year_id, location_name)%>%
+  summarise(sum_increment_all = sum(incremental.cost, na.rm=T))
+
+sum(ben.costs$sum_increment_all)/1e9
+
+benefit<-left_join(unique(dalys.opt)%>%select(DALY.ave, location_name, year_id, Code), WB)%>%
+  mutate(year_id = as.numeric(year_id),
+         Code = ifelse(is.na(Code), 1,Code))%>%
+  group_by(wb2021,location_name, year_id, Code)%>%
+  summarise(DALY.ave = sum(DALY.ave))%>%
+  left_join(., dadt.all.opt%>%select(year_id, location_name, Code, Deaths.Avert)%>%
+              mutate(Code = ifelse(is.na(Code),1,Code))%>%
+  group_by(location_name, year_id, Code)%>%
+  summarise(Deaths.Avert = sum(Deaths.Avert)))%>%
+  left_join(., ben.costs)
+
+sum(benefit$sum_increment_all)/1e9
+sum(benefit$DALY.ave)/1e6
+sum(benefit$Deaths.Avert)/1e6
+
+benefit2<-benefit%>%
+  mutate(DALY.ave = ifelse(DALY.ave<1,0, DALY.ave),
+         Deaths.Avert = ifelse(Deaths.Avert<1,0,Deaths.Avert),
+         DALY.benefit = ifelse(Code%in%c(5.1,5.2,5.3,5.4), DALY.ave*0.10, DALY.ave), #consumer surplus
+         DALY.benefit = ifelse(Code %in% c(5.5,5.6), DALY.benefit*0.50, DALY.benefit),  #consumer surplus
+         Deaths.Avert = ((1-0.08)^(year_id-2022))*Deaths.Avert,
+         DALY.ave = ((1-0.08)^(year_id-2022))*DALY.ave, #discount at 8%
+         DALY.benefit = ((1-0.08)^(year_id-2022))*DALY.benefit, #discount at 8%
+         sum_increment_all =  ((1-0.08)^(year_id-2022))*sum_increment_all)%>% #discount at 8%
+  group_by(year_id, wb2021)%>%
+  filter(year_id>=2023)%>%
+  summarise(Deaths.Avert = sum(Deaths.Avert),
+            DALY.ave = sum(DALY.ave),
+            DALY.benefit = sum(DALY.benefit),
+            Incremental.cost = sum(sum_increment_all))%>%
+  left_join(., value.daly%>%rename(year_id = year))%>%
+  mutate(benefit = DALY.benefit*val)%>%
+  group_by(wb2021)%>%
+  summarise(deaths.avert = sum(Deaths.Avert)/1e6,
+            dalys.avert = sum(DALY.ave)/1e6,
+            benefit = sum(benefit)/1e9,
+            inc.cost = sum(Incremental.cost)/1e9)%>%
+  mutate(BCR = benefit/inc.cost)
+
+benefit2%>%
+  summarise(deaths.avert = sum(deaths.avert),
+            dalys.avert = sum(dalys.avert),
+            benefit = sum(benefit),
+            inc.cost = sum(inc.cost),
+            BCR = benefit/inc.cost)
+
+#Total cost in 2030 per capita
+all.costs%>%
+  left_join(.,WB)%>%
+  mutate(total.cost = Adjusted*((1-0.08)^(year_id-2022)))%>% #discount at 8%
+  filter(year_id == 2030)%>%
+  group_by(wb2021)%>%
+  summarise(total.cost = sum(total.cost, na.rm=T))%>%
+  left_join(., pop%>%filter(year==2030)%>%select(-year)%>%rename(wb2021=region))%>%
+  mutate(cost.per.capita = total.cost/pop)
+
+all.costs%>%
+  left_join(.,WB)%>%
+  mutate(total.cost = Adjusted*((1-0.08)^(year_id-2022)))%>% #discount at 8%
+  filter(year_id == 2030)%>%
+  group_by(wb2021)%>%
+  summarise(total.cost = sum(total.cost, na.rm=T))%>%
+  left_join(., pop%>%filter(year==2030)%>%select(-year)%>%rename(wb2021=region))%>%
+  summarise(cost.per.capita = sum(total.cost)/sum(pop))
 
 
 ```

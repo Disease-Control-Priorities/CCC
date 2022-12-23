@@ -1,0 +1,100 @@
+"Intervention","Code","location_name","year_id","Adjusted","Baseline","incremental.cost"
+"Pulmonary rehabilitation",1.2,"Solomon Islands",2020,1332.92716313951,1332.92716313951,0
+"Pulmonary rehabilitation",1.2,"Solomon Islands",2021,1383.42817004661,1383.42817004661,0
+"Pulmonary rehabilitation",1.2,"Solomon Islands",2022,1434.65427856051,1434.65427856051,0
+"Pulmonary rehabilitation",1.2,"Solomon Islands",2023,2324.92763023067,1486.62888818008,838.29874205059
+"Pulmonary rehabilitation",1.2,"Solomon Islands",2024,3280.32005309309,1540.51245386819,1739.80759922489
+"Pulmonary rehabilitation",1.2,"Solomon Islands",2025,4305.3063423159,1596.07476175012,2709.23158056578
+"Pulmonary rehabilitation",1.2,"Solomon Islands",2026,5425.8999658282,1659.69388177945,3766.20608404875
+"Pulmonary rehabilitation",1.2,"Solomon Islands",2027,6628.00642376663,1723.56560706701,4904.44081669962
+"Pulmonary rehabilitation",1.2,"Solomon Islands",2028,7916.00552601965,1788.14720154431,6127.85832447534
+"Pulmonary rehabilitation",1.2,"Solomon Islands",2029,9295.03928277331,1853.90470335824,7441.13457941507
+"Pulmonary rehabilitation",1.2,"Solomon Islands",2030,10772.6727280738,1921.58634764908,8851.08638042473
+"Epilepsy acute and chronic treatment",2.13,"Solomon Islands",2020,19702.5315078446,19702.5315078446,0
+"Epilepsy acute and chronic treatment",2.13,"Solomon Islands",2021,20198.5776265079,20198.5776265079,0
+"Epilepsy acute and chronic treatment",2.13,"Solomon Islands",2022,20697.4726050702,20697.4726050702,0
+"Epilepsy acute and chronic treatment",2.13,"Solomon Islands",2023,22790.7383738428,21200.6868593887,1590.05151445415
+"Epilepsy acute and chronic treatment",2.13,"Solomon Islands",2024,24969.61742494,21711.0987533897,3258.51867155028
+"Epilepsy acute and chronic treatment",2.13,"Solomon Islands",2025,27236.9688587007,22229.4819810842,5007.48687761644
+"Epilepsy acute and chronic treatment",2.13,"Solomon Islands",2026,29600.3981620374,22759.9673798331,6840.43078220435
+"Epilepsy acute and chronic treatment",2.13,"Solomon Islands",2027,32051.0632763321,23293.9286977873,8757.13457854479
+"Epilepsy acute and chronic treatment",2.13,"Solomon Islands",2028,34593.9607689627,23834.0846756844,10759.8760932782
+"Epilepsy acute and chronic treatment",2.13,"Solomon Islands",2029,37235.079691578,24383.2971991851,12851.782492393
+"Epilepsy acute and chronic treatment",2.13,"Solomon Islands",2030,39979.2643770489,24943.1784905445,15036.0858865044
+"CVD primary prevention",2.4,"Solomon Islands",2020,191740.944424391,191740.944424391,0
+"CVD primary prevention",2.4,"Solomon Islands",2021,197301.290601811,197301.290601811,0
+"CVD primary prevention",2.4,"Solomon Islands",2022,203025.138264785,203025.138264785,0
+"CVD primary prevention",2.4,"Solomon Islands",2023,326742.844050834,208929.234895752,117813.609155082
+"CVD primary prevention",2.4,"Solomon Islands",2024,457712.768237754,215069.245361794,242643.52287596
+"CVD primary prevention",2.4,"Solomon Islands",2025,596398.079505474,221443.493536211,374954.585969263
+"CVD primary prevention",2.4,"Solomon Islands",2026,743533.292936696,228133.38702655,515399.905910146
+"CVD primary prevention",2.4,"Solomon Islands",2027,899128.917824019,234984.550486736,664144.367337283
+"CVD primary prevention",2.4,"Solomon Islands",2028,1063694.60847047,242036.717253957,821657.891216517
+"CVD primary prevention",2.4,"Solomon Islands",2029,1237670.24351177,249298.354640073,988371.8888717
+"CVD primary prevention",2.4,"Solomon Islands",2030,1421482.55639894,256772.537505303,1164710.01889364
+"Aspirin for suspected ACS",2.5,"Solomon Islands",2020,145.630938759588,145.630938759588,0
+"Aspirin for suspected ACS",2.5,"Solomon Islands",2021,150.912196176051,150.912196176051,0
+"Aspirin for suspected ACS",2.5,"Solomon Islands",2022,156.166084054244,156.166084054244,0
+"Aspirin for suspected ACS",2.5,"Solomon Islands",2023,252.397308621395,161.390455950769,91.0068526706258
+"Aspirin for suspected ACS",2.5,"Solomon Islands",2024,354.652437098872,166.627240239072,188.0251968598
+"Aspirin for suspected ACS",2.5,"Solomon Islands",2025,463.066146849162,171.889145267984,291.177001581178
+"Aspirin for suspected ACS",2.5,"Solomon Islands",2026,577.523130853037,177.101487113426,400.421643739611
+"Aspirin for suspected ACS",2.5,"Solomon Islands",2027,697.998506589379,182.259455821457,515.739050767922
+"Aspirin for suspected ACS",2.5,"Solomon Islands",2028,824.997267144767,187.482472854471,637.514794290296
+"Aspirin for suspected ACS",2.5,"Solomon Islands",2029,959.349685087535,192.902347094377,766.447337993158
+"Aspirin for suspected ACS",2.5,"Solomon Islands",2030,1101.97211773134,198.613036729378,903.359081001967
+"Heart failure chronic treatment",2.7,"Solomon Islands",2020,26080.222374981,26080.222374981,0
+"Heart failure chronic treatment",2.7,"Solomon Islands",2021,27183.3831004931,27183.3831004931,0
+"Heart failure chronic treatment",2.7,"Solomon Islands",2022,28297.3052305297,28297.3052305297,0
+"Heart failure chronic treatment",2.7,"Solomon Islands",2023,46014.4071349794,29423.0005398288,16591.4065951506
+"Heart failure chronic treatment",2.7,"Solomon Islands",2024,65160.1572950789,30589.4902352033,34570.6670598756
+"Heart failure chronic treatment",2.7,"Solomon Islands",2025,85842.1781888884,31790.6409439852,54051.5372449032
+"Heart failure chronic treatment",2.7,"Solomon Islands",2026,108778.941454338,33207.1817065425,75571.759747795
+"Heart failure chronic treatment",2.7,"Solomon Islands",2027,133562.164394911,34620.6667215477,98941.4976733632
+"Heart failure chronic treatment",2.7,"Solomon Islands",2028,160292.658331221,36042.1397305479,124250.518600673
+"Heart failure chronic treatment",2.7,"Solomon Islands",2029,189099.728606745,37485.2243862094,151614.504220535
+"Heart failure chronic treatment",2.7,"Solomon Islands",2030,220197.752033818,38974.3284573978,181223.42357642
+"Medical management of ACS",3.1,"Solomon Islands",2020,122873.162323196,122873.162323196,0
+"Medical management of ACS",3.1,"Solomon Islands",2021,127779.036735372,127779.036735372,0
+"Medical management of ACS",3.1,"Solomon Islands",2022,132772.76484542,132772.76484542,0
+"Medical management of ACS",3.1,"Solomon Islands",2023,165104.160183164,137864.753284258,27239.4068989058
+"Medical management of ACS",3.1,"Solomon Islands",2024,199849.013104073,143134.815978825,56714.1971252478
+"Medical management of ACS",3.1,"Solomon Islands",2025,237172.582247582,148582.984761605,88589.5974859769
+"Medical management of ACS",3.1,"Solomon Islands",2026,278051.165722473,154647.434557723,123403.731164751
+"Medical management of ACS",3.1,"Solomon Islands",2027,321761.716619865,160747.634703192,161014.081916673
+"Medical management of ACS",3.1,"Solomon Islands",2028,368467.376554182,166921.326733241,201546.049820941
+"Medical management of ACS",3.1,"Solomon Islands",2029,418383.462590446,173220.708395323,245162.754195123
+"Medical management of ACS",3.1,"Solomon Islands",2030,471827.149705728,179723.27402487,292103.875680858
+"Tobacco tax",5.1,"Solomon Islands",2020,0,0,0
+"Tobacco tax",5.1,"Solomon Islands",2021,0,0,0
+"Tobacco tax",5.1,"Solomon Islands",2022,0,0,0
+"Tobacco tax",5.1,"Solomon Islands",2023,84.3068056026814,0,84.3068056026814
+"Tobacco tax",5.1,"Solomon Islands",2024,172.575044332403,0,172.575044332403
+"Tobacco tax",5.1,"Solomon Islands",2025,264.86604496805,0,264.86604496805
+"Tobacco tax",5.1,"Solomon Islands",2026,361.228044523601,0,361.228044523601
+"Tobacco tax",5.1,"Solomon Islands",2027,461.718765233384,0,461.718765233384
+"Tobacco tax",5.1,"Solomon Islands",2028,566.430862328861,0,566.430862328861
+"Tobacco tax",5.1,"Solomon Islands",2029,675.496512310412,0,675.496512310412
+"Tobacco tax",5.1,"Solomon Islands",2030,789.063950829938,0,789.063950829938
+"Alcohol tax",5.2,"Solomon Islands",2020,0,0,0
+"Alcohol tax",5.2,"Solomon Islands",2021,0,0,0
+"Alcohol tax",5.2,"Solomon Islands",2022,0,0,0
+"Alcohol tax",5.2,"Solomon Islands",2023,84.3068056026814,0,84.3068056026814
+"Alcohol tax",5.2,"Solomon Islands",2024,172.574622728799,0,172.574622728799
+"Alcohol tax",5.2,"Solomon Islands",2025,264.863722656677,0,264.863722656677
+"Alcohol tax",5.2,"Solomon Islands",2026,361.220707621756,0,361.220707621756
+"Alcohol tax",5.2,"Solomon Islands",2027,461.701207306484,0,461.701207306484
+"Alcohol tax",5.2,"Solomon Islands",2028,566.395391495739,0,566.395391495739
+"Alcohol tax",5.2,"Solomon Islands",2029,675.432632584723,0,675.432632584723
+"Alcohol tax",5.2,"Solomon Islands",2030,788.958055856245,0,788.958055856245
+"Alcohol policy",5.4,"Solomon Islands",2020,0,0,0
+"Alcohol policy",5.4,"Solomon Islands",2021,0,0,0
+"Alcohol policy",5.4,"Solomon Islands",2022,0,0,0
+"Alcohol policy",5.4,"Solomon Islands",2023,118.029527843754,0,118.029527843754
+"Alcohol policy",5.4,"Solomon Islands",2024,241.604601162388,0,241.604601162388
+"Alcohol policy",5.4,"Solomon Islands",2025,370.809797050949,0,370.809797050949
+"Alcohol policy",5.4,"Solomon Islands",2026,505.710571267734,0,505.710571267734
+"Alcohol policy",5.4,"Solomon Islands",2027,646.385017081012,0,646.385017081012
+"Alcohol policy",5.4,"Solomon Islands",2028,792.959585137078,0,792.959585137078
+"Alcohol policy",5.4,"Solomon Islands",2029,945.615608977397,0,945.615608977397
+"Alcohol policy",5.4,"Solomon Islands",2030,1104.5564795924,0,1104.5564795924
