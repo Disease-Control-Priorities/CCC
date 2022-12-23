@@ -1,0 +1,71 @@
+"Intervention.package","Sub.components","metric","Base","Pessimistic","Optimistic"
+"Alcohol regulations",NA,"BCR",36,16,65
+"Alcohol regulations",NA,"DALYs averted (millions)",0.044,0.031,0.057
+"Alcohol tax",NA,"BCR",23,10,42
+"Alcohol tax",NA,"DALYs averted (millions)",0.016,0.011,0.02
+"First-level hospital cardiometabolic and respiratory disease package",NA,"BCR",3.2,2.3,4
+"First-level hospital cardiometabolic and respiratory disease package",NA,"DALYs averted (millions)",4.1,2.9,5.2
+"First-level hospital cardiometabolic and respiratory disease package","Asthma/COPD acute treatment","BCR",1.8,1.3,2.3
+"First-level hospital cardiometabolic and respiratory disease package","Asthma/COPD acute treatment","DALYs averted (millions)",0.98,0.7,1.3
+"First-level hospital cardiometabolic and respiratory disease package","Heart failure acute treatment","BCR",4.6,3.3,5.9
+"First-level hospital cardiometabolic and respiratory disease package","Heart failure acute treatment","DALYs averted (millions)",2.5,1.8,3.2
+"First-level hospital cardiometabolic and respiratory disease package","Medical management of ACS","BCR",2.7,2,3.5
+"First-level hospital cardiometabolic and respiratory disease package","Medical management of ACS","DALYs averted (millions)",0.58,0.41,0.74
+"First-level hospital surgical package",NA,"BCR",1.6,1.2,2.1
+"First-level hospital surgical package",NA,"DALYs averted (millions)",1.1,0.82,1.5
+"First-level hospital surgical package","Cervical cancer screening and treatment","BCR",3.3,2.4,4.3
+"First-level hospital surgical package","Cervical cancer screening and treatment","DALYs averted (millions)",0.47,0.34,0.61
+"First-level hospital surgical package","Management of appendicitis","BCR",2.4,1.7,3.1
+"First-level hospital surgical package","Management of appendicitis","DALYs averted (millions)",0.063,0.045,0.081
+"First-level hospital surgical package","Management of bowel obstruction","BCR",3.1,2.2,3.9
+"First-level hospital surgical package","Management of bowel obstruction","DALYs averted (millions)",0.27,0.19,0.34
+"First-level hospital surgical package","Repair of gastrointestinal perforations","BCR",3.9,2.8,5.1
+"First-level hospital surgical package","Repair of gastrointestinal perforations","DALYs averted (millions)",0.0078,0.0056,0.01
+"First-level hospital surgical package","Repair of hernias","BCR",0.76,0.55,0.98
+"First-level hospital surgical package","Repair of hernias","DALYs averted (millions)",0.34,0.24,0.43
+"Outpatient cardiometabolic and respiratory disease package",NA,"BCR",2.1,1.5,2.7
+"Outpatient cardiometabolic and respiratory disease package",NA,"DALYs averted (millions)",6,4.3,7.7
+"Outpatient cardiometabolic and respiratory disease package","Aspirin for suspected ACS","BCR",37,26,47
+"Outpatient cardiometabolic and respiratory disease package","Aspirin for suspected ACS","DALYs averted (millions)",0.0065,0.0046,0.0084
+"Outpatient cardiometabolic and respiratory disease package","Asthma/COPD chronic treatment","BCR",0.42,0.3,0.54
+"Outpatient cardiometabolic and respiratory disease package","Asthma/COPD chronic treatment","DALYs averted (millions)",0.15,0.1,0.19
+"Outpatient cardiometabolic and respiratory disease package","CVD primary prevention","BCR",5.8,4.1,7.4
+"Outpatient cardiometabolic and respiratory disease package","CVD primary prevention","DALYs averted (millions)",2.5,1.8,3.2
+"Outpatient cardiometabolic and respiratory disease package","CVD secondary prevention","BCR",2.2,1.6,2.8
+"Outpatient cardiometabolic and respiratory disease package","CVD secondary prevention","DALYs averted (millions)",1.5,1.1,1.9
+"Outpatient cardiometabolic and respiratory disease package","Diabetes screening and treatment","BCR",0.44,0.31,0.57
+"Outpatient cardiometabolic and respiratory disease package","Diabetes screening and treatment","DALYs averted (millions)",0.58,0.41,0.74
+"Outpatient cardiometabolic and respiratory disease package","Heart failure chronic treatment","BCR",15,11,19
+"Outpatient cardiometabolic and respiratory disease package","Heart failure chronic treatment","DALYs averted (millions)",1.2,0.89,1.6
+"Outpatient cardiometabolic and respiratory disease package","Pulmonary rehabilitation","BCR",14,10,19
+"Outpatient cardiometabolic and respiratory disease package","Pulmonary rehabilitation","DALYs averted (millions)",0.033,0.024,0.043
+"Outpatient mental, neurological, and substance use disorder package",NA,"BCR",2.1,1.5,2.7
+"Outpatient mental, neurological, and substance use disorder package",NA,"DALYs averted (millions)",1.1,0.81,1.4
+"Outpatient mental, neurological, and substance use disorder package","Alcohol use screening/brief intervention","BCR",0.56,0.4,0.72
+"Outpatient mental, neurological, and substance use disorder package","Alcohol use screening/brief intervention","DALYs averted (millions)",0.091,0.065,0.12
+"Outpatient mental, neurological, and substance use disorder package","Bipolar disorder chronic treatment","BCR",0.41,0.29,0.53
+"Outpatient mental, neurological, and substance use disorder package","Bipolar disorder chronic treatment","DALYs averted (millions)",0.098,0.07,0.13
+"Outpatient mental, neurological, and substance use disorder package","Depression chronic treatment","BCR",4.5,3.2,5.8
+"Outpatient mental, neurological, and substance use disorder package","Depression chronic treatment","DALYs averted (millions)",0.14,0.1,0.19
+"Outpatient mental, neurological, and substance use disorder package","Epilepsy acute and chronic treatment","BCR",56,40,72
+"Outpatient mental, neurological, and substance use disorder package","Epilepsy acute and chronic treatment","DALYs averted (millions)",0.68,0.49,0.87
+"Outpatient mental, neurological, and substance use disorder package","IDU harm reduction measures","BCR",2.6,1.9,3.4
+"Outpatient mental, neurological, and substance use disorder package","IDU harm reduction measures","DALYs averted (millions)",0.024,0.017,0.03
+"Outpatient mental, neurological, and substance use disorder package","Schizophrenia chronic treatment","BCR",1.2,0.83,1.5
+"Outpatient mental, neurological, and substance use disorder package","Schizophrenia chronic treatment","DALYs averted (millions)",0.093,0.067,0.12
+"Referral hospital NCDs package",NA,"BCR",1.8,1.3,2.4
+"Referral hospital NCDs package",NA,"DALYs averted (millions)",0.07,0.05,0.089
+"Referral hospital NCDs package","Management of acute ventilatory failure","BCR",0.33,0.23,0.42
+"Referral hospital NCDs package","Management of acute ventilatory failure","DALYs averted (millions)",0.0088,0.0063,0.011
+"Referral hospital NCDs package","Treatment of early-stage breast cancer","BCR",36,26,47
+"Referral hospital NCDs package","Treatment of early-stage breast cancer","DALYs averted (millions)",0.042,0.03,0.055
+"Referral hospital NCDs package","Treatment of early-stage colorectal cancer","BCR",1.8,1.3,2.3
+"Referral hospital NCDs package","Treatment of early-stage colorectal cancer","DALYs averted (millions)",0.018,0.013,0.024
+"Sodium regulations",NA,"BCR",3.3,1.4,5.9
+"Sodium regulations",NA,"DALYs averted (millions)",0.056,0.04,0.072
+"Tobacco regulations",NA,"BCR",10,4.4,19
+"Tobacco regulations",NA,"DALYs averted (millions)",0.064,0.046,0.083
+"Tobacco tax",NA,"BCR",170,73,310
+"Tobacco tax",NA,"DALYs averted (millions)",0.18,0.13,0.23
+"Trans fat regulations",NA,"BCR",5.4,2.3,9.7
+"Trans fat regulations",NA,"DALYs averted (millions)",0.046,0.033,0.059

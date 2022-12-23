@@ -164,11 +164,13 @@ bint/BA
 bhpp/BA
 
 
+##by package##
+
 df_pkg<-bind_rows(df_code, df_both)%>%arrange(wb2021)%>%
   group_by(`Intervention package`, wb2021)%>%
-  summarise(`Incremental cost (billions)` = sum(`Incremental cost (billions)`, na.rm=T)/1e9,
-           `DALY.ave (millions)` = sum(`DALY.ave (millions)`, na.rm=T)/1e6,
-           `benefit (billions)`=sum(`benefit (billions)`, na.rm=T)/1e9,
+  summarise(`Incremental cost (billions)` = sum(`Incremental cost (billions)`, na.rm=T),
+           `DALY.ave (millions)` = sum(`DALY.ave (millions)`, na.rm=T),
+           `benefit (billions)`=sum(`benefit (billions)`, na.rm=T),
             BCR =  `benefit (billions)`/`Incremental cost (billions)`)%>%
   arrange(wb2021, -BCR)
 
@@ -330,9 +332,9 @@ bhpp/BA
 
 df_pkg<-bind_rows(df_code, df_both)%>%arrange(wb2021)%>%
   group_by(`Intervention package`, wb2021)%>%
-  summarise(`Incremental cost (billions)` = sum(`Incremental cost (billions)`, na.rm=T)/1e9,
-            `DALY.ave (millions)` = sum(`DALY.ave (millions)`, na.rm=T)/1e6,
-            `benefit (billions)`=sum(`benefit (billions)`, na.rm=T)/1e9,
+  summarise(`Incremental cost (billions)` = sum(`Incremental cost (billions)`, na.rm=T),
+            `DALY.ave (millions)` = sum(`DALY.ave (millions)`, na.rm=T),
+            `benefit (billions)`=sum(`benefit (billions)`, na.rm=T),
             BCR =  `benefit (billions)`/`Incremental cost (billions)`)%>%
   arrange(wb2021, -BCR)
 
@@ -494,9 +496,9 @@ bhpp/BA
 
 df_pkg<-bind_rows(df_code, df_both)%>%arrange(wb2021)%>%
   group_by(`Intervention package`, wb2021)%>%
-  summarise(`Incremental cost (billions)` = sum(`Incremental cost (billions)`, na.rm=T)/1e9,
-            `DALY.ave (millions)` = sum(`DALY.ave (millions)`, na.rm=T)/1e6,
-            `benefit (billions)`=sum(`benefit (billions)`, na.rm=T)/1e9,
+  summarise(`Incremental cost (billions)` = sum(`Incremental cost (billions)`, na.rm=T),
+            `DALY.ave (millions)` = sum(`DALY.ave (millions)`, na.rm=T),
+            `benefit (billions)`=sum(`benefit (billions)`, na.rm=T),
             BCR =  `benefit (billions)`/`Incremental cost (billions)`)%>%
   arrange(wb2021, -BCR)
 

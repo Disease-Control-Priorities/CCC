@@ -124,3 +124,243 @@ ggplot(plot2, aes(x=year_id, y=x40q30, color= Scenario))+
 
 ggsave("Figures/Figure2_region.png", height = 6, width = 12, units = "in")
 
+
+
+# Appendix tables #
+
+# 8% discount rate #
+
+base<-read.csv("Figures/BCRs_int.csv", stringsAsFactors = F)%>%
+  filter(Code<5)%>%select(-X, -Code)%>%
+  bind_rows(., read.csv("Figures/BCRs_pkg.csv", stringsAsFactors = F)%>%
+  mutate(Intervention = "a")%>%select(-X))%>%arrange(Intervention.package)%>%
+  rename(Sub.components = Intervention)%>%
+  mutate(DALY.ave..millions. = DALY.ave..millions.)%>%
+  rename(`DALYs averted (millions)` = DALY.ave..millions.)
+
+pesm<-read.csv("Figures/BCRs_int_pesm.csv", stringsAsFactors = F)%>%
+  filter(Code<5)%>%select(-X, -Code)%>%
+  bind_rows(., read.csv("Figures/BCRs_pkg_pesm.csv", stringsAsFactors = F)%>%
+  mutate(Intervention = "a")%>%select(-X))%>%arrange(Intervention.package)%>%
+  rename(Sub.components = Intervention)%>%
+  mutate(DALY.ave..millions. = DALY.ave..millions.)%>%
+  rename(`DALYs averted (millions)` = DALY.ave..millions.)
+
+optm<-read.csv("Figures/BCRs_int_optm.csv", stringsAsFactors = F)%>%
+  filter(Code<5)%>%select(-X, -Code)%>%
+  bind_rows(., read.csv("Figures/BCRs_pkg_optm.csv", stringsAsFactors = F)%>%
+              mutate(Intervention = "a")%>%select(-X))%>%arrange(Intervention.package)%>%
+  rename(Sub.components = Intervention)%>%
+  mutate(DALY.ave..millions. = DALY.ave..millions.)%>%
+  rename(`DALYs averted (millions)` = DALY.ave..millions.)
+
+lic<-base%>%filter(wb2021=="LIC")%>%
+  select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+  gather(metric, Base, -Sub.components, -Intervention.package)%>%
+  mutate(Base = signif(Base, digits=2))%>%
+  arrange(Intervention.package, Sub.components, metric)%>%
+  mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))%>%
+  left_join(., 
+            pesm%>%filter(wb2021=="LIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Pessimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Pessimistic = signif(Pessimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))
+            )%>%
+  left_join(.,
+            optm%>%filter(wb2021=="LIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Optimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Optimistic = signif(Optimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components)) 
+            )%>%
+  mutate(Intervention.package = gsub("\n","",Intervention.package))
+
+write.csv(lic, "Figures/Appendix_tab_LIC.csv", row.names = F)
+
+lmic<-base%>%filter(wb2021=="LMIC")%>%
+  select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+  gather(metric, Base, -Sub.components, -Intervention.package)%>%
+  mutate(Base = signif(Base, digits=2))%>%
+  arrange(Intervention.package, Sub.components, metric)%>%
+  mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))%>%
+  left_join(., 
+            pesm%>%filter(wb2021=="LMIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Pessimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Pessimistic = signif(Pessimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))
+  )%>%
+  left_join(.,
+            optm%>%filter(wb2021=="LMIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Optimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Optimistic = signif(Optimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components)) 
+  )%>%
+  mutate(Intervention.package = gsub("\n","",Intervention.package))
+
+write.csv(lmic, "Figures/Appendix_tab_LMIC.csv", row.names = F)
+
+# 5% discount rate #
+
+base<-read.csv("Figures/BCRs_int_5perc.csv", stringsAsFactors = F)%>%
+  filter(Code<5)%>%select(-X, -Code)%>%
+  bind_rows(., read.csv("Figures/BCRs_pkg_5perc.csv", stringsAsFactors = F)%>%
+              mutate(Intervention = "a")%>%select(-X))%>%arrange(Intervention.package)%>%
+  rename(Sub.components = Intervention)%>%
+  mutate(DALY.ave..millions. = DALY.ave..millions.)%>%
+  rename(`DALYs averted (millions)` = DALY.ave..millions.)
+
+pesm<-read.csv("Figures/BCRs_int_pesm_5perc.csv", stringsAsFactors = F)%>%
+  filter(Code<5)%>%select(-X, -Code)%>%
+  bind_rows(., read.csv("Figures/BCRs_pkg_pesm_5perc.csv", stringsAsFactors = F)%>%
+              mutate(Intervention = "a")%>%select(-X))%>%arrange(Intervention.package)%>%
+  rename(Sub.components = Intervention)%>%
+  mutate(DALY.ave..millions. = DALY.ave..millions.)%>%
+  rename(`DALYs averted (millions)` = DALY.ave..millions.)
+
+optm<-read.csv("Figures/BCRs_int_optm_5perc.csv", stringsAsFactors = F)%>%
+  filter(Code<5)%>%select(-X, -Code)%>%
+  bind_rows(., read.csv("Figures/BCRs_pkg_optm_5perc.csv", stringsAsFactors = F)%>%
+              mutate(Intervention = "a")%>%select(-X))%>%arrange(Intervention.package)%>%
+  rename(Sub.components = Intervention)%>%
+  mutate(DALY.ave..millions. = DALY.ave..millions.)%>%
+  rename(`DALYs averted (millions)` = DALY.ave..millions.)
+
+lic<-base%>%filter(wb2021=="LIC")%>%
+  select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+  gather(metric, Base, -Sub.components, -Intervention.package)%>%
+  mutate(Base = signif(Base, digits=2))%>%
+  arrange(Intervention.package, Sub.components, metric)%>%
+  mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))%>%
+  left_join(., 
+            pesm%>%filter(wb2021=="LIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Pessimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Pessimistic = signif(Pessimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))
+  )%>%
+  left_join(.,
+            optm%>%filter(wb2021=="LIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Optimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Optimistic = signif(Optimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components)) 
+  )%>%
+  mutate(Intervention.package = gsub("\n","",Intervention.package))
+
+write.csv(lic, "Figures/Appendix_tab_LIC_5perc.csv", row.names = F)
+
+lmic<-base%>%filter(wb2021=="LMIC")%>%
+  select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+  gather(metric, Base, -Sub.components, -Intervention.package)%>%
+  mutate(Base = signif(Base, digits=2))%>%
+  arrange(Intervention.package, Sub.components, metric)%>%
+  mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))%>%
+  left_join(., 
+            pesm%>%filter(wb2021=="LMIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Pessimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Pessimistic = signif(Pessimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))
+  )%>%
+  left_join(.,
+            optm%>%filter(wb2021=="LMIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Optimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Optimistic = signif(Optimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components)) 
+  )%>%
+  mutate(Intervention.package = gsub("\n","",Intervention.package))
+
+write.csv(lmic, "Figures/Appendix_tab_LMIC_5perc.csv", row.names = F)
+
+
+# 14% discount rate #
+
+base<-read.csv("Figures/BCRs_int_14perc.csv", stringsAsFactors = F)%>%
+  filter(Code<5)%>%select(-X, -Code)%>%
+  bind_rows(., read.csv("Figures/BCRs_pkg_14perc.csv", stringsAsFactors = F)%>%
+              mutate(Intervention = "a")%>%select(-X))%>%arrange(Intervention.package)%>%
+  rename(Sub.components = Intervention)%>%
+  mutate(DALY.ave..millions. = DALY.ave..millions.)%>%
+  rename(`DALYs averted (millions)` = DALY.ave..millions.)
+
+pesm<-read.csv("Figures/BCRs_int_pesm_14perc.csv", stringsAsFactors = F)%>%
+  filter(Code<5)%>%select(-X, -Code)%>%
+  bind_rows(., read.csv("Figures/BCRs_pkg_pesm_14perc.csv", stringsAsFactors = F)%>%
+              mutate(Intervention = "a")%>%select(-X))%>%arrange(Intervention.package)%>%
+  rename(Sub.components = Intervention)%>%
+  mutate(DALY.ave..millions. = DALY.ave..millions.)%>%
+  rename(`DALYs averted (millions)` = DALY.ave..millions.)
+
+optm<-read.csv("Figures/BCRs_int_optm_14perc.csv", stringsAsFactors = F)%>%
+  filter(Code<5)%>%select(-X, -Code)%>%
+  bind_rows(., read.csv("Figures/BCRs_pkg_optm_14perc.csv", stringsAsFactors = F)%>%
+              mutate(Intervention = "a")%>%select(-X))%>%arrange(Intervention.package)%>%
+  rename(Sub.components = Intervention)%>%
+  mutate(DALY.ave..millions. = DALY.ave..millions.)%>%
+  rename(`DALYs averted (millions)` = DALY.ave..millions.)
+
+lic<-base%>%filter(wb2021=="LIC")%>%
+  select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+  gather(metric, Base, -Sub.components, -Intervention.package)%>%
+  mutate(Base = signif(Base, digits=2))%>%
+  arrange(Intervention.package, Sub.components, metric)%>%
+  mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))%>%
+  left_join(., 
+            pesm%>%filter(wb2021=="LIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Pessimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Pessimistic = signif(Pessimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))
+  )%>%
+  left_join(.,
+            optm%>%filter(wb2021=="LIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Optimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Optimistic = signif(Optimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components)) 
+  )%>%
+  mutate(Intervention.package = gsub("\n","",Intervention.package))
+
+write.csv(lic, "Figures/Appendix_tab_LIC_14perc.csv", row.names = F)
+
+lmic<-base%>%filter(wb2021=="LMIC")%>%
+  select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+  gather(metric, Base, -Sub.components, -Intervention.package)%>%
+  mutate(Base = signif(Base, digits=2))%>%
+  arrange(Intervention.package, Sub.components, metric)%>%
+  mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))%>%
+  left_join(., 
+            pesm%>%filter(wb2021=="LMIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Pessimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Pessimistic = signif(Pessimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components))
+  )%>%
+  left_join(.,
+            optm%>%filter(wb2021=="LMIC")%>%
+              select(Intervention.package, Sub.components, BCR, `DALYs averted (millions)`)%>%
+              gather(metric, Optimistic, -Sub.components, -Intervention.package)%>%
+              mutate(Optimistic = signif(Optimistic, digits=2))%>%
+              arrange(Intervention.package, Sub.components, metric)%>%
+              mutate(Sub.components = ifelse(Sub.components=="a", NA, Sub.components)) 
+  )%>%
+  mutate(Intervention.package = gsub("\n","",Intervention.package))
+
+write.csv(lmic, "Figures/Appendix_tab_LMIC_14perc.csv", row.names = F)
+
+
