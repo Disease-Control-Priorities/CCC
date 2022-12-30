@@ -22,7 +22,7 @@ groups<-read.csv("new_inputs/Country_groupings_HLI.csv", stringsAsFactors = F)%>
 ###########################################
 load("for_parallel_processing/output2023_base.Rda")
 
-names<-read.csv("new_inputs/PIN_new.csv", stringsAsFactors = F)%>%
+names<-readxl::read_excel("new_inputs/DCP3_ NCD Data (2).xlsx", sheet='costs')%>%
   select(NCD, Intervention)%>%
   rename(Code = NCD)%>% distinct()
 
@@ -110,7 +110,7 @@ df_both<-left_join(newdf, ccc.vsl)%>%
          wb2021 = "LIC+LMIC")
 
 #add intervention names
-write.csv(bind_rows(df_code, df_both)%>%arrange(wb2021), "Figures/BCRs_int.csv")
+write.csv(bind_rows(df_code, df_both)%>%arrange(wb2021), "Figures/BCRs_int_12_29.csv")
 
 #get country-specific BCRs for optimal benefit package
 cdf<-df%>%

@@ -50,7 +50,11 @@ load("for_parallel_processing/output2023_base.Rda")
 coverage<-read.csv("new_inputs/Coverage0621.csv", stringsAsFactors = F)
 
 # Unit cost adjustment
-uc <- read.csv("new_inputs/PIN_new.csv", stringsAsFactors=F)
+uc <- readxl::read_excel("new_inputs/DCP3_ NCD Data (1).xlsx", sheet='costs')%>%
+  rename(Original.Currency = `Original Currency`,
+         Cost.adjustment = `Cost adjustment`,
+         Original.Unit.Cost = `Original Unit Cost`)%>%
+  select(-notes, -Source, -recalculate, -`...24`, -`...25`, -`...26`, -`...27`, -`...28`)
 uc$unique_id <- paste0("C",uc$NCD,"_",uc$sub_id)
 
 #table(uc$unique_id)
@@ -92,7 +96,7 @@ cpi<-cpi[,-c(66:71)]
 cpi2<-read.csv("new_inputs/CPI_2020.csv", stringsAsFactors=F)
 names(cpi2)[1]<-"Country"
 cpi2<-cpi2[,c(1,65)]
-cpi<-left_join(cpi, cpi2, by="Country")
+cpi<-full_join(cpi, cpi2, by="Country")
 
 cpi <- cpi[,c(3,6:66)]%>%gather(year, value, -Country)%>%group_by(Country)%>%fill(value)%>%spread(year, value)
 
@@ -123,17 +127,6 @@ noalc.list<-c("Afghanistan", "Bangladesh", "Iran", "Libya", "Sudan", "Yemen")
 #list of alcohol policy unique_ids
 intersectoral.alc<-c("5.2_a", "5.4_a")
 
-###########################################  
-##update PIN for intersectoral policies##
-############################################
-
-#convert intersectoral PIN back to total pop for years 2023-2030 and scale-up by 1/3 each year 2023-2025
-#all.pin.icer<-all.pin.icer%>%
-#  mutate(pin = ifelse(group=="Adjusted" & year_id==2023 & Code>5, ((1/3)*(1-Coverage+0.1)+(Coverage-0.1))*(pin/(Coverage)), pin),
-#         pin = ifelse(group=="Adjusted" & year_id==2024 & Code>5, ((2/3)*(1-Coverage+0.1)+(Coverage-0.1))*(pin/(Coverage)), pin),
-#         pin = ifelse(group=="Adjusted" & year_id>=2025 & Code>5, (pin/(Coverage)), pin)
-#         )
-
 ##edit for countries in which alcohol is banned##
 all.pin.icer$pin[all.pin.icer$unique_id%in%intersectoral.alc & all.pin.icer$location_name%in%noalc.list]<-0
 
@@ -148,6 +141,59 @@ changeq30<-all.q30%>%group_by(Code, location_name)%>%summarise(q30diff=100*sum(q
   rename(Country = location_name)%>%select(c(Country, Code, q30diff))
 
 ```
+
+#New data for tobacco tax
+```{r}
+locs<-unique(all.pin$location_name)
+country_list<-country_list%>%filter(Country%in% locs, World_bank!="HIC")
+locs<-as.character(country_list$Country)
+
+tob<-readxl::read_excel("new_inputs/tobacco_tax_rates.xls", sheet="GLOBAL", skip=5)
+tob<-tob[,c(4,17,20,21)]
+names(tob)[1]<-"location"
+names(tob)[2]<-"non_excise"
+names(tob)[3]<-"new_tax"
+names(tob)[4]<-"pack_price"
+
+tob<-tob%>%
+  mutate(iso3 = countrycode::countrycode(location, "country.name", "iso3c"))%>%
+  left_join(., country_list)%>%
+  filter(Country %in% locs)%>%
+  mutate(perc_excise = (new_tax - non_excise)/pack_price)
+
+avg_perc<-median(tob$perc_excise, na.rm=T)
+
+tob<-tob%>%
+  mutate(perc_excise = ifelse(is.na(perc_excise), avg_perc, perc_excise))
+
+#prev<-read.csv("new_inputs/IHME_GLOBAL_TOBACCO_PREVALENCE_1980_2012_BOTH_#SEXES.csv", stringsAsFactors = F)
+#prev<-prev[,c(1,2,3,101)]
+#names(prev)[4]<-"prev"
+
+#prev<-prev%>%
+#  filter(Age == "All-ages")%>%
+#  select(ISO, prev)%>%rename(iso3=ISO)
+  
+#cigs<-read.csv("new_inputs/IHME_GLOBAL_TOBACCO_CONSUMPTION_PSPD_1980_2012#.csv", stringsAsFactors = F)%>%
+#  filter(Year==2012)%>%
+#  select(ISO, Consumption.Per.Smoker.Per.Day)%>%
+#  rename(iso3 = ISO, cig=Consumption.Per.Smoker.Per.Day)
+#  
+#tob<-left_join(tob, prev)%>%
+#  left_join(., cigs)%>%
+#    mutate(perc = ifelse(World_bank=="LIC", 0.035, 0.0043),
+#           unit_cost = perc*(cig/20)*tax_pack*365*prev/100)
+
+#avg<-median(tob$unit_cost, na.rm=T)
+
+#tob<-tob%>%
+#  mutate(unit_cost = ifelse(is.na(unit_cost), avg, unit_cost))
+
+#uc$Original.Currency[uc$NCD==5.1]<-"USD"
+#uc$Year[uc$NCD==5.1]<-2020
+
+```
+
 
 # Settings
 ```{r}
@@ -231,10 +277,6 @@ c <- 1
 n <- 1
 y <- 1
 
-locs<-unique(all.pin$location_name)
-country_list<-country_list%>%filter(Country%in% locs, World_bank!="HIC")
-locs<-as.character(country_list$Country)
-
 for (c in c(1:77)){
 
   selected_country <- as.character(country_list$Country[c])
@@ -259,6 +301,8 @@ for (c in c(1:77)){
 
     
     for (i in 1:no){
+      
+      uc$Original.Unit.Cost[uc$NCD==5.1]<-0.0015*(tob%>%filter(iso3==selected_country_code)%>%pull(perc_excise)*100)
       
       #Country
       country <- as.character(uc[i,"Country"])

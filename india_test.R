@@ -5,7 +5,7 @@ rm(list=ls())
 pacman::p_load(data.table, dplyr, tidyr, progress, pspline, MortalityLaws) 
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-load("new_inputs/PreppedData2023b.Rda")
+load("new_inputs/PreppedData2023c.Rda")
 source("utils/demmod_icer_rankb.R")
 
 ###############################################################################################################################
@@ -65,6 +65,9 @@ dalys.averted<-bind_rows(clinical.dalys, all.dalys)%>%
     group_by(Code)%>%
     summarise(India.DALYS.avert.millions = sum(DALY.ave)/1e6)
 
+test<-left_join(deaths.averted, dalys.averted)%>%
+    mutate(ratio = India.DALYS.avert.millions / India.Deaths.avert.millions)
+    
 df<-read.csv("Figures/BCRs_int.csv", stringsAsFactors = F)%>%
     left_join(.,deaths.averted)%>%
     left_join(., dalys.averted)
@@ -72,8 +75,25 @@ df<-read.csv("Figures/BCRs_int.csv", stringsAsFactors = F)%>%
 
 write.csv(df, "test_results.csv", row.names = F)
 
+####################################
+#tobacco tax calculations#
+####################################
 
+tob<-readxl::read_excel("new_inputs/tobacco_tax_rates.xls", sheet="GLOBAL", skip=5)
+tob<-tob[,c(4,19)]
+names(tob)[1]<-"location_wb"
+names(tob)[2]<-"tax_pack"
 
+prev<-read.csv("new_inputs/IHME_GLOBAL_TOBACCO_PREVALENCE_1980_2012_BOTH_SEXES.csv", stringsAsFactors = F)%>%
+    filter(Country=="India", Age == "All-ages")
+
+prev<-prev[,c(1,2,101)]
+names(prev)[3]<-"prev"
+
+tob<-tob%>%filter(location_wb == "India")%>%
+    rename(Country = location_wb)%>%
+    left_join(., prev)%>%
+    mutate(unit_cost = 0.0043*(17.1/20)*tax_pack*365*prev/100)
 
 
 

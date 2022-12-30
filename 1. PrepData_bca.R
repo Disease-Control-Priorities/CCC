@@ -465,7 +465,8 @@ int.df<-left_join(int.df, cov.df%>%rename(Code = codex)%>%mutate(Code=as.numeric
 # Files for population in need
 ##############################################################################################################
 
-pin.groups <- fread("new_inputs/PIN_new.csv") %>% 
+pin.groups <- readxl::read_excel("new_inputs/DCP3_ NCD Data (1).xlsx", sheet='costs') %>% 
+  filter(NCD<=5.6) %>%
   rename(Code = NCD) %>% filter(!is.na(Adjustment1)) %>%
   rename(cause_name = Epi1, metric_name = Measure1, 
          age_l = StartAge1, age_u=StopAge1, sex_name=Sex1, Adjustment = Adjustment1) %>%
@@ -549,7 +550,10 @@ yldyll <- fread("new_inputs/YLDtoYLLratio.csv") %>%
   bind_rows(., addyld)%>%
   rename(cause_name = cause) %>% 
   mutate(scale = YLD/YLL, 
-         scale = ifelse(is.na(scale),1,scale)) %>% 
+         scale = ifelse(is.na(scale),1,scale),
+         scale = ifelse(cause_name %in% c("Bipolar disorder",
+                                          "Major depressive disorder",
+                                          "Schizophrenia") & scale>6, 6, scale)) %>%  
   select(iso3, location_name, cause_name, scale) %>%
   filter(cause_name %in% c("All Causes", cse_g$cause_name))
 
