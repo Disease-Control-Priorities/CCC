@@ -57,44 +57,67 @@ load("for_parallel_processing/output2023_target_intersectoral.Rda")
 
 deaths.averted<-bind_rows(clinical.dadt, dadt.all)%>%
     filter(location_name=="India")%>%
-    group_by(Code)%>%
-        summarise(India.Deaths.avert.millions = sum(Deaths.Avert)/1e6)
+    group_by(Code, year_id)%>%
+        summarise(Deaths.avert = sum(Deaths.Avert))%>%
+    mutate(year_id = as.numeric(year_id))
 
 dalys.averted<-bind_rows(clinical.dalys, all.dalys)%>%
     filter(location_name =="India")%>%
-    group_by(Code)%>%
-    summarise(India.DALYS.avert.millions = sum(DALY.ave)/1e6)
+    group_by(Code, year_id)%>%
+    summarise(DALYS.Adjsuted = sum(Adjusted),
+              DALYS.Baseline = sum(Baseline),
+              DALYS.avert = sum(DALY.ave),
+              DALYS.avert =ifelse(DALYS.avert<1, 0, DALYS.avert))%>%
+    mutate(year_id = as.numeric(year_id))
 
-test<-left_join(deaths.averted, dalys.averted)%>%
-    mutate(ratio = India.DALYS.avert.millions / India.Deaths.avert.millions)
+pin<-bind_rows(clinical.pin, all.pin)%>%
+    filter(location_name=="India")%>%
+    mutate(unique_id = paste0("C",Code,"_", sub_id))%>%
+    select(-sub_id)
+
+uc<-read.csv("output/unit_costs/India_adjusted_uc_2020.csv")
+
+cost<-left_join(pin, uc)%>%
+    mutate(cost = adjusted_uc*pin)%>%
+    group_by(Code, group, year_id, Intervention)%>%
+    summarise(cost = sum(cost))%>%
+    spread(group, cost)%>%
+    rename(Adjusted.cost = Adjusted,
+           Baseline.cost = Baseline)%>%
+    mutate(Incremental.cost = Adjusted.cost - Baseline.cost)
+
+
+df<-left_join(cost, deaths.averted)%>%
+    left_join(., dalys.averted)%>%
+    mutate(DALY.ave.discounted = ((1-0.08)^(year_id-2022))*DALYS.avert, #discount at 8% at the end
+           Incremental.cost.discounted =  ((1-0.08)^(year_id-2022))*Incremental.cost,
+           wb2021="LMIC") 
     
-df<-read.csv("Figures/BCRs_int.csv", stringsAsFactors = F)%>%
-    left_join(.,deaths.averted)%>%
-    left_join(., dalys.averted)
+ccc.vsl<-read.csv("DALY_value.csv", stringsAsFactors = F)%>%
+    gather(year_id, val, -wb2021)%>%
+    mutate(year_id = as.numeric(gsub("X","",year_id)))
 
+df<-left_join(df, ccc.vsl)%>%
+    rename(value.DALY = val)%>%
+    mutate(benefit = value.DALY*DALYS.avert,
+           inc.cost.adjusted = ifelse(Code%in%c(5.1,5.2,5.3,5.4), Incremental.cost.discounted+(benefit*0.009), Incremental.cost.discounted), #consumer surplus
+           inc.cost.adjusted = ifelse(Code %in% c(5.5,5.6), inc.cost.adjusted+(benefit*0.001), inc.cost.adjusted)
+           )%>%
+    group_by(Code, Intervention)%>%
+    summarise(
+        Adjusted.cost = sum(Adjusted.cost, na.rm=T),
+        Baseline.cost = sum(Adjusted.cost, na.rm=T),
+        Incremental.cost = sum(Incremental.cost, na.rm=T),
+        DALYS.Adjsuted = sum(DALYS.Adjsuted, na.rm=T),
+        DALYS.Baseline = sum(DALYS.Baseline, na.rm=T),
+        DALYS.averted = sum(DALYS.avert, na.rm=T),
+        Incremental.cost.discounted = sum(Incremental.cost.discounted, na.rm=T),
+        DALY.ave.discounted = sum(DALY.ave.discounted, na.rm=T),
+        benefit = sum(benefit, na.rm=T),
+        Cost.surplus.adjusted = sum(inc.cost.adjusted, na.rm=T)
+    )%>%
+    ungroup()%>%
+    mutate(BCR = benefit / Cost.surplus.adjusted)%>%
+    arrange(-BCR)
 
-write.csv(df, "test_results.csv", row.names = F)
-
-####################################
-#tobacco tax calculations#
-####################################
-
-tob<-readxl::read_excel("new_inputs/tobacco_tax_rates.xls", sheet="GLOBAL", skip=5)
-tob<-tob[,c(4,19)]
-names(tob)[1]<-"location_wb"
-names(tob)[2]<-"tax_pack"
-
-prev<-read.csv("new_inputs/IHME_GLOBAL_TOBACCO_PREVALENCE_1980_2012_BOTH_SEXES.csv", stringsAsFactors = F)%>%
-    filter(Country=="India", Age == "All-ages")
-
-prev<-prev[,c(1,2,101)]
-names(prev)[3]<-"prev"
-
-tob<-tob%>%filter(location_wb == "India")%>%
-    rename(Country = location_wb)%>%
-    left_join(., prev)%>%
-    mutate(unit_cost = 0.0043*(17.1/20)*tax_pack*365*prev/100)
-
-
-
-
+write.csv(df, "india_full.csv")

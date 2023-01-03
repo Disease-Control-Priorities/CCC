@@ -1,43 +1,12 @@
 starting worker for localhost:11964 
 Type: EXEC 
 Type: EXEC 
-Type: EXEC 
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-`summarise()` has grouped output by 'sex', 'year_id', 'age_name'. You can override using the `.groups` argument.
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Error in unserialize(node$con) : error reading from connection
+Calls: local ... doTryCatch -> recvData -> recvData.SOCKnode -> unserialize
+Execution halted
+g, by = c("year_id", "age_group", "location_name", "n.inters")
 Joining, by = c("year_id", "age_group", "location_name", "n.inters")
 `summarise()` has grouped output by 'sex', 'year_id', 'age_name'. You can override using the `.groups` argument.
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-`summarise()` has grouped output by 'sex', 'year_id', 'age_name'. You can override using the `.groups` argument.
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-`summarise()` has grouped output by 'sex', 'year_id', 'age_name'. You can override using the `.groups` argument.
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
-Joining, by = c("year_id", "age_group", "location_name", "n.inters")
 Joining, by = c("year_id", "age_group", "location_name", "n.inters")
 Joining, by = c("year_id", "age_group", "location_name", "n.inters")
 `summarise()` has grouped output by 'sex', 'year_id', 'age_name'. You can override using the `.groups` argument.
@@ -71,3 +40,37 @@ Joining, by = c("year_id", "age_group", "location_name", "n.inters")
 Joining, by = c("year_id", "age_group", "location_name", "n.inters")
 Joining, by = c("year_id", "age_group", "location_name", "n.inters")
 Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+`summarise()` has grouped output by 'sex', 'year_id', 'age_name'. You can override using the `.groups` argument.
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+`summarise()` has grouped output by 'sex', 'year_id', 'age_name'. You can override using the `.groups` argument.
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+`summarise()` has grouped output by 'sex', 'year_id', 'age_name'. You can override using the `.groups` argument.
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Joining, by = c("year_id", "age_group", "location_name", "n.inters")
+Error in unserialize(node$con) : error reading from connection
+Calls: local ... doTryCatch -> recvData -> recvData.SOCKnode -> unserialize
+Execution halted
