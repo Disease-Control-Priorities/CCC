@@ -5,7 +5,7 @@ rm(list=ls())
 pacman::p_load(data.table, dplyr, tidyr, progress, pspline, MortalityLaws) 
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-load("new_inputs/PreppedData2023b.Rda")
+load("new_inputs/PreppedData2023c.Rda")
 source("utils/demmod_icer_rankb.R")
 
 ###############################################################################################################################
@@ -23,7 +23,7 @@ sel.cse       <- cse_g %>% pull(cause_name) %>% unique()
 time1<-Sys.time()
 for (is in all.locs){
     
-    projection = project_pop(is, interventions, 0.80, "no", sel.cse, "varying", "yes", "yes", 1)      
+    projection = project_pop(0.7, is, interventions, 0.80, "no", sel.cse, "varying", "yes", "yes", 1)      
     
     all.pin    = data.table(projection$pin.est)
     all.dalys  = data.table(projection$dalys) 
@@ -60,9 +60,6 @@ for(is in all.locs[c(2:77)]){
 save(all.pin.opt, dadt.all.opt, q30.opt, dalys.opt, file = paste0("output/results_target_all.Rda"))
 
 
-
-
-
 ############
 #for 3q0 and all baseline NCD deaths
 ############
@@ -71,7 +68,7 @@ save(all.pin.opt, dadt.all.opt, q30.opt, dalys.opt, file = paste0("output/result
 time1<-Sys.time()
 for (is in all.locs){
     
-    projection = project_pop(is, interventions, 0.80, "yes", sel.cse, "varying", "yes", "yes", 1)      
+    projection = project_pop(0.7, is, interventions, 0.80, "yes", sel.cse, "varying", "yes", "yes", 1)      
     
     all.q30    = data.table(projection$q30df) 
     cse.deaths = data.table(projection$D0cse)

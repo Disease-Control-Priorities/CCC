@@ -27,8 +27,8 @@ sel.cse       <- cse_g %>% pull(cause_name) %>% unique()
 
 all.pin.l     <- all.dalys.l <- all.q30.l <-dadt.all.l<- list(total)
 
-parallelCluster <- makeCluster(30, type = "SOCK",methods = FALSE,outfile="log.txt") #ADAM: set how many threads you want to use
-quality<-0.7 #ADAM run1
+parallelCluster <- makeCluster(2, type = "SOCK",methods = FALSE,outfile="log.txt") #ADAM: set how many threads you want to use
+quality<-0.9 #
 
 setDefaultCluster(parallelCluster)
 registerDoParallel(parallelCluster)
@@ -110,7 +110,7 @@ for (i in 233:308){
 
 #########################################################################################
 
-save(all.pin, all.dalys, all.q30, dadt.all, file = "output2023_target_intersectoral.Rda")
+save(all.pin, all.dalys, all.q30, dadt.all, file = "output2023_target_intersectoral_optm.Rda")
 
 stopCluster(parallelCluster)
 

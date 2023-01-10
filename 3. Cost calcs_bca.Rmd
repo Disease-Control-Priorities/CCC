@@ -693,17 +693,17 @@ final_all_ICER <- rbind(final_all_ICER, country.all3)
 
 # All data saved
 ```{r}
-file.name <- paste0("output/bca_costs/All_total_cost_2030_intervention_base",".csv")
-write.csv(final_all_intervention, file.name)
+#file.name <- paste0("output/bca_costs/All_total_cost_2030_intervention_base",".csv")
+#write.csv(final_all_intervention, file.name)
 
-file.name <- paste0("output/bca_costs/All_total_cost_2030_year_base",".csv")
-write.csv(final_all, file.name)
+#file.name <- paste0("output/bca_costs/All_total_cost_2030_year_base",".csv")
+#write.csv(final_all, file.name)
 
-file.name <- paste0("output/bca_costs/All_ICER_base",".csv") #FOR WILL's CODE
-write.csv(final_all_ICER, file.name)
+#file.name <- paste0("output/bca_costs/All_ICER_base",".csv") #FOR WILL's CODE
+#write.csv(final_all_ICER, file.name)
 
-file.name <- paste0("output/bca_costs/All_increment_2030_base",".csv")
-write.csv(increment_all_year, file.name)
+#file.name <- paste0("output/bca_costs/All_increment_2030_base",".csv")
+#write.csv(increment_all_year, file.name)
 
 
 ```

@@ -14,7 +14,7 @@
 #' @param covid      : include a COVID shock for 2020 and 2021 (yes or no)
 #' @return A list with various outputs to use for further analyses
 
-project_pop <- function(is, inter, inc.val, tas, sel.cse, inc.type, est.pin, covid.in, sc.covid= NULL){
+project_pop <- function(quality, is, inter, inc.val, tas, sel.cse, inc.type, est.pin, covid.in, sc.covid= NULL){
   # fixed parameters
   n = 12; year0 = 2019; gender_lab = c("Female", "Male"); sex_ratio = 0.5; 
   x = 0:85; z = length(x); w = 2*z; ninters = length(inter) 
@@ -83,7 +83,7 @@ project_pop <- function(is, inter, inc.val, tas, sel.cse, inc.type, est.pin, cov
              Pred = `Baseline Coverage` + ic*inc,
              `Target (P1)`= ifelse(Pred > 1, 1, Pred), #this will hold coverage at 100% after achievement**
              `Target (P1)`= ifelse(`Target (P1)` < `Baseline Coverage`, `Baseline Coverage`, `Target (P1)`),
-             `Impact` = 0.7*((`Effect (I)`*(`Target (P1)`-`Baseline Coverage`))/
+             `Impact` = quality*((`Effect (I)`*(`Target (P1)`-`Baseline Coverage`))/
                                    (1-(`Effect (I)`*`Baseline Coverage`))))
     
     for(i in 2:n){
@@ -93,7 +93,7 @@ project_pop <- function(is, inter, inc.val, tas, sel.cse, inc.type, est.pin, cov
                Pred = `Baseline Coverage` + ic*inc,
                `Target (P1)`= ifelse(Pred > 1, 1, Pred), #this will hold coverage at 100% after achievement**
                `Target (P1)`= ifelse(`Target (P1)` < `Baseline Coverage`, `Baseline Coverage`, `Target (P1)`),
-               `Impact` = 0.7*((`Effect (I)`*(`Target (P1)`-`Baseline Coverage`))/
+               `Impact` = quality*((`Effect (I)`*(`Target (P1)`-`Baseline Coverage`))/
                                      (1-(`Effect (I)`*`Baseline Coverage`))))%>%mutate(year_id=2019+i-1)%>%
         bind_rows(.,dis.dfb)
       
@@ -151,7 +151,7 @@ project_pop <- function(is, inter, inc.val, tas, sel.cse, inc.type, est.pin, cov
         tax.df1 <- tax.df1 %>% mutate(age_name = a)
         tax.df2 <- rbind(tax.df2, tax.df1)
       }
-      tax.df2 <- tax.df2 %>% mutate(Impact = 0.7*ifelse(s.dp == 0, 0, Impact))
+      tax.df2 <- tax.df2 %>% mutate(Impact = quality*ifelse(s.dp == 0, 0, Impact))
       
       salt.df1 <- salt.df2 <- salt.df %>% rename(Impact = salt_impact) %>% 
         mutate(Code = "salt", age_name = 0) %>%
@@ -160,7 +160,7 @@ project_pop <- function(is, inter, inc.val, tas, sel.cse, inc.type, est.pin, cov
         salt.df1 <- salt.df1 %>% mutate(age_name = a)
         salt.df2 <- rbind(salt.df2, salt.df1)
       }
-      salt.df2 <- salt.df2 %>% mutate(Impact = 0.7*ifelse(i < 5, 0, s.dp*(1 - Impact)))
+      salt.df2 <- salt.df2 %>% mutate(Impact = quality*ifelse(i < 5, 0, s.dp*(1 - Impact)))
       
       tf.df1 <- tf.df2 <- tf.df %>% rename(Impact = transfat_impact) %>% 
         mutate(Code = "transfat", age_name = 0) %>%
@@ -169,7 +169,7 @@ project_pop <- function(is, inter, inc.val, tas, sel.cse, inc.type, est.pin, cov
         tf.df1 <- tf.df1 %>% mutate(age_name = a)
         tf.df2 <- rbind(tf.df2, tf.df1)
       }
-      tf.df2 <- tf.df2 %>% mutate(Impact = 0.7*ifelse(i < 5, 0, s.dp*(1 - Impact)))
+      tf.df2 <- tf.df2 %>% mutate(Impact = quality*ifelse(i < 5, 0, s.dp*(1 - Impact)))
       ########################################################################################################
       
       # Calculate the mortality reduction based on baseline coverage, increase and efficacy
@@ -181,7 +181,7 @@ project_pop <- function(is, inter, inc.val, tas, sel.cse, inc.type, est.pin, cov
                Pred = `Baseline Coverage` + ic*inc*s.dp, 
                `Target (P1)`= ifelse(Pred > 0.90, 0.90, Pred),
                `Target (P1)`= ifelse(`Target (P1)` < `Baseline Coverage`, `Baseline Coverage`, `Target (P1)`),
-               `Impact` = 0.7*((`Effect (I)`*(`Target (P1)`-`Baseline Coverage`))/
+               `Impact` = quality*((`Effect (I)`*(`Target (P1)`-`Baseline Coverage`))/
                                  (1-(`Effect (I)`*`Baseline Coverage`)))) 
       } else {
       in.dfb             <- in.df.in %>%
@@ -189,7 +189,7 @@ project_pop <- function(is, inter, inc.val, tas, sel.cse, inc.type, est.pin, cov
                Pred = `Baseline Coverage` + ic*inc*s.dp,
                `Target (P1)`= ifelse(Pred > 0.90, 0.90, Pred),
                `Target (P1)`= ifelse(`Target (P1)` < `Baseline Coverage`, `Baseline Coverage`, `Target (P1)`),
-               `Impact` = 0.7*((`Effect (I)`*(`Target (P1)`-`Baseline Coverage`))/
+               `Impact` = quality*((`Effect (I)`*(`Target (P1)`-`Baseline Coverage`))/
                                  (1-(`Effect (I)`*`Baseline Coverage`)))) 
       }
       
