@@ -474,17 +474,17 @@ write.csv(tab, "Figures/all_table.csv", row.names=F)
 
 #8% 
 atab1<-read.csv("Figures/clinical_full_2023_2030.csv")%>%
-  select(WB_Region, Code, Intervention, DALYS.avert, BCR)%>%
-  gather(Metric, Base, -WB_Region, -Code, -Intervention)%>%
+  select(WB_Region, Intervention, DALYS.avert, BCR)%>%
+  gather(Metric, Base, -WB_Region, -Intervention)%>%
   left_join(., 
             read.csv("Figures/clinical_full_2023_2030_pesm.csv")%>%
-              select(WB_Region, Code, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Pessimistic, -WB_Region, -Code, -Intervention)
+              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
+              gather(Metric, Pessimistic, -WB_Region, -Intervention)
   )%>%
   left_join(., 
             read.csv("Figures/clinical_full_2023_2030_optm.csv")%>%
-              select(WB_Region, Code, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Optimistic, -WB_Region, -Code, -Intervention)
+              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
+              gather(Metric, Optimistic, -WB_Region, -Intervention)
             )%>%
   
   arrange(WB_Region, Intervention, Metric, -Base)
@@ -493,17 +493,17 @@ write.csv(atab1, "Figures/Appendix_Table_8percent.csv", row.names = F)
 
 #5%
 atab2<-read.csv("Figures/clinical_full_2023_2030_5perc.csv")%>%
-  select(WB_Region, Code, Intervention, DALYS.avert, BCR)%>%
-  gather(Metric, Base, -WB_Region, -Code, -Intervention)%>%
+  select(WB_Region, Intervention, DALYS.avert, BCR)%>%
+  gather(Metric, Base, -WB_Region, -Intervention)%>%
   left_join(., 
             read.csv("Figures/clinical_full_2023_2030_pesm_5perc.csv")%>%
-              select(WB_Region, Code, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Pessimistic, -WB_Region, -Code, -Intervention)
+              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
+              gather(Metric, Pessimistic, -WB_Region, -Intervention)
   )%>%
   left_join(., 
             read.csv("Figures/clinical_full_2023_2030_optm_5perc.csv")%>%
-              select(WB_Region, Code, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Optimistic, -WB_Region, -Code, -Intervention)
+              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
+              gather(Metric, Optimistic, -WB_Region, -Intervention)
   )%>%
   
   arrange(WB_Region, Intervention, Metric, -Base)
@@ -512,17 +512,17 @@ write.csv(atab2, "Figures/Appendix_Table_5percent.csv", row.names = F)
 
 #14%
 atab3<-read.csv("Figures/clinical_full_2023_2030_14perc.csv")%>%
-  select(WB_Region, Code, Intervention, DALYS.avert, BCR)%>%
-  gather(Metric, Base, -WB_Region, -Code, -Intervention)%>%
+  select(WB_Region, Intervention, DALYS.avert, BCR)%>%
+  gather(Metric, Base, -WB_Region, -Intervention)%>%
   left_join(., 
             read.csv("Figures/clinical_full_2023_2030_pesm_14perc.csv")%>%
-              select(WB_Region, Code, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Pessimistic, -WB_Region, -Code, -Intervention)
+              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
+              gather(Metric, Pessimistic, -WB_Region, -Intervention)
   )%>%
   left_join(., 
             read.csv("Figures/clinical_full_2023_2030_optm_14perc.csv")%>%
-              select(WB_Region, Code, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Optimistic, -WB_Region, -Code, -Intervention)
+              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
+              gather(Metric, Optimistic, -WB_Region, -Intervention)
   )%>%
   
   arrange(WB_Region, Intervention, Metric, -Base)
@@ -567,7 +567,23 @@ cost<-all.pin%>%filter(Code==5.1, location_name == "India")%>%
   rename(Adjusted.cost = Adjusted,
          Baseline.cost = Baseline)%>%
   left_join(., dalys)%>%
-  left_join(., deaths)
+  left_join(., deaths)%>%
+  mutate(discount.rate = ((1-0.08)^(year_id-2022)),
+         discount.rate = ifelse(year_id<2023,1,discount.rate),
+         Adjusted.cost.discounted = Adjusted.cost*discount.rate,
+         DALYS.ave.discounted = DALYS.ave*discount.rate)
 
-write.csv(cost, "output/India_crude_tob_tax.csv")
+#write.csv(cost, "output/India_crude_tob_tax.csv")
 
+ccc.vsl<-read.csv("DALY_value.csv", stringsAsFactors = F)%>%
+  gather(year_id, val, -wb2021)%>%
+  mutate(year_id = as.numeric(gsub("X","",year_id)))%>%
+  filter(wb2021 == "LMIC")%>%
+  select(-wb2021)
+
+
+out<-left_join(cost, ccc.vsl)%>%
+  mutate(gross.benefits = val*DALYS.ave.discounted,
+         forgone.surplus = gross.benefits*0.009)
+
+write.csv(out, "output/India_tob_tax.csv")

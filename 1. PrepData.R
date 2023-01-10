@@ -139,6 +139,10 @@ wpp.in<-wpp.in%>%
          Nx = Nx*adjustment)%>%
   select(-wb2021, -adjustment)
 
+write.csv(wpp.in%>%filter(location_name=="India")%>%
+            group_by(year)%>%
+            summarise(pop = sum(Nx)), "india_pop.csv")
+
 ##############################################################################################################
 # Countries included in analysis 
 ##############################################################################################################
