@@ -30,7 +30,7 @@ for(is in all.locs){
     
     for(inter in interventions){
 
-    projection = project_pop(is, inter, 0.80, "no", sel.cse, "varying", "yes", "yes", 1)      
+    projection = project_pop(0.7, is, inter, 0.80, "no", sel.cse, "varying", "yes", "yes", 1)      
 
     all.pin.l[[k]]    = data.table(projection$pin.est)
     all.dalys.l[[k]]  = data.table(projection$dalys) %>% mutate(Code = inter)
