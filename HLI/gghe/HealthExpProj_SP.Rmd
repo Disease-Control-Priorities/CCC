@@ -1,0 +1,1271 @@
+---
+title: "Health expenditure projections in LMICs 2020-2030\nPRELIMINARY results"
+author: "A Gheorghe, YL Chi, K Chalkidou"
+date: "January 2020"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    df_print: kable
+---
+
+#Aim
+- estimate health expenditures for low- and middle-income countries (LMICs) over the period 2020-2030 - focus on domestic government general expenditure (GGHE-D)
+- further developments: out-of-pocket expenditure (OOP); external influences: donor transition, outbreaks
+
+#Approach
+- project country-level GDP per capita (current USD) over 2025-2030 based on IMF WEO official projections 2020-2024
+- GDP = GDP per capita x total population (UN data)
+- convert to USD2017 values using GDP deflator for USD; 
+- project GGHE-D over 2017-2030 by multiplying projected GDP with country-specific GGHE-D % GDP from WHO Global Health Expenditure Database;
+- compare GGHE-D projections with total costs (USD2017) of NCD-focused interventions; and with IHME Global Financing Database projections of government health spending.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(include=FALSE, echo = FALSE, warning = FALSE, message = FALSE)
+options(scipen=999)
+
+#install packages
+pk_toinstall<-c("gridExtra","leaps","stargazer", "kableExtra", "qwraps2", "RcppRoll", "caret", "gridExtra", "forecast", "plm")
+pk_installed<-pk_toinstall %in% rownames(installed.packages())
+if(any(!pk_installed)) install.packages(pk_toinstall[!pk_installed])
+
+#load packages
+pk_load<-c("ggplot2","dplyr","tidyr","stargazer","tidyverse", "knitr", "plm", "gridExtra",
+           "RcppRoll", "lme4", "caret", "kableExtra", "forecast")
+
+lapply(pk_load, require, character.only = TRUE)
+```
+
+```{r load data from workspace}
+
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+load("../new_inputs/HealthExpProj_ws_Aug20.RData")
+
+```
+
+
+```{r update data}
+
+#remove data
+rm(list= ls()[!(ls() %in% c('weo_raw','gdp_growth_raw', 'wpp_raw', 'wpp_age_raw', 'cc', 'ghed_raw','ihme_raw', 'ncd_costs_raw', 'ncd_costs_latest_raw', 'ncd_costs_july_ncd4'))])
+
+### UPDATE DATA ###
+ncd_costs_aug <- read.csv("Figures/Total_cost_NCD_forAdrian0830_new.csv") 
+
+ghed_raw<-read_excel("../new_inputs/GHED_data.xlsx", sheet=1)
+
+ghed_raw<-ghed_raw%>%gather(short_code, data, -year, -country, -`country code`, -`region (WHO)`, -`income group (2018)`,)%>%
+  rename(Countries = country, ISO = `country code`, WHORegion = `region (WHO)`)%>%select(-c(`income group (2018)`))%>%
+  spread(year, data)
+
+codebook<-read_excel("../new_inputs/GHED_data.xlsx", sheet=2)%>%
+  rename(short_code = `Indicator short code`, Indicators = `Indicator name`)%>%
+  select(c(short_code, Indicators))
+
+ghed_raw<-left_join(ghed_raw, codebook, by="short_code")%>%select(-c(short_code))
+
+
+#refine ncd_costs dataset
+ncd_costs0<-ncd_costs_raw %>%
+  gather(year, value, -ISO, -Country, -WB_region15, -scenario, -GBD_region) %>%
+  mutate(year=as.numeric(sub("X", "", year)), ISO=as.character(ISO)) %>%
+  rename("ncd_costs"="value", "income_group"="WB_region15", "gbd_region"="GBD_region") %>%
+  drop_na()
+
+ncd_costs1 <- ncd_costs_latest_raw %>%
+  select(-X) %>%
+  pivot_longer(starts_with("total_cost_2")) %>%
+  rename("ncd_costs_2017"="value", "year"="name", "ISO"="iso3") %>%
+  mutate(year=as.numeric(sub("total_cost_", "", year)), ISO=as.character(ISO))
+
+#From Yoshi
+ncd_costs_ncd4 <- ncd_costs_july_ncd4 %>%
+  select(-X) %>%
+  rename("scenario"="senario") %>%
+  pivot_longer(starts_with("total_cost_2")) %>%
+  rename("ncd_costs_2017"="value", "year"="name", "ISO"="iso3") %>%
+  mutate(year=as.numeric(sub("total_cost_", "", year)), ISO=as.character(ISO))
+
+#most recent
+ncd_costs_new <- ncd_costs_aug %>%
+  select(-X) %>%
+  rename("scenario"="senario") %>%
+  pivot_longer(starts_with("total_cost_2")) %>%
+  rename("ncd_costs_2017"="value", "year"="name", "ISO"="iso3") %>%
+  mutate(year=as.numeric(sub("total_cost_", "", year)), ISO=as.character(ISO))
+
+#ncd_costs_self <- ncd_costs_july_self %>%
+#  select(-X) %>%
+#  rename("scenario"="senario") %>%
+#  pivot_longer(starts_with("total_cost_2")) %>%
+#  rename("ncd_costs_2017"="value", "year"="name", "ISO"="iso3") %>%
+#  mutate(year=as.numeric(sub("total_cost_", "", year)), ISO=as.character(ISO))
+
+#refine weo dataset
+weo<-weo_raw %>%
+  mutate(indicator=paste0(Subject.Descriptor, Units, Scale)) %>%
+  select(-Subject.Descriptor, -Units, -Scale, -Country.Series.specific.Notes, -Estimates.Start.After) %>%
+  gather(year, value, -ISO, -Country, -indicator) %>%
+  mutate(year=as.numeric(sub(".", "", year)), 
+         value=as.numeric(sub(",", "", value)),
+         ISO=as.character(ISO))
+
+#refine ghed
+ghed<-ghed_raw %>%
+  filter(Indicators %in% c("Domestic General Government Health Expenditure (GGHE-D) as % General Government Expenditure (GGE)",
+                           "Domestic General Government Health Expenditure (GGHE-D) as % Gross Domestic Product (GDP)")) %>%
+  gather(year, value, -Countries, -ISO, -WHORegion, -Indicators) %>%
+  mutate(year=as.numeric(year), #changed from mutate(year=as.numeric(sub(".", "", year)),
+         Indicators=case_when(
+           Indicators=="Domestic General Government Health Expenditure (GGHE-D) as % General Government Expenditure (GGE)" ~ "GGHED_GGE",
+           Indicators=="Domestic General Government Health Expenditure (GGHE-D) as % Gross Domestic Product (GDP)" ~ "GGHED_GDP"
+         )) %>%
+ mutate(yearcat=case_when(
+    year>=2000 & year<=2004 ~ "'00-'04",
+    year>=2005 & year<=2009 ~ "'05-'09",
+    year>=2010 & year<=2014 ~ "'10-'14",
+    year>=2015 ~ "'15-'17"
+  )) %>%
+  rename("who_region"="WHORegion") %>%
+  group_by(ISO, year) %>%
+  spread(Indicators, value) %>%
+  mutate(GGE_GDP=GGHED_GDP*100/GGHED_GGE) %>%
+  gather(Indicators, value, -Countries, -ISO, -year, -yearcat, -who_region) %>%
+  arrange(ISO, year) %>%
+  ungroup() %>%
+  mutate(ISO=as.character(ISO))
+
+gghed <- ghed %>%
+  spread(Indicators, value) %>%
+  select(-GGE_GDP, -GGHED_GGE)
+
+#refine wpp
+wpp_total<-wpp_raw %>%
+  dplyr::filter(Variant=="Medium", Time>=2000, Time<=2030) %>%
+  select(Location, Time, PopTotal) %>%
+  left_join(cc %>% select(Country.UNWPP, Country.Code), by=c("Location" = "Country.UNWPP")) %>%
+  rename("Country"="Location", "year"="Time", "ISO"="Country.Code") %>%
+  drop_na()
+
+wpp_age65<-wpp_age_raw %>%
+  select(Location, Age, starts_with("X")) %>%
+  gather(year, PropAge, -Location, - Age) %>%
+  mutate(year=as.integer(sub("X", "", year))) %>%
+  rename("Country"="Location") %>%
+  mutate(Country=as.character(trimws(Country)), year=as.integer(year)) %>%
+  filter(Age=="65+") %>%
+  select(-Age)
+
+wpp<-wpp_total %>%
+  left_join(wpp_age65) %>%
+  rename("PropAge65"="PropAge")
+
+#refine ihme
+ihme<-ihme_raw %>%
+  filter(iso3!="", year<=2030) %>%
+  select(iso3, location_name, year, ghes_total_mean, 
+         ghes_total_lower, ghes_total_upper, ghes_per_gdp_mean,
+         ghes_total_ppp_mean, ghes_total_ppp_lower, ghes_total_ppp_upper) %>%
+  #convert USD thousands to units
+  mutate(ghes_total_mean=ghes_total_mean*1000,
+         ghes_total_lower=ghes_total_lower*1000,
+         ghes_total_upper=ghes_total_upper*1000,
+         ghes_total_ppp_mean=ghes_total_mean*1000,
+         ghes_total_ppp_lower=ghes_total_lower*1000,
+         ghes_total_ppp_upper=ghes_total_upper*1000,
+         GHES_GDP=ghes_per_gdp_mean*100) %>%
+  rename("ISO"="iso3", "Location"="location_name") %>%
+  #convert USD2018 units to USD2017 billions
+  mutate(GHES_USD2017=ghes_total_mean*0.9762181,
+         GHES_USD_PPP2017=ghes_total_ppp_mean**0.9762181,
+         GDP_USD2017_ihme=GHES_USD2017/ghes_per_gdp_mean,
+         GDP_USD_PPP2017_ihme=GHES_USD_PPP2017/ghes_per_gdp_mean,
+         ISO=as.character(ISO))
+
+#GDP deflator rebased to 2017
+USD2017_defl<-weo %>%
+  filter(indicator=="Gross domestic product, deflatorIndex", year>=2000, ISO=="USA") %>%
+  select(year, value) %>%
+  #use 2% yearly growth to project GDP deflator over 2025-2030
+  rbind(data.frame(year=seq(2025,2030), value=rep(0,6))) %>%
+  mutate(value=ifelse(year>2024, value[which(year==2024)]*1.02^(year-2024), value)) %>%
+  mutate(GDPdefl_ratio=value[which(year==2017)]/value) %>%
+  rename("GDPdefl"="value")
+
+```
+
+#Define core dataset
+- NCD costs provided for 123 LMICs
+- When merging with other datasets:
+    - IMF World Economic Outlook: no GDP data for Cuba and Palestine -> both excluded
+    - WHO Global Health Expenditure Database: no data for Montenegro and Libya (from 2011) -> both excluded
+    - UN World Population Prospects and IHME Global Financing Database: all included
+- 119 LMICs carried forward in the analysis
+
+#Costs of NCD interventions
+```{r ncd_costs_viz, include=TRUE}
+dx0 <- ncd_costs0 %>%
+  filter(scenario!="orange", year>=2017) %>%
+  group_by(scenario, year) %>%
+  summarise(sum_ncd_costs=sum(ncd_costs)/10^9) %>%
+  mutate(dataset="December 2019 data") %>%
+  select(year, sum_ncd_costs, scenario, dataset)
+
+dx1 <- ncd_costs1 %>%
+  group_by(year) %>%
+  summarise(sum_ncd_costs=sum(ncd_costs_2017)/10^9) %>%
+  mutate(dataset="June 2020 data") %>%
+  select(year, sum_ncd_costs, dataset)
+
+dx2 <- ncd_costs_ncd4 %>%
+  group_by(year) %>%
+  summarise(sum_ncd_costs=sum(ncd_costs_2017)/10^9) %>%
+  mutate(dataset="July 2020 data") %>%
+  select(year, sum_ncd_costs, dataset)
+
+dx3 <- ncd_costs_new %>%
+  group_by(year) %>%
+  summarise(sum_ncd_costs=sum(ncd_costs_2017)/10^9) %>%
+  mutate(dataset="Aug 2021 data") %>%
+  select(year, sum_ncd_costs, dataset)
+
+bind_rows(dx0, dx1, dx2, dx3) %>%
+  mutate(dataset_scenario=paste0(dataset, ", ", scenario, " scenario")) %>%
+  ggplot(aes(year, sum_ncd_costs, colour=dataset_scenario)) +
+  geom_line() +
+  theme_minimal() +
+  theme(legend.position = "bottom",
+        legend.direction = "vertical") +
+  scale_colour_manual(name="dataset and scenario",
+                      values = c("red","blue", "green", "purple", "black"),
+                      labels = c("Aug 2021 data", "December 2019 data, blue scenario", "December 2019 data, green scenario",
+                                 "July 2020 data", "June 2020 data")) +
+  labs(title="Sum of NCD costs across all included LMICs, by year",
+       y="Billion USD 2017")
+
+ggsave("GGHE_results/ncdcosts_scenario.png")
+```
+
+#GDP projection methods
+- 3 types of projection specifications:
+    - type of average: arithmetic mean vs geometric mean
+    - type of averaging window:
+        - fixed, e.g. apply mean of last X years (2021-2024 for most countries) to 2025, 2026 etc.
+        - rolling, e.g. apply average 2021-2024 to 2025, average 2022-2025 to 2026 etc.
+    - length of averaging window: 3, 5 or 7 years
+- 12 GDP projection scenarios
+- in all scenarios annual GDP growth capped at 6% until 2027 and at 5% 2028-2030.
+
+```{r GDP_refine_dataset}
+#process raw data file
+gdp_nominal<-weo %>%
+  dplyr::filter(indicator=="Gross domestic product per capita, current pricesU.S. dollarsUnits") %>%
+  select(-indicator) %>%
+  rename("GDPpc_USD"="value") %>%
+  dplyr::filter(year>=2000)
+
+#explore missing values - Syria 2014+, Pakistan 2020+, Venezuela 2022+
+#gdp_nominal %>%
+#  filter(is.na(GDP_USD))
+
+#remove missing values
+gdp_nominal<-gdp_nominal %>%
+  filter(!is.na(GDPpc_USD))
+```
+
+```{r define_core_dataset, include=TRUE}
+#update core_df
+core_df1<-ncd_costs_new %>%
+  #CONSOLIDATED LIST OF COUNTRIES ACROSS DATA SOURCES
+  select(ISO) %>%
+  distinct() %>%
+  #merge with IMF WEO, explore NA's
+  left_join(weo %>% select(ISO, Country) %>% distinct()) %>%
+  #filter(is.na(Country)) %>%
+  #exclude NA's in IMF WEO dataset: Cuba and Palestine
+  drop_na() %>%
+  #merge with WHO GHED, explore NA's
+  left_join(ghed %>% select(ISO, Countries, year, value) %>% filter(year==2015) %>% distinct()) %>%
+  #filter(is.na(value)) %>%
+  #exclude NA's in WHO GHED dataset: Montenegro, Libya
+  drop_na() %>%
+  select(-year, -value) %>%
+  #merge with UN WPP, explore NA's - none
+  left_join(wpp %>% select(ISO, Country) %>% distinct()) %>%
+  #filter(is.na(Country)) %>%
+  #merge with IHME, explore NA's - none
+  left_join(ihme %>% select(ISO, Location) %>% distinct()) %>%
+  #filter(is.na(Location)) %>%
+  left_join(ncd_costs_new %>% select(ISO, Class, Region)) %>%
+  left_join(ghed %>% select(ISO, who_region)) %>%
+  distinct() %>%
+  #DEFINE TIME WINDOW 2000-2030
+  slice(rep(1:n(), each=2030-2000+1)) %>%
+  group_by(ISO) %>%
+  mutate(year=seq(2000, 2030)) %>%
+  #ADD GDP and POP DATA
+  left_join(gdp_nominal %>% select(-Country), by=c("ISO", "year")) %>%
+  mutate(GDPpc_USD_off=GDPpc_USD) %>%
+  left_join(wpp %>% select(-Country), by=c("ISO", "year")) %>%
+  #explore countries with no age structure data: Dominica DMA, Marshall Islands MHL, Cote d'Ivoire CIV
+  #filter(year==2000, is.na(PropAge65))
+  #impute Dominica=Dominican Republic, Marshall=Micronesia, Cote d'Ivoire=Burkina
+  mutate(PropAge65=replace(PropAge65, ISO=="DMA", wpp$PropAge65[which(wpp$ISO=="DOM")])) %>%
+  mutate(PropAge65=replace(PropAge65, ISO=="MHL", wpp$PropAge65[which(wpp$ISO=="FSM")])) %>%
+  mutate(PropAge65=replace(PropAge65, ISO=="CIV", wpp$PropAge65[which(wpp$ISO=="BFA")])) %>%
+  group_by(ISO) %>%
+  mutate(PopTotal=PopTotal*10^3,
+         PropAge65=approx(year, PropAge65, year)$y) %>%
+  #apply deflator
+  left_join(USD2017_defl) %>%
+  mutate(GDPpc_USD2017=GDPpc_USD*GDPdefl_ratio,
+         GDPpc_USD2017_off=GDPpc_USD_off*GDPdefl_ratio)
+```
+
+```{r GDP_proj_functions}
+#define ceiling values for yearly GDP growth 2025-2030
+gdp_limits<-data.frame(year=seq(2023,2030), #start @ 2023,2030
+                       gdp_ceiling=c(rep(1.06,3), rep(1.05,5))) #might update this window as well
+
+#define function that projects GDP based on the last X years
+fun_gdp_fwdproj<-function(df, year_startpred, years_back, mean_type, window_type){
+  df1<-df %>%
+    group_by(ISO) %>%
+    #calculate annual growth
+    mutate(GDPperc=GDPpc_USD2017/dplyr::lag(GDPpc_USD2017)) %>%
+    #average annual growth
+    mutate(GDPperc_mean=case_when(
+      mean_type=="geom" ~ roll_prodr(GDPperc, years_back)^(1/years_back),
+      mean_type=="arith" ~ roll_meanr(GDPperc, years_back)),
+      last_year=min(max(year[which(!is.na(GDPperc))]), year_startpred)) %>%
+    #remove base years
+    filter(!(year<last_year & is.na(GDPperc_mean))) %>%
+    fill(Country, GDPperc_mean) %>%
+    #merge with GDP growth ceiling dataset
+    left_join(gdp_limits)
+  
+if (window_type=="rolling") {for(i in 1:nrow(df1)){
+  df1$GDPperc_mean[i]=ifelse(df1$year[i]>df1$last_year[i],
+                             ifelse(mean_type=="arith",
+                                    min(mean(df1$GDPperc_mean[(i-1):(i-years_back)]), df1$gdp_ceiling[i]),
+                                    min(prod(df1$GDPperc_mean[(i-1):(i-years_back)])^(1/years_back), df1$gdp_ceiling[i])),
+                             df1$GDPperc_mean[i])
+  
+  df1$GDPpc_USD2017[i]=ifelse(df1$year[i]>df1$last_year[i],
+                                   df1$GDPpc_USD2017[i-1]*df1$GDPperc_mean[i],
+                                   df1$GDPpc_USD2017[i])}
+  }
+
+if (window_type=="fixed") {
+  df1<-df1 %>%
+    mutate(GDPperc_mean=ifelse(year>last_year & !is.na(gdp_ceiling) & GDPperc_mean>gdp_ceiling, 
+                               gdp_ceiling, 
+                               GDPperc_mean)) %>%
+    group_by(ISO) %>%
+    #calculate GDP projections based on GDP growth average
+    mutate(GDPpc_USD2017=ifelse(year>last_year,
+                          GDPpc_USD2017[which(year==last_year)]*GDPperc_mean^(year-last_year), 
+                          GDPpc_USD2017))
+}
+
+  
+df1<-df1 %>%
+  mutate(GDPmethod=paste0(mean_type, " mean, ", years_back, " years ", window_type, " window")) %>%
+  select(-gdp_ceiling) 
+
+return(df1)
+}
+
+test1<-fun_gdp_fwdproj(core_df1, year_startpred=2020, years_back=4, 
+                       mean_type="arith", window_type="rolling")
+```
+
+#Which GDP proj method performs best over 2022-2024? 
+Most forward projection specifications overestimate...
+
+```{r GDP_testproj, include=TRUE}
+#test GDP projection functions
+test_gdp <- expand.grid(year_startpred=2021, years_back=c(3,4,5), 
+                        mean_type=c("arith", "geom"), window_type=c("fixed", "rolling"))
+
+gdp_proj_test <- fun_gdp_fwdproj(core_df1,
+                                 year_startpred = test_gdp[1,1],
+                                 years_back = test_gdp[1,2],
+                                 mean_type= test_gdp[1,3], 
+                                 window_type = test_gdp[1,4])
+for (i in 2:nrow(test_gdp))
+{
+  gdp_proj_test <- rbind(gdp_proj_test,
+                         fun_gdp_fwdproj(core_df1,
+                                         year_startpred = test_gdp[i,1],
+                                         years_back = test_gdp[i,2],
+                                         mean_type= test_gdp[i,3], 
+                                         window_type = test_gdp[i,4]))
+}
+
+
+#convert GDP_USD to GDP_USD2017
+gdp_proj_test <- gdp_proj_test %>%
+  mutate(GDP_USD2017=GDPpc_USD2017*PopTotal,
+         GDP_USD2017_off=GDPpc_USD2017_off*PopTotal)
+
+#investigate NA's: only Pakistan and Venezuela lack official projections, as expected
+gdp_proj_test %>%
+  select(ISO, Country, GDP_USD2017_off, year) %>%
+  filter(is.na(GDP_USD2017_off), year>2014, year<2019)
+```
+
+#Which GDP proj method performs best over 2022-2024?
+
+```{r GDP_testproj_viztable, include=TRUE}
+#examine prediction errors
+gdp_proj_test %>%
+  filter(year>2021, year<=2024, !is.na(GDP_USD2017_off)) %>%
+  select(year, GDPmethod, GDP_USD2017, GDP_USD2017_off) %>%
+  group_by(year, GDPmethod) %>%
+  summarise(sum_GDP_USD2017=sum(GDP_USD2017)/10^12,
+         sum_GDP_USD2017off=sum(GDP_USD2017_off)/10^12) %>%
+  ggplot() +
+  geom_line(aes(x=year, y=sum_GDP_USD2017, colour=GDPmethod)) +
+  geom_line(aes(x=year, y=sum_GDP_USD2017off), colour="black", size=1) +
+  labs(x="Year", y="Trillion USD2017",
+       title="GDP projections vs observed, 2016-2018",
+       caption="Note: Black line denotes official IMF data, coloured lines are predictions") +
+  theme(legend.direction="vertical", legend.position="bottom",
+        panel.background = element_blank()) +
+  guides(colour=guide_legend(ncol=3))
+
+ggsave("GGHE_results/GDPmethod.png")
+
+#by country
+gdp_proj_test %>%
+  filter(year>2021, year<=2024) %>%
+  mutate(GDP_sqerr=(GDP_USD2017-GDP_USD2017_off)^2) %>%
+  group_by(ISO, GDPmethod) %>%
+  summarise(sum_GDP_sqerr=sum(GDP_sqerr)) %>%
+  arrange(ISO, sum_GDP_sqerr) %>%
+  top_n(-1) %>%
+  ggplot(aes(GDPmethod)) +
+  geom_bar() +
+  coord_flip()
+
+gdp_proj_selected_method<-gdp_proj_test %>%
+  filter(year>2021, year<=2024) %>%
+  mutate(GDP_sqerr=(GDP_USD2017-GDP_USD2017_off)^2) %>%
+  group_by(ISO, GDPmethod) %>%
+  summarise(sum_GDP_sqerr=sum(GDP_sqerr)) %>%
+  arrange(ISO, sum_GDP_sqerr) %>%
+  group_by(ISO) %>%
+  slice (1) %>%
+  select(-sum_GDP_sqerr) 
+
+gdp_proj_selected_method %>%
+  group_by(GDPmethod) %>%
+  tally()
+
+ggsave("GGHE_results/GDPmethod2.png")
+
+```
+
+```{r GDP_proj_apply}
+
+proj_gdp <- expand.grid(year_startpred=2025, years_back=c(3,4,5), 
+                        mean_type=c("arith", "geom"), window_type=c("fixed", "rolling"))
+
+#latest dataset
+gdp_proj_all1 <- fun_gdp_fwdproj(core_df1,
+                                 year_startpred = proj_gdp[1,1],
+                                 years_back = proj_gdp[1,2],
+                                 mean_type= proj_gdp[1,3], 
+                                 window_type = proj_gdp[1,4])
+for (i in 2:nrow(proj_gdp))
+{
+  gdp_proj_all1 <- rbind(gdp_proj_all1,
+                         fun_gdp_fwdproj(core_df1,
+                                        year_startpred = proj_gdp[i,1],
+                                        years_back = proj_gdp[i,2],
+                                        mean_type= proj_gdp[i,3], 
+                                        window_type = proj_gdp[i,4]))
+}
+
+#convert GDP_USD to GDP_USD2017
+gdp_proj_all1 <- gdp_proj_all1 %>%
+  mutate(GDP_USD2017=GDPpc_USD2017*PopTotal,
+         GDP_USD2017_off=GDPpc_USD2017_off*PopTotal)
+
+#investigate NA's
+gdp_proj_all1 %>%
+  select(ISO, Country, GDP_USD2017, year) %>%
+  filter(is.na(GDP_USD2017), year>2024)
+```
+
+#GDP all projections to 2030 - global overview
+
+```{r GDP_proj_viz1, include=TRUE}
+gdp_proj_viz1<-gdp_proj_all1 %>%
+  #join with ihme estimates
+  left_join(ihme %>% select(ISO, year, GDP_USD2017_ihme), by=c("ISO", "year")) %>%
+  select(ISO, year, Region, Class, 
+         GDPmethod, GDP_USD2017, GDP_USD2017_ihme) %>%
+  pivot_longer(starts_with("GDP_USD2017")) %>%
+  rename("GDPmethodtype"="name", "GDP_USD2017"="value") %>%
+  mutate(GDPmethod=ifelse(GDPmethodtype=="GDP_USD2017", GDPmethod, "IHME projections"),
+         GDPmethodtype=ifelse(GDPmethodtype=="GDP_USD2017", "own projections", "IHME projections")) %>%
+  distinct()
+
+#plot
+gdp_proj_viz1 %>%
+  filter(year>=2010) %>%
+  #summarise as trillion USD
+  group_by(year, GDPmethod, GDPmethodtype) %>%
+  summarise(GDP_total=sum(GDP_USD2017)/10^12) %>%
+  #remove years without IHME projections pre-2017
+  drop_na() %>%
+  ggplot(aes(x=year, y=GDP_total, fill=GDPmethod, colour=GDPmethodtype)) +
+  geom_line() +
+  labs(y="GDP, trillion USD2017", x="year", title="Sum of GDP across 119 LMICs - revised dataset") +
+  scale_x_continuous(breaks=c(2010, 2015, 2020, 2025, 2030)) +
+  theme(legend.direction="vertical", legend.position="bottom",
+        panel.background = element_blank()) +
+  guides(colour=guide_legend(ncol=2))
+```
+
+#GDP projections - summary
+- No significant differences among GDP projections at global level, but differences for some regions
+- In what follows we select the best performing method (2022-2024), arith mean 3-year fixed window, and use it to construct GDP projections for 2025-2030.
+
+```{r GDP_proj_select}
+main_df1<-gdp_proj_all1 %>%
+  filter(GDPmethod=="arith mean, 3 years fixed window") %>%
+  left_join(ihme %>% select(ISO, year, GDP_USD2017_ihme), by=c("ISO", "year"))
+```
+
+#GDP projections - summary, by region
+##Appendix Figure A1
+
+```{r GDP_proj_select_viz_region, include=TRUE}
+main_df1 %>%
+  select(ISO, year, Region, GDP_USD2017, GDP_USD2017_ihme) %>%
+  pivot_longer(starts_with("GDP_USD2017")) %>%
+  filter(year>=2015) %>%
+  rename("GDPmethodtype"="name", "GDP_USD2017"="value") %>%
+  mutate(GDPmethodtype=case_when(GDPmethodtype=="GDP_USD2017" ~ "IMF data + own projections", 
+                                 GDPmethodtype=="GDP_USD2017_ihme" ~ "IHME projections")) %>%
+  #summarise as trillion USD
+  group_by(year, Region, GDPmethodtype) %>%
+  summarise(GDP_total=sum(GDP_USD2017)/10^12) %>%
+  #plot
+  ggplot(aes(x=year, y=GDP_total, colour=GDPmethodtype)) +
+  geom_line() +
+  facet_wrap(~Region, scales="free") +
+  labs(y="GDP, trillion USD2017", x="year", title="Sum of GDP across 119 LMICs, by income group") +
+  scale_x_continuous(breaks=c(2010, 2015, 2020, 2025, 2030)) +
+  theme(legend.direction="vertical", legend.position="bottom",
+        panel.background = element_blank()) +
+  guides(fill=guide_legend(ncol=2)) +
+  guides(colour=guide_legend(ncol=2))
+
+ggsave("GGHE_results/GDPprojbyregion_vs_IHME.png")
+
+main_df1 %>%
+  select(ISO, year, Region, GDP_USD2017) %>%
+  filter(year>=2015) %>%
+  #summarise as trillion USD
+  group_by(year, Region) %>%
+  summarise(GDP_total=sum(GDP_USD2017)/10^12) %>%
+  #plot
+  ggplot(aes(x=year, y=GDP_total)) +
+  geom_line() +
+  geom_vline(xintercept = 2025, linetype="dotted", color = "blue", size=0.5) +
+  facet_wrap(~Region, scales="free", labeller = label_wrap_gen(width=30)) +
+  labs(y="GDP, trillion USD2017", x="year", 
+       caption="Note: Own projections start after the dotted line, with the exception of Venezuela (2022) and Pakistan (2020).") +
+  scale_x_continuous(breaks=c(2015, 2020, 2025, 2030)) +
+  theme(legend.direction="vertical", 
+        legend.position="bottom",
+        panel.background = element_blank()) +
+  guides(fill=guide_legend(ncol=2)) +
+  guides(colour=guide_legend(ncol=2))
+
+ggsave("GGHE_results/GDPprojbyregion.png")
+```
+
+```{r GHED_explore}
+gghed<-core_df1 %>%
+  select(ISO, year) %>%
+  left_join(ghed, by=c("ISO", "year")) %>% 
+  rename("GGHED_GDP"="value") %>%
+  filter(Indicators=="GGHED_GDP") %>%
+  select(-Indicators)
+
+#table of measures of location and spread
+gghed_limits<-gghed %>%
+  left_join(core_df1 %>% select(ISO, Region), by=c("ISO")) %>%
+  drop_na() %>%
+  filter(year>2014) %>%
+  group_by(Region) %>%
+  summarise(Average=mean(GGHED_GDP),
+            SD=sd(GGHED_GDP),
+            Median=median(GGHED_GDP),
+            IQR=IQR(GGHED_GDP),
+            p80=quantile(GGHED_GDP, 0.80),
+            p20=quantile(GGHED_GDP, 0.20)) %>%
+  arrange(Region) 
+
+kable(gghed_limits, digits=2,
+      caption = "Summary statistics of GGHE-D % GDP by region, 2015-2017")
+```
+
+#GGHE-D projection methods
+- Forward projection methods with 3 types of specifications:
+    - type of average: arithmetic mean vs geometric mean
+    - type of averaging window: fixed vs rolling
+    - length of averaging window: 3, 4 or 5 years
+    - all capped at p80-p20 observed regionally 2011-2017 to avoid paradoxical values
+- Regression methods
+    
+
+```{r GGHED_proj_fwd_functions}
+#set test variable
+gghed_test<-"yes"
+
+#define functions that project forward GGHED based on the last X years
+fun_gghed_fwdproj<-function(df, 
+                            year_startpred, 
+                            years_back, 
+                            mean_type, 
+                            window_type){
+  
+  df1<-df %>%
+    left_join(gghed %>% select(ISO, year, GGHED_GDP), by=c("ISO", "year")) %>%
+    filter(ISO %in% unique(gghed$ISO)) %>%
+    group_by(ISO) %>%
+    #calculate annual growth in GGHED_GDP
+    mutate(GGHED_GDP_off=GGHED_GDP,
+           GGHEDperc=GGHED_GDP/dplyr::lag(GGHED_GDP),
+           GGHEDperc_mean=case_when(
+             mean_type=="geom" ~ roll_prodr(GGHEDperc, years_back)^(1/years_back),
+             mean_type=="arith" ~ roll_meanr(GGHEDperc, years_back)),
+           last_year=min(max(year[which(!is.na(GGHED_GDP))]), year_startpred)) %>%
+    #remove base years
+    filter(!(year<last_year & is.na(GGHEDperc_mean))) %>%
+    #merge with limits dataset
+    left_join(gghed_limits %>% select(Region, p80, p20), by=c("Region")) %>%
+    ungroup()
+  
+if (window_type=="rolling") {
+  for(i in 1:nrow(df1)){
+    df1$GGHEDperc[i]=ifelse(df1$year[i]>=df1$last_year[i],
+                            df1$GGHED_GDP[i]/df1$GGHED_GDP[i-1],
+                            df1$GGHEDperc[i])
+    
+    df1$GGHEDperc_mean[i]=ifelse(df1$year[i]>=df1$last_year[i],
+                                 ifelse(mean_type=="arith",
+                                        mean(df1$GGHEDperc_mean[(i-1):(i-years_back)]),
+                                        prod(df1$GGHEDperc_mean[(i-1):(i-years_back)])^(1/years_back)),
+                                        df1$GGHEDperc_mean[i])
+    
+    df1$GGHED_GDP[i]=ifelse(df1$year[i]>=df1$last_year[i],
+                            df1$GGHED_GDP[i-1]*df1$GGHEDperc_mean[i],
+                            df1$GGHED_GDP[i])
+  }
+}
+  
+if (window_type=="fixed") {
+  df1<-df1 %>%
+    group_by(ISO) %>%
+    mutate(GGHED_GDP=ifelse(year>=last_year,
+                            GGHED_GDP[which(year==last_year)]*
+                              GGHEDperc_mean[which(year==last_year)]^(year-last_year+1), 
+                            GGHED_GDP)) 
+}
+  
+df1<-df1 %>%
+  mutate(GGHED_GDP=ifelse(year>=year_startpred & !is.na(p80),
+                          ifelse(GGHED_GDP>p80, p80, ifelse(GGHED_GDP<p20, p20, GGHED_GDP)),
+                          GGHED_GDP)) %>%
+  mutate(GGHEDmethod=paste0(mean_type, " mean, ", years_back, " years ", window_type, " window"),
+         GGHEDmethodtype="forward projection")
+}
+
+#test and check
+test01<-fun_gghed_fwdproj(main_df1, year_startpred=2018, years_back=4, 
+                          mean_type="arith", window_type="rolling")
+
+test01 %>%
+  filter(year>=2012, ISO=="ROU") %>%
+  ggplot(aes(year, GGHED_GDP)) +
+  geom_line()
+```
+
+```{r GGHED_proj_reg_functions}
+#regression-based functions
+#define starting dataset
+gghed_wdf<-gghed %>%
+  filter(year>=2000, year<=2017) %>%
+  left_join(main_df1 %>% select(ISO, year, GDPpc_USD, PopTotal, PropAge65), by=c("ISO", "year")) %>%
+  drop_na() %>%
+  ungroup()
+
+year_startpred=2015
+year_endpred=2017
+
+#initialise results dataframe
+regmodel_ols <- lm(GGHED_GDP ~ log(GDPpc_USD) + PropAge65 + ISO, data=gghed_wdf)
+regmodel_re <- plm(GGHED_GDP ~ log(GDPpc_USD) + PropAge65, index=c("year", "ISO"), model="random",
+                  data=gghed_wdf)
+regmodel_list <- list(regmodel_ols, regmodel_re)
+
+model1 <- plm(GGHED_GDP ~ log(GDPpc_USD), index=c("year", "ISO"), model="random",
+                  data=gghed_wdf)
+model2 <- plm(GGHED_GDP ~ log(GDPpc_USD) + log(PopTotal) + PropAge65, index=c("year", "ISO"), model="random", data=gghed_wdf)
+regmodel_list <- list(model1, model2)
+  
+fun_gghed_regproj<-function(year_startpred, year_endpred, list){
+  #split in training and prediction datasets
+  gghed_regtrain<-main_df1 %>%
+    filter(year<year_startpred) %>%
+    ungroup()
+   
+  gghed_regpred<-main_df1 %>%
+    select(ISO, year, GDPpc_USD, PopTotal, PropAge65) %>%
+    filter(year<=year_endpred)
+  
+  regfun <- function(x) {
+    dfresult<- data.frame(ISO=gghed_regpred$ISO, 
+                          year=gghed_regpred$year,
+                          GGHED_GDP=predict(x, gghed_regpred, allow.new.levels=TRUE),
+                          GGHEDmethod=format(terms(x)),
+                          GGHEDmethodtype="regression models")
+    
+  }
+  dfresult <- bind_rows(lapply(list, regfun))
+  return(dfresult)
+}
+
+test02<-fun_gghed_regproj(2011, 2015, regmodel_list)
+
+```
+
+```{r GGHED_proj_arima_functions}
+fun_gghed_arima_test <- function(df, x, y1, y2){
+  #convert into time series object
+  #x <- "ROU"
+  df1 <- df %>%
+    select(ISO, year, GGHED_GDP) %>%
+    filter(ISO==x, year<y1) %>%
+    drop_na()
+  
+  gghed_ts <- ts(df1$GGHED_GDP)
+  
+  #choose best ARIMA model
+  gghed_fit_arima <- auto.arima(gghed_ts, trace=TRUE, allowdrift = TRUE)
+  gghed_pred_arima <- predict(gghed_fit_arima, n.ahead = (y2-y1+1))
+  result <-data.frame(GGHED_GDP=gghed_pred_arima$pred,
+                      ISO=x,
+                      year=rep(y1:y2),
+                      GGHEDmethod=paste0("ARIMA(", gghed_fit_arima$arma[2], ",",
+                                         gghed_fit_arima$arma[4], ",",
+                                         gghed_fit_arima$arma[6],")"),
+                      GGHEDmethodtype="ARIMA")
+  #print(result)
+  return(result)
+}
+
+#test arima function at country level
+arima_iso_test <- fun_gghed_arima_test(gghed, "ROU", 2015, 2017)
+
+fun_gghed_arima_pred <- function(df, x, y1, y2){
+  #convert into time series object
+  #x <- "ARG"
+  df1 <- df %>%
+    inner_join(gghed_pred_selected, by=c("ISO")) %>%
+    filter(grepl("ARIMA", GGHEDmethod), ISO==x, year<2018) %>%
+    select(ISO, year, GGHED_GDP, GGHEDmethod) %>%
+    drop_na()
+  
+  gghed_ts <- ts(df1$GGHED_GDP)
+  arima1 <- mean(as.integer(substr(df1$GGHEDmethod, 7, 7)))
+  arima2 <- mean(as.integer(substr(df1$GGHEDmethod, 9, 9)))
+  arima3 <- mean(as.integer(substr(df1$GGHEDmethod, 11, 11)))
+  
+  #choose best ARIMA model
+  gghed_fit_arima <- arima(gghed_ts, c(arima1, arima2, arima3))
+  gghed_pred_arima <- predict(gghed_fit_arima, n.ahead = (y2-y1+1))
+  result <-data.frame(GGHED_GDP=gghed_pred_arima$pred,
+                      ISO=x,
+                      year=rep(y1:y2),
+                      GGHEDmethod=paste0("ARIMA(", gghed_fit_arima$arma[2], ",",
+                                         gghed_fit_arima$arma[4], ",",
+                                         gghed_fit_arima$arma[6],")"),
+                      GGHEDmethodtype="ARIMA")
+  #print(result)
+  return(result)
+}
+
+```
+
+#Which GGHE-D proj method performs best 2015-2017?
+Most forward projection specifications tend to overestimate GGHE-D, while regression specifications tend to underestimate it.
+
+```{r GGHED_proj_test, include=TRUE}
+#test GGHED projection functions
+test_gghed <- expand.grid(years_back=c(3,4,5), 
+                          mean_type=c("arith", "geom"), 
+                          window_type=c("fixed", "rolling"))
+test_gghed_list <- split(test_gghed, seq(nrow(test_gghed)))
+
+gghed_proj_test_fwd<-bind_rows(fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                         years_back=3, mean_type="arith", window_type="fixed"),
+                       fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                         years_back=4, mean_type="arith", window_type="fixed"),
+                      fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                        years_back=5, mean_type="arith", window_type="fixed"),
+                      fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                        years_back=3, mean_type="arith", window_type="rolling"),
+                      fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                        years_back=4, mean_type="arith", window_type="rolling"),
+                      fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                        years_back=5, mean_type="arith", window_type="rolling"),
+                      fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                        years_back=3, mean_type="geom", window_type="fixed"),
+                      fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                        years_back=4, mean_type="geom", window_type="fixed"),
+                      fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                        years_back=5, mean_type="geom", window_type="fixed"),
+                      fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                        years_back=3, mean_type="geom", window_type="rolling"),
+                      fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                        years_back=4, mean_type="geom", window_type="rolling"),
+                      fun_gghed_fwdproj(main_df1, year_startpred=2014,
+                                        years_back=5, mean_type="geom", window_type="rolling"))
+
+#run regression models
+gghed_proj_test_reg <- fun_gghed_regproj(2015, 2017, regmodel_list)
+
+#run ARIMA models
+
+#create test results dataframe
+gghed_proj_test <- bind_rows(gghed_proj_test_fwd, 
+                             gghed_proj_test_reg) %>%
+  group_by(ISO, year) %>%
+  fill(GGHED_GDP_off)
+
+#explore NA's
+gghed_proj_test %>%
+  select(ISO, year, GGHED_GDP) %>%
+  filter(is.na(GGHED_GDP))
+
+gghed_proj_test %>%
+  filter(year==2017, ISO=="YEM") %>%
+  select(ISO, year, GGHED_GDP_off, GGHED_GDP, GGHEDmethod)
+```
+
+#Which GGHE-D proj method performs best 2015-2017?
+```{r GGHED_proj_test_viz&select, include=TRUE}
+#examine test prediction errors
+gghed_proj_test %>%
+  filter(year>2014, year<=2017) %>%
+  mutate(GGHED_GDP_error=abs(GGHED_GDP-GGHED_GDP_off)) %>%
+  group_by(GGHEDmethod) %>%
+  summarise(mean_GGHED_GDP_error=mean(GGHED_GDP_error, na.rm=TRUE)) %>%
+  arrange(mean_GGHED_GDP_error)
+
+```
+
+#Which GGHE-D proj method performs best 2015-2017?
+- Fixed window forward projection methods tend to perform better regression-based approaches on a country-by-country basis
+- In what follows we select the best performing method (2013-2017), geometric mean 5-year fixed window, and use it to construct projections of GGHE-D for 2018-2030.
+
+```{r GGHED_proj_select}
+#set test variable
+gghed_test<-"no"
+
+#apply GGHED projection functions
+gghed_fwdproj1<-fun_gghed_fwdproj(main_df1, year_startpred=2018,
+                   years_back=5, mean_type="geom", window_type="fixed")
+
+#merge with IHME estimates
+main_df_gghe0<-main_df1 %>%
+  left_join(gghed_fwdproj1 %>% select(ISO, year, GGHED_GDP, GGHED_GDP_off, 
+                                           GGHEDmethod, GGHEDmethodtype),
+            by=c("ISO", "year"))%>%
+  #join with IHME
+  left_join(ihme %>% select(ISO, year, GHES_GDP, GHES_USD2017)) %>%
+  #add aspirational scenarios
+  mutate(GGHED_5percinst_GDP=ifelse(GGHED_GDP>5, GGHED_GDP, 5))
+```
+
+#GGHED % GDP - own vs IHME scatterplot
+```{r GGHED_GDP_plot_total, include=TRUE}
+main_df_gghe0%>%
+  filter(year==2030) %>%
+  ggplot(aes(x=GGHED_GDP, y=GHES_GDP, colour=who_region)) +
+  geom_point() +
+  facet_wrap(~Class, scales="free") + #income_group was maybe renamed Class? #SP
+  theme(legend.position = "bottom")
+```
+
+#GGHED % GDP - total (mean, population weighted)
+```{r GGHED_GDP_viz_total, include=TRUE}
+main_df_gghe_work1<-main_df_gghe0 %>%
+  #reshape
+  pivot_longer(cols=ends_with("_GDP"), names_repair = "minimal") %>%
+  rename("GGHED_GDP"="value", "GGHEDscenario"="name") %>%
+  mutate(GGHEDscenario=case_when(GGHEDscenario=="GGHED_GDP" ~ "own projections", 
+                                     GGHEDscenario=="GHES_GDP" ~ "IHME",
+                                     GGHEDscenario=="GGHED_5percinst_GDP" ~ "5% GDP instantly and maintained if currently below"),
+         GGHED_USD2017=GGHED_GDP*GDP_USD2017/100) %>%
+  filter(GGHEDscenario %in% c("own projections", "IHME"), year>=2010) 
+
+main_df_gghe_work1%>%
+  group_by(year, GGHEDscenario) %>%
+  summarise(GGHED_GDP_wm=weighted.mean(GGHED_GDP, PopTotal, na.rm = TRUE)) %>%
+  ggplot(aes(x=year, y=GGHED_GDP_wm, colour=GGHEDscenario)) +
+  geom_line() +
+  labs(y="GGHED % GDP", x="year", title="Revised dataset") +
+  scale_x_continuous(breaks=c(2010, 2015, 2020, 2025, 2030)) +
+  theme(legend.position="bottom", panel.background = element_blank())
+```
+
+#GGHED % GDP - region (mean, population weighted)
+##Appendix Figure A2
+```{r GGHED_GDP_viz_GBDregion, include=TRUE}
+main_df_gghe0 %>%
+  #reshape
+  pivot_longer(cols=ends_with("_GDP"), names_repair = "minimal") %>%
+  rename("GGHED_GDP"="value", "GGHEDscenario"="name") %>%
+  mutate(GGHEDscenario=case_when(GGHEDscenario=="GGHED_GDP" ~ "own projections", 
+                                     GGHEDscenario=="GHES_GDP" ~ "IHME",
+                                     GGHEDscenario=="GGHED_5percinst_GDP" ~ "5% GDP instantly and maintained if currently below"),
+         GGHED_USD2017=GGHED_GDP*GDP_USD2017/100) %>%
+  filter(GGHEDscenario %in% c("own projections", "IHME"), year>=2010) %>%
+  group_by(year, Region, GGHEDscenario) %>%
+  summarise(GGHED_GDP_wm=weighted.mean(GGHED_GDP, PopTotal, na.rm=TRUE)) %>%
+  ggplot(aes(x=year, y=GGHED_GDP_wm, colour=GGHEDscenario)) +
+  geom_line() +
+  facet_wrap(~Region) +
+  labs(y="GGHED % GDP", x="year") +
+  scale_x_continuous(breaks=c(2010, 2015, 2020, 2025, 2030)) +
+  theme(legend.position="bottom", panel.background = element_blank())
+
+ggsave("GGHE_results/GGHED_GDPbyregion_vs_IHME.png", width=10, height=8)
+
+main_df_gghe0 %>%
+  filter(year>=2010) %>%
+  group_by(year, Region) %>%
+  summarise(GGHED_GDP_wm=weighted.mean(GGHED_GDP, PopTotal, na.rm=TRUE)) %>%
+  ggplot(aes(x=year, y=GGHED_GDP_wm, colour=Region)) +
+  geom_line() +
+  labs(y="GGHED % GDP", x="year",
+       caption = "Note: Projections start after the dotted line (2018 onwards).") +
+  scale_x_continuous(breaks=c(2010, 2015, 2020, 2025, 2030)) +
+  theme_minimal() +
+  geom_vline(xintercept = 2018, linetype="dotted", color = "blue", size=0.5) +
+  guides(colour = guide_legend(ncol = 2, bycol=TRUE)) +
+  theme(legend.position="bottom")
+
+ggsave("GGHE_results/GGHED_GDPbyregion.png", width=10, height=8)
+
+```
+
+#GGHED % GDP - summary
+- our own projections tend to overestimate GGHED % GDP vs IHME estimates (by about 1% absolute) in MENA
+- but come really close in all other superregions
+
+#GGHED projections - total
+```{r GGHED_viz_total, include=TRUE}
+main_df_gghe_work1%>%
+  filter(GGHEDscenario %in% c("own projections", "IHME"), year>=2010) %>%
+  group_by(year, GGHEDscenario) %>%
+  summarise(sum_GGHED=sum(GGHED_USD2017, na.rm = TRUE)/10^12) %>%
+  ggplot() +
+  geom_line(aes(x=year, y=sum_GGHED, colour=GGHEDscenario)) +
+  labs(y="GGHED, trillion USD2017") +
+  scale_x_continuous(breaks=c(2010, 2015, 2020, 2025, 2030)) +
+  theme(legend.direction="vertical", legend.position="bottom",
+        panel.background = element_blank())
+```
+
+#GGHED projections - by region
+```{r GGHED_viz_region, include=TRUE}
+main_df_gghe_work1%>%
+  group_by(year, Region, GGHEDscenario) %>%
+  summarise(sum_GGHED=sum(GGHED_USD2017, na.rm=TRUE)/10^12) %>%
+  ggplot() +
+  geom_line(aes(x=year, y=sum_GGHED, colour=GGHEDscenario)) +
+  facet_wrap(~Region, scales = "free") +
+  labs(y="GGHED, trillion USD2017") +
+  scale_x_continuous(breaks=c(2010, 2015, 2020, 2025, 2030)) +
+  theme(legend.position="bottom", panel.background = element_blank())
+
+out<-main_df_gghe_work1%>%
+  filter(GGHEDscenario=="own projections")%>%
+  select(ISO, Country, year, GGHED_USD2017, GDP_USD2017, PopTotal)%>%
+  rename(GGHED = GGHED_USD2017, GDP = GDP_USD2017)
+
+new_regions<-read_excel("../new_inputs/HS123.xlsx", sheet="indic_2")%>%
+  select(ISO3, HSP)%>%
+  rename(ISO=ISO3)
+
+out<-left_join(out, new_regions)
+
+write.csv(out, "../gghed_data.csv")
+##gghed here
+
+out2<-out%>%group_by(HSP, year)%>%
+  na.omit()%>%
+  summarise(GDP = sum(GDP), GGHED = sum(GGHED), PopTotal=sum(PopTotal))
+
+
+write.csv(out2, "../gghed_data_HSP.csv", row.names = F)
+
+```
+
+#GGHED - own vs IHME projections
+```{r GGHED_hist, include=TRUE}
+table_gghed<-main_df_gghe0%>%
+  mutate(GGHED_USD2017=GGHED_GDP*GDP_USD2017/100,
+         GGHEDratio=GGHED_USD2017/GHES_USD2017) %>%
+  drop_na() %>%
+  group_by(Region) %>%
+  summarise(mean=mean(GGHEDratio),
+            median=median(GGHEDratio),
+            min=min(GGHEDratio),
+            max=max(GGHEDratio),
+            p25=quantile(GGHEDratio, 0.25, na.rm = TRUE),
+            p75=quantile(GGHEDratio, 0.75, na.rm = TRUE))
+
+kable(table_gghed, digits=2)
+```
+
+#GGHED summary
+- Our projections come really close to IHME's
+- But really dependant on p80 ceiling, otherwise we overestimate significantly
+
+#GGHED vs costs of NCD interventions - total
+```{r GGHED_NCD_total, include=TRUE}
+ncd_costs1 %>%
+  left_join(main_df_gghe_work1 %>% select(year, ISO, GGHEDscenario, GGHED_USD2017)) %>%
+  group_by(year, GGHEDscenario) %>%
+  summarise(sum_ncd_costs=sum(ncd_costs_2017)/10^12,
+            sum_GGHED=sum(GGHED_USD2017, na.rm = TRUE)/10^12) %>%
+  drop_na() %>%
+  ungroup() %>%
+  ggplot() +
+  geom_line(aes(x=year, y=sum_ncd_costs), colour="#00BFC4") +
+  geom_line(aes(x=year, y=sum_GGHED, linetype=GGHEDscenario)) +
+  labs(x="Year", y="Trillion USD2017", 
+       title="Revised dataset - Gap between GGHED and costs of NCD interventions") +
+  scale_x_continuous(breaks=c(2020, 2025, 2030)) +
+  theme(legend.position = "bottom", legend.direction="vertical",
+        panel.background = element_blank())
+```
+
+#GGHED vs costs of NCD interventions - by region
+```{r GGHED_NCD_region, include=TRUE}
+ncd_costs1 %>%
+  left_join(main_df_gghe_work1 %>% select(year, ISO, GGHEDscenario, GGHED_USD2017)) %>%
+  group_by(year, Region, GGHEDscenario) %>%
+  summarise(sum_ncd_costs=sum(ncd_costs_2017, na.rm = TRUE)/10^12,
+            sum_GGHED=sum(GGHED_USD2017, na.rm = TRUE)/10^12) %>%
+  drop_na() %>%
+  ungroup() %>%
+  ggplot() +
+  geom_line(aes(x=year, y=sum_ncd_costs), colour="#00BFC4") +
+  geom_line(aes(x=year, y=sum_GGHED, linetype=GGHEDscenario)) +
+  facet_wrap(~Region, scales="free") +
+  labs(x="Year", y="Trillion USD2017", 
+       title="Revised dataset, Gap between GGHED and costs of NCD interventions, by region",
+       caption="Note: Green line represents projected NCD costs") +
+  scale_x_continuous(breaks=c(2020, 2025, 2030)) +
+  theme(legend.position = "bottom", legend.direction="vertical",
+        panel.background = element_blank())
+```
+
+#Ratio of NCD costs to GGHED
+##Appendix Figure A3
+```{r GGHED_NCD_boxplot, include=TRUE}
+ncd_gghed_boxplots1<-main_df_gghe_work1 %>%
+  left_join(ncd_costs_new %>% select(ISO, year, ncd_costs_2017, total_cost_all)) %>%
+  left_join(ncd_costs0 %>% select(ISO, year, ncd_costs, scenario) %>% filter(scenario=="green")) %>%
+  rename("ncd_costs_old"=ncd_costs) %>%
+  filter(year>=2020) %>%
+  group_by(ISO, GGHEDscenario) %>%
+  mutate(sum_gghed=sum(GGHED_USD2017, na.rm = TRUE),
+         NCD_GGHED_all=total_cost_all*100/sum_gghed,
+         total_cost_all_old=sum(ncd_costs_old),
+         NCD_GGHED_all_old=total_cost_all_old*100/sum_gghed,
+         NCD_GGHED=ncd_costs_2017*100/GGHED_USD2017) %>%
+  select(ISO, year, Region, Class, ncd_costs_2017, GGHED_USD2017, NCD_GGHED,
+         sum_gghed, NCD_GGHED_all, NCD_GGHED_all_old, GGHEDscenario)
+
+#Ratio of NCD costs to GGHED - by region
+ggplot(data=ncd_gghed_boxplots1 %>% filter(year==2030), aes(NCD_GGHED_all, Region)) +
+  geom_boxplot() +
+  geom_point(width = 0.1) +
+  labs(y="Region", x="Total NCD costs as a share of total GGHE-D, 2020-2030 (%)") +
+  theme_minimal() +
+  geom_text(data=ncd_gghed_boxplots1 %>% filter(NCD_GGHED_all>30, year==2030), 
+            aes(label=ISO), nudge_x=0.2, nudge_y=0.2, size=2)
+ggsave("GGHE_results/GGHED_NCD_all_region_boxplot.png", width = 10, height = 7, units = "in")
+
+ggplot(data=ncd_gghed_boxplots1 %>% filter(year==2030), aes(NCD_GGHED_all_old, Region)) +
+  geom_boxplot() +
+  geom_point(width = 0.1) +
+  labs(y="Region", x="Total NCD costs as a share of total GGHE-D, 2020-2030 (%)",
+       title="NCD costs from December 2019") +
+  theme_minimal() +
+  geom_text(data=ncd_gghed_boxplots1 %>% filter(NCD_GGHED_all_old>200, year==2030), 
+            aes(label=ISO), nudge_x=0.2, nudge_y=0.2, size=2)
+ggsave("GGHE_results/GGHED_NCD_all_OLD_region_boxplot.png", width = 10, height = 7, units = "in")
+
+ggplot(data=ncd_gghed_boxplots1 %>% filter(year==2030), aes(NCD_GGHED_all, Region)) +
+  geom_boxplot() +
+  geom_point(width = 0.1) +
+  facet_wrap(~GGHEDscenario, ncol = 1) +
+  labs(y="Region", x="Total NCD costs as a share of total GGHE-D, 2020-2030 (%)") +
+  theme_minimal() +
+  geom_text(data=ncd_gghed_boxplots1 %>% filter(NCD_GGHED_all>30, year==2030), 
+            aes(label=ISO), nudge_x=0.2, nudge_y=0.2, size=2)
+ggsave("GGHE_results/GGHED_NCD_all_region_boxplot_IHME.png", width = 7, height = 12, units = "in")
+```
+
+```{r export_countries, include=FASLE}
+malawi <- ncd_gghed_boxplots1 %>%
+  ungroup() %>%
+  filter(GGHEDscenario=="own projections", ISO=="MWI") %>%
+  select(ISO, year, Region, GGHED_USD2017)
+write.csv(malawi, "GGHE_results/Malawi_GGHED_2020-2030.csv")
+```
+
+##Paper Figure 3
+
+```{r GGHED_NCD_bars, include=TRUE}
+#bar chart
+ncd_gghed_boxplots1 %>% 
+  filter(year %in% c(2020, 2025, 2030), GGHEDscenario=="own projections") %>%
+  select(ISO, year, Region, NCD_GGHED) %>%
+  group_by(year, Region) %>%
+  mutate(region_median=median(NCD_GGHED)) %>%
+  arrange(-NCD_GGHED) %>%
+  mutate(oid=row_number()) %>%
+  ungroup() %>%
+  ggplot(aes(x=oid, y=NCD_GGHED, fill=Region)) +
+  geom_col(position="dodge", colour="black") +
+  stat_summary(fun = median, aes(x = 1, yintercept = ..y.., group = Region), geom = "hline", colour = "red") +
+  facet_grid(str_wrap(Region, 25)~year, scales = "free", switch = "y",
+             labeller = labeller(facet_category = label_wrap_gen(width = 20))) +
+  labs(x="Region", y="Total NCD costs as a share of total GGHE-D (%)") +
+  coord_flip() +
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.text.y = element_blank(),
+        strip.text.y.left=element_text(angle = 0))
+
+ggsave("GGHE_results/GGHED_NCD_region_bar.png", width = 12, height = 7, units = "in")
+
+ncd_gghed_boxplots2a <- ncd_gghed_boxplots1 %>%
+  select(-ncd_costs_2017) %>%
+  left_join(ncd_costs_ncd4 %>% select(ISO, year, scenario, ncd_costs_2017, total_cost_all),
+            by=c("ISO", "year")) %>%
+  mutate(NCD_GGHED=ncd_costs_2017*100/GGHED_USD2017,
+         NCD_GGHED_all=total_cost_all*100/sum_gghed)
+
+#ncd_gghed_boxplots2b <- ncd_gghed_boxplots1 %>%
+#  select(-ncd_costs_2017) %>%
+#  left_join(ncd_costs_self %>% select(ISO, year, scenario, ncd_costs_2017, total_cost_all),
+#            by=c("ISO", "year")) %>%
+#  mutate(NCD_GGHED=ncd_costs_2017*100/GGHED_USD2017,
+#         NCD_GGHED_all=total_cost_all*100/sum_gghed)
+
+plot1 <- ncd_gghed_boxplots2a %>% 
+  filter(year %in% c(2023, 2026, 2030), GGHEDscenario=="own projections",
+         scenario=="Baseline", ISO!="VEN") %>%
+  select(ISO, year, Region, NCD_GGHED) %>%
+  group_by(year, Region) %>%
+  arrange(-NCD_GGHED) %>%
+  mutate(oid=row_number()) %>%
+  ungroup() %>%
+  ggplot(aes(x=oid, y=NCD_GGHED, fill=Region)) +
+  geom_col(position="dodge", colour="black") +
+  stat_summary(fun = median, aes(x = 1, yintercept = ..y.., group = Region), geom = "hline", colour = "red") +
+  facet_grid(str_wrap(Region, 25)~year, scales = "free", switch = "y",
+             labeller = labeller(facet_category = label_wrap_gen(width = 20))) +
+  labs(x="Region", y="Total NCD4 costs as a share of total GGHE-D (%)",
+       title = "Baseline scenario") +
+  coord_flip() +
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.text.y = element_blank(),
+        strip.text.y.left=element_text(angle = 0))
+
+ggsave("GGHE_results/GGHED_NCD_region_bar_ncd4_baseline.png", width = 12, height = 7, units = "in")
+
+plot2 <- ncd_gghed_boxplots2a %>% 
+  filter(year %in% c(2020, 2025, 2030), GGHEDscenario=="own projections",
+         scenario=="Adjusted", ISO!="VEN") %>%
+  select(ISO, year, Region, NCD_GGHED) %>%
+  group_by(year, Region) %>%
+  arrange(-NCD_GGHED) %>%
+  mutate(oid=row_number()) %>%
+  ungroup() %>%
+  ggplot(aes(x=oid, y=NCD_GGHED, fill=Region)) +
+  geom_col(position="dodge", colour="black") +
+  stat_summary(fun = median, aes(x = 1, yintercept = ..y.., group = Region), geom = "hline", colour = "red") +
+  facet_grid(str_wrap(Region, 25)~year, scales = "free", switch = "y",
+             labeller = labeller(facet_category = label_wrap_gen(width = 20))) +
+  labs(x="Region", y="Total NCD4 costs as a share of total GGHE-D (%)") +
+  coord_flip() +
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.text.y = element_blank(),
+        strip.text.y.left=element_text(angle = 0))
+
+ggsave("GGHE_results/GGHED_NCD_region_bar_ncd4_adjusted.tiff", width = 12, height = 7, units = "in", dpi = 300)
+
+plot12 <- grid.arrange(plot1, plot2, ncol = 1)
+ggsave("GGHE_results/GGHED_NCD_region_bar_ncd4_combined.png", plot12, width = 12, height = 14, units = "in")
+
+
+
+```
+
+```{r GGHED_NCD_tables, include=TRUE}
+table1 <- ncd_gghed_boxplots1 %>% 
+  filter(year==2030) %>% 
+  group_by(Class) %>%
+  summarise(mean_ratio=mean(NCD_GGHED),
+            median_ratio=median(NCD_GGHED),
+            p25=quantile(NCD_GGHED, 0.25),
+            p75=quantile(NCD_GGHED, 0.75),
+            max=max(NCD_GGHED)) %>%
+  mutate(mean_ratio=round(mean_ratio, 2), median_ratio=round(median_ratio, 2),
+         p25=round(p25, 2), p75=round(p75, 2), max=round(max, 2))
+
+table_income <- bind_rows(table1, table2)
+
+table2 <- ncd_gghed_boxplots1 %>% 
+  filter(year==2030) %>% 
+  group_by(Region) %>%
+  summarise(mean_ratio=mean(NCD_GGHED),
+            median_ratio=median(NCD_GGHED),
+            p25=quantile(NCD_GGHED, 0.25),
+            p75=quantile(NCD_GGHED, 0.75),
+            max=max(NCD_GGHED)) %>%
+  mutate(mean_ratio=round(mean_ratio, 2), median_ratio=round(median_ratio, 2),
+         p25=round(p25, 2), p75=round(p75, 2), max=round(max, 2))
+
+table_region <- bind_rows(table1, table2)
+
+write.table(table_income, "GGHE_results/table_income.txt", sep=",", row.names = FALSE)
+write.table(table_region, "GGHE_results/table_region.txt", sep=",", row.names = FALSE)
+
+table3 <- ncd_gghed_boxplots1 %>%
+  group_by(Region) %>%
+  summarise(sum_gghed_all=sum(GGHED_USD2017)/10^9)
+
+sum(table5$sum_gghed_all)
+```
+
+#Conclusion
+

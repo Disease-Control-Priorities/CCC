@@ -11,10 +11,10 @@ source("../utils/demmod_icer_rankb.R")
 ###############################################################################################################################
 
 hics<-read.csv("../new_inputs/country_groupings.csv", stringsAsFactors = F)%>%
-    filter(wb2021%in%c("HIC","UMIC"))%>%pull(location_gbd)
+    filter(wb2021%in%c("UMIC"))%>%pull(location_gbd)
 all.locs      <- data.frame(loc=c(countries[c(1:118, 120:126, 128:175)]))
 # not palestine, not puerto rico
-all.locs      <-as.character(all.locs%>%filter(loc%!in%hics)%>%pull(loc)) #77 countries
+all.locs      <-as.character(all.locs%>%filter(loc%in%hics)%>%pull(loc)) #77 countries
 interventions <- int.df %>% filter(Code<5)%>% pull(Code) %>% unique() %>% sort() #run intersectoral policies separately
 
 total         <- length(interventions)
@@ -68,5 +68,5 @@ for(is in all.locs[2:77]){
 
 #########################################################################################
 
-save(clinical.dadt2, clinical.pin2, clinical.dalys2, file = paste0("output2023_target_base.Rda"))
+save(clinical.dadt2, clinical.pin2, clinical.dalys2, file = paste0("output2023_target_UMIC.Rda"))
 
