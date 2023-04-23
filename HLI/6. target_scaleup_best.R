@@ -10,24 +10,38 @@ source("../utils/demmod_icer_rankb.R")
 
 ###############################################################################################################################
 
-hics          <- read.csv("../new_inputs/country_groupings.csv", stringsAsFactors = F)%>%filter(wb2021%in%c("HIC","UMIC"))%>%pull(location_gbd)
-all.locs      <- data.frame(loc=c(countries[c(1:118, 120:126, 128:175)]))# not palestine, not puerto rico
-all.locs      <- as.character(all.locs%>%filter(loc%!in%hics)%>%pull(loc)) #77 countries
+all.locs<-read.csv("output/all_costs.csv", stringsAsFactors = F)%>%pull(location_name)%>%unique()
 
+total         <- length(interventions)
 sel.cse       <- cse_g %>% pull(cause_name) %>% unique()
-codes         <- read.csv("../Figures/clinical_full_2023_2030.csv", stringsAsFactors = F)%>%select(Code, WB_Region, BCR)%>%
-    mutate(WB_Region = ifelse(WB_Region=="LMC", "LMIC", WB_Region))
+
+hpp<-read.csv("MCA high priorty.csv", stringsAsFactors = F)%>%
+    rename(Intervention = X,
+           conflict = `Conflict.affected.states`,
+           fragile = `Vulnerable.countries`,
+           HS1 = `Health.System.category.1..HS1.`,
+           HS2 = `Health.System.category.2..HS2.`,
+           HS3 = `Health.System.category.3..HS3.`)%>%
+    select(-Intervention)%>%
+    gather(HSP, include, -Code)
 
 WB<-read.csv("../new_inputs/country_groupings.csv", stringsAsFactors = F)%>%
     select(iso3, location_gbd, wb2021)%>%
-    rename(location_name = location_gbd)
+    rename(location_name = location_gbd)%>%
+    left_join(., read.csv("../new_inputs/HS123.csv", stringsAsFactors = F)%>%
+                  select(ISO3, HSP)%>%
+                  rename(iso3 = ISO3))%>%
+    mutate(HSP = gsub(" ", "", HSP))%>%
+    filter(HSP!="NA")
+
+
+codes<-left_join(WB, hpp)%>%filter(include=="h")
 
 time1<-Sys.time()
 
 for (is in all.locs){
     
-    wb<-WB%>%filter(location_name==is)%>%pull(wb2021)
-    interventions <- codes %>% filter(WB_Region==wb, Code<5, BCR>=15)%>% pull(Code) %>% unique() %>% sort()
+    interventions <- codes %>% filter(location_name==is)%>% pull(Code) %>% unique() %>% sort()
     
     projection = project_pop(0.7, is, interventions, 0.80, "no", sel.cse, "varying", "yes", "yes", 1)      
     
@@ -45,7 +59,7 @@ time2<-Sys.time()
 
 time2-time1
 
-## 35 mins
+## 65 mins
 
 load("output/best/results_Afghanistan.Rda")
 
@@ -54,7 +68,7 @@ dadt.all.opt<-dadt.all
 dalys.opt<-all.dalys
 q30.opt<-all.q30
 
-for(is in all.locs[c(2:77)]){
+for(is in all.locs[c(2:117)]){
     load(paste0("output/best/results_", is, ".Rda"))
     all.pin.opt<-bind_rows(all.pin.opt, all.pin)
     dadt.all.opt<-bind_rows(dadt.all.opt, dadt.all)
@@ -67,3 +81,43 @@ save(all.pin.opt, dadt.all.opt, q30.opt, dalys.opt, file = paste0("output/result
 
 
 
+####
+############
+#for 3q0 and all deaths
+############
+time1<-Sys.time()
+for (is in all.locs){
+    
+    interventions <- codes %>% filter(location_name==is)%>% pull(Code) %>% unique() %>% sort()
+    projection = project_pop(0.7, is, interventions, 0.80, "yes", sel.cse, "varying", "yes", "yes", 1)      
+    
+    all.q30    = data.table(projection$q30df) 
+    D0 = data.table(projection$D0)
+    D1 = data.table(projection$D1)
+    
+    #########################################################################################
+    save(all.q30, D0, D1, file = paste0("output/for_q30_best/results_", is, ".Rda"))
+    
+}
+
+time2<-Sys.time()
+
+time2-time1
+
+## 65 mins
+
+load("output/for_q30_best/results_Afghanistan.Rda")
+
+q30.opt<-all.q30
+D0.opt<-D0%>%mutate(location_name = "Afghanistan")
+D1.opt<-D1%>%mutate(location_name = "Afghanistan")
+
+for(is in all.locs[c(2:117)]){
+    load(paste0("output/for_q30_best/results_", is, ".Rda"))
+    q30.opt<-bind_rows(q30.opt, all.q30)
+    D0.opt<-bind_rows(D0.opt, D0%>%mutate(location_name = is))
+    D1.opt<-bind_rows(D1.opt, D1%>%mutate(location_name = is))
+    
+}
+
+save(q30.opt, D0.opt, D1.opt,  file = paste0("output/results_q30_best.Rda"))

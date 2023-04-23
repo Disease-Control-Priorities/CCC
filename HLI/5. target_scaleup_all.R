@@ -35,7 +35,7 @@ time2<-Sys.time()
 
 time2-time1
 
-## 1.6 hours
+## 65 mins
 
 load("output/all/results_Afghanistan.Rda")
 

@@ -186,7 +186,7 @@ fig1<-left_join(df, WB)%>%
          HSP = ifelse(HSP=="conflict", "Conflict", HSP))
 
 
-ggplot(fig1, aes(x=HSP, y=name, fill=color))+
+ggplot(fig1,aes(x=HSP, y=name, fill=color))+
   geom_tile()+
   theme_classic()+
   theme(axis.text.x=element_text(size=12, angle=45, hjust=0),    
@@ -194,7 +194,8 @@ ggplot(fig1, aes(x=HSP, y=name, fill=color))+
   scale_fill_manual(values=c("#5d9976","#b9d780", "#feea83","#faa175","#f8696b"))+
   scale_x_discrete(position="top")+
   labs(fill="ICER (as a proportion \nof GDP per capita)")+
-  theme(axis.title.x=element_blank(),axis.title.y=element_blank())
+  theme(axis.title.x=element_blank(),axis.title.y=element_blank())+
+  geom_text(label = paste0( "$", signif(fig1$ICER, digits=2)))
 
 ggsave("figures/Figure1.png", height = 10, width = 12, units = "in")
 
