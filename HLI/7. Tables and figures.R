@@ -1,6 +1,6 @@
 rm(list=ls())
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-pacman::p_load(data.table, dplyr, tidyr, stringr, ggplot2, tidyverse, broom, readxl)
+pacman::p_load(data.table, dplyr, tidyr, stringr, ggplot2, ggpattern, tidyverse, broom, readxl)
 '%!in%' <- function(x,y)!('%in%'(x,y)) # Function "Not In"
 
 #########################
@@ -73,7 +73,22 @@ table1<-left_join(DA, DALYS)%>%
   mutate(Cost.per.capita = Total.cost.2030/PopTotal,
          Cost.per.GGHED = Total.cost.2030/GGHED)
 
-write.csv(table1, "figures/Table1.csv", row.names = F)
+#Add all countries
+table1_all<-left_join(DA, DALYS)%>%
+  left_join(., inc.cost)%>%
+  left_join(., cost.2030)%>%
+  left_join(gghed)%>%
+  summarise(Cumulative.deaths.averted = sum(Cumulative.deaths.averted),
+            Cumulative.DALYs.averted = sum(Cumulative.DALYs.averted),
+            Cumulative.incremental.cost = sum(Cumulative.incremental.cost),
+            Total.cost.2030 = sum(Total.cost.2030),
+            PopTotal = sum(PopTotal),
+            GGHED = sum(GGHED))%>%
+  mutate(Cost.per.capita = Total.cost.2030/PopTotal,
+         Cost.per.GGHED = Total.cost.2030/GGHED,
+         HLI_group = "All countries")
+
+write.csv(bind_rows(table1, table1_all), "figures/Table1.csv", row.names = F)
 
 ##############################################
 #Table 3
@@ -140,7 +155,22 @@ table3<-left_join(DA2, DALYS2)%>%
   mutate(Cost.per.capita = Total.cost.2030/PopTotal,
          Cost.per.GGHED = Total.cost.2030/GGHED)
 
-write.csv(table3, "figures/Table3.csv", row.names = F)
+
+table3_all<-left_join(DA2, DALYS2)%>%
+  left_join(., inc.cost2)%>%
+  left_join(., cost.20302)%>%
+  left_join(., gghed)%>%
+  summarise(Cumulative.deaths.averted = sum(Cumulative.deaths.averted),
+            Cumulative.DALYs.averted = sum(Cumulative.DALYs.averted),
+            Cumulative.incremental.cost = sum(Cumulative.incremental.cost),
+            Total.cost.2030 = sum(Total.cost.2030),
+            PopTotal = sum(PopTotal),
+            GGHED = sum(GGHED))%>%
+  mutate(Cost.per.capita = Total.cost.2030/PopTotal,
+         Cost.per.GGHED = Total.cost.2030/GGHED,
+         HLI_group = "All countries")
+
+write.csv(bind_rows(table3,table3_all), "figures/Table3.csv", row.names = F)
 
 
 plot3<-read.csv("figures/Table1.csv", stringsAsFactors = F)%>%
@@ -164,7 +194,8 @@ plot3<-plot3%>%
 
 library("ggpattern")
 
-ggplot(plot3, aes(x=HLI_group, y=value, alpha=Scenario, fill=Measure, group=Measure))+
+ggplot(plot3%>%filter(HLI_group!="All countries"), 
+       aes(x=HLI_group, y=value, alpha=Scenario, fill=Measure, group=Measure))+
   geom_bar(position = "dodge", 
            stat = "identity")+
   xlab("")+
@@ -189,7 +220,7 @@ load("output/results_q30.Rda")
 mx0<-D0.opt%>%
   group_by(location_name)%>%
   mutate(age = row_number(),
-         sex = ifelse(age>86, "Female", "Male"),
+         sex = ifelse(age>86, "Male", "Female"),
          age = ifelse(age>86, age-86, age),
          age= age-1)%>%
   gather(year, deaths, -location_name, -sex, -age)%>%
@@ -200,7 +231,7 @@ mx0<-D0.opt%>%
 mxall<-D1.opt%>%
   group_by(location_name)%>%
   mutate(age = row_number(),
-         sex = ifelse(age>86, "Female", "Male"),
+         sex = ifelse(age>86, "Male", "Female"),
          age = ifelse(age>86, age-86, age),
          age= age-1)%>%
   gather(year, deaths, -location_name, -sex, -age)%>%
@@ -214,7 +245,7 @@ load("output/results_q30_best.Rda")
 mxhpp<-D1.opt%>%
   group_by(location_name)%>%
   mutate(age = row_number(),
-         sex = ifelse(age>86, "Female", "Male"),
+         sex = ifelse(age>86, "Male", "Female"),
          age = ifelse(age>86, age-86, age),
          age= age-1)%>%
   gather(year, deaths, -location_name, -sex, -age)%>%
@@ -230,7 +261,9 @@ plot4<-bind_rows(mx0, mxall, mxhpp, mxfront)%>%
   group_by(year, sex, age, Scenario)%>%
   summarise(deaths = sum(deaths),
             pop = sum(Nx))%>%
-  mutate(mx = 1e5*(deaths/pop))
+  mutate(mx = 1e5*(deaths/pop),
+         Scenario = factor(Scenario, levels = c("Baseline", "High-priority interventions",
+                                                "All interventions", "Frontier mortality")))
 
 ggplot(plot4%>%filter(year==2030), aes(x=age, y=mx, color=Scenario))+
   geom_line(size=1)+
@@ -240,4 +273,65 @@ ggplot(plot4%>%filter(year==2030), aes(x=age, y=mx, color=Scenario))+
   theme_bw()
 
 ggsave("figures/Figure3.jpeg", height=4, width=8)
+
+ggplot(plot4%>%filter(year==2030), aes(x=age, y=mx, color=Scenario))+
+  geom_line(size=1)+
+  facet_wrap(~sex)+
+  ylab("All-cause mortality rate (per 100,000)")+
+  xlab("Age")+
+  theme_bw()+
+  scale_y_continuous(trans='log10')
+
+ggsave("figures/Figure3_log.jpeg", height=4, width=8)
+
+
+  
+#Figure 2
+fig2<-read_excel("Cost effectivness Matrix by HSS - revised.xlsx", sheet="revised CE ranked")%>%
+  gather(HSP, Priority, -Intervention)%>%
+  mutate(Priority = ifelse(Priority=="h", "High", ifelse(Priority=="m", "Medium", "Low")),
+         Priority = factor(Priority, levels=c("High", "Medium", "Low")))%>%
+  mutate(order = ifelse(Intervention=="Aspirin for suspected ACS",1,NA),
+         order = ifelse(Intervention=="Heart failure chronic treatment", 2, order),
+         order = ifelse(Intervention=="Treatment of early-stage breast cancer", 3, order),
+         order = ifelse(Intervention=="Epilepsy acute and chronic treatment", 4, order),
+         order = ifelse(Intervention=="IDU harm reduction measures", 5, order),
+         order = ifelse(Intervention=="Depression chronic treatment", 6, order),
+         order = ifelse(Intervention=="CVD primary prevention", 7, order),
+         order = ifelse(Intervention=="Pulmonary rehabilitation", 8, order),
+         order = ifelse(Intervention=="Heart failure acute treatment", 9, order),
+         order = ifelse(Intervention=="Medical management of ACS", 10, order),
+         order = ifelse(Intervention=="Management of appendicitis", 11, order),
+         order = ifelse(Intervention=="Asthma/COPD acute treatment", 12, order),
+         order = ifelse(Intervention=="CVD secondary prevention", 13, order),
+         order = ifelse(Intervention=="Cervical cancer screening and treatment", 14, order),
+         order = ifelse(Intervention=="Repair of gastrointestinal perforations", 15, order),
+         order = ifelse(Intervention=="Treatment of early-stage colorectal cancer", 16, order),
+         order = ifelse(Intervention=="Alcohol use screening/brief intervention", 17, order),
+         order = ifelse(Intervention=="Management of acute ventilatory failure", 18, order),
+         order = ifelse(Intervention=="Management of bowel obstruction", 19, order),
+         order = ifelse(Intervention=="Repair of hernias", 20, order),
+         order = ifelse(Intervention=="PCI for ACS", 21, order),
+         order = ifelse(Intervention=="Asthma/COPD chronic treatment", 22, order),
+         order = ifelse(Intervention=="Schizophrenia chronic treatment", 23, order),
+         order = ifelse(Intervention=="Bipolar disorder chronic treatment", 24, order),
+         order = ifelse(Intervention=="Diabetes screening and treatment", 25, order))
+  
+ggplot(fig2%>%mutate(HSP = factor(HSP, levels = c("Conflict-affected states", "Vulnerable countries",
+                                                  "Health System category 1 (HS1)",
+                                                  "Health System category 2 (HS2)",
+                                                  "Health System category 3 (HS3)"))), 
+       aes(x=HSP, y=reorder(Intervention, -order), fill=Priority))+
+  geom_tile()+
+  theme_classic()+
+  theme(axis.text.x=element_text(size=12, angle=45, hjust=0),    
+        axis.text.y=element_text(size=12))+
+  scale_fill_manual(values=c("#5d9976", "#feea83","#f8696b"))+
+  scale_x_discrete(position="top")+
+  #labs(fill="ICER (as a proportion \nof GDP per capita)")+
+  theme(axis.title.x=element_blank(),axis.title.y=element_blank())
+
+ggsave("figures/Figure2.png", height = 10, width = 12, units = "in")
+
+
 

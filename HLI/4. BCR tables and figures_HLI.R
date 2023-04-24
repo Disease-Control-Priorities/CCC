@@ -109,9 +109,9 @@ df<-left_join(cost, deaths.averted)%>%
   mutate(Incremental.cost = ifelse(Deaths.avert==0, 0, Incremental.cost),
           ICER = Incremental.cost/DALYS.avert)
 
-#Create "LIC/LMC"#
-unique(df$HSP)
 
+##
+unique(df$HSP)
 write.csv(df, "figures/HLI_CEA_region.csv", row.names = F)
 
 
@@ -167,6 +167,7 @@ gdp<-read.csv("../new_inputs/gdp_pc.csv", stringsAsFactors = F, skip=4)%>%
 library(forcats)
 
 fig1<-left_join(df, WB)%>%
+  filter(Code<5)%>%
   left_join(., gdp)%>%
   group_by(HSP, Intervention)%>%
   summarise(gdp_pc = median(gdp_pc, na.rm=T),
@@ -183,15 +184,36 @@ fig1<-left_join(df, WB)%>%
   mutate(color = factor(color, levels=c("<0.1", "0.1-0.5", "0.5-1.0", "1.0-2.3", ">2.3")),
          name = fct_reorder(as.factor(Intervention), desc(ICER)))%>%
   mutate(HSP = ifelse(HSP=="fragile", "Fragile", HSP),
-         HSP = ifelse(HSP=="conflict", "Conflict", HSP))
+         HSP = ifelse(HSP=="conflict", "Conflict", HSP))%>%
+  arrange(ICER)
 
+fig1.all<-left_join(df, WB)%>%
+  filter(Code<5)%>%
+  left_join(., gdp)%>%
+  group_by(Intervention)%>%
+  summarise(gdp_pc = median(gdp_pc, na.rm=T),
+            DALYs.averted = sum(DALYS.avert),
+            Incremental.cost = sum(Incremental.cost))%>%
+  mutate(ICER = Incremental.cost/DALYs.averted)%>%
+  mutate(perc = ICER/gdp_pc,
+         color = ifelse(perc<0.1, "<0.1",
+                        ifelse(perc<0.5 & perc>=0.1, "0.1-0.5",
+                               ifelse(perc>=0.5 & perc<1.0, "0.5-1.0",
+                                      ifelse(perc<2.3 & perc>=1.0, "1.0-2.3", ">2.3")))))%>%
+  na.omit()%>%
+  mutate(color = factor(color, levels=c("<0.1", "0.1-0.5", "0.5-1.0", "1.0-2.3", ">2.3")),
+         name = fct_reorder(as.factor(Intervention), desc(ICER)))%>%
+  mutate(HSP = "All countries")
 
-ggplot(fig1,aes(x=HSP, y=name, fill=color))+
+#fig1<-bind_rows(fig1, fig1.all)
+
+ggplot(fig1, 
+       aes(x=HSP, y=reorder(name, -ICER), fill=color))+
   geom_tile()+
   theme_classic()+
   theme(axis.text.x=element_text(size=12, angle=45, hjust=0),    
         axis.text.y=element_text(size=12))+
-  scale_fill_manual(values=c("#5d9976","#b9d780", "#feea83","#faa175","#f8696b"))+
+  scale_fill_manual(values=c("#337599","#99B8BD", "#FFEE9C","#faa175","#f8696b"))+
   scale_x_discrete(position="top")+
   labs(fill="ICER (as a proportion \nof GDP per capita)")+
   theme(axis.title.x=element_blank(),axis.title.y=element_blank())+
@@ -202,3 +224,45 @@ ggsave("figures/Figure1.png", height = 10, width = 12, units = "in")
 all.locs<-unique(df$location_name)
 write.csv(cost%>%filter(location_name %in% all.locs), "output/all_costs.csv", row.names = F)
 
+
+#NEED TO UPDATE#
+#BCRs for intersectoral policies
+ccc.vsl<-read.csv("../DALY_value.csv", stringsAsFactors = F)%>%
+  gather(year_id, val, -wb2021)%>%
+  mutate(year_id = as.numeric(gsub("X","",year_id)),
+         wb2021 = ifelse(wb2021=="UMC", "UMIC", wb2021))
+
+unique(ccc.vsl$wb2021)
+
+df<-left_join(df, WB)
+unique(df$wb2021)
+
+df.bcr<-left_join(df, ccc.vsl)%>%
+  filter(year_id>=2023)%>%
+  mutate(Gross.benefits = val*DALYS.avert,
+         Forgone.surplus = ifelse(Code%in%c(5.1,5.2,5.3,5.4), (Gross.benefits*0.009), 0), #consumer surplus
+         Forgone.surplus = ifelse(Code %in% c(5.5,5.6), (Gross.benefits*0.001), Forgone.surplus)
+  )%>%
+  group_by(Code, Intervention, HSP)%>%
+  summarise(
+    Incremental.cost = sum(Incremental.cost, na.rm=T),
+    #Deaths.Baseline = sum(Deaths.Baseline),
+    #Deaths.Adjusted = sum(Deaths.Adjusted),
+    Deaths.avert = sum(Deaths.avert),
+    DALYS.avert = sum(DALYS.avert, na.rm=T),
+    Gross.benefits = sum(Gross.benefits, na.rm=T),
+    Forgone.surplus = sum(Forgone.surplus, na.rm=T))%>%
+  ungroup()%>%
+  mutate(BCR = Gross.benefits / (Forgone.surplus+Incremental.cost),
+         BCR.without.surplus = Gross.benefits/Incremental.cost)%>%
+  arrange(HSP, -BCR)%>%
+  filter(Code>5)
+
+write.csv(df.bcr, "figures/BCR_calcs.csv", row.names = F)
+
+table2<-df.bcr%>%select(HSP, Intervention, BCR)%>%
+  mutate(BCR = signif(BCR, digits=2))%>%
+  spread(HSP, BCR)%>%
+  arrange(conflict)
+
+write.csv(table2, "figures/TableX.csv", row.names = F)
