@@ -253,21 +253,26 @@ mxhpp<-D1.opt%>%
          year = year+2018)%>%
   mutate(Scenario = "High-priority interventions")
 
-mxfront<-mxhpp%>%mutate(deaths = 0.7*deaths, Scenario = "Frontier mortality")
+mxfront<-read.csv("frontier_life_tables_N.csv", stringsAsFactors = F)%>%
+  filter(year==2030)%>%
+  select(year, age, mxn)%>%
+  mutate(mx = mxn*1e5,
+         Scenario = "Frontier mortality 2030")
+#mxfront<-mxhpp%>%mutate(deaths = 0.7*deaths, Scenario = "Frontier mortality")
 
-plot4<-bind_rows(mx0, mxall, mxhpp, mxfront)%>%
+plot4<-bind_rows(mx0, mxall, mxhpp)%>%
   left_join(., WB)%>%
   left_join(., wpp.in%>%rename(age=age_name, sex = sex_name)%>%select(age, sex, year, iso3, Nx))%>%
-  group_by(year, sex, age, Scenario)%>%
+  group_by(year, age, Scenario)%>%
   summarise(deaths = sum(deaths),
             pop = sum(Nx))%>%
-  mutate(mx = 1e5*(deaths/pop),
-         Scenario = factor(Scenario, levels = c("Baseline", "High-priority interventions",
-                                                "All interventions", "Frontier mortality")))
+  mutate(mx = 1e5*(deaths/pop))%>%
+  bind_rows(., mxfront)%>%
+  mutate(Scenario = factor(Scenario, levels = c("Baseline", "High-priority interventions",
+                                                "All interventions", "Frontier mortality 2030")))
 
 ggplot(plot4%>%filter(year==2030), aes(x=age, y=mx, color=Scenario))+
   geom_line(size=1)+
-  facet_wrap(~sex)+
   ylab("All-cause mortality rate (per 100,000)")+
   xlab("Age")+
   theme_bw()
@@ -276,7 +281,6 @@ ggsave("figures/Figure3.jpeg", height=4, width=8)
 
 ggplot(plot4%>%filter(year==2030), aes(x=age, y=mx, color=Scenario))+
   geom_line(size=1)+
-  facet_wrap(~sex)+
   ylab("All-cause mortality rate (per 100,000)")+
   xlab("Age")+
   theme_bw()+
@@ -284,8 +288,35 @@ ggplot(plot4%>%filter(year==2030), aes(x=age, y=mx, color=Scenario))+
 
 ggsave("figures/Figure3_log.jpeg", height=4, width=8)
 
+#add 2040 and 2050 frontiers
+mxfront40<-read.csv("frontier_life_tables_N.csv", stringsAsFactors = F)%>%
+  filter(year==2040)%>%
+  select(year, age, mxn)%>%
+  mutate(mx = mxn*1e5,
+         Scenario = "Frontier mortality 2040")
 
+mxfront50<-read.csv("frontier_life_tables_N.csv", stringsAsFactors = F)%>%
+  filter(year==2050)%>%
+  select(year, age, mxn)%>%
+  mutate(mx = mxn*1e5,
+         Scenario = "Frontier mortality 2050")
   
+
+plot4b<-bind_rows(plot4%>%filter(year==2030), mxfront40, mxfront50)%>%
+  mutate(Scenario = factor(Scenario, levels = c("Baseline", "High-priority interventions",
+                                                "All interventions", "Frontier mortality 2030",
+                                                "Frontier mortality 2040", "Frontier mortality 2050")))
+
+ggplot(plot4b, aes(x=age, y=mx, color=Scenario))+
+  geom_line(size=1)+
+  ylab("All-cause mortality rate (per 100,000)")+
+  xlab("Age")+
+  theme_bw()+
+  scale_y_continuous(trans='log10')
+
+ggsave("figures/Figure3_log_multiyear.jpeg", height=4, width=8)
+
+
 #Figure 2
 fig2<-read_excel("Cost effectivness Matrix by HSS - revised.xlsx", sheet="revised CE ranked")%>%
   gather(HSP, Priority, -Intervention)%>%
