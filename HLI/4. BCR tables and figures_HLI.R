@@ -296,6 +296,8 @@ unique(df$wb2021)
 
 df.bcr<-left_join(df, ccc.vsl)%>%
   filter(year_id>=2023)%>%
+  ungroup()%>%
+  select(-iso3, -wb2021, -wb2023, -location_name, -ICER)%>%
   mutate(Gross.benefits = val*DALYS.avert,
          Forgone.surplus = ifelse(Code%in%c(5.1,5.2,5.3,5.4), (Gross.benefits*0.009), 0), #consumer surplus
          Forgone.surplus = ifelse(Code %in% c(5.5,5.6), (Gross.benefits*0.001), Forgone.surplus)
