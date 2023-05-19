@@ -1,0 +1,90 @@
+HSP,Code,Intervention,Incremental.cost,Deaths.avert,DALYS.avert,ICER,Priorty,order
+fragile,5.1,Tobacco tax,1423121.794,133790.3407,740821.0595,1.921006127,High,1
+fragile,5.3,Tobacco policy,2300217.306,73383.84554,434768.3374,5.290673466,High,2
+fragile,5.4,Alcohol policy,2825854.955,20259.85557,131858.4112,21.43097986,High,3
+fragile,5.2,Alcohol tax,3046831.664,9216.69612,60722.18333,50.17658287,High,4
+fragile,5.5,Salt policy,61457832.04,33437.14844,193458.6353,317.6794458,High,5
+fragile,5.6,Trans fat policy,30178664.68,27840.09868,165538.7842,182.3057046,High,6
+fragile,1.1,IDU harm reduction measures,49263646.4,34156.81197,1050246.402,46.90675092,High,7
+fragile,2.5,Aspirin for suspected ACS,1256306.557,3350.760753,19284.78952,65.14494525,High,8
+fragile,4.3,Treatment of early-stage breast cancer,13902229.29,14380.2805,132792.0196,104.6917528,Medium,9
+fragile,2.13,Epilepsy acute and chronic treatment,136409762.5,49285.84184,1514038.764,90.09661163,High,10
+fragile,2.7,Heart failure chronic treatment,300926787.1,525716.2944,3426076.633,87.83422537,High,11
+fragile,2.1,Depression chronic treatment,74010213.24,9368.951365,553083.0459,133.813925,High,12
+fragile,2.4,CVD primary prevention,1548076982,1091693.883,6441264.81,240.3374225,High,13
+fragile,1.2,Pulmonary rehabilitation,20977221.26,7472.782252,69921.11312,300.0126903,High,14
+fragile,3.2,Heart failure acute treatment,2115575137,1032217.848,6805475.595,310.8636726,High,15
+fragile,3.1,Medical management of ACS,901279644.8,273325.8721,1721895.551,523.4229477,High,16
+fragile,3.7,Management of appendicitis,52237276.02,23190.80586,224596.0545,232.583231,High,17
+fragile,3.3,Cervical cancer screening and treatment,638481724,129309.2337,1237714.665,515.8553436,Medium,18
+fragile,2.6,CVD secondary prevention,3382141760,746160.3117,4428954.483,763.6433775,Medium,19
+fragile,3.4,Asthma/COPD acute treatment,1719174060,197471.0167,2452149.749,701.0885287,High,20
+fragile,4.4,Treatment of early-stage colorectal cancer,79088532.57,6517.367338,52431.72328,1508.40994,Low,21
+fragile,3.9,Repair of gastrointestinal perforations,6914704.733,1827.517389,16542.02546,418.0083479,Medium,22
+fragile,2.9,Alcohol use screening/brief intervention,442990499.2,13425.62814,207170.7201,2138.287201,Low,23
+fragile,3.8,Repair of hernias,3277162474,45612.64354,1218896.971,2688.629598,Low,24
+fragile,4.2,Management of acute ventilatory failure,57599242.49,1808.139899,19846.20948,2902.279276,Low,25
+fragile,3.6,Management of bowel obstruction,675146093.7,52964.28747,521737.2179,1294.034756,High,26
+fragile,4.1,PCI for ACS,338903733.1,10828.69025,80690.89605,4200.024411,Low,27
+fragile,2.14,Asthma/COPD chronic treatment,853545959.9,28499.93143,409512.5781,2084.297298,Low,28
+fragile,2.12,Schizophrenia chronic treatment,422656580.8,90.63076732,175928.7808,2402.429999,Low,29
+fragile,2.3,Diabetes screening and treatment,12721927959,153730.0253,1672426.682,7606.867373,Low,30
+fragile,2.11,Bipolar disorder chronic treatment,1498759619,193.5386761,197013.087,7607.411479,Low,31
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,, 

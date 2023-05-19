@@ -3,31 +3,34 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 pacman::p_load(data.table, dplyr, tidyr, stringr, ggplot2, tidyverse, broom, readxl)
 '%!in%' <- function(x,y)!('%in%'(x,y)) # Function "Not In"
 
-load("../for_parallel_processing/output2023_target_base.Rda")
-clinical.dadt<-clinical.dadt2
-clinical.dalys<-clinical.dalys2
-clinical.pin<-clinical.pin2
-
-#add UMICs
-load("../for_parallel_processing/output2023_target_UMIC.Rda")
-clinical.dadt2<-bind_rows(clinical.dadt, clinical.dadt2)
-clinical.dalys2<-bind_rows(clinical.dalys, clinical.dalys2)
-clinical.pin2<-bind_rows(clinical.pin, clinical.pin2)
-
-all.locs<-unique(clinical.dadt2$location_name)
-
-#add intersectoral results#
-load("../for_parallel_processing/output2023_target_intersectoral.Rda")
+#intersectoral results#
+load("../for_parallel_processing/output2050_target_intersectoral.Rda")
 dadt.all2<-dadt.all
 all.pin2<-all.pin
 all.dalys2<-all.dalys
 
-load("../for_parallel_processing/output2023_target_intersectoral_UMICs.Rda")
-dadt.all<-bind_rows(dadt.all, dadt.all2)
-all.dalys<-bind_rows(all.dalys, all.dalys2)
-all.pin<-bind_rows(all.pin, all.pin2)
+#exclude Panama and Romania as they are now HICs
+#should be 115
+all.locs<-unique(all.pin$location_name[all.pin$location_name!="Romania" & all.pin$location_name!="Panama"])
 
-deaths.averted<-bind_rows(clinical.dadt2, dadt.all)%>%
+#clinical results#
+load(paste0("../for_parallel_processing/for_HLI/Afghanistan_output2050_target.Rda"))
+
+clinical.dadt<-dadt.all
+clinical.dalys<-all.dalys
+clinical.pin<-all.pin
+
+for(is in all.locs[2:115]){
+  
+  load(paste0("../for_parallel_processing/for_HLI/", is,"_output2050_target.Rda"))
+  
+  clinical.dadt<-bind_rows(clinical.dadt, dadt.all)
+  clinical.dalys<-bind_rows(clinical.dalys, all.dalys)
+  clinical.pin<-bind_rows(clinical.pin, all.pin)
+}
+
+######## Deaths averted ######## 
+deaths.averted<-bind_rows(clinical.dadt, dadt.all2)%>%
   group_by(Code, year_id, location_name)%>%
   summarise(
     #Deaths.Baseline = sum(NCD.Deaths0),
@@ -35,7 +38,8 @@ deaths.averted<-bind_rows(clinical.dadt2, dadt.all)%>%
     Deaths.avert = sum(Deaths.Avert))%>%
   mutate(year_id = as.numeric(year_id))
 
-dalys.averted<-bind_rows(clinical.dalys2, all.dalys)%>%
+######## DALYs averted ######## 
+dalys.averted<-bind_rows(clinical.dalys, all.dalys2)%>%
   group_by(Code, year_id, location_name)%>%
   summarise(DALYS.Adjusted = sum(Adjusted),
             DALYS.Baseline = sum(Baseline),
@@ -43,16 +47,18 @@ dalys.averted<-bind_rows(clinical.dalys2, all.dalys)%>%
             DALYS.avert =ifelse(DALYS.avert<1, 0, DALYS.avert))%>%
   mutate(year_id = as.numeric(year_id))
 
-pin<-bind_rows(clinical.pin2, all.pin)%>%
+######## PIN ######## 
+pin<-bind_rows(clinical.pin, all.pin2)%>%
   mutate(unique_id = paste0("C",Code,"_", sub_id))%>%
   select(-sub_id)
 
 unique(pin$Code)
+all.locs[1]
 
-uc<-read.csv("../output/unit_costs/Zimbabwe_adjusted_uc_2020.csv", stringsAsFactors = F)%>%
-  mutate(location_name = "Zimbabwe")
+uc<-read.csv("../output/unit_costs/Afghanistan_adjusted_uc_2020.csv", stringsAsFactors = F)%>%
+  mutate(location_name = "Afghanistan")
 
-for(i in all.locs[2:124]){
+for(i in all.locs[2:115]){
   uc<-bind_rows(uc, read.csv(paste0("../output/unit_costs/",i,"_adjusted_uc_2020.csv"), stringsAsFactors = F)%>%
                   mutate(location_name = i))
 }
@@ -75,8 +81,24 @@ WB<-read.csv("../new_inputs/country_groupings.csv", stringsAsFactors = F)%>%
   mutate(HSP = gsub(" ", "", HSP))%>%
   filter(HSP!="NA")
 
+#Add WB2023 class
+class<-read_excel("../new_inputs/CLASS.xlsx")%>%
+  select(Code, `Income group`)%>%
+  rename(iso3 = Code,
+         wb2023 = `Income group`)%>%
+  mutate(wb2023 = ifelse(wb2023=="High income", "HIC", wb2023),
+         wb2023 = ifelse(wb2023=="Low income", "LIC", wb2023),
+         wb2023 = ifelse(wb2023=="Lower middle income", "LMIC", wb2023),
+         wb2023 = ifelse(wb2023=="Upper middle income", "UMIC", wb2023),
+         wb2023 = ifelse(iso3=="VEN", "UMIC", wb2023))
+#venezuela is NA? #assign to UMIC (per 2021 data)
+
+WB<-left_join(WB, class)
+
 exclude<-c("Turkey", "Vanuatu", "Maldives", "Moldova")
 
+
+##By HSP##
 df<-left_join(cost, deaths.averted)%>%
   left_join(., dalys.averted)%>%
   left_join(.,WB)%>%
@@ -112,9 +134,47 @@ df<-left_join(cost, deaths.averted)%>%
 
 ##
 unique(df$HSP)
-write.csv(df, "figures/HLI_CEA_region.csv", row.names = F)
+write.csv(df, "figures/HLI_CEA_HSP.csv", row.names = F)
+
+##By WB Class##
+df<-left_join(cost, deaths.averted)%>%
+  left_join(., dalys.averted)%>%
+  left_join(.,WB)%>%
+  filter(location_name %!in% exclude)%>%
+  group_by(wb2023, year_id, Code, Intervention)%>%
+  summarise(Baseline.cost = sum(Baseline.cost),
+            Adjusted.cost = sum(Adjusted.cost),
+            Incremental.cost = sum(Incremental.cost),
+            #Deaths.Baseline = sum(Deaths.Baseline),
+            #Deaths.Adjusted = sum(Deaths.Adjusted),
+            Deaths.avert = sum(Deaths.avert),
+            DALYS.Baseline = sum(DALYS.Baseline),
+            DALYS.Adjusted = sum(DALYS.Adjusted),
+            DALYS.avert = sum(DALYS.avert)
+  )%>%
+  mutate(discount.rate = ((1-0.05)^(year_id-2022)),
+         discount.rate = ifelse(year_id<2023,1,discount.rate),
+         Baseline.cost = (Baseline.cost*discount.rate),
+         Adjusted.cost = (Adjusted.cost*discount.rate),
+         Incremental.cost = (Incremental.cost*discount.rate),
+         DALYS.Baseline = (DALYS.Baseline*discount.rate),
+         DALYS.Adjusted = (DALYS.Adjusted*discount.rate),
+         DALYS.avert = (DALYS.avert*discount.rate)
+  )%>%na.omit()%>%
+  group_by(wb2023, Code, Intervention)%>%
+  summarise(Incremental.cost = sum(Incremental.cost),
+            Deaths.avert = sum(Deaths.avert),
+            DALYS.avert = sum(DALYS.avert)
+  )%>%
+  mutate(Incremental.cost = ifelse(Deaths.avert==0, 0, Incremental.cost),
+         ICER = Incremental.cost/DALYS.avert)
 
 
+##
+unique(df$wb2023)
+write.csv(df, "figures/HLI_CEA_WBclass.csv", row.names = F)
+
+##By country##
 df<-left_join(cost, deaths.averted)%>%
   left_join(., dalys.averted)%>%
   left_join(.,WB)%>%
@@ -139,7 +199,7 @@ df<-left_join(cost, deaths.averted)%>%
          DALYS.Adjusted = (DALYS.Adjusted*discount.rate),
          DALYS.avert = (DALYS.avert*discount.rate)
   )%>%na.omit()%>%
-  group_by(location_name, Code, Intervention, HSP)%>%
+  group_by(location_name, Code, Intervention)%>%
   summarise(Incremental.cost = sum(Incremental.cost),
             Deaths.avert = sum(Deaths.avert),
             DALYS.avert = sum(DALYS.avert)
@@ -181,6 +241,7 @@ fig1<-left_join(df, WB)%>%
                                ifelse(perc>=0.5 & perc<1.0, "0.5-1.0",
                                       ifelse(perc<2.3 & perc>=1.0, "1.0-2.3", ">2.3")))))%>%
   na.omit()%>%
+  mutate(color = ifelse(HSP=="conflict" & Intervention=="PCI for ACS", ">2.3", color))%>%
   mutate(color = factor(color, levels=c("<0.1", "0.1-0.5", "0.5-1.0", "1.0-2.3", ">2.3")),
          name = fct_reorder(as.factor(Intervention), desc(ICER)))%>%
   mutate(HSP = ifelse(HSP=="fragile", "Fragile", HSP),
@@ -205,8 +266,6 @@ fig1.all<-left_join(df, WB)%>%
          name = fct_reorder(as.factor(Intervention), desc(ICER)))%>%
   mutate(HSP = "All countries")
 
-#fig1<-bind_rows(fig1, fig1.all)
-
 ggplot(fig1, 
        aes(x=HSP, y=reorder(name, -ICER), fill=color))+
   geom_tile()+
@@ -221,11 +280,9 @@ ggplot(fig1,
 
 ggsave("figures/Figure1.png", height = 10, width = 12, units = "in")
 
-all.locs<-unique(df$location_name)
 write.csv(cost%>%filter(location_name %in% all.locs), "output/all_costs.csv", row.names = F)
 
 
-#NEED TO UPDATE#
 #BCRs for intersectoral policies
 ccc.vsl<-read.csv("../DALY_value.csv", stringsAsFactors = F)%>%
   gather(year_id, val, -wb2021)%>%
@@ -260,9 +317,46 @@ df.bcr<-left_join(df, ccc.vsl)%>%
 
 write.csv(df.bcr, "figures/BCR_calcs.csv", row.names = F)
 
-table2<-df.bcr%>%select(HSP, Intervention, BCR)%>%
+table3<-df.bcr%>%select(HSP, Intervention, BCR)%>%
   mutate(BCR = signif(BCR, digits=2))%>%
   spread(HSP, BCR)%>%
   arrange(conflict)
 
-write.csv(table2, "figures/TableX.csv", row.names = F)
+write.csv(table3, "figures/Table3.csv", row.names = F)
+
+## BCRs by year ##
+
+df.bcr2<-left_join(df, ccc.vsl, relationship = "many-to-many")%>%
+  filter(Code>5)%>%
+  ungroup()%>%
+  select(-iso3, -wb2021, -wb2023, -location_name, -ICER)%>%
+  filter(year_id>=2023 & year_id<=2050)%>%
+  mutate(Gross.benefits = val*DALYS.avert,
+         Forgone.surplus = ifelse(Code%in%c(5.1,5.2,5.3,5.4), (Gross.benefits*0.009), 0), #consumer surplus
+         Forgone.surplus = ifelse(Code %in% c(5.5,5.6), (Gross.benefits*0.001), Forgone.surplus))%>%
+  group_by(Code,Intervention, HSP, year_id)%>%
+  summarise(
+    Incremental.cost = sum(Incremental.cost),
+    #Deaths.Baseline = sum(Deaths.Baseline),
+    #Deaths.Adjusted = sum(Deaths.Adjusted),
+    Deaths.avert = sum(Deaths.avert),
+    DALYS.avert = sum(DALYS.avert),
+    Gross.benefits = sum(Gross.benefits),
+    Forgone.surplus = sum(Forgone.surplus))%>%
+  ungroup()%>%
+  mutate(BCR = Gross.benefits / (Forgone.surplus+Incremental.cost),
+         BCR.without.surplus = Gross.benefits/Incremental.cost)%>%
+  arrange(HSP, -BCR)%>%
+  group_by(Code, Intervention, HSP)%>%
+  arrange(year_id)%>%
+  mutate(cumulative.benefits = cumsum(Gross.benefits),
+         cumulative.surplus = cumsum(Forgone.surplus),
+         cumulative.cost = cumsum(Incremental.cost))%>%
+  ungroup()%>%
+  mutate(cBCR = cumulative.benefits/(cumulative.surplus+cumulative.cost))
+
+ggplot(df.bcr2, aes(x=year_id, y=BCR, color=Intervention))+
+  geom_smooth(se=FALSE)+
+  facet_wrap(~HSP)
+
+ggsave("figures/troubleshoot_BCRs.jpeg", height=6, width=6)

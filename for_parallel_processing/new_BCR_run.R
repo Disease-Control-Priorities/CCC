@@ -5,8 +5,8 @@ rm(list=ls())
 pacman::p_load(data.table, dplyr, tidyr, progress, pspline, MortalityLaws) 
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-load("../new_inputs/PreppedData2023c.Rda")
-source("../utils/demmod_icer_rankb.R")
+load("../new_inputs/PreppedData2023c_2050.Rda")
+source("../utils/demmod_icer_rankb_2050.R")
 
 ###############################################################################################################################
 

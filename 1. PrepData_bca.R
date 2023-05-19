@@ -4,8 +4,12 @@
 
 rm(list=ls()) 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-pacman::p_load(data.table, dplyr, tidyr, progress, pspline, MortalityLaws)        
-
+pacman::p_load(data.table, dplyr, tidyr, progress, pspline, MortalityLaws)
+#Install Rtools
+#library(usethis)
+#library(devtools)
+#devtools::install_github("mpascariu/MortalityLaws", force=TRUE)
+#library(MortalityLaws)
 ##############################################################################################################
 ##############################################################################################################
 # Functions
@@ -121,7 +125,7 @@ q30.est.sex <- function(P, D, n){
   qm = apply(mx.m, 2, get.q30)
   
   data.table(t(rbind(qf, qm))) %>%
-    mutate(year_id=2019:2030) %>% rename(Female = qf, Male = qm) %>%
+    mutate(year_id=2019:2050) %>% rename(Female = qf, Male = qm) %>%
     gather(sex_name, val, -year_id)
 }
 
@@ -132,7 +136,7 @@ q30.est.sex <- function(P, D, n){
 load("new_inputs/WPP_input_data.Rda")
 
 locs          <- wpp.input %>% select(location_name, iso3) %>% distinct()
-wpp.in        <- wpp.input %>% filter(year_id > 2009 & year_id < 2032) %>% 
+wpp.in        <- wpp.input %>% filter(year_id > 2009 & year_id < 2052) %>% 
   rename(age_name = age, year = year_id) %>% arrange(iso3, sex_name, year, age_name)
 
 
@@ -377,7 +381,18 @@ ta_delay<- readxl::read_excel("new_inputs/TobaccoAlcoholDelayedImpact.xlsx") %>%
          `2037` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2036`) - logit(`2035`))),
          `2038` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2037`) - logit(`2036`))),
          `2039` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2038`) - logit(`2037`))),
-         `2040` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2039`) - logit(`2038`)))) %>%
+         `2040` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2039`) - logit(`2038`))),
+         `2041` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2040`) - logit(`2039`))),
+         `2042` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2041`) - logit(`2040`))),
+         `2043` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2042`) - logit(`2041`))),
+         `2044` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2043`) - logit(`2042`))),
+         `2045` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2044`) - logit(`2043`))),
+         `2046` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2045`) - logit(`2044`))),
+         `2047` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2046`) - logit(`2045`))),
+         `2048` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2047`) - logit(`2046`))),
+         `2049` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2048`) - logit(`2047`))),
+         `2050` = ifelse(`2030`== 1, 1, invlogit(2*logit(`2049`) - logit(`2048`)))
+         ) %>%
   gather(year_id, delay, -Link) %>% mutate(year_id = as.numeric(year_id)) %>%
   arrange(Link, year_id)
 
@@ -449,8 +464,6 @@ aclt_eff <- ta_eff %>% filter(!is.na(location_name), risk=="Alcohol") %>%
 
 aclt_eff<-na.omit(left_join(aclt_eff, cse_g, by="cause_name")%>%mutate(`Mortality reduction` = `Mortality reduction`*aff_frac)%>%
                     select(-c(aff_frac)))%>%mutate(target.coverage=1)
-
-#add alcohol ban ifelse()
 
 #merge with other interventions#
 int.df<-rbind(int.df%>%mutate(target.coverage = 1), salt_eff%>%mutate(metric="case fatality"), 
@@ -611,7 +624,7 @@ rm(list = c(drops,"drops"))
 
 ##############################################################################################################
 
-save.image(file = "new_inputs/PreppedData2023.Rda")
-save.image(file = "for_parallel_processing/PreppedData2023.Rda")
+save.image(file = "new_inputs/PreppedData2050.Rda")
+save.image(file = "for_parallel_processing/PreppedData2050.Rda")
 
 

@@ -4,355 +4,22 @@ pacman::p_load(data.table, dplyr, tidyr, stringr, ggplot2, ggpattern, tidyverse,
 '%!in%' <- function(x,y)!('%in%'(x,y)) # Function "Not In"
 
 #########################
-# Table 1
-# No discounting
-########################
-
-WB<-read.csv("../new_inputs/country_groupings.csv", stringsAsFactors = F)%>%
-  select(iso3, location_gbd, HLI_group)%>%
-  rename(location_name = location_gbd)%>%
-  left_join(., read.csv("../new_inputs/HS123.csv", stringsAsFactors = F)%>%
-              select(ISO3, HSP)%>%
-              rename(iso3 = ISO3))%>%
-  mutate(HSP = gsub(" ", "", HSP))%>%
-  filter(HSP!="NA")
-
-load("output/results_target_all.Rda")
-t_deaths<-dadt.all.opt
-t_dalys<-dalys.opt
-t_pin<-all.pin.opt
-
-#add intersectoral results#
-load("../for_parallel_processing/output2023_target_intersectoral.Rda")
-int_deaths<-dadt.all
-int_dalys<-all.dalys
-int_pin<-all.pin
-#add UMICs
-load("../for_parallel_processing/output2023_target_intersectoral_UMICs.Rda")
-int_deaths<-bind_rows(int_deaths, dadt.all)
-int_dalys<-bind_rows(int_dalys, all.dalys)
-int_pin<-bind_rows(int_pin, all.pin)
-
-cost<-read.csv("output/all_costs.csv", stringsAsFactors = F)
-exclude<-c("Moldova", "Turkey", "Maldives", "Vanuatu")
-all.locs<-unique(cost$location_name[cost$location_name%!in%exclude])
-
-DA<-bind_rows(t_deaths%>%select(location_name, Deaths.Avert), 
-              int_deaths%>%select(location_name, Deaths.Avert))%>%
-  filter(location_name %in% all.locs)%>%
-  left_join(., WB)%>%group_by(HLI_group)%>%
-  summarise(Cumulative.deaths.averted = sum(Deaths.Avert, na.rm=T))
-
-DALYS<-bind_rows(t_dalys%>%select(location_name, DALY.ave), 
-                 int_dalys%>%select(location_name, DALY.ave))%>%
-  filter(location_name %in% all.locs)%>%
-  left_join(., WB)%>%group_by(HLI_group)%>%
-  summarise(Cumulative.DALYs.averted = sum(DALY.ave))
-
-inc.cost<-left_join(cost, WB)%>%filter(location_name %in% all.locs)%>%
-  group_by(HLI_group)%>%
-  summarise(Cumulative.incremental.cost = sum(Incremental.cost, na.rm=T))
-
-cost.2030<-left_join(cost, WB)%>%filter(year_id==2030)%>%
-  filter(location_name %in% all.locs)%>%
-  group_by(HLI_group)%>%
-  summarise(Total.cost.2030 = sum(Adjusted.cost, na.rm=T))
-
-gghed<-read.csv("gghe/gghed_data.csv",stringsAsFactors = F)%>%filter(year==2030)%>%
-  rename(iso3 = ISO)%>%
-  left_join(., WB)%>%
-  filter(location_name %in% all.locs)%>%
-  group_by(HLI_group)%>%
-  summarise(PopTotal = sum(PopTotal),
-            GGHED = sum(GGHED))
-
-table1<-left_join(DA, DALYS)%>%
-  left_join(., inc.cost)%>%
-  left_join(., cost.2030)%>%
-  left_join(gghed)%>%
-  mutate(Cost.per.capita = Total.cost.2030/PopTotal,
-         Cost.per.GGHED = Total.cost.2030/GGHED)
-
-#Add all countries
-table1_all<-left_join(DA, DALYS)%>%
-  left_join(., inc.cost)%>%
-  left_join(., cost.2030)%>%
-  left_join(gghed)%>%
-  summarise(Cumulative.deaths.averted = sum(Cumulative.deaths.averted),
-            Cumulative.DALYs.averted = sum(Cumulative.DALYs.averted),
-            Cumulative.incremental.cost = sum(Cumulative.incremental.cost),
-            Total.cost.2030 = sum(Total.cost.2030),
-            PopTotal = sum(PopTotal),
-            GGHED = sum(GGHED))%>%
-  mutate(Cost.per.capita = Total.cost.2030/PopTotal,
-         Cost.per.GGHED = Total.cost.2030/GGHED,
-         HLI_group = "All countries")
-
-write.csv(bind_rows(table1, table1_all), "figures/Table1.csv", row.names = F)
-
-##############################################
-#Table 3
-##############################################
-
-load("output/results_target_best.Rda")
-unique(dadt.all.opt$location_name)
-########################
-#Cost
-########################
-
-pin<-bind_rows(all.pin.opt, int_pin)%>%
-  mutate(unique_id = paste0("C",Code,"_", sub_id))%>%
-  select(-sub_id)
-
-unique(pin$Code)
-
-uc<-read.csv("../output/unit_costs/Afghanistan_adjusted_uc_2020.csv", stringsAsFactors = F)%>%
-  mutate(location_name = "Afghanistan")
-
-for(i in all.locs[2:117]){
-  uc<-bind_rows(uc, read.csv(paste0("../output/unit_costs/",i,"_adjusted_uc_2020.csv"), stringsAsFactors = F)%>%
-                  mutate(location_name = i))
-}
-
-cost2<-left_join(pin, uc)%>%
-  mutate(cost = adjusted_uc*pin)%>%
-  group_by(Code, group, year_id, Intervention, location_name)%>%
-  summarise(cost = sum(cost))%>%
-  spread(group, cost)%>%
-  rename(Adjusted.cost = Adjusted,
-         Baseline.cost = Baseline)%>%
-  mutate(Incremental.cost = Adjusted.cost - Baseline.cost)
-
-########################
-
-DA2<-bind_rows(dadt.all.opt%>%select(location_name, Deaths.Avert), 
-               int_deaths%>%select(location_name, Deaths.Avert))%>%
-  filter(location_name %in% all.locs)%>%
-  left_join(., WB)%>%group_by(HLI_group)%>%
-  summarise(Cumulative.deaths.averted = sum(Deaths.Avert))%>%
-  na.omit()
-
-DALYS2<-bind_rows(dalys.opt%>%select(location_name, DALY.ave), 
-                 int_dalys%>%select(location_name, DALY.ave))%>%
-  filter(location_name %in% all.locs)%>%
-  left_join(., WB)%>%group_by(HLI_group)%>%
-  summarise(Cumulative.DALYs.averted = sum(DALY.ave))%>%
-  na.omit()
-
-inc.cost2<-left_join(cost2, WB)%>%group_by(HLI_group)%>%
-  summarise(Cumulative.incremental.cost = sum(Incremental.cost, na.rm=T))%>%
-  na.omit()
-
-cost.20302<-left_join(cost2, WB)%>%filter(year_id==2030)%>%
-  group_by(HLI_group)%>%
-  summarise(Total.cost.2030 = sum(Adjusted.cost, na.rm=T))%>%
-  na.omit()
-
-table3<-left_join(DA2, DALYS2)%>%
-  left_join(., inc.cost2)%>%
-  left_join(., cost.20302)%>%
-  left_join(., gghed)%>%
-  mutate(Cost.per.capita = Total.cost.2030/PopTotal,
-         Cost.per.GGHED = Total.cost.2030/GGHED)
-
-
-table3_all<-left_join(DA2, DALYS2)%>%
-  left_join(., inc.cost2)%>%
-  left_join(., cost.20302)%>%
-  left_join(., gghed)%>%
-  summarise(Cumulative.deaths.averted = sum(Cumulative.deaths.averted),
-            Cumulative.DALYs.averted = sum(Cumulative.DALYs.averted),
-            Cumulative.incremental.cost = sum(Cumulative.incremental.cost),
-            Total.cost.2030 = sum(Total.cost.2030),
-            PopTotal = sum(PopTotal),
-            GGHED = sum(GGHED))%>%
-  mutate(Cost.per.capita = Total.cost.2030/PopTotal,
-         Cost.per.GGHED = Total.cost.2030/GGHED,
-         HLI_group = "All countries")
-
-write.csv(bind_rows(table3,table3_all), "figures/Table3.csv", row.names = F)
-
-
-plot3<-read.csv("figures/Table1.csv", stringsAsFactors = F)%>%
-  select(HLI_group, Cumulative.incremental.cost, Cumulative.DALYs.averted)%>%
-  mutate(Scenario = "All interventions")%>%
-  bind_rows(., read.csv("figures/Table3.csv", stringsAsFactors = F)%>%
-              select(HLI_group, Cumulative.incremental.cost, Cumulative.DALYs.averted)%>%
-              mutate(Scenario = "High priority interventions"))
-
-plot3<-plot3%>%
-  select(Scenario, HLI_group, Cumulative.incremental.cost, Cumulative.DALYs.averted)%>%
-  mutate(Cumulative.DALYs.averted = Cumulative.DALYs.averted/1e6,
-         Cumulative.incremental.cost = Cumulative.incremental.cost/1e9)%>%
-  gather(Measure, value, -HLI_group, -Scenario)%>%
-  mutate(Measure = ifelse(Measure=="Cumulative.DALYs.averted",
-                          "Cumulative DALYs \naverted (millions)",
-                          "Cumulative incremental \ncost (billions $USD)"))%>%
-  mutate(Measure = factor(Measure,levels=c("Cumulative incremental \ncost (billions $USD)",
-                                           "Cumulative DALYs \naverted (millions)")))
-
-
-library("ggpattern")
-
-ggplot(plot3%>%filter(HLI_group!="All countries"), 
-       aes(x=HLI_group, y=value, alpha=Scenario, fill=Measure, group=Measure))+
-  geom_bar(position = "dodge", 
-           stat = "identity")+
-  xlab("")+
-  ylab("")+
-  theme_bw()+
-  scale_alpha_discrete(range = c(0.5, 0.9))+
-  scale_fill_manual(values=c("#4A889A", "#BB667D"))
-
-ggsave("figures/Figure4.jpeg", height=6, width=9)
-
-
-################
-# Figure 3
-# all cause mx by age
-################
-
-load("../new_inputs/PreppedData2023c.Rda")
-#grab Nx from wpp.in
-
-load("output/results_q30.Rda")
-
-mx0<-D0.opt%>%
-  group_by(location_name)%>%
-  mutate(age = row_number(),
-         sex = ifelse(age>86, "Male", "Female"),
-         age = ifelse(age>86, age-86, age),
-         age= age-1)%>%
-  gather(year, deaths, -location_name, -sex, -age)%>%
-  mutate(year = as.numeric(gsub("V","", year)),
-         year = year+2018)%>%
-  mutate(Scenario = "Baseline")
-
-mxall<-D1.opt%>%
-  group_by(location_name)%>%
-  mutate(age = row_number(),
-         sex = ifelse(age>86, "Male", "Female"),
-         age = ifelse(age>86, age-86, age),
-         age= age-1)%>%
-  gather(year, deaths, -location_name, -sex, -age)%>%
-  mutate(year = as.numeric(gsub("V","", year)),
-         year = year+2018)%>%
-  mutate(Scenario = "All interventions")
-
-
-load("output/results_q30_best.Rda")
-
-mxhpp<-D1.opt%>%
-  group_by(location_name)%>%
-  mutate(age = row_number(),
-         sex = ifelse(age>86, "Male", "Female"),
-         age = ifelse(age>86, age-86, age),
-         age= age-1)%>%
-  gather(year, deaths, -location_name, -sex, -age)%>%
-  mutate(year = as.numeric(gsub("V","", year)),
-         year = year+2018)%>%
-  mutate(Scenario = "High-priority interventions")
-
-mxfront<-read.csv("frontier_life_tables_N.csv", stringsAsFactors = F)%>%
-  filter(year==2030)%>%
-  select(year, age, mxn)%>%
-  mutate(mx = mxn*1e5,
-         Scenario = "Frontier mortality 2030")
-#mxfront<-mxhpp%>%mutate(deaths = 0.7*deaths, Scenario = "Frontier mortality")
-
-plot4<-bind_rows(mx0, mxall, mxhpp)%>%
-  left_join(., WB)%>%
-  left_join(., wpp.in%>%rename(age=age_name, sex = sex_name)%>%select(age, sex, year, iso3, Nx))%>%
-  group_by(year, age, Scenario)%>%
-  summarise(deaths = sum(deaths),
-            pop = sum(Nx))%>%
-  mutate(mx = 1e5*(deaths/pop))%>%
-  bind_rows(., mxfront)%>%
-  mutate(Scenario = factor(Scenario, levels = c("Baseline", "High-priority interventions",
-                                                "All interventions", "Frontier mortality 2030")))
-
-ggplot(plot4%>%filter(year==2030), aes(x=age, y=mx, color=Scenario))+
-  geom_line(size=1)+
-  ylab("All-cause mortality rate (per 100,000)")+
-  xlab("Age")+
-  theme_bw()
-
-ggsave("figures/Figure3.jpeg", height=4, width=8)
-
-ggplot(plot4%>%filter(year==2030), aes(x=age, y=mx, color=Scenario))+
-  geom_line(size=1)+
-  ylab("All-cause mortality rate (per 100,000)")+
-  xlab("Age")+
-  theme_bw()+
-  scale_y_continuous(trans='log10')
-
-ggsave("figures/Figure3_log.jpeg", height=4, width=8)
-
-#add 2040 and 2050 frontiers
-mxfront40<-read.csv("frontier_life_tables_N.csv", stringsAsFactors = F)%>%
-  filter(year==2040)%>%
-  select(year, age, mxn)%>%
-  mutate(mx = mxn*1e5,
-         Scenario = "Frontier mortality 2040")
-
-mxfront50<-read.csv("frontier_life_tables_N.csv", stringsAsFactors = F)%>%
-  filter(year==2050)%>%
-  select(year, age, mxn)%>%
-  mutate(mx = mxn*1e5,
-         Scenario = "Frontier mortality 2050")
-  
-
-plot4b<-bind_rows(plot4%>%filter(year==2030), mxfront40, mxfront50)%>%
-  mutate(Scenario = factor(Scenario, levels = c("Baseline", "High-priority interventions",
-                                                "All interventions", "Frontier mortality 2030",
-                                                "Frontier mortality 2040", "Frontier mortality 2050")))
-
-ggplot(plot4b, aes(x=age, y=mx, color=Scenario))+
-  geom_line(size=1)+
-  ylab("All-cause mortality rate (per 100,000)")+
-  xlab("Age")+
-  theme_bw()+
-  scale_y_continuous(trans='log10')
-
-ggsave("figures/Figure3_log_multiyear.jpeg", height=4, width=8)
-
-
 #Figure 2
-fig2<-read_excel("Cost effectivness Matrix by HSS - revised.xlsx", sheet="revised CE ranked")%>%
-  gather(HSP, Priority, -Intervention)%>%
-  mutate(Priority = ifelse(Priority=="h", "High", ifelse(Priority=="m", "Medium", "Low")),
-         Priority = factor(Priority, levels=c("High", "Medium", "Low")))%>%
-  mutate(order = ifelse(Intervention=="Aspirin for suspected ACS",1,NA),
-         order = ifelse(Intervention=="Heart failure chronic treatment", 2, order),
-         order = ifelse(Intervention=="Treatment of early-stage breast cancer", 3, order),
-         order = ifelse(Intervention=="Epilepsy acute and chronic treatment", 4, order),
-         order = ifelse(Intervention=="IDU harm reduction measures", 5, order),
-         order = ifelse(Intervention=="Depression chronic treatment", 6, order),
-         order = ifelse(Intervention=="CVD primary prevention", 7, order),
-         order = ifelse(Intervention=="Pulmonary rehabilitation", 8, order),
-         order = ifelse(Intervention=="Heart failure acute treatment", 9, order),
-         order = ifelse(Intervention=="Medical management of ACS", 10, order),
-         order = ifelse(Intervention=="Management of appendicitis", 11, order),
-         order = ifelse(Intervention=="Asthma/COPD acute treatment", 12, order),
-         order = ifelse(Intervention=="CVD secondary prevention", 13, order),
-         order = ifelse(Intervention=="Cervical cancer screening and treatment", 14, order),
-         order = ifelse(Intervention=="Repair of gastrointestinal perforations", 15, order),
-         order = ifelse(Intervention=="Treatment of early-stage colorectal cancer", 16, order),
-         order = ifelse(Intervention=="Alcohol use screening/brief intervention", 17, order),
-         order = ifelse(Intervention=="Management of acute ventilatory failure", 18, order),
-         order = ifelse(Intervention=="Management of bowel obstruction", 19, order),
-         order = ifelse(Intervention=="Repair of hernias", 20, order),
-         order = ifelse(Intervention=="PCI for ACS", 21, order),
-         order = ifelse(Intervention=="Asthma/COPD chronic treatment", 22, order),
-         order = ifelse(Intervention=="Schizophrenia chronic treatment", 23, order),
-         order = ifelse(Intervention=="Bipolar disorder chronic treatment", 24, order),
-         order = ifelse(Intervention=="Diabetes screening and treatment", 25, order))
-  
-ggplot(fig2%>%mutate(HSP = factor(HSP, levels = c("Conflict-affected states", "Vulnerable countries",
-                                                  "Health System category 1 (HS1)",
-                                                  "Health System category 2 (HS2)",
-                                                  "Health System category 3 (HS3)"))), 
-       aes(x=HSP, y=reorder(Intervention, -order), fill=Priority))+
+#########################
+order<-read.csv("hpp_order.csv")%>%
+  select(order, Intervention)
+
+fig2<-read.csv("hpp.csv", stringsAsFactors = F)%>%
+  mutate(HSP = ifelse(HSP=="conflict", "Conflict", HSP),
+         HSP = ifelse(HSP=="fragile", "Fragile", HSP),
+         Priorty = ifelse(Code>5, "High", Priorty))%>%
+  left_join(., order)%>%
+  mutate(Priorty = factor(Priorty, levels=c("High", "Medium", "Low")))
+
+unique(fig2$HSP)
+
+ggplot(fig2%>%mutate(HSP = factor(HSP, levels = c("Conflict", "Fragile","HS1","HS2","HS3"))), 
+       aes(x=HSP, y=reorder(Intervention, -order), fill=Priorty))+
   geom_tile()+
   theme_classic()+
   theme(axis.text.x=element_text(size=12, angle=45, hjust=0),    
@@ -365,4 +32,387 @@ ggplot(fig2%>%mutate(HSP = factor(HSP, levels = c("Conflict-affected states", "V
 ggsave("figures/Figure2.png", height = 10, width = 12, units = "in")
 
 
+#########################
+# Table 2
+# No discounting
+########################
 
+WB<-read.csv("../new_inputs/country_groupings.csv", stringsAsFactors = F)%>%
+  select(iso3, location_gbd, HLI_group)%>%
+  rename(location_name = location_gbd)%>%
+  left_join(., read.csv("../new_inputs/HS123.csv", stringsAsFactors = F)%>%
+              select(ISO3, HSP)%>%
+              rename(iso3 = ISO3))%>%
+  mutate(HSP = gsub(" ", "", HSP))%>%
+  filter(HSP!="NA")
+
+#Add WB2023 class
+class<-read_excel("../new_inputs/CLASS.xlsx")%>%
+  select(Code, `Income group`)%>%
+  rename(iso3 = Code,
+         wb2023 = `Income group`)%>%
+  mutate(wb2023 = ifelse(wb2023=="High income", "HIC", wb2023),
+         wb2023 = ifelse(wb2023=="Low income", "LIC", wb2023),
+         wb2023 = ifelse(wb2023=="Lower middle income", "LMIC", wb2023),
+         wb2023 = ifelse(wb2023=="Upper middle income", "UMIC", wb2023),
+         wb2023 = ifelse(iso3=="VEN", "UMIC", wb2023))
+#venezuela is NA? #assign to UMIC (per 2021 data)
+
+WB<-left_join(WB, class)
+
+load("output/results_target_all.Rda")
+t_deaths<-dadt.all.opt
+t_dalys<-dalys.opt
+t_pin<-all.pin.opt
+NCD0_all<-d0.opt
+NCD1_all<-d1.opt
+
+#add intersectoral results#
+load("../for_parallel_processing/output2050_target_intersectoral.Rda")
+int_deaths<-dadt.all
+int_dalys<-all.dalys
+int_pin<-all.pin
+NCD0_int<-d0.all
+NCD1_int<-d1.all
+
+cost<-read.csv("output/all_costs.csv", stringsAsFactors = F)
+all.locs<-unique(cost$location_name)
+
+DA<-bind_rows(t_deaths%>%select(location_name, Deaths.Avert), 
+              int_deaths%>%select(location_name, Deaths.Avert))%>%
+  filter(location_name %in% all.locs)%>%
+  left_join(., WB)%>%group_by(wb2023)%>%
+  summarise(Cumulative.deaths.averted = sum(Deaths.Avert, na.rm=T))
+
+DALYS<-bind_rows(t_dalys%>%select(location_name, DALY.ave), 
+                 int_dalys%>%select(location_name, DALY.ave))%>%
+  filter(location_name %in% all.locs)%>%
+  left_join(., WB)%>%group_by(wb2023)%>%
+  summarise(Cumulative.DALYs.averted = sum(DALY.ave))
+
+inc.cost<-left_join(cost, WB)%>%filter(location_name %in% all.locs)%>%
+  group_by(wb2023)%>%
+  summarise(Cumulative.incremental.cost = sum(Incremental.cost, na.rm=T))
+
+cost.2050<-left_join(cost, WB)%>%filter(year_id==2050)%>%
+  filter(location_name %in% all.locs)%>%
+  group_by(wb2023)%>%
+  summarise(Total.cost.2050 = sum(Adjusted.cost, na.rm=T))
+
+gghed<-read.csv("gghe/gghed_data_2050.csv",stringsAsFactors = F)%>%filter(year==2050)%>%
+  rename(iso3 = ISO)%>%
+  left_join(., WB)%>%
+  filter(location_name %in% all.locs)%>%
+  group_by(wb2023)%>%
+  summarise(PopTotal = sum(PopTotal),
+            GGHED = sum(GGHED))
+
+table1<-left_join(DA, DALYS)%>%
+  left_join(., inc.cost)%>%
+  left_join(., cost.2050)%>%
+  left_join(gghed)%>%
+  mutate(Cost.per.capita = Total.cost.2050/PopTotal,
+         Cost.per.GGHED = Total.cost.2050/GGHED)
+
+#Add all countries
+table1_all<-left_join(DA, DALYS)%>%
+  left_join(., inc.cost)%>%
+  left_join(., cost.2050)%>%
+  left_join(.,gghed)%>%
+  summarise(Cumulative.deaths.averted = sum(Cumulative.deaths.averted),
+            Cumulative.DALYs.averted = sum(Cumulative.DALYs.averted),
+            Cumulative.incremental.cost = sum(Cumulative.incremental.cost),
+            Total.cost.2050 = sum(Total.cost.2050),
+            PopTotal = sum(PopTotal),
+            GGHED = sum(GGHED))%>%
+  mutate(Cost.per.capita = Total.cost.2050/PopTotal,
+         Cost.per.GGHED = Total.cost.2050/GGHED,
+         wb2023 = "All countries")
+
+write.csv(bind_rows(table1, table1_all), "figures/Table2.csv", row.names = F)
+
+##############################################
+#Table 5
+##############################################
+rm(dalys.opt, dadt.all.opt)
+
+load("output/results_target_best.Rda")
+NCD0_best<-d0.opt
+NCD1_best<-d1.opt
+
+########################
+#Cost
+########################
+selects<-left_join(read.csv("hpp.csv", stringsAsFactors = F), WB, relationship = "many-to-many")%>%
+  select(Priorty, location_name, Code)%>%
+  mutate(Priorty = ifelse(Code>5, "High", Priorty))
+
+cost2<-read.csv("output/all_costs.csv", stringsAsFactors = F)%>%
+  left_join(., selects)%>%
+  filter(Priorty == "High")
+
+########################
+
+DA2<-bind_rows(dadt.all.opt%>%select(location_name, Deaths.Avert), 
+               int_deaths%>%select(location_name, Deaths.Avert))%>%
+  filter(location_name %in% all.locs)%>%
+  left_join(., WB)%>%group_by(wb2023)%>%
+  summarise(Cumulative.deaths.averted = sum(Deaths.Avert))%>%
+  na.omit()
+
+DALYS2<-bind_rows(dalys.opt%>%select(location_name, DALY.ave), 
+                 int_dalys%>%select(location_name, DALY.ave))%>%
+  filter(location_name %in% all.locs)%>%
+  left_join(., WB)%>%group_by(wb2023)%>%
+  summarise(Cumulative.DALYs.averted = sum(DALY.ave))%>%
+  na.omit()
+
+inc.cost2<-left_join(cost2, WB)%>%group_by(wb2023)%>%
+  summarise(Cumulative.incremental.cost = sum(Incremental.cost, na.rm=T))%>%
+  na.omit()
+
+cost.20502<-left_join(cost2, WB)%>%filter(year_id==2050)%>%
+  group_by(wb2023)%>%
+  summarise(Total.cost.2050 = sum(Adjusted.cost, na.rm=T))%>%
+  na.omit()
+
+table3<-left_join(DA2, DALYS2)%>%
+  left_join(., inc.cost2)%>%
+  left_join(., cost.20502)%>%
+  left_join(., gghed)%>%
+  mutate(Cost.per.capita = Total.cost.2050/PopTotal,
+         Cost.per.GGHED = Total.cost.2050/GGHED)
+
+
+table3_all<-left_join(DA2, DALYS2)%>%
+  left_join(., inc.cost2)%>%
+  left_join(., cost.20502)%>%
+  left_join(., gghed)%>%
+  summarise(Cumulative.deaths.averted = sum(Cumulative.deaths.averted),
+            Cumulative.DALYs.averted = sum(Cumulative.DALYs.averted),
+            Cumulative.incremental.cost = sum(Cumulative.incremental.cost),
+            Total.cost.2050 = sum(Total.cost.2050),
+            PopTotal = sum(PopTotal),
+            GGHED = sum(GGHED))%>%
+  mutate(Cost.per.capita = Total.cost.2050/PopTotal,
+         Cost.per.GGHED = Total.cost.2050/GGHED,
+         wb2023 = "All countries")
+
+write.csv(bind_rows(table3,table3_all), "figures/Table5.csv", row.names = F)
+
+################
+#Table 6
+################
+
+gghed<-read.csv("gghe/gghed_data_2050.csv",stringsAsFactors = F)%>%
+  filter(year==2050 | year==2040 | year==2030)%>%
+  rename(iso3 = ISO)%>%
+  left_join(., WB)%>%
+  filter(location_name %in% all.locs)%>%
+  group_by(wb2023, year)%>%
+  summarise(PopTotal = sum(PopTotal),
+            GGHED = sum(GGHED))%>%
+  rename(year_id = year)
+
+cost3<-read.csv("output/all_costs.csv", stringsAsFactors = F)%>%
+  left_join(., selects)%>%
+  filter(Priorty != "Low")
+
+table6<-bind_rows(cost2%>%mutate(pkg = "High"),
+                  cost3%>%mutate(pkg = "High + Medium"))%>%
+  filter(year_id==2030 | year_id==2040 | year_id==2050)%>%
+  left_join(., WB)%>%
+  group_by(wb2023, year_id, pkg)%>%
+  summarise(Totalcost = sum(Adjusted.cost))%>%
+  left_join(., gghed)%>%
+  mutate(costpc = Totalcost/PopTotal)%>%
+  mutate(column = paste0(year_id, ", pkg:", pkg))%>%
+  ungroup()%>%
+  select(-pkg, -year_id, -PopTotal, -GGHED, -Totalcost)%>%
+  spread(column, costpc)
+
+totalpop<-gghed%>%group_by(year_id)%>%summarise(PopTotal = sum(PopTotal))
+  
+all6<-bind_rows(cost2%>%mutate(pkg = "High"),
+                cost3%>%mutate(pkg = "High + Medium"))%>%
+  filter(year_id==2030 | year_id==2040 | year_id==2050)%>%
+  group_by(year_id, pkg)%>%
+  summarise(Totalcost = sum(Adjusted.cost))%>%
+  left_join(., totalpop)%>%
+  mutate(costpc = Totalcost/PopTotal)%>%
+  mutate(column = paste0(year_id, ", pkg:", pkg))%>%
+  ungroup()%>%
+  select(-pkg, -year_id, -PopTotal, -Totalcost)%>%
+  spread(column, costpc)%>%
+  mutate(wb2023 = "All countries")
+
+tab6<-bind_rows(table6, all6)
+
+write.csv(tab6, "figures/Table6.csv", row.names = F)
+
+################
+# Figure 3
+# NCD mx by age
+################
+
+load("../new_inputs/PreppedData2023c_2050.Rda")
+#grab Nx from wpp.in
+
+mx0<-NCD0_all%>%
+  group_by(location_name)%>%
+  mutate(age = row_number(),
+         sex = ifelse(age>86, "Male", "Female"),
+         age = ifelse(age>86, age-86, age),
+         age= age-1)%>%
+  gather(year, deaths, -location_name, -sex, -age)%>%
+  mutate(year = as.numeric(gsub("V","", year)),
+         year = year+2018)%>%
+  mutate(Scenario = "Baseline")
+
+mx_int<-NCD0_int%>%
+  group_by(location_name, Code)%>%
+  mutate(age = row_number(),
+         sex = ifelse(age>86, "Male", "Female"),
+         age = ifelse(age>86, age-86, age),
+         age= age-1)%>%
+  gather(year, deaths, -location_name, -sex, -age, -Code)%>%
+  mutate(year = as.numeric(gsub("V","", year)),
+         year = year+2018)%>%
+  rename(deaths0 = deaths)%>%
+  left_join(., NCD1_int%>%
+              group_by(location_name, Code)%>%
+              mutate(age = row_number(),
+                     sex = ifelse(age>86, "Male", "Female"),
+                     age = ifelse(age>86, age-86, age),
+                     age= age-1)%>%
+              gather(year, deaths, -location_name, -sex, -age, -Code)%>%
+              mutate(year = as.numeric(gsub("V","", year)),
+                     year = year+2018)%>%
+              rename(deaths1 = deaths))%>%
+  mutate(DA = deaths0 - deaths1)%>%
+  group_by(location_name, year, age, sex)%>%
+  summarise(DA = sum(DA))
+
+mxall<-NCD1_all%>%
+  group_by(location_name)%>%
+  mutate(age = row_number(),
+         sex = ifelse(age>86, "Male", "Female"),
+         age = ifelse(age>86, age-86, age),
+         age= age-1)%>%
+  gather(year, deaths, -location_name, -sex, -age)%>%
+  mutate(year = as.numeric(gsub("V","", year)),
+         year = year+2018)%>%
+  mutate(Scenario = "All interventions")%>%
+  left_join(., mx_int)%>%
+  mutate(deaths = deaths - DA)%>%
+  select(-DA)
+
+
+#load("output/results_q30_best.Rda")
+
+mxhpp<-NCD1_best%>%
+  group_by(location_name)%>%
+  mutate(age = row_number(),
+         sex = ifelse(age>86, "Male", "Female"),
+         age = ifelse(age>86, age-86, age),
+         age= age-1)%>%
+  gather(year, deaths, -location_name, -sex, -age)%>%
+  mutate(year = as.numeric(gsub("V","", year)),
+         year = year+2018)%>%
+  mutate(Scenario = "High-priority interventions")%>%
+  left_join(., mx_int)%>%
+  mutate(deaths = deaths - DA)%>%
+  select(-DA)
+
+#Take 20th percentile in 2040
+mxfront<-read.csv("for-David_2023-05-16.csv", stringsAsFactors = F)%>%
+  filter(year==2040)%>%
+  select(year, age, sex, ncd_mxn, iso3)%>%
+  mutate(ncd_mxn = ncd_mxn*1e5,
+         Scenario = "Frontier mortality 2040",
+         sex = ifelse(sex==1, "Male", "Female"))%>% 
+  group_by(age, sex, year, Scenario)%>%
+  summarise(ncd_mxn = quantile(ncd_mxn, probs=c(0.2)))
+
+
+plot4<-bind_rows(mx0, mxall, mxhpp)%>%
+  filter(year==2040)%>%
+  left_join(., WB)%>%
+  left_join(., wpp.in%>%
+              rename(age=age_name, sex = sex_name)%>%
+              select(age, sex, year, iso3, Nx))%>%
+  group_by(year, age, Scenario)%>%
+  summarise(deaths = sum(deaths),
+            pop = sum(Nx))%>%
+  mutate(ncd_mxn = 1e5*(deaths/pop))%>%
+  bind_rows(., mxfront)%>%
+  mutate(Scenario = factor(Scenario, levels = c("Baseline", "High-priority interventions",
+                                                "All interventions", "Frontier mortality 2040")))
+
+
+
+ggplot(plot4%>%filter(year==2040), aes(x=age, y=ncd_mxn, color=Scenario))+
+  geom_smooth(se=FALSE)+
+  ylab("NCD mortality rate (per 100,000)")+
+  xlab("Age")+
+  theme_bw()+
+  scale_y_continuous(trans='log10')
+
+ggsave("figures/Figure3.jpeg", height=4, width=8)
+
+ggplot(plot4%>%filter(year==2040, age>30), aes(x=age, y=ncd_mxn, color=Scenario))+
+  geom_smooth(se=FALSE)+
+  ylab("NCD mortality rate (per 100,000)")+
+  xlab("Age")+
+  theme_bw()+
+  scale_y_continuous(trans='log10')
+
+ggsave("figures/Figure3_over30.jpeg", height=4, width=8)
+
+
+ggplot(plot4%>%filter(year==2040,), aes(x=age, y=ncd_mxn, color=Scenario))+
+  geom_smooth(se=FALSE)+
+  ylab("NCD mortality rate (per 100,000)")+
+  xlab("Age")+
+  theme_bw()
+
+ggsave("figures/Figure3_alt.jpeg", height=4, width=8)
+
+################################
+#Didn't use
+################################
+
+####### Figure 4 ################
+
+plot3<-read.csv("figures/Table2.csv", stringsAsFactors = F)%>%
+  select(wb2023, Cumulative.incremental.cost, Cumulative.DALYs.averted)%>%
+  mutate(Scenario = "All interventions")%>%
+  bind_rows(., read.csv("figures/Table5.csv", stringsAsFactors = F)%>%
+              select(wb2023, Cumulative.incremental.cost, Cumulative.DALYs.averted)%>%
+              mutate(Scenario = "High priority interventions"))
+
+plot3<-plot3%>%
+  select(Scenario, wb2023, Cumulative.incremental.cost, Cumulative.DALYs.averted)%>%
+  mutate(Cumulative.DALYs.averted = Cumulative.DALYs.averted/1e6,
+         Cumulative.incremental.cost = Cumulative.incremental.cost/1e9)%>%
+  gather(Measure, value, -wb2023, -Scenario)%>%
+  mutate(Measure = ifelse(Measure=="Cumulative.DALYs.averted",
+                          "Cumulative DALYs \naverted (millions)",
+                          "Cumulative incremental \ncost (billions $USD)"))%>%
+  mutate(Measure = factor(Measure,levels=c("Cumulative incremental \ncost (billions $USD)",
+                                           "Cumulative DALYs \naverted (millions)")))
+
+
+library("ggpattern")
+
+ggplot(plot3%>%filter(wb2023!="All countries"), 
+       aes(x=wb2023, y=value, alpha=Scenario, fill=Measure, group=Measure))+
+  geom_bar(position = "dodge", 
+           stat = "identity")+
+  xlab("")+
+  ylab("")+
+  theme_bw()+
+  scale_alpha_discrete(range = c(0.5, 0.9))+
+  scale_fill_manual(values=c("#4A889A", "#BB667D"))
+
+ggsave("figures/Figure4.jpeg", height=6, width=9)
