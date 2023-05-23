@@ -20,7 +20,7 @@ unique(fig2$HSP)
 
 ggplot(fig2%>%mutate(HSP = factor(HSP, levels = c("Conflict", "Fragile","HS1","HS2","HS3"))), 
        aes(x=HSP, y=reorder(Intervention, -order), fill=Priorty))+
-  geom_tile()+
+  geom_tile(color="white", size=0.5)+
   theme_classic()+
   theme(axis.text.x=element_text(size=12, angle=45, hjust=0),    
         axis.text.y=element_text(size=12))+
@@ -327,11 +327,10 @@ mxhpp<-NCD1_best%>%
 #Take 20th percentile in 2040
 mxfront<-read.csv("for-David_2023-05-16.csv", stringsAsFactors = F)%>%
   filter(year==2040)%>%
-  select(year, age, sex, ncd_mxn, iso3)%>%
-  mutate(ncd_mxn = ncd_mxn*1e5,
-         Scenario = "Frontier mortality 2040",
-         sex = ifelse(sex==1, "Male", "Female"))%>% 
-  group_by(age, sex, year, Scenario)%>%
+  group_by(year, age, ncd_mxn, iso3)%>%
+  summarise(ncd_mxn = mean(ncd_mxn)*1e5)%>%
+  mutate(Scenario = "Frontier mortality 2040")%>% 
+  group_by(age, year, Scenario)%>%
   summarise(ncd_mxn = quantile(ncd_mxn, probs=c(0.2)))
 
 
@@ -350,6 +349,13 @@ plot4<-bind_rows(mx0, mxall, mxhpp)%>%
                                                 "All interventions", "Frontier mortality 2040")))
 
 
+#rates
+tabx<-plot4%>%filter(year==2040, age %in% c(40,60,80))%>%
+  select(-deaths, -pop)%>%
+  mutate(age = paste("age", age))%>%
+  spread(age, ncd_mxn)
+
+#write.csv(tabx, "ncd_mx.csv")
 
 ggplot(plot4%>%filter(year==2040), aes(x=age, y=ncd_mxn, color=Scenario))+
   geom_smooth(se=FALSE)+
