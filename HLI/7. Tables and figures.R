@@ -78,6 +78,13 @@ NCD1_int<-d1.all
 cost<-read.csv("output/all_costs.csv", stringsAsFactors = F)
 all.locs<-unique(cost$location_name)
 
+DA2050<-bind_rows(t_deaths%>%select(location_name, Deaths.Avert, year_id), 
+                  int_deaths%>%select(location_name, Deaths.Avert, year_id))%>%
+  filter(location_name %in% all.locs, year_id==2050)%>%
+  left_join(., WB)%>%group_by(wb2023, year_id)%>%
+  summarise(Deaths.averted = sum(Deaths.Avert, na.rm=T))%>%
+  mutate(Scenario = "All interventions")
+
 DA<-bind_rows(t_deaths%>%select(location_name, Deaths.Avert), 
               int_deaths%>%select(location_name, Deaths.Avert))%>%
   filter(location_name %in% all.locs)%>%
@@ -106,6 +113,25 @@ gghed<-read.csv("gghe/gghed_data_2050.csv",stringsAsFactors = F)%>%filter(year==
   group_by(wb2023)%>%
   summarise(PopTotal = sum(PopTotal),
             GGHED = sum(GGHED))
+
+#output GDP for Daphne
+gpd4d<-read.csv("gghe/gghed_data_2050.csv",stringsAsFactors = F)%>%
+  filter(year %in% c(2020,2030,2040,2050))%>%
+  rename(iso3 = ISO)%>%
+  left_join(., WB)%>%
+  filter(location_name %in% all.locs)%>%
+  group_by(wb2023, year)%>%
+  summarise(PopTotal = sum(PopTotal),
+            GDP = sum(GDP))
+
+gpd4d<-gpd4d%>%group_by(year)%>%
+  summarise(PopTotal = sum(PopTotal),
+                         GDP = sum(GDP))%>%
+  mutate(wb2023 = "All LMICs")%>%
+  bind_rows(., gpd4d)%>%
+  mutate(GDP_pc = GDP/PopTotal)
+
+write.csv(gpd4d, "GDP_proj.csv", row.names = F)
 
 table1<-left_join(DA, DALYS)%>%
   left_join(., inc.cost)%>%
@@ -152,6 +178,20 @@ cost2<-read.csv("output/all_costs.csv", stringsAsFactors = F)%>%
   filter(Priorty == "High")
 
 ########################
+
+DA2050<-bind_rows(dadt.all.opt%>%select(location_name, Deaths.Avert, year_id), 
+                  int_deaths%>%select(location_name, Deaths.Avert, year_id))%>%
+  filter(location_name %in% all.locs, year_id==2050)%>%
+  left_join(., WB)%>%group_by(wb2023, year_id)%>%
+  summarise(Deaths.averted = sum(Deaths.Avert, na.rm=T))%>%
+  mutate(Scenario = "High-priority interventions")%>%
+  bind_rows(., DA2050)
+
+DA2050<-DA2050%>%group_by(year_id, Scenario)%>%summarise(Deaths.averted = sum(Deaths.averted))%>%
+  mutate(wb2023 = "All LMIC")%>%
+  bind_rows(., DA2050)
+
+write.csv(DA2050%>%arrange(Scenario), "deaths_averted_2050.csv", row.names = F)
 
 DA2<-bind_rows(dadt.all.opt%>%select(location_name, Deaths.Avert), 
                int_deaths%>%select(location_name, Deaths.Avert))%>%
@@ -356,6 +396,44 @@ tabx<-plot4%>%filter(year==2040, age %in% c(40,60,80))%>%
   spread(age, ncd_mxn)
 
 #write.csv(tabx, "ncd_mx.csv")
+
+
+## NCD death rates for Daphne
+#AARC: log((well19/pop19)/(well14/pop14))/5
+tabx2<-bind_rows(mx0, mxall, mxhpp)%>%
+  left_join(., WB)%>%
+  left_join(., wpp.in%>%
+              rename(age=age_name, sex = sex_name)%>%
+              select(age, sex, year, iso3, Nx))%>%
+  group_by(year, age, Scenario)%>%
+  summarise(deaths = sum(deaths),
+            pop = sum(Nx))%>%
+  mutate(ncd_mxn = 1e5*(deaths/pop))%>%
+  mutate(Scenario = factor(Scenario, levels = c("Baseline", "High-priority interventions","All interventions")))%>%
+  mutate(age.group = ifelse( age<30, "0-30",
+                                          ifelse(age>=30 & age<49, "30-49",
+                                                 ifelse(age>=50 & age<70, "50-69",
+                                                        ifelse(age>=70 & age<85, "70-84", "85+")))))%>%
+  filter(year==2020 | year==2050)%>%
+  group_by(age.group, Scenario, year)%>%
+  summarise(deaths = sum(deaths),
+            pop = sum(pop))%>%
+  mutate(ncd_mx = 1e5*(deaths/pop),
+         Scenario = paste(Scenario, "in", year))%>%
+  filter(age.group !="85+", age.group!="0-30")%>%
+  select(-deaths, -pop, -year)%>%
+  spread(Scenario, ncd_mx)%>%
+  select(-`High-priority interventions in 2020`,
+         -`All interventions in 2020`)%>%
+  mutate(`hpp_aarc (%)` = 100*log(`High-priority interventions in 2050`/`Baseline in 2020`)/30,
+         `allint_aarc (%)` = 100*log(`All interventions in 2050`/`Baseline in 2020`)/30)
+
+
+write.csv(tabx2, "ncd_deaths_per_100k.csv", row.names = F)
+  
+
+#all cause mx?
+
 
 ggplot(plot4%>%filter(year==2040), aes(x=age, y=ncd_mxn, color=Scenario))+
   geom_smooth(se=FALSE)+
