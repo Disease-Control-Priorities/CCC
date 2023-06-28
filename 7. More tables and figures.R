@@ -1,4 +1,4 @@
-rm(list=ls()) 
+rm(list=ls())
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 '%!in%' <- function(x,y)!('%in%'(x,y)) # Function "Not In"
 
@@ -51,22 +51,22 @@ load("output/goal.q30.covid_0830.Rda")
 
 locs<-unique(all.q30$location_name)
 
-pop<-read.csv("new_inputs/wb_pop.csv", stringsAsFactors = F, skip=4)%>% 
-  pivot_longer(X1960:X2021) %>% 
-  group_by(Country.Code) %>% 
-  fill(value, .direction = "down") %>% 
+pop<-read.csv("new_inputs/wb_pop.csv", stringsAsFactors = F, skip=4)%>%
+  pivot_longer(X1960:X2021) %>%
+  group_by(Country.Code) %>%
+  fill(value, .direction = "down") %>%
   pivot_wider(Country.Code)%>%
   select(Country.Code, X2021)%>%
   rename(iso3 = Country.Code, pop = X2021)%>%
   left_join(., WB)
 
 #Figure 2
-#The second figure will be a plot of 40q30-NCD4 over time at the global level, with the business as usual scenario as well as 
-## (1) a scenario modeling the impact of the full list of interventions (table 2 above) and 
+#The second figure will be a plot of 40q30-NCD4 over time at the global level, with the business as usual scenario as well as
+## (1) a scenario modeling the impact of the full list of interventions (table 2 above) and
 ## (2) a scenario modeling the impact of the list of most cost-beneficial interventions (table 3 above)
 
 baseline<-bind_rows(q30.opt%>%select(location_name, Baseline, year_id)%>%
-                      mutate(year_id = as.numeric(year_id)), 
+                      mutate(year_id = as.numeric(year_id)),
                     goal.q30.out%>%select(location_name, Baseline_2015)%>%unique()%>%
                       mutate(year_id=2015)%>%rename(Baseline = Baseline_2015))%>%
   filter(location_name %in% locs)%>%
@@ -85,7 +85,7 @@ best<-best.q30%>%select(location_name, Adjusted, year_id)%>%
   mutate(year_id = as.numeric(year_id))%>%
   rename(x40q30 = Adjusted)%>%
   mutate(Scenario = "Best investment package (BCR>15)")
-  
+
 
 plot<-bind_rows(baseline, full, best)%>%
   left_join(.,WB)%>%
@@ -129,7 +129,7 @@ ggplot(plot2, aes(x=year_id, y=x40q30, color= Scenario))+
   ylab("40q30 (%)")+
   xlab("Year")+
   theme(axis.text.x=element_text(angle=45))
-  
+
 
 ggsave("Figures/Figure2.png", height = 4, width = 8, units = "in")
 
@@ -181,7 +181,7 @@ tab<-left_join(tab, add)%>%arrange(pop_2022)
 sum(ncds.opt$V12)/1e6
 ded<-left_join(ncds.opt%>%rename(location_name = location), WB)%>%group_by(wb2021)%>%summarise(deaths = sum(V12)/1e6)
 add<-ded%>%bind_rows(., ded%>%summarise(deaths = sum(deaths))%>%mutate(wb2021="LIC+LMIC"))%>%
-  rename(region = wb2021, 
+  rename(region = wb2021,
          deaths_2030 = deaths)
 
 tab<-left_join(tab, add)%>%arrange(pop_2022)
@@ -227,7 +227,7 @@ add<-bind_rows(add,add%>%summarise(total.cost = sum(total.cost))%>%mutate(wb2021
   left_join(., pop2030)%>%
   mutate(cost.pc = total.cost/pop)%>%
   select(wb2021, cost.pc)
-  
+
 tab<-left_join(tab, add)
 
 # % reached #
@@ -468,68 +468,178 @@ write.csv(tab, "Figures/all_table.csv", row.names=F)
 ###
 
 
-### 
+###
 #Appendix tables
 ###
 
-#8% 
+#8%
 atab1<-read.csv("Figures/clinical_full_2023_2030.csv")%>%
-  select(WB_Region, Intervention, DALYS.avert, BCR)%>%
-  gather(Metric, Base, -WB_Region, -Intervention)%>%
-  left_join(., 
+  select(WB_Region, Intervention, BCR)%>%
+      mutate(Scenario = "Base")%>%
+  bind_rows(.,
             read.csv("Figures/clinical_full_2023_2030_pesm.csv")%>%
-              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Pessimistic, -WB_Region, -Intervention)
+              select(WB_Region, Intervention, BCR)%>%
+                  mutate(Scenario = "Pessimistic")
   )%>%
-  left_join(., 
+  bind_rows(.,
             read.csv("Figures/clinical_full_2023_2030_optm.csv")%>%
-              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Optimistic, -WB_Region, -Intervention)
+              select(WB_Region, Intervention, BCR)%>%
+                  mutate(Scenario = "Optimistic")
             )%>%
-  
-  arrange(WB_Region, Intervention, Metric, -Base)
+   spread(Scenario, BCR)%>%
+      group_by(WB_Region)%>%
+      arrange(-Base, .by_group = TRUE)
 
 write.csv(atab1, "Figures/Appendix_Table_8percent.csv", row.names = F)
 
+# by package 8%
+df<-read.csv("Figures/clinical_full_2023_2030.csv")%>%
+      select(-X)%>%
+      mutate(Scenario = "Base")%>%
+      bind_rows(.,
+                read.csv("Figures/clinical_full_2023_2030_pesm.csv")%>%
+                      select(-X)%>%
+                      mutate(Scenario = "Pessimistic"))%>%
+      bind_rows(.,
+                read.csv("Figures/clinical_full_2023_2030_optm.csv")%>%
+                      select(-X)%>%
+                      mutate(Scenario = "Optimistic"))
+
+tab1<-df%>%
+      mutate(`Intervention package` = ifelse(Code %in%c(1.2,2.3,2.4,2.5,2.6,2.7,2.14), "Outpatient cardiometabolic and \nrespiratory disease package",
+                                             ifelse(Code %in% c(1.1,2.9,2.10,2.11,2.12,2.13), "Outpatient mental, neurological, and \nsubstance use disorder package",
+                                                    ifelse(Code %in% c(3.1, 3.2, 3.4, 3.5), "First-level hospital cardiometabolic \nand respiratory disease package",
+                                                           ifelse(Code %in% c(2.8,3.3,3.6,3.7,3.8,3.9), "First-level hospital surgical package",
+                                                                  ifelse(Code %in% c(4.1,4.2,4.3,4.4), "Referral hospital NCDs package",
+                                                                         "Intersectoral policies"))))))%>%
+      group_by(WB_Region, `Intervention package`, Scenario)%>%
+      summarise(Gross.benefits = sum(Gross.benefits),
+                Forgone.surplus = sum(Forgone.surplus),
+                Incremental.cost = sum(Incremental.cost))%>%
+      mutate(BCR = Gross.benefits / (Forgone.surplus+Incremental.cost))%>%
+      select(-Forgone.surplus, -Gross.benefits, -Incremental.cost)%>%
+      spread(Scenario, BCR)%>%
+      group_by(WB_Region)%>%
+      arrange(-Base, .by_group = TRUE)
+
+write.csv(tab1, "Figures/Appendix_Table_8percent_pkg.csv", row.names = F)
+
+#
+
 #5%
 atab2<-read.csv("Figures/clinical_full_2023_2030_5perc.csv")%>%
-  select(WB_Region, Intervention, DALYS.avert, BCR)%>%
-  gather(Metric, Base, -WB_Region, -Intervention)%>%
-  left_join(., 
-            read.csv("Figures/clinical_full_2023_2030_pesm_5perc.csv")%>%
-              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Pessimistic, -WB_Region, -Intervention)
-  )%>%
-  left_join(., 
-            read.csv("Figures/clinical_full_2023_2030_optm_5perc.csv")%>%
-              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Optimistic, -WB_Region, -Intervention)
-  )%>%
-  
-  arrange(WB_Region, Intervention, Metric, -Base)
+      select(WB_Region, Intervention, BCR)%>%
+      mutate(Scenario = "Base")%>%
+      bind_rows(.,
+                read.csv("Figures/clinical_full_2023_2030_pesm_5perc.csv")%>%
+                      select(WB_Region, Intervention, BCR)%>%
+                      mutate(Scenario = "Pessimistic")
+      )%>%
+      bind_rows(.,
+                read.csv("Figures/clinical_full_2023_2030_optm_5perc.csv")%>%
+                      select(WB_Region, Intervention, BCR)%>%
+                      mutate(Scenario = "Optimistic")
+      )%>%
+      spread(Scenario, BCR)%>%
+      group_by(WB_Region)%>%
+      arrange(-Base, .by_group = TRUE)
 
 write.csv(atab2, "Figures/Appendix_Table_5percent.csv", row.names = F)
 
+# by package 5%
+df<-read.csv("Figures/clinical_full_2023_2030_5perc.csv")%>%
+      select(-X)%>%
+      mutate(Scenario = "Base")%>%
+      bind_rows(.,
+                read.csv("Figures/clinical_full_2023_2030_pesm_5perc.csv")%>%
+                      select(-X)%>%
+                      mutate(Scenario = "Pessimistic"))%>%
+      bind_rows(.,
+                read.csv("Figures/clinical_full_2023_2030_optm_5perc.csv")%>%
+                      select(-X)%>%
+                      mutate(Scenario = "Optimistic"))
+
+tab2<-df%>%
+      mutate(`Intervention package` = ifelse(Code %in%c(1.2,2.3,2.4,2.5,2.6,2.7,2.14), "Outpatient cardiometabolic and \nrespiratory disease package",
+                                             ifelse(Code %in% c(1.1,2.9,2.10,2.11,2.12,2.13), "Outpatient mental, neurological, and \nsubstance use disorder package",
+                                                    ifelse(Code %in% c(3.1, 3.2, 3.4, 3.5), "First-level hospital cardiometabolic \nand respiratory disease package",
+                                                           ifelse(Code %in% c(2.8,3.3,3.6,3.7,3.8,3.9), "First-level hospital surgical package",
+                                                                  ifelse(Code %in% c(4.1,4.2,4.3,4.4), "Referral hospital NCDs package",
+                                                                         "Intersectoral policies"))))))%>%
+      group_by(WB_Region, `Intervention package`, Scenario)%>%
+      summarise(Gross.benefits = sum(Gross.benefits),
+                Forgone.surplus = sum(Forgone.surplus),
+                Incremental.cost = sum(Incremental.cost))%>%
+      mutate(BCR = Gross.benefits / (Forgone.surplus+Incremental.cost))%>%
+      select(-Forgone.surplus, -Gross.benefits, -Incremental.cost)%>%
+      spread(Scenario, BCR)%>%
+      group_by(WB_Region)%>%
+      arrange(-Base, .by_group = TRUE)
+
+write.csv(tab2, "Figures/Appendix_Table_5percent_pkg.csv", row.names = F)
+
 #14%
 atab3<-read.csv("Figures/clinical_full_2023_2030_14perc.csv")%>%
-  select(WB_Region, Intervention, DALYS.avert, BCR)%>%
-  gather(Metric, Base, -WB_Region, -Intervention)%>%
-  left_join(., 
-            read.csv("Figures/clinical_full_2023_2030_pesm_14perc.csv")%>%
-              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Pessimistic, -WB_Region, -Intervention)
-  )%>%
-  left_join(., 
-            read.csv("Figures/clinical_full_2023_2030_optm_14perc.csv")%>%
-              select(WB_Region, Intervention, DALYS.avert, BCR)%>%
-              gather(Metric, Optimistic, -WB_Region, -Intervention)
-  )%>%
-  
-  arrange(WB_Region, Intervention, Metric, -Base)
+      select(WB_Region, Intervention, BCR)%>%
+      mutate(Scenario = "Base")%>%
+      bind_rows(.,
+                read.csv("Figures/clinical_full_2023_2030_pesm_14perc.csv")%>%
+                      select(WB_Region, Intervention, BCR)%>%
+                      mutate(Scenario = "Pessimistic")
+      )%>%
+      bind_rows(.,
+                read.csv("Figures/clinical_full_2023_2030_optm_14perc.csv")%>%
+                      select(WB_Region, Intervention, BCR)%>%
+                      mutate(Scenario = "Optimistic")
+      )%>%
+      spread(Scenario, BCR)%>%
+      group_by(WB_Region)%>%
+      arrange(-Base, .by_group = TRUE)
+
 
 write.csv(atab3, "Figures/Appendix_Table_14percent.csv", row.names = F)
 
+# by package 14%
+df<-read.csv("Figures/clinical_full_2023_2030_14perc.csv")%>%
+      select(-X)%>%
+      mutate(Scenario = "Base")%>%
+      bind_rows(.,
+                read.csv("Figures/clinical_full_2023_2030_pesm_14perc.csv")%>%
+                      select(-X)%>%
+                      mutate(Scenario = "Pessimistic"))%>%
+      bind_rows(.,
+                read.csv("Figures/clinical_full_2023_2030_optm_14perc.csv")%>%
+                      select(-X)%>%
+                      mutate(Scenario = "Optimistic"))
 
+tab3<-df%>%
+      mutate(`Intervention package` = ifelse(Code %in%c(1.2,2.3,2.4,2.5,2.6,2.7,2.14), "Outpatient cardiometabolic and \nrespiratory disease package",
+                                             ifelse(Code %in% c(1.1,2.9,2.10,2.11,2.12,2.13), "Outpatient mental, neurological, and \nsubstance use disorder package",
+                                                    ifelse(Code %in% c(3.1, 3.2, 3.4, 3.5), "First-level hospital cardiometabolic \nand respiratory disease package",
+                                                           ifelse(Code %in% c(2.8,3.3,3.6,3.7,3.8,3.9), "First-level hospital surgical package",
+                                                                  ifelse(Code %in% c(4.1,4.2,4.3,4.4), "Referral hospital NCDs package",
+                                                                         "Intersectoral policies"))))))%>%
+      group_by(WB_Region, `Intervention package`, Scenario)%>%
+      summarise(Gross.benefits = sum(Gross.benefits),
+                Forgone.surplus = sum(Forgone.surplus),
+                Incremental.cost = sum(Incremental.cost))%>%
+      mutate(BCR = Gross.benefits / (Forgone.surplus+Incremental.cost))%>%
+      select(-Forgone.surplus, -Gross.benefits, -Incremental.cost)%>%
+      spread(Scenario, BCR)%>%
+      group_by(WB_Region)%>%
+      arrange(-Base, .by_group = TRUE)
+
+write.csv(tab3, "Figures/Appendix_Table_14percent_pkg.csv", row.names = F)
+
+
+#Write as xlsx
+library(writexl)
+
+sheets<-list("8% discount rate" = atab1, "5% discount rate" = atab2, "14% discount rate" = atab3)
+write_xlsx(sheets, "Figures/Appendix_BCRs_byint.xlsx")
+
+sheets<-list("8% discount rate" = tab1, "5% discount rate" = tab2, "14% discount rate" = tab3)
+write_xlsx(sheets, "Figures/Appendix_BCRs_bypkg.xlsx")
 
 #####################
 #India

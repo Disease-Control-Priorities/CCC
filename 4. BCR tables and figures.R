@@ -107,7 +107,7 @@ df.cost<-left_join(df, ccc.vsl)%>%
 unique(df.cost$wb2021)
 
 write.csv(df.cost, "output/cost_outputs.csv", row.names = F)
-  
+
 df<-left_join(df, ccc.vsl)%>%
   filter(year_id>=2023)%>%
   mutate(Gross.benefits = val*DALYS.avert,
@@ -151,8 +151,8 @@ plot<-df%>%
   mutate(`Intervention package` = ifelse(Code %in%c(1.2,2.3,2.4,2.5,2.6,2.7,2.14), "Outpatient cardiometabolic and \nrespiratory disease package",
                                          ifelse(Code %in% c(1.1,2.9,2.10,2.11,2.12,2.13), "Outpatient mental, neurological, and \nsubstance use disorder package",
                                                 ifelse(Code %in% c(3.1, 3.2, 3.4, 3.5), "First-level hospital cardiometabolic \nand respiratory disease package",
-                                                       ifelse(Code %in% c(2.8,3.3,3.6,3.7,3.8,3.9), "First-level hospital surgical package", 
-                                                              ifelse(Code %in% c(4.1,4.2,4.3,4.4), "Referral hospital NCDs package", 
+                                                       ifelse(Code %in% c(2.8,3.3,3.6,3.7,3.8,3.9), "First-level hospital surgical package",
+                                                              ifelse(Code %in% c(4.1,4.2,4.3,4.4), "Referral hospital NCDs package",
                                                                      "Intersectoral policies"))))))%>%
   mutate(type = ifelse(Code>5, "Intersectoral policies", "Clinical interventions"))
 
@@ -161,27 +161,40 @@ plot<-plot%>%
          order = ifelse(Intervention=="Alcohol tax", 65, order))
 
 
-  ggplot(plot, aes(y=reorder(Intervention, order), x=(BCR), size = DALYS.avert/1e6, 
+  ggplot(plot, aes(y=reorder(Intervention, order), x=(BCR), size = DALYS.avert/1e6,
              color=`Intervention package`)) +
   geom_point(alpha=0.75)+
   facet_wrap(~WB_Region)+
   scale_size(range=c(1,12), breaks=c(1,5,10,20), name="DALYs averted (millions)")+
   ylab("")+
   theme_minimal()+
-  xlab("Benefit-cost ratio")+ 
-  guides(color = guide_legend(override.aes = list(size=3)))+ 
+  xlab("Benefit-cost ratio")+
+  guides(color = guide_legend(override.aes = list(size=3)))+
   scale_x_log10(breaks = log_breaks())
 
 ggsave("Figures/bubbleplot_8perc.jpeg", height=6, width=10)
 
+##Appendix table (new)
+tab1<-df%>%
+      select(WB_Region, Code, Intervention, BCR, DALYS.avert)%>%
+      mutate(`Intervention package` = ifelse(Code %in%c(1.2,2.3,2.4,2.5,2.6,2.7,2.14), "Outpatient cardiometabolic and \nrespiratory disease package",
+                                             ifelse(Code %in% c(1.1,2.9,2.10,2.11,2.12,2.13), "Outpatient mental, neurological, and \nsubstance use disorder package",
+                                                    ifelse(Code %in% c(3.1, 3.2, 3.4, 3.5), "First-level hospital cardiometabolic \nand respiratory disease package",
+                                                           ifelse(Code %in% c(2.8,3.3,3.6,3.7,3.8,3.9), "First-level hospital surgical package",
+                                                                  ifelse(Code %in% c(4.1,4.2,4.3,4.4), "Referral hospital NCDs package",
+                                                                         "Intersectoral policies"))))))%>%
+      mutate(type = ifelse(Code>5, "Intersectoral policies", "Clinical interventions"))
 
-ggplot(plot%>%rename(Region = WB_Region), aes(y=reorder(Intervention, order), x=(BCR), size = DALYS.avert/1e6, 
+
+#
+
+ggplot(plot%>%rename(Region = WB_Region), aes(y=reorder(Intervention, order), x=(BCR), size = DALYS.avert/1e6,
                                               color=Region)) +
   geom_point(alpha=0.6)+
   scale_size(range=c(1,12), breaks=c(1,5,10,20), name="DALYs averted (millions)")+
   ylab("")+
   theme_minimal()+
-  xlab("Benefit-cost ratio")+ 
+  xlab("Benefit-cost ratio")+
   guides(color = guide_legend(override.aes = list(size=3)))+
   scale_x_log10(breaks = log_breaks())
 

@@ -101,6 +101,11 @@ inc.cost<-left_join(cost, WB)%>%filter(location_name %in% all.locs)%>%
   group_by(wb2023)%>%
   summarise(Cumulative.incremental.cost = sum(Incremental.cost, na.rm=T))
 
+tot.cost<-left_join(cost, WB)%>%filter(location_name %in% all.locs)%>%
+  group_by(wb2023, year_id)%>%
+  summarise(Total.cost.all = sum(Adjusted.cost, na.rm=T),
+            Total.cost.base = sum(Baseline.cost, na.rm=T))
+
 cost.2050<-left_join(cost, WB)%>%filter(year_id==2050)%>%
   filter(location_name %in% all.locs)%>%
   group_by(wb2023)%>%
@@ -116,22 +121,13 @@ gghed<-read.csv("gghe/gghed_data_2050.csv",stringsAsFactors = F)%>%filter(year==
 
 #output GDP for Daphne
 gpd4d<-read.csv("gghe/gghed_data_2050.csv",stringsAsFactors = F)%>%
-  filter(year %in% c(2020,2030,2040,2050))%>%
+  filter(year>=2020 & year<=2050)%>%
   rename(iso3 = ISO)%>%
   left_join(., WB)%>%
   filter(location_name %in% all.locs)%>%
   group_by(wb2023, year)%>%
   summarise(PopTotal = sum(PopTotal),
             GDP = sum(GDP))
-
-gpd4d<-gpd4d%>%group_by(year)%>%
-  summarise(PopTotal = sum(PopTotal),
-                         GDP = sum(GDP))%>%
-  mutate(wb2023 = "All LMICs")%>%
-  bind_rows(., gpd4d)%>%
-  mutate(GDP_pc = GDP/PopTotal)
-
-write.csv(gpd4d, "GDP_proj.csv", row.names = F)
 
 table1<-left_join(DA, DALYS)%>%
   left_join(., inc.cost)%>%
@@ -211,6 +207,10 @@ inc.cost2<-left_join(cost2, WB)%>%group_by(wb2023)%>%
   summarise(Cumulative.incremental.cost = sum(Incremental.cost, na.rm=T))%>%
   na.omit()
 
+tot.cost2<-left_join(cost2, WB)%>%filter(location_name %in% all.locs)%>%
+  group_by(wb2023, year_id)%>%
+  summarise(Total.cost.hpp = sum(Adjusted.cost, na.rm=T))
+
 cost.20502<-left_join(cost2, WB)%>%filter(year_id==2050)%>%
   group_by(wb2023)%>%
   summarise(Total.cost.2050 = sum(Adjusted.cost, na.rm=T))%>%
@@ -239,6 +239,19 @@ table3_all<-left_join(DA2, DALYS2)%>%
          wb2023 = "All countries")
 
 write.csv(bind_rows(table3,table3_all), "figures/Table5.csv", row.names = F)
+
+##Table for Daphne
+
+tabxx<-left_join(tot.cost, tot.cost2)%>%
+  left_join(., gpd4d%>%rename(year_id = year))%>%
+  group_by(year_id)%>%
+  summarise(Total.cost.base = sum(Total.cost.base),
+            Total.cost.all = sum(Total.cost.all),
+            Total.cost.hpp = sum(Total.cost.hpp),
+            PopTotal = sum(PopTotal),
+            GDP = sum(GDP))
+
+write.csv(tabxx, "gdp_total_cost.csv", row.names = F)
 
 ################
 #Table 6
