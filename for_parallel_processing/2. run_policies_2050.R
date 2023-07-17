@@ -12,12 +12,12 @@ library(iterators)
 library(doParallel)
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-load("PreppedData2050.Rda")
+load("PreppedData2050_ssb.Rda")
 source("fxns_2050.R")
 
 ###############################################################################################################################
 all.locs<-read.csv("../HLI/figures/HLI_CEA_country.csv", stringsAsFactors = F)%>%pull(location_name)%>%unique()
-interventions <-  pin.groups %>% filter(calc_ICER=="yes", Code>5, Code<5.7) %>% pull(Code) %>% unique() %>% sort()
+interventions <-  pin.groups %>% filter(calc_ICER=="yes", Code>5, Code<5.8) %>% pull(Code) %>% unique() %>% sort()
 total         <- length(all.locs)*length(interventions)
 sel.cse       <- cse_g %>% pull(cause_name) %>% unique()
 
@@ -70,52 +70,52 @@ time2<-Sys.time()
 time2-time1
 #about 60 minutes on 16 cores
 
-#Bind results, each of the (117) countries results stored in a list
+#Bind results, each of the (114) countries results stored in a list
 all.pin <- rbindlist(everything[[1]])
 
-for (i in 2:115){
+for (i in 2:114){
   temp<-rbindlist(everything[[i]])
   all.pin<-rbind(all.pin, temp)
 }
 
-all.dalys <- rbindlist(everything[[116]])
+all.dalys <- rbindlist(everything[[115]])
 
-for (i in 117:230){
+for (i in 116:228){
   temp<-rbindlist(everything[[i]])
   all.dalys<-rbind(all.dalys, temp)
 }
 
-all.q30 <- rbindlist(everything[[231]])
+all.q30 <- rbindlist(everything[[229]])
 
-for (i in 232:345){
+for (i in 230:342){
   temp<-rbindlist(everything[[i]])
   all.q30<-rbind(all.q30, temp)
 }
 
-dadt.all <- rbindlist(everything[[346]])
+dadt.all <- rbindlist(everything[[343]])
 
-for (i in 347:460){
+for (i in 344:456){
   temp<-rbindlist(everything[[i]])
   dadt.all<-rbind(dadt.all, temp)
 }
 
-d0.all <- rbindlist(everything[[461]])
+d0.all <- rbindlist(everything[[457]])
 
-for (i in 462:575){
+for (i in 458:570){
   temp<-rbindlist(everything[[i]])
   d0.all<-rbind(d0.all, temp)
 }
 
-d1.all <- rbindlist(everything[[576]])
+d1.all <- rbindlist(everything[[571]])
 
-for (i in 577:690){
+for (i in 572:684){
   temp<-rbindlist(everything[[i]])
   d1.all<-rbind(d1.all, temp)
 }
 
 #########################################################################################
 
-save(all.pin, all.dalys, all.q30, dadt.all, d0.all, d1.all, file = "output2050_target_intersectoral.Rda")
+save(all.pin, all.dalys, all.q30, dadt.all, d0.all, d1.all, file = "output2050_target_intersectoral_ssb.Rda")
 
 stopCluster(parallelCluster)
 

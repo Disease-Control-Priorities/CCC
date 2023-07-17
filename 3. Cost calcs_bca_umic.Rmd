@@ -44,8 +44,34 @@ nontradable_conversion <- function(unit_cost,tradable_ratio, currency, cpi_adjus
 # Install the necessary input files
 ```{r}
 
+#intersectoral results#
+load("for_parallel_processing/output2050_target_intersectoral_ssb.Rda")
+dadt.all2<-dadt.all
+all.pin2<-all.pin
+all.dalys2<-all.dalys
+
+#exclude Panama and Romania as they are now HICs
+#exclude Serbia
+#should be 114
+all.locs<-unique(all.pin$location_name[all.pin$location_name!="Romania" & all.pin$location_name!="Panama" & all.pin$location_name!="Serbia"])
+
+
 # Search find "base" and swap for "pesm" and "optm" suffixes. Run 3 times for scenario analysis. 
-load("for_parallel_processing/output2023_target_UMIC.Rda")
+load(paste0("for_parallel_processing/for_HLI/Afghanistan_output2050_target.Rda"))
+
+clinical.dadt2<-dadt.all
+clinical.dalys2<-all.dalys
+clinical.pin2<-all.pin
+
+for(is in all.locs[2:114]){
+  
+  load(paste0("for_parallel_processing/for_HLI/", is,"_output2050_target.Rda"))
+  
+  clinical.dadt2<-bind_rows(clinical.dadt2, dadt.all)
+  clinical.dalys2<-bind_rows(clinical.dalys2, all.dalys)
+  clinical.pin2<-bind_rows(clinical.pin2, all.pin)
+}
+
 
 coverage<-read.csv("new_inputs/Coverage0621.csv", stringsAsFactors = F)
 

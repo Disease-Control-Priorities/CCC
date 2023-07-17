@@ -4,7 +4,7 @@ pacman::p_load(data.table, dplyr, tidyr, stringr, ggplot2, tidyverse, broom, rea
 '%!in%' <- function(x,y)!('%in%'(x,y)) # Function "Not In"
 
 #intersectoral results#
-load("../for_parallel_processing/output2050_target_intersectoral.Rda")
+load("../for_parallel_processing/output2050_target_intersectoral_ssb.Rda")
 dadt.all2<-dadt.all
 all.pin2<-all.pin
 all.dalys2<-all.dalys
@@ -77,7 +77,7 @@ cost<-left_join(pin, uc)%>%
 WB<-read.csv("../new_inputs/country_groupings.csv", stringsAsFactors = F)%>%
   select(iso3, location_gbd, wb2021)%>%
   rename(location_name = location_gbd)%>%
-  left_join(., read.csv("../new_inputs/HS123.csv", stringsAsFactors = F)%>%
+  left_join(., read.csv("../new_inputs/HS_123 revised.csv", stringsAsFactors = F)%>%
   select(ISO3, HSP)%>%
   rename(iso3 = ISO3))%>%
   mutate(HSP = gsub(" ", "", HSP))%>%
@@ -300,7 +300,7 @@ df.bcr<-left_join(df, ccc.vsl)%>%
   select(-iso3, -wb2021, -wb2023, -location_name, -ICER)%>%
   mutate(Gross.benefits = val*DALYS.avert,
          Forgone.surplus = ifelse(Code%in%c(5.1,5.2,5.3,5.4), (Gross.benefits*0.003), 0), #consumer surplus
-         Forgone.surplus = ifelse(Code %in% c(5.5,5.6), (Gross.benefits*0.001), Forgone.surplus)
+         Forgone.surplus = ifelse(Code %in% c(5.5,5.6,5.7), (Gross.benefits*0.001), Forgone.surplus)
   )%>%
   group_by(Code, Intervention, HSP)%>%
   summarise(
@@ -334,7 +334,7 @@ df.bcr2<-left_join(df, ccc.vsl, relationship = "many-to-many")%>%
   filter(year_id>=2023 & year_id<=2050)%>%
   mutate(Gross.benefits = val*DALYS.avert,
          Forgone.surplus = ifelse(Code%in%c(5.1,5.2,5.3,5.4), (Gross.benefits*0.003), 0), #consumer surplus 75% for tobacco and alcohol
-         Forgone.surplus = ifelse(Code %in% c(5.5,5.6), (Gross.benefits*0.001), Forgone.surplus))%>% #50% for salt and trans fats
+         Forgone.surplus = ifelse(Code %in% c(5.5,5.6, 5.7), (Gross.benefits*0.001), Forgone.surplus))%>% #50% for salt and trans fats
   group_by(Code,Intervention, HSP, year_id)%>%
   summarise(
     Incremental.cost = sum(Incremental.cost, na.rm=T),

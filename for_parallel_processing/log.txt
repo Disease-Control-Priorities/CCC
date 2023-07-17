@@ -1,20 +1,9 @@
-starting worker for localhost:11813 
+starting worker for localhost:11203 
 Type: EXEC 
 Type: EXEC 
 Type: EXEC 
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Type: EXEC 
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
@@ -40,17 +29,6 @@ Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Type: EXEC 
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
-Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Type: EXEC 
@@ -66,6 +44,23 @@ Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Type: EXEC 
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Type: EXEC 
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
@@ -79,7 +74,26 @@ Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Type: EXEC 
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Type: EXEC 
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
@@ -95,6 +109,8 @@ Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Type: DONE 
 There were 28 warnings (use warnings() to see them)
 on_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
+Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
 Joining with `by = join_by(year_id, age_group, location_name, n.inters)`
