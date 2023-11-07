@@ -174,6 +174,44 @@ df<-left_join(cost, deaths.averted)%>%
 unique(df$wb2023)
 write.csv(df, "figures/HLI_CEA_WBclass.csv", row.names = F)
 
+
+#in 2050
+df<-left_join(cost, deaths.averted)%>%
+  left_join(., dalys.averted)%>%
+  left_join(.,WB)%>%
+  filter(location_name %!in% exclude)%>%
+  group_by(wb2023, year_id, Code, Intervention)%>%
+  summarise(Baseline.cost = sum(Baseline.cost),
+            Adjusted.cost = sum(Adjusted.cost),
+            Incremental.cost = sum(Incremental.cost),
+            #Deaths.Baseline = sum(Deaths.Baseline),
+            #Deaths.Adjusted = sum(Deaths.Adjusted),
+            Deaths.avert = sum(Deaths.avert),
+            DALYS.Baseline = sum(DALYS.Baseline),
+            DALYS.Adjusted = sum(DALYS.Adjusted),
+            DALYS.avert = sum(DALYS.avert)
+  )%>%
+  mutate(discount.rate = ((1-0.05)^(year_id-2022)),
+         discount.rate = ifelse(year_id<2023,1,discount.rate),
+         Baseline.cost = (Baseline.cost*discount.rate),
+         Adjusted.cost = (Adjusted.cost*discount.rate),
+         Incremental.cost = (Incremental.cost*discount.rate),
+         DALYS.Baseline = (DALYS.Baseline*discount.rate),
+         DALYS.Adjusted = (DALYS.Adjusted*discount.rate),
+         DALYS.avert = (DALYS.avert*discount.rate)
+  )%>%na.omit()%>%
+  group_by(wb2023, Code, Intervention, year_id)%>%
+  summarise(Incremental.cost = sum(Incremental.cost),
+            Deaths.avert = sum(Deaths.avert),
+            DALYS.avert = sum(DALYS.avert)
+  )%>%
+  mutate(Incremental.cost = ifelse(Deaths.avert==0, 0, Incremental.cost),
+         ICER = Incremental.cost/DALYS.avert)
+
+
+write.csv(df%>%filter(year_id==2050), "figures/HLI_CEA_WB_2050.csv", row.names = F)
+
+
 ##By country##
 df<-left_join(cost, deaths.averted)%>%
   left_join(., dalys.averted)%>%
@@ -279,8 +317,66 @@ ggplot(fig1,
   geom_text(label = paste0( "$", signif(fig1$ICER, digits=2)))
 
 ggsave("figures/Figure1.png", height = 10, width = 12, units = "in")
+write.csv(fig1, "figures/figure1_data.csv", row.names = F)
 
 write.csv(cost%>%filter(location_name %in% all.locs), "output/all_costs.csv", row.names = F)
+
+
+#ALT FIGURE 1
+fig1<-left_join(df, WB)%>%
+  filter(Code<5)%>%
+  left_join(., gdp)%>%
+  group_by(wb2023, Intervention)%>%
+  summarise(gdp_pc = median(gdp_pc, na.rm=T),
+            DALYs.averted = sum(DALYS.avert),
+            Incremental.cost = sum(Incremental.cost))%>%
+  mutate(ICER = Incremental.cost/DALYs.averted)%>%
+  arrange(wb2023)%>%
+  mutate(perc = ICER/gdp_pc,
+         color = ifelse(perc<0.1, "<0.1",
+                        ifelse(perc<0.5 & perc>=0.1, "0.1-0.5",
+                               ifelse(perc>=0.5 & perc<1.0, "0.5-1.0",
+                                      ifelse(perc<2.3 & perc>=1.0, "1.0-2.3", ">2.3")))))%>%
+  na.omit()%>%
+  mutate(color = factor(color, levels=c("<0.1", "0.1-0.5", "0.5-1.0", "1.0-2.3", ">2.3")),
+         name = fct_reorder(as.factor(Intervention), desc(ICER)))%>%
+  arrange(ICER)
+
+fig1.all<-left_join(df, WB)%>%
+  filter(Code<5)%>%
+  left_join(., gdp)%>%
+  group_by(Intervention)%>%
+  summarise(gdp_pc = median(gdp_pc, na.rm=T),
+            DALYs.averted = sum(DALYS.avert),
+            Incremental.cost = sum(Incremental.cost))%>%
+  mutate(ICER = Incremental.cost/DALYs.averted)%>%
+  mutate(perc = ICER/gdp_pc,
+         color = ifelse(perc<0.1, "<0.1",
+                        ifelse(perc<0.5 & perc>=0.1, "0.1-0.5",
+                               ifelse(perc>=0.5 & perc<1.0, "0.5-1.0",
+                                      ifelse(perc<2.3 & perc>=1.0, "1.0-2.3", ">2.3")))))%>%
+  na.omit()%>%
+  mutate(color = factor(color, levels=c("<0.1", "0.1-0.5", "0.5-1.0", "1.0-2.3", ">2.3")),
+         name = fct_reorder(as.factor(Intervention), desc(ICER)))%>%
+  mutate(wb2023 = "All countries")
+
+fig1<-bind_rows(fig1, fig1.all)
+
+ggplot(fig1, 
+       aes(x=wb2023, y=reorder(name, -ICER), fill=color))+
+  geom_tile()+
+  theme_classic()+
+  theme(axis.text.x=element_text(size=12, angle=45, hjust=0),    
+        axis.text.y=element_text(size=12))+
+  scale_fill_manual(values=c("#337599","#99B8BD", "#FFEE9C","#faa175","#f8696b"))+
+  scale_x_discrete(position="top")+
+  labs(fill="ICER (as a proportion \nof GDP per capita)")+
+  theme(axis.title.x=element_blank(),axis.title.y=element_blank())+
+  geom_text(label = paste0( "$", signif(fig1$ICER, digits=2)))
+
+ggsave("figures/Figure1_WB.png", height = 10, width = 12, units = "in")
+
+##########
 
 
 #BCRs for intersectoral policies

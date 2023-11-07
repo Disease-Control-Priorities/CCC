@@ -31,6 +31,7 @@ ggplot(fig2%>%mutate(HSP = factor(HSP, levels = c("Conflict", "Fragile","HS1","H
 
 ggsave("figures/Figure2.png", height = 10, width = 12, units = "in")
 
+write.csv(fig2, "figures/figure2_data.csv", row.names = F)
 
 #########################
 # Table 2
@@ -84,6 +85,8 @@ DA2050<-bind_rows(t_deaths%>%select(location_name, Deaths.Avert, year_id),
   left_join(., WB)%>%group_by(wb2023, year_id)%>%
   summarise(Deaths.averted = sum(Deaths.Avert, na.rm=T))%>%
   mutate(Scenario = "All interventions")
+
+max(int_deaths$year)
 
 DA<-bind_rows(t_deaths%>%select(location_name, Deaths.Avert), 
               int_deaths%>%select(location_name, Deaths.Avert))%>%
@@ -455,7 +458,7 @@ ggplot(plot4%>%filter(year==2040), aes(x=age, y=ncd_mxn, color=Scenario))+
   theme_bw()+
   scale_y_continuous(trans='log10')
 
-ggsave("figures/Figure3.jpeg", height=4, width=8)
+#ggsave("figures/Figure3.jpeg", height=4, width=8)
 
 ggplot(plot4%>%filter(year==2040, age>30), aes(x=age, y=ncd_mxn, color=Scenario))+
   geom_smooth(se=FALSE)+
@@ -465,15 +468,16 @@ ggplot(plot4%>%filter(year==2040, age>30), aes(x=age, y=ncd_mxn, color=Scenario)
   scale_y_continuous(trans='log10')
 
 ggsave("figures/Figure3_over30.jpeg", height=4, width=8)
+write.csv(plot4%>%filter(year==2040, age>30), "figures/figure3_data.csv", row.names = F)
 
 
-ggplot(plot4%>%filter(year==2040,), aes(x=age, y=ncd_mxn, color=Scenario))+
+ggplot(plot4%>%filter(year==2040,age>30), aes(x=age, y=ncd_mxn, color=Scenario))+
   geom_smooth(se=FALSE)+
   ylab("NCD mortality rate (per 100,000)")+
   xlab("Age")+
   theme_bw()
 
-ggsave("figures/Figure3_alt.jpeg", height=4, width=8)
+#ggsave("figures/Figure3_alt.jpeg", height=4, width=8)
 
 ################################
 #Didn't use
@@ -512,4 +516,4 @@ ggplot(plot3%>%filter(wb2023!="All countries"),
   scale_alpha_discrete(range = c(0.5, 0.9))+
   scale_fill_manual(values=c("#4A889A", "#BB667D"))
 
-ggsave("figures/Figure4.jpeg", height=6, width=9)
+#ggsave("figures/Figure4.jpeg", height=6, width=9)
