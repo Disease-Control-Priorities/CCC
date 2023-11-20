@@ -1,0 +1,301 @@
+"age","sex","cause","scenario","PIF"
+15,"Female","Breast cancer","Ideal",0.0297035867902495
+15,"Female","Breast cancer","Intervention",0.0179138308037095
+15,"Female","Colon and rectum cancer","Ideal",0.0499438658082702
+15,"Female","Colon and rectum cancer","Intervention",0.0302686276370418
+15,"Female","Diabetes mellitus type 2","Ideal",0.061803587341542
+15,"Female","Diabetes mellitus type 2","Intervention",0.0333250390792024
+15,"Female","Ischemic heart disease","Ideal",0.134835757327732
+15,"Female","Ischemic heart disease","Intervention",0.100583706297235
+15,"Female","Ischemic stroke","Ideal",0.140080702428849
+15,"Female","Ischemic stroke","Intervention",0.102400864460209
+15,"Male","Breast cancer","Ideal",0.0224375922446327
+15,"Male","Breast cancer","Intervention",0.0105595495226929
+15,"Male","Colon and rectum cancer","Ideal",0.0378479732604395
+15,"Male","Colon and rectum cancer","Intervention",0.0179222345574981
+15,"Male","Diabetes mellitus type 2","Ideal",0.0489757815953634
+15,"Male","Diabetes mellitus type 2","Intervention",0.0201078508112901
+15,"Male","Ischemic heart disease","Ideal",0.0955963251182251
+15,"Male","Ischemic heart disease","Intervention",0.0597907759562099
+15,"Male","Ischemic stroke","Ideal",0.100478779630116
+15,"Male","Ischemic stroke","Intervention",0.0610636694812636
+20,"Female","Breast cancer","Ideal",0.028525572417196
+20,"Female","Breast cancer","Intervention",0.0167215027613299
+20,"Female","Colon and rectum cancer","Ideal",0.0479932870527692
+20,"Female","Colon and rectum cancer","Intervention",0.0282776532667923
+20,"Female","Diabetes mellitus type 2","Ideal",0.0596824149115034
+20,"Female","Diabetes mellitus type 2","Intervention",0.0311394793731025
+20,"Female","Ischemic heart disease","Ideal",0.128904810944519
+20,"Female","Ischemic heart disease","Intervention",0.0944179523848189
+20,"Female","Ischemic stroke","Ideal",0.134078468604104
+20,"Female","Ischemic stroke","Intervention",0.0961356254922999
+20,"Male","Breast cancer","Ideal",0.0228738091564263
+20,"Male","Breast cancer","Intervention",0.0110010667642386
+20,"Male","Colon and rectum cancer","Ideal",0.0385775260045138
+20,"Male","Colon and rectum cancer","Intervention",0.0186668960130281
+20,"Male","Diabetes mellitus type 2","Ideal",0.0497551000366036
+20,"Male","Diabetes mellitus type 2","Intervention",0.0209108251283588
+20,"Male","Ischemic heart disease","Ideal",0.0980124507204651
+20,"Male","Ischemic heart disease","Intervention",0.0623025565258448
+20,"Male","Ischemic stroke","Ideal",0.102920661481557
+20,"Male","Ischemic stroke","Intervention",0.0636125494111994
+25,"Female","Breast cancer","Ideal",0.0288015009600326
+25,"Female","Breast cancer","Intervention",0.0170007840221045
+25,"Female","Colon and rectum cancer","Ideal",0.0484504679598871
+25,"Female","Colon and rectum cancer","Intervention",0.0287443021862846
+25,"Female","Diabetes mellitus type 2","Ideal",0.0601796588615379
+25,"Female","Diabetes mellitus type 2","Intervention",0.031651816949203
+25,"Female","Ischemic heart disease","Ideal",0.130300013814593
+25,"Female","Ischemic heart disease","Intervention",0.0958683916568916
+25,"Female","Ischemic stroke","Ideal",0.135490574963077
+25,"Female","Ischemic stroke","Intervention",0.0976096073539522
+25,"Male","Breast cancer","Ideal",0.024318144096173
+25,"Male","Breast cancer","Intervention",0.0124629513478577
+25,"Male","Colon and rectum cancer","Ideal",0.0409898624404553
+25,"Male","Colon and rectum cancer","Intervention",0.0211291908590236
+25,"Male","Diabetes mellitus type 2","Ideal",0.0523313119840008
+25,"Male","Diabetes mellitus type 2","Intervention",0.0235652368804963
+25,"Male","Ischemic heart disease","Ideal",0.105936139538347
+25,"Male","Ischemic heart disease","Intervention",0.0705399460035017
+25,"Male","Ischemic stroke","Ideal",0.110927335985687
+25,"Male","Ischemic stroke","Intervention",0.0719700593935368
+30,"Female","Breast cancer","Ideal",0.028890492391953
+30,"Female","Breast cancer","Intervention",0.0170908567599567
+30,"Female","Colon and rectum cancer","Ideal",0.0485978779524656
+30,"Female","Colon and rectum cancer","Intervention",0.0288947649739648
+30,"Female","Diabetes mellitus type 2","Ideal",0.0603399761781489
+30,"Female","Diabetes mellitus type 2","Intervention",0.0318170006289517
+30,"Female","Ischemic heart disease","Ideal",0.130749205363125
+30,"Female","Ischemic heart disease","Intervention",0.0963353668019756
+30,"Female","Ischemic stroke","Ideal",0.13594519115104
+30,"Female","Ischemic stroke","Intervention",0.0980841438580995
+30,"Male","Breast cancer","Ideal",0.0255098473868786
+30,"Male","Breast cancer","Intervention",0.0136691346374734
+30,"Male","Colon and rectum cancer","Ideal",0.0429765045071292
+30,"Male","Colon and rectum cancer","Intervention",0.0231569753955117
+30,"Male","Diabetes mellitus type 2","Ideal",0.0544521279529234
+30,"Male","Diabetes mellitus type 2","Intervention",0.0257504293052565
+30,"Male","Ischemic heart disease","Ideal",0.112387092841981
+30,"Male","Ischemic heart disease","Intervention",0.0772462940297253
+30,"Male","Ischemic stroke","Ideal",0.11744417400071
+30,"Male","Ischemic stroke","Intervention",0.0787724514148104
+35,"Female","Breast cancer","Ideal",0.0289013039276819
+35,"Female","Breast cancer","Intervention",0.0171017996631383
+35,"Female","Colon and rectum cancer","Ideal",0.0486157854660868
+35,"Female","Colon and rectum cancer","Intervention",0.0289130433441943
+35,"Female","Diabetes mellitus type 2","Ideal",0.0603594513441818
+35,"Female","Diabetes mellitus type 2","Intervention",0.0318370669552664
+35,"Female","Ischemic heart disease","Ideal",0.130803751472766
+35,"Female","Ischemic heart disease","Intervention",0.0963920724046229
+35,"Female","Ischemic stroke","Ideal",0.136000395403322
+35,"Female","Ischemic stroke","Intervention",0.098141767043515
+35,"Male","Breast cancer","Ideal",0.0262278501637353
+35,"Male","Breast cancer","Intervention",0.0143958616324366
+35,"Male","Colon and rectum cancer","Ideal",0.0441718270802475
+35,"Male","Colon and rectum cancer","Intervention",0.0243770525651966
+35,"Male","Diabetes mellitus type 2","Ideal",0.055727839550932
+35,"Male","Diabetes mellitus type 2","Intervention",0.0270648645796963
+35,"Male","Ischemic heart disease","Ideal",0.116236556780386
+35,"Male","Ischemic heart disease","Intervention",0.0812481591293837
+35,"Male","Ischemic stroke","Ideal",0.121332236404551
+35,"Male","Ischemic stroke","Intervention",0.0828308804586406
+40,"Female","Breast cancer","Ideal",0.0291516665200421
+40,"Female","Breast cancer","Intervention",0.0173552043298913
+40,"Female","Colon and rectum cancer","Ideal",0.0490317223251802
+40,"Female","Colon and rectum cancer","Intervention",0.0293375940698501
+40,"Female","Diabetes mellitus type 2","Ideal",0.0607714971367848
+40,"Female","Diabetes mellitus type 2","Intervention",0.0322957750802095
+40,"Female","Ischemic heart disease","Ideal",0.132026720587574
+40,"Female","Ischemic heart disease","Intervention",0.0978928379889503
+40,"Female","Ischemic stroke","Ideal",0.137512325510031
+40,"Female","Ischemic stroke","Intervention",0.0997639516739592
+40,"Male","Breast cancer","Ideal",0.0270851366318563
+40,"Male","Breast cancer","Intervention",0.0152635647094743
+40,"Male","Colon and rectum cancer","Ideal",0.0455746416774297
+40,"Male","Colon and rectum cancer","Intervention",0.0258089188260819
+40,"Male","Diabetes mellitus type 2","Ideal",0.0578344415999633
+40,"Male","Diabetes mellitus type 2","Intervention",0.0292696732922614
+40,"Male","Ischemic heart disease","Ideal",0.117797204225773
+40,"Male","Ischemic heart disease","Intervention",0.0831037322337315
+40,"Male","Ischemic stroke","Ideal",0.123435930103342
+40,"Male","Ischemic stroke","Intervention",0.0850714766967534
+45,"Female","Breast cancer","Ideal",0.0285629005584368
+45,"Female","Breast cancer","Intervention",0.0167592844646685
+45,"Female","Colon and rectum cancer","Ideal",0.0480567496937025
+45,"Female","Colon and rectum cancer","Intervention",0.028342430190672
+45,"Female","Diabetes mellitus type 2","Ideal",0.0603825339514872
+45,"Female","Diabetes mellitus type 2","Intervention",0.0314700449340285
+45,"Female","Ischemic heart disease","Ideal",0.129165456276164
+45,"Female","Ischemic heart disease","Intervention",0.0947107230355161
+45,"Female","Ischemic stroke","Ideal",0.134047779062198
+45,"Female","Ischemic stroke","Intervention",0.0964076209325651
+45,"Male","Breast cancer","Ideal",0.0274167909580758
+45,"Male","Breast cancer","Intervention",0.0155992488594928
+45,"Male","Colon and rectum cancer","Ideal",0.0461272319565709
+45,"Male","Colon and rectum cancer","Intervention",0.026372953003075
+45,"Male","Diabetes mellitus type 2","Ideal",0.0590691742039715
+45,"Male","Diabetes mellitus type 2","Intervention",0.0301162724646892
+45,"Male","Ischemic heart disease","Ideal",0.119867672039247
+45,"Male","Ischemic heart disease","Intervention",0.085045070208726
+45,"Male","Ischemic stroke","Ideal",0.124909713275564
+45,"Male","Ischemic stroke","Intervention",0.0868723528143348
+50,"Female","Breast cancer","Ideal",0.0286412947249141
+50,"Female","Breast cancer","Intervention",0.0168386311731536
+50,"Female","Colon and rectum cancer","Ideal",0.0481866143613429
+50,"Female","Colon and rectum cancer","Intervention",0.0284749842975718
+50,"Female","Diabetes mellitus type 2","Ideal",0.0602579163100025
+50,"Female","Diabetes mellitus type 2","Intervention",0.0315929330222769
+50,"Female","Ischemic heart disease","Ideal",0.12978784625778
+50,"Female","Ischemic heart disease","Intervention",0.0952153722234703
+50,"Female","Ischemic stroke","Ideal",0.135000199465343
+50,"Female","Ischemic stroke","Intervention",0.0969235639416675
+50,"Male","Breast cancer","Ideal",0.0272362167758711
+50,"Male","Breast cancer","Intervention",0.0154164805791582
+50,"Male","Colon and rectum cancer","Ideal",0.0458263985211856
+50,"Male","Colon and rectum cancer","Intervention",0.0260658894416181
+50,"Male","Diabetes mellitus type 2","Ideal",0.0584756444406756
+50,"Male","Diabetes mellitus type 2","Intervention",0.0297562964562581
+50,"Male","Ischemic heart disease","Ideal",0.119041671147856
+50,"Male","Ischemic heart disease","Intervention",0.0840422646024824
+50,"Male","Ischemic stroke","Ideal",0.124444729269258
+50,"Male","Ischemic stroke","Intervention",0.0859034499489142
+55,"Female","Breast cancer","Ideal",0.0293009528753737
+55,"Female","Breast cancer","Intervention",0.0175063046151494
+55,"Female","Colon and rectum cancer","Ideal",0.0492788048582942
+55,"Female","Colon and rectum cancer","Intervention",0.029589793571859
+55,"Female","Diabetes mellitus type 2","Ideal",0.0608480019566094
+55,"Female","Diabetes mellitus type 2","Intervention",0.0323200469370811
+55,"Female","Ischemic heart disease","Ideal",0.132739893131594
+55,"Female","Ischemic heart disease","Intervention",0.09842291759949
+55,"Female","Ischemic stroke","Ideal",0.137864562861512
+55,"Female","Ischemic stroke","Intervention",0.100366561042944
+55,"Male","Breast cancer","Ideal",0.0266747654873483
+55,"Male","Breast cancer","Intervention",0.0148482072787224
+55,"Male","Colon and rectum cancer","Ideal",0.044890531779579
+55,"Male","Colon and rectum cancer","Intervention",0.0251106413178226
+55,"Male","Diabetes mellitus type 2","Ideal",0.0570280892136791
+55,"Male","Diabetes mellitus type 2","Intervention",0.0283840994104993
+55,"Male","Ischemic heart disease","Ideal",0.115421948104542
+55,"Male","Ischemic heart disease","Intervention",0.0804197116097203
+55,"Male","Ischemic stroke","Ideal",0.120611543908205
+55,"Male","Ischemic stroke","Intervention",0.0823631336175832
+60,"Female","Breast cancer","Ideal",0.0304382914628727
+60,"Female","Breast cancer","Intervention",0.01865746263374
+60,"Female","Colon and rectum cancer","Ideal",0.0511594845235048
+60,"Female","Colon and rectum cancer","Intervention",0.0315094212728804
+60,"Female","Diabetes mellitus type 2","Ideal",0.0633330085056019
+60,"Female","Diabetes mellitus type 2","Intervention",0.0346488800733379
+60,"Female","Ischemic heart disease","Ideal",0.138042518862896
+60,"Female","Ischemic heart disease","Intervention",0.104196422203767
+60,"Female","Ischemic stroke","Ideal",0.144293533243294
+60,"Female","Ischemic stroke","Intervention",0.106742429971676
+60,"Male","Breast cancer","Ideal",0.0272603747576962
+60,"Male","Breast cancer","Intervention",0.0154409320967595
+60,"Male","Colon and rectum cancer","Ideal",0.0458666498185079
+60,"Male","Colon and rectum cancer","Intervention",0.0261069743253286
+60,"Male","Diabetes mellitus type 2","Ideal",0.0583990567292763
+60,"Male","Diabetes mellitus type 2","Intervention",0.0295638328621183
+60,"Male","Ischemic heart disease","Ideal",0.118537768492222
+60,"Male","Ischemic heart disease","Intervention",0.0839257875745249
+60,"Male","Ischemic stroke","Ideal",0.124759364298271
+60,"Male","Ischemic stroke","Intervention",0.0863510399772896
+65,"Female","Breast cancer","Ideal",0.0311130069973035
+65,"Female","Breast cancer","Intervention",0.01934037641708
+65,"Female","Colon and rectum cancer","Ideal",0.0522737456447433
+65,"Female","Colon and rectum cancer","Intervention",0.0326467582442254
+65,"Female","Diabetes mellitus type 2","Ideal",0.0644313007099275
+65,"Female","Diabetes mellitus type 2","Intervention",0.03623269119401
+65,"Female","Ischemic heart disease","Ideal",0.141513637947973
+65,"Female","Ischemic heart disease","Intervention",0.107717173749414
+65,"Female","Ischemic stroke","Ideal",0.147037495304706
+65,"Female","Ischemic stroke","Intervention",0.109842343511893
+65,"Male","Breast cancer","Ideal",0.0288412133102624
+65,"Male","Breast cancer","Intervention",0.0170409789041797
+65,"Male","Colon and rectum cancer","Ideal",0.0484975623431053
+65,"Male","Colon and rectum cancer","Intervention",0.0287923718731433
+65,"Male","Diabetes mellitus type 2","Ideal",0.0607846193648662
+65,"Male","Diabetes mellitus type 2","Intervention",0.0324760966556615
+65,"Male","Ischemic heart disease","Ideal",0.127897451932455
+65,"Male","Ischemic heart disease","Intervention",0.0935649524938094
+65,"Male","Ischemic stroke","Ideal",0.133433382681949
+65,"Male","Ischemic stroke","Intervention",0.0956449960971908
+70,"Female","Breast cancer","Ideal",0.0311130069973035
+70,"Female","Breast cancer","Intervention",0.01934037641708
+70,"Female","Colon and rectum cancer","Ideal",0.0522737456447433
+70,"Female","Colon and rectum cancer","Intervention",0.0326467582442254
+70,"Female","Diabetes mellitus type 2","Ideal",0.0639765173483927
+70,"Female","Diabetes mellitus type 2","Intervention",0.0359996406837268
+70,"Female","Ischemic heart disease","Ideal",0.14122032926798
+70,"Female","Ischemic heart disease","Intervention",0.107501293399281
+70,"Female","Ischemic stroke","Ideal",0.147696766077634
+70,"Female","Ischemic stroke","Intervention",0.110023166206693
+70,"Male","Breast cancer","Ideal",0.0288412133102624
+70,"Male","Breast cancer","Intervention",0.0170409789041797
+70,"Male","Colon and rectum cancer","Ideal",0.0484975623431053
+70,"Male","Colon and rectum cancer","Intervention",0.0287923718731433
+70,"Male","Diabetes mellitus type 2","Ideal",0.0603485245700984
+70,"Male","Diabetes mellitus type 2","Intervention",0.0322632105548959
+70,"Male","Ischemic heart disease","Ideal",0.127626522433276
+70,"Male","Ischemic heart disease","Intervention",0.0933737407437641
+70,"Male","Ischemic stroke","Ideal",0.134110288994918
+70,"Male","Ischemic stroke","Intervention",0.0958361381922213
+75,"Female","Breast cancer","Ideal",0.0311130069973035
+75,"Female","Breast cancer","Intervention",0.01934037641708
+75,"Female","Colon and rectum cancer","Ideal",0.0522737456447433
+75,"Female","Colon and rectum cancer","Intervention",0.0326467582442254
+75,"Female","Diabetes mellitus type 2","Ideal",0.0645273805678316
+75,"Female","Diabetes mellitus type 2","Intervention",0.0357972920381772
+75,"Female","Ischemic heart disease","Ideal",0.14275217556618
+75,"Female","Ischemic heart disease","Intervention",0.10828298008602
+75,"Female","Ischemic stroke","Ideal",0.147517632629347
+75,"Female","Ischemic stroke","Intervention",0.109537434506285
+75,"Male","Breast cancer","Ideal",0.0288412133102624
+75,"Male","Breast cancer","Intervention",0.0170409789041797
+75,"Male","Colon and rectum cancer","Ideal",0.0484975623431053
+75,"Male","Colon and rectum cancer","Intervention",0.0287923718731433
+75,"Male","Diabetes mellitus type 2","Ideal",0.0609917933095517
+75,"Male","Diabetes mellitus type 2","Intervention",0.0321531203779333
+75,"Male","Ischemic heart disease","Ideal",0.129118716439279
+75,"Male","Ischemic heart disease","Intervention",0.0941013313290939
+75,"Male","Ischemic stroke","Ideal",0.134023088356113
+75,"Male","Ischemic stroke","Intervention",0.0954416749062654
+80,"Female","Breast cancer","Ideal",0.0311130069973035
+80,"Female","Breast cancer","Intervention",0.01934037641708
+80,"Female","Colon and rectum cancer","Ideal",0.0522737456447433
+80,"Female","Colon and rectum cancer","Intervention",0.0326467582442254
+80,"Female","Diabetes mellitus type 2","Ideal",0.0645273805678316
+80,"Female","Diabetes mellitus type 2","Intervention",0.0357972920381772
+80,"Female","Ischemic heart disease","Ideal",0.14275217556618
+80,"Female","Ischemic heart disease","Intervention",0.10828298008602
+80,"Female","Ischemic stroke","Ideal",0.147517632629347
+80,"Female","Ischemic stroke","Intervention",0.109537434506285
+80,"Male","Breast cancer","Ideal",0.0288412133102624
+80,"Male","Breast cancer","Intervention",0.0170409789041797
+80,"Male","Colon and rectum cancer","Ideal",0.0484975623431053
+80,"Male","Colon and rectum cancer","Intervention",0.0287923718731433
+80,"Male","Diabetes mellitus type 2","Ideal",0.0609917933095517
+80,"Male","Diabetes mellitus type 2","Intervention",0.0321531203779333
+80,"Male","Ischemic heart disease","Ideal",0.129118716439279
+80,"Male","Ischemic heart disease","Intervention",0.0941013313290939
+80,"Male","Ischemic stroke","Ideal",0.134023088356113
+80,"Male","Ischemic stroke","Intervention",0.0954416749062654
+85,"Female","Breast cancer","Ideal",0.0311130069973035
+85,"Female","Breast cancer","Intervention",0.01934037641708
+85,"Female","Colon and rectum cancer","Ideal",0.0522737456447433
+85,"Female","Colon and rectum cancer","Intervention",0.0326467582442254
+85,"Female","Diabetes mellitus type 2","Ideal",0.0645273805678316
+85,"Female","Diabetes mellitus type 2","Intervention",0.0357972920381772
+85,"Female","Ischemic heart disease","Ideal",0.14275217556618
+85,"Female","Ischemic heart disease","Intervention",0.10828298008602
+85,"Female","Ischemic stroke","Ideal",0.147517632629347
+85,"Female","Ischemic stroke","Intervention",0.109537434506285
+85,"Male","Breast cancer","Ideal",0.0288412133102624
+85,"Male","Breast cancer","Intervention",0.0170409789041797
+85,"Male","Colon and rectum cancer","Ideal",0.0484975623431053
+85,"Male","Colon and rectum cancer","Intervention",0.0287923718731433
+85,"Male","Diabetes mellitus type 2","Ideal",0.0609917933095517
+85,"Male","Diabetes mellitus type 2","Intervention",0.0321531203779333
+85,"Male","Ischemic heart disease","Ideal",0.129118716439279
+85,"Male","Ischemic heart disease","Intervention",0.0941013313290939
+85,"Male","Ischemic stroke","Ideal",0.134023088356113
+85,"Male","Ischemic stroke","Intervention",0.0954416749062654
