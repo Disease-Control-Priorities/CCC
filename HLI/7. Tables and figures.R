@@ -16,8 +16,6 @@ fig2<-read.csv("hpp.csv", stringsAsFactors = F)%>%
   left_join(., order)%>%
   mutate(Priorty = factor(Priorty, levels=c("High", "Medium", "Low")))
 
-unique(fig2$HSP)
-
 ggplot(fig2%>%mutate(HSP = factor(HSP, levels = c("Conflict", "Fragile","HS1","HS2","HS3"))), 
        aes(x=HSP, y=reorder(Intervention, -order), fill=Priorty))+
   geom_tile(color="white", size=0.5)+
@@ -28,6 +26,14 @@ ggplot(fig2%>%mutate(HSP = factor(HSP, levels = c("Conflict", "Fragile","HS1","H
   scale_x_discrete(position="top")+
   #labs(fill="ICER (as a proportion \nof GDP per capita)")+
   theme(axis.title.x=element_blank(),axis.title.y=element_blank())
+
+length(unique(fig2$Code))
+
+df<-fig2%>%filter(Priorty=="High")%>%
+  select(HSP, Priorty, Intervention)%>%
+  spread(HSP, Priorty)
+  
+write.csv(df, "figures/HPP.csv", row.names = F)
 
 ggsave("figures/Figure2.png", height = 10, width = 12, units = "in")
 
