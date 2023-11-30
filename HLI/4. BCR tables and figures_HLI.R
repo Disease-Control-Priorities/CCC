@@ -316,7 +316,12 @@ ggplot(fig1,
   theme(axis.title.x=element_blank(),axis.title.y=element_blank())+
   geom_text(label = paste0( "$", signif(fig1$ICER, digits=2)))
 
-ggsave("figures/Figure1.png", height = 10, width = 12, units = "in")
+ggsave("figures/Figure1.png", height = 10, width = 12, units = "in", dpi=300)
+ggsave("figures/Figure1.eps", height = 10, width = 12, units = "in", dpi=300)
+ggsave("figures/Figure1.pdf", height = 10, width = 12, units = "in", dpi=300)
+ggsave("figures/Figure1.tiff", height = 10, width = 12, units = "in", dpi=300)
+
+
 write.csv(fig1, "figures/figure1_data.csv", row.names = F)
 
 write.csv(cost%>%filter(location_name %in% all.locs), "output/all_costs.csv", row.names = F)
@@ -374,7 +379,10 @@ ggplot(fig1,
   theme(axis.title.x=element_blank(),axis.title.y=element_blank())+
   geom_text(label = paste0( "$", signif(fig1$ICER, digits=2)))
 
-ggsave("figures/Figure1_WB.png", height = 10, width = 12, units = "in")
+ggsave("figures/Figure1_WB.png", height = 10, width = 12, units = "in", dpi=300)
+ggsave("figures/Figure1_WB.eps", height = 10, width = 12, units = "in", dpi=300)
+ggsave("figures/Figure1_WB.pdf", height = 10, width = 12, units = "in", dpi=300)
+ggsave("figures/Figure1_WB.tiff", height = 10, width = 12, units = "in", dpi=300)
 
 ##########
 

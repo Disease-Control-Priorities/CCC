@@ -35,7 +35,11 @@ df<-fig2%>%filter(Priorty=="High")%>%
   
 write.csv(df, "figures/HPP.csv", row.names = F)
 
-ggsave("figures/Figure2.png", height = 10, width = 12, units = "in")
+ggsave("figures/Figure2.png", height = 10, width = 12, units = "in", dpi=300)
+ggsave("figures/Figure2.pdf", height = 10, width = 12, units = "in", dpi=300)
+ggsave("figures/Figure2.eps", height = 10, width = 12, units = "in", dpi=300)
+ggsave("figures/Figure2.tiff", height = 10, width = 12, units = "in", dpi=300)
+
 
 write.csv(fig2, "figures/figure2_data.csv", row.names = F)
 
@@ -473,7 +477,11 @@ ggplot(plot4%>%filter(year==2040, age>30), aes(x=age, y=ncd_mxn, color=Scenario)
   theme_bw()+
   scale_y_continuous(trans='log10')
 
-ggsave("figures/Figure3_over30.jpeg", height=4, width=8)
+ggsave("figures/Figure3_over30.jpeg", height=4, width=8, dpi=300)
+ggsave("figures/Figure3_over30.pdf", height=4, width=8, dpi=300)
+ggsave("figures/Figure3_over30.tiff", height=4, width=8, dpi=300)
+ggsave("figures/Figure3_over30.eps", height=4, width=8, dpi=300)
+
 write.csv(plot4%>%filter(year==2040, age>30), "figures/figure3_data.csv", row.names = F)
 
 

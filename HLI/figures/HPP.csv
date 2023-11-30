@@ -1,22 +1,21 @@
-Intervention,Conflict,Fragile,HS1,HS2,HS3
-Alcohol policy,High,High,High,High,High
-Alcohol tax,High,High,High,High,High
-Aspirin for suspected ACS,High,High,High,High,High
-Epilepsy acute and chronic treatment,High,High,High,High,High
-Heart failure acute treatment,High,High,High,High,High
-Heart failure chronic treatment,High,High,High,High,High
-IDU harm reduction measures,High,High,High,High,High
-Medical management of ACS,High,High,High,High,High
-Pulmonary rehabilitation,High,High,High,High,High
-Salt policy,High,High,High,High,High
-Tobacco policy,High,High,High,High,High
-Tobacco tax,High,High,High,High,High
-Trans fat policy,High,High,High,High,High
-,,,,,
-Asthma/COPD acute treatment,High,High,NA,High,High
-CVD primary prevention,High,High,NA,High,High
-Depression chronic treatment,High,High,NA,High,High
-Management of appendicitis,NA,High,NA,High,NA
-Treatment of early-stage breast cancer,NA,NA,NA,High,High
-Cervical cancer screening and treatment,NA,NA,High,NA,NA
-Management of bowel obstruction,High,High,High,High,NA
+"Intervention","Conflict","Fragile","HS1","HS2","HS3"
+"Alcohol policy","High","High","High","High","High"
+"Alcohol tax","High","High","High","High","High"
+"Aspirin for suspected ACS","High","High","High","High","High"
+"Asthma/COPD acute treatment","High","High",NA,"High","High"
+"Cervical cancer screening and treatment",NA,NA,"High",NA,NA
+"CVD primary prevention","High","High",NA,"High","High"
+"Depression chronic treatment","High","High",NA,"High","High"
+"Epilepsy acute and chronic treatment","High","High","High","High","High"
+"Heart failure acute treatment","High","High","High","High","High"
+"Heart failure chronic treatment","High","High","High","High","High"
+"IDU harm reduction measures","High","High","High","High","High"
+"Management of appendicitis",NA,"High",NA,"High",NA
+"Management of bowel obstruction","High","High","High","High",NA
+"Medical management of ACS","High","High","High","High","High"
+"Pulmonary rehabilitation","High","High","High","High","High"
+"Salt policy","High","High","High","High","High"
+"Tobacco policy","High","High","High","High","High"
+"Tobacco tax","High","High","High","High","High"
+"Trans fat policy","High","High","High","High","High"
+"Treatment of early-stage breast cancer",NA,NA,NA,"High","High"
