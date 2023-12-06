@@ -89,6 +89,32 @@ NCD1_int<-d1.all
 cost<-read.csv("output/all_costs.csv", stringsAsFactors = F)
 all.locs<-unique(cost$location_name)
 
+#intersectoral figures for David
+int_names<-cost%>%select(Code, Intervention)%>%unique()
+  
+fig0<-left_join(int_deaths, int_names)%>%
+  group_by(year_id, Code, Intervention)%>%
+  summarise(DA = sum(Deaths.Avert))%>%
+  filter(Code<5.3)%>%
+  group_by(Code)%>%
+  mutate(CDA = cumsum(DA))
+
+
+scaleFactor <- max(fig0$DA) / max(fig0$CDA)
+
+ggplot(fig0, aes(x=year_id)) +
+  geom_line(aes(y=DA/1e6, color=Intervention), size=1) +
+  geom_smooth(aes(y=CDA/1e6, color=Intervention), linetype="twodash")+
+  scale_y_continuous(name="Deaths averted (millions)", 
+                     sec.axis=sec_axis(~./scaleFactor, 
+                                       name="Cumulative deaths averted (millions)"))+
+  theme_bw()+
+  xlab("Year")
+
+ggsave("figures/intersectoral_fig.jpeg", height=6, width=9)
+
+##
+
 DA2050<-bind_rows(t_deaths%>%select(location_name, Deaths.Avert, year_id), 
                   int_deaths%>%select(location_name, Deaths.Avert, year_id))%>%
   filter(location_name %in% all.locs, year_id==2050)%>%
