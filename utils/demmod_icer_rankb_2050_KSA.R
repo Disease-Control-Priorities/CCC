@@ -29,7 +29,7 @@ project_pop <- function(quality, is, inter, inc.val, inc.type, start.year, stop.
            metric=="case fatality") %>% 
     arrange(Code, sub_id) %>% 
     select(location_name, Intervention, Code, sub_id, cause_name, `Mortality reduction`, `Baseline Coverage`) %>%
-    mutate(`Baseline Coverage`=as.numeric(`Baseline Coverage`),
+    mutate(`Baseline Coverage`= as.numeric(`Baseline Coverage`),
            inc = ifelse(Code %in% inter, (inc.val-`Baseline Coverage`)/(stop.year-start.year), 0)) %>%
     rename(`Effect (I)` = "Mortality reduction")%>%
     distinct()
